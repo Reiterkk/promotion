@@ -1,0 +1,279 @@
+\documentclass[
+  paper=A4, 		% Stellt auf A4-Papier ein
+  pagesize, 		% Diese Option reicht die Papiergröße an alle Ausgabeformate weiter
+  DIV=12, 		% Für einen guten Satzspiegel
+%  headings=small,	% Für etwas kleinere Überschriften
+  ngerman,  		% Neue Rechtschreibung (Silbentrennung)
+  12pt, 			% Schriftgröße
+  listof=totoc, 
+  bibliography=totoc, 
+  index=totoc, 
+  BCOR15mm, 			% Formatregeln für Bindung
+  openany, 
+]{scrbook}
+% ---------------------------------------------------------------
+
+
+%Worttrennung
+\hyphenation{nicht-re-la-ti-vis-ti-schen}
+% Anpassen der Schriften des KOMA-Skripts 
+\setkomafont{disposition}{\rmfamily\bfseries\boldmath}   % Ändert alle Gliederungsüberschriften (\part bis \subparagraph und \minisec) sowie Überschrift der Zusammenfassung 
+\setkomafont{descriptionlabel}{\rmfamily\bfseries\boldmath}   % Ändert das Label (also den optionalen Eintrag einer \item-Anweisung) einer description-Umgebung
+
+
+% Unverzichtbare Pakte
+%\usepackage{setspace}
+\usepackage[onehalfspacing]{setspace}
+\usepackage[]{units}
+\usepackage{float}
+\usepackage{scrhack}
+\RedeclareSectionCommands[
+  %beforeskip=-.5\baselineskip,
+  afterskip=.25\baselineskip
+]{section,subsection,subsubsection}
+\RedeclareSectionCommands[
+  beforeskip=-.5\baselineskip,
+  %afterskip=.25\baselineskip
+]{chapter}
+\usepackage{geometry}
+\geometry{
+  left=2.5cm,
+  right=3.0cm,
+  top=2.5cm,
+  bottom=4.5cm,
+  bindingoffset=5mm
+}
+\usepackage{pdflscape}
+\setlength{\parindent}{0pt} % entfernt global die Einrückung nach Absätzen
+\usepackage{caption}
+\usepackage[T1]{fontenc}	% für Texte mit Umlauten und/oder Akzenten 
+\usepackage[utf8]{inputenc}	% Silbentrennung und Eingabe von Umlauten
+\usepackage[ngerman]{babel} 	% Deutsch als Hauptsprache
+\addto\captionsngerman{
+\renewcommand{\figurename}{\small{\textbf{Abb.}}}%
+\renewcommand{\tablename}{\small{\textbf{Tab.}}}%
+}
+\usepackage[ngerman]{translator}
+\usepackage{graphicx} 		% Einfügen von Grafiken (.png)
+\usepackage[printonlyused,withpage]{acronym}
+\usepackage[acronym,toc,numberedsection,nonumberlist]{glossaries}
+\usepackage[hyphens]{url} 	% URL's schöner formatieren
+\usepackage{hyphenat}
+\usepackage[pdftex,breaklinks,bookmarksnumbered,hidelinks]{hyperref}  % Hyperlinks im PDF-Dokument
+%\usepackage{pdfpages} 		% Einfügen von PDF-Dateien
+% ---------------------------------------------------------------
+% Typografisch empfehlenswerte Pakete
+\usepackage{
+  ellipsis, % Korrigiert den Weißraum um Auslassungspunkte
+  ragged2e, % Ermöglicht Flattersatz mit Silbentrennung
+  marginnote,% Für bessere Randnotizen mit \marginnote statt % \marginline
+}
+\usepackage[tracking=true]{microtype}%
+\DeclareMicrotypeSet*[tracking]{my}% 
+  { font = */*/*/sc/* }% 
+\SetTracking{ encoding = *, shape = sc }{ 45 }% alle Passagen in Kapitälchen automatisch leicht gesperrt.
+% ---------------------------------------------------------------
+% Verschiedene Schriften
+\usepackage{%
+  lmodern, % A) Latin Modern Fonts sind die Nachfolger von Computer
+            % Modern, den LaTeX-Standardfonts
+  %hfoldsty, % B) Diese Schrift stellt alle Ziffern, außer
+            % im Mathemodus, auf Minuskel- oder Mediäval-Ziffern um.
+            % Wenn Ihre pdfs unscharf aussehen installieren Sie bitte
+            % die cm-super-Fonts (Type1-Fonts).
+ %charter,   % C) Diese Zeile lädt die Charter als Schriftart
+}
+% ---------------------------------------------------------------
+
+% allgemeine Einstellungen
+\pdfminorversion=6
+\input{./etc/hyphenation}
+\graphicspath{{./gfx/}}
+% ---------------------------------------------------------------
+
+% Glossar-Anpassungen
+% Den Punkt am Ende jeder Beschreibung deaktivieren
+\renewcommand*{\glspostdescription}{}
+% Glossar
+\include{./etc/glossary}
+% Glossar-Befehle anschalten
+\makeglossaries
+% ---------------------------------------------------------------
+
+%Literaturverzeichnis Einstellungen
+\usepackage{color}
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage[style=numeric-comp,maxnames=99,backend=biber]{
+biblatex}
+
+\DeclareFieldFormat[article]{volume}{\textit{#1}\space}% macht das Volume kursiv
+\DeclareFieldFormat[article]{date}{\textbf{#1}\space}% macht das Jahr fett
+\DeclareFieldFormat[book]{date}{\textbf{#1}\space}% macht das Jahr fett
+\DeclareFieldFormat[misc]{date}{\textbf{#1}\space}% macht das Jahr fett
+\DeclareFieldFormat[inproceedings]{date}{\textbf{#1}\space}% macht das Jahr fett
+
+\DeclareFieldFormat{pages}{#1}% entfernt das "S."
+\DeclareFieldFormat{page}{#1}
+\DeclareFieldFormat{postnote}{#1}
+\DeclareFieldFormat{multipostnote}{#1}
+\DeclareFieldFormat{journaltitle}{\mkbibemph{#1}\isdot}
+\addbibresource{literatur.bib}
+\ExecuteBibliographyOptions{%
+isbn=false, url=false, doi=false, eprint=false, firstinits=true,%
+}%
+\renewcommand*{\intitlepunct}{}
+\renewcommand*{\labelnamepunct}{\addcomma\space}
+\renewcommand*{\newunitpunct}{\addcomma\space}
+\DefineBibliographyStrings{german}{in={}}
+\ExecuteBibliographyOptions{sorting=none}
+
+%Komma vor und nach Journal, Nummer in Klammern
+\renewbibmacro*{volume+number+eid}{%
+  \setunit*{\addcomma\space}% NEW
+  \printfield{volume}%
+        %  \setunit*{\adddot}% DELETED
+  \setunit*{\addnbspace}% NEW (optional); there's also \addnbthinspace
+  \printfield{number}%
+  \setunit{\addcomma\space}%
+  \printfield{eid}\addcomma}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\DeclareFieldFormat{pages}{\mkfirstpage{#1}}%nur erste Seite anzeigen
+
+%Datum ohne Klammern
+    \renewbibmacro*{issue+date}{%
+      \setunit*{\addcomma\space}% NEW
+        \iffieldundef{issue}
+          {\usebibmacro{date}}
+          {\printfield{issue}%
+           \setunit*{\addcomma\addspace}%
+        \usebibmacro{date}}% NEW
+      \newunit}
+
+% move date before issue 
+   \renewbibmacro*{journal+issuetitle}{% 
+     \usebibmacro{journal}% 
+     \setunit*{\addspace}% 
+     \iffieldundef{series} 
+       {} 
+       {\newunit 
+        \printfield{series}% 
+        \setunit{\addspace}}% 
+     % 
+     \usebibmacro{issue+date}% 
+     \setunit{\addcolon\space}% 
+     \usebibmacro{issue}% 
+     \setunit{\addspace}% 
+     \usebibmacro{volume+number+eid}% 
+     \newunit}
+% ---------------------------------------------------------------
+% Befehl für Überschriften mit Untertitel
+\newcommand{\Chapter}[2]{\chapter[#1]{#1:\\#2}} 
+\newcommand{\Section}[2]{\section[#1]{#1:\\#2}}
+% ---------------------------------------------------------------
+
+%Mathematikpakete
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% ---------------------------------------------------------------
+
+%Tabellenpakete
+\usepackage{booktabs}
+\usepackage{multirow}
+% ---------------------------------------------------------------
+
+\usepackage[section]{placeins}
+% ---------------------------------------------------------------
+
+%Farben
+\usepackage{color}
+\definecolor {myred}{rgb}{0.9,0.15,0.10}
+\definecolor {mygreen}{rgb}{0.10,0.5,0.15}
+% ---------------------------------------------------------------
+
+% Hier startet der Inhalt
+\begin{document}
+% imaginary unit:
+\newcommand{\iu}{\mathrm{i}\mkern1mu}
+%Integral d bzw d³
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+% Meta-Informationen für das PDF
+\input{./etc/pdf-info}
+% ---------------------------------------------------------------
+% Titelblätter und Erklärung
+\frontmatter
+ \pagenumbering{Roman}
+\include{./intro/titel} 
+\restoregeometry
+\thispagestyle{empty}
+\cleardoublepage
+
+% Erklärung (Arbeit selbstständig verfasst)
+\include{./intro/erklaerung}  
+
+\include{./intro/danksagung}
+
+% Inhaltsverzeichnis
+%Definition wie tief da Inhaltsverzeichnis dargestellt werden soll
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\tableofcontents
+
+% Hauptteil - Arabische Seitennummerierung
+\mainmatter % die eigentliche Arbeit
+
+\chapter{Einleitung}
+\input{kapitel/einleitung}
+
+\chapter{Theoretische Grundlagen}
+\input{kapitel/kapitel01}
+
+\chapter{Implementierung}
+\input{kapitel/kapitel02}
+
+\chapter{Anwendung}
+\input{kapitel/kapitel03}
+
+\chapter{Zusammenfassung}
+\input{kapitel/zusammenfassung}
+
+
+% Schlussteil - Römische Seitennummerierung
+\backmatter
+%\pagenumbering{Roman}
+%\setcounter{page}{9}
+
+\begingroup
+	\renewcommand*{\addvspace}[1]{}
+	\phantomsection
+	\listoffigures
+\endgroup
+
+\begingroup
+	\renewcommand*{\addvspace}[1]{}
+	\phantomsection
+	\listoftables
+\endgroup
+\newpage
+\input{./etc/acronym}
+
+\printbibliography[title=Literaturverzeichnis]
+
+\chapter*{Veröffentlichungen}
+\input{kapitel/publikationsliste}
+
+\chapter*{Lebenslauf}
+\input{kapitel/lebenslauf}
+\newpage
+\thispagestyle{empty}
+\quad
+
+%Abkürzungen ausgeben
+\deftranslation[to=German]{Acronyms}{Abkürzungsverzeichnis}
+\printglossary[type=\acronymtype,style=long]
+% ---------------------------------------------------------------
+% Anhang
+\appendix
+%\includepdf[pages=-,fitpaper=true,addtotoc={1,section,0,Diagramm: Vergabe,fig:Vergabedia}]{Pfad-zu-einem-pdf-dokument.pdf}
+\end{document}

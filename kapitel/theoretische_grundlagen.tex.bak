@@ -1,0 +1,503 @@
+\section{Einheiten und Notation}
+
+Alle Einheiten sind in atomaren Einheiten (a.u.) zu verstehen, sofern es an den entsprechenden Stellen nicht anders angegeben ist. Damit gilt $1=\hbar=e=m_e=\frac{1}{4\pi\varepsilon_0}$.
+Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen sind in \unit{ppm} angegeben. Die imagniäre Einheit wird immer als $\iu$ geschrieben um eine Verwechslung zu vermeiden.
+ 
+\bigskip
+Die in der Literatur gebräuchliche Notation für Indizes und Integrale soll im Folgenden kurz erläutert werden. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige Einelektronen-Wellenfunktionen und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $A,B,\dotsc$ werden zur Kennzeichnung der insgesamt $N_K$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen wodurch eine Verwechslung mit dem Elektronenspin - welcher ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der Kernzentrierten Basisfunktionen $\chi_mu$ und $\chi_nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
+\newpage
+Sollten Einelektronenintegrale nicht explizit angegeben sein, so gilt für sie die folgende Dirac-Notation:
+\begin{gather*}
+    \langle\mu\vert\nu\rangle=\langle\chi_\mu\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\chi_\mu(\vec{r})\Diff3\vec{r}\\
+    \langle\mu\vert\hat O\vert\nu\rangle=\langle\chi_\mu\vert\hat O\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\hat O\chi_\mu(\vec{r})\Diff3\vec{r}.
+\end{gather*}
+
+Im Gegensatz dazu werden Zweielektronenintegrale in der Mulliken-Notation angegeben
+\begin{gather*}
+    \left(\mu\nu\vert\kappa\lambda\right)=\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)=\int\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
+    \left(\mu\nu\vert\vert\kappa\lambda\right)=\left(\mu\nu\vert\kappa\lambda\right)-\left(\mu\lambda\vert\kappa\nu\right)\\
+    \left(\overline{\mu\nu}\vert\kappa\lambda\right)=\left(\left.\frac{\partial}{\partial B_\alpha}\mu\nu\right|\kappa\lambda\right)_{\vec{B} = 0}.
+\end{gather*}
+
+Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wiedergegeben. Somit ist $S^{B_\alpha}_{\mu\nu}$ das nach der $\alpha$-Komponente des Mangetfelds abgeleitete Überlappungsintegral der beiden Basisfunktionen $\chi_\mu$ und $\chi_\nu$
+
+\begin{equation*}
+  S^{B_\alpha}_{\mu\nu}=\left.\frac{\partial S_{\mu\nu}}{\partial B_\alpha}\right|_{\vec{B} = 0}.
+\end{equation*} 
+Matrizen, wie beispielsweise die Fockmatrix \textbf{F}, werden fett gedruckt
+\section{Die Schrödingergleichung für Moleküle - Wellenfunktion und Energie}
+Unter Vernachlässigung relativistischer Effekte muss die zeitabhängige Schrödingergleichung
+\begin{equation}
+  \hat{H}\Psi(t,\vec{r}_1,\sigma_,1\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})=\iu\frac{\partial\Psi(t,\vec{r}_1,\sigma_,1\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})}{\partial t}
+\end{equation}
+für ein Mehrteilchensystem gelöst werden, um ein Molekül quantenmechanisch zu beschreiben. Die Wellenfunktion $\Psi$, welche den Zustand des Systems beschreibt, hängt dabei von der Zeit $t$, den Spinkoordinaten der Elektronen $\sigma_i$ und den Ortskoordinaten der Elektronen $\vec{r}_i$ und der Kerne $\vec{R}_A$ ab. Sollen lediglich stationäre Systeme beschrieben werden, so kann $t$ separiert werden und es wird die zeitunabhängige Schrödingergleichung 
+
+\begin{equation}
+  \hat{H}\Psi(\vec{r}_1,\sigma_,1\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})=E\Psi(\vec{r}_1,\sigma_,1\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})
+\end{equation}
+
+erhalten. Der darin enthaltene Hamiltonoperator hat die Form
+
+\begin{equation}
+\begin{aligned}
+  \hat{H}&=\hat{T}_{\text{K}}+\hat{T}_{\text{e}}+\hat{V}_{\text{Ke}}+\hat{V}_{\text{ee}}+\hat{V}_{\text{KK}}\\
+  &=-\frac{1}{2}\sum_{A=1}^{N_\text{K}}\frac{1}{M_A}\nabla^2_A-\frac{1}{2}\sum_{i=1}^N\nabla^2_i-\sum_{i=1}^N\sum_{A=1}^{N_\text{K}}\frac{Z_A}{r_{iA}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}+\sum_{A=1}^{N_\text{K}}\sum_{A>B}^{N_\text{K}}\frac{Z_AZ_B}{R_{AB}}.
+\end{aligned}
+\end{equation}
+Mit den Termen $\hat{T}_{\text{K}}$ und $\hat{T}_{\text{e}}$ werden die kinetischen Energien der Elektronen $i$ sowie der Kerne $A$ mit der jeweiligen Masse $M_A$ beschrieben. Die Beiträge zur potentiellen Energie sind in den letzten drei Termen enthalten. $\hat{V}_{\text{Ke}}$ beschreibt die anziehende Wechselwirkung zwischen Elektronen und Kernen, $\hat{V}_{\text{ee}}$ die abstoßende Elektron-Elektron- und $\hat{V}_{\text{KK}}$ die abstoßende Kern-Kern-Wechselwirkung.
+Zur weiteren Vereinfachung wird die Born-Oppenheimer-Näherung\supercite{born1927quantentheorie} herangezogen. Die Anwendbarkeit dieser Näherung ist in dem großen Masseunterschied zwischen Elektronen und Kernen begründet. Aufgrund der deutlich größeren Kernmassen lässt sich die Bewegung der Elektronen von der Kernbewegung separieren. Anders formuliert sind die Elektronen schnell genug, um sich unmittelbar auf eine Änderung der Kernpositionen einzustellen. Für eine gegebene Position der Kerne kann die Wellenfunktion daher als Produkt einer Kernwellenfunktion $\Psi^{\text{K}}$ und einer elektronischen Wellenfunktion $\Psi^{\text{el}}$ geschrieben werden
+\begin{equation}
+\Psi(\vec{r},\sigma,\vec{R})=\Psi^{\text{el}}(\vec{r},\sigma;\vec{R})\Psi^{\text{K}}(\vec{R}),
+\end{equation}
+wobei die Kernkoordinaten nur noch parametrisch in die elektronische Wellenfunktion mit eingehen. Als Konsequenz diese Produktansatzes lässt sich der Hamiltonoperator nun als Summe eines elektronischen Hamiltonoperator $\hat{H}^{\text{el}}$ und eines Kern Hamiltonoperator $\hat{H}^{\text{K}}$ schreiben. Mit dem elektronischen Hamiltonoperator
+\begin{equation}\label{eq:elhamilton}
+  \hat{H}^{\text{el}}=\hat{T}_{\text{e}}+\hat{V}_{\text{Ke}}+\hat{V}_{\text{ee}}=-\frac{1}{2}\sum_{i=1}^N\nabla^2_i-\sum_{i=1}^N\sum_{A=1}^{N_\text{K}}\frac{Z_A}{r_{iA}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}
+\end{equation}
+kann schließlich die elektronische Schrödingergleichung 
+
+\begin{equation}
+  \hat{H}^{\text{el}}\Psi^{\text{el}}_0(\vec{r},\sigma;\vec{R})=E^{\text{el}}_0\Psi^{\text{el}}_0(\vec{r},\sigma;\vec{R})
+\end{equation}
+
+gelöst und die elektronische Grundzustandsenergie $E^{\text{el}}_0$ im stationären Feld der Kerne erhalten werden. Die Eigenfunktion $\Psi^{\text{el}}_0$ zum Energieeigenwert $E_0$ beschreibt dabei den elektronischen Grundzustand. Um letztlich die Gesamtenergie zu erhalten, muss der für gegebene Kernkoordinaten konstante Energiebeitrag aus dem abstoßendem Kern-Kern-Wechselwirkungspotential zur elektronischen Energie addierte werden. Im Weiteren Verlauf der Arbeit wird auf den hochgestellten Zusatz \glqq el\grqq{} verzichtet. Sofern es an den entsprechenden Stellen nicht angegeben ist, ist damit immer die elektronische Wellenfunktion, der elektronische Hamiltonoperator oder die elektronische Energie gemeint.
+
+
+\section{Das Hartree-Fock-Verfahren}
+Das Hartree-Fock-Verfahren stellt die Grundlage aller quantenchemischen Methoden dar. Die wichtigsten Prinzipien des Verfahrens, welche den Büchern von Jensen\supercite{jensen2009introduction} sowie von Szabo und Ostlund\supercite{szabo1982modern} entnommen wurden und dort ausführlicher erläutert werden, sollen hier kurz wiedergegeben werden. 
+
+Um die ununterscheidbarkeit der Elektronen zu gewährleisten und um das Pauliprizip zu erfüllen wird die elektronische Wellenfunktion durch eine Slaterdeterminante\supercite{slater1974self} beschrieben
+\begin{equation}
+\Psi(\vec{r}_i,\sigma_i)=\frac{1}{\sqrt{N!}}\cdot\begin{vmatrix}
+\phi_1(\vec{r}_1,\sigma_1) & \phi_2(\vec{r}_1,\sigma_1) & \phi_3(\vec{r}_1,\sigma_1) &\cdots & \phi_N(\vec{r}_1,\sigma_1) \\
+\phi_1(\vec{r}_2,\sigma_2) & \phi_2(\vec{r}_2,\sigma_2) & \phi_3(\vec{r}_2,\sigma_2) &\cdots & \phi_N(\vec{r}_2,\sigma_2) \\
+\phi_1(\vec{r}_3,\sigma_3) & \phi_2(\vec{r}_3,\sigma_3) & \phi_3(\vec{r}_3,\sigma_3) &\cdots & \phi_N(\vec{r}_3,\sigma_3) \\
+\vdots & \vdots & \vdots & \ddots & \vdots\\
+\phi_1(\vec{r}_N,\sigma_N) & \phi_2(\vec{r}_N,\sigma_N) & \phi_3(\vec{r}_N,\sigma_N) &\cdots & \phi_N(\vec{r}_N,\sigma_N)
+\end{vmatrix}.
+\end{equation}
+
+Durch die Minimierung des Energieerwartungswerts nach dem Ritz'schen Va\-ria\-ti\-ons\-prin\-zip\supercite{macdonald1933successive}
+
+\begin{equation}
+E=\frac{\langle\Psi|\hat{H}|\Psi\rangle}{\langle\Psi|\Psi\rangle}\geq E_0
+\end{equation}
+
+werden für die Einteilchenwellenfunktion $\phi(\vec{r}_i,\sigma_i)$ die Hartree-Fock-Gleichungen
+
+\begin{equation}
+\hat{f}\vert\phi_i\rangle=\left[\hat{h}+\hat{J}-\hat{K}\right]\vert\phi_i\rangle=\varepsilon_i\vert\phi_i\rangle
+\label{differentialgleichung}
+\end{equation}
+
+erhalten. Die Differentialgleichung (\ref{differentialgleichung}) definiert damit den Fockoperator $\hat{f}$. Der Einelektronen Hamiltonoperator $\hat{h}$ beinhaltet den Term für die kinetische Energie $\hat{T}$ und die Kern-Elektron-Wechselwirkung $\hat{V}_{\text{Ke}}$. Die Elektron-Elektron-Wechselwirkung teilt sich in den klassischen Coulombbeitrag $\hat{J}$ und den nichtklassischen Austauschbeitrag $\hat{K}$ auf. Diese haben die Form
+
+\begin{equation}
+\langle\phi_i|\hat{J}|\phi_i\rangle=\sum_j\left(\phi_i\phi_i|\phi_j\phi_j\right)
+\end{equation}
+und 
+\begin{equation}
+\langle\phi_i|\hat{K}|\phi_i\rangle=\sum_j\left(\phi_i\phi_j|\phi_j\phi_i\right).
+\end{equation}
+
+Wird Gleichung (\ref{differentialgleichung}) von links mit $\langle\phi_i\vert$ multipliziert, so ergibt sich der Ausdruck für die Orbitalenergien
+
+\begin{equation}
+\varepsilon_i = \langle\phi_i|\hat{h}|\phi_i\rangle + \sum_j\left(\phi_i\phi_i||\phi_j\phi_j\right).
+\label{orbitalenergie}
+\end{equation}
+
+In der Praxis werden die Einelektronenwellenfunktionen $\phi_i$ in einer finiten Basis entwickelt, dem sogenannten \ac{lcao}-Ansatz bei dem die $\phi_i$ durch Linearkombination von Basisfunktionen $\chi_\mu$ gebildet werden. 
+
+\begin{equation}
+\phi_i=\sum_{\mu=1}^nc_{\mu i}\chi_{\mu}.
+\end{equation}
+
+Durch diesen Ansatz wird die das Lösen der Differentialgleichung \ref{differentialgleichung} in ein Matrixeigenwertproblem überführt, was die Roothaan-Hall-Gleichungen\supercite{roothaanhall} liefert. Sie können in einer kompakten Matrixnotation aufgeschrieben werden
+
+\begin{equation}\label{roothaanhall}
+\boldsymbol{Fc}=\boldsymbol{Sc\varepsilon}.
+\end{equation}
+
+Darin enthalten ist die Fockmatrix $\boldsymbol{F}$ mit den Matrixelementen $F_{\mu\nu}$
+
+\begin{equation}
+\begin{aligned}
+F_{\mu\nu} =& \langle\chi_{\mu}|\hat{h}|\chi_{\nu}\rangle + \sum_{\kappa\lambda}D_{\kappa\lambda}\left[\left(\chi_{\mu}\chi_{\nu}|\chi_{\kappa}\chi_{\lambda}\right)-\frac{1}{2}\left(\chi_{\mu}\chi_{\lambda}|\chi_{\kappa}\chi_{\nu}\right)\right]\\
+=&\langle\chi_{\mu}|\hat{h}|\chi_{\nu}\rangle + \sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}=h_{\mu\nu}+G_{\mu\nu},
+\end{aligned}
+\label{fockmatrix}
+\end{equation}
+
+die Matrix mit den Entwicklungskoeffizienten der Orbitale \textbf{c}, die Diagonalmatrix mit den Orbitalenergien $\boldsymbol{\varepsilon}$ und die Überlappungsmatrix $\boldsymbol{S}$ mit den Matrixelementen 
+
+\begin{equation}
+S_{\mu\nu}=\langle\chi_{\mu}|\chi_{\nu}\rangle
+\end{equation}.
+
+Die in der Fockmatrix enthaltenen Dichtematrixelemente $D_{\kappa\lambda}$ werden aus den Orbitalkoeffizienten $c_{\kappa i}$ erhalten
+
+\begin{equation}
+D_{\kappa\lambda}=\sum_{i} c_{\kappa i}^* c_{\lambda i}.
+\end{equation}
+
+Zur Lösung der Roothaan-Hall-Gleichungen (\ref{roothaanhall}) ist ein iteratives \ac{scf}-Verfahren notwendig, da die Fockmatrix in Gleichung (\ref{fockmatrix}) selbst von der Dichtematrix und damit von den Orbitalkoeffizienten abhängt. Die resultierende Hartree-Fock-Energie ist nicht gleich der Summe der Orbitalenergien, sondern gegeben durch
+
+
+\begin{equation}
+\begin{aligned}
+E_{\textrm{HF}}&=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(2h_{\mu\nu}+J_{\mu\nu}-\frac{1}{2} K_{\mu\nu})=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(2h_{\mu\nu}+G_{\mu\nu})\\
+&=\sum_i\varepsilon_i-\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(J_{\mu\nu}-\frac{1}{2}K_{\mu\nu}).
+\end{aligned}
+\label{hfenergie}
+\end{equation}
+
+\section{Die Dichtefunktionaltheorie}
+Der grundsätzliche Gedanke der \ac{dft} ist es, im Vergleich zur auf einer Wellenfunktion basierenden Hartree-Fock-Theorie, alle Informationen aus der Elektronendichte zu erhalten. Werden zur Beschreibung der Wellenfunktion noch $3N$ Ortskoordinaten und $N$ Spinkoordinaten benötigt, so hängt Elektronendichte lediglich von den drei Raumkoordinaten ab. Hohenberg und Kohn\supercite{hohenberg1964inhomogeneous} haben mit ihrem ersten Theorem grundsätzlich bewiesen, dass durch die Elektronendichte $\rho$ alle Informationen über eine Molekül, wie beispielsweise die Grundzustandsenergie, erhalten werden können. Der genaue Zusammenhang zwischen der Energie und der Elektronendichte, welche durch sogenannte Austauschkorrelationsfunktionale miteinander verknüpft werden ist jedoch nicht genau bekannt. Das Entwickeln und weiter Verbessern dieser Funktionale ist daher nach wie vor ein aktuelles Forschungsgebiet.  
+
+Die Grundzustandsenergie $E_0$ kann nach Hohenberg und Kohn durch ein Funktional der Grundzustandselektronendichte $\rho_0$ berechnet werden
+
+\begin{equation}
+	E[\rho_0]=\int\rho_0(\vec{r})V_{\textrm{ext}}(\vec{r})d\vec{r}+F^{\textrm{HK}}[\rho_0].
+\end{equation}
+
+Das darin enthaltene Hohenberg-Kohn-Funktional $F^{\textrm{HK}}[\rho_0]$ setzt sich aus dem Term für die kinetische Energie und der abstoßenden Elekron-Elektron-Wechselwirkung zusammen
+
+\begin{equation}
+	F^{\textrm{HK}}[\rho_0]=T[\rho_0]+V_{ee}[\rho_0].
+\end{equation}
+
+Für ein Molekül ist das externe Potential $V_{\textrm{ext}}$ beispielsweise durch die Kern-Elektron-Wechselwirkung gegeben und damit $V_{\textrm{ext}}=V_{\textrm{Ke}}$. Die Elektron-Elektron-Wechselwirkung lässt sich analog zur Hartree-Fock-Theorie in den Klassischen Coulombanteil $J[\rho_0]$ und den nichtklassischen Austauschkorrelationsbeitrag aufspalten. Wie anhand des Namens bereits zu erkennen ist, ist darin jedoch auch die Elektronenkorrelation mit berücksichtigt, welche in der Hartree-Fock-Theorie vollständig vernachlässigt wird. Der Ausdruck für die Coulombwechselwirkung ist bekannt, die Funktionale zur Berechnung kinetischen Energie und des Austauschkorrelationsbeitrags in Abhängigkeit der Elektronendichte sind hingegen unbekannt. 
+
+\begin{equation}
+\begin{aligned}
+	F^{\textrm{HK}}[\rho_0]&=T[\rho_0]+\frac{1}{2}\int\int \frac{\rho_0(\vec{r}_1)\rho_0(\vec{r}_2)}{r_{12}}d\vec{r}_1d\vec{r}_2+E_{\textrm{xc}}[\rho_0]\\
+	&= \underbrace{T[\rho_0]}_{\textrm{unbekannt}} + \underbrace{J[\rho_0]}_{\textrm{bekannt}} + \underbrace{E_{\textrm{xc}}[\rho_0]}_{\textrm{unbekannt}},
+\end{aligned}
+\end{equation}
+
+Das zweite Hohenberg-Kohn-Theorem beweist, dass das Variationsprinzip für eine beliebige Dichte $\tilde{\rho}$ Gültigkeit besitzt
+
+\begin{equation}
+	E_{0}=E[\rho_{0}] \le E[\tilde\rho]
+\end{equation}
+für eine beliebige Dichte $\tilde{\rho}$ Gültigkeit besitzt, solange diese dichte die Eigenschaft erfüllt, dass sie aufintegriert die Gesamtelektronenzahl liefert. Unter der Kenntnis von $T[\rho]$ und $E_{\textrm{xc}}[\rho_0]$ könnte die Dichte folglich so variiert werden, bis sich die berechnete Energie weit genug an die exakte Energie angenähert hat. Da die entsprechenden Funktionale für wechselwirkende Elektronen jedoch nicht bekannt sind, muss auf $F^{\textrm{HK}}[\rho]$ angenähert werden. Insbesondere die exakte Beschreibung der kinetischen Energie nur durch die Elektronendichte hat sich als schwierig herausgestellt. Kohn und Sham\supercite{kohn1965self} haben daraufhin ein Verfahren entwickelt, bei dem die Orbitale wieder in eingeführt werden. Die kinetische Energie wird dabei in einen Beitrag aufgeteilt, welcher exakt berechnet werden kann und einen Korrekturterm, welcher in das Austauschkorrelationsfunktional mit aufgenommen wird. Für nicht wechselwirkende Elektronen ist die exakte Wellenfunktion durch eine Slaterdeterminante gegeben, welche aus den Einelektronen-Molekülorbitalen $\phi_i$ aufgebaut ist. Die für dieses System exakt zu berechnende kinetische Energie ist damit
+
+\begin{equation}
+T_{\textrm S}[\rho] = \sum_i^N\langle\phi_i|-\frac{1}{2}\nabla^2|\phi_i\rangle.
+\label{kinenergie}
+\end{equation}
+
+Das tiefgestellte S weist in diesem Fall darauf hin, dass die kinetische Energie für die Wellenfunktion in Form einer Slaterdeterminante berechnet wird. Die zentrale Größe, die Elektronendichte, ist gegeben durch
+
+\begin{equation}
+\rho(\vec{r}) = \sum_i^N\sum_{\sigma}|\phi_i(\vec{r},\sigma)|^2.
+\end{equation}
+
+Für nicht wechselwirkende Elektronen wäre der Ausdruck für die kinetische Energie $T_{\textrm S}[\rho]$ exakt, für reale Systeme stellt sie bereits eine gute Näherung dar. Der geringe Unterschied zur exakten kinetischen Energie wird, wie oben erwähnt, im Austauschkorrelationsfunktional mit aufgenommen. Die Gesamtenergie innerhalb des Kohn-Sham-Verfahrens ist demnach
+
+\begin{equation}
+E[\rho] = T_{\textrm S}[\rho] + V_{Ne}[\rho]+J[\rho]+E_{\textrm{xc}}[\rho].
+\end{equation}
+
+Durch Bilden der Differenz zwischen der exakten Energie und der Kohn-Sham Energie lässt sich das Austauschkorrelationsfunktional definieren
+
+\begin{equation}
+E_{\textrm{xc}}[\rho] = T[\rho]-T_{\textrm S}[\rho]+V_{ee}[\rho]-J[\rho].
+\end{equation}
+
+Die Minimierung der Energie durch Anwendung des Variationsprinzips führt zu den Kohn-Sham-Gleichungen
+
+\begin{equation}
+\hat{h}^{\textrm{KS}}\left|\phi_i^{\textrm{KS}}\right\rangle=\varepsilon_i\left|\phi_i^{\textrm{KS}}\right\rangle.
+\end{equation}
+mit dem Kohn-Sham-Operator $\hat{h}^{\textrm{KS}}$
+\begin{equation}
+\hat{h}^{\textrm{KS}} = -\frac{1}{2}\nabla^2+V_{\textrm{eff}}(\vec{r}).
+\end{equation}
+
+Das effektive Potential $V_{\textrm{eff}}(\vec{r})$
+
+\begin{equation}
+V_{\textrm{eff}}(\vec{r}_1) = V_{\textrm{ext}}(\vec{r}_1)+\int\frac{\rho(\vec{r}_2)}{r_{12}}d\vec{r}_2 + V_{\textrm{xc}}(\vec{r}_1)
+\end{equation}
+
+setzt sich aus dem externen Potential, dem Elektron-Elektron-Coulombpotential und dem Austauschkorrelationspotential $V_{\textrm{xc}}(\vec{r})$ zusammen. Letzteres wird durch die Funktionalableitung von $E_{\textrm{xc}}[\rho(\vec{r})]$ nach $\rho(\vec{r})$ erhalten
+
+\begin{equation}\label{funktionalableitung}
+V_{\textrm{xc}}(\vec{r}) = \frac{\delta E_{\textrm{xc}}[\rho(\vec{r})]}{\delta \rho(\vec{r})}.
+\end{equation}
+
+Im Vergleich zum Hartree-Fock-Verfahren hat die Wiedereinführung der Orbitale zur Folge, dass lediglich der Austauschoperator $\hat{K}$ durch ein von der Elektronendichte abhängiges Austauschkorrelationsfunktional $E_{\textrm{xc}}[\rho(\vec{r})]$ ersetzt werden muss. Alle weiteren Beiträge können analog zum Hartree-Fock-Verfahren berechnet werden. In einem bereits bestehenden Hartree-Fock-Programm müssen daher nur die Austauschmatrixelemente $K_{\mu\nu}$ in der Fockmatrix durch die Austauschkorrelationsmatrixelemente $Y_{\mu\nu}$ 
+
+\begin{equation}
+Y_{\mu\nu}=\left\langle\chi_\mu\vert V_{\textrm{xc}}(\vec{r})\vert\chi_\nu\right\rangle
+\end{equation}
+
+ersetzt werden. Die Gesamtenergie im Kohn-Sham-Formalismus resultierende Gesamtenergie ist analog zur Gleichung (\ref{hfenergie})
+
+\begin{equation}
+E_{\textrm{DFT}}=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(2h_{\mu\nu}+J_{\mu\nu})+E_{\textrm{xc}}[\rho(\vec{r})].
+\label{dftenergie}
+\end{equation}
+
+Mit der Kenntnis von $E_{\textrm{xc}}[\rho(\vec{r})]$ wäre dieser Ausdruck exakt. Das Austauschkorrelationsfunktional muss jedoch genähert werden, da $E_{\textrm{xc}}[\rho(\vec{r})]$ nicht bekannt ist. Üblicherweise wird $E_{\textrm{xc}}[\rho(\vec{r})]$ dafür in einen Austauschbeitrag $E_{\textrm{x}}[\rho(\vec{r})]$ und einen Korrelationsbeitrag $E_{\textrm{c}}[\rho(\vec{r})]$ zerlegt
+
+\begin{equation}
+E_{\textrm{xc}}[\rho(\vec{r})] = E_{\textrm{x}}[\rho(\vec{r})] + E_{\textrm{c}}[\rho(\vec{r})].
+\end{equation}
+
+Die einfachste Funktionalen gehören zur \ac{lda}. Diese Funktionale hängen lediglich von der Elektronendichte ab. Eine Verbesserung der \ac{lda}-Funktionale stellen die zur \ac{gga} gehörenden Funktionale dar. Sie beinhalten neben der Elektronendichte zusätzlich auch den Gradienten $\nabla\rho(\vec{r})$ der Elektronendichte. Werden neben der ersten Ableitung noch weitere Ableitungen der Elektronendichte mit einbezogen, so wird von \ac{mgga}-Funktionalen gesprochen. Die darin enthaltene zweite Ableitung der Elektronendichte wird auch als kinetische Energiedichte bezeichnet. Weiterhin haben sich sogenannte Hybridfunktionale als vorteilhaft herausgestellt, bei welchen ein gewisser Anteil des exakten Hartree-Fock-Austauschs beigemischt wird.
+
+\bigskip
+\textcolor{myred}{Für ein Funktional der Form\supercite{treutlerphdthesis}}
+
+\begin{equation}
+ F[x(\vec{r})]=\int f(\vec{r},x(\vec{r}),\nabla x(\vec{r}),\nabla^2 x(\vec{r}),\dotsc,\nabla^n x(\vec{r}))\diff \vec{r}
+\end{equation}
+
+lautet die allgemeine Formel für die Funktionalableitung, wie sie beispielsweise in Gleichung (\ref{funktionalableitung}) gebildet wird,
+
+\begin{equation}
+  \frac{\partial F[x(\vec{r})]}{\partial x(\vec{r})}=\frac{\partial f}{\partial x(\vec{r})}-\nabla\left(\frac{\partial f}{\partial \nabla x(\vec{r})}\right)+\dotsc+(-1)^n\nabla^n\left(\frac{\partial f}{\partial\nabla^n x(\vec{r})}\right).
+\end{equation}
+
+Üblicherweise hängt das Austauschkorrelationsfunktional von den Elektronendichten $\rho_\alpha$ und $\rho_\beta$ sowie deren Gradienten $\nabla \rho_\alpha$ und $\nabla \rho_\beta$ (\ac{lda} bzw. \ac{gga}) ab
+
+\begin{equation}
+  E_{\textrm{xc}}=\int f\left(\rho_\alpha,\rho_\beta,\gamma_{\alpha\alpha},\gamma_{\beta\beta},\gamma_{\alpha\beta}\right),
+\end{equation}
+mit 
+\begin{equation}
+\gamma_{\alpha\alpha}=\vert\nabla\rho_\alpha\vert^2,\qquad\gamma_{\beta\beta}=\vert\nabla\rho_\beta\vert^2,\qquad\gamma_{\alpha\beta}=\nabla\rho_\alpha\nabla\rho_\beta.
+\end{equation}
+
+Das Austauschkorrelationspotential $V_{\textrm{xc}}^\alpha(\vec{r})$ aus Gleichung (\ref{funktionalableitung}) erhält damit die Form
+
+\begin{equation}
+  V_{\textrm{xc}}^\alpha(\vec{r})=\frac{\partial E_{\textrm{xc}}}{\partial \rho_\alpha}=\frac{\partial f}{\partial\rho_\alpha}-2\nabla\left(\frac{\partial f}{\partial \gamma_{\alpha\alpha}}\nabla\rho_\alpha\right)-\nabla\left(\frac{\partial f}{\partial \gamma_{\alpha\beta}}\nabla\rho_\beta\right).
+\end{equation}
+
+Die Austauschkorrelationsmatrixelemente $Y_{\mu\nu}$ sind damit gegeben durch
+\begin{equation}
+\begin{aligned}
+  Y_{\mu\nu}&=\langle\chi_\mu\vert V_{\textrm{xc}}(\vec{r})\vert\chi_\nu\rangle\\
+  &=\int\chi_\mu\chi_\nu\left[\frac{\partial f}{\partial\rho_\alpha}-2\nabla\left(\frac{\partial f}{\partial \gamma_{\alpha\alpha}}\nabla\rho_\alpha\right)-\nabla\left(\frac{\partial f}{\partial \gamma_{\alpha\beta}}\nabla\rho_\beta\right)\right]\diff \vec{r}.
+\end{aligned}
+\end{equation}
+
+Die dafür benötigten Terme lauten im Rahmen der Basissatzentwicklung
+
+\begin{equation}
+ \rho_\sigma=\sum_{\mu\nu}D^\sigma_{\mu\nu}\chi_\mu\chi_\nu, \qquad \nabla\rho_\sigma=\sum_{\mu\nu}D^\sigma_{\mu\nu}\nabla\chi_\mu\chi_\nu.
+\end{equation}
+
+Mit partieller Integration wird letzlich der finale Ausdruck für die Matrixelemente erhalten
+
+\begin{equation}
+Y_{\mu\nu}=\int\left[\frac{\partial f}{\partial\rho_\alpha}\chi_\mu\chi_\nu+\left(2\frac{\partial f}{\partial \gamma_{\alpha\alpha}}\nabla\rho_\alpha+\frac{\partial f}{\partial \gamma_{\alpha\beta}}\nabla\rho_\beta\right)\nabla(\chi_\mu\chi_\nu)\right]\diff \vec{r}.
+\end{equation}
+Diese Integrale sind analytisch nicht mehr zu lösen, wodurch auf eine numerische Integration auf einem Gitter zurückgegriffen werden muss.
+
+\bigskip
+Im aktuellen und vorherigen Kapitel wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und zum Erhalt der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse - beispielsweise durch die Vernachlässigung der Elektronenkorrelation - findet das Hartree-Fock-Verfahren jedoch kaum Verwendung für aktuelle Fragestellungen in der Quantenchemie. Sogenannte post-Hartree-Fock-Verfahren wie beispielsweise \ac{mp2} oder \ac{cc} liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert dahingegen oft ausreichend genau Ergebnisse in einer akzeptablen Zeit. Ein Großteil aller Anwendungsrechnungen in der Quantenchemie wird daher mit der \ac{dft} durchgeführt. 
+
+\section{Moleküle im Magnetfeld}
+Nachdem die Wellenfunktion und die Energie bekannt ist, lassen sich molekulare Eigenschaften üblicherweise als Ableitung der Energie erhalten. Eigenschaften von Molekülen, die durch das Anlegen eines externen magnetischen Feldes zustande kommen, lassen sich daher als Ableitung der Energie unter anderem nach dem externen Magnetfeld berechnen. Ist das angelegte Feld schwach, so kann dieses Feld als Störung der Grundzustandswellenfunktion angesehen und durch einen störungstheoretischen Ansatz berechnet werden. Die Wellenfunktion und die elektronische Energie lassen sich dann in Abhängigkeit vom externen Magnetfeld $\vec{B}$ und den Kerndipolmomenten der jeweiligen Kerne $\vec{\mu}_K$ entwickeln:\supercite{ditchfield1974self} 
+\begin{equation}
+\begin{aligned}
+\Psi(\vec{\mu}_K,\vec{B})=&\Psi^{(0)}+\sum_{\alpha K}\left(\frac{\partial\Psi(\vec{\mu}_K,\vec{B})}{\partial \mu_{K_\alpha}}\mu_{K_\alpha}\right)_{\vec{\mu}_K=\vec{B}=0}+\sum_\beta\left(\frac{\partial\Psi(\vec{\mu}_K,\vec{B})}{\partial B_\beta}B_\beta\right)_{\vec{\mu}_K=\vec{B}=0}+\cdots\\
+=&\Psi^{(0)}+\sum_{\alpha K}\Psi_{\mu_{K_\alpha}}^{(1,0)}\mu_{K_\alpha}+\sum_\beta\Psi_{B_\beta}^{(0,1)}B_\beta+\cdots
+\end{aligned}
+\end{equation}
+und analog
+
+\begin{equation}\label{eq:evonbmu0}
+\begin{aligned}
+E(\vec{\mu}_K,\vec{B})=&E^{(0)}+\sum_{\alpha K} E^{(1,0)}_{\mu_{K_\alpha}} \mu_{K_\alpha}+\sum_\beta E^{(0,1)}_{B_\beta} B_\beta+\sum_{\alpha\beta K} E^{(1,1)}_{\mu_{K_\alpha}B_\beta} \mu_{K_\alpha}B_\beta\\
+&+\frac{1}{2}\sum_{\alpha\beta K} E^{(2,0)}_{\mu_{K_\alpha}\mu_{K_\beta}}\mu_{K_\alpha}\mu_{K_\beta}+\frac{1}{2}\sum_{\alpha\beta} E^{(0,2)}_{B_\alpha B_\beta}B_\alpha B_\beta.
+\end{aligned}
+\end{equation}
+
+Ein alternativer Ausdruck für die Energie ist
+
+\begin{equation}\label{eq:evonbmu}
+ E(\vec{\mu}_K,\vec{B})=E_0-\sum_\alpha \gamma_\alpha B_\alpha-\sum_{\alpha K}\mu_{K_\alpha}B_\alpha-\frac{1}{2}\sum_{\alpha\beta}B_\alpha\chi_{\alpha\beta} B_\beta+\sum_{\alpha\beta K}\mu_{K_\alpha}\sigma_{K_\alpha \beta}B_\beta+\cdots, 
+\end{equation}
+
+wobei $\gamma_\alpha$ das permanente magnetische Moment des Moleküls ist, welches für geschlossenschalige Moleküle verschwindet. Der dritte Term beschreibt die direkte Wechselwirkung der Kerndipolmomente mit dem externen Magnetfeld. Die $\chi_{\alpha\beta}$ sind die Elemente des molekularen diamagnetischen Suszeptibilitätstensors $\boldsymbol{\chi}$. Durch das externe Magnetfeld werden elektrische Ströme induziert, welche über 
+
+\begin{equation}
+\sum_{\beta}\chi_{\alpha\beta} B_\beta
+\end{equation} 
+
+das gesamte magnetische Moment in $\alpha$-Richtung ergeben. Damit beschreibt der vierte Term die diamagnetische Polarisierbarkeit des Moleküls. Aufgrund dieser Ströme wird an den Orten der Kerne ein sekundäres Magnetfeld erzeugt. In $\alpha$-Richtung ist dieses Magnetfeld
+
+\begin{equation}\label{eq:sekbfeld}
+\sum_{\beta}\sigma_{K_\alpha\beta} B_\beta,
+\end{equation}
+mit den Komponenten des Abschirmungstensors $\sigma_{K_\alpha\beta}$.
+
+%Beispielsweise das magnetische Dipolmoment $\vec{\mu}^{\text{mag}}$ lässt sich damit als Ableitung der Energie nach dem externen magnetischen Feld schreiben
+%
+%\begin{equation}
+%  \mu_\beta^{\text{mag}}=\frac{\partial E}{\partial B_\beta}.
+%\end{equation}
+
+	\subsection{Berechnung von NMR Abschirmkonstanten}\label{theo:nmr}
+	Eines der wichtigsten analytischen Verfahren - beispielsweise zur Strukturaufklärung - stellt die \ac{nmr}-Spektroskopie dar. Die \ac{nmr}-Spektroskopie basiert auf der Resonanz derjenigen Kerne $K$ welche einen Kernspin $S_K$ von ungleich 0 besitzen. Wird ein solcher Kern einem äußeren Magnetfeld ausgesetzt, so kommt es zur Aufspaltung der Kernenergieniveaus
+\begin{equation}\label{eq:kernniveau}
+  E_{m_K}=g_Km_K\mu_{\textrm{nuc}}B,
+\end{equation}	
+wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ annehmen. $\mu_{\textrm{nuc}}$ ist das Kernmagneton welches den Wert $\mu_{\textrm{nuc}}=\frac{e\hbar}{2m_p}$ besitzt, mit der Protonenmasse $m_p$ und $g_K$ ist der g-Faktor des entsprechenden Kerns. Wie aus Gleichung (\ref{eq:kernniveau}) zu erkennen ist, wird für die Anregung nur sehr wenig Energie benötigt, im Verlgeich zu beispielsweise Schwingungs- oder gar elektronischen Anregungen. Nicht das externe Magnetfeld, sondern das am jeweiligen Kern lokale Mangetfeld $\vec{B}_K$, bestimmt dabei die Resonanzfrequenz. Dieses setzt sich aus dem externen Magnetfeld und aus dem durch elektrische Ströme induzierten sekundären Magnetfeld aus Gleichung (\ref{eq:sekbfeld}) zusammen
+
+\begin{equation}
+\vec{B}_K=\vec{B}-\boldsymbol{\sigma}_K\vec{B}.
+\end{equation}
+
+
+	 Die in 1D-\ac{nmr}-Experimenten in Lösung erhaltene isotrope chemische Verschiebung eines Kerns $K$ lässt sich aus der Differenz zweier chemischer Abschirmkonstanten $\sigma_K$ berechnen. Diese Abschirmkonstanten werden durch Mittelwertbildung der Diagonalelemente des chemischen Abschirmungstensors 
+	\begin{equation}
+	  \sigma_K=\frac{1}{3}\Tr \boldsymbol{\sigma}_K
+	\end{equation}	 
+	 erhalten. Im Gegensatz zu den einzelnen Elementen von $\boldsymbol{\sigma}_K$ ist die Spur rotationsinvariant. Eine weitere messbare und invariante Größe ist die Anisotropie $\Delta\boldsymbol{\sigma}_K$
+	 
+	 \begin{equation}
+	 \Delta\boldsymbol{\sigma}_K=\sqrt{\frac{3}{2}\left(\frac{1}{4}\sum_{\alpha\beta}(\sigma_{K_\alpha\beta}+\sigma_{K_{\beta\alpha}})-3\sigma_K^2\right)}.
+	 \end{equation}
+	 
+	  Wie durch Vergleich der Gleichungen (\ref{eq:evonbmu0}) und (\ref{eq:evonbmu}) zu sehen ist, sind die einzelnen Elemente des Abschirmungstensors durch die zweite Ableitung der Energie nach dem Kerndipolmoment des Kerns $\vec{\mu}_K$ und nach dem externen magnetischen Feld $\vec{B}$ gegeben
+	
+	\begin{equation}\label{eq:abschirmugstensor}
+	\sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E(\vec{\mu}_K,\vec{B})}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}.
+	\end{equation}
+	Die Energie in Abhängigkeit von $\vec{\mu}_K$ und $\vec{B}$ wird durch Lösen der modifizierten Schrödingergleichung
+	
+	\begin{equation}
+	\hat{H}(\vec{\mu}_K,\vec{B})\Psi(\vec{\mu}_K,\vec{B})=E(\vec{\mu}_K,\vec{B})\Psi(\vec{\mu}_K,\vec{B})
+	\end{equation}
+	erhalten. Der Hamiltonoperator in Abhängigkeit $\vec{\mu}_K$ und $\vec{B}$ von wird in Gleichung (\ref{eq:hvonbmu}) definiert. 
+	 
+	
+	\bigskip
+	Die nachfolgenden Schritte der \ac{scf}-Störungstheorie, in welcher die notwendigen Gleichungen für die Störung durch ein Magnetfeld hergeleitet werden, sind im Wesentlichen der Publikation von Dichtfield\supercite{ditchfield1974self} bzw. der Diplomarbeit von Baron\supercite{baron1991} entnommen. Das äußere Magnetfeld wechselwirkt mit den magnetischen Momenten, welche durch die Bewegung der geladenen Elektronen erzeugt werden und wirkt sich daher auf die kinetische Energie aus. Dies hat zur Folge, dass der Impulsoperator $\vec{p}=\iu\vec{\nabla}$ in Gleichung (\ref{eq:elhamilton}) durch den generalisierten Impulsoperator
+	
+	\begin{equation}
+	\vec{\pi}=\vec{p}+\frac{1}{c}\vec{A}_{\textrm{tot}}(\vec{r})
+	\end{equation}
+	ersetzt werden muss. Das Magnetfeld $\vec{B}_{\textrm{tot}}$ ist dabei durch die Rotation des Vektorpotentials
+	\begin{equation}
+	\vec{B}=\nabla \times \vec{A}_{\textrm{tot}}
+	\end{equation}
+	gegeben. Das Vektorpotential beinhaltet dabei das Potential $\vec{A}$ des externen Magnetfelds $\vec{B}$ sowie die Potentiale $\vec{A}_{\mu_K}$ welche durch die Kerndipolmomente verursacht werden. 	 
+	
+	\begin{equation}\label{eq:atot}
+	 \vec{A}_{\textrm{tot}}(\vec{r}_i)=\vec{A}(\vec{r}_i)+\sum_K\vec{A}_{\mu_K}(\vec{r}_i)=\frac{1}{2}\vec{B}\times \vec{r}_i +\sum_K\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}
+	\end{equation}
+	
+	Zur Berücksichtigung der Störung durch ein Magnetfeld wird entsprechend im Hamiltonoperator der Impulsoperator $\vec{p}$ durch den generalisierten Impulsoperator $\vec{\pi}$ ausgetauscht. Aus $\hat{T}_\textrm{e}$ in Gleichung (\ref{eq:elhamilton}) wird demzufolge
+	\begin{equation}\label{eq:tstör}
+	\hat{T}_\textrm{e}(\vec{\mu}_K,\vec{B})=\frac{1}{2}\sum_{i=1}^N\vec{\pi_i}^2=\frac{1}{2}\sum_{i=1}^N\left(\vec{p}_i+\frac{1}{2c}\vec{B}\times \vec{r}_i +\frac{1}{c}\sum_K\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}\right)^2.
+	\end{equation}
+	
+	Das Ausmultiplizieren und Umsortieren nach Termen nullter, erster und zweiter Ordnung von $\pi_i^2$ liefert
+	
+	\begin{equation}\label{pisquare}
+	\begin{aligned}
+	\pi_i^2=&\vec{p}_i^{\;2}+\frac{2}{c}\sum_K\frac{(\vec{r}_{iK}\times\vec{p}_{i})\cdot\vec{\mu}_K}{r_{iK}^3}+\frac{1}{c}(\vec{r_i}\times \vec{p}_i)\cdot \vec{B}+ \frac{1}{c^2}\sum_K\left[\left(\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}\right)\cdot\left(\vec{B}\times\vec{r}_i\right)\right]\\
+	&+\frac{1}{c^2}\sum_{KL}\left[\left(\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}\right)\cdot\left(\frac{\vec{\mu}_L\times\vec{r}_{iL}}{r_{iL}^3}\right)\right]+\frac{1}{4c^2}(\vec{B}\times\vec{r}_i)\cdot(\vec{B}\times\vec{r}_i) \\
+	=&\vec{p}_i^{\;2}+\sum_{\alpha K}\underbrace{\frac{2}{c}\frac{(\vec{r}_{iK}\times\vec{p}_{i})_\alpha}{r_{iK}^3}}_{=\hat{T}^{\mu_{K_\alpha}}}\mu_{K_\alpha}+\sum_\beta\underbrace{\frac{1}{c}(\vec{r_i}\times \vec{p}_i)_\beta}_{=\hat{T}^{B_\beta}} B_\beta+\sum_{\alpha\beta K} \underbrace{\frac{1}{c^2}\frac{\vec{r}_{iK}\vec{r}_{i}\delta_{\alpha\beta}-r_{iK\alpha}r_{i\beta}}{r_{iK}^3}}_{=\hat{T}^{\mu_{K_\alpha}B_\beta}}\mu_{K_\alpha}B_\beta\\
+	&+\sum_{\alpha\beta KL}\underbrace{\frac{1}{c^2}\frac{\vec{r}_i^{\; 2}\delta_{\alpha\beta}-r_{iK_\alpha}r_{iL_\beta}}{r_{iK}^3r_{iL}^3}}_{=\hat{T}^{\mu_{K_\alpha}\mu_{L_\beta}}}\mu_{K_\alpha}\mu_{J_\beta}+\sum_{\alpha\beta}\underbrace{\frac{1}{4c^2}\left(\vec{r}_i^{\; 2}\delta_{\alpha\beta}-r_{i\alpha}r_{i_\beta}\right)}_{=\hat{T}^{B_\alpha B_\beta}}B_\alpha B_\beta.
+	\end{aligned}
+	\end{equation}
+	Der vollständige Ausdruck für den gestörten elektronischen Hamiltonoperator $\hat{H}(\vec{\mu}_K,\vec{B})$ setzt sich dann aus den Termen $\hat{V}_{\textrm{Ke}}$ und $\hat{V}_{\textrm{ee}}$ aus Gleichung (\ref{eq:elhamilton}) sowie der kinetischen Energie $\hat{T}_\textrm{e}(\vec{\mu}_K,\vec{B})$ aus Gleichung (\ref{eq:tstör}) mit den entsprechenden ausdrücken in Gleichung (\ref{pisquare}) zusammen
+	\begin{equation}\label{eq:hvonbmu}
+	\begin{aligned}
+	\hat{H}(\vec{\mu}_K,\vec{B})=&\hat{V}_{\textrm{Ke}}+\hat{V}_{\textrm{ee}}+\hat{T}_\textrm{e}(\vec{\mu}_K,\vec{B})\\
+	=&\hat{V}_{\textrm{Ke}}+\hat{V}_{\textrm{ee}}+\frac{1}{2}\sum_{i=1}^N\left[\vec{p}_i^{\; 2}+\sum_{\alpha K}\hat{T}^{\mu_{K_\alpha}}\mu_{K_\alpha}+\sum_\beta\hat{T}^{B_\beta}B_\beta\right. \\
+	&+\left.\sum_{\alpha\beta K}\hat{T}^{\mu_{K_\alpha}B_\beta}\mu_{K_\alpha}B_\beta+\sum_{\alpha\beta KL}\hat{T}^{\mu_{K_\alpha}\mu_{L_\beta}}\mu_{K_\alpha}\mu_{J_\beta}+\sum_{\alpha\beta}\hat{T}^{B_\alpha B_\beta}B_\alpha B_\beta\right].
+	\end{aligned}
+	\end{equation}
+	Der Impulsoperator $\vec{p}=\iu\vec{\nabla}$ geht in die Terme erster Ordnung direkt ein, wodurch diese rein imaginär werden. Alle weiteren Terme sind rein reel. Dies führt zunächst dazu, dass die Gleichungen komplex werden. Jedoch kann die komplexe Arithmetik durch kluge Implementierung, wie beim vorliegenden Modul \texttt{mpshift} geschehen, vermieden werden. 
+	
+	Beim Betrachten des Vektorpotentials in Gleichung (\ref{eq:atot}) fällt weiterhin auf, dass die Elektronenpositionen über den Term $\frac{1}{2}\vec{B}\times
+	\vec{r}$ explizit und nicht nur als Differenzen mit anderen Ortsvektoren, eingehen. Dies hat zur Folge, dass die Berechnungen nur noch für eine vollständige Basis von der Wahl es Koordinatensysemursprungs unabhängig sind. Unvollständige Basissätze konvergieren zwar langsam mit zunehmender Größe zum invarianten Ergebnis, müssten jedoch bereits so groß sein, dass sie für größere Systeme nicht mehr rentabel sind. Die Basisfunktionen wurden daraufhin von London\supercite{london1937theorie} dahingehend verändert, dass sie selbst vom Magnetfeld abhängig sind. Zur Gewährleistung Eichursprung invarianter Ergebnisse bei der Berechnung der mangetischen Response werden daher im Modul \texttt{mpshift} diese sogenannten Londonorbitale oder \acp{giao}\supercite{ditchfield1974self,london1937theorie} verwendet
+	\begin{equation}\label{eq:giao}
+	  \chi_\mu=\chi_\mu^{\vec{B}=0}\exp(-\lambda_\mu)
+	\end{equation}
+	\begin{equation}
+	  \lambda_\mu=\frac{\iu}{2c}\left[(\vec{R}_\mu-\vec{R}_E)\times \vec{r}\right]\cdot \vec{B}.
+  	\end{equation}
+  	Damit ist das Basissatzlimit bereits für sehr kleine Basissätze erreicht\supercite{van2012use}, was die Berechnung für große Moleküle möglich macht. Die $\chi_\mu^{\vec{B}=0}$ entsprechen den gewöhnlichen, atomzentrierten Basisfunktionen, $\vec{R}_\mu$ ist der Ortsvektor zum Zentrum der entsprechenden Funktion und $\vec{R}_E$ ist der gewählte Eichursprung. Die Wahl des Eichursprungs erfolgt willkürlich, üblicherweise wird der Eichursprung jedoch in den kartesischen Ursprung gelegt. 
+  	
+  	\bigskip
+  	Durch den störungstheoretischen Ansatz und durch die Magnetfeldabhängigkeit der Basisfunktionen werden folglich auch alle Größen in der Gleichung für die Energie (Gleichung (\ref{hfenergie})) abhängig vom Magnetfeld und den Kernmomenten
+  	\begin{equation}\label{eq:evonmub}
+  	  E(\vec{\mu}_K,\vec{B})=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(\vec{\mu}_K,\vec{B})(2h_{\mu\nu}(\vec{\mu}_K,\vec{B})+G_{\mu\nu}(\vec{\mu}_K,\vec{B})).
+	\end{equation}  	 
+  	Zur Bewahrung der Übersichtlichkeit in den Formel wird im weiteren Verlauf dieser Arbeit die explizite Abhängigkeit wieder weggelassen. 
+  	
+  	Um nun letztlich den Abschirmungstensor zu erhalten, muss die Energie aus Gleichung (\ref{eq:evonmub}), analog zu Gleichung (\ref{eq:abschirmugstensor}), nach den Kernmomenten und dem Magnetfeld differenziert werden. Wie später zu sehen sein wird, stellt insbesondere die Berechnung der gestörten Dichtematrix eine Herausforderung dar. Die Abhängigkeiten der Ein- und Zweielektronenoperatoren stellen zwar einen Mehraufwand dar, jedoch muss beim weiteren Herleiten der Gleichungen nur die Differenzierung nach dem Magnetfeld oder den Kernmomenten strikt durchgeführt werden. 
+  	Die gemischte Ableitung der Energie lässt sich effizienter berechnen, wenn zuerst die Differenzierung nach den Kernmomenten erfolgt\supercite{baron1991}. Daher wird zunächst
+  	
+  	\begin{equation}\label{eq:enachmu}
+%  	\begin{aligned}
+  	  \left.\frac{\partial E}{\partial\mu_{K_\alpha}}\right|_{\mu_K=0,\forall K}=E^{\mu_{K_\alpha}}=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}(2h_{\mu\nu}+G_{\mu\nu})+\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(2h_{\mu\nu}^{\mu_{K_\alpha}}+G_{\mu\nu}^{\mu_{K_\alpha}})
+%  	\end{aligned}  
+  	\end{equation}
+     berechnet. Da die Basisfunktionen jedoch nicht von den Kerndipolmomenten abhängen sind  
+     
+     \begin{equation}
+     \begin{aligned}
+       h_{\mu\nu}^{\mu_{K_\alpha}}=&\frac{\partial}{\partial \mu_{K_\alpha}}\left(\langle\chi_\mu\vert\hat{H}\vert\chi_\nu\rangle\right)_{\vec{\mu}_K=0}=\left\langle\chi_\mu\left\vert\left(\frac{\partial}{\partial \mu_{K_\alpha}}\hat{H}\right)_{\vec{\mu}_K=0}\right\vert\chi_\nu\right\rangle\\
+       =&\left\langle\chi_\mu\left\vert\frac{1}{2}\left(\hat{T}^{\mu_{K_\alpha}}+\sum_\beta\hat{T}^{\mu_{K_\alpha}B_\beta}B_\beta\right)\right\vert\chi_\nu\right\rangle
+     \end{aligned}
+     \end{equation}
+     und 
+     \begin{equation}
+      G_{\mu\nu}^{\mu_{K_\alpha}}= \frac{\partial}{\partial\mu_{K_\alpha}} \left(\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}\right)=\sum_{\kappa\lambda}D_{\kappa\lambda}^{\mu_{K_\alpha}}G_{\mu\nu\kappa\lambda}.
+     \end{equation}
+     Aufgrund der Symmetrie der Zweielektronenintegrale lassen sich diese so umformen, dass die Berechnung der $G_{\mu\nu}^{\mu_{K_\alpha}}$ vermieden werden kann. Es gilt
+     
+     \begin{equation}
+     \begin{aligned}
+     &\sum_{\mu\nu}D_{\mu\nu}G_{\mu\nu}^{\mu_{K_\alpha}}=\sum_{\mu\nu\kappa\lambda}D_{\mu\nu}D_{\kappa\lambda}\left[(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda)-\frac{1}{2}(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu)\right]\\
+     &=\sum_{\mu\nu\kappa\lambda}D_{\mu\nu}D_{\kappa\lambda}\left[(\chi_\kappa\chi_\lambda\vert\chi_\mu\chi_\nu)-\frac{1}{2}(\chi_\kappa\chi_\nu\vert\chi_\mu\chi_\lambda)\right]=\sum_{\kappa\lambda}D_{\kappa\lambda}^{\mu_{K_\alpha}}G_{\kappa\lambda}.
+     \end{aligned}
+     \end{equation}
+     Gleichung \ref{eq:enachmu} lässt sich damit umformen zu
+
+	\begin{equation}
+    \begin{aligned}
+	  E^{\mu_{K_\alpha}}=&\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}(2h_{\mu\nu}+G_{\mu\nu}+G_{\mu\nu})+\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}2h_{\mu\nu}^{\mu_{K_\alpha}}\\
+	  =&\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}F_{\mu\nu}+\sum_{\mu\nu}D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}}.
+    \end{aligned}
+	\end{equation}     
+     
+     Die nach den Kerndipolmomenten abgeleitete Dichtematrix $D_{\mu\nu}^{\mu_{K_\alpha}}$ ist
+     \begin{equation}
+     D_{\mu\nu}^{\mu_{K_\alpha}}=\frac{\partial}{\partial \mu_{K_\alpha}}D_{\mu\nu}=\frac{\partial}{\partial \mu_{K_\alpha}}\sum_i c_{\mu i}^*c_{\nu i}=\sum_i\left(c_{\mu i}^*c_{\nu i}^{\mu_{K_\alpha}}+\left(c_{\mu i}^{\mu_{K_\alpha}}\right)^*c_{\nu i}\right)
+     \end{equation}
+     
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+	 Die Ableitung der \acp{mo} nach einer äußeren Störung, hier also die Komponenten  eines externen magnetischen Felds $B_\beta$, lassen sich im Rahmen des \ac{cphf}-Formalismus schreiben als
+    \begin{equation}
+    \left(\frac{\partial \phi_i}{\partial B_\beta}\right)_{\vec{B}=0}=\phi_i^{B_\beta}=\sum_{\mu=1}^{N_{\text{BF}}}\left[c_{\mu i}\chi_\mu^{B_\beta}+\sum_{p=1}^{N_{\text{MO}}}c_{\mu p}U_{ip}^{B_\beta}\chi_\mu\right].
+	\end{equation}
+	Die Koeffizientenmatrix $U_{ip}^{B_\beta}$ beschreibt die Änderung der Molekülorbitale durch die Störung des äußeren Magnetischen Feldes $\vec{B}$. 
+     
+	\subsection{Die Berechnung von Ringströmen}
