@@ -4,19 +4,19 @@ Alle Einheiten sind in atomaren Einheiten (a.u.) zu verstehen, sofern es an den 
 Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen sind in \unit{ppm} angegeben. Die imagniäre Einheit wird immer als $\iu$ geschrieben um eine Verwechslung zu vermeiden.
  
 \bigskip
-Die in der Literatur gebräuchliche Notation für Indizes und Integrale soll im Folgenden kurz erläutert werden. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige Einelektronen-Wellenfunktionen und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $A,B,\dotsc$ werden zur Kennzeichnung der insgesamt $N_K$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen wodurch eine Verwechslung mit dem Elektronenspin - welcher ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der Kernzentrierten Basisfunktionen $\chi_mu$ und $\chi_nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
+Die in der Literatur gebräuchliche Notation für Indizes und Integrale soll im Folgenden kurz erläutert werden. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige Einelektronen-Wellenfunktionen und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $A,B,\dotsc$ werden zur Kennzeichnung der insgesamt $N_K$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen wodurch eine Verwechslung mit dem Elektronenspin - welcher ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der Kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
 \newpage
 Sollten Einelektronenintegrale nicht explizit angegeben sein, so gilt für sie die folgende Dirac-Notation:
 \begin{gather*}
-    \langle\mu\vert\nu\rangle=\langle\chi_\mu\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\chi_\mu(\vec{r})\Diff3\vec{r}\\
-    \langle\mu\vert\hat O\vert\nu\rangle=\langle\chi_\mu\vert\hat O\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\hat O\chi_\mu(\vec{r})\Diff3\vec{r}.
+	\langle\chi_\mu\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\chi_\mu(\vec{r})\Diff3\vec{r}\\
+	\langle\chi_\mu\vert\hat O\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\hat O\chi_\mu(\vec{r})\Diff3\vec{r}.
 \end{gather*}
 
 Im Gegensatz dazu werden Zweielektronenintegrale in der Mulliken-Notation angegeben
 \begin{gather*}
-    \left(\mu\nu\vert\kappa\lambda\right)=\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)=\int\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
-    \left(\mu\nu\vert\vert\kappa\lambda\right)=\left(\mu\nu\vert\kappa\lambda\right)-\left(\mu\lambda\vert\kappa\nu\right)\\
-    \left(\overline{\mu\nu}\vert\kappa\lambda\right)=\left(\left.\frac{\partial}{\partial B_\alpha}\mu\nu\right|\kappa\lambda\right)_{\vec{B} = 0}.
+	\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)=\int\int\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
+    \left(\chi_\mu\chi_\nu\vert\vert\chi_\kappa\chi_\lambda\right)=\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)-\frac{1}{2}\left(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu\right)\\
+    \left(\left.\overline{\chi_\mu\chi_\nu}\right\vert\chi_\kappa^{\vec{B}=0 }\chi_\lambda^{\vec{B}=0}\right)_\beta=\left(\left.\frac{\partial}{\partial B_\beta}\chi_\mu\chi_\nu\right|\chi_\kappa\chi_\lambda\right)_{\vec{B} = 0}.
 \end{gather*}
 
 Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wiedergegeben. Somit ist $S^{B_\alpha}_{\mu\nu}$ das nach der $\alpha$-Komponente des Mangetfelds abgeleitete Überlappungsintegral der beiden Basisfunktionen $\chi_\mu$ und $\chi_\nu$
@@ -441,15 +441,15 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
   	
   	\begin{equation}\label{eq:enachmu}
 %  	\begin{aligned}
-  	  E^{\mu_{K_\alpha}}=\left.\frac{\partial E}{\partial\mu_{K_\alpha}}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu})+\sum_{\mu\nu}D_{\mu\nu}(h_{\mu\nu}^{\mu_{K_\alpha}}+\frac{1}{2}G_{\mu\nu}^{\mu_{K_\alpha}})
+  	  E^{\mu_{K_\alpha}}=\left.\frac{\partial E}{\partial\mu_{K_\alpha}}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}\left(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}\right)+\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{\mu_{K_\alpha}}+\frac{1}{2}G_{\mu\nu}^{\mu_{K_\alpha}}\right)
 %  	\end{aligned}  
   	\end{equation}
      berechnet. Da die Basisfunktionen jedoch nicht von den Kerndipolmomenten abhängen sind  
      
-     \begin{equation}
+     \begin{equation}\label{eq:hmukelemente}
      \begin{aligned}
-       h_{\mu\nu}^{\mu_{K_\alpha}}=&\frac{\partial}{\partial \mu_{K_\alpha}}\left(\langle\chi_\mu\vert\hat{H}\vert\chi_\nu\rangle\right)_{\vec{\mu}_K=\vec{B}=0}=\left\langle\chi_\mu\left\vert\left(\frac{\partial}{\partial \mu_{K_\alpha}}\hat{H}\right)_{\vec{\mu}_K=\vec{B}=0}\right\vert\chi_\nu\right\rangle\\
-       =&\left\langle\chi_\mu\left\vert\hat{T}^{\mu_{K_\alpha}}\right\vert\chi_\nu\right\rangle
+       h_{\mu\nu}^{\mu_{K_\alpha}}=&\frac{\partial}{\partial \mu_{K_\alpha}}\left(\langle\chi_\mu\vert\hat{h}\vert\chi_\nu\rangle\right)_{\vec{\mu}_K=\vec{B}=0}=\left(\left\langle\chi_\mu\left\vert\frac{\partial}{\partial \mu_{K_\alpha}}\hat{h}\right\vert\chi_\nu\right\rangle\right)_{\vec{\mu}_K=\vec{B}=0}\\
+       =&\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{\mu_{K_\alpha}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
      \end{aligned}
      \end{equation}
      und 
@@ -512,12 +512,104 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	\end{equation}
 	Die nach den $\vec{\mu}_{K_\alpha}$ abgeleitete Energie lässt sich mit diesem Ergebnis weiter vereinfachen und ist damit nur noch 
 	
-	\begin{equation}
+	\begin{equation}\label{eq:enachmukurz}
 	E^{\mu_{K_\alpha}}=\sum_{\mu\nu}D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}}.
 	\end{equation}
 	
+	Auf die selbe Weise ergibt die Ableitung der Energie nach den Komponenten des Magnetfelds
 	
+	\begin{equation}\label{eq:enachb}
+%  	\begin{aligned}
+  	  E^{B_\beta}=\left.\frac{\partial E}{\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{B_\beta}\left(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}\right)+\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{B_\beta}+\frac{1}{2}G_{\mu\nu}^{B_\beta}\right)
+%  	\end{aligned}  
+  	\end{equation}
+  	Dieses mal muss jedoch auch die Abhängigkeit der Basisfunktionen vom Magnetfeld berücksichtigt werden. Daher ist
+  	
+  	     \begin{equation}
+     \begin{aligned}
+       h_{\mu\nu}^{B_\beta}=&\frac{\partial}{\partial B_\beta}\left(\langle\chi_\mu\vert\hat{h}\vert\chi_\nu\rangle\right)_{\vec{\mu}_K=\vec{B}=0}\\
+       =&\left(\left\langle\frac{\partial}{\partial B_\beta}\chi_\mu\left\vert\hat{h}\right\vert\chi_\nu\right\rangle
+        +\left\langle\chi_\mu\left\vert\frac{\partial}{\partial B_\beta}\hat{h}\right\vert\chi_\nu\right\rangle
+        +\left\langle\chi_\mu\left\vert\hat{h}\right\vert\frac{\partial}{\partial B_\beta}\chi_\nu\right\rangle\right)_{\vec{\mu}_K=\vec{B}=0}\\
+       =&\left\langle\overline{\chi_\mu}\left\vert\hat{h}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
+        +\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{B_\beta}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
+        +\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{h}\right\vert\overline{\chi_\nu}\right\rangle.
+     \end{aligned}
+     \end{equation}
+     und 
+     \begin{equation}
+      G_{\mu\nu}^{B_\beta}= \frac{\partial}{\partial B_\beta} \left(\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}\right)_{\vec{\mu}_K=\vec{B}=0}=\sum_{\kappa\lambda}\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}\right).
+     \end{equation}
      
+     Der erste Term in Gleichung \ref{eq:enachb} und $\sum_{\mu\nu}\sum_{\kappa\lambda}D_{\mu\nu}D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$      lassen sich wieder zusammenfassen und eliminieren. Mit der Ableitung der Basisfunktionen nach dem Magnetfeld
+     
+     \begin{equation}
+     \begin{aligned}
+     \frac{\partial}{\partial B_\beta}\left(\chi_\mu\right)_{\vec{B}=0}=&\frac{\partial}{\partial B_\beta}\left(\exp\left(-\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{r} \right)\cdot \vec{B}\right)\chi_\mu^{\vec{B}=0}\right)_{\vec{B}=0}\\
+     =&-\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}=\overline{\chi_\mu}
+     \end{aligned}
+     \end{equation}
+  	 ist $h_{\mu\nu}^{B_\beta}$ gegeben durch
+  	 
+  	 \begin{equation}
+  	 h_{\mu\nu}^{B_\beta}=\frac{\iu}{2c}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\hat{h}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle+\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{B_\beta}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle,
+  	 \end{equation}
+  	
+  	 \textcolor{myred}{wobei ausgenutzt wurde, dass ...}
+  	 
+  	 Die abgeleiteten Zweielektronenintegrale $G_{\mu\nu\kappa\lambda}^{B_\beta}$ sind analog
+  	 
+  	 \begin{equation}
+  	 \begin{aligned}
+  	 G_{\mu\nu\kappa\lambda}^{B_\beta}=&\frac{\partial}{\partial B_\beta}\left((\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda)-\frac{1}{2}(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu)\right)_{\vec{B}=0}\\
+  	 =&\left(\overline{\chi_\mu\chi_\nu}\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)_\beta
+  	 +\left(\left.\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert\overline{\chi_\kappa\chi_\lambda}\right)_\beta\\
+  	 &-\frac{1}{2}\left(\overline{\chi_\mu\chi_\lambda}\left\vert\chi_\kappa^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right.\right)_\beta
+  	 -\frac{1}{2}\left(\left.\chi_\mu^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right\vert\overline{\chi_\kappa\chi_\nu}\right)_\beta,
+  	 \end{aligned}
+     \end{equation}  	  
+	
+	mit
+	
+	\begin{equation}
+	\left(\overline{\chi_\mu\chi_\nu}\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)_\beta=\frac{\iu}{2c}\int\int\left(\vec{R}_{\mu\nu}\times\vec{r}_1\right)_\beta\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
+	\end{equation}
+     
+    Für die Ableitung der Energie nach dem externen Magnetfeld wird schließlich
+    
+    \begin{equation}
+    E^{B_\beta}=\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{B_\beta}+\frac{1}{2}\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}\right)
+    \end{equation}
+    erhalten. Wie zu erwarten war, werden zur Berechnung der Energien erster Ordnung lediglich die ungestörten Koeffizienten benötigt. Zur Berechnung des chemischen Abschirmungstensors werden hingegen die gestörten Koeffizienten benötigt. Unter Berücksichtigung des Zwischenergebnisses aus Gleichung (\ref{eq:enachmukurz}) folgt für den Abschirmungstensor
+    
+    \begin{equation}
+    \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E(\vec{\mu}_K,\vec{B})}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right),
+    \end{equation}
+    wobei die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}}$ bereits aus Gleichung (\ref{eq:hmukelemente}) bekannt sind. Die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}$ ergeben sich durch zweifaches Ableiten von $\hat{H}$
+    
+    \begin{equation}
+    \begin{aligned}
+    h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}=&\left(\frac{\partial}{\partial B_\beta}\frac{\partial}{\partial \mu_{K_\alpha}}\left\langle\chi_\mu\vert\hat{H}\vert\chi_\nu \right\rangle\right)_{\vec{\mu}_K=\vec{B}=0}\\
+    =&\frac{\partial}{\partial B_\beta}\left(\left\langle\chi_\mu\vert\hat{T}^{\mu_{K_\alpha}}+\sum_\beta B_\beta \hat{T}^{\mu_{K_\alpha}B_\beta}\vert\chi_\nu\right\rangle\right)_{\vec{B}=0}\\
+    =&\frac{\iu}{2c}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\vec{R}_\mu\times\vec{r}\right)_\beta\hat{T}^{\mu_{K_\alpha}}-\hat{T}^{\mu_{K_\alpha}}\left(\vec{R}_\nu\times\vec{r}\right)_\beta\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+    &+\left\langle\chi_\mu^{\vec{B}=0}\vert\hat{T}^{\mu_{K_\alpha}B_\beta}\vert\chi_\nu^{\vec{B}=0}\right\rangle.
+    \end{aligned}
+	\end{equation}     
+      
+    Mit dem Kommutator\supercite{baron1991}
+    
+    \begin{equation}
+    \left[\hat{T}^{\mu_{K_\alpha}},\left(\vec{R}\times\vec{r}\right)_\beta\right]=-\frac{\iu}{c}\left(\delta_{\alpha\beta}\delta_{\gamma\epsilon}-\delta_{\alpha\gamma}\delta{\beta\epsilon}\right)\frac{R_\gamma r_{K_\epsilon}}{r_K^3}
+    \end{equation}
+    
+    lassen sich die Terme weiter umformen und zusammenfassen. Es folgt
+    
+    \begin{equation}
+    \begin{aligned}    
+    h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}=&\frac{\iu}{2c}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\vec{R}_\mu\times\vec{r}\right)_\beta\hat{T}^{\mu_{K_\alpha}}-\left(\vec{R}_\nu\times\vec{r}\right)_\beta \hat{T}^{\mu_{K_\alpha}}+\frac{\iu}{c}\left(\vec{R}_\nu\vec{r}_K\delta_{\alpha\beta}-\vec{R}_{\nu \beta}\vec{r}_{K_\alpha}\right)\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+    &+\left\langle\chi_\mu^{\vec{B}=0}\vert\hat{T}^{\mu_{K_\alpha}B_\beta}\vert\chi_\nu^{\vec{B}=0}\right\rangle
+    \end{aligned}
+    \end{equation}
 
      
      

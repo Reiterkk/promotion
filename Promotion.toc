@@ -17,62 +17,62 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.1}Berechnung von NMR Abschirmkonstanten}{13}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Die Berechnung von Ringstr\IeC {\"o}men}{19}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Die Berechnung von Ringstr\IeC {\"o}men}{21}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Erweiterte Funktionalit\IeC {\"a}t}{20}{chapter.3}
+\contentsline {chapter}{\numberline {3}Erweiterte Funktionalit\IeC {\"a}t}{22}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{20}{section.3.1}
+\contentsline {section}{\numberline {3.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{22}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Theorie}{20}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Theorie}{22}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Implementierung}{20}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}Implementierung}{22}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{20}{section.3.2}
+\contentsline {section}{\numberline {3.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{22}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Theorie}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Theorie}{22}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Implementierung}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Implementierung}{22}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Berechnung von Vibrational Circular Dichroism Spektren}{20}{section.3.3}
+\contentsline {section}{\numberline {3.3}Berechnung von Vibrational Circular Dichroism Spektren}{22}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Theorie}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Theorie}{22}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Implementierung}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Implementierung}{24}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}meta-GGA Funktionale}{22}{section.3.4}
+\contentsline {section}{\numberline {3.4}meta-GGA Funktionale}{24}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Theorie}{22}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Theorie}{24}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Implementierung}{22}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}Implementierung}{24}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Verbesserte Effizienz}{23}{chapter.4}
+\contentsline {chapter}{\numberline {4}Verbesserte Effizienz}{25}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Die RI-Methode f\IeC {\"u}r chemische Abschirmkonstanten}{23}{section.4.1}
+\contentsline {section}{\numberline {4.1}Die RI-Methode f\IeC {\"u}r chemische Abschirmkonstanten}{25}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Theorie}{23}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Theorie}{25}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Implementierung}{23}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Implementierung}{25}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmkonstanten}{23}{section.4.2}
+\contentsline {section}{\numberline {4.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmkonstanten}{25}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Theorie}{23}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Theorie}{25}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Implementierung}{23}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Implementierung}{25}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Parallelisierung und weitere Optimierungen}{23}{section.4.3}
+\contentsline {section}{\numberline {4.3}Parallelisierung und weitere Optimierungen}{25}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Anwendungen}{24}{chapter.5}
+\contentsline {chapter}{\numberline {5}Anwendungen}{26}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Anwendungen in der anorganischen Chemie}{24}{section.5.1}
+\contentsline {section}{\numberline {5.1}Anwendungen in der anorganischen Chemie}{26}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{24}{section.5.2}
+\contentsline {section}{\numberline {5.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{26}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Zusammenfassung}{25}{chapter.6}
+\contentsline {chapter}{\numberline {6}Zusammenfassung}{27}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{26}{chapter*.24}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{28}{chapter*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{27}{chapter*.26}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{29}{chapter*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{28}{section*.27}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{30}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{29}{chapter*.29}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{31}{chapter*.29}
