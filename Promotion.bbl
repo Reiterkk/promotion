@@ -448,6 +448,52 @@
       \field{pages}{114110}
       \range{pages}{1}
     \endentry
+    \entry{pople1979derivative}{article}{}
+      \name{author}{4}{}{%
+        {{hash=897ff23e289f9d9f1c6fd1c07b2dc284}{%
+           family={Pople},
+           familyi={P\bibinitperiod},
+           given={J\_A},
+           giveni={J\bibinitperiod}}}%
+        {{hash=79e41b14b0523dc4ab7e0b06a9beeeb0}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=352b7ae10d5d2b5e71cbe77279a99cfa}{%
+           family={Schlegel},
+           familyi={S\bibinitperiod},
+           given={HB},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4c5e49bc500b5280c27544788ffce655}{%
+           family={Binkley},
+           familyi={B\bibinitperiod},
+           given={J\bibnamedelima S\_},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{6ab7fb9e27d5cd6e8146099c90eaa3fe}
+      \strng{fullhash}{e9777f370521b65f47f2208e8e4192e9}
+      \strng{bibnamehash}{e9777f370521b65f47f2208e8e4192e9}
+      \strng{authorbibnamehash}{e9777f370521b65f47f2208e8e4192e9}
+      \strng{authornamehash}{6ab7fb9e27d5cd6e8146099c90eaa3fe}
+      \strng{authorfullhash}{e9777f370521b65f47f2208e8e4192e9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. J. Quant. Chem.}
+      \field{number}{S13}
+      \field{title}{Derivative studies in hartree-fock and m{ø}ller-plesset theories}
+      \field{volume}{16}
+      \field{year}{1979}
+      \field{pages}{225\bibrangedash 241}
+      \range{pages}{17}
+    \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
         {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
@@ -465,8 +511,8 @@
       \strng{authorbibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authornamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authorfullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -501,8 +547,8 @@
       \strng{authorbibnamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authornamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authorfullhash}{3fbf47f8204db480f89e43ea46361130}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}

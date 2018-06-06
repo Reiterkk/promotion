@@ -1995,10 +1995,13 @@
     <bcf:citekey order="15">london1937theorie</bcf:citekey>
     <bcf:citekey order="16">van2012use</bcf:citekey>
     <bcf:citekey order="17">baron1991</bcf:citekey>
-    <bcf:citekey order="18">baron1991</bcf:citekey>
-    <bcf:citekey order="19">stephens1985theory</bcf:citekey>
-    <bcf:citekey order="19">stephens1985vibrational</bcf:citekey>
-    <bcf:citekey order="20">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="18">pople1979derivative</bcf:citekey>
+    <bcf:citekey order="19">ditchfield1974self</bcf:citekey>
+    <bcf:citekey order="20">baron1991</bcf:citekey>
+    <bcf:citekey order="21">ditchfield1974self</bcf:citekey>
+    <bcf:citekey order="22">stephens1985theory</bcf:citekey>
+    <bcf:citekey order="22">stephens1985vibrational</bcf:citekey>
+    <bcf:citekey order="23">deglmann2002efficient</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
