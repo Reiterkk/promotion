@@ -48,7 +48,7 @@
     \begin{equation}\label{eq:vcdcphf}
     \left(\frac{\partial \phi_i}{\partial B_\beta}\right)_{\vec{B}=0}=\phi_i^{B_\beta}=\sum_{\mu=1}^{N_{\text{BF}}}\left[c_{\mu i}\chi_\mu^{B_\beta}+\sum_{p=1}^{N_{\text{MO}}}c_{\mu p}U_{ip}^{B_\beta}\chi_\mu\right]
 	\end{equation}
-	ausdrücken. Die Matrix mit den gestörten Koeffizienten wird durch Lösen der entsprechenden \ac{cphf}-Gleichungen erhalten, ganz analog zur Vorgehensweise bei der Berechnung von \ac{nmr}-Abschirmkonstanten. Durch die Kombination der Gleichungen (\ref{eq:vcdaatel}) und  (\ref{eq:vcdcphf}) wird der zu implementierende Ausdruck für den elektronischen Anteil des \ac{aat} erhalten
+	ausdrücken. Die Koeffizientenmatrix $U_{ip}^{B_\beta}$ beschreibt die Änderung der Molekülorbitale durch die Störung des äußeren Magnetischen Feldes $\vec{B}$. Sie wird durch Lösen der entsprechenden \ac{cphf}-Gleichungen erhalten, ganz analog zur Vorgehensweise bei der Berechnung von \ac{nmr}-Abschirmkonstanten. Durch die Kombination der Gleichungen (\ref{eq:vcdaatel}) und  (\ref{eq:vcdcphf}) wird der zu implementierende Ausdruck für den elektronischen Anteil des \ac{aat} erhalten
 	\begin{equation}\label{eq:vcdaatelfinal}
 	\begin{aligned}
 	I^K_{\alpha\beta}=&\sum_{i=1}^{N_{\text{occ}}}\sum_{\mu,\nu=1}^{N_{\text{BF}}}\left[c_{\mu i}c_{\nu i}\left\langle\chi_\mu^{R_{K\alpha}}\vert\chi_\nu^{B_\beta}\right\rangle+\sum_{p=1}^{N_{\text{MO}}}c_{\mu i}c_{\nu p}U_{ip}^{B_\beta}\left\langle\chi_\mu^{R_{K\alpha}}\vert\chi_\nu\right\rangle\right.\\

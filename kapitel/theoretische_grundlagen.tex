@@ -4,7 +4,7 @@ Alle Einheiten sind in atomaren Einheiten (a.u.) zu verstehen, sofern es an den 
 Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen sind in \unit{ppm} angegeben. Die imagniäre Einheit wird immer als $\iu$ geschrieben um eine Verwechslung zu vermeiden.
  
 \bigskip
-Die in der Literatur gebräuchliche Notation für Indizes und Integrale soll im Folgenden kurz erläutert werden. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige Einelektronen-Wellenfunktionen und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $A,B,\dotsc$ werden zur Kennzeichnung der insgesamt $N_K$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen wodurch eine Verwechslung mit dem Elektronenspin - welcher ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der Kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
+Die in der Literatur gebräuchliche Notation für Indizes und Integrale soll im Folgenden kurz erläutert werden. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige Einelektronen-Wellenfunktionen und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $A,B,\dotsc$ werden zur Kennzeichnung der insgesamt $N_K$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin - welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der Kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
 \newpage
 Sollten Einelektronenintegrale nicht explizit angegeben sein, so gilt für sie die folgende Dirac-Notation:
 \begin{gather*}
@@ -16,16 +16,17 @@ Im Gegensatz dazu werden Zweielektronenintegrale in der Mulliken-Notation angege
 \begin{gather*}
 	\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)=\int\int\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
     \left(\chi_\mu\chi_\nu\vert\vert\chi_\kappa\chi_\lambda\right)=\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)-\frac{1}{2}\left(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu\right)\\
-    \left(\left.\overline{\chi_\mu\chi_\nu}\right\vert\chi_\kappa^{\vec{B}=0 }\chi_\lambda^{\vec{B}=0}\right)_\beta=\left(\left.\frac{\partial}{\partial B_\beta}\chi_\mu\chi_\nu\right|\chi_\kappa\chi_\lambda\right)_{\vec{B} = 0}.
+    \left(\left.\overline{\chi_\mu\chi_\nu}\right\vert\chi_\kappa^{\vec{B}=0 }\chi_\lambda^{\vec{B}=0}\right)_\beta=\left(\left.\frac{\partial}{\partial B_\beta}\left(\chi_\mu\chi_\nu\right)\right|\chi_\kappa\chi_\lambda\right)_{\vec{B} = 0}.
 \end{gather*}
 
-Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wiedergegeben. Somit ist $S^{B_\alpha}_{\mu\nu}$ das nach der $\alpha$-Komponente des Mangetfelds abgeleitete Überlappungsintegral der beiden Basisfunktionen $\chi_\mu$ und $\chi_\nu$
+Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wiedergegeben. Somit ist $S^{B_\beta}_{\mu\nu}$ das nach der $\beta$-Komponente des Mangetfelds abgeleitete Überlappungsintegral der beiden Basisfunktionen $\chi_\mu$ und $\chi_\nu$
 
 \begin{equation*}
-  S^{B_\alpha}_{\mu\nu}=\left.\frac{\partial S_{\mu\nu}}{\partial B_\alpha}\right|_{\vec{B} = 0}.
+  S^{B_\beta}_{\mu\nu}=\left.\frac{\partial S_{\mu\nu}}{\partial B_\beta}\right|_{\vec{B} = 0}.
 \end{equation*} 
-Matrizen, wie beispielsweise die Fockmatrix \textbf{F}, werden fett gedruckt
+Matrizen, wie beispielsweise die Fockmatrix $\boldsymbol{F}$, werden fett gedruckt.
 \section{Die Schrödingergleichung für Moleküle - Wellenfunktion und Energie}
+
 Unter Vernachlässigung relativistischer Effekte muss die zeitabhängige Schrödingergleichung
 \begin{equation}
   \hat{H}\Psi(t,\vec{r}_1,\sigma_,1\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})=\iu\frac{\partial\Psi(t,\vec{r}_1,\sigma_,1\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})}{\partial t}
@@ -49,7 +50,7 @@ Zur weiteren Vereinfachung wird die Born-Oppenheimer-Näherung\supercite{born192
 \begin{equation}
 \Psi(\vec{r},\sigma,\vec{R})=\Psi^{\text{el}}(\vec{r},\sigma;\vec{R})\Psi^{\text{K}}(\vec{R}),
 \end{equation}
-wobei die Kernkoordinaten nur noch parametrisch in die elektronische Wellenfunktion mit eingehen. Als Konsequenz diese Produktansatzes lässt sich der Hamiltonoperator nun als Summe eines elektronischen Hamiltonoperator $\hat{H}^{\text{el}}$ und eines Kern Hamiltonoperator $\hat{H}^{\text{K}}$ schreiben. Mit dem elektronischen Hamiltonoperator
+wobei die Kernkoordinaten nur noch parametrisch in die elektronische Wellenfunktion mit eingehen. Als Konsequenz dieses Produktansatzes lässt sich der Hamiltonoperator nun als Summe eines elektronischen Hamiltonoperator $\hat{H}^{\text{el}}$ und eines Kern Hamiltonoperator $\hat{H}^{\text{K}}$ schreiben. Mit dem elektronischen Hamiltonoperator
 \begin{equation}\label{eq:elhamilton}
   \hat{H}^{\text{el}}=\hat{T}_{\text{e}}+\hat{V}_{\text{Ke}}+\hat{V}_{\text{ee}}=-\frac{1}{2}\sum_{i=1}^N\nabla^2_i-\sum_{i=1}^N\sum_{A=1}^{N_\text{K}}\frac{Z_A}{r_{iA}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}
 \end{equation}
@@ -63,6 +64,7 @@ gelöst und die elektronische Grundzustandsenergie $E^{\text{el}}_0$ im station�
 
 
 \section{Das Hartree-Fock-Verfahren}
+
 Das Hartree-Fock-Verfahren stellt die Grundlage aller quantenchemischen Methoden dar. Die wichtigsten Prinzipien des Verfahrens, welche den Büchern von Jensen\supercite{jensen2009introduction} sowie von Szabo und Ostlund\supercite{szabo1982modern} entnommen wurden und dort ausführlicher erläutert werden, sollen hier kurz wiedergegeben werden. 
 
 Um die ununterscheidbarkeit der Elektronen zu gewährleisten und um das Pauliprizip zu erfüllen wird die elektronische Wellenfunktion durch eine Slaterdeterminante\supercite{slater1974self} beschrieben
@@ -115,7 +117,7 @@ In der Praxis werden die Einelektronenwellenfunktionen $\phi_i$ in einer finiten
 Durch diesen Ansatz wird die das Lösen der Differentialgleichung \ref{differentialgleichung} in ein Matrixeigenwertproblem überführt, was die Roothaan-Hall-Gleichungen\supercite{roothaanhall} liefert. Sie können in einer kompakten Matrixnotation aufgeschrieben werden
 
 \begin{equation}\label{roothaanhall}
-\boldsymbol{Fc}=\boldsymbol{Sc\varepsilon}.
+\boldsymbol{Fc}=\boldsymbol{\varepsilon Sc}.
 \end{equation}
 
 Die Fockmatrix $\boldsymbol{F}$ besitzt für geschlossenschalige Moleküle die Matrixelementen $F_{\mu\nu}$
@@ -152,6 +154,7 @@ E_{\textrm{HF}}&=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(2h_{\mu\nu}+J_{\mu\nu}-\frac
 \end{equation}
 
 \section{Die Dichtefunktionaltheorie}
+
 Der grundsätzliche Gedanke der \ac{dft} ist es, im Vergleich zur auf einer Wellenfunktion basierenden Hartree-Fock-Theorie, alle Informationen aus der Elektronendichte zu erhalten. Werden zur Beschreibung der Wellenfunktion noch $3N$ Ortskoordinaten und $N$ Spinkoordinaten benötigt, so hängt Elektronendichte lediglich von den drei Raumkoordinaten ab. Hohenberg und Kohn\supercite{hohenberg1964inhomogeneous} haben mit ihrem ersten Theorem grundsätzlich bewiesen, dass durch die Elektronendichte $\rho$ alle Informationen über eine Molekül, wie beispielsweise die Grundzustandsenergie, erhalten werden können. Der genaue Zusammenhang zwischen der Energie und der Elektronendichte, welche durch sogenannte Austauschkorrelationsfunktionale miteinander verknüpft werden ist jedoch nicht genau bekannt. Das Entwickeln und weiter Verbessern dieser Funktionale ist daher nach wie vor ein aktuelles Forschungsgebiet.  
 
 Die Grundzustandsenergie $E_0$ kann nach Hohenberg und Kohn durch ein Funktional der Grundzustandselektronendichte $\rho_0$ berechnet werden
@@ -302,6 +305,7 @@ Diese Integrale sind analytisch nicht mehr zu lösen, wodurch auf eine numerisch
 Im aktuellen und vorherigen Kapitel wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und zum Erhalt der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse - beispielsweise durch die Vernachlässigung der Elektronenkorrelation - findet das Hartree-Fock-Verfahren jedoch kaum Verwendung für aktuelle Fragestellungen in der Quantenchemie. Sogenannte post-Hartree-Fock-Verfahren wie beispielsweise \ac{mp2} oder \ac{cc} liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert dahingegen oft ausreichend genau Ergebnisse in einer akzeptablen Zeit. Ein Großteil aller Anwendungsrechnungen in der Quantenchemie wird daher mit der \ac{dft} durchgeführt. 
 
 \section{Moleküle im Magnetfeld}
+
 Nachdem die Wellenfunktion und die Energie bekannt ist, lassen sich molekulare Eigenschaften üblicherweise als Ableitung der Energie erhalten. Eigenschaften von Molekülen, die durch das Anlegen eines externen magnetischen Feldes zustande kommen, lassen sich daher als Ableitung der Energie unter anderem nach dem externen Magnetfeld berechnen. Ist das angelegte Feld schwach, so kann dieses Feld als Störung der Grundzustandswellenfunktion angesehen und durch einen störungstheoretischen Ansatz berechnet werden. Die Wellenfunktion und die elektronische Energie lassen sich dann in Abhängigkeit vom externen Magnetfeld $\vec{B}$ und den Kerndipolmomenten der jeweiligen Kerne $\vec{\mu}_K$ entwickeln:\supercite{ditchfield1974self} 
 \begin{equation}
 \begin{aligned}
@@ -344,7 +348,8 @@ mit den Komponenten des Abschirmungstensors $\sigma_{K_\alpha\beta}$.
 %\end{equation}
 
 	\subsection{Berechnung von NMR Abschirmkonstanten}\label{theo:nmr}
-	Eines der wichtigsten analytischen Verfahren - beispielsweise zur Strukturaufklärung - stellt die \ac{nmr}-Spektroskopie dar. Die \ac{nmr}-Spektroskopie basiert auf der Resonanz derjenigen Kerne $K$ welche einen Kernspin $S_K$ von ungleich 0 besitzen. Wird ein solcher Kern einem äußeren Magnetfeld ausgesetzt, so kommt es zur Aufspaltung der Kernenergieniveaus
+	
+Eines der wichtigsten analytischen Verfahren - beispielsweise zur Strukturaufklärung - stellt die \ac{nmr}-Spektroskopie dar. Die \ac{nmr}-Spektroskopie basiert auf der Resonanz derjenigen Kerne $K$ welche einen Kernspin $S_K$ von ungleich 0 besitzen. Wird ein solcher Kern einem äußeren Magnetfeld ausgesetzt, kommt es zur Aufspaltung der Kernenergieniveaus
 \begin{equation}\label{eq:kernniveau}
   E_{m_K}=g_Km_K\mu_{\textrm{nuc}}B,
 \end{equation}	
@@ -365,7 +370,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	 \Delta\boldsymbol{\sigma}_K=\sqrt{\frac{3}{2}\left(\frac{1}{4}\sum_{\alpha\beta}(\sigma_{K_\alpha\beta}+\sigma_{K_\beta\alpha})-3\sigma_K^2\right)}.
 	 \end{equation}
 	 
-	  Wie durch Vergleich der Gleichungen (\ref{eq:evonbmu0}) und (\ref{eq:evonbmu}) zu sehen ist, sind die einzelnen Elemente des Abschirmungstensors durch die zweite Ableitung der Energie nach dem Kerndipolmoment des Kerns $\vec{\mu}_K$ und nach dem externen magnetischen Feld $\vec{B}$ gegeben
+	  Wie durch Vergleich der Gleichungen (\ref{eq:evonbmu0}) und (\ref{eq:evonbmu}) zu sehen ist, sind die einzelnen Elemente des Abschirmungstensors durch die zweite Ableitung der Energie nach dem Kerndipolmoment des Kerns $K$, $\vec{\mu}_K$, und nach dem externen magnetischen Feld $\vec{B}$ gegeben
 	
 	\begin{equation}\label{eq:abschirmugstensor}
 	\sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E(\vec{\mu}_K,\vec{B})}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}.
@@ -379,19 +384,19 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	 
 
 	\bigskip
-	Die nachfolgenden Schritte der \ac{scf}-Störungstheorie, in welcher die notwendigen Gleichungen für die Störung durch ein Magnetfeld hergeleitet werden, sind im Wesentlichen der Publikation von Dichtfield\supercite{ditchfield1974self} bzw. der Diplomarbeit von Baron\supercite{baron1991} entnommen. Das äußere Magnetfeld wechselwirkt mit den magnetischen Momenten, welche durch die Bewegung der geladenen Elektronen erzeugt werden und wirkt sich daher auf die kinetische Energie aus. Dies hat zur Folge, dass der Impulsoperator $\vec{p}=\iu\vec{\nabla}$ in Gleichung (\ref{eq:elhamilton}) durch den generalisierten Impulsoperator
+	Die nachfolgenden Schritte der \ac{scf}-Störungstheorie, in welcher die notwendigen Gleichungen für die Störung durch ein Magnetfeld hergeleitet werden, folgen im Wesentlichen der Publikation von Dichtfield\supercite{ditchfield1974self} bzw. der Diplomarbeit von Baron\supercite{baron1991}. Das äußere Magnetfeld wechselwirkt mit den magnetischen Momenten, welche durch die Bewegung der geladenen Elektronen erzeugt werden und wirkt sich daher auf die kinetische Energie aus. Dies hat zur Folge, dass der Impulsoperator $\vec{p}=\iu\vec{\nabla}$ in Gleichung (\ref{eq:elhamilton}) durch den generalisierten Impulsoperator
 	
 	\begin{equation}
 	\vec{\pi}=\vec{p}+\frac{1}{c}\vec{A}_{\textrm{tot}}(\vec{r})
 	\end{equation}
-	ersetzt werden muss. Das Magnetfeld $\vec{B}_{\textrm{tot}}$ ist dabei durch die Rotation des Vektorpotentials
+	ersetzt werden muss. Das Magnetfeld $\vec{B}_{\textrm{tot}}$ ist hier durch die Rotation des Vektorpotentials
 	\begin{equation}
 	\vec{B}=\nabla \times \vec{A}_{\textrm{tot}}
 	\end{equation}
-	gegeben. Das Vektorpotential beinhaltet dabei das Potential $\vec{A}$ des externen Magnetfelds $\vec{B}$ sowie die Potentiale $\vec{A}_{\mu_K}$ welche durch die Kerndipolmomente verursacht werden. 	 
+	gegeben. Das Vektorpotential beinhaltet dabei das Potential $\vec{A}$ des externen Magnetfelds $\vec{B}$ sowie die Potentiale $\vec{A}_{\mu_K}$ welche durch die Kerndipolmomente verursacht werden	 
 	
 	\begin{equation}\label{eq:atot}
-	 \vec{A}_{\textrm{tot}}(\vec{r}_i)=\vec{A}(\vec{r}_i)+\sum_K\vec{A}_{\mu_K}(\vec{r}_i)=\frac{1}{2}\vec{B}\times \vec{r}_i +\sum_K\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}
+	 \vec{A}_{\textrm{tot}}(\vec{r}_i)=\vec{A}(\vec{r}_i)+\sum_K\vec{A}_{\mu_K}(\vec{r}_i)=\frac{1}{2}\vec{B}\times \vec{r}_i +\sum_K\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}.
 	\end{equation}
 	
 	Zur Berücksichtigung der Störung durch ein Magnetfeld wird entsprechend im Hamiltonoperator der Impulsoperator $\vec{p}$ durch den generalisierten Impulsoperator $\vec{\pi}$ ausgetauscht. Aus $\hat{T}_\textrm{e}$ in Gleichung (\ref{eq:elhamilton}) wird demzufolge
@@ -427,16 +432,18 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	\begin{equation}
 	  \lambda_\mu=\frac{\iu}{2c}\left[(\vec{R}_\mu-\vec{R}_E)\times \vec{r}\right]\cdot \vec{B}.
   	\end{equation}
-  	Damit ist das Basissatzlimit bereits für sehr kleine Basissätze erreicht\supercite{van2012use}, was die Berechnung für große Moleküle möglich macht. Die $\chi_\mu^{\vec{B}=0}$ entsprechen den gewöhnlichen, atomzentrierten Basisfunktionen, $\vec{R}_\mu$ ist der Ortsvektor zum Zentrum der entsprechenden Funktion und $\vec{R}_E$ ist der gewählte Eichursprung. Die Wahl des Eichursprungs erfolgt willkürlich, üblicherweise wird der Eichursprung jedoch in den kartesischen Ursprung gelegt. 
+  	Damit ist das Basissatzlimit bereits für sehr kleine Basissätze erreicht\supercite{van2012use}, was die Berechnung für große Moleküle möglich macht. Die $\chi_\mu^{\vec{B}=0}$ entsprechen den gewöhnlichen, atomzentrierten Basisfunktionen, $\vec{R}_\mu$ ist der Ortsvektor zum Zentrum der entsprechenden Funktion und $\vec{R}_E$ ist der gewählte Eichursprung. Die Wahl des Eichursprungs erfolgt willkürlich, üblicherweise wird der Eichursprung jedoch in den kartesischen Ursprung gelegt, wodurch er in den folgenden Gleichungen nicht weiter auftritt. 
   	
-  	\bigskip
+\subsection{Erste analytische Ableitung der Hartree-Fock-Energie nach den Kernmomenten}
+
   	Durch den störungstheoretischen Ansatz und durch die Magnetfeldabhängigkeit der Basisfunktionen werden folglich auch alle Größen in der Gleichung für die Energie (Gleichung (\ref{hfenergie})) abhängig vom Magnetfeld und den Kernmomenten
   	\begin{equation}\label{eq:evonmub}
   	  E(\vec{\mu}_K,\vec{B})=\sum_{\mu\nu}D_{\mu\nu}(\vec{\mu}_K,\vec{B})(h_{\mu\nu}(\vec{\mu}_K,\vec{B})+\frac{1}{2}G_{\mu\nu}(\vec{\mu}_K,\vec{B})).
 	\end{equation}  	 
-  	Zur Bewahrung der Übersichtlichkeit in den Formel wird im weiteren Verlauf dieser Arbeit die explizite Abhängigkeit wieder weggelassen. 
+  	\textcolor{myred}{Zur Bewahrung der Übersichtlichkeit in den Formeln wird im weiteren Verlauf dieser Arbeit die explizite Abhängigkeit wieder weggelassen.}
   	
-  	Um nun letztlich den Abschirmungstensor zu erhalten, muss die Energie aus Gleichung (\ref{eq:evonmub}), analog zu Gleichung (\ref{eq:abschirmugstensor}), nach den Kernmomenten und dem Magnetfeld differenziert werden. Wie später zu sehen sein wird, stellt insbesondere die Berechnung der gestörten Dichtematrix eine Herausforderung dar. Die Abhängigkeiten der Ein- und Zweielektronenoperatoren stellen zwar einen Mehraufwand dar, jedoch muss beim weiteren Herleiten der Gleichungen nur die Differenzierung nach dem Magnetfeld oder den Kernmomenten strikt durchgeführt werden. 
+  	Um nun letztlich den Abschirmungstensor zu erhalten, muss die Energie aus Gleichung (\ref{eq:evonmub}), analog zu Gleichung (\ref{eq:abschirmugstensor}), nach den Kernmomenten und dem Magnetfeld differenziert werden. Wie später in Kapitel \ref{kap:cphf} zu sehen sein wird, stellt insbesondere die Berechnung der gestörten Dichtematrix eine Herausforderung dar. Die Abhängigkeiten der Ein- und Zweielektronenoperatoren bereiten zwar einen Mehraufwand, jedoch muss beim weiteren Herleiten der Gleichungen nur die Differenzierung nach dem Magnetfeld oder den Kernmomenten strikt durchgeführt werden.
+  	 
   	Die gemischte Ableitung der Energie lässt sich effizienter berechnen, wenn zuerst die Differenzierung nach den Kernmomenten erfolgt\supercite{baron1991}. Daher wird zunächst
   	
   	\begin{equation}\label{eq:enachmu}
@@ -444,7 +451,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
   	  E^{\mu_{K_\alpha}}=\left.\frac{\partial E}{\partial\mu_{K_\alpha}}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}\left(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}\right)+\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{\mu_{K_\alpha}}+\frac{1}{2}G_{\mu\nu}^{\mu_{K_\alpha}}\right)
 %  	\end{aligned}  
   	\end{equation}
-     berechnet. Da die Basisfunktionen jedoch nicht von den Kerndipolmomenten abhängen sind  
+     berechnet. Da die Basisfunktionen jedoch nicht von den Kerndipolmomenten abhängen, sind die Matrixelemente gegeben durch
      
      \begin{equation}\label{eq:hmukelemente}
      \begin{aligned}
@@ -456,7 +463,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      \begin{equation}
       G_{\mu\nu}^{\mu_{K_\alpha}}= \frac{\partial}{\partial\mu_{K_\alpha}} \left(\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}\right)_{\vec{\mu}_K=\vec{B}=0}=\sum_{\kappa\lambda}D_{\kappa\lambda}^{\mu_{K_\alpha}}G_{\mu\nu\kappa\lambda}.
      \end{equation}
-     Aufgrund der Symmetrie der Zweielektronenintegrale lassen sich diese so umformen, dass die Berechnung der $G_{\mu\nu}^{\mu_{K_\alpha}}$ vermieden werden kann. Es gilt
+     Aufgrund der Symmetrie der Zweielektronenintegrale lassen sich diese so umformen, dass die Berechnung der $G_{\mu\nu}^{\mu_{K_\alpha}}$ komplett vermieden werden kann. Es gilt
      
      \begin{equation}
      \begin{aligned}
@@ -464,25 +471,26 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      &=\sum_{\mu\nu\kappa\lambda}D_{\mu\nu}D_{\kappa\lambda}^{\mu_{K_\alpha}}\left[(\chi_\kappa\chi_\lambda\vert\chi_\mu\chi_\nu)-\frac{1}{2}(\chi_\kappa\chi_\nu\vert\chi_\mu\chi_\lambda)\right]=\sum_{\kappa\lambda}D_{\kappa\lambda}^{\mu_{K_\alpha}}G_{\kappa\lambda}.
      \end{aligned}
      \end{equation}
-     Gleichung \ref{eq:enachmu} lässt sich damit umformen zu
+     Das Ergebnis wird in Gleichung (\ref{eq:enachmu}) eingesetzt, wodurch sie zu
 
 	\begin{equation}
     \begin{aligned}
 	  E^{\mu_{K_\alpha}}=&\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}+\frac{1}{2}G_{\mu\nu})+\sum_{\mu\nu}D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}}\\
-	  =&\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}F_{\mu\nu}+\sum_{\mu\nu}D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}}.
+	  =&\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}F_{\mu\nu}+\sum_{\mu\nu}D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}}
     \end{aligned}
 	\end{equation}     
      
-     Analog zur Wellenfunktion und zur Energie lassen sich auch die $c_{\mu i}$ und folglich die Dichtematrix in Abhängigkeit von $\vec{\mu}_K$ und $\vec{B}$ entwickeln 
+     umgeformt werden kann. Analog zur Wellenfunktion und zur Energie lassen sich auch die $c_{\mu i}$ und folglich die Dichtematrix in Abhängigkeit von $\vec{\mu}_K$ und $\vec{B}$ entwickeln 
      
      \begin{equation}
-     c_{\mu i}(\mu_{K_\alpha},B_\beta)=c_{\mu i}+\iu\mu_{K_\alpha}c_{\mu i}^{\mu_{K_\alpha}}+\iu B_\beta c_{\mu i}^{B_\beta}+\cdots,
+     c_{\mu i}(\mu_{K_\alpha},B_\beta)=c_{\mu i}+\iu\mu_{K_\alpha}c_{\mu i}^{\mu_{K_\alpha}}+\iu B_\beta c_{\mu i}^{B_\beta}+\cdots
      \end{equation}
+     und
      \begin{equation}
-     D_{\mu\nu}(\mu_{K_\alpha},B_\beta)=D_{\mu\nu}+\mu_{K_\alpha}D_{\mu\nu}^{\mu_{K_\alpha}}+B_\beta D_{\mu\nu}^{B_\beta)}+\cdots.
+     D_{\mu\nu}(\mu_{K_\alpha},B_\beta)=D_{\mu\nu}+\mu_{K_\alpha}D_{\mu\nu}^{\mu_{K_\alpha}}+B_\beta D_{\mu\nu}^{B_\beta)}+\cdots,
      \end{equation}
      
-     Die nach den Kerndipolmomenten abgeleitete Dichtematrix $D_{\mu\nu}^{\mu_{K_\alpha}}$ ist demnach
+     wodurch sich die nach den Kerndipolmomenten abgeleitete Dichtematrix $D_{\mu\nu}^{\mu_{K_\alpha}}$ ergibt
      \begin{equation}
      D_{\mu\nu}^{\mu_{K_\alpha}}=\left.\frac{\partial D_{\mu\nu}}{\partial \mu_{K_\alpha}}\right\vert_{\vec{\mu}_K=\vec{B}=0}=\frac{\partial}{\partial \mu_{K_\alpha}}\left(2\sum_i c_{\mu i}^*c_{\nu i}\right)_{\vec{\mu}_K=\vec{B}=0}=2\iu \sum_i\left(c_{\mu i}c_{\nu i}^{\mu_{K_\alpha}}-c_{\mu i}^{\mu_{K_\alpha}}c_{\nu i}\right).
      \end{equation}
@@ -492,7 +500,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	  \boldsymbol{F}(\vec{\mu}_K,\vec{B})\boldsymbol{c}(\vec{\mu}_K,\vec{B})=\boldsymbol{\varepsilon}(\vec{\mu}_K,\vec{B})\boldsymbol{S}(\vec{B})\boldsymbol{c}(\vec{\mu}_K,\vec{B})
 	\end{equation}
 	 
-	sind und damit für alle Werte des externen Magnetfelds und der Kernmomente orthonormal sein müssen. Es gilt daher beispielsweise
+	sind und damit für alle Werte des externen Magnetfelds und der Kernmomente orthonormal sein müssen. Es gilt daher beispielsweise die folgende Orthonormalitätsbedingung
 	
 	\begin{equation}\label{eq:orthonormal}
 	\sum_{\mu\nu}c_{\mu i}^*(\vec{\mu}_K,\vec{B})c_{\nu j}(\vec{\mu}_K,\vec{B})S_{\mu\nu}(\vec{B})=\delta_{ij}.
@@ -503,27 +511,29 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	\iu\sum_{\mu\nu}\left(c_{\mu i}c_{\nu i}^{\mu_{K_\alpha}}S_{\mu\nu}-c_{\mu i}^{\mu_{K_\alpha}}c_{\nu i}S_{\mu\nu}\right)=0,
 	\end{equation}
 	
-	was sich durch Multiplikation mit $2\varepsilon_i$ und Summation über alle $i$ weiter umformen lässt zu
+	was sich durch Multiplikation mit $2\varepsilon_i$ und Summation über alle $i$ sowie durch ausnutzem von Gleichung (\ref{eq:modscf}) weiter umformen lässt zu
 	\begin{equation}
 	\begin{aligned}
 	0&=2\iu\sum_{i\mu\nu}\left(\left(\varepsilon_i S_{\mu\nu} c_{\mu i}\right) c_{\nu i}^{\mu_{K_\alpha}} - c_{\mu i}^{\mu_{K_\alpha}} \left(\varepsilon_i S_{\mu\nu} c_{\nu i}\right)\right)=2\iu\sum_{i\mu\nu}\left(\left(F_{\mu\nu} c_{\mu i}\right) c_{\nu i}^{\mu_{K_\alpha}} - c_{\mu i}^{\mu_{K_\alpha}} \left(F_{\mu\nu} c_{\nu i} \right)\right)\\
 	&=2\iu\sum_{i\mu\nu}\left(c_{\mu i}c_{\nu i}^{\mu_{K_\alpha}}-c_{\mu i}^{\mu_{K_\alpha}}c_{\nu i}\right)F_{\mu\nu}=\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}F_{\mu\nu}.
 	\end{aligned}
 	\end{equation}
-	Die nach den $\vec{\mu}_{K_\alpha}$ abgeleitete Energie lässt sich mit diesem Ergebnis weiter vereinfachen und ist damit nur noch 
+	Mit diesem Ergebnis lässt sich die nach den $\vec{\mu}_{K_\alpha}$ abgeleitete Energie weiter vereinfachen und ist damit nur noch 
 	
 	\begin{equation}\label{eq:enachmukurz}
 	E^{\mu_{K_\alpha}}=\sum_{\mu\nu}D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}}.
 	\end{equation}
 	
-	Auf die selbe Weise ergibt die Ableitung der Energie nach den Komponenten des Magnetfelds
+\subsection{Erste analytische Ableitung der Hartree-Fock-Energie nach den Komponenten des Magnetfeldes}
+	
+	Ganz analog zur ersten Ableitung der Energie nach den Kernmomenten kann auch die erste Ableitung der Energie nach den Komponenten des Magnetfeldes berechnet werden
 	
 	\begin{equation}\label{eq:enachb}
 %  	\begin{aligned}
-  	  E^{B_\beta}=\left.\frac{\partial E}{\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{B_\beta}\left(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}\right)+\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{B_\beta}+\frac{1}{2}G_{\mu\nu}^{B_\beta}\right)
+  	  E^{B_\beta}=\left.\frac{\partial E}{\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{B_\beta}\left(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}\right)+\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{B_\beta}+\frac{1}{2}G_{\mu\nu}^{B_\beta}\right).
 %  	\end{aligned}  
   	\end{equation}
-  	Dieses mal muss jedoch auch die Abhängigkeit der Basisfunktionen vom Magnetfeld berücksichtigt werden. Daher ist
+  	Durch die Verwendung der \acp{giao} kommt jedoch die Abhängigkeit der Basisfunktionen vom Magnetfeld neu hinzu. Diese Abhängigkeit muss dieses mal bei der Differentiation jedoch auch mit berücksichtigt werden, wodurch die sich die Matrixelemente des abgeleiteten Hamiltonoperators wie folgt ergeben
   	
   	     \begin{equation}
      \begin{aligned}
@@ -533,7 +543,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
         +\left\langle\chi_\mu\left\vert\hat{h}\right\vert\frac{\partial}{\partial B_\beta}\chi_\nu\right\rangle\right)_{\vec{\mu}_K=\vec{B}=0}\\
        =&\left\langle\overline{\chi_\mu}\left\vert\hat{h}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
         +\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{B_\beta}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
-        +\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{h}\right\vert\overline{\chi_\nu}\right\rangle.
+        +\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{h}\right\vert\overline{\chi_\nu}\right\rangle
      \end{aligned}
      \end{equation}
      und 
@@ -541,15 +551,15 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
       G_{\mu\nu}^{B_\beta}= \frac{\partial}{\partial B_\beta} \left(\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}\right)_{\vec{\mu}_K=\vec{B}=0}=\sum_{\kappa\lambda}\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}\right).
      \end{equation}
      
-     Der erste Term auf der rechten Seite in Gleichung (\ref{eq:enachb}) und $\sum_{\mu\nu}\sum_{\kappa\lambda}D_{\mu\nu}D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$      lassen sich wieder zusammenfassen zu $\sum_{\mu\nu}D_{\mu\nu}^{B_\beta}F_{\mu\nu}$. Durch die Abhängigkeit der Basisfunktionen vom Magnetfeld liefert die Ableitung der Orthonormalitätsbedingung aus Gleichung (\ref{eq:orthonormal}) nach einer Komponente des Magnetfelds
+     Der erste Term auf der rechten Seite in Gleichung (\ref{eq:enachb}) und $\sum_{\mu\nu}\sum_{\kappa\lambda}D_{\mu\nu}D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$      lassen sich wieder zusammenfassen zu $\sum_{\mu\nu}D_{\mu\nu}^{B_\beta}F_{\mu\nu}$. Durch die Abhängigkeit der Basisfunktionen vom Magnetfeld liefert die Ableitung der Orthonormalitätsbedingung aus Gleichung (\ref{eq:orthonormal}) nach einer Komponente des Magnetfeldes
      
-     \begin{equation}
+     \begin{equation}\label{eq:orthonormalnachb}
      \iu\sum_{\mu\nu}\left(c_{\mu i}c_{\nu i}^{B_\beta}S_{\mu\nu}-c_{\mu i}^{b_\beta}c_{\nu i}S_{\mu\nu}-\iu c_{\mu i}c_{\nu i}S_{\mu\nu}^{B_\beta}\right)=0.
      \end{equation}
      
-     Dies lässt sich weiter Umformen zu
+     Durch die Multiplikation von links mit $2\sum_i\varepsilon_i$ und Umsortieren lässt sich dies weiter Umformen zu
      
-     \begin{equation}
+     \begin{equation}\label{eq:enweightd}
      \begin{aligned}
      &2\iu\sum_{i\mu\nu}\left(\left(\varepsilon_i S_{\mu\nu} c_{\mu i}\right) c_{\nu i}^{B_\beta} - c_{\mu i}^{B_\beta} \left(\varepsilon_i S_{\mu\nu} c_{\nu i}\right)\right)=-2\sum_{i\mu\nu}\varepsilon_i c_{\mu i}^*c_{\nu i}S_{\mu\nu}^{B_\beta}\\
      &\Rightarrow \sum_{\mu\nu}D_{\mu\nu}^{B_\beta}F_{\mu\nu}=-\sum_{\mu\nu}W_{\mu\nu} S_{\mu\nu}^{B_\beta},
@@ -568,13 +578,13 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      =&-\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}=\overline{\chi_\mu}
      \end{aligned}
      \end{equation}
-     lassen sich die Elemente der abgeleiteten Überlappungsmatrix $S_{\mu\nu}^{B_\beta}$ und des abgeleiteten Einelektronenoperators $h_{\mu\nu}^{B_\beta}$ 
+     lassen sich die Elemente der abgeleiteten Überlappungsmatrix $S_{\mu\nu}^{B_\beta}$ und des abgeleiteten Einelektronenoperators $h_{\mu\nu}^{B_\beta}$ berechnen
      
      \begin{equation}
      S_{\mu\nu}^{B_\beta}=\frac{\partial}{\partial B_\beta} \left(S_{\mu\nu}\right)_{\vec{B}=0}=\frac{\iu}{2c}\left.\left\langle\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
      \end{equation}
   	 
-  	 \begin{equation}
+  	 \begin{equation}\label{eq:hmunub}
   	 \begin{aligned}
   	 h_{\mu\nu}^{B_\beta}=&\frac{\iu}{2c}\left\langle\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\left\vert\hat{h}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle+\left\langle\chi_\mu^{\vec{B}=0}\left\vert^\nu\hat{T}^{B_\beta}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
   	 =&\frac{\iu}{2c}\left\langle\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)_\beta\chi_\mu^{\vec{B}=0}\left\vert\hat{h}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle
@@ -583,20 +593,20 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      \end{aligned}
   	 \end{equation}
   	
-  	 berechnen,  mit 
+  	 mit dem modifizierten Operator $^\nu\hat{T}^{B_\beta}$ 
    	 \begin{equation}
-  	 ^\nu\hat{T}^{B_\beta}=\frac{1}{2c}\left(\vec{r}_\nu\times \vec{p}\right)_\beta
+  	 ^\nu\hat{T}^{B_\beta}=\frac{1}{2c}\left(\vec{r}_\nu\times \vec{p}\right)_\beta,
   	 \end{equation}
-  	 
-  	 und $\vec{r}_\nu=\vec{r}-\vec{R}_\nu$.
-  	 
-  	 Dafür wurde ausgenutzt, dass\supercite{ditchfield1974self}
+  	 wobei zu beachten ist, dass hier lediglich $\vec{r}$ durch $\vec{r}_\nu=\vec{r}-\vec{R}_\nu$ ersetzt wurde.
+  	   	 
+  	 Dafür wurde die folgende Beziehung aus \supercite{ditchfield1974self} ausgenutzt 
   	 \begin{equation}
   	 \begin{aligned}
   	 &\left\langle\exp\left(-\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{r}\right)\cdot\vec{B}\right)\chi_\mu^{\vec{B}=0}\left\vert\frac{1}{2}\left(\vec{p}+\frac{1}{2c}\vec{B}\times\vec{r}\right)^2\right\vert\exp\left(-\frac{\iu}{2c}\left(\vec{R}_\nu\times\vec{r}\right)\cdot\vec{B}\right)\chi_\nu^{\vec{B}=0}\right\rangle\\
-  	 &=\left\langle\exp\left(-\frac{\iu}{2c}\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\cdot\vec{B}\right)\chi_\mu^{\vec{B}=0}\left\vert\frac{1}{2}\left(\vec{p}+\frac{1}{2c}\vec{B}\times\vec{r}_\nu\right)^2\right\vert\chi_\nu^{\vec{B}=0}\right\rangle.
+  	 &=\left\langle\exp\left(-\frac{\iu}{2c}\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\cdot\vec{B}\right)\chi_\mu^{\vec{B}=0}\left\vert\frac{1}{2}\left(\vec{p}+\frac{1}{2c}\vec{B}\times\vec{r}_\nu\right)^2\right\vert\chi_\nu^{\vec{B}=0}\right\rangle,
   	 \end{aligned}
   	 \end{equation}
+  	 welche beispielsweise in \supercite{baron1991} bewiesen wird. 
   	 
   	 
   	 Die abgeleiteten Zweielektronenintegrale $G_{\mu\nu\kappa\lambda}^{B_\beta}$ sind analog
@@ -611,23 +621,29 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
   	 \end{aligned}
      \end{equation}  	  
 	
-	mit
+	mit der verkürzten Notation für die abgeleiteten Zweielektronen-Vierzentrenintegrale
 	
 	\begin{equation}
-	\left(\overline{\chi_\mu\chi_\nu}\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)_\beta=\frac{\iu}{2c}\int\int\left(\vec{R}_{\mu\nu}\times\vec{r}_1\right)_\beta\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
+	\begin{aligned}
+	&\left(\overline{\chi_\mu\chi_\nu}\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)_\beta\\
+	&=\frac{\iu}{2c}\int\int\left(\vec{R}_{\mu\nu}\times\vec{r}_1\right)_\beta\left(\chi_\mu^{\vec{B}=0}\right)^*(\vec{r}_1)\chi_\nu^{\vec{B}=0}(\vec{r}_1)\frac{1}{r_{12}}\left(\chi_\kappa^{\vec{B}=0}\right)^*(\vec{r}_2)\chi_\lambda^{\vec{B}=0}(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
+	\end{aligned}
 	\end{equation}
      
-    Für die Ableitung der Energie nach dem externen Magnetfeld wird schließlich
+    Das Einsetzen der Ergebnisse aus der Gleichung (\ref{eq:enweightd}) in die Gleichung für die Ableitung der Energie nach dem externen Magnetfeld (\ref{eq:enachb}) führt zu
     
     \begin{equation}
-    E^{B_\beta}=\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{B_\beta}+\frac{1}{2}\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}\right)-\sum_{\mu\nu}W_{\mu\nu}S_{\mu\nu}^{B_\beta}
+    E^{B_\beta}=\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{B_\beta}+\frac{1}{2}\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}\right)-\sum_{\mu\nu}W_{\mu\nu}S_{\mu\nu}^{B_\beta}.
     \end{equation}
-    erhalten. Wie zu erwarten war, werden zur Berechnung der Energien erster Ordnung lediglich die ungestörten Koeffizienten benötigt. Zur Berechnung des chemischen Abschirmungstensors werden hingegen die gestörten Koeffizienten benötigt. Unter Berücksichtigung des Zwischenergebnisses aus Gleichung (\ref{eq:enachmukurz}) folgt für den Abschirmungstensor
+    
+\subsection{Gemischte zweite analytische Ableitung der Hartree-Fock-Energie nach den Kernmomenten und nach den Komponenten des Magnetfeldes}    
+
+    Wie zu erwarten war, werden zur Berechnung der Energien erster Ordnung lediglich die ungestörten Koeffizienten benötigt. Zur Berechnung des chemischen Abschirmungstensors werden hingegen die gestörten Koeffizienten benötigt. Unter Berücksichtigung des Zwischenergebnisses aus Gleichung (\ref{eq:enachmukurz}) folgt für den Abschirmungstensor
     
     \begin{equation}
     \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E(\vec{\mu}_K,\vec{B})}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right),
     \end{equation}
-    wobei die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}}$ bereits aus Gleichung (\ref{eq:hmukelemente}) bekannt sind. Die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}$ ergeben sich durch die gemischte zweifache Ableitung von $\hat{H}$
+    wobei die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}}$ bereits aus Gleichung (\ref{eq:hmukelemente}) bekannt sind. Die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}$ ergeben sich durch die gemischte zweite Ableitung von $\hat{H}$
     
     \begin{equation}
     \begin{aligned}
@@ -662,41 +678,88 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}=h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{dia}}+h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{para}}.
 	\end{equation}      
      Auch der Abschirmungstensor kann in einen diamagnetischen und einen paramagnetischen Anteil aufgetrennt werden, siehe beispielsweise\supercite{ditchfield1974self}. Diese Aufteilung ist jedoch willkürlich, sodass die einzelnen Beiträge für sich keine physikalische Bedeutung haben. 
-     \begin{equation}
+     \begin{equation}\label{eq:sigmadiapara}
      \begin{aligned}
-     \sigma_{K_\alpha\beta}=&\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}}
-     =&\sum_{\mu\nu}D_\mu\nu h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{dia}} +\sum_{\mu\nu}\left(D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{para}}+D_{\mu\nu}^{B_\beta} h_{\mu\nu}^{\mu_{K_\alpha}}\right).
+     \sigma_{K_\alpha\beta}=&\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}}\\
+     =&\sum_{\mu\nu}D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{dia}} +\sum_{\mu\nu}\left(D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{para}}+D_{\mu\nu}^{B_\beta} h_{\mu\nu}^{\mu_{K_\alpha}}\right).
      \end{aligned}
      \end{equation}
      
-     Als letztes müssen noch die gestörten Koeffizienten $c_{\mu i}^{B_\beta}$ bestimmt werden, da diese für die gestörte Dichtematrix  
+     Als letztes müssen noch die gestörten Koeffizienten $c_{\mu i}^{B_\beta}$ bestimmt werden, da diese für die gestörte Dichtematrix 
      
      \begin{equation}
      D_{\mu\nu}^{B_\beta}=\left.\frac{\partial D_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{\mu}_K=\vec{B}=0}=\frac{\partial}{\partial B_\beta}\left(2\sum_i c_{\mu i}^*c_{\nu i}\right)_{\vec{\mu}_K=\vec{B}=0}=2\iu \sum_i\left(c_{\mu i}c_{\nu i}^{B_\beta}-c_{\mu i}^{B_\beta}c_{\nu i}\right).
      \end{equation}
      
-     benötigt werden. Dafür werden zunächst die modifizierten \ac{scf}-Gleichungen (\ref{eq:modscf}) nach $B_\beta$ abgeleitet.
+     in Gleichung (\ref{eq:sigmadiapara}) benötigt werden.
+     
+\subsection{CPHF-Gleichungen für Abschirmungskonstanten}\label{kap:cphf}
+
+     Zur Berechnung der gestörten Koeffizienten $c_{\mu i}^{B_\beta}$ werden zunächst die modifizierten \ac{scf}-Gleichungen (\ref{eq:modscf}) nach $B_\beta$ abgeleitet.
      
     \begin{equation}
-	  \boldsymbol{F}^{B_\beta}\boldsymbol{c}+\boldsymbol{F}\boldsymbol{c}^{B_\beta}=\boldsymbol{\varepsilon}\boldsymbol{S}^{B_\beta}\boldsymbol{c}+\boldsymbol{\varepsilon}\boldsymbol{S}\boldsymbol{c}^{B_\beta}
+	\sum_{\nu}\left(F_{\mu\nu}^{B_\beta}c_{\nu i}+F_{\mu\nu}c_{\nu i}^{B_\beta}\right)=\sum_{\nu}\left(\varepsilon_i S_{\mu\nu}^{B_\beta}c_{\nu i}+\varepsilon_i S_{\mu\nu}c_{\nu i}^{B_\beta}\right)
 	\end{equation}
      
-      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-	 Die Ableitung der \acp{mo} nach einer äußeren Störung, hier also die Komponenten  eines externen magnetischen Felds $B_\beta$, lassen sich im Rahmen des \ac{cphf}-Formalismus schreiben als
+    und im nächsten Schritt von links mit $\sum_{\mu}c_{\mu q}^*$ multipliziert. Außerdem werden alle Terme mit gestörten Koeffizienten auf die rechte Seite und der Term mit der gestörten Überlappungsmatrix auf die linke Seite gebracht 
+    \begin{equation}\label{eq:rhdersort}
+	\sum_{\mu\nu}c_{\mu q}^*\left(F_{\mu\nu}^{B_\beta}c_{\nu i}-\varepsilon_i S_{\mu\nu}^{B_\beta}c_{\nu i}\right)=\sum_{\mu\nu}c_{\mu q}^*\left(\varepsilon_i S_{\mu\nu}c_{\nu i}^{B_\beta}-F_{\mu\nu}c_{\nu i}^{B_\beta}\right).
+	\end{equation}
+	
+	Es ist nun zweckmäßig, die gestörten Koeffizienten durch eine Linearkombination von ungestörten Koeffizienten auszudrücken. Es wird folgender Ansatz gemacht
+	
+	\begin{equation}\label{eq:cnachbentwicklung}
+	c_{\mu i}^{B_\beta}=\sum_{p}c_{\mu p} U_{pi}^{B_\beta},
+	\end{equation}
+	
+	welcher in Gleichung (\ref{eq:rhdersort}) eingesetzt wird. Zusätzliches Ausnutzen von ursprünglichen Roothaan-Hall-Gleichungen (\ref{roothaanhall}) sowie der Orthornormalitätsbedingung Gleichung (\ref{eq:orthonormal}) führt damit zu
+	
+    \begin{equation}\label{eq:cphfupi}
+    \begin{aligned}
+	\sum_{\mu\nu}c_{\mu q}^*\left(F_{\mu\nu}^{B_\beta}c_{\nu i}-\varepsilon_i S_{\mu\nu}^{B_\beta}c_{\nu i}\right)=&\sum_p\sum_{\mu\nu}c_{\mu q}^*\left(\varepsilon_i S_{\mu\nu}c_{\nu p}U_{pi}^{B_\beta}-\varepsilon_p S_{\mu\nu}c_{\nu p}U_{pi}^{B_\beta}\right)\\
+	=&\sum_p\left(\left(\varepsilon_i-\varepsilon_p\right)\delta_{pq}U_{pi}^{B_\beta}\right)\\
+	=&\left(\varepsilon_i-\varepsilon_q\right)U_{pi}^{B_\beta}.
+	\end{aligned}
+	\end{equation}	
+	Das Einsetzen von Gleichung (\ref{eq:cnachbentwicklung}) in die nach $B_\beta$ abgeleitete Orthonormalitätsbedingung Gleichung (\ref{eq:orthonormalnachb}) ergibt 
+	
+	\begin{equation}\label{eq:cphfuji}
+	\begin{aligned}
+	-\sum_{\mu\nu}c_{\mu i}S_{\mu\nu}^{B_\beta}c_{\nu j}=&\sum_p\sum_{\mu\nu}\left(c_{\mu p}U_{pi}^{B_\beta}S_{\mu\nu}c_{\nu j}+c_{\nu i}S_{\mu\nu}c_{\nu p}U_{pj}^{B_\beta}\right)\\
+	=&\sum_p\left(U_{pi}^{B_\beta}\delta_{pj}+U_{pj}^{B_\beta}\delta_{pi}\right)=U_{ji}^{B_\beta}+U_{ij}^{B_\beta}.
+	\end{aligned}
+	\end{equation}
+    
+    
+    Die Gleichungen (\ref{eq:cphfupi}) und (\ref{eq:cphfuji}) werden \ac{cphf}-Gleichungen genannt.\supercite{gerratt1968force} Sie bilden ein unterbestimmtes Gleichungssystem, wodurch zusätzliche Forderungen gemacht werden können.\supercite{weigendphdthesis} Durch die Wahl  $U_{ji}^{B_\beta}=U_{ij}^{B_\beta}$ folgt unmittelbar für die Berechnung des besetzt-besetzt Blocks
+    
     \begin{equation}
-    \left(\frac{\partial \phi_i}{\partial B_\beta}\right)_{\vec{B}=0}=\phi_i^{B_\beta}=\sum_{\mu=1}^{N_{\text{BF}}}\left[c_{\mu i}\chi_\mu^{B_\beta}+\sum_{p=1}^{N_{\text{MO}}}c_{\mu p}U_{ip}^{B_\beta}\chi_\mu\right].
-	\end{equation}
-	Die Koeffizientenmatrix $U_{ip}^{B_\beta}$ beschreibt die Änderung der Molekülorbitale durch die Störung des äußeren Magnetischen Feldes $\vec{B}$. 
-     
+    U_{ji}^{B_\beta}=-\sum_{\mu\nu}c_{\mu j}S_{\mu\nu}^{B_\beta}c_{\nu i}
+    \end{equation}
+    
+    Da für $\left(\varepsilon_i-\varepsilon_a\right)$ im Allgemeinen keine allzu kleine oder gar verschwindende Werte zu erwarten sind, kann der virtuell-besetzte Block durch
+    
+    \begin{equation}
+    U_{ai}^{B_\beta}=\frac{\sum_{\mu\nu}c_{\mu q}^*\left(F_{\mu\nu}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}}{\varepsilon_i-\varepsilon_a}
+    \end{equation}
+    berechnet werden. Die gestörte Fockmatrix ist
+    
+    \begin{equation}
+    \begin{aligned}
+    F_{\mu\nu}^{B_\beta}=&\frac{\partial}{\partial B_\beta} \left(F_{\mu\nu}\right)_{\vec{\mu}_K=\vec{B}=0}=h_{\mu\nu}^{B_\beta}+G_{\mu\nu}^{B_\beta}\\
+    =&h_{\mu\nu}^{B_\beta}+\sum_{\kappa\lambda}\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}\right)
+    \end{aligned}
+    \end{equation}
+    
+    und hängt damit selbst von den gestörten Koeffizienten ab. Bedingt durch die Symmetrie der Coulombintegrale und die Antisymmetrie der gestörten Dichtematrix verschwindet der Beitrag der Coulombintegrale 
+    
+    \begin{equation}
+    \begin{aligned}
+    \sum_{\kappa\lambda}D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}=& \sum_{\kappa\lambda}D_{\kappa\lambda}^{B_\beta}\left[\left(\chi_{\mu}\chi_{\nu}|\chi_{\kappa}\chi_{\lambda}\right)-\frac{1}{2}\left(\chi_{\mu}\chi_{\lambda}|\chi_{\kappa}\chi_{\nu}\right)\right] \\
+    =&-\frac{1}{2}\sum_{\kappa\lambda}D_{\kappa\lambda}^{B_\beta}\left(\chi_{\mu}\chi_{\lambda}|\chi_{\kappa}\chi_{\nu}\right).
+    \end{aligned}
+    \end{equation}
+    
+    Damit sind die \ac{cphf}-Gleichungen über den Austausch gekoppelt und müssen in einem iterativen Verfahren näherungsweise gelöst werden.
+    
 	\subsection{Die Berechnung von Ringströmen}

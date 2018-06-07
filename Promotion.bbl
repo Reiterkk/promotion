@@ -494,6 +494,69 @@
       \field{pages}{225\bibrangedash 241}
       \range{pages}{17}
     \endentry
+    \entry{gerratt1968force}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4f12ec6bbf3b7e200083ef1917f2ad98}{%
+           family={Gerratt},
+           familyi={G\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d5203ca5a1d25772114c6bc2ee7d9270}{%
+           family={Mills},
+           familyi={M\bibinitperiod},
+           given={Ian\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{84df9f0a6b5dd15d09350576948f460d}
+      \strng{fullhash}{84df9f0a6b5dd15d09350576948f460d}
+      \strng{bibnamehash}{84df9f0a6b5dd15d09350576948f460d}
+      \strng{authorbibnamehash}{84df9f0a6b5dd15d09350576948f460d}
+      \strng{authornamehash}{84df9f0a6b5dd15d09350576948f460d}
+      \strng{authorfullhash}{84df9f0a6b5dd15d09350576948f460d}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{4}
+      \field{title}{Force Constants and Dipole-Moment Derivatives of Molecules from Perturbed Hartree--Fock Calculations. I}
+      \field{volume}{49}
+      \field{year}{1968}
+      \field{pages}{1719\bibrangedash 1729}
+      \range{pages}{11}
+    \endentry
+    \entry{weigendphdthesis}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universität Karlsruhe}%
+      }
+      \strng{namehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{fullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{bibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authorbibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authornamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authorfullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RI-Methoden in der MP2-Störungsrechnung: Theorie, Implementierung und Anwendung}
+      \field{type}{phdthesis}
+      \field{year}{1999}
+    \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
         {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
