@@ -302,33 +302,6 @@
       \field{pages}{A1133}
       \range{pages}{-1}
     \endentry
-    \entry{treutlerphdthesis}{thesis}{}
-      \name{author}{1}{}{%
-        {{hash=1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}{%
-           family={Treutler},
-           familyi={T\bibinitperiod},
-           given={Olliver},
-           giveni={O\bibinitperiod}}}%
-      }
-      \list{institution}{1}{%
-        {Universität Karlsruhe}%
-      }
-      \strng{namehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \strng{fullhash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \strng{bibnamehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \strng{authorbibnamehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \strng{authornamehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \strng{authorfullhash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Entwicklung und Anwendung von Dichtefunktionalmethoden}
-      \field{type}{phdthesis}
-      \field{year}{1995}
-    \endentry
     \entry{ditchfield1974self}{article}{}
       \name{author}{1}{}{%
         {{hash=954f4d737f5e7bddeb9f92ec6c14dd23}{%
@@ -557,6 +530,324 @@
       \field{type}{phdthesis}
       \field{year}{1999}
     \endentry
+    \entry{rajagopal1973inhomogeneous}{article}{}
+      \name{author}{2}{}{%
+        {{hash=30639b04908435619f99854653dc12d6}{%
+           family={Rajagopal},
+           familyi={R\bibinitperiod},
+           given={AK},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d7e376acb662fbd82ce8b8fffdaad031}{%
+           family={Callaway},
+           familyi={C\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{dc2294b64d98896226f52aa28fa10590}
+      \strng{fullhash}{dc2294b64d98896226f52aa28fa10590}
+      \strng{bibnamehash}{dc2294b64d98896226f52aa28fa10590}
+      \strng{authorbibnamehash}{dc2294b64d98896226f52aa28fa10590}
+      \strng{authornamehash}{dc2294b64d98896226f52aa28fa10590}
+      \strng{authorfullhash}{dc2294b64d98896226f52aa28fa10590}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{number}{5}
+      \field{title}{Inhomogeneous electron gas}
+      \field{volume}{7}
+      \field{year}{1973}
+      \field{pages}{1912}
+      \range{pages}{1}
+    \endentry
+    \entry{vignale1988current}{article}{}
+      \name{author}{2}{}{%
+        {{hash=68763f3b6092069bd29b0c1ffe205395}{%
+           family={Vignale},
+           familyi={V\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d4a4458727b7096c92864cfafaef4bf6}{%
+           family={Rasolt},
+           familyi={R\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{fullhash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{bibnamehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{authorbibnamehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{authornamehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{authorfullhash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{number}{18}
+      \field{title}{Current-and spin-density-functional theory for inhomogeneous electronic systems in strong magnetic fields}
+      \field{volume}{37}
+      \field{year}{1988}
+      \field{pages}{10685}
+      \range{pages}{1}
+    \endentry
+    \entry{buhl1999dft}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9f8c320b0dad48dd6c1a6bbcfaef9530}{%
+           family={B{ü}hl},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1474e3c6d283c520d5a84466dbbcc64e}{%
+           family={Kaupp},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f2eac4779150535b103160247d2b83f2}{%
+           family={Malkina},
+           familyi={M\bibinitperiod},
+           given={Olga\bibnamedelima L},
+           giveni={O\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=922abdb5345a274b687e225a1b191622}{%
+           family={Malkin},
+           familyi={M\bibinitperiod},
+           given={Vladimir\bibnamedelima G},
+           giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{7413f5a7087cadf8bbae2552662193ee}
+      \strng{fullhash}{984d69925d2e0e9e902ad478b1af1108}
+      \strng{bibnamehash}{984d69925d2e0e9e902ad478b1af1108}
+      \strng{authorbibnamehash}{984d69925d2e0e9e902ad478b1af1108}
+      \strng{authornamehash}{7413f5a7087cadf8bbae2552662193ee}
+      \strng{authorfullhash}{984d69925d2e0e9e902ad478b1af1108}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Comp. Chem.}
+      \field{number}{1}
+      \field{title}{The DFT route to NMR chemical shifts}
+      \field{volume}{20}
+      \field{year}{1999}
+      \field{pages}{91\bibrangedash 105}
+      \range{pages}{15}
+    \endentry
+    \entry{vignale1987density}{article}{}
+      \name{author}{2}{}{%
+        {{hash=68763f3b6092069bd29b0c1ffe205395}{%
+           family={Vignale},
+           familyi={V\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d4a4458727b7096c92864cfafaef4bf6}{%
+           family={Rasolt},
+           familyi={R\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{fullhash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{bibnamehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{authorbibnamehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{authornamehash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \strng{authorfullhash}{f8cacc19e3ec7462fac08f7ab296132a}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Letters}
+      \field{number}{20}
+      \field{title}{Density-functional theory in strong magnetic fields}
+      \field{volume}{59}
+      \field{year}{1987}
+      \field{pages}{2360}
+      \range{pages}{1}
+    \endentry
+    \entry{lee1995density}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5b0d717c21fe057d17324977dc163ab7}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Aaron\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=dc9936e092d72ad8543e84e07b2c7f96}{%
+           family={Handy},
+           familyi={H\bibinitperiod},
+           given={Nicholas\bibnamedelima C},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4e1e6d724fed0ceb641e63848c82f811}{%
+           family={Colwell},
+           familyi={C\bibinitperiod},
+           given={Susan\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{885d45ec33b32c6c83abb7a055569571}
+      \strng{fullhash}{885d45ec33b32c6c83abb7a055569571}
+      \strng{bibnamehash}{885d45ec33b32c6c83abb7a055569571}
+      \strng{authorbibnamehash}{885d45ec33b32c6c83abb7a055569571}
+      \strng{authornamehash}{885d45ec33b32c6c83abb7a055569571}
+      \strng{authorfullhash}{885d45ec33b32c6c83abb7a055569571}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{23}
+      \field{title}{The density functional calculation of nuclear shielding constants using London atomic orbitals}
+      \field{volume}{103}
+      \field{year}{1995}
+      \field{pages}{10095\bibrangedash 10109}
+      \range{pages}{15}
+    \endentry
+    \entry{bieger1985lcao}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f32c93e4c4d02ec2a6869e156d5e490d}{%
+           family={Bieger},
+           familyi={B\bibinitperiod},
+           given={W},
+           giveni={W\bibinitperiod}}}%
+        {{hash=43b56ad6602a8196a313a4b0e0a4419d}{%
+           family={Seifert},
+           familyi={S\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b323c8bd6c4b73425dda3ce1986cabca}{%
+           family={Eschrig},
+           familyi={E\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6da366e6c6e297167e99364ca777b14c}{%
+           family={Grossmann},
+           familyi={G\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{55bc4648c91babe86635b0a427c98c11}
+      \strng{fullhash}{133344180f094feee3deca265b8b56d7}
+      \strng{bibnamehash}{133344180f094feee3deca265b8b56d7}
+      \strng{authorbibnamehash}{133344180f094feee3deca265b8b56d7}
+      \strng{authornamehash}{55bc4648c91babe86635b0a427c98c11}
+      \strng{authorfullhash}{133344180f094feee3deca265b8b56d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{3}
+      \field{title}{LCAO X$\alpha$ calculations of nuclear magnetic shielding in molecules}
+      \field{volume}{115}
+      \field{year}{1985}
+      \field{pages}{275\bibrangedash 280}
+      \range{pages}{6}
+    \endentry
+    \entry{malkin1993calculations}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2e92037e4e4777bbfd021166c2fb72e2}{%
+           family={Malkin},
+           familyi={M\bibinitperiod},
+           given={VG},
+           giveni={V\bibinitperiod}}}%
+        {{hash=39eb19c69b974df41b1161fcf0904d20}{%
+           family={Malkina},
+           familyi={M\bibinitperiod},
+           given={OL},
+           giveni={O\bibinitperiod}}}%
+        {{hash=2042025efb230efd5819cc6530e6eb12}{%
+           family={Salahub},
+           familyi={S\bibinitperiod},
+           given={DR},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{086338ad03825c1d93a271e9e92c9314}
+      \strng{fullhash}{086338ad03825c1d93a271e9e92c9314}
+      \strng{bibnamehash}{086338ad03825c1d93a271e9e92c9314}
+      \strng{authorbibnamehash}{086338ad03825c1d93a271e9e92c9314}
+      \strng{authornamehash}{086338ad03825c1d93a271e9e92c9314}
+      \strng{authorfullhash}{086338ad03825c1d93a271e9e92c9314}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{1-2}
+      \field{title}{Calculations of NMR shielding constants by uncoupled density functional theory}
+      \field{volume}{204}
+      \field{year}{1993}
+      \field{pages}{80\bibrangedash 86}
+      \range{pages}{7}
+    \endentry
+    \entry{maximoff2004nuclear}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d58f4a026ea971ce2ee68fcd139d6b3b}{%
+           family={Maximoff},
+           familyi={M\bibinitperiod},
+           given={Sergey\bibnamedelima N},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f36433e41bd9ddf980063585aad2f4de}{%
+           family={Scuseria},
+           familyi={S\bibinitperiod},
+           given={Gustavo\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0fac2e702f05af26d1158051bbd9937b}
+      \strng{fullhash}{0fac2e702f05af26d1158051bbd9937b}
+      \strng{bibnamehash}{0fac2e702f05af26d1158051bbd9937b}
+      \strng{authorbibnamehash}{0fac2e702f05af26d1158051bbd9937b}
+      \strng{authornamehash}{0fac2e702f05af26d1158051bbd9937b}
+      \strng{authorfullhash}{0fac2e702f05af26d1158051bbd9937b}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{4-6}
+      \field{title}{Nuclear magnetic resonance shielding tensors calculated with kinetic energy density-dependent exchange-correlation functionals}
+      \field{volume}{390}
+      \field{year}{2004}
+      \field{pages}{408\bibrangedash 412}
+      \range{pages}{5}
+    \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
         {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
@@ -574,8 +865,8 @@
       \strng{authorbibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authornamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authorfullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -610,8 +901,8 @@
       \strng{authorbibnamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authornamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authorfullhash}{3fbf47f8204db480f89e43ea46361130}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -651,8 +942,8 @@
       \strng{authorbibnamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authornamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authorfullhash}{0eb47e0aefffae140793948bc80fc106}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}

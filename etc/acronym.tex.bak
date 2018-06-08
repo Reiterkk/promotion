@@ -28,7 +28,7 @@
     \acro{esp}[ESP]{elektrostatisches Potential}
 	    \acrodefplural{esp}[ESP]{elektrostatischen Potentials}
 	
-	\acro{giao}[GIAO]{\textit{gauge including atomic orbital}}    
+	\acro{giao}[GIAO]{\textit{Gauge Including Atomic Orbital}}    
 
 	\acro{gga}[GGA]{\textit{Generalized-Gradient-Approximation}}   
 		\acrodefplural{gga}[GGA]{\textit{Generalized-Gradient-Approximation}}
@@ -43,7 +43,7 @@
 	\acro{mo}[MO]{Molekülorbital}   
 		\acrodefplural{mo}[MOs]{Molekülorbitale}
 		
-	\acro{mp2}[MP2]{MP2}
+	\acro{mp2}[MP2]{M\o ller-Plesset Störungstheorie zweiter Ordnung}
 		
     \acro{nao}[NAO]{\textit{Natural-Atomic-Orbital}}
 
