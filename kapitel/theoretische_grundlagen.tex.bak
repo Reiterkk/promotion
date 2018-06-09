@@ -311,7 +311,7 @@ E(\vec{\mu}_K,\vec{B})=&E^{(0)}+\sum_{\alpha K} E^{(1,0)}_{\mu_{K_\alpha}} \mu_{
 Ein alternativer Ausdruck für die Energie ist
 
 \begin{equation}\label{eq:evonbmu}
- E(\vec{\mu}_K,\vec{B})=E_0-\sum_\alpha \gamma_\alpha B_\alpha-\sum_{\alpha K}\mu_{K_\alpha}B_\alpha-\frac{1}{2}\sum_{\alpha\beta}B_\alpha\chi_{\alpha\beta} B_\beta+\sum_{\alpha\beta K}\mu_{K_\alpha}\sigma_{K_\alpha \beta}B_\beta+\cdots, 
+ E(\vec{\mu}_K,\vec{B})=E_0-\sum_\beta \gamma_\beta B_\beta-\sum_{\alpha K}\mu_{K_\alpha}B_\alpha-\frac{1}{2}\sum_{\alpha\beta}B_\alpha\chi_{\alpha\beta} B_\beta+\sum_{\alpha\beta K}\mu_{K_\alpha}\sigma_{K_\alpha \beta}B_\beta+\cdots, 
 \end{equation}
 
 wobei $\gamma_\alpha$ das permanente magnetische Moment des Moleküls ist, welches für geschlossenschalige Moleküle verschwindet. Der dritte Term beschreibt die direkte Wechselwirkung der Kerndipolmomente mit dem externen Magnetfeld. Die $\chi_{\alpha\beta}$ sind die Elemente des molekularen diamagnetischen Suszeptibilitätstensors $\boldsymbol{\chi}$. Durch das externe Magnetfeld werden elektrische Ströme induziert, welche über 
@@ -776,11 +776,23 @@ ersetzt. Analog zu Gleichung (\ref{ymunu}) werden die Matrixelemente als Ableitu
 \begin{aligned}
 Y_{\mu\nu}=&\int\frac{\partial f}{\partial \rho(\vec{r})}\chi_\mu^*\chi_\nu\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\nabla \rho(\vec{r})\vert^2}\nabla \rho(\vec{r})\nabla \left(\chi_\mu^*\chi_\nu\right)\Diff3\vec{r}\\
-&+\int\frac{\partial f}{\partial\tau}\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\Diff3\vec{r},
+&+\int\frac{\partial f}{\partial\tau}\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\Diff3\vec{r},
 \end{aligned}
 \end{equation}
-wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$. Diese Elemente müssen schließlich noch nach den Komponenten des Magnetfeldes abgeleitet werden. Da die Ableitungen der Dichte und deren Gradienten nach $B_beta$ jedoch verschwinden,\supercite{lee1995density} wird letztlich folgender Ausdruck erhalten\supercite{maximoff2004nuclear} 
+wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$. Diese Elemente müssen schließlich noch nach den Komponenten des Magnetfeldes abgeleitet werden. Da der Term in Gleichung (\ref{eq:}) für geschlossenschalige Moleküle verschwindet, ändert sich die Energie nur in zweiter Ordnung mit dem Magnetfeld. Dies hat zur Folge, dass die Ableitung des Funktionals nach dem Magnetfeld ebenfalls verschwindet. Weiterhin verschwinden auch die Ableitungen der Dichte und deren Gradienten nach $B_\beta$,\supercite{lee1995density} wodurch letztlich folgender Ausdruck erhalten wird\supercite{maximoff2004nuclear} 
 
+\begin{equation}
+\begin{aligned}
+Y_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}\\
+=&\int\frac{\partial f}{\partial \rho(\vec{r})}\frac{\partial}{\partial B_\beta}\left[\chi_\mu^*\chi_\nu\right]_{\vec{B}=0}\Diff3\vec{r}
++\int 2\frac{\partial f}{\partial \vert\nabla \rho(\vec{r})\vert^2}\nabla \rho(\vec{r})\frac{\partial}{\partial B_\beta}\left[\nabla \left(\chi_\mu^*\chi_\nu\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
+&+\int\frac{\partial f}{\partial\tau}\frac{\partial}{\partial B_\beta}\left[\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
+=&\int\frac{\partial f}{\partial \rho(\vec{r})}\left[\chi_\mu^*\chi_\nu\right]^{B_\beta}\Diff3\vec{r}
++\int 2\frac{\partial f}{\partial \vert\nabla \rho(\vec{r})\vert^2}\nabla \rho(\vec{r})\nabla \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}\Diff3\vec{r}\\
+&+\int\frac{\partial f}{\partial\tau}\left[\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]
+^{B_\beta}\Diff3\vec{r}
+\end{aligned}
+\end{equation}
 
     
 \subsection{Die Berechnung von Ringströmen}
