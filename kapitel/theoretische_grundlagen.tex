@@ -665,10 +665,9 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	\end{equation}      
      Auch der Abschirmungstensor kann in einen diamagnetischen und einen paramagnetischen Anteil aufgetrennt werden, siehe beispielsweise\supercite{ditchfield1974self}. Diese Aufteilung ist jedoch willkürlich, sodass die einzelnen Beiträge für sich keine physikalische Bedeutung haben. 
      \begin{equation}\label{eq:sigmadiapara}
-     \begin{aligned}
-     \sigma_{K_\alpha\beta}=&\sum_{\mu\nu}D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{dia}} +\sum_{\mu\nu}\left(D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{para}}+D_{\mu\nu}^{B_\beta} h_{\mu\nu}^{\mu_{K_\alpha}}\right)\\
-     =&\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}}.
-     \end{aligned}
+%     \begin{aligned}
+     \sigma_{K_\alpha\beta}=\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}}=\sum_{\mu\nu}D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{dia}} +\sum_{\mu\nu}\left(D_{\mu\nu} h_{\mu\nu}^{\mu_{K_\alpha}B_\beta,\textrm{para}}+D_{\mu\nu}^{B_\beta} h_{\mu\nu}^{\mu_{K_\alpha}}\right).
+%     \end{aligned}
      \end{equation}
      
      Als letztes müssen noch die gestörten Koeffizienten $c_{\mu i}^{B_\beta}$ bestimmt werden, da diese für die gestörte Dichtematrix 
@@ -720,13 +719,13 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     Die Gleichungen (\ref{eq:cphfupi}) und (\ref{eq:cphfuji}) werden \ac{cphf}-Gleichungen genannt.\supercite{gerratt1968force} Sie bilden ein unterbestimmtes Gleichungssystem, wodurch zusätzliche Forderungen gemacht werden können.\supercite{weigendphdthesis} Durch die Wahl  $U_{ji}^{B_\beta}=-U_{ij}^{B_\beta}$ folgt unmittelbar für die Berechnung des besetzt-besetzt Blocks
     
     \begin{equation}\label{eq:uji}
-    U_{ji}^{B_\beta}=-\frac{1}{2}\sum_{\mu\nu}c_{\mu j}S_{\mu\nu}^{B_\beta}c_{\nu i}
+    U_{ji}^{B_\beta}=-\frac{1}{2}\sum_{\mu\nu}c_{\mu j}S_{\mu\nu}^{B_\beta}c_{\nu i}=-\frac{1}{2}S_{ji}^{B_\beta}
     \end{equation}
     
     Da für $\left(\varepsilon_i-\varepsilon_a\right)$ im Allgemeinen keine allzu kleine oder gar verschwindende Werte zu erwarten sind, kann der virtuell-besetzte Block durch
     
     \begin{equation}\label{eq:uai}
-    U_{ai}^{B_\beta}=\frac{\sum_{\mu\nu}c_{\mu q}^*\left(F_{\mu\nu}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}}{\varepsilon_i-\varepsilon_a}
+    U_{ai}^{B_\beta}=\frac{\sum_{\mu\nu}c_{\mu a}^*\left(F_{\mu\nu}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}}{\varepsilon_i-\varepsilon_a}=\frac{F_{ai}^{B_\beta}-\varepsilon_i S_{ai}^{B_\beta}}{\varepsilon_i-\varepsilon_a}
     \end{equation}
     berechnet werden. Die gestörte Fockmatrix ist
     
@@ -766,8 +765,8 @@ nach den Komponenten des Magnetfeldes benötigt. Die Ableitung des Coulombterms 
 
 \begin{equation}
 \begin{aligned}
-\tilde{\tau}=&2\sum_i^{N/2}\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i\\
-=&\sum_{\mu\nu}D_{\mu\nu}\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu
+\tilde{\tau}=&\sum_i^{N/2}\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i\\
+=&\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu
 \end{aligned}
 \end{equation}
 
@@ -786,7 +785,7 @@ wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$. Di
 Y_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}\\
 =&\int\frac{\partial f}{\partial \rho(\vec{r})}\frac{\partial}{\partial B_\beta}\left[\chi_\mu^*\chi_\nu\right]_{\vec{B}=0}\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\nabla \rho(\vec{r})\vert^2}\nabla \rho(\vec{r})\frac{\partial}{\partial B_\beta}\left[\nabla \left(\chi_\mu^*\chi_\nu\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
-&+\int\frac{\partial f}{\partial\tau}\frac{\partial}{\partial B_\beta}\left[\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
+&+\int\frac{\partial f}{\partial\tau}\frac{\partial}{\partial B_\beta}\frac{1}{2}\left[\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
 =&\int\frac{\partial f}{\partial \rho(\vec{r})}\left[\chi_\mu^*\chi_\nu\right]^{B_\beta}\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\nabla \rho(\vec{r})\vert^2}\nabla \rho(\vec{r})\nabla \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}\Diff3\vec{r}\\
 &+\int\frac{\partial f}{\partial\tau}\left[\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]
@@ -797,11 +796,11 @@ Y_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\v
 mit
 
 \begin{equation}
-\left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=
+\left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=\frac{\iu}{2c}\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}
 \end{equation}
 
 \begin{equation}
-\nabla \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=
+\nabla \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=\frac{\iu}{2c}\left[\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\cdot\nabla\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)+\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\left(\vec{B}\times\vec{R}_{\mu\nu}\right)^{B_\beta}\right]
 \end{equation}
 
 \begin{equation}
@@ -811,5 +810,37 @@ mit
 &=
 \end{aligned}
 \end{equation}
-    
+Damit sind alle Terme  für die gestörte Fockmatrix $\boldsymbol{F}^{b_\beta}$ bekannt. Sie hängt nicht mehr von den gestörten Koeffizienten ab, wodurch sich die gestörte Dichtematrix durch Umformen und Einsetzen der Gleichungen (\ref{eq:uji}) und (\ref{eq:uai}) direkt aufschreiben lässt
+
+\begin{equation}
+\begin{aligned}
+D_{\mu\nu}^{B_\beta}=&2\iu\sum_i\left(c_{\mu i}c_{\nu i}^{B_\beta}-c_{\mu i}^{B_\beta}c_{\nu i}\right)=2\iu\sum_i\sum_p\left(c_{\mu i}c_{\nu p} U_{pi}^{B_\beta}-c_{\mu p}c_{\nu i}U_{pi}^{B_\beta}\right)\\
+=&2\iu\sum_i\sum_j \left(c_{\mu i}c_{\nu j} U_{ji}^{B_\beta}+c_{\mu j}c_{\nu i}U_{ij}^{B_\beta}\right) +2\iu\sum_i\sum_a\left(c_{\mu i}c_{\nu a}-c_{\mu a}c_{\nu i}\right)U_{ai}^{B_\beta}\\
+=&2\iu\sum_i\sum_j c_{\mu i}c_{\nu j} U_{ji}^{B_\beta}+2\iu\sum_i\sum_j c_{\mu i}c_{\nu j}U_{ji}^{B_\beta}+2\iu\sum_i\sum_a\left(c_{\mu i}c_{\nu a}-c_{\mu a}c_{\nu i}\right)U_{ai}^{B_\beta}\\
+=&4\iu\sum_i\sum_j c_{\mu i}c_{\nu j} U_{ji}^{B_\beta}+2\iu\sum_i\sum_a\left(c_{\mu i}c_{\nu a}-c_{\mu a}c_{\nu i}\right)U_{ai}^{B_\beta}\\
+=&-2\sum_i\sum_j c_{\mu i}c_{\nu j} S_{ji}^{B_\beta}+2\sum_i\sum_a\left(c_{\mu i}c_{\nu a}-c_{\mu a}c_{\nu i}\right)\frac{\left(F_{ai}^{B_\beta}-\varepsilon_i S_{ai}^{B_\beta}\right)}{\varepsilon_i-\varepsilon_a}.
+\end{aligned}
+\end{equation}
+
+Solange zur Berechnung keine Hybrid-Funktionale eingesetzt werden, welche durch die Kopplung über den Hartree-Fock-Austauschterm wieder zu einem iterativen Verfahren würden, ist  der endgültige Ausdruck für den Abschirmungstensor im Rahmen der \textit{uncoupled} \ac{dft} gegeben durch
+
+\begin{equation}
+\sigma_{K_\alpha\beta}=\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}},
+\end{equation}
+
+mit 
+\begin{equation}
+\sigma_{K_\alpha\beta}^{\textrm{dia}}=\sum_{\mu\nu}D_{\mu\nu}\frac{1}{2c^2}\left.\left\langle\chi_\mu^{\vec{B}=0}\right\vert\frac{\vec{r}_\nu\vec{r}_K\delta_{\alpha\beta}-r_{\nu \beta}r_{K_\alpha}}{r_K^3}\left\vert\chi_\nu^{\vec{B}=0}\right\rangle\right.
+\end{equation}
+und
+\begin{equation}
+\begin{aligned}
+\sigma_{K_\alpha\beta}^{\textrm{para}}=&\frac{\iu}{2c}\sum_{\mu\nu}D_{\mu\nu}\left\langle\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)_\beta\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{\mu_{K_\alpha}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+&+\frac{\iu}{2c}\sum_{\mu\nu}D_{\mu\nu}\left(\vec{R}_{\mu}\times\vec{R}_\nu\right)_\beta\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{\mu_{K_\alpha}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+&-\sum_{\mu\nu}\left[2\sum_i\sum_j c_{\mu i}c_{\nu j} S_{ji}^{B_\beta}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{\mu_{K_\alpha}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right]\\
+&+\sum_{\mu\nu}\left[2\sum_i\sum_a\left(c_{\mu i}c_{\nu a}-c_{\mu a}c_{\nu i}\right)\frac{\left(F_{ai}^{B_\beta}-\varepsilon_i S_{ai}^{B_\beta}\right)}{\varepsilon_i-\varepsilon_a}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\hat{T}^{\mu_{K_\alpha}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right].
+\end{aligned}
+\end{equation}
+.
+
 \subsection{Die Berechnung von Ringströmen}
