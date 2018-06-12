@@ -43,6 +43,8 @@
   bottom=4.5cm,
   bindingoffset=5mm
 }
+\usepackage{enumitem} % für Aufzählungen usw.
+
 \usepackage{pdflscape}
 \setlength{\parindent}{0pt} % entfernt global die Einrückung nach Absätzen
 \usepackage{caption}
@@ -257,7 +259,7 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 % Erklärung (Arbeit selbstständig verfasst)
 \include{./intro/erklaerung}  
 
-\include{./intro/danksagung}
+
 
 % Inhaltsverzeichnis
 %Definition wie tief da Inhaltsverzeichnis dargestellt werden soll
@@ -268,22 +270,27 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 % Hauptteil - Arabische Seitennummerierung
 \mainmatter % die eigentliche Arbeit
 
-\chapter{Einleitung und Motivation}\label{chap1}
+\chapter{Einleitung und Motivation}\label{einleitung}
 \input{kapitel/einleitung}
 
-\chapter{Theoretische Grundlagen}\label{chap2}
+\chapter{Theoretische Grundlagen}\label{theorie}
 \input{kapitel/theoretische_grundlagen}
 
-\chapter{Erweiterte Funktionalität}\label{chap3}
-\input{kapitel/funktionalitaet}
+\chapter{Grundlegende Programmstruktur des Moduls \texttt{mpshift}}\label{programmstruktur}
+\input{kapitel/programmstruktur}
 
-\chapter{Verbesserte Effizienz}\label{chap4}
+\chapter{Verbesserung der Effizienz}\label{effizienz}
 \input{kapitel/effizienz}
 
-\chapter{Anwendungen}\label{chap5}
+\chapter{Erweiterund der Funktionalität}\label{funktionalität}
+\input{kapitel/funktionalitaet}
+
+
+
+\chapter{Anwendungen}\label{anwendungen}
 \input{kapitel/anwendungen}
 
-\chapter{Zusammenfassung}\label{chap6}
+\chapter{Zusammenfassung}\label{zusammenfassung}
 \input{kapitel/zusammenfassung}
 
 
@@ -313,6 +320,10 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 
 \chapter*{Lebenslauf}
 \input{kapitel/lebenslauf}
+\newpage
+\thispagestyle{empty}
+\quad
+\include{./intro/danksagung}
 \newpage
 \thispagestyle{empty}
 \quad

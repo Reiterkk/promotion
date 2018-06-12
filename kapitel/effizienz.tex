@@ -1,9 +1,14 @@
-\section{Die RI-Methode für chemische Abschirmkonstanten}
+\section{Die RI-Methode für chemische Abschirmungskonstanten}
+Die \ac{ri}-Näherung stellt in der \ac{scf}-Prozedur ein bewährtes Näherungsverfahren zur Berechnung der Zweielektronenintegrale dar. Diese setzen sich aus dem Coulombterm und dem Austauschterm zusammen und deren Berechnung ist der zeitaufwändigste Schritt während des Verfahrens. Insbesondere der Coulombterm lässt sich durch das Anwenden der \ac{ri}-Näherung deutlich effizienter berechnen. Dies gilt bereits für Basissätze von \textit{double}-$\zeta$ Qualität und wird für größere Basissätze noch effizienter. Prinzipiell kann die Näherung auch für den Austauschterm angewendet werden, die Rechenzeiten verkürzen sich jedoch erst deutlich bei größeren Basissätzen ab \textit{quadruple}-$\zeta$ Qualität. Wird nur der Coulombterm oder nur der Austauschbeitrag angenähert, so wird von \ac{ri}-J oder \ac{ri}-K gesprochen, bzw. \ac{ri}-JK wenn die Näherung für beide Terme angewendet wird. 
+
+Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der abgeleiteten Zweielektronenintegrale zeitbestimmend. Dies gilt insbesondere dann, wenn reine \ac{dft}-Funktionale (d.h. keine Hybrid-Funktionale mit Hartree-Fock-Austausch) verwendet werden, da für sie im Rahmen der \textit{uncoupled}-\ac{dft} keine \ac{cphf}-Gleichungen gelöst werden müssen. Die \ac{ri}-Näherung lässt sich auch auf die abgeleiteten Zweielektronenintegrale übertragen, wobei die Näherung in dieser Arbeit lediglich auf den abgeleiteten Coulombterm übertragen wird. Das getrennte Berechnen der Coulomb- und Austauschterme hat weiterhin den Vorteil, dass für die konventionelle Berechnung des Austauschs eine effizientere Integralabschätzung angewendet werden kann. Dies ist durch den schnelleren Abfall des Austauschs im Vergleich zur Coulombwechselwirkung begründet. Folglich kann damit durch Anwenden der \ac{ri}-J-Näherung auch der Austausch effizienter Berechnet werden. Weiteres dazu wird in Kapitel \ref{paraopt} erläutert. 
 	\subsection{Theorie}
 	\subsection{Implementierung}
 
-\section{Die MARI-J Methode für chemische Abschirmkonstanten}
+\section{Die MARI-J Methode für chemische Abschirmungskonstanten}
 	\subsection{Theorie}
 	\subsection{Implementierung}
 	
-\section{Parallelisierung und weitere Optimierungen}
+\section{Parallelisierung und weitere Optimierungen}\label{paraopt}
+
+\section{Genauigkeit und Effizienz}
