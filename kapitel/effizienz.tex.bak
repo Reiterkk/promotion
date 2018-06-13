@@ -1,14 +1,61 @@
-\section{Die RI-Methode für chemische Abschirmungskonstanten}
-Die \ac{ri}-Näherung stellt in der \ac{scf}-Prozedur ein bewährtes Näherungsverfahren zur Berechnung der Zweielektronenintegrale dar. Diese setzen sich aus dem Coulombterm und dem Austauschterm zusammen und deren Berechnung ist der zeitaufwändigste Schritt während des Verfahrens. Insbesondere der Coulombterm lässt sich durch das Anwenden der \ac{ri}-Näherung deutlich effizienter berechnen. Dies gilt bereits für Basissätze von \textit{double}-$\zeta$ Qualität und wird für größere Basissätze noch effizienter. Prinzipiell kann die Näherung auch für den Austauschterm angewendet werden, die Rechenzeiten verkürzen sich jedoch erst deutlich bei größeren Basissätzen ab \textit{quadruple}-$\zeta$ Qualität. Wird nur der Coulombterm oder nur der Austauschbeitrag angenähert, so wird von \ac{ri}-J bzw. \ac{ri}-K gesprochen, bzw. \ac{ri}-JK wenn die Näherung für beide Terme angewendet wird. 
+CPU-Rechenzeit ist eine wertvolle Ressource und muss finanziert werden. Weiterhin erfreut es den (ungeduldigen) Anwender, wenn das Ergebnis einer quantenchemischen Rechnung möglichst schnell erhalten wird. Aus diesem Grund ist die Effizienzsteigerung immer ein aktuelles Forschungsgebiet. Eine Möglichkeit, Berechnungen effizienter durchzuführen, ist durch das Einführen von Näherungen gegeben. Diese Vereinfachen die zu berechnenden Größen und führen damit schneller zu Resultaten. Eine weit gebräuchliche Näherung ist mit der \ac{ri}-Näherung gegeben\supercite{vahtras1993integral}, welche im Ursprung auf Dunlap\supercite{dunlap1979some} und Whitten\supercite{whitten1973coulombic} zurückzuführen ist. Die Übertragung dieser Methode auf die Berechnung von chemischen Abschirmungskonstanten, sowie eine weitere Beschleunigung der Näherung durch eine Multipolentwicklung, sind in den folgenden Kapiteln \ref{ri} und \ref{marij} erläutert. Jedoch darf die Genauigkeit des Resultats nicht unter diesen Näherungsmethoden leiden. Aus diesem Grund wurde die Effizienz und die erhaltene Genauigkeit in Kapitel \ref{genauigkeit} untersucht. Optimierungen des Programmcodes, effizientes Abschätzen verschwindender Integralbeiträge und Parallelisierung des Programmcodes stellen weitere Möglichkeiten dar, um die Effizienz zu verbessern und sind in Kapitel \ref{paraopt} zusammengefasst. 
 
-Auch für die Berechnung chemischer Abschirmungskonstanten ist die Berechnung der abgeleiteten Zweielektronenintegrale zeitbestimmend. Dies gilt insbesondere dann, wenn reine \ac{dft}-Funktionale (d.h. keine Hybrid-Funktionale mit Hartree-Fock-Austausch) verwendet werden, da für sie im Rahmen der \textit{uncoupled}-\ac{dft} keine \ac{cphf}-Gleichungen gelöst werden müssen. Die \ac{ri}-Näherung lässt sich auch auf die abgeleiteten Zweielektronenintegrale übertragen, wobei die Näherung in dieser Arbeit lediglich auf den abgeleiteten Coulombterm übertragen wird. Das getrennte Berechnen der Coulomb- und Austauschterme hat weiterhin den Vorteil, dass für die konventionelle Berechnung des Austauschs eine effizientere Integralabschätzung angewendet werden kann. Dies ist durch den schnelleren Abfall des Austauschs im Vergleich zur Coulombwechselwirkung begründet. Folglich kann damit durch Anwenden der \ac{ri}-J-Näherung auch der Austausch effizienter Berechnet werden. Weiteres dazu wird in Kapitel \ref{paraopt} erläutert. 
+\bigskip
+Unabhängig von der Verbesserung der Effizienz kann für die Implementierung von Integralen, welche nach den Komponenten des Magnetfeldes abgeleitet werden müssen, folgendes ausgenutzt werden. Als Beispiel sollen die abgeleiteten Kern-Elektron-Wechselwirkungsintegrale betrachtet werden. Mit der Beziehung $\vec{r}=\vec{r_\mu}+\vec{R}_\mu$ gilt für sie
+
+\begin{equation}\label{eq:vmunudb}
+\begin{aligned}
+&\frac{\partial}{\partial B_\beta}\left(\left\langle\chi_{\mu}\left\vert\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}\right\rangle\right)_{\vec{B}=0}=\frac{\iu}{2c}\left\langle\chi_{\mu}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}\right\rangle\\
+&=\frac{\iu}{2c}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)\hat{V}_{\textrm{Ke}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle+\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{R}_\nu\right)\left\langle\chi_{\mu}^{\vec{B}=0}\left\vert\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}^{\vec{B}=0}\right\rangle.
+\end{aligned}
+\end{equation}
+
+Bei der Verwendung von gewöhnlichen, atomzentrierten Basisfunktionen der Form
+
+\begin{equation}
+\chi_\mu^{\vec{B}=0}=x_\mu^l y_\mu^m z_\mu^n e^{-\zeta\vec{r}_\mu^2},
+\end{equation}
+
+wobei $\zeta$ der Exponent der Basisfunktion ist, können die Abgeleiteten Integrale aus den nicht abgeleiteten Integralen durch Multiplikation mit dem Faktor $\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{R}_\nu\right)$ (zweiter Term auf der rechten Seite in Gleichung (\ref{eq:vmunudb})) und aus den nicht abgeleiteten Integralen, bei denen entsprechend die l-Quantenzahl ($l$, $m$, $n$) um 1 erhöht wurde (zweiter Term auf der rechten Seite in Gleichung (\ref{eq:vmunudb})), berechnet werden. Letztere werden auch in ähnlicher Form (mit anderem Vorfaktor) bei der Berechnung des kartesischen Gradienten erhalten, sodass für ihre Berechnung vorhandene Gradientenroutinen modifiziert werden können. Alternativ lassen sie sich jedoch auch durch Modifikation der Routinen für die Berechnung der Energie erhalten. 
+
+\section{Die RI-Methode für chemische Abschirmungskonstanten}\label{ri}
+Die \ac{ri}-Näherung stellt in der \ac{scf}-Prozedur ein bewährtes Näherungsverfahren zur Berechnung der Zweielektronenintegrale dar. Diese setzen sich aus dem Coulombterm und dem Austauschterm zusammen und deren Berechnung ist der zeitaufwändigste Schritt während des Verfahrens. Insbesondere der Coulombterm lässt sich durch das Anwenden der \ac{ri}-Näherung deutlich effizienter berechnen. Dies gilt bereits für Basissätze von \textit{double}-$\zeta$ Qualität und wird für größere Basissätze noch effizienter. Prinzipiell kann die Näherung auch für den Austauschterm angewendet werden, die Rechenzeiten verkürzen sich jedoch erst deutlich bei größeren Basissätzen ab \textit{quadruple}-$\zeta$ Qualität. Wird nur der Coulombterm oder nur der Austauschbeitrag angenähert, so wird von \ac{ri}-J oder \ac{ri}-K gesprochen, bzw. \ac{ri}-JK wenn die Näherung für beide Terme angewendet wird. 
+
+Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der abgeleiteten Zweielektronenintegrale zeitbestimmend. Dies gilt insbesondere dann, wenn reine \ac{dft}-Funktionale (d.h. keine Hybrid-Funktionale mit Hartree-Fock-Austausch) verwendet werden, da für sie im Rahmen der \textit{uncoupled}-\ac{dft} keine \ac{cphf}-Gleichungen gelöst werden müssen. Die \ac{ri}-Näherung lässt sich auch auf die abgeleiteten Zweielektronenintegrale übertragen, wobei die Näherung in dieser Arbeit lediglich auf den abgeleiteten Coulombterm übertragen wird. Das getrennte Berechnen der Coulomb- und Austauschterme hat weiterhin den Vorteil, dass für die konventionelle Berechnung des Austauschs eine effizientere Integralabschätzung angewendet werden kann. Dies ist durch den schnelleren Abfall des Austauschs im Vergleich zur Coulombwechselwirkung begründet. Folglich kann damit durch Anwenden der \ac{ri}-J-Näherung auch der Austausch effizienter Berechnet werden. Weiteres dazu wird in Kapitel \ref{paraopt} erläutert. 
 	\subsection{Theorie}
+	An dieser Stelle sollen zunächst die grundlegende Idee der Näherung und die daraus resultierenden Formeln aus \supercite{vahtras1993integral} wiedergegeben werden. Im Anschluss daran folgt die Übertragung auf die nach den Komponenten des Magnetfeldes abgeleiteten Coulombintegrale. 
+	
+	Die Berechnung der Coulombintegrale skalieren formell mit der Anzahl der Baisfunktionen $N_\textrm{BF}$ wie $\mathcal{O}(N_\textrm{BF}^4)$. Durch Anwenden der \ac{ri}-Näherung lässt sich das formelle Skalierungsverhalten um eine Potenz erniedrigen. Die Vierzentrenintegrale lassen sich als Summe des Produkts von Zwei- und Dreizentrenintegralen schreiben, welche wie $\mathcal{O}(N_\textrm{BF}^2)$ und $\mathcal{O}(N_\textrm{BF}^3)$ skalieren. Um diese zu erreichen, wird das Produkt zweiter Basisfunktionen $\chi_\mu$ und $\chi_\nu$ durch die Linearkombination von sogenannten atomzentrierten Auxiliarbasisfunktionen $P$ angenähert
+	
+	\begin{equation}
+	\gamma_{\mu\nu}=\chi_\mu\chi_\nu\approx\sum_PC^P_{\mu\nu}P=\tilde{\gamma}_{\mu\nu}.
+	\end{equation}
+	
+	Durch die Minimierung des Fehlers
+	\begin{equation}
+	\delta\gamma_{\mu}\nu = \gamma_{\mu\nu}-\tilde{\gamma}_{\mu\nu}
+	\end{equation}
+	
+	wird letztendlich ein genäherter Ausdruck für die Vierzentrenintegrale erhalten
+	
+	\begin{equation}\label{eq:munukalari}
+	\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)\approx\sum_{PQ}^{N_{\textrm{AuxBF}}}\left(\chi_\mu\chi_\nu\vert P\right)\left(P\vert Q\right)^{-1}\left(Q\vert\chi_\kappa\chi_\lambda\right).		
+	\end{equation}
+	Für eine effiziente Berechnung der Matrixelemente der Coulombmatrix $J_{\mu\nu}$, wofür Gleichung (\ref{eq:munukalari}) noch mit der Dichtematrix $D_{\kappa\lambda}$ gespurt werden muss, wird zunächst die inverse $\left(P\vert Q\right)^{-1}$-Matrix gebildet und mit den Dreizentrenintegralen $\left(Q\vert\chi_\kappa\chi_\lambda\right)$ sowie der Dichtematrix zur intermediären Größe $\Gamma_P$ verarbeitet
+	\begin{equation}
+	\Gamma_P=\sum_{\kappa\lambda}\sum_Q^{N_{\textrm{AuxBF}}} D_{\kappa\lambda}\left(P\vert Q\right)^{-1}\left(Q\vert\chi_\kappa\chi_\lambda\right).
+	\end{equation}
+	Die eigentliche Berechnung von $J_{\mu\nu}$ erfolgt durch Spuren der Dreizentrenintegrale $\left(\chi_\mu\chi_\nu\vert P\right)$ mit $\Gamma_P$
+	\begin{equation}
+	J_{\mu\nu}=\sum_{\kappa\lambda}D_{\kappa\lambda}\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)\approx\sum_{P}^{N_{\textrm{AuxBF}}}\left(\chi_\mu\chi_\nu\vert P\right)\Gamma_P=J_{\mu\nu}^{\textrm{RI}}.
+	\end{equation}
+	Im Vergleich zu den Fehlern der Methoden sind die Fehler, die durch diese Näherung gemacht werden, klein und von wenig Bedeutung.\supercite{eichkorn1995auxiliary}
 	\subsection{Implementierung}
 
-\section{Die MARI-J Methode für chemische Abschirmungskonstanten}
+\section{Die MARI-J Methode für chemische Abschirmungskonstanten}\label{marij}
 	\subsection{Theorie}
 	\subsection{Implementierung}
 	
 \section{Parallelisierung und weitere Optimierungen}\label{paraopt}
 
-\section{Genauigkeit und Effizienz}
+\section{Genauigkeit und Effizienz}\label{genauigkeit}

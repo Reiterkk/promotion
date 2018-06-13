@@ -848,6 +848,170 @@
       \field{pages}{408\bibrangedash 412}
       \range{pages}{5}
     \endentry
+    \entry{vahtras1993integral}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dc48a7c3e5dfe869aa22e5d6a64a9c97}{%
+           family={Vahtras},
+           familyi={V\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+        {{hash=ae08199c97fb80a3264b267ec837d464}{%
+           family={Alml{ö}f},
+           familyi={A\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bed3b56013350e4a4bbe1919d2994ae6}{%
+           family={Feyereisen},
+           familyi={F\bibinitperiod},
+           given={MW},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{3decc455f65991dd60d0d68ca32f1222}
+      \strng{fullhash}{3decc455f65991dd60d0d68ca32f1222}
+      \strng{bibnamehash}{3decc455f65991dd60d0d68ca32f1222}
+      \strng{authorbibnamehash}{3decc455f65991dd60d0d68ca32f1222}
+      \strng{authornamehash}{3decc455f65991dd60d0d68ca32f1222}
+      \strng{authorfullhash}{3decc455f65991dd60d0d68ca32f1222}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{5-6}
+      \field{title}{Integral approximations for LCAO-SCF calculations}
+      \field{volume}{213}
+      \field{year}{1993}
+      \field{pages}{514\bibrangedash 518}
+      \range{pages}{5}
+    \endentry
+    \entry{dunlap1979some}{article}{}
+      \name{author}{3}{}{%
+        {{hash=409e9ee6e561e71fba1cf916c4e26f46}{%
+           family={Dunlap},
+           familyi={D\bibinitperiod},
+           given={Brett\bibnamedelima I},
+           giveni={B\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=2503fa4be8cd08a14bac2b91aca8b39b}{%
+           family={Connolly},
+           familyi={C\bibinitperiod},
+           given={JWD},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e967b3c8473ce4be2dc14a438b43b63f}{%
+           family={Sabin},
+           familyi={S\bibinitperiod},
+           given={JR},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{eefa027f7f37b7ab87e3a155c63a356e}
+      \strng{fullhash}{eefa027f7f37b7ab87e3a155c63a356e}
+      \strng{bibnamehash}{eefa027f7f37b7ab87e3a155c63a356e}
+      \strng{authorbibnamehash}{eefa027f7f37b7ab87e3a155c63a356e}
+      \strng{authornamehash}{eefa027f7f37b7ab87e3a155c63a356e}
+      \strng{authorfullhash}{eefa027f7f37b7ab87e3a155c63a356e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{8}
+      \field{title}{On some approximations in applications of X $\alpha$ theory}
+      \field{volume}{71}
+      \field{year}{1979}
+      \field{pages}{3396\bibrangedash 3402}
+      \range{pages}{7}
+    \endentry
+    \entry{whitten1973coulombic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f75c31737dfffe3ec12799d25e3e3a3b}{%
+           family={Whitten},
+           familyi={W\bibinitperiod},
+           given={Jerry\bibnamedelima L},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{f75c31737dfffe3ec12799d25e3e3a3b}
+      \strng{fullhash}{f75c31737dfffe3ec12799d25e3e3a3b}
+      \strng{bibnamehash}{f75c31737dfffe3ec12799d25e3e3a3b}
+      \strng{authorbibnamehash}{f75c31737dfffe3ec12799d25e3e3a3b}
+      \strng{authornamehash}{f75c31737dfffe3ec12799d25e3e3a3b}
+      \strng{authorfullhash}{f75c31737dfffe3ec12799d25e3e3a3b}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{10}
+      \field{title}{Coulombic potential energy integrals and approximations}
+      \field{volume}{58}
+      \field{year}{1973}
+      \field{pages}{4496\bibrangedash 4501}
+      \range{pages}{6}
+    \endentry
+    \entry{eichkorn1995auxiliary}{article}{}
+      \name{author}{5}{}{%
+        {{hash=21e498e6d8a51dffc4ac962dca74b581}{%
+           family={Eichkorn},
+           familyi={E\bibinitperiod},
+           given={Karin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7b2aa5a734f212eec5f89800ef4769a2}{%
+           family={Treutler},
+           familyi={T\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=fd2c25326ce4424803f5b928bba38b5b}{%
+           family={{Ö}hm},
+           familyi={Ö\bibinitperiod},
+           given={Holger},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d3df1e5bb7518861717ade6dba2c7689}{%
+           family={H{ä}ser},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a435b4a0e9f52167e05666c1aee83100}{%
+           family={Ahlrichs},
+           familyi={A\bibinitperiod},
+           given={Reinhart},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{60f77ae4066429a164627b1ad2f81a3c}
+      \strng{fullhash}{01d441dfe7d6d66ec6797e88562104fc}
+      \strng{bibnamehash}{01d441dfe7d6d66ec6797e88562104fc}
+      \strng{authorbibnamehash}{01d441dfe7d6d66ec6797e88562104fc}
+      \strng{authornamehash}{60f77ae4066429a164627b1ad2f81a3c}
+      \strng{authorfullhash}{01d441dfe7d6d66ec6797e88562104fc}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical physics letters}
+      \field{number}{4}
+      \field{title}{Auxiliary basis sets to approximate Coulomb potentials}
+      \field{volume}{240}
+      \field{year}{1995}
+      \field{pages}{283\bibrangedash 290}
+      \range{pages}{8}
+    \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
         {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
