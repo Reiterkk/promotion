@@ -6,7 +6,7 @@ Unabhängig von der Verbesserung der Effizienz kann für die Implementierung von
 \begin{equation}\label{eq:vmunudb}
 \begin{aligned}
 &\frac{\partial}{\partial B_\beta}\left(\left\langle\chi_{\mu}\left\vert\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}\right\rangle\right)_{\vec{B}=0}=\frac{\iu}{2c}\left\langle\chi_{\mu}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}\right\rangle\\
-&=\frac{\iu}{2c}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)\hat{V}_{\textrm{Ke}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle+\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{R}_\nu\right)\left\langle\chi_{\mu}^{\vec{B}=0}\left\vert\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}^{\vec{B}=0}\right\rangle.
+&=\frac{\iu}{2c}\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)_\beta\hat{V}_{\textrm{Ke}}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle+\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{R}_\nu\right)_\beta\left\langle\chi_{\mu}^{\vec{B}=0}\left\vert\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}^{\vec{B}=0}\right\rangle.
 \end{aligned}
 \end{equation}
 
@@ -43,14 +43,64 @@ Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der
 	\end{equation}
 	Für eine effiziente Berechnung der Matrixelemente der Coulombmatrix $J_{\mu\nu}$, wofür Gleichung (\ref{eq:munukalari}) noch mit der Dichtematrix $D_{\kappa\lambda}$ gespurt werden muss, wird zunächst die inverse $\left(P\vert Q\right)^{-1}$-Matrix gebildet und mit den Dreizentrenintegralen $\left(Q\vert\chi_\kappa\chi_\lambda\right)$ sowie der Dichtematrix zur intermediären Größe $\Gamma_P$ verarbeitet
 	\begin{equation}
-	\Gamma_P=\sum_{\kappa\lambda}\sum_Q^{N_{\textrm{AuxBF}}} D_{\kappa\lambda}\left(P\vert Q\right)^{-1}\left(Q\vert\chi_\kappa\chi_\lambda\right).
+	\Gamma_P=\sum_Q^{N_{\textrm{AuxBF}}}\left(P\vert Q\right)^{-1}\sum_{\kappa\lambda}D_{\kappa\lambda}\left(Q\vert\chi_\kappa\chi_\lambda\right).
 	\end{equation}
 	Die eigentliche Berechnung von $J_{\mu\nu}$ erfolgt durch Spuren der Dreizentrenintegrale $\left(\chi_\mu\chi_\nu\vert P\right)$ mit $\Gamma_P$
 	\begin{equation}
 	J_{\mu\nu}=\sum_{\kappa\lambda}D_{\kappa\lambda}\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)\approx\sum_{P}^{N_{\textrm{AuxBF}}}\left(\chi_\mu\chi_\nu\vert P\right)\Gamma_P=J_{\mu\nu}^{\textrm{RI}}.
 	\end{equation}
-	Im Vergleich zu den Fehlern der Methoden sind die Fehler, die durch diese Näherung gemacht werden, klein und von wenig Bedeutung.\supercite{eichkorn1995auxiliary}
+	Im Vergleich zu den Fehlern der Methoden sind die Fehler, die durch diese Näherung gemacht werden, klein und von wenig Bedeutung.\supercite{eichkorn1995auxiliary} Die \ac{ri}-Näherung lässt sich nun auch auf den nach den Komponenten des Magnetfeldes abgeleiteten Coulombterm übertragen. Wie bereits zuvor erwähnt, gilt
+	
+	\begin{equation}\label{eq:jmunudb}
+	\begin{aligned}
+	J_{\mu\nu}^{B_\beta}=&\frac{\partial}{\partial B_\beta}\left(\sum_{\kappa\lambda}D_{\kappa\lambda}\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)\right)_{\vec{B}=0}\\
+	=&\sum_{\kappa\lambda}\left[D_{\kappa\lambda}^{B_\beta}\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)+D_{\kappa\lambda}\left(\overline{\chi_\mu\chi_\nu}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)_{\beta}\right.\\
+    &+\left.D_{\kappa\lambda}\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\vert\overline{\chi_\kappa\chi_\lambda}\right)_{\beta}\right]\\
+    =&\sum_{\kappa\lambda}D_{\kappa\lambda}\left(\overline{\chi_\mu\chi_\nu}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)_{\beta}
+	\end{aligned}
+	\end{equation}
+	da bei den Verschwindenden Termen in Gleichung (\ref{eq:jmunudb}) jeweils die Spur des Produkts einer symmetrischen mit einer antisymmetrischen Matrix sind. Es muss folglich nur die linke Seite des Integrals, also nur die Basisfunktionen $\chi_\mu$ und $\chi_\nu$, abgeleitet werden. Das Einsetzen der \ac{ri}-Näherung liefert daher
+	
+	\begin{equation}\label{eq:jmunudbri}
+	\begin{aligned}
+	J_{\mu\nu}^{B_\beta}\approx &\sum_{PQ}^{N_{\textrm{AuxBF}}}\left(\overline{\chi_\mu\chi_\nu}\vert P\right)\left(P\vert Q\right)^{-1}\sum_{\kappa\lambda}D_{\kappa\lambda}\left(Q\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)\\
+	=&\sum_{P}^{N_{\textrm{AuxBF}}}\left(\overline{\chi_\mu\chi_\nu}\vert P\right)\Gamma_P=J_{\mu\nu}^{B\beta ,\textrm{RI}}.
+	\end{aligned}
+	\end{equation}
+	\vfill
 	\subsection{Implementierung}
+	Die intermediäre Größe $\Gamma_P$, welche für die abgeleiteten Coulombintegrale in Gleichung (\ref{eq:jmunudbri}) benötigt wird, kann auf die ganz konventionelle Art berechnet werden, wie es beispielsweise auf für die Berechnung der Energie während des \ac{scf}-Verfahrens notwendig ist. Neben den Trivialitäten, wie dem Modifizieren des Moduls zum Einlesen der Auxiliarbasissatzinformationen, müssen zusätzlich noch die abgeleiteten Dreizentrenintegrale $\left(\overline{\chi_\mu\chi_\nu}\vert P\right)$ implementiert werden. Diese sind von der Form
+	
+	\begin{equation}\label{eq:3centintdb}
+	\begin{aligned}
+	\left(\left.\overline{\chi_\mu\chi_\nu}\right\vert P\right)=&\frac{\iu}{2c}\left(\left.\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)\\
+	=&\frac{\iu}{2c}\left(\left.\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)\\
+	&+\frac{\iu}{2c}\left(\left.\vec{R}_\mu\times\vec{R}_\nu\right)_\beta\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)
+	\end{aligned}
+	\end{equation}
+	und lassen sich damit aus den nicht abgeleiteten Integralen berechnen, wobei beachtet werden muss, dass die $l$-Quantenzahl für $\chi_\mu$ im ersten Term auf der rechten Seite in Gleichung (\ref{eq:3centintdb}) um 1 erhöht werden muss. Integrale dieser Form werden bereits in den Routinen zur Berechnung des kartesischen Gradienten mit \ac{ri}-Näherung benötigt. Diese Routinen wurden entsprechend modifiziert um alle nach den Komponenten des Magnetfeldes abgeleiteten Integrale zu erhalten. In der Abbildung \ref{abb:programmstrukur_ri} ist eine schematische Darstellung der wichtigsten übertragenen, modifizierten und neuen Routinen in das \texttt{mpshift} Modul gegeben. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert aus anderen Modulen übertragene Routinen in rot dargestellt. Die Funktion der einzelnen Routinen sei im Folgenden erläutert.
+	
+	\begin{itemize}[leftmargin=60pt]
+	    \item[\texttt{riprep}:]
+	    \item[\texttt{lp2sym}:]
+	    \item[\texttt{sichol}:]
+	    \item[\texttt{twoder}:]
+	    \item[\texttt{lpdrc1}:]
+	    \item[\texttt{cslp3\_omp}:]
+	    \item[\texttt{cslp3}:]
+	    \item[\texttt{csasra3}:]
+	    \item[\texttt{csgasram}:]
+	    \item[\texttt{crosscs}:]
+	    \item[\texttt{dftfck}:]
+	\end{itemize}
+	
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.60\textwidth]{programmstruktur_ri}
+\captionsetup{figurewithin = chapter}
+\captionsetup{font=small, labelfont=bf}\caption[RI-J Routinen für chemische Abschirmungskonstanten]{Schematische Darstellung der wichtigsten Routinen für die \ac{ri}-Näherung zur berechnung chemischer Abschirmungskonstanten im Modul \texttt{mpshift}. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert übertragene Routinen in rot dargestellt.}
+\label{abb:programmstrukur_ri}
+\end{figure}
 
 \section{Die MARI-J Methode für chemische Abschirmungskonstanten}\label{marij}
 	\subsection{Theorie}
