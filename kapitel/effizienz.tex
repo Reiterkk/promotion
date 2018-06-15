@@ -63,8 +63,8 @@ Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der
 	
 	\begin{equation}\label{eq:jmunudbri}
 	\begin{aligned}
-	J_{\mu\nu}^{B_\beta}\approx &\sum_{PQ}^{N_{\textrm{AuxBF}}}\left(\overline{\chi_\mu\chi_\nu}\vert P\right)\left(P\vert Q\right)^{-1}\sum_{\kappa\lambda}D_{\kappa\lambda}\left(Q\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)\\
-	=&\sum_{P}^{N_{\textrm{AuxBF}}}\left(\overline{\chi_\mu\chi_\nu}\vert P\right)\Gamma_P=J_{\mu\nu}^{B\beta ,\textrm{RI}}.
+	J_{\mu\nu}^{B_\beta}\approx &\sum_{PQ}^{N_{\textrm{AuxBF}}}\left(\overline{\chi_\mu\chi_\nu}\vert P\right)_\beta\left(P\vert Q\right)^{-1}\sum_{\kappa\lambda}D_{\kappa\lambda}\left(Q\left\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right.\right)\\
+	=&\sum_{P}^{N_{\textrm{AuxBF}}}\left(\overline{\chi_\mu\chi_\nu}\vert P\right)_\beta\Gamma_P=J_{\mu\nu}^{B\beta ,\textrm{RI}}.
 	\end{aligned}
 	\end{equation}
 	\vfill
@@ -73,25 +73,25 @@ Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der
 	
 	\begin{equation}\label{eq:3centintdb}
 	\begin{aligned}
-	\left(\left.\overline{\chi_\mu\chi_\nu}\right\vert P\right)=&\frac{\iu}{2c}\left(\left.\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)\\
+	\left(\left.\overline{\chi_\mu\chi_\nu}\right\vert P\right)_\beta=&\frac{\iu}{2c}\left(\left.\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)\\
 	=&\frac{\iu}{2c}\left(\left.\left(\vec{R}_{\mu\nu}\times\vec{r}_\mu\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)\\
 	&+\frac{\iu}{2c}\left(\left.\vec{R}_\mu\times\vec{R}_\nu\right)_\beta\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right\vert P\right)
 	\end{aligned}
 	\end{equation}
 	und lassen sich damit aus den nicht abgeleiteten Integralen berechnen, wobei beachtet werden muss, dass die $l$-Quantenzahl für $\chi_\mu$ im ersten Term auf der rechten Seite in Gleichung (\ref{eq:3centintdb}) um 1 erhöht werden muss. Integrale dieser Form werden bereits in den Routinen zur Berechnung des kartesischen Gradienten mit \ac{ri}-Näherung benötigt. Diese Routinen wurden entsprechend modifiziert um alle nach den Komponenten des Magnetfeldes abgeleiteten Integrale zu erhalten. In der Abbildung \ref{abb:programmstrukur_ri} ist eine schematische Darstellung der wichtigsten übertragenen, modifizierten und neuen Routinen in das \texttt{mpshift} Modul gegeben. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert aus anderen Modulen übertragene Routinen in rot dargestellt. Die Funktion der einzelnen Routinen sei im Folgenden erläutert.
 	
-	\begin{itemize}[leftmargin=60pt]
-	    \item[\texttt{riprep}:]
-	    \item[\texttt{lp2sym}:]
-	    \item[\texttt{sichol}:]
-	    \item[\texttt{twoder}:]
-	    \item[\texttt{lpdrc1}:]
-	    \item[\texttt{cslp3\_omp}:]
-	    \item[\texttt{cslp3}:]
-	    \item[\texttt{csasra3}:]
-	    \item[\texttt{csgasram}:]
-	    \item[\texttt{crosscs}:]
-	    \item[\texttt{dftfck}:]
+	\begin{itemize}[leftmargin=65pt]
+	    \item[\texttt{riprep}:] Routine zur Vorbereitung der notwendigen Größen und Felder für die Berechnung von $J_{\mu\nu}^{B\beta ,\textrm{RI}}$ mit der \ac{ri}-Näherung. 
+	    \item[\texttt{lp2sym}:] Berechnung der $\left(P\vert Q\right)$-Matrix.
+	    \item[\texttt{sichol}:] Cholesky-Zerlegung der $\left(P\vert Q\right)$-Matrix, da für die spätere Verarbeitung nicht explizit die Inverse $\left(P\vert Q\right)^{-1}$-Matrix berechnet wird.
+	    \item[\texttt{twoder}:] Treiberroutine zur Berechnung von $J_{\mu\nu}^{B\beta ,\textrm{RI}}$. Es wird zunächst die intermediäre Größe $\Gamma_P$ aus der Cholesky-Zerlegung von $\left(P\vert Q\right)$ und aus $\Gamma_Q$ (siehe \texttt{lpdrc1}) berechnet und im Anschluss folgt die eigentliche Berechnung von $J_{\mu\nu}^{B\beta ,\textrm{RI}}$.
+	    \item[\texttt{lpdrc1}:] Berechnung der Dreizentrenintegrale. Diese werden direkt mit der Dichtematrix kontrahiert, sodass die Größe $\Gamma_Q=\sum_{\kappa\lambda}D_{\kappa\lambda}\left(Q\vert\chi_\kappa\chi_\lambda\right)$ erhalten wird.
+	    \item[\texttt{cslp3\_omp}:] Übergeordnete Routine zur Unterscheidung zwischen sequentieller und paralleler Ausführung des Moduls.
+	    \item[\texttt{cslp3}:] Berechnung der Abgeleiteten Dreizentrenintegrale $\left(\left.\overline{\chi_\mu\chi_\nu}\right\vert P\right)$. Schleife über alle Schalentripel $i,j,k$.
+	    \item[\texttt{csasra3}:] Schleife über die primitiven Basisfunktionen $\chi_\mu^{\vec{B}=0}$ und $\chi_\nu^{\vec{B}=0}$ und primitiven Auxiliarbasisfunktionen $P$
+	    \item[\texttt{csgasram}:] Berechnung der eigentlichen Dreizentrenintegrale für aktuelles Tripel primitiver Basisfunktionen $\chi_\mu^{\vec{B}=0}$ und $\chi_\nu^{\vec{B}=0}$ und primitiver Auxiliarbasisfunktion $P$ für das aktuelle Schalentripel $i,j,k$.
+	    \item[\texttt{crosscs}:] Berechnung des Kreuzprodukts in Gleichung (\ref{eq:3centintdb}) für beliebige Schalenpaare $i,j$. Die Berechnung der Kreuzprodukte für die Schalenkombinationen $s,s$ und $s,p$ erfolgt explizit in \texttt{cspl3}.
+	    \item[\texttt{dftfck}:] Addition der Beiträge der Schalenpaare $i,j$ auf die Fockmatrix.
 	\end{itemize}
 	
 \begin{figure}[ht!]

@@ -1012,6 +1012,33 @@
       \field{pages}{283\bibrangedash 290}
       \range{pages}{8}
     \endentry
+    \entry{mack2017}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=5d57b3a7d829c9f97ccfc5c733e74f25}{%
+           family={Mack},
+           familyi={M\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Karlsruher Institut für Technologie}%
+      }
+      \strng{namehash}{5d57b3a7d829c9f97ccfc5c733e74f25}
+      \strng{fullhash}{5d57b3a7d829c9f97ccfc5c733e74f25}
+      \strng{bibnamehash}{5d57b3a7d829c9f97ccfc5c733e74f25}
+      \strng{authorbibnamehash}{5d57b3a7d829c9f97ccfc5c733e74f25}
+      \strng{authornamehash}{5d57b3a7d829c9f97ccfc5c733e74f25}
+      \strng{authorfullhash}{5d57b3a7d829c9f97ccfc5c733e74f25}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chemische Abschirmungskonstanten mit meta-GGA-Funktionalen: Implementierung und Testrechnungen}
+      \field{type}{Masterarbeit}
+      \field{year}{2017}
+    \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
         {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
@@ -1029,8 +1056,8 @@
       \strng{authorbibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authornamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authorfullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1065,8 +1092,8 @@
       \strng{authorbibnamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authornamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authorfullhash}{3fbf47f8204db480f89e43ea46361130}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1106,8 +1133,8 @@
       \strng{authorbibnamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authornamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authorfullhash}{0eb47e0aefffae140793948bc80fc106}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}

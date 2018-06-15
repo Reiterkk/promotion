@@ -2018,9 +2018,10 @@
     <bcf:citekey order="35">whitten1973coulombic</bcf:citekey>
     <bcf:citekey order="36">vahtras1993integral</bcf:citekey>
     <bcf:citekey order="37">eichkorn1995auxiliary</bcf:citekey>
-    <bcf:citekey order="38">stephens1985theory</bcf:citekey>
-    <bcf:citekey order="38">stephens1985vibrational</bcf:citekey>
-    <bcf:citekey order="39">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="38">mack2017</bcf:citekey>
+    <bcf:citekey order="40">stephens1985theory</bcf:citekey>
+    <bcf:citekey order="40">stephens1985vibrational</bcf:citekey>
+    <bcf:citekey order="41">deglmann2002efficient</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -1,6 +1,11 @@
+Das Modul \texttt{mpshift} umfasste bisher die Möglichkeit zur Berechnung von chemischen Abschirmungskonstanten in Molekülen ohne schwere Elemente (ab etwa $Z$=36) in der Gasphase. Diese Berechnungen konnten auf Hartree-Fock, \ac{dft} (für \ac{lda}- und \ac{gga}-Funktionale) und \ac{mp2} Nievau durchgeführt werden. Des Weiteren konnte die nach den Komponenten des Magnetfeldes abgeleitete Dichtematrix dem externen Programm \ac{gimic} zur Weiterverarbeitung bereit gestellt werden. Die folgenden Kapitel beschreiben die Erweiterung der Funktionalität des Moduls die im Rahmen dieser Arbeit implementiert wurden. Im Einzelnen sind dies die Berücksichtigung relativistischer Effekte auf Nachbaratome in Molekülen mit schweren Elementen durch relativistische \acp{ecp}, die Einbeziehung von Umgebungseffekten sowie die Bereitstellung der magnetischen Response zur Berechnung von \ac{vcd}-Spektren. Weiterhin wurde das Modul um die Möglichkeit ergänzt, \ac{mgga}-Funktionale für die Berechnung der Abschirmungskonstanten auf \ac{dft}-Niveau zu verwenden. Die eigentliche Implementierung dieses letzten Punktes erfolgte jedoch nicht von mir, sondern von Fabian Mack im Rahmen seiner Masterarbeit.\supercite{mack2017} 
+\vfill
+
 \section{Berücksichtigung von Umgebungseffekten}
+Isotrope chemische Verschiebungen werden üblicherweise in Lösung gemessen. Je nachdem wie stark das zu untersuchende Molekül mit dem Lösungsmittel wechselwirkt, hat das Lösungsmittel einen mehr oder weniger stark ausgeprägten Einfluss auf das gemessene Spektrum. Das \ac{cosmo}\supercite{klamt1993cosmo}, ein Kontinuumsmodell, ist in der Quantenchemie ein bewährtes Verfahren zur Berücksichtigung von Umgebungseffekten. Neben den Einflüssen des Lösungsmittels lassen sich damit für Ionen auch die Ladungen kompensieren ohne die Gegenionen explizit mitrechnen zu müssen. Insbesondere hoch geladene Anionen lassen sich ohne eine solche Ladungskompensation nur schwer oder gar nicht berechnen. 
 	\subsection{Theorie}
 	\subsection{Implementierung}
+	\subsection{Testrechnungen}
 	
 \section{Skalar-relativistische Effekte durch effektive Kernpotentiale}
 	\subsection{Theorie}

@@ -49,44 +49,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Genauigkeit und Effizienz}{41}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Erweiterund der Funktionalit\IeC {\"a}t}{42}{chapter.5}
+\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{42}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{42}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Theorie}{42}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Theorie}{43}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Implementierung}{42}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Implementierung}{43}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{42}{section.5.2}
+\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{43}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Theorie}{42}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{43}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Implementierung}{42}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.1}Theorie}{43}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{42}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.2}Implementierung}{43}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Theorie}{42}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{43}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{44}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.1}Theorie}{43}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{44}{section.5.4}
+\contentsline {subsection}{\numberline {5.3.2}Implementierung}{45}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Theorie}{44}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{45}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Implementierung}{44}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.1}Theorie}{45}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Anwendungen}{45}{chapter.6}
+\contentsline {subsection}{\numberline {5.4.2}Implementierung}{45}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Anwendungen in der anorganischen Chemie}{45}{section.6.1}
+\contentsline {chapter}{\numberline {6}Anwendungen}{46}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{45}{section.6.2}
+\contentsline {section}{\numberline {6.1}Anwendungen in der anorganischen Chemie}{46}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Zusammenfassung}{46}{chapter.7}
+\contentsline {section}{\numberline {6.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{46}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{47}{chapter*.25}
+\contentsline {chapter}{\numberline {7}Zusammenfassung}{47}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{48}{chapter*.27}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{48}{chapter*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{49}{section*.28}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{49}{chapter*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{50}{chapter*.30}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{50}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{51}{chapter*.31}
