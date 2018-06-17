@@ -108,6 +108,41 @@
       \field{pages}{457\bibrangedash 484}
       \range{pages}{28}
     \endentry
+    \entry{klamt1993cosmo}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fcbacaeef9569683a78f68195966c0c1}{%
+           family={Klamt},
+           familyi={K\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fd45611fc000722e21dceae7c2c3ed34}{%
+           family={Sch{ü}{ü}rmann},
+           familyi={S\bibinitperiod},
+           given={GJGJ},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{ffbdc8790f2f79bde7cfa6918a48927f}
+      \strng{fullhash}{ffbdc8790f2f79bde7cfa6918a48927f}
+      \strng{bibnamehash}{ffbdc8790f2f79bde7cfa6918a48927f}
+      \strng{authorbibnamehash}{ffbdc8790f2f79bde7cfa6918a48927f}
+      \strng{authornamehash}{ffbdc8790f2f79bde7cfa6918a48927f}
+      \strng{authorfullhash}{ffbdc8790f2f79bde7cfa6918a48927f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Soc. Perkin Trans. 2}
+      \field{number}{5}
+      \field{title}{COSMO: a new approach to dielectric screening in solvents with explicit expressions for the screening energy and its gradient}
+      \field{year}{1993}
+      \field{pages}{799\bibrangedash 805}
+      \range{pages}{7}
+    \endentry
     \entry{jensen2009introduction}{book}{}
       \name{author}{1}{}{%
         {{hash=07272f7b37bc95d4f9e9ac01efc83dcf}{%
@@ -128,8 +163,8 @@
       \strng{authorbibnamehash}{07272f7b37bc95d4f9e9ac01efc83dcf}
       \strng{authornamehash}{07272f7b37bc95d4f9e9ac01efc83dcf}
       \strng{authorfullhash}{07272f7b37bc95d4f9e9ac01efc83dcf}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -162,8 +197,8 @@
       \strng{authorbibnamehash}{b97dbae7320bebd386994aa3f8785405}
       \strng{authornamehash}{b97dbae7320bebd386994aa3f8785405}
       \strng{authorfullhash}{b97dbae7320bebd386994aa3f8785405}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -189,8 +224,8 @@
       \strng{authorbibnamehash}{1684c74db71bd0c2d3b04f218c70e093}
       \strng{authornamehash}{1684c74db71bd0c2d3b04f218c70e093}
       \strng{authorfullhash}{1684c74db71bd0c2d3b04f218c70e093}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -216,8 +251,8 @@
       \strng{authorbibnamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
       \strng{authornamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
       \strng{authorfullhash}{078f9c3c3c3ba76f3eb8d5941ea82210}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -252,8 +287,8 @@
       \strng{authorbibnamehash}{f6df99bc973e24ee8453776b0975d296}
       \strng{authornamehash}{f6df99bc973e24ee8453776b0975d296}
       \strng{authorfullhash}{f6df99bc973e24ee8453776b0975d296}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -288,8 +323,8 @@
       \strng{authorbibnamehash}{71fd4ac5ed87c139707f0530ee84126e}
       \strng{authornamehash}{71fd4ac5ed87c139707f0530ee84126e}
       \strng{authorfullhash}{71fd4ac5ed87c139707f0530ee84126e}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -848,6 +883,175 @@
       \field{pages}{408\bibrangedash 412}
       \range{pages}{5}
     \endentry
+    \entry{juselius2004calculation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=00df71385b3cefcc8e9350c7148d9e95}{%
+           family={Jus{é}lius},
+           familyi={J\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+        {{hash=11525f775bb2eaf99cdd2fdffe54b939}{%
+           family={Gauss},
+           familyi={G\bibinitperiod},
+           given={J{ü}rgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{fullhash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{bibnamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{authorbibnamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{authornamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{authorfullhash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{9}
+      \field{title}{Calculation of current densities using gauge-including atomic orbitals}
+      \field{volume}{121}
+      \field{year}{2004}
+      \field{pages}{3952\bibrangedash 3963}
+      \range{pages}{12}
+    \endentry
+    \entry{taubert2011calculation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=cfd01e8a00546d253a65384d9df85218}{%
+           family={Taubert},
+           familyi={T\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+        {{hash=00df71385b3cefcc8e9350c7148d9e95}{%
+           family={Jus{é}lius},
+           familyi={J\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{5e9a459f17651aaa10b86607a2401845}
+      \strng{fullhash}{5e9a459f17651aaa10b86607a2401845}
+      \strng{bibnamehash}{5e9a459f17651aaa10b86607a2401845}
+      \strng{authorbibnamehash}{5e9a459f17651aaa10b86607a2401845}
+      \strng{authornamehash}{5e9a459f17651aaa10b86607a2401845}
+      \strng{authorfullhash}{5e9a459f17651aaa10b86607a2401845}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{5}
+      \field{title}{Calculation of spin-current densities using gauge-including atomic orbitals}
+      \field{volume}{134}
+      \field{year}{2011}
+      \field{pages}{054123}
+      \range{pages}{1}
+    \endentry
+    \entry{fliegl2011gauge}{article}{}
+      \name{author}{4}{}{%
+        {{hash=078aadf342a7190dd615f9675e8fd9de}{%
+           family={Fliegl},
+           familyi={F\bibinitperiod},
+           given={Heike},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cfd01e8a00546d253a65384d9df85218}{%
+           family={Taubert},
+           familyi={T\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b3884e49a02cfa82a15a14ffeb89b84a}{%
+           family={Lehtonen},
+           familyi={L\bibinitperiod},
+           given={Olli},
+           giveni={O\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{6632ca0d98b4c39385ccf95b015b00c2}
+      \strng{fullhash}{67135372e16f1aec1efff4d93ab3a43c}
+      \strng{bibnamehash}{67135372e16f1aec1efff4d93ab3a43c}
+      \strng{authorbibnamehash}{67135372e16f1aec1efff4d93ab3a43c}
+      \strng{authornamehash}{6632ca0d98b4c39385ccf95b015b00c2}
+      \strng{authorfullhash}{67135372e16f1aec1efff4d93ab3a43c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Chem. Chem. Phys.}
+      \field{number}{46}
+      \field{title}{The gauge including magnetically induced current method}
+      \field{volume}{13}
+      \field{year}{2011}
+      \field{pages}{20500\bibrangedash 20518}
+      \range{pages}{19}
+    \endentry
+    \entry{sundholm2016calculations}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+        {{hash=078aadf342a7190dd615f9675e8fd9de}{%
+           family={Fliegl},
+           familyi={F\bibinitperiod},
+           given={Heike},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ee5d85f2e35200c0425dbb9ac6cf705f}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Raphael\bibnamedelima JF},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ef29178d75b4361b9c990e980205251e}
+      \strng{fullhash}{ef29178d75b4361b9c990e980205251e}
+      \strng{bibnamehash}{ef29178d75b4361b9c990e980205251e}
+      \strng{authorbibnamehash}{ef29178d75b4361b9c990e980205251e}
+      \strng{authornamehash}{ef29178d75b4361b9c990e980205251e}
+      \strng{authorfullhash}{ef29178d75b4361b9c990e980205251e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WIREs Comput. Mol. Sci.}
+      \field{number}{6}
+      \field{title}{Calculations of magnetically induced current densities: theory and applications}
+      \field{volume}{6}
+      \field{year}{2016}
+      \field{pages}{639\bibrangedash 678}
+      \range{pages}{40}
+    \endentry
     \entry{vahtras1993integral}{article}{}
       \name{author}{3}{}{%
         {{hash=dc48a7c3e5dfe869aa22e5d6a64a9c97}{%
@@ -1029,8 +1233,8 @@
       \strng{authorbibnamehash}{5d57b3a7d829c9f97ccfc5c733e74f25}
       \strng{authornamehash}{5d57b3a7d829c9f97ccfc5c733e74f25}
       \strng{authorfullhash}{5d57b3a7d829c9f97ccfc5c733e74f25}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1038,6 +1242,47 @@
       \field{title}{Chemische Abschirmungskonstanten mit meta-GGA-Funktionalen: Implementierung und Testrechnungen}
       \field{type}{Masterarbeit}
       \field{year}{2017}
+    \endentry
+    \entry{cammi1999nuclear}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5c5a84428f7e1545c4672134c7a12b12}{%
+           family={Cammi},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6b2336e3286b89e227969c50b8005465}{%
+           family={Mennucci},
+           familyi={M\bibinitperiod},
+           given={Benedetta},
+           giveni={B\bibinitperiod}}}%
+        {{hash=613b3be6023eac1ae8660b5e68287cd0}{%
+           family={Tomasi},
+           familyi={T\bibinitperiod},
+           given={Jacopo},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{6f3ee47e4cfb2834569720c856fbf2bb}
+      \strng{fullhash}{6f3ee47e4cfb2834569720c856fbf2bb}
+      \strng{bibnamehash}{6f3ee47e4cfb2834569720c856fbf2bb}
+      \strng{authorbibnamehash}{6f3ee47e4cfb2834569720c856fbf2bb}
+      \strng{authornamehash}{6f3ee47e4cfb2834569720c856fbf2bb}
+      \strng{authorfullhash}{6f3ee47e4cfb2834569720c856fbf2bb}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{16}
+      \field{title}{Nuclear magnetic shieldings in solution: Gauge invariant atomic orbital calculation using the polarizable continuum model}
+      \field{volume}{110}
+      \field{year}{1999}
+      \field{pages}{7627\bibrangedash 7638}
+      \range{pages}{12}
     \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%

@@ -1,11 +1,45 @@
 Das Modul \texttt{mpshift} umfasste bisher die Möglichkeit zur Berechnung von chemischen Abschirmungskonstanten in Molekülen ohne schwere Elemente (ab etwa $Z$=36) in der Gasphase. Diese Berechnungen konnten auf Hartree-Fock, \ac{dft} (für \ac{lda}- und \ac{gga}-Funktionale) und \ac{mp2} Nievau durchgeführt werden. Des Weiteren konnte die nach den Komponenten des Magnetfeldes abgeleitete Dichtematrix dem externen Programm \ac{gimic} zur Weiterverarbeitung bereit gestellt werden. Die folgenden Kapitel beschreiben die Erweiterung der Funktionalität des Moduls die im Rahmen dieser Arbeit implementiert wurden. Im Einzelnen sind dies die Berücksichtigung relativistischer Effekte auf Nachbaratome in Molekülen mit schweren Elementen durch relativistische \acp{ecp}, die Einbeziehung von Umgebungseffekten sowie die Bereitstellung der magnetischen Response zur Berechnung von \ac{vcd}-Spektren. Weiterhin wurde das Modul um die Möglichkeit ergänzt, \ac{mgga}-Funktionale für die Berechnung der Abschirmungskonstanten auf \ac{dft}-Niveau zu verwenden. Die eigentliche Implementierung dieses letzten Punktes erfolgte jedoch nicht von mir, sondern von Fabian Mack im Rahmen seiner Masterarbeit.\supercite{mack2017} 
-\vfill
+
 
 \section{Berücksichtigung von Umgebungseffekten}
-Isotrope chemische Verschiebungen werden üblicherweise in Lösung gemessen. Je nachdem wie stark das zu untersuchende Molekül mit dem Lösungsmittel wechselwirkt, hat das Lösungsmittel einen mehr oder weniger stark ausgeprägten Einfluss auf das gemessene Spektrum. Das \ac{cosmo}\supercite{klamt1993cosmo}, ein Kontinuumsmodell, ist in der Quantenchemie ein bewährtes Verfahren zur Berücksichtigung von Umgebungseffekten. Neben den Einflüssen des Lösungsmittels lassen sich damit für Ionen auch die Ladungen kompensieren ohne die Gegenionen explizit mitrechnen zu müssen. Insbesondere hoch geladene Anionen lassen sich ohne eine solche Ladungskompensation nur schwer oder gar nicht berechnen. 
+Isotrope chemische Verschiebungen werden üblicherweise in Lösung gemessen. Je nachdem wie stark das zu untersuchende Molekül mit dem Lösungsmittel wechselwirkt, hat das Lösungsmittel einen mehr oder weniger stark ausgeprägten Einfluss auf das gemessene Spektrum. Das \ac{cosmo}\supercite{klamt1993cosmo}, ein Kontinuumsmodell, ist in der Quantenchemie ein bewährtes Verfahren zur Berücksichtigung von Umgebungseffekten. Neben den Einflüssen des Lösungsmittels lassen sich damit auch für Ionen die Ladungen kompensieren, ohne die Gegenionen explizit mitrechnen zu müssen. Insbesondere hoch geladene Anionen lassen sich ohne eine solche Ladungskompensation nur schwer oder gar nicht berechnen. 
+
+Neben \ac{cosmo} besteht auch die die Möglichkeit, Lösungsmittelmoleküle explizit in die Berechnung mit einzubeziehen. Soll eine größere Anzahl an Lösungsmitteln explizit betrachtet werden, um beispielsweise eine vollständige Solvatationshülle um das gelöste Molekül zu erhalten, so bieten sich \ac{md}-Simulationen an. Aus diesen Simulationen für ein bestimmtes Zeitintervall, lassen sich einzelne Schnappschüsse der Molekülkoordinaten extrahieren. Für diese einzelnen Koordinaten lassen sich dann \textit{ab initio} Rechnungen durchführen. Ein Vergleich solch unterschiedlicher Ansätze ist in Kapitel \ref{lömitest} für das Acetonmolekül in Wasser zu finden. 
 	\subsection{Theorie}
+	In einem Kontinuum-Lösungsmittel-Model (englisch \ac{csm}), wie dem \ac{cosmo}, wird das zu betrachtende Lösungsmittel durch seine Dielektrizitätskonstante $\varepsilon$ beschrieben. Das gelöste Molekül stellt dabei einen Hohlraum im dielektrischen Kontinuum dar und polarisiert das dielektrische Medium aufgrund seiner Ladungsverteilung. Zur Beschreibung der Reaktion des dielektrischen Mediums auf diese Polarisierung, werden auf der Oberfläche des durch das gelöste Molekül entstandenen Hohlraums sogenannte \textit{screening}-Ladungen generiert. In der Praxis wird also in einem bestimmten Abstand eine Hülle um das gelöste Molekül gelegt und auf der Oberfläche dieser Hülle befinden sich diese Ladungen. Beim \ac{cosmo} wird nun die Nebenbedingung eingeführt, dass das elektrostatische Potential auf der Oberfläche dieser Hülle verschwinden soll, was einem idealen Lösungsmittel mit unendlicher Dielektrizitätskonstante $\varepsilon=\infty$ entspricht. Das gesamte elektrostatische Potential $\vec{\phi}^{\textrm{Tot}}$ setzt sich aus dem Beitrag des gelösten Moleküls $\vec{\phi}^{\textrm{Mol}}$ und dem Beitrag der \textit{screening}-Ladungen $\boldsymbol{A}\vec{q}$. $\vec{\phi}^{\textrm{Mol}}$ beinhaltet dabei sowohl die Beiträge der Elektronen, als auch die der Kerne. Der Vektor $\vec{q}$ enthält die insgesamt $N_{\textrm{SL}}$ \textit{screening}-Ladungen und die Matrix $\boldsymbol{A}$ beinhaltet die Coulombwechselwirkung der \textit{screening}-Ladungen untereinander. Mit der Bedingung des verschwindenden elektrostatischen Potentials folgt daher
+	
+	\begin{equation}
+	\vec{\phi}^{\textrm{Tot}}=\vec{\phi}^{\textrm{Mol}}+\boldsymbol{A}\vec{q}=0,
+	\end{equation}
+	
+wodurch sich die \textit{screening}-Ladungen definieren lassen
+	\begin{equation}
+	\vec{q}=\boldsymbol{A}^{-1}\vec{\phi}^{\textrm{Mol}}
+	\end{equation}
+Um nun Lösungsmittel mit unterschiedlichen Dielektrizitätskonstanten betrachten zu können, wird ein Skalierungsfaktor $f(\varepsilon)$ eingeführt
+	\begin{equation}
+	f(\varepsilon)=\frac{\varepsilon-1}{\varepsilon+\frac{1}{2}}
+	\end{equation}
+und damit lassen sich die entsprechenden \textit{screening}-Ladungen $\vec{q}(\varepsilon)$ erhalten
+	\begin{equation}
+	\vec{q}(\varepsilon)=\vec{q}(\varepsilon=\infty)f(\varepsilon).
+	\end{equation}
+Die Abweichungen aufgrund der hier gewählten Nebenbedingung des verschwindenden elektrostatischen Potentials im Vergleich zu den eigentlich viel komplexeren Nebenbedingungen ist sehr gering.\supercite{klamt1993cosmo} Dies gilt insbesondere für Lösungsmittel mit großen Dielektrizitätskonstanten, wie beispielsweise Wasser.
+
+Bei der Berechnung chemischer Abschirmungskonstanten müssen die erzeugten Punktladungen auf der Oberfläche der Hülle um das gelöste Molekül ebenfalls berücksichtigt werden. Die \textit{screening}-Ladungen ergeben einen zusätzlichen Energiebeitrag $E^{\textrm{SM}}$ für den Einelektronenteil\supercite{cammi1999nuclear}
+
+	\begin{equation}\label{eq:esm}
+	E^{\textrm{SM}}=\sum_{l}^{N_{\textrm{SL}}}\int\frac{q_l\rho(\vec{r})}{\vert\vec{t}_l-\vec{r}\vert}\diff\vec{r}=\sum_{\mu\nu}D_{\mu\nu}\underbrace{\sum_l^{N_{\textrm{SL}}}\int\frac{q_l\chi_\mu\chi_\nu}{\vert\vec{t}_l-\vec{r}\vert}\diff\vec{r}}_{V_{\mu\nu}^{\textrm{SM}}}.
+	\end{equation}
+mit den Positionen $\vec{t}_l$ der \textit{screening}-Ladungen. Für die chemischen Abschirmungskonstanten wird daher die Ableitung von Gleichung (\ref{eq:esm}) nach den Komponenten des Magnetfeldes benötigt. Dies führt schließlich zu
+
+	\begin{equation}\label{eq:esmdb}
+	E^{\textrm{SM},B_\beta}=\sum_{\mu\nu}D_{\mu\nu}\underbrace{\frac{\iu}{2c}\sum_l^{N_{\textrm{SL}}}\int\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\frac{q_l\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}}{\vert\vec{t}_l-\vec{r}\vert}\diff\vec{r}}_{V_{\mu\nu}^{\textrm{SM},B_\beta}}.
+	\end{equation}
+	
 	\subsection{Implementierung}
-	\subsection{Testrechnungen}
+	Bei genauer Betrachtung von Gleichung (\ref{eq:esmdb}) fällt auf, dass die $V_{\mu\nu}^{\textrm{SM},B_\beta}$ die selbe Form haben wie die nach den Komponenten des Magnetfeldes abgeleitete Kern-Elektron-Wechselwirkung $V_{\textrm{Ke}\mu\nu}^{B_\beta}$. Zur Implementierung der \ac{cosmo} Beiträge bei der Berechnung chemischer Abschirmungskonstanten können daher die bereits bestehenden Routinen zur Berechnung des letztgenannten Beitrages modifiziert werden. Es ist dabei lediglich darauf zu achten, dass anstelle der Kernladungen die \textit{screening}-Ladungen und anstelle der Kernpositionen die Positionen der \textit{screening}-Ladungen an die entsprechende Routine übergeben werden. In der bei der Verwendung von \ac{cosmo} zur Berechnung von chemischen Abschirmungskonstanten wird daher die Routine \texttt{vsints} ein weiteres Mal von der Routine \texttt{csplop} mit den entsprechenden Feldern gerufen. 
+	\subsection{Testrechnungen}\label{lömitest}
 	
 \section{Skalar-relativistische Effekte durch effektive Kernpotentiale}
 	\subsection{Theorie}
