@@ -14,6 +14,7 @@
 @string{chemrev = "Chem. Rev."}
 @string{colsurf = "Colloids and Surfaces"}
 @string{cpl = "Chem. Phys. Lett."}
+@string{ejic = "Eur. J. Inorg. Chem."}
 @string{ejp = "Eur. J. Phys"}
 @string{euro = "Chem. Eur. J."}
 @string{ijmpb = "Int. J. Mod. Phys. B"}
@@ -56,6 +57,7 @@
 @string{proya = "Proc. R. Soc. A"}
 @string{psc = "Physica Scripta"}
 @string{pssb = "Phys. Stat. Sol. B"}
+@string{rcc = "Rev. Comput. Chem."}
 @string{rmp = "Rev. Mod. Phys."}
 @string{roy = "Phil. Trans. Roy."}
 @string{rpp = "Rep. Prog. Phys."}
@@ -511,6 +513,98 @@ year     = {2017}, %other attributes omitted
   pages={7627--7638},
   year={1999},
   publisher={AIP}
+}
+
+@article{mulliken1955electronic,
+  title={Electronic population analysis on LCAO--MO molecular wave functions. I},
+  author={Mulliken, Robert S},
+  journal=jcp,
+  volume={23},
+  number={10},
+  pages={1833--1840},
+  year={1955},
+  publisher={AIP}
+}
+@article{reed1985natural,
+  title={Natural population analysis},
+  author={Reed, Alan E and Weinstock, Robert B and Weinhold, Frank},
+  journal=jcp,
+  volume={83},
+  number={2},
+  pages={735--746},
+  year={1985},
+  publisher={AIP}
+}
+@article{singh1984approach,
+  title={An approach to computing electrostatic charges for molecules},
+  author={Singh, U Chandra and Kollman, Peter A},
+  journal=jcc,
+  volume={5},
+  number={2},
+  pages={129--145},
+  year={1984},
+  publisher={Wiley Online Library}
+}
+
+%ecp
+@article{cundari1996effective,
+  title={Effective core potential approaches to the chemistry of the heavier elements},
+  author={Cundari, Thomas R and Benson, Michael T and Lutz, M Leigh and Sommerer, Shaun O},
+  journal=rcc,
+  pages={145--202},
+  year={1996},
+  volume={8},
+  publisher={Wiley Online Library}
+}
+@article{frenking2007pseudopotential,
+  title={Pseudopotential calculations of transition metal compounds: scope and limitations},
+  author={Frenking, Gernot and Antes, Iris and B{\"o}hme, Marlis and Dapprich, Stefan and Ehlers, Andreas W and Jonas, Volker and Neuhaus, Arndt and Otto, Michael and Stegmann, Ralf and Veldkamp, Achim and others},
+  journal=rcc,
+  pages={63--144},
+  year={2007},
+  volume={8},
+  publisher={Wiley Online Library}
+}
+
+@article{van2012use,
+  title={On the use of effective core potentials in the calculation of magnetic properties, such as magnetizabilites and magnetic shieldings},
+  author={van W{\"u}llen, Christoph},
+  journal=jcp,
+  volume={136},
+  number={11},
+  pages={114110},
+  year={2012},
+  publisher={AIP}
+}
+@article{bagno2000effective,
+  title={Effective core potential DFT calculations of nuclear shielding as a tool for the prediction and assignment of the tungsten chemical shift in mono-and polynuclear complexes},
+  author={Bagno, Alessandro and Bonchio, Marcella},
+  journal=cpl,
+  volume={317},
+  number={1-2},
+  pages={123--128},
+  year={2000},
+  publisher={Elsevier}
+}
+@article{bagno2002dft,
+  title={DFT Calculations of 99Ru Chemical Shifts with All-Electron and Effective Core Potential Basis Sets},
+  author={Bagno, Alessandro and Bonchio, Marcella},
+  journal=ejic,
+  volume={2002},
+  number={6},
+  pages={1475--1483},
+  year={2002},
+  publisher={Wiley Online Library}
+}
+@article{moore1995ab,
+  title={Ab initio calculations of titanium NMR chemical shifts including the use of effective core potential basis sets},
+  author={Moore, Elaine A and Healy, Andrew},
+  journal=jcsft,
+  volume={91},
+  number={12},
+  pages={1735--1739},
+  year={1995},
+  publisher={The Royal Society of Chemistry}
 }
 %hier endet Promotion
 

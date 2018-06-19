@@ -2027,9 +2027,20 @@
     <bcf:citekey order="41">klamt1993cosmo</bcf:citekey>
     <bcf:citekey order="42">klamt1993cosmo</bcf:citekey>
     <bcf:citekey order="43">cammi1999nuclear</bcf:citekey>
-    <bcf:citekey order="44">stephens1985theory</bcf:citekey>
-    <bcf:citekey order="44">stephens1985vibrational</bcf:citekey>
-    <bcf:citekey order="45">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="44">mulliken1955electronic</bcf:citekey>
+    <bcf:citekey order="45">reed1985natural</bcf:citekey>
+    <bcf:citekey order="46">singh1984approach</bcf:citekey>
+    <bcf:citekey order="47">cundari1996effective</bcf:citekey>
+    <bcf:citekey order="47">frenking2007pseudopotential</bcf:citekey>
+    <bcf:citekey order="48">van2012use</bcf:citekey>
+    <bcf:citekey order="49">moore1995ab</bcf:citekey>
+    <bcf:citekey order="50">bagno2000effective</bcf:citekey>
+    <bcf:citekey order="51">bagno2002dft</bcf:citekey>
+    <bcf:citekey order="52">van2012use</bcf:citekey>
+    <bcf:citekey order="53">cao2010relativistic</bcf:citekey>
+    <bcf:citekey order="54">stephens1985theory</bcf:citekey>
+    <bcf:citekey order="54">stephens1985vibrational</bcf:citekey>
+    <bcf:citekey order="55">deglmann2002efficient</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

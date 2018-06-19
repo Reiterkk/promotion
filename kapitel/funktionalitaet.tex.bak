@@ -39,10 +39,107 @@ mit den Positionen $\vec{t}_l$ der \textit{screening}-Ladungen. Für die chemisc
 	
 	\subsection{Implementierung}
 	Bei genauer Betrachtung von Gleichung (\ref{eq:esmdb}) fällt auf, dass die $V_{\mu\nu}^{\textrm{SM},B_\beta}$ die selbe Form haben wie die nach den Komponenten des Magnetfeldes abgeleitete Kern-Elektron-Wechselwirkung $V_{\textrm{Ke}\mu\nu}^{B_\beta}$. Zur Implementierung der \ac{cosmo} Beiträge bei der Berechnung chemischer Abschirmungskonstanten können daher die bereits bestehenden Routinen zur Berechnung des letztgenannten Beitrages modifiziert werden. Es ist dabei lediglich darauf zu achten, dass anstelle der Kernladungen die \textit{screening}-Ladungen und anstelle der Kernpositionen die Positionen der \textit{screening}-Ladungen an die entsprechende Routine übergeben werden. In der bei der Verwendung von \ac{cosmo} zur Berechnung von chemischen Abschirmungskonstanten wird daher die Routine \texttt{vsints} ein weiteres Mal von der Routine \texttt{csplop} mit den entsprechenden Feldern gerufen. 
+	
+Grundsätzlich lassen sich auf diese Weise die Beiträge von beliebige Punktladungen berechnen. Anstelle von \ac{cosmo}, was Punktladungen auf einer Hülle um das gelöste Molekül generiert, besteht daher auch die Möglichkeit die elektrostatische Wechselwirkung expliziter Lösungsmittelmoleküle durch Punktladungen zu ersetzen. Dafür können einzelne Momentaufnahmen aus \ac{md}-Simulationen verwendet werden. An die Positionen der Atome der Lösungsmittel werden Punktladungen gesetzt. Der Betrag der jeweiligen Ladung kann beispielsweise durch eine Populationsanalyse wie Mulliken\supercite{mulliken1955electronic} oder \ac{npa}\supercite{reed1985natural} bzw. durch einen \ac{esp}-Fit\supercite{singh1984approach} für das isolierte Lösungsmittelmolekül bestimmt werden. Die entsprechenden Koordinaten und Ladungen werden schließlich wieder an die Routine \texttt{vsints} übergeben. Eine Alternative zu den Punktladungen sind gaußförmig verschmierte Ladungen. Die dafür notwendigen Dreizentrenintegrale wurden bereits für die \ac{ri}-Näherung benötigt und können wiederverwendet werden. Um dies zu gewährleisten wird die Routine \texttt{csonei} um einen Aufruf der Routine \texttt{cslp3} erweitert. Im Vergleich zu punktförmigen Ladungen lässt sich dadurch eine etwas weichere Ladungsverteilung generieren. 
+
+Die unterschiedlichen Möglichkeiten zur Einbeziehung von Lösungsmitteleffekten wurden am Beispiel des Acetonmoleküls in Wasser untersucht und ist im folgenden Kapitel erläutert.
 	\subsection{Testrechnungen}\label{lömitest}
 	
 \section{Skalar-relativistische Effekte durch effektive Kernpotentiale}
+Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativistischer Effekte zu. Diese relativistischen Einflüsse haben ihren Ursprung in Kernnähe schwerer Atome. Sie übertragen sich jedoch auch auf die Valenzschalen der entsprechenden Atome und haben damit auch einen Einfluss auf die chemische Verschiebung an benachbarten Atomen. Die vollrelativistische Berechnung im Rahmen vier- oder zweikomponentiger Methoden (wie beispielsweise das X2C-Verfahren) ist sehr aufwändig. Eine alternative Berücksichtigung skalarrelativistischer Effekte ist durch die Verwendung von sogenannten \acp{ecp}\supercite{cundari1996effective,frenking2007pseudopotential} gegeben. Hierbei werden die Elektronen in den Rumpforbitalen durch ein entsprechend gefittetes Potential beschrieben und nur die Valenzelektronen explizit betrachtet. Aufgrund der fehlenden kernnahen Elektronen haben chemische Abschirmungskonstanten, welche für Atome mit einem \ac{ecp} berechnet wurden, keine physikalische Bedeutung. Die Rumpfelektronen liefern den größten Beitrag zur Abschirmung und daher wird diese stark unterschätzt. Wird der durch das \ac{ecp} beschriebene Bereich nicht zu groß gewählt, d.h. sogenannte \textit{small core} \acp{ecp} verwendet, dann kann jedoch bei der Berechnung relativer chemischer Verschiebungen davon ausgegangen werden, dass sich der fehlende kernnahe Beitrag aufhebt.\supercite{van2012use} In diesem Zusammenhang untersuchten Moore und Healy\supercite{moore1995ab} die Abhängigkeit der Titan Abschirmung in Titan-Tetrahalogeniden von allelektornen Basissätzen sowie \acp{ecp} und kamen zu dem Schluss, dass die absoluten Abschirmungen stark von der gewählten Basis abhängen, die relativen chemischen Verschiebungen jedoch weitgehend unabhängig davon sind. Bagno und Bonchio konnten ebenfalls zeigen, dass sich die chemischen Verschiebungen, berechnet mit \acp{ecp}, von Wolfram\supercite{bagno2000effective} und Ruthenium\supercite{bagno2002dft} gut mit experimentell gemessenen Daten korrelieren lassen. Problematisch ist jedoch, dass die so erhaltenen chemischen Verschiebungen zunächst an experimentell gemessene Verschiebungen gefittet werden müssen, um eine Korrelation herzustellen. Erst damit lassen sich Aussagen über die chemische Verschiebung in unbekannten Verbindungen treffen. Für die Berechnung von chemischen Abschirmungskonstanten an benachbarten Atomen schwerer Atome können die \acp{ecp} jedoch problemlos verwendet werden.
 	\subsection{Theorie}
+	Eine eichinvariante Implementierung für \acp{ecp} wurde von van Wüllen\supercite{van2012use} vorgestellt und wichtigsten darin abgeleiteten Gleichungen sollen an dieser Stelle wiedergegeben werden. 
+	
+	Der Einelektronenhamiltonoperator im Magnetfeld $\vec{B}$ setzt sich aus dem ungestörten Hamiltonoperator $\hat{h}^0$ in Abwesenheit des Magnetfeldes sowie weiteren Termen linear, quadratisch usw. in $\vec{B}$ zusammen. Für die chemische Verschiebung werden jedoch nur Terme linear in $\vec{B}$ benötigt, daher ist $\hat{h}$ hier
+	\begin{equation}
+	\begin{aligned}
+	\hat{h}=&\hat{h}^0+\hat{h}^{10}\\
+	\hat{h}^0=&\frac{1}{2}\vec{p}^{\,2}+\hat{V}_{\textrm{Ke}}\\
+	\hat{h}^{10}=&\frac{1}{2c}\left(\left(\vec{r}-\vec{R}_E\right)\times\vec{p}\right)\cdot\vec{B}.
+	\end{aligned}
+	\end{equation}
+	Wie bereits zuvor in Kapitel \ref{theo:nmr} erwähnt, kannn der Eichursprung willkürlich gewählt werden und der Hamiltonoperator ist genau dann eichinvariant, wenn für unterschiedliche Eichursprünge die selben Werte magnetischer Eigenschaften berechnet werden. Dies ist dann erfüllt, wenn der Hamiltonoperator $\hat{\tilde{h}}$ mit dem Eichursprung $\vec{R}_{\tilde{E}}$ aus $\hat{h}$ durch eine unitäre Transformation der Form
+	\begin{equation}\label{eq:trans}
+	\hat{\tilde{h}}=\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}\exp\left(-\iu\Lambda_{\tilde{E}}\right),
+	\end{equation}
+	mit 
+	\begin{equation}
+	\begin{aligned}
+	\Lambda_{\tilde{E}}=&\frac{1}{2c}\left(\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\times\vec{r}\right)\cdot\vec{B}\\
+	=&\frac{1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\cdot\vec{r}
+	\end{aligned}
+	\end{equation}
+	erhalten werden kann. Zur Bestimmung von $\hat{\tilde{h}}$ wird dessen Wirkung auf eine Funktion $f(\vec{r})$ betrachtet. Aus der unitären Transformation folgt
+	
+	\begin{equation}\label{eq:transh}
+	\begin{aligned}
+	\hat{\tilde{h}}f(\vec{r})=&\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\\
+	=&\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^0\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})+\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^{10}\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})
+	\end{aligned}
+	\end{equation}
+	Für den ersten Term auf der rechten Seite von Gleichung (\ref{eq:transh}) ergibt sich
+	\begin{equation}\label{eq:transh1}
+	\begin{aligned}
+	&\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^0\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\\
+	=&\exp\left(\iu\Lambda_{\tilde{E}}\right)\frac{-\iu}{2}\vec{p}\left[\frac{-\iu}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\right]\\
+	&+\exp\left(\iu\Lambda_{\tilde{E}}\right)\frac{1}{2}\vec{p}\left[\exp\left(-\iu\Lambda_{\tilde{E}}\right)\vec{p}\left(f(\vec{r})\right)\right]+\hat{V}_{\textrm{Ke}}f(\vec{r})\\
+	=&\frac{-1}{4c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)
+	+\frac{-1}{4c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)
+	+\frac{1}{2}\vec{p}^{\,2}f(\vec{r})+\hat{V}_{\textrm{Ke}}f(\vec{r})\\
+	=&\frac{-1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)+\hat{h}^0f(\vec{r}),
+	\end{aligned}
+	\end{equation}
+	und für den zweiten Term
+	\begin{equation}\label{eq:transh2}
+	\begin{aligned}
+	&\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^{10}\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\\
+	=&\frac{1}{2c}\left(\vec{B}\times\left(\vec{r}-\vec{R}_E\right)\right)\cdot\vec{p}\left(f(\vec{r})\right)+\frac{1}{2c}\left(\vec{B}\times\left(\vec{r}-\vec{R}_E\right)\right)\cdot\frac{-1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)f(\vec{r})\\
+	=&\hat{h}^{10}f(\vec{r})+\mathcal{O}(\vec{B}^{\,2}).
+	\end{aligned}
+	\end{equation}
+	Für den Hamiltonoperator $\hat{\tilde{h}}$ folgt aus den Gleichungen (\ref{eq:transh1}) und (\ref{eq:transh2})
+	\begin{equation}
+	\begin{aligned}
+	\hat{\tilde{h}}=&\hat{h}^0+\hat{h}^{10}-\frac{1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\\
+	=&\hat{h}^0+\frac{1}{2c}\left(\left(\vec{r}-\vec{R}_{\tilde{E}}\right)\times\vec{p}\right)\cdot\vec{B}
+	\end{aligned}
+	\end{equation}
+	
+	wobei die Terme quadratisch in $\vec{B}$ hier erneut weggelassen wurden. Der Eichursprung wurde durch die Transformation also von $\vec{R}_E$ auf $\vec{R}_{\tilde{E}}$ verschoben. Für diese Herleitung wurde davon ausgegangen, dass das Kern-Elektron-Wechselwirkung ein lokales Potential ist und daher nicht mit $\vec{r}$ kommutiert. Dies ist nur gültig, solange keine \acp{ecp} verwendet werden. Für letztere ist das Potential durch eine Summe atomarer Beiträge geben und diese haben die Form\supercite{cao2010relativistic}
+	
+	\begin{equation}\label{eq:ecpotential}
+	\hat{V}^K=\hat{V}^K_{\textrm{lok}}+\sum_{l=0}^{l_{\textrm{max}}}\hat{V}_l^K\left(\vert\vec{r}-\vec{R}_K\vert\right)\hat{P}_l^K.
+	\end{equation}
+	Der erste Term auf der rechten Seite in Gleichung (\ref{eq:ecpotential}) ist ein lokales Potential und beinhaltet die Kern-Elektron-Anziehung, wobei die Kernladung um die Anzahl der Elektronen, die durch das \ac{ecp} beschrieben werden, reduziert wurde. Der zweite Term, ein nicht lokales Potential, ist nur für Atome mit einem \ac{ecp} vorhanden. Dieses hängt von der Drehimpulsquantenzahl $l$ ab und beinhaltet den Drehimpuls-Projektionsoperator $\hat{P}_l^K$. Dieser führt dazu, dass die \acp{ecp} nicht mehr mit $\vec{r}$ und damit mit $\Lambda$ kommutieren. Aus dem magnetfeldabhängigen Hamiltonoperator für ein Einzelnes Atom $K$ mit dem Eichursprung $\vec{R}_K$ und der Transformation aus Gleichung (\ref{eq:trans}) lässt sich nun der magnetfeldabhängige \ac{ecp} Hamiltonoperator für eine beliebige Wahl des Eichursprungs ableiten. Es folgt
+	
+	\begin{equation}
+	\begin{aligned}
+	\hat{h}_{\textrm{ECP}}=&\exp\left(\iu\Lambda_K\right)\hat{h}_K\exp\left(-\iu\Lambda_K\right)\\
+	=&\hat{h}^0+\left(\hat{h}^{10}+\iu\left[\hat{V}^K,\Lambda_K\right]\right)+\mathcal{O}(\vec{B}^{\,2})+\dotsc,
+	\end{aligned}
+	\end{equation}
+	mit
+	\begin{equation}
+	\Lambda_K=\frac{1}{2c}\left(\left(\vec{R}_K-\vec{R}_E\right)\times\vec{r}\right)\cdot\vec{B}.
+	\end{equation}
+	Für Moleküle muss über die Beiträge aller Atome summiert werden
+	\begin{equation}\label{eq:hecp}
+	\begin{aligned}
+	&\hat{h}_{\textrm{ECP}}=\hat{h}^0+\hat{h}_{\textrm{ECP}}^{10}\\
+	&\hat{h}_{\textrm{ECP}}^{10}=\hat{h}^{10}+\iu\sum_K\left[\hat{V}^K,\Lambda_K\right].
+	\end{aligned}
+	\end{equation}	 
+	Die zusätzlichen Integrale, die durch den Kommutator in Gleichung (\ref{eq:hecp}) auftreten lassen sich durch Entwicklung des Integrals $\langle\chi_mu\vert\hat{h}_{\textrm{ECP}}\vert\chi_nu\rangle$ und Angabe der Terme linear in $\vec{B}$ erhalten. Da sowohl die Basisfunktionen als auch der Hamiltonoperator vom Magnetfeld abhängen, ergeben sich für die Terme linear in $\vec{B}$
+	
+	\begin{equation}
+	\begin{aligned}
+	\langle &\chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}+\iu\Lambda_\mu\hat{h}^0-\iu\Lambda_\nu\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle\\
+	&=\langle \chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}\vert\chi_\nu^{\vec{B}=0}\rangle+\iu\langle\chi_\mu^{\vec{B}=0}\vert\Lambda_\mu\hat{h}^0-\iu\Lambda_\nu\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle
+	\end{aligned}
+	\end{equation}
+	
+	
+	
 	\subsection{Implementierung}
 	
 \section{Berechnung von Vibrational Circular Dichroism Spektren}

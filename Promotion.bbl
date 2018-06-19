@@ -1284,6 +1284,378 @@
       \field{pages}{7627\bibrangedash 7638}
       \range{pages}{12}
     \endentry
+    \entry{mulliken1955electronic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1001b2ca696f9b9078c3d153dc4c1943}{%
+           family={Mulliken},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima S},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{1001b2ca696f9b9078c3d153dc4c1943}
+      \strng{fullhash}{1001b2ca696f9b9078c3d153dc4c1943}
+      \strng{bibnamehash}{1001b2ca696f9b9078c3d153dc4c1943}
+      \strng{authorbibnamehash}{1001b2ca696f9b9078c3d153dc4c1943}
+      \strng{authornamehash}{1001b2ca696f9b9078c3d153dc4c1943}
+      \strng{authorfullhash}{1001b2ca696f9b9078c3d153dc4c1943}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{10}
+      \field{title}{Electronic population analysis on LCAO--MO molecular wave functions. I}
+      \field{volume}{23}
+      \field{year}{1955}
+      \field{pages}{1833\bibrangedash 1840}
+      \range{pages}{8}
+    \endentry
+    \entry{reed1985natural}{article}{}
+      \name{author}{3}{}{%
+        {{hash=af6ea4961aa133d0b8c58cdf6bd1a199}{%
+           family={Reed},
+           familyi={R\bibinitperiod},
+           given={Alan\bibnamedelima E},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f99ac7d0619a638e356f54bdef7291e9}{%
+           family={Weinstock},
+           familyi={W\bibinitperiod},
+           given={Robert\bibnamedelima B},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=cdb202add32da6d5dc1b9a5ff8aaf0af}{%
+           family={Weinhold},
+           familyi={W\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{2b7fc8ca3245d23432393a19bc1295e0}
+      \strng{fullhash}{2b7fc8ca3245d23432393a19bc1295e0}
+      \strng{bibnamehash}{2b7fc8ca3245d23432393a19bc1295e0}
+      \strng{authorbibnamehash}{2b7fc8ca3245d23432393a19bc1295e0}
+      \strng{authornamehash}{2b7fc8ca3245d23432393a19bc1295e0}
+      \strng{authorfullhash}{2b7fc8ca3245d23432393a19bc1295e0}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{2}
+      \field{title}{Natural population analysis}
+      \field{volume}{83}
+      \field{year}{1985}
+      \field{pages}{735\bibrangedash 746}
+      \range{pages}{12}
+    \endentry
+    \entry{singh1984approach}{article}{}
+      \name{author}{2}{}{%
+        {{hash=df4dbbb8382dfbc65d339b90adbcdfc4}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={U\bibnamedelima Chandra},
+           giveni={U\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b092eb11857859c14123e2815b3aaf50}{%
+           family={Kollman},
+           familyi={K\bibinitperiod},
+           given={Peter\bibnamedelima A},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{65ec575083e9df9106f7f2e71ab57a29}
+      \strng{fullhash}{65ec575083e9df9106f7f2e71ab57a29}
+      \strng{bibnamehash}{65ec575083e9df9106f7f2e71ab57a29}
+      \strng{authorbibnamehash}{65ec575083e9df9106f7f2e71ab57a29}
+      \strng{authornamehash}{65ec575083e9df9106f7f2e71ab57a29}
+      \strng{authorfullhash}{65ec575083e9df9106f7f2e71ab57a29}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Comp. Chem.}
+      \field{number}{2}
+      \field{title}{An approach to computing electrostatic charges for molecules}
+      \field{volume}{5}
+      \field{year}{1984}
+      \field{pages}{129\bibrangedash 145}
+      \range{pages}{17}
+    \endentry
+    \entry{cundari1996effective}{article}{}
+      \name{author}{4}{}{%
+        {{hash=df1d5b221fc3ec4c08e586628829f2bb}{%
+           family={Cundari},
+           familyi={C\bibinitperiod},
+           given={Thomas\bibnamedelima R},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=dd40ac5be9ed2335f498b02179fb38a4}{%
+           family={Benson},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=8da71c7a41027da5bebf0ad1b8933748}{%
+           family={Lutz},
+           familyi={L\bibinitperiod},
+           given={M\bibnamedelima Leigh},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=1e57810cf5468063da6a162f0a8b61ab}{%
+           family={Sommerer},
+           familyi={S\bibinitperiod},
+           given={Shaun\bibnamedelima O},
+           giveni={S\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c1eb7e8cc292f847beff5dfe7e917fb9}
+      \strng{fullhash}{90a7c48fd47a0462a7c3498e0809e693}
+      \strng{bibnamehash}{90a7c48fd47a0462a7c3498e0809e693}
+      \strng{authorbibnamehash}{90a7c48fd47a0462a7c3498e0809e693}
+      \strng{authornamehash}{c1eb7e8cc292f847beff5dfe7e917fb9}
+      \strng{authorfullhash}{90a7c48fd47a0462a7c3498e0809e693}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Comput. Chem.}
+      \field{title}{Effective core potential approaches to the chemistry of the heavier elements}
+      \field{volume}{8}
+      \field{year}{1996}
+      \field{pages}{145\bibrangedash 202}
+      \range{pages}{58}
+    \endentry
+    \entry{frenking2007pseudopotential}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=64015f8212685a339b14f1f62681c3bb}{%
+           family={Frenking},
+           familyi={F\bibinitperiod},
+           given={Gernot},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6bf1986eb0b5afa894fbed53e62dff93}{%
+           family={Antes},
+           familyi={A\bibinitperiod},
+           given={Iris},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ca7e95b2323e8626ee7f3c02a4bd2544}{%
+           family={B{ö}hme},
+           familyi={B\bibinitperiod},
+           given={Marlis},
+           giveni={M\bibinitperiod}}}%
+        {{hash=995f9b19663ae534c5b95dcdf02d9e26}{%
+           family={Dapprich},
+           familyi={D\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b584d8b964d1eac24db5ca65127d24fd}{%
+           family={Ehlers},
+           familyi={E\bibinitperiod},
+           given={Andreas\bibnamedelima W},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=8ca6a246d507059f4ceda004260693ed}{%
+           family={Jonas},
+           familyi={J\bibinitperiod},
+           given={Volker},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f39a4375f8610cef03e1de05109480ca}{%
+           family={Neuhaus},
+           familyi={N\bibinitperiod},
+           given={Arndt},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6b24813316a0ac3e72e6d885a51b7f64}{%
+           family={Otto},
+           familyi={O\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fae07028b902a4db57eacb3c3b61c7ad}{%
+           family={Stegmann},
+           familyi={S\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=45598ec5cc265d2675a6bd2983ca8ab2}{%
+           family={Veldkamp},
+           familyi={V\bibinitperiod},
+           given={Achim},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ec5852aa6d7351bf443ee9a7c80b6a68}
+      \strng{fullhash}{e11f6c843396129fdb6cebc862c580a5}
+      \strng{bibnamehash}{e11f6c843396129fdb6cebc862c580a5}
+      \strng{authorbibnamehash}{e11f6c843396129fdb6cebc862c580a5}
+      \strng{authornamehash}{ec5852aa6d7351bf443ee9a7c80b6a68}
+      \strng{authorfullhash}{e11f6c843396129fdb6cebc862c580a5}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Comput. Chem.}
+      \field{title}{Pseudopotential calculations of transition metal compounds: scope and limitations}
+      \field{volume}{8}
+      \field{year}{2007}
+      \field{pages}{63\bibrangedash 144}
+      \range{pages}{82}
+    \endentry
+    \entry{moore1995ab}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d0b46ca9b1a29ae1bf508673f7ae9d61}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Elaine\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=96013001996509faf6f788622f4983cf}{%
+           family={Healy},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{57750a9164bd42252a139bf5286d6be2}
+      \strng{fullhash}{57750a9164bd42252a139bf5286d6be2}
+      \strng{bibnamehash}{57750a9164bd42252a139bf5286d6be2}
+      \strng{authorbibnamehash}{57750a9164bd42252a139bf5286d6be2}
+      \strng{authornamehash}{57750a9164bd42252a139bf5286d6be2}
+      \strng{authorfullhash}{57750a9164bd42252a139bf5286d6be2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Soc. Faraday Trans.}
+      \field{number}{12}
+      \field{title}{Ab initio calculations of titanium NMR chemical shifts including the use of effective core potential basis sets}
+      \field{volume}{91}
+      \field{year}{1995}
+      \field{pages}{1735\bibrangedash 1739}
+      \range{pages}{5}
+    \endentry
+    \entry{bagno2000effective}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1acb09a162da299323fb450d2aa41ef9}{%
+           family={Bagno},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb9d0aeaaa40dc38e97e4117fca69dcd}{%
+           family={Bonchio},
+           familyi={B\bibinitperiod},
+           given={Marcella},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{fullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{bibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{authorbibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{authornamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{authorfullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{1-2}
+      \field{title}{Effective core potential DFT calculations of nuclear shielding as a tool for the prediction and assignment of the tungsten chemical shift in mono-and polynuclear complexes}
+      \field{volume}{317}
+      \field{year}{2000}
+      \field{pages}{123\bibrangedash 128}
+      \range{pages}{6}
+    \endentry
+    \entry{bagno2002dft}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1acb09a162da299323fb450d2aa41ef9}{%
+           family={Bagno},
+           familyi={B\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb9d0aeaaa40dc38e97e4117fca69dcd}{%
+           family={Bonchio},
+           familyi={B\bibinitperiod},
+           given={Marcella},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{fullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{bibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{authorbibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{authornamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \strng{authorfullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Eur. J. Inorg. Chem.}
+      \field{number}{6}
+      \field{title}{DFT Calculations of 99Ru Chemical Shifts with All-Electron and Effective Core Potential Basis Sets}
+      \field{volume}{2002}
+      \field{year}{2002}
+      \field{pages}{1475\bibrangedash 1483}
+      \range{pages}{9}
+    \endentry
+    \entry{cao2010relativistic}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=71243ae639a17eb3279633f644a70c05}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Xiaoyan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=42db805a0f6a17e9c917ee0fa2492bfa}{%
+           family={Dolg},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
+      \strng{fullhash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
+      \strng{bibnamehash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
+      \strng{authorbibnamehash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
+      \strng{authornamehash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
+      \strng{authorfullhash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Relativistic Methods for Chemists}
+      \field{title}{Relativistic pseudopotentials}
+      \field{year}{2010}
+      \field{pages}{215\bibrangedash 277}
+      \range{pages}{63}
+    \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
         {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
@@ -1301,8 +1673,8 @@
       \strng{authorbibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authornamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
       \strng{authorfullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1337,8 +1709,8 @@
       \strng{authorbibnamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authornamehash}{3fbf47f8204db480f89e43ea46361130}
       \strng{authorfullhash}{3fbf47f8204db480f89e43ea46361130}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1378,8 +1750,8 @@
       \strng{authorbibnamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authornamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authorfullhash}{0eb47e0aefffae140793948bc80fc106}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
