@@ -131,16 +131,36 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	\end{equation}	 
 	Die zusätzlichen Integrale, die durch den Kommutator in Gleichung (\ref{eq:hecp}) auftreten lassen sich durch Entwicklung des Integrals $\langle\chi_mu\vert\hat{h}_{\textrm{ECP}}\vert\chi_nu\rangle$ und Angabe der Terme linear in $\vec{B}$ erhalten. Da sowohl die Basisfunktionen als auch der Hamiltonoperator vom Magnetfeld abhängen, ergeben sich für die Terme linear in $\vec{B}$
 	
-	\begin{equation}
+	\begin{equation}\label{eq:linearinb}
 	\begin{aligned}
-	\langle &\chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}+\iu\Lambda_\mu\hat{h}^0-\iu\Lambda_\nu\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle\\
-	&=\langle \chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}\vert\chi_\nu^{\vec{B}=0}\rangle+\iu\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle-\iu\langle\chi_\mu^{\vec{B}=0}\vert\left[\hat{h}^0 ,\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle
+	\langle &\chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}+\iu\Lambda_\mu\hat{h}^0-\iu\hat{h}^0\Lambda_\nu\vert\chi_\nu^{\vec{B}=0}\rangle\\
+	&=\langle \chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}\vert\chi_\nu^{\vec{B}=0}\rangle+\iu\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle-\iu\langle\chi_\mu^{\vec{B}=0}\vert\left[\hat{h}^0 ,\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle\\
+    &=\langle \chi_\mu^{\vec{B}=0}\vert\frac{1}{2c}\left(\left(\vec{r}-\vec{R}_\nu\right)\times\vec{p}\right)\cdot\vec{B}\vert\chi_\nu^{\vec{B}=0}\rangle
+    +\iu\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle\\
+    &\quad+\iu\sum_K\langle \chi_\mu^{\vec{B}=0}\vert\left[\hat{V}^{K},\Lambda_K-\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle,
 	\end{aligned}
 	\end{equation}
 	
+	wobei der Kommutator
 	
+	\begin{equation}
+	\iu\left[\hat{h}^0 ,\Lambda_\nu\right]=\frac{1}{2c}\left(\left(\vec{R}_\nu-\vec{R}_E\right)\times\vec{p}\right)\cdot\vec{B}+\iu\left[\hat{V}^K ,\Lambda_\nu\right]
+	\end{equation}
+	ausgenutzt wurde. Der letzte Term in Gleichung (\ref{eq:linearinb}) ist ein zusätzlicher Term, der im Rahmen des von van Wüllen vorgeschlagenen \ac{ecp} \ac{giao} Formalismus auftritt, alle anderen Terme sind bereits bekannt. Anhand der Terme ist zu erkennen, dass all diese Ausdrücke nun nicht mehr von dem Eichursprung abhängen, da dieser nur noch in den Differenzen von $\Lambda_K$ und $\Lambda_\nu$ vorkommt. Werden nun alle Terme die aufgrund der \acp{ecp} entstehen kombiniert, dann wird der letztendlich zu implementierende Ausdruck erhalten
+	
+	\begin{equation}\label{eq:vecpmunu}
+	\begin{aligned}
+	V_{\mu\nu}^{\textrm{ECP}}=&\iu\sum_K\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{V}^K\vert\chi_\nu^{\vec{B}=0}\rangle+\iu\sum_K\langle \chi_\mu^{\vec{B}=0}\vert\left[\hat{V}^{K},\Lambda_K-\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle\\
+	=&\iu\sum_K\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_K\right)\hat{V}^K-\hat{V}^K\left(\Lambda_\nu -\Lambda_K\right)\vert\chi_\nu^{\vec{B}=0}\rangle .
+	\end{aligned}
+	\end{equation}
 	
 	\subsection{Implementierung}
+	Zur Implementierung der \ac{ecp} Beiträge für die Berechnung chemischer Abschirmungskonstanten muss Gleichung (\ref{eq:vecpmunu}) nach den Komponenten des Magnetfeldes abgeleitet werden. Die Ableitung von Gleichung (\ref{eq:vecpmunu}) nach der $x$-Komponente ergibt
+	\begin{equation}
+	V_{\mu\nu}^{\textrm{ECP},B_x}=\left.\frac{\partial V_{\mu\nu}^{\textrm{ECP}}}{\partial B_x}\right\vert_{\vec{B}=0}
+	\end{equation}
+	\subsection{Testrechnungen}
 	
 \section{Berechnung von Vibrational Circular Dichroism Spektren}
 	\subsection{Theorie}
