@@ -19,59 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{TURBOMOLE}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeldatesource}{nodate}
-      \field{labeltitlesource}{title}
-      \field{title}{{TURBOMOLE V7.0 2015}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989-2007, {TURBOMOLE GmbH}, since 2007; available from \\ {\texttt{http://www.turbomole.com}}.}
-    \endentry
-    \entry{grimme2010consistent}{article}{}
-      \name{author}{4}{}{%
-        {{hash=3a2585af369dbd4150db746c63177b0c}{%
-           family={Grimme},
-           familyi={G\bibinitperiod},
-           given={Stefan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=9ea89f28c9ac3083757e980d0b4a8fec}{%
-           family={Antony},
-           familyi={A\bibinitperiod},
-           given={Jens},
-           giveni={J\bibinitperiod}}}%
-        {{hash=c1a85a74b8b1d9992721d20377d7f50f}{%
-           family={Ehrlich},
-           familyi={E\bibinitperiod},
-           given={Stephan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=46ef1d196909f4706f09f9180d33ab91}{%
-           family={Krieg},
-           familyi={K\bibinitperiod},
-           given={Helge},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP Publishing}%
-      }
-      \strng{namehash}{7f2c045e27c631b672c2213391161e48}
-      \strng{fullhash}{e1a418c5d65690d89c4609d3b99952c2}
-      \strng{bibnamehash}{e1a418c5d65690d89c4609d3b99952c2}
-      \strng{authorbibnamehash}{e1a418c5d65690d89c4609d3b99952c2}
-      \strng{authornamehash}{7f2c045e27c631b672c2213391161e48}
-      \strng{authorfullhash}{e1a418c5d65690d89c4609d3b99952c2}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Chem. Phys.}
-      \field{number}{15}
-      \field{title}{A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu}
-      \field{volume}{132}
-      \field{year}{2010}
-      \field{pages}{154104}
-      \range{pages}{1}
-    \endentry
     \entry{born1927quantentheorie}{article}{}
       \name{author}{2}{}{%
         {{hash=f3c12b2ab192a232977c790c202ae18a}{%
@@ -565,6 +512,68 @@
       \field{type}{phdthesis}
       \field{year}{1999}
     \endentry
+    \entry{pulay1980convergence}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6c90b500e9d3578f5dc2a70d4b892ce9}{%
+           family={Pulay},
+           familyi={P\bibinitperiod},
+           given={P{é}ter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6c90b500e9d3578f5dc2a70d4b892ce9}
+      \strng{fullhash}{6c90b500e9d3578f5dc2a70d4b892ce9}
+      \strng{bibnamehash}{6c90b500e9d3578f5dc2a70d4b892ce9}
+      \strng{authorbibnamehash}{6c90b500e9d3578f5dc2a70d4b892ce9}
+      \strng{authornamehash}{6c90b500e9d3578f5dc2a70d4b892ce9}
+      \strng{authorfullhash}{6c90b500e9d3578f5dc2a70d4b892ce9}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chemical Physics Letters}
+      \field{number}{2}
+      \field{title}{Convergence acceleration of iterative sequences. The case of SCF iteration}
+      \field{volume}{73}
+      \field{year}{1980}
+      \field{pages}{393\bibrangedash 398}
+      \range{pages}{6}
+    \endentry
+    \entry{pulay1982improved}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5437cedb7f2773efe4c50e29d6c4777e}{%
+           family={Pulay},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{5437cedb7f2773efe4c50e29d6c4777e}
+      \strng{fullhash}{5437cedb7f2773efe4c50e29d6c4777e}
+      \strng{bibnamehash}{5437cedb7f2773efe4c50e29d6c4777e}
+      \strng{authorbibnamehash}{5437cedb7f2773efe4c50e29d6c4777e}
+      \strng{authornamehash}{5437cedb7f2773efe4c50e29d6c4777e}
+      \strng{authorfullhash}{5437cedb7f2773efe4c50e29d6c4777e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{number}{4}
+      \field{title}{Improved SCF convergence acceleration}
+      \field{volume}{3}
+      \field{year}{1982}
+      \field{pages}{556\bibrangedash 560}
+      \range{pages}{5}
+    \endentry
     \entry{rajagopal1973inhomogeneous}{article}{}
       \name{author}{2}{}{%
         {{hash=30639b04908435619f99854653dc12d6}{%
@@ -792,8 +801,8 @@
       \strng{authorbibnamehash}{133344180f094feee3deca265b8b56d7}
       \strng{authornamehash}{55bc4648c91babe86635b0a427c98c11}
       \strng{authorfullhash}{133344180f094feee3deca265b8b56d7}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -833,8 +842,8 @@
       \strng{authorbibnamehash}{086338ad03825c1d93a271e9e92c9314}
       \strng{authornamehash}{086338ad03825c1d93a271e9e92c9314}
       \strng{authorfullhash}{086338ad03825c1d93a271e9e92c9314}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1202,8 +1211,8 @@
       \strng{authorbibnamehash}{01d441dfe7d6d66ec6797e88562104fc}
       \strng{authornamehash}{60f77ae4066429a164627b1ad2f81a3c}
       \strng{authorfullhash}{01d441dfe7d6d66ec6797e88562104fc}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1536,8 +1545,8 @@
       \strng{authorbibnamehash}{57750a9164bd42252a139bf5286d6be2}
       \strng{authornamehash}{57750a9164bd42252a139bf5286d6be2}
       \strng{authorfullhash}{57750a9164bd42252a139bf5286d6be2}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1765,6 +1774,8 @@
       \range{pages}{8}
     \endentry
   \enddatalist
+  \missing{TURBOMOLE}
+  \missing{grimme2010consistent}
   \missing{roothaanhall}
 \endrefsection
 \endinput

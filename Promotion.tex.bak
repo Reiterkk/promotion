@@ -257,7 +257,7 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 \cleardoublepage
 
 % Erklärung (Arbeit selbstständig verfasst)
-\include{./intro/erklaerung}  
+%\include{./intro/erklaerung}  
 
 
 

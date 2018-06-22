@@ -1,27 +1,35 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.15)  20 JUN 2018 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  22 JUN 2018 15:18
 entering extended mode
 **./Promotion.tex
 (Promotion.tex
 LaTeX2e <2018-04-01> patch level 4
 Babel <3.20> and hyphenation patterns for 75 language(s) loaded.
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\scrbook.cls"
 Document Class: scrbook 2018/03/30 v3.25 KOMA-Script document class (book)
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\scrkbase.sty"
 Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\scrbase.sty"
 Package: scrbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\ke
+yval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\scrlfile.sty"
 Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
-))) (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.s
-ty
+)))
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\tocbasic.sty"
 Package: tocbasic 2018/03/30 v3.25 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -46,12 +54,13 @@ Class scrbook Info: You've used standard option `openany'.
 Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input li
 ne 2331.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize12pt.cl
-o
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\scrsize12pt.clo"
 File: scrsize12pt.clo 2018/03/30 v3.25 KOMA-Script font size class option (12pt
 )
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\typearea.sty"
 Package: typearea 2018/03/30 v3.25 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count80
@@ -106,22 +115,28 @@ Package tocbasic Info: omitting babel extension for `lot'
 \c@table=\count89
 Class scrbook Info: Redefining `\numberline' on input line 6445.
 \bibindent=\dimen102
-) (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspace.sty
+)
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\se
+tspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\units\units.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\units
+.sty"
 Package: units 1998/08/04 v0.9b Typesetting units
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen
+.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\units\nicefrac.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\nicef
+rac.sty"
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip58
 \L@UnitsRaiseTextstyle=\skip59
 \L@UnitsRaiseScriptstyle=\skip60
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float
+.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count90
 \float@exts=\toks15
@@ -129,14 +144,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks16
 \@floatcapt=\box29
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrhack.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\scrhack.sty"
 Package: scrhack 2018/03/30 v3.25 KOMA-Script package 
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\xpatch\xpatch.sty
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xpatch\xpat
+ch.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\ex
+pl3.sty"
 Package: expl3 2018-05-13 L3 programming layer (loader) 
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\ex
+pl3-code.tex"
 Package: expl3 2018-05-13 L3 programming layer (code)
 \c_max_int=\count91
 \l_tmpa_int=\count92
@@ -283,21 +302,24 @@ Package: expl3 2018-05-13 L3 programming layer (code)
 \l__seq_internal_a_int=\count173
 \l__seq_internal_b_int=\count174
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3kernel\l3
+pdfmode.def"
 File: l3pdfmode.def 2018-05-13 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count175
 ))
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.s
-ty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\l3packages\
+xparse\xparse.sty"
 Package: xparse 2018-05-12 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count176
 \g__xparse_grabber_int=\count177
 \l__xparse_m_args_int=\count178
 \l__xparse_mandatory_args_int=\count179
 \l__xparse_v_nesting_int=\count180
-) (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+)
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\et
+oolbox.sty"
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count181
 )
@@ -483,7 +505,9 @@ Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 .................................................
 )
 Package scrhack Info: loading float hack on input line 167.
- (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\float.hak
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\float.hak"
 File: float.hak 2018/03/30 v3.25 KOMA-Script package (hacking package float)
 Package scrhack Info: redefining \newfloat on input line 163.
 Package scrhack Info: redefining \listof on input line 163.
@@ -491,20 +515,26 @@ Package scrhack Info: undefining \float@addtolists on input line 163.
 )
 Package scrhack Info: loading setspace hack on input line 195.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\setspace.hak
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\setspace.hak"
 File: setspace.hak 2018/03/30 v3.25 KOMA-Script package (hacking package setspa
 ce)
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+))
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\ge
+ometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\i
+fxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count182
@@ -520,8 +550,10 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen142
 \Gm@dimlist=\toks17
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\ge
+ometry.cfg"))
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\en
+umitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip67
 \enit@outerparindent=\dimen143
@@ -529,29 +561,36 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box45
 \enitdp@description=\count185
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pd
+flscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\ls
+cape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gr
+aphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tr
+ig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cf
+g\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-de
+f\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )))
 Package scrhack Info: loading lscape hack on input line 76.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\lscape.hak
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script
+\lscape.hak"
 File: lscape.hak 2018/03/30 v3.25 KOMA-Script package (hacking package lscape)
 Package scrhack Info: \landscape patched to make \textheight change optional on
  input line 90.
@@ -559,10 +598,12 @@ Package scrhack Info: \landscape patched to make \textheight change optional on
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\cap
+tion.sty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\cap
+tion3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen144
@@ -577,64 +618,82 @@ Package caption Info: KOMA-Script document class.
 \c@ContinuedFloat=\count186
 Package caption Info: float package is loaded.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fonten
+c.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.
+def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inpute
+nc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\bab
+el.sty"
 Package: babel 2018/05/02 3.20 The Babel package
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\switch.def"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\swi
+tch.def"
 File: switch.def 2018/05/02 3.20 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblop
+ts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-germa
+n\ngerman.ldf"
 Language: ngerman 2018/03/29 v2.10 German support for babel (post-1996 orthogra
 phy)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\ngermanb.ldf"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-germa
+n\ngermanb.ldf"
 Language: ngermanb 2018/03/29 v2.10 German support for babel (post-1996 orthogr
 aphy)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\bab
+el.def"
 File: babel.def 2018/05/02 3.20 Babel common definitions
 \babel@savecnt=\count187
 \U@D=\dimen151
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\txtbabel.def")
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txt
+babel.def")
 \bbl@dirlevel=\count188
 )
 Package babel Info: Making " an active character on input line 121.
 )))
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\translator\translator.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\translator\
+translator.sty"
 Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+)
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gr
+aphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen152
 \Gin@req@width=\dimen153
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\acronym\acronym.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\acronym\acr
+onym.sty"
 Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\bigfoot\suffix.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bigfoot\suf
+fix.sty"
 Package: suffix 2006/07/15 1.5a Variant command support
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xst
+ring.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\x
+string.tex"
 \@xs@message=\write3
 \integerpart=\count189
 \decimalpart=\count190
@@ -643,51 +702,66 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks21
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\glossaries
-.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+base\glossaries.sty"
 Package: glossaries 2018/05/10 v4.38 (NLCT)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xke
+yval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\x
+keyval.tex"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\x
+kvutils.tex"
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
 )
 \XKV@depth=\count191
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\mfirstuc\mfirstuc.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mf
+irstuc.sty"
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
 \@glsmfirst=\toks24
 \@glsmrest=\toks25
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\textcase\textcase.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\te
+xtcase.sty"
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.s
+ty"
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool-base.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\da
+tatool-base.sty"
 Package: datatool-base 2018/04/16 v2.30 (NLCT)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+math.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip69
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+text.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+gen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks26
 \ex@=\dimen154
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+bsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen155
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\ams
+opn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count192
@@ -728,22 +802,26 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\subs
+tr.sty"
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count270
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datatool-fp.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\da
+tatool-fp.sty"
 Package: datatool-fp 2018/04/16 v2.30 (NLCT)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpatte
+rn.sty"
 Package: defpattern 1994/10/12
 \actioncount=\count271
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic
+.sty"
 Package: fp-basic 1996/05/13
 \FP@xs=\count272
 \FP@xia=\count273
@@ -755,32 +833,41 @@ Package: fp-basic 1996/05/13
 \FP@regs=\count279
 \FP@times=\count280
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addon
+s.sty"
 Package: fp-addons 1995/03/15
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.
+sty"
 Package: fp-snap 1995/04/05
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.s
+ty"
 Package: fp-exp 1995/04/03
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo
+.sty"
 Package: fp-trigo 1995/04/14
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.s
+ty"
 Package: fp-pas 1994/08/29
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-rando
+m.sty"
 Package: fp-random 1995/02/23
 \FPseed=\count281
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.s
+ty"
 Package: fp-eqn 1995/04/03
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.s
+ty"
 Package: fp-upn 1996/10/21
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.
+sty"
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks31
@@ -793,17 +880,18 @@ Package: fp-eval 1995/04/03
 \dtl@codeB=\count287
 \@dtl@foreach@level=\count288
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base\glossaries
--compatible-307.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+base\glossaries-compatible-307.sty"
 Package: glossaries-compatible-307 2018/05/10 v4.38 (NLCT)
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\tracklang\tracklang.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tracklang\t
+racklang.sty"
 Package: tracklang 2018/05/13 v1.3.6 (NLCT) Track Languages
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\generic\tracklang\tracklang.tex)
-)
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries-german\glossari
-es-german.ldf
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\tracklang
+\tracklang.tex"))
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-
+german\glossaries-german.ldf"
 File: glossaries-german.ldf 2014/11/23 v1.0
 )
 \gls@level=\count289
@@ -814,19 +902,21 @@ File: glossaries-german.ldf 2014/11/23 v1.0
 \glsshorttok=\toks35
 \glslongtok=\toks36
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary
--hypernav.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+styles\glossary-hypernav.sty"
 Package: glossary-hypernav 2018/05/10 v4.38 (NLCT)
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary
--list.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+styles\glossary-list.sty"
 Package: glossary-list 2018/05/10 v4.38 (NLCT)
 \glslistdottedwidth=\skip74
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary
--long.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+styles\glossary-long.sty"
 Package: glossary-long 2018/05/10 v4.38 (NLCT)
- ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longt
+able.sty"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip75
 \LTright=\skip76
@@ -848,12 +938,12 @@ Class scrbook Info: longtable captions redefined on input line 43.
 \glsdescwidth=\skip79
 \glspagelistwidth=\skip80
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary
--super.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+styles\glossary-super.sty"
 Package: glossary-super 2018/05/10 v4.38 (NLCT)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\supertabular\supertabular.
-sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabula
+r\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count295
 \ST@wd=\dimen164
@@ -872,15 +962,18 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen174
 \ST@pbox=\box52
 ))
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styles\glossary
--tree.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\
+styles\glossary-tree.sty"
 Package: glossary-tree 2018/05/10 v4.38 (NLCT)
 \glstreeindent=\skip84
-)) (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+))
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty
+"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\hyphenat\hyphenat.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyphenat\hy
+phenat.sty"
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language76
 LaTeX Info: Redefining \_ on input line 43.
@@ -889,14 +982,17 @@ Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
 (scrhack)             need that hack, on input line 68.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hy
+perref.sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+hobsub-hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -934,24 +1030,28 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\au
+xhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kv
+options.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen175
 \Hy@linkcounter=\count296
 \Hy@pagecounter=\count297
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd
+1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count298
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hy
+perref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
@@ -985,30 +1085,36 @@ LaTeX Info: Redefining \pageref on input line 6443.
 )
 Package hyperref Info: Driver: hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hp
+dftex.def"
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count304
 \c@bookmark@seq@number=\count305
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\re
+runfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip85
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\ellipsis\ellipsis.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ellipsis\el
+lipsis.sty"
 Package: ellipsis 2004/9/28 v1.6 ellipsis: fixes spacing around \protect \globa
 l \let \T1\textellipsis .\kern \fontdimen 3\font .\kern \fontdimen 3\font .\ker
 n \fontdimen 3\font \T1\textellipsis 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspac
+e.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ))
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\ragged2e.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\ragged2e
+.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everysel.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everysel
+.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip86
@@ -1026,10 +1132,13 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip98
 \JustifyingParindent=\skip99
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\marginnote\marginnote.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\marginnote\
+marginnote.sty"
 Package: marginnote 2018/04/13 v1.3 non floating margin notes for LaTeX
 \c@mn@abspage=\count306
-) (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.sty
+)
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\m
+icrotype.sty"
 Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks38
 \MT@count=\count307
@@ -1038,8 +1147,8 @@ LaTeX Info: Redefining \textls on input line 793.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
 \MT@listname@count=\count308
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype-pdftex
-.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\m
+icrotype-pdftex.def"
 File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 913.
@@ -1048,10 +1157,12 @@ LaTeX Info: Redefining \lslig on input line 913.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cfg
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\m
+icrotype.cfg"
 File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\lmodern.
+sty"
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -1101,15 +1212,19 @@ Package glossaries Info: Writing glossary file Promotion.glo on input line 102.
 
 Package glossaries Info: Writing glossary file Promotion.acn on input line 102.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\co
+lor.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cf
+g\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\cs
+quotes.sty"
 Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 \csq@reset=\count309
 \csq@gtype=\count310
@@ -1119,13 +1234,15 @@ Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 \csq@tshold=\count314
 \csq@ltx@everypar=\toks39
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\cs
+quotes.def"
 File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\cs
+quotes.cfg"
 File: csquotes.cfg 
 )
 Package csquotes Info: Option 'babel' depreciated.
@@ -1133,14 +1250,17 @@ Package csquotes Info: Option 'babel' depreciated.
 Package csquotes Info: Enabling multilingual quotes.
 Package csquotes Info: Redefining alias 'german' -> 'german/quotes'.
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bi
+blatex.sty"
 Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logr
+eq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count315
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\logreq\logr
+eq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 \c@tabx@nest=\count316
@@ -1197,7 +1317,8 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bl
+x-dm.def"
 File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -1289,13 +1410,15 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bl
+x-compat.def"
 File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bi
+blatex.def"
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 \c@textcitecount=\count425
 \c@textcitetotal=\count426
@@ -1308,13 +1431,14 @@ File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\authoryear.bb
-x
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bb
+x\authoryear.bbx"
 File: authoryear.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bbx
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bb
+x\standard.bbx"
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count432
 \c@bbx:relatedtotal=\count433
@@ -1322,8 +1446,8 @@ File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\numeric-comp.
-cbx
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\cb
+x\numeric-comp.cbx"
 File: numeric-comp.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
 \c@cbx@tempcnta=\count434
 \c@cbx@tempcntb=\count435
@@ -1341,21 +1465,27 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\bi
+blatex.cfg"
 File: biblatex.cfg 
 ))
 Package biblatex Info: Redefining '\supercite' on input line 128.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\am
+sfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\am
+ssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\bo
+oktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen180
 \lightrulewidth=\dimen181
@@ -1375,14 +1505,16 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count439
 \@thisrulewidth=\dimen192
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\mu
+ltirow.sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip123
 \multirow@cntb=\count440
 \multirow@dima=\skip124
 \bigstrutjot=\dimen193
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\placeins\placeins.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\placeins\pl
+aceins.sty"
 Package: placeins 2005/04/18  v 2.2
 )
 Package csquotes Info: Checking for multilingual support...
@@ -1390,21 +1522,23 @@ Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\ngerman.lbx
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lb
+x\ngerman.lbx"
 File: ngerman.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lb
+x\german.lbx"
 File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\german.lbx
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lb
+x\german.lbx"
 File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-))
-(Promotion.aux (intro/titel.aux) (intro/erklaerung.aux) (intro/danksagung.aux))
+)) (Promotion.aux (intro/titel.aux) (intro/danksagung.aux))
 \openout1 = `Promotion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 242.
@@ -1422,7 +1556,9 @@ LaTeX Font Info:    ... okay on input line 242.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 242.
 LaTeX Font Info:    ... okay on input line 242.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 242.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmr.fd
+"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1460,7 +1596,9 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp
+-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count441
 \scratchdimen=\dimen194
@@ -1473,10 +1611,13 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \MPnumerator=\count445
 \makeMPintoPDFobject=\count446
 \everyMPtoPDFconversion=\toks41
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+)
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\ep
+stopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\gr
+fext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1490,31 +1631,35 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltc
+aption.sty"
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package caption Info: We need package `newfloat' on input line 242.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\newfloat.sty
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\new
+float.sty"
 Package: newfloat 2015/09/17 v1.1-109 Defining new floating environments (AR)
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries-english\glossar
-ies-dictionary-English.dict
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-
+english\glossaries-dictionary-English.dict"
 Dictionary: glossaries-dictionary, Language: English 
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries-german\glossari
-es-dictionary-German.dict
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries-
+german\glossaries-dictionary-German.dict"
 Dictionary: glossaries-dictionary, Language: German 
 )
 \AtBeginShipoutBox=\box54
 Package hyperref Info: Link coloring OFF on input line 242.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\na
+meref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\
+gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count447
@@ -1522,13 +1667,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 242.
 LaTeX Info: Redefining \pageref on input line 242.
 LaTeX Info: Redefining \nameref on input line 242.
-
-(Promotion.out) (Promotion.out)
+ (Promotion.out) (Promotion.out)
 \@outlinefile=\write8
 \openout8 = `Promotion.out'.
 
 LaTeX Info: Redefining \dots on input line 242.
- ABD: EverySelectfont initializing macros
+
+ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 242.
 LaTeX Info: Redefining \microtypecontext on input line 242.
 Package microtype Info: Generating PDF output.
@@ -1542,7 +1687,8 @@ Package microtype Info: Using tracking set `my'.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\m
+t-cmr.cfg"
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
@@ -1553,8 +1699,21 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Promotion.bbl' found.
+ (Promotion.bbl
 
-(Promotion.bbl
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                TURBOMOLE
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                grimme2010consistent
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
@@ -1588,7 +1747,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 
-{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/Kevin Reiter/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1622,92 +1781,87 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 ])
-\openout2 = `./intro/erklaerung.aux'.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 268.
 
- (intro/erklaerung.tex
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.f
+d"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 268.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.f
+d"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 268
+.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.
+fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 8.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 268
+.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.
+fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 8.
+(Font)              <12> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 8.
+(Font)              <8> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 8.
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+(Font)              <6> on input line 268.
+LaTeX Font Info:    Try loading font information for U+msa on input line 268.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\um
+sa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\m
+t-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+LaTeX Font Info:    Try loading font information for U+msb on input line 268.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\um
+sb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\m
+t-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 260.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 260.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 260.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 260.
-
-[5
-
-
-
-
-
-]
+)
 Package tocbasic Info: character protrusion at toc deactivated on input line 26
 8.
  (Promotion.toc
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 32.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 34.
+
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.f
+d"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 32.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 34.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \vbox (badness 4378) has occurred while \output is active []
-
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
- [6
+(babel)             in language  on input line 60.
+ [5
+
+
+
 
 
 ])
@@ -1722,20 +1876,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 271.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 271.
-
-[7]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 271.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 271.
- [8
-
-
-]
+ [6]
 chapter 1.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 273.
@@ -1749,6 +1890,12 @@ n
 although it is yet undefined on input line 1.
 Package acronym Info: Label `acro:ecp' newly defined as it shall be overridden
 although it is yet undefined on input line 1.
+
+Overfull \hbox (19.58769pt too wide) in paragraph at lines 1--2
+\T1/lmr/m/n/12 (-20) duls \T1/lmtt/m/n/12 mpshift \T1/lmr/m/n/12 (-20) des Pro-
+gramm-pa-kets \T1/lmr/m/sc/12/45ls (-20) TUR-BO-MO-LE$[]$
+ []
+
 Package acronym Info: Label `acro:ri' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
 Package acronym Info: Label `acro:marij' newly defined as it shall be overridde
@@ -1764,6 +1911,8 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 276.
  [1
+
+
 
 ]
 chapter 2.
@@ -2111,6 +2260,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 752.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 752.
+Package acronym Info: Label `acro:diis' newly defined as it shall be overridden
+
+although it is yet undefined on input line 753.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 754.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2120,46 +2272,61 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 754.
  [25]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 778.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 778.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 782.
+(babel)             in language  on input line 780.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 782.
+(babel)             in language  on input line 780.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 782.
+(babel)             in language  on input line 780.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 782.
+(babel)             in language  on input line 780.
  [26]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 793.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 793.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 793.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 793.
+
+[27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 814.
+(babel)             in language  on input line 832.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 814.
+(babel)             in language  on input line 832.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 814.
+(babel)             in language  on input line 832.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 814.
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 845.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 845.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 845.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 845.
+(babel)             in language  on input line 832.
  [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 848.
+(babel)             in language  on input line 871.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 848.
+(babel)             in language  on input line 871.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 871.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 871.
+ [29]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 874.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 874.
 Package acronym Info: Label `acro:gimic' newly defined as it shall be overridde
 n
-although it is yet undefined on input line 849.
+although it is yet undefined on input line 875.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 279.
@@ -2170,7 +2337,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 279.
 
-[29]
+[30]
 chapter 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 279.
@@ -2187,7 +2354,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
- [30
+ [31
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2198,20 +2365,20 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 20.
- [31]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 30.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 30.
  [32]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 30.
+ [33]
 
 pdfTeX warning: pdflatex (file ./gfx/programmstruktur_alt.pdf): PDF inclusion: 
 found PDF version <1.7>, but at most version <1.6> allowed
-<./gfx/programmstruktur_alt.pdf, id=757, 466.87715pt x 793.59756pt>
+<./gfx/programmstruktur_alt.pdf, id=776, 466.87715pt x 793.59756pt>
 File: ./gfx/programmstruktur_alt.pdf Graphic file (type pdf)
 <use ./gfx/programmstruktur_alt.pdf>
 Package pdftex.def Info: ./gfx/programmstruktur_alt.pdf  used on input line 33.
@@ -2229,7 +2396,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 282.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 282.
- [33 <./gfx/programmstruktur_alt.pdf>]
+ [34 <./gfx/programmstruktur_alt.pdf>]
 chapter 4.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 282.
@@ -2244,7 +2411,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 20.
- [34
+ [35
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2259,7 +2426,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
- [35]
+ [36]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2275,7 +2442,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 51.
- [36]
+ [37]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 71.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2289,7 +2456,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 80.
 
-[37]
+[38]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2298,11 +2465,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 89.
- [38]
+ [39]
 
 pdfTeX warning: pdflatex (file ./gfx/programmstruktur_ri.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.6> allowed
-<./gfx/programmstruktur_ri.pdf, id=925, 344.161pt x 762.89398pt>
+<./gfx/programmstruktur_ri.pdf, id=944, 344.161pt x 762.89398pt>
 File: ./gfx/programmstruktur_ri.pdf Graphic file (type pdf)
 <use ./gfx/programmstruktur_ri.pdf>
 Package pdftex.def Info: ./gfx/programmstruktur_ri.pdf  used on input line 99.
@@ -2315,7 +2482,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 105.
-[39]
+[40]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2324,7 +2491,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 105.
- [40 <./gfx/programmstruktur_ri.pdf>]
+ [41 <./gfx/programmstruktur_ri.pdf>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2354,7 +2521,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 285.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 285.
- [41
+ [42
 
 ]
 chapter 5.
@@ -2377,7 +2544,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 8.
- [42
+ [43
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2397,7 +2564,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
- [43]
+ [44]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2415,7 +2582,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 44.
 
-[44]
+[45]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2432,20 +2599,20 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 50.
- [45]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 50.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 62.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 62.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 62.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 62.
  [46]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 62.
+ [47]
 Overfull \hbox (18.4478pt too wide) detected at line 91
 [][][]
  []
@@ -2458,7 +2625,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 109.
-[47]
+[48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -2469,35 +2636,35 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 142.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 142.
- [48]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 158.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 158.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 163.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 163.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 165.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 165.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 168.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 168.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 168.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 168.
  [49]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 158.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 158.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 163.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 165.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 168.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 168.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 168.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 168.
+ [50]
 Package acronym Info: Label `acro:apt' newly defined as it shall be overridden
 although it is yet undefined on input line 179.
 Package acronym Info: Label `acro:aat' newly defined as it shall be overridden
@@ -2513,11 +2680,12 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 194.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 194.
- [50]
+ [51]
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 214.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.f
+d"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2539,7 +2707,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 217.
- [51]
+ [52]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 237.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2562,7 +2730,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 288.
 
-[52]
+[53]
 chapter 6.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 288.
@@ -2586,7 +2754,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 291.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 291.
- [53
+ [54
 
 ]
 chapter 7.
@@ -2603,7 +2771,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 296.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 296.
- [54
+ [55
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2624,7 +2792,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 309.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 309.
- [55
+ [56
 
 
 ]
@@ -2647,25 +2815,37 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 311.
 
-[56
+[57
 
 ] (etc/acronym.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
-)
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 314.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 314.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 314.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 314.
- [57
 
-]
+Underfull \vbox (badness 5756) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 74.
+ [58
+
+])
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 314.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 314.
+
+[59]
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 314.
@@ -2679,7 +2859,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 314.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 314.
-[58
+[60
 
 ]
 Overfull \hbox (20.31113pt too wide) in paragraph at lines 314--314
@@ -2695,10 +2875,11 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 316.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 316.
-[59] (kapitel/publikationsliste.tex
+[61] (kapitel/publikationsliste.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 5.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.f
+d"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/bx/n' in size <12> not available
@@ -2711,7 +2892,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 28.
- [60
+ [62
 
 ])
 Package babel Info: Redefining ngerman shorthand "|
@@ -2722,8 +2903,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 320.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 320.
- [61]
-(kapitel/lebenslauf.tex)
+ [63] (kapitel/lebenslauf.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining ngerman shorthand "|
@@ -2734,7 +2914,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 323.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 323.
- [62
+ [64
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -2746,7 +2926,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 323.
 
-[63]
+[65]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2755,7 +2935,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 326.
- [64]
+ [66]
 \openout2 = `./intro/danksagung.aux'.
 
  (intro/danksagung.tex
@@ -2767,7 +2947,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 25.
- [65
+ [67
 
 
 ])
@@ -2779,7 +2959,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 326.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 326.
- [66]
+ [68]
 No file Promotion.acr.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 338.
 Package babel Info: Redefining ngerman shorthand "|
@@ -2790,54 +2970,64 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 338.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 338.
-[67
+[69
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 338.
- (Promotion.aux (intro/titel.aux) (intro/erklaerung.aux)
-(intro/danksagung.aux))
+ (Promotion.aux (intro/titel.aux) (intro/danksagung.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 338.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 338.
 Package rerunfilecheck Info: File `Promotion.out' has not changed.
-(rerunfilecheck)             Checksum: 0EB043BF576E9D18836D28132916A2FC;3986.
+(rerunfilecheck)             Checksum: E09274AB4F4C25C96209316167BAA4A4;4108.
 Package logreq Info: Writing requests to 'Promotion.run.xml'.
 \openout1 = `Promotion.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36632 strings out of 492976
- 666864 string characters out of 3135991
- 1298886 words of memory out of 3000000
- 39279 multiletter control sequences out of 15000+200000
- 621189 words of font info for 174 fonts, out of 3000000 for 9000
+ 36624 strings out of 492976
+ 674179 string characters out of 3123648
+ 1297840 words of memory out of 3000000
+ 39281 multiletter control sequences out of 15000+200000
+ 613522 words of font info for 168 fonts, out of 3000000 for 9000
  1198 hyphenation exceptions out of 8191
  57i,18n,77p,9090b,2271s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
-thex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmbsy10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
-lmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-ss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtto10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Promotion.pdf (75 pages, 1029256 bytes).
+{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-mathsy.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/lm/lm-ec.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Kevin Reiter/AppData/Local/
+Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/Kevin Reiter/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbsy10.pfb><C:/Users/Kevin Re
+iter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Use
+rs/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.
+pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmbx8.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmcsc10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Kevin Reiter/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Kevin Reiter/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Kevin Reite
+r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/K
+evin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmib10.pfb
+><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
+/lmr10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr12.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmr6.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Kevin Reiter/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Kevin Reiter/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/Kevin Re
+iter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Use
+rs/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.
+pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmsy8.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmtk10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Kevin Reiter/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Kevin Reiter/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtto10.pfb><C:/Users/Kevin Reit
+er/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb>
+Output written on Promotion.pdf (75 pages, 1039609 bytes).
 PDF statistics:
- 1482 PDF objects out of 1728 (max. 8388607)
- 392 named destinations out of 1000 (max. 500000)
- 30083 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1507 PDF objects out of 1728 (max. 8388607)
+ 397 named destinations out of 1000 (max. 500000)
+ 25995 words of extra memory for PDF output out of 29859 (max. 10000000)
 

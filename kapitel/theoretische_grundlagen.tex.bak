@@ -749,6 +749,32 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     
     Damit sind die \ac{cphf}-Gleichungen über den Austauschterm $K$ gekoppelt und müssen in einem iterativen Verfahren näherungsweise gelöst werden.
     
+    \subsubsection{Konvergenzbeschleunigung durch das DIIS-Verfahren}
+    Zur Verbesserung des Konvergenzverhaltens der \ac{scf}-Iterationen wurde von Pulay das \ac{diis}-Verfahren Vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen aus den vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt dazu, dass eine lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt.
+    
+    Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Kapitel erwähnt können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet
+    
+    \begin{equation}\label{eq:lfunktional}
+    \begin{aligned}
+    \mathcal{L}=&\sum_a\sum_i U_{ai}^{B_\beta}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
+    &\left.+\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)U_{ai}^{B_\beta}\right].
+    \end{aligned}
+    \end{equation}
+    Die Ableitung des Funktionals aus Gleichung (\ref{eq:lfunktional}) nach den $U_{ai}^{B_\beta}$ liefert die \ac{cphf}-Gleichungen (\ref{eq:cphfupi}), welche es zu lösen gilt. Gleichzeitig sind die Lösungen der \ac{cphf}-Gleichungen jedoch auch stationäre Punkte des Funktionals $\mathcal{L}$, wodurch dieses minimiert werden soll. Im \ac{diis}-Verfahren sollen nun die bestmöglichen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration $(k)$ durch eine Linearkombination aus allen bisher berechneten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ gebildet werden.
+    \begin{equation}\label{eq:uentwicklung}
+    \left(U_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_l^\beta\left(U_{ai}^{B_\beta}\right)^{(l)}.
+    \end{equation}
+    Ziel des \ac{diis}-Verfahrens ist es nun die $x_l^\beta$ zu bestimmen. Dafür wird zunächst die Entwicklung aus Gleichung (\ref{eq:uentwicklung}) in das Funktional $\mathcal{L}$ eingesetzt
+    \begin{equation}
+    \begin{aligned}
+    \mathcal{L}=&\sum_a\sum_i \sum_{l=1}^k x_l^\beta\left(U_{ai}^{B_\beta}\right)^{(l)}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
+    &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^kx_l^\beta\left(U_{ai}^{B_\beta}\right)^{(m)}\right]
+    \end{aligned}
+    \end{equation}  
+    wobei zu beachten ist, dass der Term $D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$ über die gestörte Dichtematrix auch von den $x_l^\beta$ abhängt. Als nächstes werden nun die stationären Punkte des Funktionals $\mathcal{L}$ in Bezug auf die Koeffizienten  $x_n^\beta$
+    
+    
+
 \subsection{NMR Abschirmungskonstanten in der DFT}    
 	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung der chemischen Verschiebung mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Dies hat zur Folge, dass die Austauschkorrelationsenergie vom Magnetfeld abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. der Stromdichte $j(\vec{r})$ abhängen. Entsprechende Modifikationen wurden beispielsweise von Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled} \ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute chemische Abschirmungskonstanten.\supercite{buhl1999dft}
 	
