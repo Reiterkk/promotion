@@ -750,9 +750,9 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     Damit sind die \ac{cphf}-Gleichungen über den Austauschterm $K$ gekoppelt und müssen in einem iterativen Verfahren näherungsweise gelöst werden.
     
     \subsubsection{Konvergenzbeschleunigung durch das DIIS-Verfahren}
-    Zur Verbesserung des Konvergenzverhaltens der \ac{scf}-Iterationen wurde von Pulay das \ac{diis}-Verfahren Vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen aus den vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt dazu, dass eine lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt.
+    Zur Verbesserung des Konvergenzverhaltens der \ac{scf}-Iterationen wurde von Pulay das \ac{diis}-Verfahren vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen der vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene, aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt über die Lagrange-Methode dazu, dass eine lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt.
     
-    Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Kapitel erwähnt können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet
+    Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Kapitel erwähnt, können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet
     
     \begin{equation}\label{eq:lfunktional}
     \begin{aligned}
@@ -762,19 +762,128 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     \end{equation}
     Die Ableitung des Funktionals aus Gleichung (\ref{eq:lfunktional}) nach den $U_{ai}^{B_\beta}$ liefert die \ac{cphf}-Gleichungen (\ref{eq:cphfupi}), welche es zu lösen gilt. Gleichzeitig sind die Lösungen der \ac{cphf}-Gleichungen jedoch auch stationäre Punkte des Funktionals $\mathcal{L}$, wodurch dieses minimiert werden soll. Im \ac{diis}-Verfahren sollen nun die bestmöglichen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration $(k)$ durch eine Linearkombination aus allen bisher berechneten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ gebildet werden.
     \begin{equation}\label{eq:uentwicklung}
-    \left(U_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_l^\beta\left(U_{ai}^{B_\beta}\right)^{(l)}.
+    \left(U_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}.
     \end{equation}
-    Ziel des \ac{diis}-Verfahrens ist es nun die $x_l^\beta$ zu bestimmen. Dafür wird zunächst die Entwicklung aus Gleichung (\ref{eq:uentwicklung}) in das Funktional $\mathcal{L}$ eingesetzt
+    Ziel des \ac{diis}-Verfahrens ist es daher die $x_l^{B_\beta}$ zu bestimmen. Dafür wird zunächst die Entwicklung aus Gleichung (\ref{eq:uentwicklung}) in das Funktional $\mathcal{L}$ eingesetzt
     \begin{equation}
     \begin{aligned}
-    \mathcal{L}=&\sum_a\sum_i \sum_{l=1}^k x_l^\beta\left(U_{ai}^{B_\beta}\right)^{(l)}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
-    &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^kx_l^\beta\left(U_{ai}^{B_\beta}\right)^{(m)}\right]
+    \mathcal{L}=&\sum_a\sum_i \sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
+    &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta} c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^k x_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(m)}\right],
     \end{aligned}
     \end{equation}  
-    wobei zu beachten ist, dass der Term $D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$ über die gestörte Dichtematrix auch von den $x_l^\beta$ abhängt. Als nächstes werden nun die stationären Punkte des Funktionals $\mathcal{L}$ in Bezug auf die Koeffizienten $x_n^\beta$ bestimmt
-   
+    wobei zu beachten ist, dass der Term $D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$ über die gestörte Dichtematrix auch von den $x_l^{B_\beta}$ abhängt. Als nächstes werden nun die stationären Punkte des Funktionals $\mathcal{L}$ in Bezug auf die Koeffizienten $x_l^{B_\beta}$ bestimmt. Dies geschieht unter der Nebenbedingung, dass sich die Koeffizienten $x_l^{B_\beta}$ zu 1 aufsummieren:
+    \begin{equation}
+    \sum_{l=1}^k x_l^{B_\beta}=1.
+	\end{equation}     
+   	Die Nebenbedingung lässt sich folgendermaßen begründen. Die approximierten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ aus der $(l)$-ten Iteration lassen sich als Summe der exakten $\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ und einem Fehler $\left(e_{ai}^{B_\beta}\right)^{(l)}$ schreiben
+   	
+   	\begin{equation}
+   	\left(U_{ai}^{B_\beta}\right)^{(l)}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}+\left(e_{ai}^{B_\beta}\right)^{(l)},
+   	\end{equation}
+   	wodurch sich die bestmögliche Näherung im \ac{diis}-Verfahren mit
+	\begin{equation}\label{eq:nebenbed}
+	\begin{aligned}
+	\left(U_{ai}^{B_\beta}\right)^{(k)}=&\sum_{l=1}^k x_l^{B_\beta}\left[\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}+\left(e_{ai}^{B_\beta}\right)^{(l)}\right]\\
+	=&\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}\sum_{l=1}^k x_l^{B_\beta}+\sum_{l=1}^k x_l^{B_\beta}\left(e_{ai}^{B_\beta}\right)^{(l)}
+	\end{aligned}
+	\end{equation}
+	ergibt. Der Fehler, was dem zweiten Term auf der rechten Seite in Gleichung (\ref{eq:nebenbed}) entspricht, soll nun minimiert werden, wodurch dieser verschwindet und nur noch der erste Term übrig bleibt. Aus der Forderung $\left(U_{ai}^{B_\beta}\right)^{(k)}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ folgt damit direkt $\sum_{l=1}^kx_l^{B_\beta}=1$.
+	Die Minimierung unter der gegebenen Nebenbedingung lässt sich schließlich mit der Lagrange-Methode durch Einführen eines Lagrange-Multiplikators realisieren. Damit wird das Funktional $\mathcal{L}$ zu
+	\begin{equation}
+    \begin{aligned}
+    \mathcal{L}=&\sum_a\sum_i \sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
+    &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta} c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^kx_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(m)}\right]\\
+    &-\lambda\left(1-\sum_{l=1}^kx_l^{B_\beta}\right).
+    \end{aligned}
+    \end{equation}
+    Dieses Funktional wird schließlich nach den $x_n^{B_\beta}$ abgeleitet, wodurch folgendes lineares Gleichungssystem erhalten wird
+    \begin{equation}
+    \begin{aligned}
+    0\overset{!}{=}\frac{\partial \mathcal{L}}{\partial x_n^{B_\beta}}=&2\sum_a\sum_i \left(U_{ai}^{B_\beta}\right)^{(n)}\left[\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
+    &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta} c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^kx_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(m)}\right]+\lambda.
+    \end{aligned}
+    \end{equation}
+    Umsortieren und Übertragen des Faktors 2 in $\lambda$ liefert
+    \begin{equation}
+    \begin{aligned}
+    &\sum_a\sum_i\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(n)}\left[\iu\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(m)}-c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}\right]+\lambda\\
+    &=\sum_a\sum_i\sum_{\mu\nu\kappa\lambda} \left(U_{ai}^{B_\beta}\right)^{(n)}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}.
+    \end{aligned}
+    \end{equation}
+    Zur besseren Übersicht werden die Matrixelemente $\left(A_{ai}^{B_\beta}\right)^{(m)}$ und $B_{ai}^{B_\beta}$ definiert:
+    \begin{equation}\label{eq:aai}
+    \left(A_{ai}^{B_\beta}\right)^{(m)}=\sum_{\mu\nu\kappa\lambda}\left[\iu\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(m)}-c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}\right]
+    \end{equation}
+    und 
+    \begin{equation}\label{eq:bai}
+    B_{ai}^{B_\beta}=\sum_{\mu\nu\kappa\lambda} c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}.
+    \end{equation}
+    Dadurch erhält das Gleichungssystem die Form
+    \begin{equation}
+    \sum_a\sum_i\sum_{m=1}^k x_m^\beta\left(U_{ai}^{B_\beta}\right)^{(n)}\left(A_{ai}^{B_\beta}\right)^{(m)}+\lambda=\sum_a\sum_i\left(U_{ai}^{B_\beta}\right)^{(n)}B_{ai}^{B_\beta},
+    \end{equation}
+	bzw. in kompakter Matrixnotation
+	\begin{equation}
+	\boldsymbol{a}^{B_\beta}\vec{x}^{\,B_\beta}=\vec{b}^{\,B_\beta}.
+	\end{equation}
+	Im Detail sind die Matrix $\boldsymbol{a}^{B_\beta}$ und die beiden Vektoren $\vec{x}^{\,B_\beta}$ sowie $\vec{b}^{\,B_\beta}$
+	
+	\begin{equation}\label{eq:amat}
+	\boldsymbol{a}^{B_\beta}=
+	\begin{pmatrix}
+		a_{11}^{B_\beta} & a_{12}^{B_\beta} & \cdots & a_{1m}^{B_\beta} & 1 \\
+		a_{21}^{B_\beta} & a_{22}^{B_\beta} & \cdots & a_{2m}^{B_\beta} & 1 \\
+		\vdots & \vdots & \ddots & \vdots & \vdots\\
+		a_{n1}^{B_\beta} & a_{n2}^{B_\beta} & \cdots & a_{nm}^{B_\beta} & 1 \\
+		1      & 1      & \cdots & 1      & 0
+	\end{pmatrix}
+	\end{equation}
+	
+ 	\begin{equation}
+	\vec{x}^{\,B_\beta}=
+	\begin{pmatrix}
+		x_1^{B_\beta}\\
+		x_2^{B_\beta}\\
+		\vdots\\
+		x_m^{B_\beta}\\
+		\lambda
+	\end{pmatrix}
+	\end{equation}
+	\begin{equation}\label{eq:bvec}
+	\vec{b}^{\,B_\beta}=
+	\begin{pmatrix}
+		b_1^{B_\beta}\\
+		b_2^{B_\beta}\\
+		\vdots\\
+		b_n^{B_\beta}\\
+		1
+	\end{pmatrix},
+	\end{equation}  	
     
-    
+    und die darin enthaltenen Matrixelemente $a_{nm}^{B_\beta}$ bzw. Vektorelemente $b_n^{B_\beta}$ werden durch Skalarmultiplikation der $\left(A_{ai}^{B_\beta}\right)^{(m)}$ bzw. $B_{ai}^{B_\beta}$ mit $\left(U_{ai}^{B_\beta}\right)^{(n)}$ erhalten
+    \begin{equation}\label{eq:anm}
+    a_{nm}^{B_\beta}=\sum_{a}\sum_i \left(U_{ai}^{B_\beta}\right)^{(n)}\left(A_{ai}^{B_\beta}\right)^{(m)}
+    \end{equation}
+    \begin{equation}\label{eq:bn}
+    b_n^{B_\beta}=\sum_a\sum_i\left(U_{ai}^{B_\beta}\right)^{(n)} B_{ai}^{B_\beta}.
+    \end{equation}
+    In der $(k)$-ten Iteration hat die Matrix $\boldsymbol{a}^{B_\beta}$ also die Dimension $(k+1)\times(k+1)$. Dieses verhältnismäßig kleine Gleichungssystem kann durch Invertieren der Matrix $\boldsymbol{a}^{B_\beta}$ und anschließender Matrixvektormultiplikation gelöst werden
+    \begin{equation}\label{eq:xvec}
+    \vec{x}^{\,B_\beta}=\left(\boldsymbol{a}^{B_\beta}\right)^{-1}\vec{b}^{\,B_\beta}.
+    \end{equation}
+    Mit Hilfe der Koeffizienten lässt sich dann die optimale Kombination für die $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ für die aktuelle Iteration aus allen bisher berechneten Matrizen bestimmen
+     \begin{equation}\label{eq:uaiopt}
+     \left(U_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_m^{B_\beta} \left(U_{ai}^{B_\beta}\right)^{(l)}
+     \end{equation}
+     \begin{equation}\label{eq:aaiopt}
+     \left(A_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_m^{B_\beta} \left(A_{ai}^{B_\beta}\right)^{(l)}.
+     \end{equation}
+     Dafür müssen die $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ für jede Iteration gespeichert werden. Die $B_{ai}^{B_\beta}$ ändern sich nicht während den Iterationen, sie sind jedoch aus den entsprechenden Termen in Gleichung (\ref{eq:bai}) schnell berechnet, sodass sie in jeder Iteration aufs neue gebildet, anstatt abgespeichert zu werden. Die einzelnen Komponenten des Magnetfeldes werden bei diesem Verfahren unabhängig voneinander betrachtet. Aus den optimalen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration lassen sich dann schließlich die neuen $\left(U_{ai}^{B_\beta}\right)^{(k+1)}$ bestimmen
+     
+     \begin{equation}\label{eq:finaluai}
+     \left(U_{ai}^{B_\beta}\right)^{(k+1)}=\frac{\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(k)}-\left(A_{ai}^{B_\beta}\right)^{(k)}+B_{ai}^{B_\beta}}{\left(\varepsilon_i-\varepsilon_a\right)}=\frac{\left(F_{ai}^{B_\beta}\right)^{(k)}-\varepsilon_i S_{ai}^{b_\beta}}{\left(\varepsilon_i-\varepsilon_a\right)},
+     \end{equation}
+     wobei Gleichung (\ref{eq:finaluai}) der Gleichung (\ref{eq:uai}) aus dem vorherigen Kapitel entspricht.
 
 \subsection{NMR Abschirmungskonstanten in der DFT}    
 	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung der chemischen Verschiebung mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Dies hat zur Folge, dass die Austauschkorrelationsenergie vom Magnetfeld abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. der Stromdichte $j(\vec{r})$ abhängen. Entsprechende Modifikationen wurden beispielsweise von Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled} \ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute chemische Abschirmungskonstanten.\supercite{buhl1999dft}

@@ -19,41 +19,119 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{born1927quantentheorie}{article}{}
-      \name{author}{2}{}{%
-        {{hash=f3c12b2ab192a232977c790c202ae18a}{%
-           family={Born},
-           familyi={B\bibinitperiod},
-           given={Max},
-           giveni={M\bibinitperiod}}}%
-        {{hash=6d751c1d7373e57f412c35cc3fd80b29}{%
-           family={Oppenheimer},
-           familyi={O\bibinitperiod},
-           given={Robert},
+    \entry{ahlrichs1989electronic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a435b4a0e9f52167e05666c1aee83100}{%
+           family={Ahlrichs},
+           familyi={A\bibinitperiod},
+           given={Reinhart},
            giveni={R\bibinitperiod}}}%
+        {{hash=74991c90ede5bac7ab648832991e53c9}{%
+           family={B{ä}r},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d3df1e5bb7518861717ade6dba2c7689}{%
+           family={H{ä}ser},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=86a47ca23ac81786847dfb39a345509e}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=eee7ac58dc6e1cf53869cf1d3d56caa6}{%
+           family={K{ö}lmel},
+           familyi={K\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Wiley Online Library}%
+        {Elsevier}%
       }
-      \strng{namehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
-      \strng{fullhash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
-      \strng{bibnamehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
-      \strng{authorbibnamehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
-      \strng{authornamehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
-      \strng{authorfullhash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \strng{namehash}{bd1c11182e427ee526d3c5b88cc1ded7}
+      \strng{fullhash}{4f546504264fad305a5a1f5a5d01d936}
+      \strng{bibnamehash}{4f546504264fad305a5a1f5a5d01d936}
+      \strng{authorbibnamehash}{4f546504264fad305a5a1f5a5d01d936}
+      \strng{authornamehash}{bd1c11182e427ee526d3c5b88cc1ded7}
+      \strng{authorfullhash}{4f546504264fad305a5a1f5a5d01d936}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Ann. Phys.}
-      \field{number}{20}
-      \field{title}{Zur quantentheorie der molekeln}
-      \field{volume}{389}
-      \field{year}{1927}
-      \field{pages}{457\bibrangedash 484}
-      \range{pages}{28}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{3}
+      \field{title}{Electronic structure calculations on workstation computers: The program system turbomole}
+      \field{volume}{162}
+      \field{year}{1989}
+      \field{pages}{165\bibrangedash 169}
+      \range{pages}{5}
+    \endentry
+    \entry{TURBOMOLE}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Lokale Version von {TURBOMOLE V7.0 2015}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989-2007, {TURBOMOLE GmbH}, since 2007; available from \\ {\textit{http://www.turbomole.com}}.}
+    \endentry
+    \entry{furche2014turbomole}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7b43fcac9e5264f875801fb40eaa2aaa}{%
+           family={Furche},
+           familyi={F\bibinitperiod},
+           given={Filipp},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a435b4a0e9f52167e05666c1aee83100}{%
+           family={Ahlrichs},
+           familyi={A\bibinitperiod},
+           given={Reinhart},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bb6105d10b7e6837bd88cf7721ace9cc}{%
+           family={H{ä}ttig},
+           familyi={H\bibinitperiod},
+           given={Christof},
+           giveni={C\bibinitperiod}}}%
+        {{hash=732e71cb123168c6aadaabb11f549747}{%
+           family={Klopper},
+           familyi={K\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod}}}%
+        {{hash=2ab00ac66db32bb36edce27f81e5fec7}{%
+           family={Sierka},
+           familyi={S\bibinitperiod},
+           given={Marek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{f10464f739f6f8dbdacf3f1d9c463337}
+      \strng{fullhash}{7cc621e58eb3ae585e3eb1a5ae82008a}
+      \strng{bibnamehash}{7cc621e58eb3ae585e3eb1a5ae82008a}
+      \strng{authorbibnamehash}{7cc621e58eb3ae585e3eb1a5ae82008a}
+      \strng{authornamehash}{f10464f739f6f8dbdacf3f1d9c463337}
+      \strng{authorfullhash}{7cc621e58eb3ae585e3eb1a5ae82008a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{WIREs Comput. Mol. Sci.}
+      \field{number}{2}
+      \field{title}{Turbomole}
+      \field{volume}{4}
+      \field{year}{2014}
+      \field{pages}{91\bibrangedash 100}
+      \range{pages}{10}
     \endentry
     \entry{klamt1993cosmo}{article}{}
       \name{author}{2}{}{%
@@ -90,6 +168,129 @@
       \field{pages}{799\bibrangedash 805}
       \range{pages}{7}
     \endentry
+    \entry{haser1992direct}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e27925a61f6b66b38e47a5f99cd0fc84}{%
+           family={H{ä}ser},
+           familyi={H\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7013c722f313328e130f77f718bc7383}{%
+           family={Ahlrichs},
+           familyi={A\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c3929d51f86c48ed510e6d964e73d3a0}{%
+           family={Baron},
+           familyi={B\bibinitperiod},
+           given={HP},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ee418bb14a9b5a16a5890694d296dfc5}{%
+           family={Weis},
+           familyi={W\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6fcd42f14f8592a9ebf5d7737eca7dd0}{%
+           family={Horn},
+           familyi={H\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{67fd633d817f3b8c8f55a985040df1d0}
+      \strng{fullhash}{a54a1b5c0de812ded460a50a795e221d}
+      \strng{bibnamehash}{a54a1b5c0de812ded460a50a795e221d}
+      \strng{authorbibnamehash}{a54a1b5c0de812ded460a50a795e221d}
+      \strng{authornamehash}{67fd633d817f3b8c8f55a985040df1d0}
+      \strng{authorfullhash}{a54a1b5c0de812ded460a50a795e221d}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{number}{5-6}
+      \field{title}{Direct computation of second-order SCF properties of large molecules on workstation computers with an application to large carbon clusters}
+      \field{volume}{83}
+      \field{year}{1992}
+      \field{pages}{455\bibrangedash 470}
+      \range{pages}{16}
+    \endentry
+    \entry{kollwitz1996direct}{article}{}
+      \name{author}{2}{}{%
+        {{hash=aff7021385da5121618c843d7b17b4b2}{%
+           family={Kollwitz},
+           familyi={K\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=11525f775bb2eaf99cdd2fdffe54b939}{%
+           family={Gauss},
+           familyi={G\bibinitperiod},
+           given={J{ü}rgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{c872583c156a50d92f1c28ff7494cec3}
+      \strng{fullhash}{c872583c156a50d92f1c28ff7494cec3}
+      \strng{bibnamehash}{c872583c156a50d92f1c28ff7494cec3}
+      \strng{authorbibnamehash}{c872583c156a50d92f1c28ff7494cec3}
+      \strng{authornamehash}{c872583c156a50d92f1c28ff7494cec3}
+      \strng{authorfullhash}{c872583c156a50d92f1c28ff7494cec3}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{5-6}
+      \field{title}{A direct implementation of the GIAO-MBPT (2) method for calculating NMR chemical shifts. Application to the naphthalenium and anthracenium ions}
+      \field{volume}{260}
+      \field{year}{1996}
+      \field{pages}{639\bibrangedash 646}
+      \range{pages}{8}
+    \endentry
+    \entry{born1927quantentheorie}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f3c12b2ab192a232977c790c202ae18a}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6d751c1d7373e57f412c35cc3fd80b29}{%
+           family={Oppenheimer},
+           familyi={O\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \strng{fullhash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \strng{bibnamehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \strng{authorbibnamehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \strng{authornamehash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \strng{authorfullhash}{e2a677c196dfe3a0ed6ca9976c3fdfef}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. Phys.}
+      \field{number}{20}
+      \field{title}{Zur quantentheorie der molekeln}
+      \field{volume}{389}
+      \field{year}{1927}
+      \field{pages}{457\bibrangedash 484}
+      \range{pages}{28}
+    \endentry
     \entry{jensen2009introduction}{book}{}
       \name{author}{1}{}{%
         {{hash=07272f7b37bc95d4f9e9ac01efc83dcf}{%
@@ -110,8 +311,8 @@
       \strng{authorbibnamehash}{07272f7b37bc95d4f9e9ac01efc83dcf}
       \strng{authornamehash}{07272f7b37bc95d4f9e9ac01efc83dcf}
       \strng{authorfullhash}{07272f7b37bc95d4f9e9ac01efc83dcf}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -144,8 +345,8 @@
       \strng{authorbibnamehash}{b97dbae7320bebd386994aa3f8785405}
       \strng{authornamehash}{b97dbae7320bebd386994aa3f8785405}
       \strng{authorfullhash}{b97dbae7320bebd386994aa3f8785405}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -171,8 +372,8 @@
       \strng{authorbibnamehash}{1684c74db71bd0c2d3b04f218c70e093}
       \strng{authornamehash}{1684c74db71bd0c2d3b04f218c70e093}
       \strng{authorfullhash}{1684c74db71bd0c2d3b04f218c70e093}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -198,8 +399,8 @@
       \strng{authorbibnamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
       \strng{authornamehash}{078f9c3c3c3ba76f3eb8d5941ea82210}
       \strng{authorfullhash}{078f9c3c3c3ba76f3eb8d5941ea82210}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -234,8 +435,8 @@
       \strng{authorbibnamehash}{f6df99bc973e24ee8453776b0975d296}
       \strng{authornamehash}{f6df99bc973e24ee8453776b0975d296}
       \strng{authorfullhash}{f6df99bc973e24ee8453776b0975d296}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -755,8 +956,8 @@
       \strng{authorbibnamehash}{885d45ec33b32c6c83abb7a055569571}
       \strng{authornamehash}{885d45ec33b32c6c83abb7a055569571}
       \strng{authorfullhash}{885d45ec33b32c6c83abb7a055569571}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1774,8 +1975,6 @@
       \range{pages}{8}
     \endentry
   \enddatalist
-  \missing{TURBOMOLE}
-  \missing{grimme2010consistent}
   \missing{roothaanhall}
 \endrefsection
 \endinput
