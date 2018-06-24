@@ -8,33 +8,39 @@
     \acro{apt}[APT]{\textit{atomic polar tensor}}
     
     \acro{ao}[AO]{Atomorbital}
-	\acro{caac}[CAAC]{cyclisches Alkylaminocarben}   
-		\acrodefplural{caac}[CAACs]{cyclischen Alkylaminocarbenen}
-	\acro{carac}[CArAC]{cyclisches Arylaminocarben}
-		\acrodefplural{carac}[CArACs]{cyclische Arylaminocarbene}
+	
+	\acro{cao}[CAO]{\textit{Cartesian Atomic Orbital}}
 		
-    \acro{cc}[CC]{Coupled Cluster}		
+    \acro{cc}[CC]{\textit{Coupled Cluster}}		
 		
  	\acro{cosmo}[COSMO]{\textit{Conductor-like Screening Model}}
  	
-	\acro{cphf}[CPHF]{\textit{coupled perturbed Hartree-Fock}}
+	\acro{cphf}[CPHF]{\textit{Coupled Perturbed Hartree-Fock}}
+	
+	\acro{csm}[CSM]{\textit{Continuum Solvatiol Model}}
  	
     \acro{dft}[DFT]{Dichtefunktionaltheorie}
     
+    \acro{diis}[DIIS]{\textit{Direct Inversion of the Iterative Subspace}}
+    
     \acro{dipp}[dipp]{2,6-Diisopropylphenyl}
     
-    \acro{ecp}[ECP]{\textit{Effective-Core-Potential}}
+    \acro{ecp}[ECP]{\textit{Effective Core Potential}}
     
     \acro{esp}[ESP]{elektrostatisches Potential}
 	    \acrodefplural{esp}[ESP]{elektrostatischen Potentials}
-	
-	\acro{giao}[GIAO]{\textit{Gauge Including Atomic Orbital}}    
 
-	\acro{gga}[GGA]{\textit{Generalized-Gradient-Approximation}}   
-		\acrodefplural{gga}[GGA]{\textit{Generalized-Gradient-Approximation}}
+	\acro{gallier}[GALLIER]{Gaussian And Lorentzian LIne Enlarging Routine}
+	
+	\acro{giao}[GIAO]{\textit{Gauge Including Atomic Orbital}}   
+	
+	\acro{gimic}[GIMIC]{\textit{Gauge Including Magnetically Induced Currents}} 
+
+	\acro{gga}[GGA]{\textit{Generalized Gradient Approximation}}   
+		\acrodefplural{gga}[GGA]{\textit{Generalized Gradient Approximation}}
 		
 	\acro{lcao}[LCAO]{\textit{Linear Combination of Atomic Orbitals}}
-	\acro{lda}[LDA]{\textit{Local-Density-Approximation}}
+	\acro{lda}[LDA]{\textit{Local Density Approximation}}
      
     \acro{marij}[MARI-J]{\textit{Multipole Accelerated Resolution of the Identity for $J$}} 	
  	
@@ -43,29 +49,25 @@
 	\acro{mo}[MO]{Molekülorbital}   
 		\acrodefplural{mo}[MOs]{Molekülorbitale}
 		
+	\acro{md}[MD]{Molekulardynamik}
+	
 	\acro{mp2}[MP2]{M\o ller-Plesset Störungstheorie zweiter Ordnung}
 		
-    \acro{nao}[NAO]{\textit{Natural-Atomic-Orbital}}
+    \acro{nao}[NAO]{\textit{Natural Atomic Orbital}}
 
-    \acro{nbo}[NBO]{\textit{Natural-Bond-Orbital}}
+    \acro{nbo}[NBO]{\textit{Natural Bond Orbital}}
     
     \acro{nmr}[NMR]{\textit{Nuclear Magnetic Resonace}}
         
-    \acro{npa}[NPA]{\textit{Natural-Population-Analysis}}
-    
-    \acro{oswo}[OWSO]{\textit{Occupancy-Weighted-Symmetric-Orthogonalization}}
-    
+    \acro{npa}[NPA]{\textit{Natural Population Analysis}}
+      
     \acro{ri}[RI]{\textit{Resolution of the Identity}}
     
+    \acro{sao}[SAO]{\textit{Symmetry Adapted Orbital}}
+    
 	\acro{scf}[SCF]{\textit{Self Consistent Field}}   
-
-	\acro{tep}[TEP]{Tolmans elektronischer Parameter}   
-		\acrodefplural{tep}[TEPs]{Tolmans elektronische Parameter}
 		
 	\acro{vcd}[VCD]{\textit{Vibrational Circular Dichroism}}
-
-    
-
-        
-    \acro{vmd}[VMD]{Visual Molecular Dynamics}
+     
+    \acro{vmd}[VMD]{\textit{Visual Molecular Dynamics}}
 \end{acronym}

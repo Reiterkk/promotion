@@ -73,9 +73,11 @@
     \entry{TURBOMOLE}{misc}{}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labeltitlesource}{title}
       \field{title}{Lokale Version von {TURBOMOLE V7.0 2015}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989-2007, {TURBOMOLE GmbH}, since 2007; available from \\ {\textit{http://www.turbomole.com}}.}
+      \field{year}{2015}
     \endentry
     \entry{furche2014turbomole}{article}{}
       \name{author}{6}{}{%
@@ -1832,6 +1834,42 @@
       \field{pages}{1475\bibrangedash 1483}
       \range{pages}{9}
     \endentry
+    \entry{mcmurchie1981calculation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=68ba1757c5d8bcb56ae67ccce759a965}{%
+           family={McMurchie},
+           familyi={M\bibinitperiod},
+           given={Larry\bibnamedelima E},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=9b76bc82339200e4b97ca290ce86121f}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Ernest\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{750624ed0e5991b6ea62afb91ba97244}
+      \strng{fullhash}{750624ed0e5991b6ea62afb91ba97244}
+      \strng{bibnamehash}{750624ed0e5991b6ea62afb91ba97244}
+      \strng{authorbibnamehash}{750624ed0e5991b6ea62afb91ba97244}
+      \strng{authornamehash}{750624ed0e5991b6ea62afb91ba97244}
+      \strng{authorfullhash}{750624ed0e5991b6ea62afb91ba97244}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational Physics}
+      \field{number}{2}
+      \field{title}{Calculation of integrals over ab initio pseudopotentials}
+      \field{volume}{44}
+      \field{year}{1981}
+      \field{pages}{289\bibrangedash 301}
+      \range{pages}{13}
+    \endentry
     \entry{cao2010relativistic}{incollection}{}
       \name{author}{2}{}{%
         {{hash=71243ae639a17eb3279633f644a70c05}{%
@@ -1865,6 +1903,42 @@
       \field{year}{2010}
       \field{pages}{215\bibrangedash 277}
       \range{pages}{63}
+    \endentry
+    \entry{kahn1972ab}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5723604e98bc9844fd8e38fcb8a1699f}{%
+           family={Kahn},
+           familyi={K\bibinitperiod},
+           given={Luis\bibnamedelima R},
+           giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=a142ae3a3ee0400775a902967508972c}{%
+           family={Goddard\bibnamedelima III},
+           familyi={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={William\bibnamedelima A},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{38a317d78be549d60b0c833c001220a1}
+      \strng{fullhash}{38a317d78be549d60b0c833c001220a1}
+      \strng{bibnamehash}{38a317d78be549d60b0c833c001220a1}
+      \strng{authorbibnamehash}{38a317d78be549d60b0c833c001220a1}
+      \strng{authornamehash}{38a317d78be549d60b0c833c001220a1}
+      \strng{authorfullhash}{38a317d78be549d60b0c833c001220a1}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{number}{6}
+      \field{title}{Ab initio effective potentials for use in molecular calculations}
+      \field{volume}{56}
+      \field{year}{1972}
+      \field{pages}{2685\bibrangedash 2701}
+      \range{pages}{17}
     \endentry
     \entry{stephens1985theory}{article}{}
       \name{author}{1}{}{%
@@ -1973,6 +2047,70 @@
       \field{year}{2002}
       \field{pages}{511\bibrangedash 518}
       \range{pages}{8}
+    \endentry
+    \entry{haser1991molecular}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d3df1e5bb7518861717ade6dba2c7689}{%
+           family={H{ä}ser},
+           familyi={H\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{d3df1e5bb7518861717ade6dba2c7689}
+      \strng{fullhash}{d3df1e5bb7518861717ade6dba2c7689}
+      \strng{bibnamehash}{d3df1e5bb7518861717ade6dba2c7689}
+      \strng{authorbibnamehash}{d3df1e5bb7518861717ade6dba2c7689}
+      \strng{authornamehash}{d3df1e5bb7518861717ade6dba2c7689}
+      \strng{authorfullhash}{d3df1e5bb7518861717ade6dba2c7689}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{11}
+      \field{title}{Molecular point-group symmetry in electronic structure calculations}
+      \field{volume}{95}
+      \field{year}{1991}
+      \field{pages}{8259\bibrangedash 8265}
+      \range{pages}{7}
+    \endentry
+    \entry{gnuplot}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=7dd649d84847634e415c312a17549e72}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1d5f3a52af9c09dbfcae2e51f799fd3f}{%
+           family={Kelley},
+           familyi={K\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8b6ae1ac675f4b9202a3a2eb95b184c8}{%
+           family={{many others}},
+           familyi={m\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7b92f66a93722e4c2d12f4c87b9af34}
+      \strng{fullhash}{d7b92f66a93722e4c2d12f4c87b9af34}
+      \strng{bibnamehash}{d7b92f66a93722e4c2d12f4c87b9af34}
+      \strng{authorbibnamehash}{d7b92f66a93722e4c2d12f4c87b9af34}
+      \strng{authornamehash}{d7b92f66a93722e4c2d12f4c87b9af34}
+      \strng{authorfullhash}{d7b92f66a93722e4c2d12f4c87b9af34}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{http://gnuplot.sourceforge.net/}}
+      \field{month}{9}
+      \field{title}{Gnuplot 4.2: an interactive plotting program}
+      \field{year}{2009}
     \endentry
   \enddatalist
   \missing{roothaanhall}

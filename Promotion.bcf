@@ -2041,10 +2041,15 @@
     <bcf:citekey order="52">bagno2000effective</bcf:citekey>
     <bcf:citekey order="53">bagno2002dft</bcf:citekey>
     <bcf:citekey order="54">van2012use</bcf:citekey>
+    <bcf:citekey order="55">mcmurchie1981calculation</bcf:citekey>
     <bcf:citekey order="55">cao2010relativistic</bcf:citekey>
-    <bcf:citekey order="56">stephens1985theory</bcf:citekey>
-    <bcf:citekey order="56">stephens1985vibrational</bcf:citekey>
-    <bcf:citekey order="57">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="56">kahn1972ab</bcf:citekey>
+    <bcf:citekey order="57">kahn1972ab</bcf:citekey>
+    <bcf:citekey order="58">stephens1985theory</bcf:citekey>
+    <bcf:citekey order="58">stephens1985vibrational</bcf:citekey>
+    <bcf:citekey order="59">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="60">haser1991molecular</bcf:citekey>
+    <bcf:citekey order="61">gnuplot</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

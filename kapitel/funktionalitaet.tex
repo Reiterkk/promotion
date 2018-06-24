@@ -51,7 +51,7 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	Eine eichinvariante Implementierung für \acp{ecp} wurde von van Wüllen\supercite{van2012use} vorgestellt und wichtigsten darin abgeleiteten Gleichungen sollen an dieser Stelle wiedergegeben werden. 
 	
 	Der Einelektronenhamiltonoperator im Magnetfeld $\vec{B}$ setzt sich aus dem ungestörten Hamiltonoperator $\hat{h}^0$ in Abwesenheit des Magnetfeldes sowie weiteren Termen linear, quadratisch usw. in $\vec{B}$ zusammen. Für die chemische Verschiebung werden jedoch nur Terme linear in $\vec{B}$ benötigt, daher ist $\hat{h}$ hier
-	\begin{equation}
+	\begin{equation}\label{eq:heinel}
 	\begin{aligned}
 	\hat{h}=&\hat{h}^0+\hat{h}^{10}\\
 	\hat{h}^0=&\frac{1}{2}\vec{p}^{\,2}+\hat{V}_{\textrm{Ke}}\\
@@ -83,17 +83,17 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	&\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^0\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\\
 	=&\exp\left(\iu\Lambda_{\tilde{E}}\right)\frac{-\iu}{2}\vec{p}\left[\frac{-\iu}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\right]\\
 	&+\exp\left(\iu\Lambda_{\tilde{E}}\right)\frac{1}{2}\vec{p}\left[\exp\left(-\iu\Lambda_{\tilde{E}}\right)\vec{p}\left(f(\vec{r})\right)\right]+\hat{V}_{\textrm{Ke}}f(\vec{r})\\
-	=&\frac{-1}{4c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)
-	+\frac{-1}{4c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)
-	+\frac{1}{2}\vec{p}^{\,2}f(\vec{r})+\hat{V}_{\textrm{Ke}}f(\vec{r})\\
+	=&-\frac{1}{4c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)
+	-\frac{1}{4c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)\\
+	&+\frac{1}{2}\vec{p}^{\,2}f(\vec{r})+\hat{V}_{\textrm{Ke}}f(\vec{r})\\
 	=&\frac{-1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)\vec{p}\left(f(\vec{r})\right)+\hat{h}^0f(\vec{r}),
 	\end{aligned}
 	\end{equation}
 	und für den zweiten Term
 	\begin{equation}\label{eq:transh2}
 	\begin{aligned}
-	&\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^{10}\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})\\
-	=&\frac{1}{2c}\left(\vec{B}\times\left(\vec{r}-\vec{R}_E\right)\right)\cdot\vec{p}\left(f(\vec{r})\right)+\frac{1}{2c}\left(\vec{B}\times\left(\vec{r}-\vec{R}_E\right)\right)\cdot\frac{-1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)f(\vec{r})\\
+	\exp\left(\iu\Lambda_{\tilde{E}}\right)\hat{h}^{10}\exp\left(-\iu\Lambda_{\tilde{E}}\right)f(\vec{r})=&\frac{1}{2c}\left(\vec{B}\times\left(\vec{r}-\vec{R}_E\right)\right)\cdot\vec{p}\left(f(\vec{r})\right)\\
+	&+\frac{1}{2c}\left(\vec{B}\times\left(\vec{r}-\vec{R}_E\right)\right)\cdot\frac{-1}{2c}\left(\vec{B}\times\left(\vec{R}_{\tilde{E}}-\vec{R}_E\right)\right)f(\vec{r})\\
 	=&\hat{h}^{10}f(\vec{r})+\mathcal{O}(\vec{B}^{\,2}).
 	\end{aligned}
 	\end{equation}
@@ -105,31 +105,49 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	\end{aligned}
 	\end{equation}
 	
-	wobei die Terme quadratisch in $\vec{B}$ hier erneut weggelassen wurden. Der Eichursprung wurde durch die Transformation also von $\vec{R}_E$ auf $\vec{R}_{\tilde{E}}$ verschoben. Für diese Herleitung wurde davon ausgegangen, dass das Kern-Elektron-Wechselwirkung ein lokales Potential ist und daher nicht mit $\vec{r}$ kommutiert. Dies ist nur gültig, solange keine \acp{ecp} verwendet werden. Für letztere ist das Potential durch eine Summe atomarer Beiträge geben und diese haben die Form\supercite{cao2010relativistic}
+	wobei die in $\vec{B}$ quadratischen Terme hier erneut weggelassen wurden. Der Eichursprung wurde durch die Transformation also von $\vec{R}_E$ auf $\vec{R}_{\tilde{E}}$ verschoben. Für diese Herleitung wurde davon ausgegangen, dass die Kern-Elektron-Wechselwirkung ein lokales Potential ist und daher nicht mit $\vec{r}$ kommutiert. Dies ist nur gültig, solange keine \acp{ecp} verwendet werden. Im letzteren Fall ist der Einelektronenhamiltonoperator aus Gleichung (\ref{eq:heinel}) durch
 	
-	\begin{equation}\label{eq:ecpotential}
-	\hat{V}^K=\hat{V}^K_{\textrm{lok}}+\sum_{l=0}^{l_{\textrm{max}}}\hat{V}_l^K\left(\vert\vec{r}-\vec{R}_K\vert\right)\hat{P}_l^K.
+	\begin{equation}
+	\hat{h}^0=\frac{1}{2}\vec{p}^{\,2}-\sum_K \left(\frac{Z_K^{\textrm{eff}}}{\vec{r}_K}+\hat{V}^{\textrm{ECP},K}\right)
 	\end{equation}
-	Der erste Term auf der rechten Seite in Gleichung (\ref{eq:ecpotential}) ist ein lokales Potential und beinhaltet die Kern-Elektron-Anziehung, wobei die Kernladung um die Anzahl der Elektronen, die durch das \ac{ecp} beschrieben werden, reduziert wurde. Der zweite Term, ein nicht lokales Potential, ist nur für Atome mit einem \ac{ecp} vorhanden. Dieses hängt von der Drehimpulsquantenzahl $l$ ab und beinhaltet den Drehimpuls-Projektionsoperator $\hat{P}_l^K$. Dieser führt dazu, dass die \acp{ecp} nicht mehr mit $\vec{r}$ und damit mit $\Lambda$ kommutieren. Aus dem magnetfeldabhängigen Hamiltonoperator für ein Einzelnes Atom $K$ mit dem Eichursprung $\vec{R}_K$ und der Transformation aus Gleichung (\ref{eq:trans}) lässt sich nun der magnetfeldabhängige \ac{ecp} Hamiltonoperator für eine beliebige Wahl des Eichursprungs ableiten. Es folgt
+	gegeben. Die Valenzelektronen, die nicht durch das \ac{ecp} beschrieben werden, erfahren dann nur noch eine verminderte effektive Kernladung $Z_K^{\textrm{eff}}$. Für die \acp{ecp} ist das Potential durch eine Summe atomarer Beiträge geben und diese haben die Form\supercite{mcmurchie1981calculation,cao2010relativistic}
+	\begin{equation}\label{eq:ecpotential}
+	\hat{V}^{\textrm{ECP},K}=\sum_{l=0}^{\infty}\hat{V}^{\textrm{ECP},K}_l\hat{P}_l^K,
+	\end{equation}
+	mit dem Projektionsoperator
+	\begin{equation}
+	\hat{P}_l^K=\sum_{m=-l}^l\vert lm\rangle\langle lm\vert
+	\end{equation}
+	und den Kugelflächenfunktionen $\vert lm\rangle$. Für $l\geq L$ unterscheiden sich die $\hat{V}^{\textrm{ECP},K}_l$ kaum mehr, wobei $L-1$ die größte, in den Kernorbitalen auftretende Drehimpulsquantenzahl ist. Mit der Annahme $\hat{V}^{\textrm{ECP},K}_l=\hat{V}^{\textrm{ECP},K}_L$ für $l\geq L$ folgt schließlich\supercite{kahn1972ab}
+	\begin{equation}
+	\hat{V}^{\textrm{ECP},K}=\hat{V}^{\textrm{ECP},K}_{L}+\sum_{l=0}^{L-1}\sum_{m=-l}^l lm\rangle\left[\hat{V}^{\textrm{ECP},K}_{l}-\hat{V}^{\textrm{ECP},K}_{L}\right]\langle lm\vert .
+	\end{equation}
+	Die $\hat{V}^{\textrm{ECP},K}_{m}$ lassen sich nun durch eine Linearkombination von Gaußfunktionen multipliziert mit Potenzen von $\vec{r}$ ausdrücken\supercite{kahn1972ab}
+	\begin{equation}
+	\hat{V}^{\textrm{ECP},K}_{m}=\sum_jd_{jm}\vec{r}_K^{\,nj}e^{-\zeta_j\vec{r}_K^{\,2}}, \qquad \textrm{für } m=l,L,
+	\end{equation}
+	wobei die Exponenten $\zeta_j$ und die Koeffizienten $d_{jm}$ an sehr genaue Rechnungen gefittet werden. Der Drehimpuls-Projektionsoperator $\hat{P}_l^K$ in $\hat{V}^{\textrm{ECP},K}$ führt dazu, dass die \acp{ecp} nicht mehr mit $\vec{r}$ und damit mit $\Lambda$ kommutieren. 
+	
+	Aus dem magnetfeldabhängigen Hamiltonoperator für ein Einzelnes Atom $K$ mit dem Eichursprung $\vec{R}_K$ und der Transformation aus Gleichung (\ref{eq:trans}) lässt sich nun der magnetfeldabhängige \ac{ecp} Hamiltonoperator für eine beliebige Wahl des Eichursprungs ableiten. Es folgt
 	
 	\begin{equation}
 	\begin{aligned}
 	\hat{h}_{\textrm{ECP}}=&\exp\left(\iu\Lambda_K\right)\hat{h}_K\exp\left(-\iu\Lambda_K\right)\\
-	=&\hat{h}^0+\left(\hat{h}^{10}+\iu\left[\hat{V}^K,\Lambda_K\right]\right)+\mathcal{O}(\vec{B}^{\,2})+\dotsc,
+	=&\hat{h}^0+\left(\hat{h}^{10}+\iu\left[\hat{V}^{\textrm{ECP},K},\Lambda_K\right]\right)+\mathcal{O}(\vec{B}^{\,2})+\dotsc,
 	\end{aligned}
 	\end{equation}
 	mit
 	\begin{equation}
 	\Lambda_K=\frac{1}{2c}\left(\left(\vec{R}_K-\vec{R}_E\right)\times\vec{r}\right)\cdot\vec{B}.
 	\end{equation}
-	Für Moleküle muss über die Beiträge aller Atome summiert werden
+	Für Moleküle muss zusätzlich über die Beiträge aller Atome summiert werden
 	\begin{equation}\label{eq:hecp}
 	\begin{aligned}
 	&\hat{h}_{\textrm{ECP}}=\hat{h}^0+\hat{h}_{\textrm{ECP}}^{10}\\
-	&\hat{h}_{\textrm{ECP}}^{10}=\hat{h}^{10}+\iu\sum_K\left[\hat{V}^K,\Lambda_K\right].
+	&\hat{h}_{\textrm{ECP}}^{10}=\hat{h}^{10}+\iu\sum_K\left[\hat{V}^{\textrm{ECP},K},\Lambda_K\right].
 	\end{aligned}
 	\end{equation}	 
-	Die zusätzlichen Integrale, die durch den Kommutator in Gleichung (\ref{eq:hecp}) auftreten lassen sich durch Entwicklung des Integrals $\langle\chi_mu\vert\hat{h}_{\textrm{ECP}}\vert\chi_nu\rangle$ und Angabe der Terme linear in $\vec{B}$ erhalten. Da sowohl die Basisfunktionen als auch der Hamiltonoperator vom Magnetfeld abhängen, ergeben sich für die Terme linear in $\vec{B}$
+	Die zusätzlichen Integrale, die durch den Kommutator in Gleichung (\ref{eq:hecp}) auftreten lassen sich durch Entwicklung des Integrals $\langle\chi_\mu\vert\hat{h}_{\textrm{ECP}}\vert\chi_\nu\rangle$ und Angabe der Terme linear in $\vec{B}$ erhalten. Da sowohl die Basisfunktionen als auch der Hamiltonoperator vom Magnetfeld abhängen, ergeben sich für die Terme linear in $\vec{B}$
 	
 	\begin{equation}\label{eq:linearinb}
 	\begin{aligned}
@@ -137,29 +155,66 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	&=\langle \chi_\mu^{\vec{B}=0}\vert\hat{h}_{\textrm{ECP}}^{10}\vert\chi_\nu^{\vec{B}=0}\rangle+\iu\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle-\iu\langle\chi_\mu^{\vec{B}=0}\vert\left[\hat{h}^0 ,\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle\\
     &=\langle \chi_\mu^{\vec{B}=0}\vert\frac{1}{2c}\left(\left(\vec{r}-\vec{R}_\nu\right)\times\vec{p}\right)\cdot\vec{B}\vert\chi_\nu^{\vec{B}=0}\rangle
     +\iu\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{h}^0\vert\chi_\nu^{\vec{B}=0}\rangle\\
-    &\quad+\iu\sum_K\langle \chi_\mu^{\vec{B}=0}\vert\left[\hat{V}^{K},\Lambda_K-\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle,
+    &\quad+\iu\sum_K\langle \chi_\mu^{\vec{B}=0}\vert\left[\hat{V}^{\textrm{ECP},K},\Lambda_K-\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle,
 	\end{aligned}
 	\end{equation}
 	
 	wobei der Kommutator
 	
 	\begin{equation}
-	\iu\left[\hat{h}^0 ,\Lambda_\nu\right]=\frac{1}{2c}\left(\left(\vec{R}_\nu-\vec{R}_E\right)\times\vec{p}\right)\cdot\vec{B}+\iu\left[\hat{V}^K ,\Lambda_\nu\right]
+	\iu\left[\hat{h}^0 ,\Lambda_\nu\right]=\frac{1}{2c}\left(\left(\vec{R}_\nu-\vec{R}_E\right)\times\vec{p}\right)\cdot\vec{B}+\iu\left[\hat{V}^{\textrm{ECP},K} ,\Lambda_\nu\right]
 	\end{equation}
 	ausgenutzt wurde. Der letzte Term in Gleichung (\ref{eq:linearinb}) ist ein zusätzlicher Term, der im Rahmen des von van Wüllen vorgeschlagenen \ac{ecp} \ac{giao} Formalismus auftritt, alle anderen Terme sind bereits bekannt. Anhand der Terme ist zu erkennen, dass all diese Ausdrücke nun nicht mehr von dem Eichursprung abhängen, da dieser nur noch in den Differenzen von $\Lambda_K$ und $\Lambda_\nu$ vorkommt. Werden nun alle Terme die aufgrund der \acp{ecp} entstehen kombiniert, dann wird der letztendlich zu implementierende Ausdruck erhalten
 	
 	\begin{equation}\label{eq:vecpmunu}
 	\begin{aligned}
-	V_{\mu\nu}^{\textrm{ECP}}=&\iu\sum_K\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{V}^K\vert\chi_\nu^{\vec{B}=0}\rangle+\iu\sum_K\langle \chi_\mu^{\vec{B}=0}\vert\left[\hat{V}^{K},\Lambda_K-\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle\\
-	=&\iu\sum_K\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_K\right)\hat{V}^K-\hat{V}^K\left(\Lambda_\nu -\Lambda_K\right)\vert\chi_\nu^{\vec{B}=0}\rangle .
+	V_{\mu\nu}^{\textrm{ECP}}=&\iu\sum_K\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_\nu\right)\hat{V}^{\textrm{ECP},K}\vert\chi_\nu^{\vec{B}=0}\rangle\\
+	&+\iu\sum_K\langle \chi_\mu^{\vec{B}=0}\vert\left[\hat{V}^{\textrm{ECP},K},\Lambda_K-\Lambda_\nu\right]\vert\chi_\nu^{\vec{B}=0}\rangle\\
+	=&\iu\sum_K\langle\chi_\mu^{\vec{B}=0}\vert\left(\Lambda_\mu -\Lambda_K\right)\hat{V}^{\textrm{ECP},K}-\hat{V}^{\textrm{ECP},K}\left(\Lambda_\nu -\Lambda_K\right)\vert\chi_\nu^{\vec{B}=0}\rangle .
 	\end{aligned}
 	\end{equation}
 	
 	\subsection{Implementierung}
 	Zur Implementierung der \ac{ecp} Beiträge für die Berechnung chemischer Abschirmungskonstanten muss Gleichung (\ref{eq:vecpmunu}) nach den Komponenten des Magnetfeldes abgeleitet werden. Die Ableitung von Gleichung (\ref{eq:vecpmunu}) nach der $x$-Komponente ergibt
-	\begin{equation}
-	V_{\mu\nu}^{\textrm{ECP},B_x}=\left.\frac{\partial V_{\mu\nu}^{\textrm{ECP}}}{\partial B_x}\right\vert_{\vec{B}=0}
+	\begin{equation}\label{eq:vecpdbx}
+	\begin{aligned}
+	V_{\mu\nu}^{\textrm{ECP},B_x}=&\left.\frac{\partial V_{\mu\nu}^{\textrm{ECP}}}{\partial B_x}\right\vert_{\vec{B}=0}\\
+	=&\frac{\iu}{2c}\sum_K\left[\left\langle\chi_\mu^{\vec{B}=0}\left\vert\left(\left(R_{\mu y}-R_{Ky}\right)z-(\left(R_{\mu z}-R_{Kz}\right)y\right)\hat{V}^{\textrm{ECP},K}\right.\right.\right.\\
+	&\left.\left.\left.-\hat{V}^{\textrm{ECP},K}\left(\left(R_{\nu y}-R_{Ky}\right)z-(\left(R_{\nu z}-R_{Kz}\right)y\right)\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right]\\
+	=&\frac{\iu}{2c}\sum_K\left[\left(R_{\mu y}-R_{Ky}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert z\hat{V}^{\textrm{ECP},K}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right.\\
+	&-\left(R_{\mu z}-R_{Kz}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert y\hat{V}^{\textrm{ECP},K}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+	&-\left(R_{\nu y}-R_{Ky}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^{\textrm{ECP},K} z\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+	&\left.+\left(R_{\nu z}-R_{Kz}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^{\textrm{ECP},K} y\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right]
+	\end{aligned}
 	\end{equation}
+	und die analogen Ausdrücke für die Ableitungen nach den $y$- und $z$- Komponenten des Magnetfeldes sind 
+	\begin{equation}\label{eq:vecpdby}
+	\begin{aligned}
+	V_{\mu\nu}^{\textrm{ECP},B_y}=&\frac{\iu}{2c}\sum_K\left[\left(R_{\mu z}-R_{Kz}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert x\hat{V}^{\textrm{ECP},K}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right.\\
+	&-\left(R_{\mu x}-R_{Kx}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert z\hat{V}^{\textrm{ECP},K}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+	&-\left(R_{\nu z}-R_{Kz}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^{\textrm{ECP},K}x\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+	&\left.+\left(R_{\nu x}-R_{Kx}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^{\textrm{ECP},K} z\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right]
+	\end{aligned}
+	\end{equation}
+	
+	\begin{equation}\label{eq:vecpdbz}
+	\begin{aligned}
+	V_{\mu\nu}^{\textrm{ECP},B_z}=&\frac{\iu}{2c}\sum_K\left[\left(R_{\mu x}-R_{Kx}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert y\hat{V}^{\textrm{ECP},K}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right.\\
+	&-\left(R_{\mu y}-R_{Ky}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert x\hat{V}^{\textrm{ECP},K}\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+	&-\left(R_{\nu x}-R_{Kx}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^{\textrm{ECP},K}y\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\\
+	&\left.+\left(R_{\nu y}-R_{Ky}\right)\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^{\textrm{ECP},K} x\right\vert\chi_\nu^{\vec{B}=0}\right\rangle\right].
+	\end{aligned}
+	\end{equation} 
+	Erneut wird an dieser Stelle die Beziehung $\vec{r}=\vec{R}_\mu+\vec{r}_\mu$ ausgenutzt um die Integrale in den Gleichungen (\ref{eq:vecpdbx})-(\ref{eq:vecpdbz}) umzuschreiben. Beispielsweise ist 
+	\begin{equation}\label{eq:ecpintegral}
+	\left\langle\chi_\mu^{\vec{B}=0}\left\vert z\hat{V}^K\right\vert\chi_\nu^{\vec{B}=0}\right\rangle=R_{\mu z}\left\langle\chi_\mu^{\vec{B}=0}\left\vert \hat{V}^K\right\vert\chi_\nu^{\vec{B}=0}\right\rangle+\left\langle\chi_\mu^{\vec{B}=0}\left\vert z_\mu\hat{V}^K\right\vert\chi_\nu^{\vec{B}=0}\right\rangle.
+	\end{equation}
+	Das erste Integral auf der rechten Seite von Gleichung (\ref{eq:ecpintegral}) ist ein Standard \ac{ecp} Integral. Beim zweiten Integral wurde die $z$-Komponente der Drehimpulsquantenzahl für die Basisfunktion $\chi_mu^{\vec{B}=0}$ um eins erhöht, da
+	\begin{equation}
+	\chi_\mu^{\vec{B}=0}z_\mu=x_\mu^ly_\mu^mx_\mu^{n+1}e^{-\zeta\vec{r}^{\, 2}_\mu}.
+	\end{equation}
+	Diese Art von Integralen werden mit einem anderen Vorfaktor auch für die Berechnung von kartesischen \ac{ecp} Gradienten benötigt. Für die \ac{ecp} Beiträge zu den chemischen Abschirmungskonstanten können also die Standard \ac{ecp} Integral- und \ac{ecp} Gradientenroutinen modifiziert werden. 
+	
 	\subsection{Testrechnungen}
 	
 \section{Berechnung von Vibrational Circular Dichroism Spektren}
@@ -208,10 +263,10 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	\begin{equation}\label{eq:vcdaatelfinal}
 	\begin{aligned}
 	I^K_{\alpha\beta}=&\sum_{i=1}^{N_{\text{occ}}}\sum_{\mu,\nu=1}^{N_{\text{BF}}}\left[c_{\mu i}c_{\nu i}\left\langle\chi_\mu^{R_{K\alpha}}\vert\chi_\nu^{B_\beta}\right\rangle+\sum_{p=1}^{N_{\text{MO}}}c_{\mu i}c_{\nu p}U_{ip}^{B_\beta}\left\langle\chi_\mu^{R_{K\alpha}}\vert\chi_\nu\right\rangle\right.\\
-	&\left.+\sum_{p=1}^{N_{\text{MO}}}c_{\mu i}c_{\nu p}U_{ip}^{R_{K\alpha}}\left\langle\chi_\mu\vert\chi_\nu^{B_{\beta}}\right\rangle+\sum_{p,q=1}^{N_{\text{MO}}}c_{\mu p}c_{\nu q}U_{ip}^{R_{K\alpha}}U_{iq}^{B_\beta}\left\langle\chi_\mu\vert\chi_\nu\right\rangle\right].
+	&\left.+\sum_{p=1}^{N_{\text{MO}}}c_{\mu i}c_{\nu p}U_{ip}^{R_{K_\alpha}}\left\langle\chi_\mu\vert\chi_\nu^{B_{\beta}}\right\rangle+\sum_{p,q=1}^{N_{\text{MO}}}c_{\mu p}c_{\nu q}U_{ip}^{R_{K_\alpha}}U_{iq}^{B_\beta}\left\langle\chi_\mu\vert\chi_\nu\right\rangle\right].
 	\end{aligned}
 	\end{equation}
-	Durch die Koeffizientenmatrix $U_{ip}^{R_{K\alpha}}$ wird die Response der Wellenfunktion auf die Verrückung des Kerns $K$ beschrieben. Analog zu $U_{ip}^{B_\beta}$ werden auch sie durch Lösen der entsprechenden \ac{cphf}-Gleichungen erhalten. Gebraucht werden sie ebenfalls zur Berechnung von Kraftkonstanten, wie sie im \textsf{Turbomole} Modul \texttt{aoforce}\supercite{deglmann2002efficient} berechnet werden.
+	Durch die Koeffizientenmatrix $U_{ip}^{R_{K_\alpha}}$ wird die Response der Wellenfunktion auf die Verrückung des Kerns $K$ beschrieben. Analog zu $U_{ip}^{B_\beta}$ werden auch sie durch Lösen der entsprechenden \ac{cphf}-Gleichungen erhalten. Gebraucht werden sie ebenfalls zur Berechnung von Kraftkonstanten, wie sie im \textsc{Turbomole} Modul \texttt{aoforce}\supercite{deglmann2002efficient} berechnet werden.
 	\subsection{Implementierung}
 	Die in Gleichung (\ref{eq:vcdaatelfinal}) auftretenden Integrale, welche die Ableitung nach dem externen magnetischen Feld enthalten, lassen sich für die $x$-Komponente des $B$-Feldes wie folgt umschreiben
 	
@@ -233,7 +288,10 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 		\begin{equation}
 	  \left\langle\chi_\mu\vert\chi_\nu^{B_z}\right\rangle=\frac{\iu}{2c}\left(R_{\nu y}\left\langle\chi_\mu^{\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu x}\left\langle\chi_\mu^{\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle\right).
 	\end{equation}
-
+	\subsubsection{Symmetrieausnutzung}
+	Nur wenige chirale Moleküle besitzen eine Symmetrie. Sie gehören alle zu den Punktgruppen $C_{\textrm{n}}$, $D_{\textrm{n}}$, $T$, $O$ oder $I$ und besitzen damit nur Drehachsen als Symmetrieelemente. Die bereits bestehende Implementierung der Symmetrieausnutzung\supercite{haser1991molecular} für die Module \texttt{mpshift} und \texttt{aoforce} kann auch für die Berechnung von \ac{vcd} Spektren verwendet werden. Dabei ist jedoch zu beachten, dass die Symmetrieausnutzugn im Modul \texttt{mpshift} keine Punktgruppen mit reduziblen $e$-Darstellungen unterstützt, was die Punktgruppen $C_{\textrm{n>2}}$ und $T$ unter den chiralen Punktgruppen betrifft. In diesen Fällen werden die \ac{mo}-Koeffizienten nach $C_1$ transformiert und \texttt{mpshift} wird ohne Symmetrieausnutzung verwendet. Die $U_{pi}^{B_\beta}$ Koeffizienten werden in die \ac{cao}-Basis transformiert, bevor sie für die Weiterverarbeitung im Modul \texttt{aoforce} auf der Festplatte gespeichert werden. Letzteres unterstützt die volle Symmetrieausnuztung, was wichtig ist, in Anbetracht der Tatsache, dass dies den zeitbestimmenden Schritt darstellt. In \texttt{aoforce} erfolgt die Berechnung der $U_{pi}^{R_{K_\alpha}}$, die $U_{pi}^{B_\beta}$ werden von der Festplatte eingelesen und für die volle Symmetrieausnutzung in die \ac{sao}-Basis transformiert. Abschließend erfolgt die Berechnung der \ac{vcd}-Intensitäten. 
+	\subsection{GALLIER: Visualisierung von VCD Spektren}
+	Zur Visualisierung der berechneten \ac{vcd}-Intensitäten und um einen schnellen, ersten Eindruck vom \ac{vcd}-Spektrum zu verschaffen, wurde das Pythonskript \ac{gallier} erstellt. Die berechneten \ac{vcd}-Intensitäten und die korrespondierenden Frequenzen werden von dem Skript eingelesen und können im Anschluss daran mit Gauß- oder Lorentzförmigen Kurven verbreitert werden, wodurch ein simuliertes Spektrum erhalten wird. Der Benutzer hat dabei die Wahl ob nur die Intensitäten, nur das simulierte Spektrum oder beides visualisiert werden soll. Standardmäßig wird dafür die von \texttt{aoforce} ausgegebene Datei \texttt{vibspectrum} eingelesen, wodurch auch simultan (oder ausschließlich) das Infrarotspektrum des untersuchten Moleküls visualisiert werden kann. Außerdem besteht zusätzlich die Möglichkeit eine beliebige $x,y$-Datei einzulesen um ein beliebiges Spektrum zu simulieren. \ac{gallier} erzeugt dafür ein Eingabeskript für das Visualisierungsprogramm gnuplot\supercite{gnuplot}, sowie eine Datei mit den Rohdaten für jedes beliebige Visualisierungsprogramm. Die Halbwertsbreite sowie der zu zeichnende Bereich des Spektrums können direkt in \ac{gallier} ausgewählt werden.
 \section{meta-GGA Funktionale}
 	\subsection{Theorie}
 	\subsection{Implementierung}
