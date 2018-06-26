@@ -2047,9 +2047,12 @@
     <bcf:citekey order="57">kahn1972ab</bcf:citekey>
     <bcf:citekey order="58">stephens1985theory</bcf:citekey>
     <bcf:citekey order="58">stephens1985vibrational</bcf:citekey>
-    <bcf:citekey order="59">deglmann2002efficient</bcf:citekey>
-    <bcf:citekey order="60">haser1991molecular</bcf:citekey>
-    <bcf:citekey order="61">gnuplot</bcf:citekey>
+    <bcf:citekey order="59">cheeseman1996ab</bcf:citekey>
+    <bcf:citekey order="59">nicu2008vibrational</bcf:citekey>
+    <bcf:citekey order="60">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="61">nicu2008vibrational</bcf:citekey>
+    <bcf:citekey order="62">haser1991molecular</bcf:citekey>
+    <bcf:citekey order="63">gnuplot</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -2007,6 +2007,98 @@
       \field{pages}{213\bibrangedash 241}
       \range{pages}{29}
     \endentry
+    \entry{cheeseman1996ab}{article}{}
+      \name{author}{4}{}{%
+        {{hash=a4bba2781808b5020c9942c36ee68f12}{%
+           family={Cheeseman},
+           familyi={C\bibinitperiod},
+           given={JR},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3b0643005c85ad04f2b1bb6b14359d01}{%
+           family={Frisch},
+           familyi={F\bibinitperiod},
+           given={MJ},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6844074b157b16c5f3e3e98068d51f71}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={FJ},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b77465ca04e8cb7286b2e74bcfd2a457}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={PJ},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{024bf6a7f71b83d159289d04ba2dce95}
+      \strng{fullhash}{2b5bc8e571d933991ca26817cad3fd45}
+      \strng{bibnamehash}{2b5bc8e571d933991ca26817cad3fd45}
+      \strng{authorbibnamehash}{2b5bc8e571d933991ca26817cad3fd45}
+      \strng{authornamehash}{024bf6a7f71b83d159289d04ba2dce95}
+      \strng{authorfullhash}{2b5bc8e571d933991ca26817cad3fd45}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Phys. Letters}
+      \field{number}{3-4}
+      \field{title}{Ab initio calculation of atomic axial tensors and vibrational rotational strengths using density functional theory}
+      \field{volume}{252}
+      \field{year}{1996}
+      \field{pages}{211\bibrangedash 220}
+      \range{pages}{10}
+    \endentry
+    \entry{nicu2008vibrational}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5358ada5a7d70425babc5936b4199723}{%
+           family={Nicu},
+           familyi={N\bibinitperiod},
+           given={Valentin\bibnamedelima Paul},
+           giveni={V\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=e3d3863c20617315347046690374e143}{%
+           family={Neugebauer},
+           familyi={N\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=04b01a23be61bc185b0841623ea37522}{%
+           family={Wolff},
+           familyi={W\bibinitperiod},
+           given={Stephen\bibnamedelima K},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=59bd6cb0c42c769001e98d7eee6be7b8}{%
+           family={Baerends},
+           familyi={B\bibinitperiod},
+           given={Evert\bibnamedelima Jan},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c21ecccf014279b71db53bb803671c4d}
+      \strng{fullhash}{18e1498f4e019cdd5fdf4de06fca1d27}
+      \strng{bibnamehash}{18e1498f4e019cdd5fdf4de06fca1d27}
+      \strng{authorbibnamehash}{18e1498f4e019cdd5fdf4de06fca1d27}
+      \strng{authornamehash}{c21ecccf014279b71db53bb803671c4d}
+      \strng{authorfullhash}{18e1498f4e019cdd5fdf4de06fca1d27}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{number}{1-3}
+      \field{title}{A vibrational circular dichroism implementation within a Slater-type-orbital based density functional framework and its application to hexa-and hepta-helicenes}
+      \field{volume}{119}
+      \field{year}{2008}
+      \field{pages}{245\bibrangedash 263}
+      \range{pages}{19}
+    \endentry
     \entry{deglmann2002efficient}{article}{}
       \name{author}{3}{}{%
         {{hash=5289721bd5796f48d1d068720dccbbc6}{%
@@ -2034,8 +2126,8 @@
       \strng{authorbibnamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authornamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authorfullhash}{0eb47e0aefffae140793948bc80fc106}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
