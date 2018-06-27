@@ -77,34 +77,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{55}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{55}{section.5.3}
+\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{56}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Theorie}{55}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Theorie}{56}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{57}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Implementierung}{58}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{60}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{61}{subsubsection.5.3.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{61}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{62}{section.5.4}
+\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{63}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Theorie}{62}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.1}Theorie}{63}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Implementierung}{62}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.2}Implementierung}{63}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Anwendungen}{63}{chapter.6}
+\contentsline {chapter}{\numberline {6}Anwendungen}{64}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Anwendungen in der anorganischen Chemie}{63}{section.6.1}
+\contentsline {section}{\numberline {6.1}Anwendungen in der anorganischen Chemie}{64}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{63}{section.6.2}
+\contentsline {section}{\numberline {6.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{64}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Zusammenfassung}{64}{chapter.7}
+\contentsline {chapter}{\numberline {7}Zusammenfassung}{65}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{65}{chapter*.35}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{66}{chapter*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{66}{chapter*.37}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{67}{chapter*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{67}{section*.38}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{68}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{69}{chapter*.40}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{70}{chapter*.41}
