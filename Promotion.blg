@@ -1,19 +1,19 @@
-[32] Config.pm:302> INFO - This is Biber 2.11
-[33] Config.pm:305> INFO - Logfile is 'Promotion.blg'
-[113] biber-MSWIN64:313> INFO - === 
-[171] Biber.pm:371> INFO - Reading 'Promotion.bcf'
-[384] Biber.pm:857> INFO - Found 59 citekeys in bib section 0
-[422] Biber.pm:3976> INFO - Processing section 0
-[463] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[474] bibtex.pm:1500> INFO - LaTeX decoding ...
-[785] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
-[809] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
-[1660] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
-[1665] Utils.pm:193> WARN - I didn't find a database entry for 'roothaanhall' (section 0)
-[1761] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1762] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1762] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[1762] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[1847] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
-[1896] bbl.pm:720> INFO - Output to Promotion.bbl
-[1896] Biber.pm:110> INFO - WARNINGS: 3
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'Promotion.blg'
+[38] biber-MSWIN64:313> INFO - === 
+[67] Biber.pm:371> INFO - Reading 'Promotion.bcf'
+[188] Biber.pm:857> INFO - Found 59 citekeys in bib section 0
+[207] Biber.pm:3976> INFO - Processing section 0
+[225] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[229] bibtex.pm:1500> INFO - LaTeX decoding ...
+[369] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
+[383] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
+[753] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
+[756] Utils.pm:193> WARN - I didn't find a database entry for 'roothaanhall' (section 0)
+[810] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[810] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[810] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[810] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[853] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
+[877] bbl.pm:720> INFO - Output to Promotion.bbl
+[877] Biber.pm:110> INFO - WARNINGS: 3

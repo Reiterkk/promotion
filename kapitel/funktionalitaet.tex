@@ -314,7 +314,36 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 	&=\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}S_{ip}^{B_\beta}+\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}U_{ip}^{B_\beta}\\
 	&=\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}\left(S_{ip}^{B_\beta}+U_{ip}^{B_\beta}\right).
 	\end{aligned}
-	\end{equation}	   
+	\end{equation}
+	Die Abbildung \ref{abb:programmstrukur_vcd} zeigt wieder eine schematische Darstellung der wichtigsten Routinen für die Berechnung von \ac{vcd}-Spektren. Ihre genaue Funktion wird im folgenden erläutert. 
+\begin{itemize}
+	\item[\texttt{wrumunu}:]
+	\item[\texttt{scf2nd}:]
+	\item[\texttt{dipai}:]
+	\item[\texttt{dinumu}:]
+	\item[\texttt{dipdrv}:]
+	\item[\texttt{gocart}:]
+	\item[\texttt{dipsijxi}:]
+	\item[\texttt{rdumunu}:]
+	\item[\texttt{mijxidip}:]
+	\item[\texttt{dipuaixi}:]
+	\item[\texttt{maixidip}:]
+	\item[\texttt{vibro}:]
+	\item[\texttt{prtnpr}:]
+	\item[\texttt{wrtfrq}:]
+	\item[\texttt{vibfrq}:]
+	\item[\texttt{rotvib}:]
+	\item[\texttt{mkvcd}:]
+	\item[\texttt{prtram}:]
+\end{itemize}
+	
+	\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.95\textwidth]{vcd}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Wichtigste Routinen für die Berechnung von VCD-Intensitäten]{Schematische Darstellung der wichtigsten Routinen für die Berechnung von \ac{vcd}-Intensitäten in den Modulen \texttt{mpshift} und \texttt{aoforce}. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert übertragene Routinen in rot dargestellt.}
+\label{abb:programmstrukur_vcd}
+\end{figure}	   
 	
 	
 	\subsubsection{Symmetrieausnutzung}

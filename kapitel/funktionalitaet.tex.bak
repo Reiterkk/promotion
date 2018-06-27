@@ -36,13 +36,14 @@ mit den Positionen $\vec{t}_l$ der \textit{screening}-Ladungen. Für die chemisc
 	\begin{equation}\label{eq:esmdb}
 	E^{\textrm{SM},B_\beta}=\sum_{\mu\nu}D_{\mu\nu}\underbrace{\frac{\iu}{2c}\sum_l^{N_{\textrm{SL}}}\int\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\frac{q_l\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}}{\vert\vec{t}_l-\vec{r}\vert}\diff\vec{r}}_{V_{\mu\nu}^{\textrm{SM},B_\beta}}.
 	\end{equation}
-	
+	\subsubsection{dCOSMO-RS}
 	\subsection{Implementierung}
 	Bei genauer Betrachtung von Gleichung (\ref{eq:esmdb}) fällt auf, dass die $V_{\mu\nu}^{\textrm{SM},B_\beta}$ die selbe Form haben wie die nach den Komponenten des Magnetfeldes abgeleitete Kern-Elektron-Wechselwirkung $V_{\textrm{Ke}\mu\nu}^{B_\beta}$. Zur Implementierung der \ac{cosmo} Beiträge bei der Berechnung chemischer Abschirmungskonstanten können daher die bereits bestehenden Routinen zur Berechnung des letztgenannten Beitrages modifiziert werden. Es ist dabei lediglich darauf zu achten, dass anstelle der Kernladungen die \textit{screening}-Ladungen und anstelle der Kernpositionen die Positionen der \textit{screening}-Ladungen an die entsprechende Routine übergeben werden. In der bei der Verwendung von \ac{cosmo} zur Berechnung von chemischen Abschirmungskonstanten wird daher die Routine \texttt{vsints} ein weiteres Mal von der Routine \texttt{csplop} mit den entsprechenden Feldern gerufen. 
 	
 Grundsätzlich lassen sich auf diese Weise die Beiträge von beliebige Punktladungen berechnen. Anstelle von \ac{cosmo}, was Punktladungen auf einer Hülle um das gelöste Molekül generiert, besteht daher auch die Möglichkeit die elektrostatische Wechselwirkung expliziter Lösungsmittelmoleküle durch Punktladungen zu ersetzen. Dafür können einzelne Momentaufnahmen aus \ac{md}-Simulationen verwendet werden. An die Positionen der Atome der Lösungsmittel werden Punktladungen gesetzt. Der Betrag der jeweiligen Ladung kann beispielsweise durch eine Populationsanalyse wie Mulliken\supercite{mulliken1955electronic} oder \ac{npa}\supercite{reed1985natural} bzw. durch einen \ac{esp}-Fit\supercite{singh1984approach} für das isolierte Lösungsmittelmolekül bestimmt werden. Die entsprechenden Koordinaten und Ladungen werden schließlich wieder an die Routine \texttt{vsints} übergeben. Eine Alternative zu den Punktladungen sind gaußförmig verschmierte Ladungen. Die dafür notwendigen Dreizentrenintegrale wurden bereits für die \ac{ri}-Näherung benötigt und können wiederverwendet werden. Um dies zu gewährleisten wird die Routine \texttt{csonei} um einen Aufruf der Routine \texttt{cslp3} erweitert. Im Vergleich zu punktförmigen Ladungen lässt sich dadurch eine etwas weichere Ladungsverteilung generieren. 
 
 Die unterschiedlichen Möglichkeiten zur Einbeziehung von Lösungsmitteleffekten wurden am Beispiel des Acetonmoleküls in Wasser untersucht und ist im folgenden Kapitel erläutert.
+	
 	\subsection{Testrechnungen}\label{lömitest}
 	
 \section{Skalar-relativistische Effekte durch effektive Kernpotentiale}
@@ -219,11 +220,11 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	
 \section{Berechnung von Vibrational Circular Dichroism Spektren}
 	\subsection{Theorie}
-	Die im Experiment gemessenen Intensitäten der \ac{vcd}-Spektroskopie $I_n$ sind proportional zu den in quantenchemischen Rechnungen zugänglichen Rotationsstärken $R_n$. Letztere werden aus dem Skalaprodukt vom \textcolor{myred}{elektrischen/\-elektronischen} und vom magnetischen Übergangsdipolmoment, $\vec{\mu}_n^{\,\text{el}}$ und $\vec{\mu}_n^{\,\text{mag}}$,  erhalten. Somit ergibt sich die \ac{vcd}-Intensität
+	Die im Experiment gemessenen Intensitäten der \ac{vcd}-Spektroskopie $I_n$ sind proportional zu den in quantenchemischen Rechnungen zugänglichen Rotationsstärken $R_n$. Letztere werden aus dem Skalaprodukt vom elektrischen/ und vom magnetischen Übergangsdipolmoment, $\vec{\mu}_n^{\,\text{el}}$ und $\vec{\mu}_n^{\,\text{mag}}$,  erhalten. Somit ergibt sich die \ac{vcd}-Intensität
 	\begin{equation}
 	  I_n\approx R_n = Im(\vec{\mu}_n^{\,\text{el}}\cdot\vec{\mu}_n^{\text{\,mag}})
 	\end{equation}
-	für einen Übergang aus dem Schwingungsgrundzustand in den angeregten Schwingungszustand $n$.\supercite{stephens1985theory,stephens1985vibrational} Im Rahmen der harmonishen Näherung sind das \textcolor{myred}{elektrische/\-elektronische} und das magnetische Übergangsdipolmoment gegeben durch \textcolor{myred}{(Zitat?)}
+	für einen Übergang aus dem Schwingungsgrundzustand in den angeregten Schwingungszustand $n$.\supercite{stephens1985theory,stephens1985vibrational} Im Rahmen der harmonishen Näherung sind das elektrische und das magnetische Übergangsdipolmoment gegeben durch\supercite{cheeseman1996ab,nicu2008vibrational}
 	
 	\begin{equation}
 	  (\mu_n^{\text{el}})_\beta=\sqrt{\frac{\hbar}{\omega_n}}\sum_{K\alpha}P_{\alpha\beta}^K S_{K\alpha,n}
@@ -231,7 +232,7 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	\begin{equation}
 	  (\mu_n^{\text{mag}})_\beta=-\sqrt{2\hbar^3\omega_n}\sum_{K\alpha}M_{\alpha\beta}^KS_{K\alpha,n}.
 	\end{equation}
-	Hierbei ist $I$ die Zählvariable für die Atomkerne, $\alpha$ und $\beta$ beschreiben kartesische Koordinaten, $\omega_n$ ist die Schwingungsfrequenz der $n$-ten Schwingung und $S_{I\alpha,n}$ ist die Transformationsmatrix von kartesichen zu Normalkoordinaten. Sowohl der sogenannte \ac{apt} (Gleichung (\ref{eq:apt}) als auch der sogenannte \ac{aat} (Gleichung (\ref{eq:aat})) lassen sich in einen elektronischen und einen Kernbeitrag aufteilen
+	Hierbei ist $I$ die Zählvariable für die Atomkerne, $\alpha$ und $\beta$ beschreiben kartesische Koordinaten, $\omega_n$ ist die Schwingungsfrequenz der $n$-ten Schwingung und $S_{I\alpha,n}$ ist die Transformationsmatrix von kartesichen zu Normalkoordinaten. Sowohl der sogenannte \ac{apt} (Gleichung (\ref{eq:apt})) als auch der sogenannte \ac{aat} (Gleichung (\ref{eq:aat})) lassen sich in einen elektronischen und einen Kernbeitrag aufteilen
 	\begin{equation}\label{eq:apt}
 	  P^K_{\alpha\beta}=E^K_{\alpha\beta}+N^K_{\alpha\beta}
 	\end{equation}
@@ -268,26 +269,83 @@ Für schwere Atome nimmt mit steigender Kernladungszahl der Einfluss relativisti
 	\end{equation}
 	Durch die Koeffizientenmatrix $U_{ip}^{R_{K_\alpha}}$ wird die Response der Wellenfunktion auf die Verrückung des Kerns $K$ beschrieben. Analog zu $U_{ip}^{B_\beta}$ werden auch sie durch Lösen der entsprechenden \ac{cphf}-Gleichungen erhalten. Gebraucht werden sie ebenfalls zur Berechnung von Kraftkonstanten, wie sie im \textsc{Turbomole} Modul \texttt{aoforce}\supercite{deglmann2002efficient} berechnet werden.
 	\subsection{Implementierung}
-	Die in Gleichung (\ref{eq:vcdaatelfinal}) auftretenden Integrale, welche die Ableitung nach dem externen magnetischen Feld enthalten, lassen sich für die $x$-Komponente des $B$-Feldes wie folgt umschreiben
+Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachsten durch folgende zwei Schritte realisieren. Im ersten Schritt wird die Koeffizientenmatrix $U_{ip}^{B_\beta}$ im Modul \texttt{mpshift} berechnet und auf der Festplatte gespeichert. Diese wird vom Modul \texttt{aoforce} eingelesen, welches ebenfalls alle notwendigen Integrale, die $U_{ip}^{R_{K_\alpha}}$, den \ac{aat}(Gleichung \ref{eq:aat}) und den \ac{apt} (Gleichung \ref{eq:apt}) berechnet. Letzterer wird bereits für die Berechnung von \ac{ir}-Intensitäten benötigt und steht daher im Modul \texttt{aoforce} bereits zu Verfügung. Aus dem \ac{aat} und dem \ac{apt} lassen sich schließlich die eigentlichen \ac{vcd}-Intensitäten berechnen. Der Hauptaufwand liegt daher in der Implementierung des \ac{aat} nach Gleichung (\ref{eq:vcdaatelfinal}). Das Integral im vierten Term dieser Gleichung ist ein Standard Überlappungsintegral und das Integral im zweiten Term ist das nach den Kernkoordinaten abgeleitete Überlappungsintegral. Auch disese Integrale stehen im Modul \texttt{aoforce} bereits zur Verfügung.	Die in Gleichung (\ref{eq:vcdaatelfinal}) auftretenden Integrale, welche die Ableitung nach dem externen magnetischen Feld enthalten, lassen sich wie folgt umschreiben
+
+	\begin{equation}\label{eq:ddipx}
+	\begin{aligned}
+	\left\langle\chi_\mu^{R_{K_\alpha}}\vert\chi_\nu^{B_x}\right\rangle&=\left.\left\langle\chi_\mu^{R_{K_\alpha}}\left|\frac{\partial}{\partial B_x}\right.\chi_\nu\right\rangle\right|_{\vec{B}=0}=\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|\frac{-\iu}{2c}\left(R_{\nu y}z-R_{\nu z}y\right)\right|\chi_\nu^{\vec{B}=0}\right\rangle\\
+	  &=\frac{\iu}{2c}\left(R_{\nu z}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu y}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle\right).
+	  \end{aligned}
+	\end{equation}
 	
+	Analog ergeben sich die Ableitungen nach der $y$-
+	\begin{equation}
+	\left\langle\chi_\mu^{R_{K_\alpha}}\vert\chi_\nu^{B_y}\right\rangle=\frac{\iu}{2c}\left(R_{\nu x}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu z}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle\right)
+	\end{equation}
+	
+	und $z$-Komponente	
+	\begin{equation}
+	\left\langle\chi_\mu^{R_{K_\alpha}}\vert\chi_\nu^{B_z}\right\rangle=\frac{\iu}{2c}\left(R_{\nu y}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu x}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle\right).
+	\end{equation}
+	Das zweite auftretende Integral (Term drei in Gleichung (\ref{eq:vcdaatelfinal})) ist für die einzelnen Komponenten gegeben durch	
 	\begin{equation}
 	\begin{aligned}
 	  \left\langle\chi_\mu\vert\chi_\nu^{B_x}\right\rangle&=\left.\left\langle\chi_\mu\left|\frac{\partial}{\partial B_x}\right.\chi_\nu\right\rangle\right|_{\vec{B}=0}=\left\langle\chi_\mu^{\vec{B}=0}\left|\frac{-\iu}{2c}\left(R_{\nu y}z-R_{\nu z}y\right)\right|\chi_\nu^{\vec{B}=0}\right\rangle\\
-	  &=\frac{\iu}{2c}\left(R_{\nu z}\left\langle\chi_\mu^{\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu y}\left\langle\chi_\mu^{\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle\right).
+	  &=\frac{\iu}{2c}\left(R_{\nu z}\left\langle\chi_\mu^{\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu y}\left\langle\chi_\mu^{\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle\right),
 	\end{aligned}
 	\end{equation}
-	
-	Analog ergeben sich die Ableitungen nach der $y$- 
-	
+ 
 		\begin{equation}
-	  \left\langle\chi_\mu\vert\chi_\nu^{B_y}\right\rangle=\frac{\iu}{2c}\left(R_{\nu x}\left\langle\chi_\mu^{\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu z}\left\langle\chi_\mu^{\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle\right)
+	  \left\langle\chi_\mu\vert\chi_\nu^{B_y}\right\rangle=\frac{\iu}{2c}\left(R_{\nu x}\left\langle\chi_\mu^{\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu z}\left\langle\chi_\mu^{\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle\right),
 	\end{equation}
 	
-	und $z$-Komponente
-	
-		\begin{equation}
+		\begin{equation} \label{eq:dipz}
 	  \left\langle\chi_\mu\vert\chi_\nu^{B_z}\right\rangle=\frac{\iu}{2c}\left(R_{\nu y}\left\langle\chi_\mu^{\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu x}\left\langle\chi_\mu^{\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle\right).
 	\end{equation}
+
+	
+
+	Die Integrale in den Gleichungen (\ref{eq:ddipx})-(\ref{eq:dipz}) lassen sich damit entsprechend durch eine Linearkombination von gewöhnlichen Dipolintegralen $\langle\chi_\mu\vert\vec{r}\vert\chi_\nu\rangle$ und nach den Kernkoodinaten abgeleiteten Dipolintegralen $\langle\chi_\mu^{R_{K_\alpha}}\vert\vec{r}\vert\chi_\nu\rangle$ ausdrücken. Diese werden bereits im Modul \texttt{aoforce} berechnet und müssen daher nur auf geeignete Weise kombiniert werden, um die nach den Komponenten des Magnetfeldes abgeleiteten Integrale zu erhalten. Mit den \ac{mo}-Koeffizienten lassen sich die Integrale in den Termen drei und vier aus der \ac{cao}-Basis in die \ac{mo}-Basis transformieren und zusammenfassen\supercite{nicu2008vibrational}
+	
+	\begin{equation}
+	\begin{aligned}
+	&\sum_{\mu,\nu=1}^{N_{\text{BF}}}\left[\sum_{p=1}^{N_{\text{MO}}}c_{\mu i}c_{\nu p}U_{ip}^{R_{K_\alpha}}\left\langle\chi_\mu\vert\chi_\nu^{B_{\beta}}\right\rangle+\sum_{p,q=1}^{N_{\text{MO}}}c_{\mu p}c_{\nu q}U_{ip}^{R_{K_\alpha}}U_{iq}^{B_\beta}\left\langle\chi_\mu\vert\chi_\nu\right\rangle\right]\\
+	&=\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}S_{ip}^{B_\beta}+\sum_{p,q=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}U_{iq}^{B_\beta}\delta_{pq}\\
+	&=\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}S_{ip}^{B_\beta}+\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}U_{ip}^{B_\beta}\\
+	&=\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}\left(S_{ip}^{B_\beta}+U_{ip}^{B_\beta}\right).
+	\end{aligned}
+	\end{equation}
+	Die Abbildung \ref{abb:programmstrukur_vcd} zeigt wieder eine schematische Darstellung der wichtigsten Routinen für die Berechnung von \ac{vcd}-Spektren. Ihre genaue Funktion wird im folgenden erläutert. 
+\begin{itemize}
+	\item[\texttt{wrumunu}:]
+	\item[\texttt{scf2nd}:]
+	\item[\texttt{dipai}:]
+	\item[\texttt{dinumu}:]
+	\item[\texttt{dipdrv}:]
+	\item[\texttt{gocart}:]
+	\item[\texttt{dipsijxi}:]
+	\item[\texttt{rdumunu}:]
+	\item[\texttt{mijxidip}:]
+	\item[\texttt{dipuaixi}:]
+	\item[\texttt{maixidip}:]
+	\item[\texttt{vibro}:]
+	\item[\texttt{prtnpr}:]
+	\item[\texttt{wrtfrq}:]
+	\item[\texttt{vibfrq}:]
+	\item[\texttt{rotvib}:]
+	\item[\texttt{mkvcd}:]
+	\item[\texttt{prtram}:]
+\end{itemize}
+	
+	\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.95\textwidth]{vcd}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Wichtigste Routinen für die Berechnung von VCD-Intensitäten]{Schematische Darstellung der wichtigsten Routinen für die Berechnung von \ac{vcd}-Intensitäten in den Modulen \texttt{mpshift} und \texttt{aoforce}. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert übertragene Routinen in rot dargestellt.}
+\label{abb:programmstrukur_vcd}
+\end{figure}	   
+	
+	
 	\subsubsection{Symmetrieausnutzung}
 	Nur wenige chirale Moleküle besitzen eine Symmetrie. Sie gehören alle zu den Punktgruppen $C_{\textrm{n}}$, $D_{\textrm{n}}$, $T$, $O$ oder $I$ und besitzen damit nur Drehachsen als Symmetrieelemente. Die bereits bestehende Implementierung der Symmetrieausnutzung\supercite{haser1991molecular} für die Module \texttt{mpshift} und \texttt{aoforce} kann auch für die Berechnung von \ac{vcd} Spektren verwendet werden. Dabei ist jedoch zu beachten, dass die Symmetrieausnutzugn im Modul \texttt{mpshift} keine Punktgruppen mit reduziblen $e$-Darstellungen unterstützt, was die Punktgruppen $C_{\textrm{n>2}}$ und $T$ unter den chiralen Punktgruppen betrifft. In diesen Fällen werden die \ac{mo}-Koeffizienten nach $C_1$ transformiert und \texttt{mpshift} wird ohne Symmetrieausnutzung verwendet. Die $U_{pi}^{B_\beta}$ Koeffizienten werden in die \ac{cao}-Basis transformiert, bevor sie für die Weiterverarbeitung im Modul \texttt{aoforce} auf der Festplatte gespeichert werden. Letzteres unterstützt die volle Symmetrieausnuztung, was wichtig ist, in Anbetracht der Tatsache, dass dies den zeitbestimmenden Schritt darstellt. In \texttt{aoforce} erfolgt die Berechnung der $U_{pi}^{R_{K_\alpha}}$, die $U_{pi}^{B_\beta}$ werden von der Festplatte eingelesen und für die volle Symmetrieausnutzung in die \ac{sao}-Basis transformiert. Abschließend erfolgt die Berechnung der \ac{vcd}-Intensitäten. 
 	\subsection{GALLIER: Visualisierung von VCD Spektren}
