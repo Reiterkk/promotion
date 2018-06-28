@@ -111,5 +111,43 @@ Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der
 	\subsection{Implementierung}
 	
 \section{Parallelisierung und weitere Optimierungen}\label{paraopt}
+Bei bestimmten Verbindungen kann es von Interesse sein, die chemischen Abschirmungskonstanten nur für eine Auswahl an Atomen zu berechnen. Beispielsweise wenn nur eine bestimmte Atomsorte von Interesse ist oder lediglich die chemische Verschiebung in einem bestimmten Bereich untersucht werden soll. In diesen Fällen kann es von Nutzen sein, nur die Beiträge für besagte Atome zu berechnen. Aus diesem Grund wurde das Modul \texttt{mpshift} um die Möglichkeit ergänzt, eine Vorauswahl der zu berechnenden Atome zu treffen. Im Programmcode selbst ist dies auf die einfache Weise realisiert, dass die Ableitungen nach den Komponenten der Kernmomente sowie der gesamte Abschirmungstensor nur für die ausgewählten Atome berechnet wird. Dies kann durch Hinzufügen des Keywords \texttt{\$nucsel} im \texttt{control}-File erreicht werden. Durch die Eingabe von \texttt{\$nucsel "N","Fe"} lassen sich beispielsweise die chemischen Abschirmungskonstanten für alle Sickstoff- und Eisenatome im Molekül berechnen. Mit \texttt{\$nucsel 1,3,5-8} erfolgt die Berechnung für die Atome Nummer 1,3,5-8 im \texttt{coord}-File. Sind in größeren organischen Molekülen, welche von Wasserstoff- und Kohlenstoffatomen dominiert sind, nur die $^1$H bzw. $^13$C Abschirmungskonstanten von Interesse, so bringt dieses vorgehen in der Regel jedoch kaum eine Zeitersparnis und es können direkt alle Atome berechnet werden. Umgekehrt lassen sich auf diese Weise auch Elemente aus der Rechnung herausnehmen, welche ohnehin nicht von Interesse sind, aber gegebenenfalls für ein schlechtes Konvergenzverhalten während der \ac{cphf}-Iterationen sorgen.
+
+\bigskip
+Das bisherige, standardmäßige Auswählen des ersten Atoms im \texttt{coord}-File für den Konvergenztest bei den \ac{cphf}-Iterationen lässt sich ebenfalls optimieren. In der Praxis hat sich herausgestellt, dass insbesondere für schwere Elemente mehr Iterationen benötigt werden, bis die Konvergenz erreicht wurde. Dies liegt auch daran, dass die Absolutwerte für die chemischen Abschirmungskonstanten dieser Elemente mit zunehmender Ordnungszahl steigen. Die Konvergenz wurde aber Standardmäßig auf eine Änderung von weniger als \unit[$1\times 10^{-2}$]{ppm} gesetzt, unabhängig von Element. Hierfür wurde ein Faktor eingeführt, welcher die Ordnungszahl des entsprechenden Elements berücksichtigt und die Konvergenz für Elemente mit hoher Ordnungszahl ein wenig lockert. Weiterhin hat sich herausgestellt, dass Atome die weit vom Koordinatenursprung entfernt sind, ebenfalls länger bis zur Konvergenz benötigen. Daher erfolgt die Atomauswahl für den Konvergenztest bei den \ac{cphf}-Iterationen dermaßen, dass zunächst das schwerste Element im Molekül gesucht wird. Sollte es davon mehrere geben, dann wird das Atom ausgewählt, welches am weitesten vom Ursprung entfernt liegt. Dieses Vorgehen hat den Vorteil, dass in der Regel nur in den letzten beiden Iterationen die chemische Verschiebung für alle Atome berechnet werden muss, um zu überprüfen, ob alle Atome bereits konvergiert sind. Da der kritischste Fall zu diesem Zeitpunkt in der Regel bereits zur Konvergenz gebracht werden konnte, ist dies in der Regel gegeben.
+
+\bigskip
+Wird die \ac{ri} bzw. \ac{marij}-Methode in einer Hartree-Fock bzw. Hybrid-\ac{dft} Rechnung verwendet, so wird der Austauschbeitrag unabhängig vom Coulombbeitrag berechnet. Für ersteren kann jedoch eine härtere Integralabschätzung angewendet werden, als für den Coulombbeitrag. Aus diesem Grund wurden die Integralabschätzungen aus der Routine \texttt{shloop\_k}, welche ungestörten Austauschmatrixelemente in einer \ac{scf} oder während der \ac{cphf}-Iterationen berechnet, in die Routine \texttt{csloop} übertragen. Auf diese Weise kann die Berechnung kleiner bzw. später verschwindender Matrixelemente vermieden werden. 
+
+\bigskip
+Neben einer effizienten Programmierung und dem Einführen von Näherungen wie beispielsweise bei der \ac{ri} bzw. \ac{marij}-Methode, kann die Wartezeit des Nutzers auch durch eine Parallelisierung des Programmcodes reduziert werden. Dies ist insofern von besonderer Bedeutung, dass heutige Computer immer mehr CPUs zur Verfügung haben. Selbst in gewöhnlichen Desktop PCs oder Notebooks finden sich häufig mindestens 4 CPUs. Aus diesem Grund wurden die zeitaufwändigsten Routinen im \texttt{mpshift} Modul mit OpenMP\supercite{dagum1998openmp} in Zusammenarbeit mit Fabian Mack parallelisiert. Im Einzelnen betrifft dies die Routinen \texttt{becke}, \texttt{csloop}, \texttt{cslp3\_omp}, \texttt{csplop},\texttt{shloop\_k} \texttt{p3loop} und \texttt{pploop}. Die Routinen \texttt{csplop}, \texttt{p3loop} und \texttt{pploop} besitzen üblicherweise folgende grundlegende Schleifenstruktur.\\
+\\
+\texttt{do i=1,N$_{\texttt{Schal}}$}\\ 
+\null\quad\texttt{do j=1,N$_{\texttt{Schal}}$}\\ 
+\null\quad\quad\texttt{do $\mu$=1,N$_{\texttt{Prim BF}}$}\\ 
+\null\quad\quad\quad\texttt{do $\mu$=1,N$_{\texttt{Prim BF}}$}\\
+\null\quad\quad\quad\quad \texttt{Auszuführender Programmcode}\\ 
+\null\quad\quad\quad\texttt{end do}\\ 
+\null\quad\quad\texttt{end do}\\ 
+\null\quad\texttt{end do}\\ 
+\texttt{end do}\\
+\\
+Die äußeren beiden Schleifen laufen dabei über alle Schalen N$_{\texttt{Schal}}$ und die beiden inneren Schleifen laufen über die primitiven Basisfunktionen. Für die Routine \texttt{cslp3\_omp} kommt jeweils eine weitere Schleife für die Auxiliarschale und die primitiven Auxiliarbasisfunktionen hinzu. Bei den Vierzentrenroutinen \texttt{csplop} und \texttt{shloop\_k} sind es jeweils zwei weitere Schleifen für die Schalen und die primitiven Basisfunktionen. Bei der Parallelisierung wurde nun in der Regel so vorgegangen, dass die äußersten Schleifen über die Schalen parallelisiert wurden:\\
+\\
+\texttt{\$OMP PARALLEL}\\
+\texttt{\$OMP DO SCHEDULE (DYNAMIC)}\\
+\texttt{do i=1,N$_{\texttt{Schal}}$}\\ 
+\null\quad\texttt{do j=1,N$_{\texttt{Schal}}$}\\ 
+\null\quad\quad\texttt{do $\mu$=1,N$_{\texttt{Prim BF}}$}\\ 
+\null\quad\quad\quad\texttt{do $\mu$=1,N$_{\texttt{Prim BF}}$}\\
+\null\quad\quad\quad\quad \texttt{Auszuführender Programmcode}\\ 
+\null\quad\quad\quad\texttt{end do}\\ 
+\null\quad\quad\texttt{end do}\\ 
+\null\quad\texttt{end do}\\ 
+\texttt{end do}\\
+\texttt{\$OMP END DO}\\
+\texttt{\$OMP END PARALLEL}\\
+\\
+
 
 \section{Genauigkeit und Effizienz}\label{genauigkeit}

@@ -55,56 +55,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Parallelisierung und weitere Optimierungen}{45}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Genauigkeit und Effizienz}{45}{section.4.5}
+\contentsline {section}{\numberline {4.5}Genauigkeit und Effizienz}{47}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{46}{chapter.5}
+\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{48}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{46}{section.5.1}
+\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{48}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Theorie}{47}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Theorie}{49}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.1}dCOSMO-RS}{48}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}dCOSMO-RS}{50}{subsubsection.5.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Implementierung}{48}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Implementierung}{50}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{49}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{51}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{49}{section.5.2}
+\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{51}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Theorie}{50}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Theorie}{52}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Implementierung}{54}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Implementierung}{56}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{55}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{57}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{56}{section.5.3}
+\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{61}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Theorie}{56}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Theorie}{61}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{58}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Implementierung}{63}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{61}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{65}{subsubsection.5.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{61}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{66}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{63}{section.5.4}
+\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{67}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Theorie}{63}{subsection.5.4.1}
+\contentsline {chapter}{\numberline {6}Anwendungen}{68}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Implementierung}{63}{subsection.5.4.2}
+\contentsline {section}{\numberline {6.1}Anwendungen in der anorganischen Chemie}{68}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Anwendungen}{64}{chapter.6}
+\contentsline {section}{\numberline {6.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{68}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Anwendungen in der anorganischen Chemie}{64}{section.6.1}
+\contentsline {chapter}{\numberline {7}Zusammenfassung}{69}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{64}{section.6.2}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{70}{chapter*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Zusammenfassung}{65}{chapter.7}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{71}{chapter*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{66}{chapter*.36}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{72}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{67}{chapter*.38}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{68}{section*.39}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{70}{chapter*.41}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{74}{chapter*.42}
