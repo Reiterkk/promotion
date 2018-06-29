@@ -98,16 +98,90 @@ Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der
 \centering
 \includegraphics[width=0.6\textwidth]{programmstruktur_ri}
 \captionsetup{figurewithin = chapter}
-\captionsetup{font=small, labelfont=bf}\caption[RI-J Routinen für chemische Abschirmungskonstanten]{Schematische Darstellung der wichtigsten Routinen für die \ac{ri}-Näherung zur berechnung chemischer Abschirmungskonstanten im Modul \texttt{mpshift}. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert übertragene Routinen in rot dargestellt.}
+\captionsetup{font=small, labelfont=bf}\caption[\ac{ri}-J Routinen für chemische Abschirmungskonstanten]{Schematische Darstellung der wichtigsten Routinen für die \ac{ri}-Näherung zur Berechnung chemischer Abschirmungskonstanten im Modul \texttt{mpshift}. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert übertragene Routinen in rot dargestellt.}
 \label{abb:programmstrukur_ri}
 \end{figure}
 
 \section{Die MARI-J Methode für chemische Abschirmungskonstanten}\label{marij}
+Eine weitere Beschleunigung bei der Berechnung der Coulombintegrale lässt sich durch die \acf{marij} Näherung erhalten. Bei dieser Methode wird der Coulombbeitrag in einen Nahfeld und Fernfeld Beitrag aufgeteilt. Der Nahfeld Beitrag wird dabei durch die im vorherigen Kapitel beschriebene \ac{ri}-Näherung berechnet. Die Berechnung des Fernfeld Beitrages erfolgt mit Hilfe einer Multipolentwicklung und ist damit namensgebend für die Methode. Im Vergleich zu konventionellen \ac{ri}-Rechnungen konnte mit der \ac{marij} Methode eine bis zu 6,5-fache Beschleunigung, ohne einen nennenswerten Verlust an Genauigkeit, berichtet werden.\supercite{sierka2003fast}
 	\subsection{Theorie}
+	Dieser Abschnitt widmet sich der Berechnung des Fernfeld Beitrages für den Coulombterm und geht auf die Formulierungen von White und Head-Gordon\supercite{white1994derivation} zurück. Die folgende Darstellung folgt Referenz \supercite{sierka2003fast}, woraus die wesentlichen Formeln entnommen wurden. Zunächst kann der Abstand zweier Elektronen $\vert\vec{r}_1-\vec{r}_2\vert$ durch den Abstand zweiter Kerne $\vec{R}_{\mu\nu}=\vert\vec{R}_\mu-\vec{R}_\nu\vert$ und der entsprechenden Kern-Eelektron Abstände $\vec{r}_\mu$ und $\vec{r}_\nu$ ausdrücken
+	\begin{equation}
+	\frac{1}{\vert\vec{r}_1-\vec{r}_2\vert}=\frac{1}{\vert\vec{R}_{\mu\nu}-\vec{r}_\mu+\vec{r}_\nu\vert}=\sum_{l=0}^{\infty}\sum_{m=-l}^l O_{lm}(\vec{r}_\mu)\left[\sum_{j=0}^{\infty}\sum_{k=-j}^jB_{jk}^{lm}(\vec{R}_{\mu\nu})O_{jk}(\vec{r}_\nu)\right].
+	\end{equation}
+	Für einen gegebenen Punkt $\vec{r}=(r,\theta,\phi)$ in Kugelkoordinaten sind die Elemente $B_{jk}^{lm}(\vec{r})=M_{l+j,m+k}(\vec{r})$ und $O_{lm}(\vec{r})$ gegeben durch
+	\begin{equation}
+	O_{lm}(\vec{r})=\frac{r^l}{(l+\vert m\vert)!}P_{lm}(\cos \theta)e^{-\iu m\phi}
+	\end{equation}
+	und 
+	\begin{equation}
+	M_{l,m}(\vec{r})=\frac{(l-\vert m\vert)!}{r^{l+1}}P_{lm}(\cos \theta)e^{\iu m\phi}
+	\end{equation}
+	mit den entsprechenden Legendre-Polynomen $P_{lm}$. Auf diese Weise lässt sich die Coulombwechselwirkung zweier entfernter Ladungsverteilungen $\rho^O$ und $\rho^R$ entwickeln
+	\begin{equation}\label{eq:marijexpansion}
+	\begin{aligned}
+	J_{OR}=&\frac{1}{2} \int\int\frac{\rho^O(\vec{r}_1)\rho^R(\vec{r}_2)}{\vert\vec{r}_1-\vec{r}_2\vert}=\frac{1}{2}\int\int\frac{\rho^O(\vec{r}_\mu)\rho^R(\vec{R}_{\mu\nu}+\vec{r}_\nu)}{\vert\vec{R}_{\mu\nu}-\vec{r}_\mu+\vec{r}_\nu\vert}\\
+	=&\frac{1}{2}\sum_{l=0}^\infty\sum_{m=-l}^l\Omega_{lm}^O\left[\sum_{j=0}^\infty\sum_{k=-j}^jB_{jk}^{lm}(\vec{R}_{\mu\nu})\Omega_{jk}^P\right]=\frac{1}{2}\sum_{l=0}^\infty\sum_{m=-l}^l\Omega_{lm}^O\Xi_{lm}^P.
+	\end{aligned}
+	\end{equation}
+	Die $\Xi_{lm}^P$ sind die Koeffizienten einer lokalen Taylor-Entwicklung des durch eine Ladungsverteilung am Punkt $P$ erzeugten Potentials um den Ursprung
+	\begin{equation}
+	\Xi_{lm}^P=\sum_{j=0}^\infty\sum_{k=-j}^jB_{jk}^{lm}(\vec{R}_{\mu\nu})\Omega_{jk}^P.
+	\end{equation}
+	Die in Gleichung (\ref{eq:marijexpansion}) auftretenden $\Omega_{lm}^O$ und $\Omega_{jk}^P$ sind die Multipolmomente mit ihrem jeweiligen Zentrum am Ort $\vec{O}$ bzw. $\vec{P}$. Im Rahmen der Basissatzentwicklung sind sie gegeben durch
+	\begin{equation}\label{eq:multipole}
+	\Omega^Q_{lm}=\sum_{\mu,\nu \in Q}D_{\mu\nu}\int\chi_\mu O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}\diff \vec{r}.
+	\end{equation}
+	Der Ausdruck auf der rechten Seite von Gleichung (\ref{eq:marijexpansion}) hat den Vorteil, dass sich die Coulombwechselwirkung zweier Ladungsverteilungen nun durch die voneinander unabhängigen Multipolmomente berechnen lässt, da die Information über die gegenseitige Lage der Ladungsverteilungen nur noch in $B_{jk}^{lm}$ steckt. Sind die Multipolmomente einer Ladungsverteilung ein mal berechnet, so lässt sich mit ihnen die Coulombwechselwirkung mit allen anderen Ladungsverteilungen berechnen.\supercite{sierka2003fast} 
 	\subsection{Implementierung}
+Zur Gewährleistung der Eichinvarianz bei der Berechnung chemischer Abschirmungskonstanten mit der \ac{marij} Methode müssen anstelle gewöhnlicher Basisfunktionen ebenfalls \acp{giao} für Gleichung (\ref{eq:multipole}) verwendet werden. Die Ableitung von Gleichung (\ref{eq:multipole}) nach den Komponenten des Magnetfeldes beträgt dann
+
+	\begin{equation}\label{eq:multipoledb}
+	\begin{aligned}
+	\left.\frac{\partial \Omega^Q_{lm}}{\partial B_\beta}\right\vert_{\vec{B}=0}=&\Omega^{Q,B_\beta}_{lm}=\frac{\iu}{2c}\sum_{\mu,\nu \in Q}D_{\mu\nu}\int\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0} O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\diff \vec{r}\\
+	=&\frac{\iu}{2c}\sum_{\mu,\nu \in Q}\left(\vec{R}_{\mu}\times\vec{R}_{\nu}\right)_\beta D_{\mu\nu}\int\chi_\mu^{\vec{B}=0}O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\diff\vec{r}\\
+	&+\frac{\iu}{2c}\sum_{\mu,\nu \in Q}D_{\mu\nu}\left(\vec{R}_{\mu\nu}\times\int\vec{r}_{\mu}\chi_\mu^{\vec{B}=0}O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\diff\vec{r}\right)_\beta .
+	\end{aligned}
+	\end{equation}
+	Dieser Ausdruck wird schließlich in Gleichung (\ref{eq:marijexpansion}) eingesetzt, wodurch der durch Multipolmomente genäherte Beitrag für den Coulombterm erhalten wird. Zur Berücksichtigung der \ac{marij} Beiträge wurde die Routine \texttt{twoder} um den Aufruf der Modifizierten Routine \texttt{fmmlpdrc2} erweitert. Deren Funktion sowie davon gerufener Unterroutinen sind im Folgenden erläutert. Eine schematische Darstellung der wichtigsten Routinen zur Berechnung der \ac{marij} Beiträge für chemische Abschirmungskonstanten ist in Abbildung \ref{abb:programmstrukur_marij} gezeigt.
+	\begin{itemize}[leftmargin=68pt]
+	\item[\texttt{initmulopt}:]
+	\item[\texttt{auxmaxmom}:]
+	\item[\texttt{extdef}:]
+	\item[\texttt{fmmlpdrc1}:]
+	\item[\texttt{fmmlpdrc2}:]
+	\item[\texttt{auxmom}:]
+	\item[\texttt{mktayaux}:]
+	\item[\texttt{csmunumom}:]
+	\item[\texttt{cssphmom}:]
+	\item[\texttt{lsprim}:]
+	\item[\texttt{cshorsph}:]
+	\item[\texttt{cscross}:]
+	\end{itemize}
+	
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.7\textwidth]{programmstruktur_marij}
+\captionsetup{figurewithin = chapter}
+\captionsetup{font=small, labelfont=bf}\caption[\ac{marij} Routinen für chemische Abschirmungskonstanten]{Schematische Darstellung der wichtigsten Routinen für die \ac{marij}-Näherung zur Berechnung chemischer Abschirmungskonstanten im Modul \texttt{mpshift}. Alte Routinen sind in blau, neue Routinen in grün, modifizierte Routinen in orange und unverändert übertragene Routinen in rot dargestellt.}
+\label{abb:programmstrukur_marij}
+\end{figure}
+
 
 \section{Seminumerischer Austausch}
+\supercite{plessow2012seminumerical}
 	\subsection{Theorie}
+	\begin{equation}
+	K_{\mu\nu}=-\frac{1}{2}\sum_{\kappa\lambda}^{N_{\textrm{BF}}}D_{\kappa\lambda} \left(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu\right)
+	\end{equation}
+	
+	\begin{equation}
+	\begin{aligned}
+	\left.\frac{\partial K_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}=&K_{\mu\nu}^{B_\beta}\\
+	=&-\frac{1}{2}\sum_{\kappa\lambda}^{N_{\textrm{BF}}}D_{\kappa\lambda}^{B_\beta} \left(\chi_\mu^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\vert\chi_\kappa^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)\\
+	&-\frac{1}{2}\sum_{\kappa\lambda}^{N_{\textrm{BF}}}D_{\kappa\lambda} \left[\left(\overline{\chi_\mu\chi_\lambda}\vert\chi_\kappa^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)+\left(\chi_\mu^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\vert\overline{\chi_\kappa\chi_\nu}\right)\right].
+	\end{aligned}
+	\end{equation}
 	\subsection{Implementierung}
 	
 \section{Parallelisierung und weitere Optimierungen}\label{paraopt}
@@ -117,7 +191,7 @@ Bei bestimmten Verbindungen kann es von Interesse sein, die chemischen Abschirmu
 Das bisherige, standardmäßige Auswählen des ersten Atoms im \texttt{coord}-File für den Konvergenztest bei den \ac{cphf}-Iterationen lässt sich ebenfalls optimieren. In der Praxis hat sich herausgestellt, dass insbesondere für schwere Elemente mehr Iterationen benötigt werden, bis die Konvergenz erreicht wurde. Dies liegt auch daran, dass die Absolutwerte für die chemischen Abschirmungskonstanten dieser Elemente mit zunehmender Ordnungszahl steigen. Die Konvergenz wurde aber Standardmäßig auf eine Änderung von weniger als \unit[$1\times 10^{-2}$]{ppm} gesetzt, unabhängig von Element. Hierfür wurde ein Faktor eingeführt, welcher die Ordnungszahl des entsprechenden Elements berücksichtigt und die Konvergenz für Elemente mit hoher Ordnungszahl ein wenig lockert. Weiterhin hat sich herausgestellt, dass Atome die weit vom Koordinatenursprung entfernt sind, ebenfalls länger bis zur Konvergenz benötigen. Daher erfolgt die Atomauswahl für den Konvergenztest bei den \ac{cphf}-Iterationen dermaßen, dass zunächst das schwerste Element im Molekül gesucht wird. Sollte es davon mehrere geben, dann wird das Atom ausgewählt, welches am weitesten vom Ursprung entfernt liegt. Dieses Vorgehen hat den Vorteil, dass in der Regel nur in den letzten beiden Iterationen die chemische Verschiebung für alle Atome berechnet werden muss, um zu überprüfen, ob alle Atome bereits konvergiert sind. Da der kritischste Fall zu diesem Zeitpunkt in der Regel bereits zur Konvergenz gebracht werden konnte, ist dies in der Regel gegeben.
 
 \bigskip
-Wird die \ac{ri} bzw. \ac{marij}-Methode in einer Hartree-Fock bzw. Hybrid-\ac{dft} Rechnung verwendet, so wird der Austauschbeitrag unabhängig vom Coulombbeitrag berechnet. Für ersteren kann jedoch eine härtere Integralabschätzung angewendet werden, als für den Coulombbeitrag. Aus diesem Grund wurden die Integralabschätzungen aus der Routine \texttt{shloop\_k}, welche ungestörten Austauschmatrixelemente in einer \ac{scf} oder während der \ac{cphf}-Iterationen berechnet, in die Routine \texttt{csloop} übertragen. Auf diese Weise kann die Berechnung kleiner bzw. später verschwindender Matrixelemente vermieden werden. 
+Wird die \ac{ri} bzw. \ac{marij}-Methode in einer Hartree-Fock bzw. Hybrid-\ac{dft} Rechnung verwendet, so wird der Austauschbeitrag unabhängig vom Coulombbeitrag berechnet. Für ersteren kann jedoch eine effizientere Integralabschätzung\supercite{ochsenfeld1998linear} angewendet werden, als für den Coulombbeitrag. Aus diesem Grund wurden die Integralabschätzungen aus der Routine \texttt{shloop\_k}, welche ungestörten Austauschmatrixelemente in einer \ac{scf} oder während der \ac{cphf}-Iterationen berechnet, in die Routine \texttt{csloop} übertragen. Auf diese Weise kann die Berechnung kleiner bzw. später verschwindender Matrixelemente vermieden werden. Des Weiteren wurde die Routine \texttt{shloop}, welche in der Routine \texttt{cpscf} zur Berechnung der ungestörten Zweielektronenintegrale gerufen wird, durch die Routine \texttt{hf\_k} ersetzt. Das ist darin begründet, dass die Spur des Produkts der symmetrischen Coulombmatrix und der antisymmetrischen Dichtematrix verschwindet, und daher wird der Coulombbeitrag an dieser Stelle nicht mehr benötigt. Lediglich der Austauschbeitrag muss berechnet werden, wofür die Routine \texttt{hf\_k} optimiert ist. Beim iterativen Lösen der \ac{cphf}-Gleichungen kann zusätzlich durch Bilden von Differenzdichten (aus der aktuellen und vorherigen Iteration) profitiert werden. 
 
 \bigskip
 Neben einer effizienten Programmierung und dem Einführen von Näherungen wie beispielsweise bei der \ac{ri} bzw. \ac{marij}-Methode, kann die Wartezeit des Nutzers auch durch eine Parallelisierung des Programmcodes reduziert werden. Dies ist insofern von besonderer Bedeutung, dass heutige Computer immer mehr CPUs zur Verfügung haben. Selbst in gewöhnlichen Desktop PCs oder Notebooks finden sich häufig mindestens 4 CPUs. Aus diesem Grund wurden die zeitaufwändigsten Routinen im \texttt{mpshift} Modul mit OpenMP\supercite{dagum1998openmp} in Zusammenarbeit mit Fabian Mack parallelisiert. Im Einzelnen betrifft dies die Routinen \texttt{becke}, \texttt{csloop}, \texttt{cslp3\_omp}, \texttt{csplop},\texttt{shloop\_k} \texttt{p3loop} und \texttt{pploop}. Die Routinen \texttt{csplop}, \texttt{p3loop} und \texttt{pploop} besitzen üblicherweise folgende grundlegende Schleifenstruktur.\\

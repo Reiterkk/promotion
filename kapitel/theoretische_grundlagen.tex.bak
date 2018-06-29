@@ -941,7 +941,7 @@ mit
 \nabla \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=\frac{\iu}{2c}\left[\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\cdot\nabla\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)+\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\left(\vec{B}\times\vec{R}_{\mu\nu}\right)^{B_\beta}\right]
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{eq:mggadb}
 \begin{aligned}
 &\left[\left(\iu\nabla +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\nabla+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]
 ^{B_\beta}=\frac{\iu}{4c}\left[\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\nabla\chi_{\mu}^{\vec{B}=0}\nabla\chi_{\nu}^{\vec{B}=0}\right.\\
