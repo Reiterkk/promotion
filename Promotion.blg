@@ -1,20 +1,20 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Promotion.blg'
 [37] biber-MSWIN64:313> INFO - === 
-[66] Biber.pm:371> INFO - Reading 'Promotion.bcf'
-[178] Biber.pm:857> INFO - Found 71 citekeys in bib section 0
+[65] Biber.pm:371> INFO - Reading 'Promotion.bcf'
+[174] Biber.pm:857> INFO - Found 71 citekeys in bib section 0
 [197] Biber.pm:3976> INFO - Processing section 0
-[214] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[220] bibtex.pm:1500> INFO - LaTeX decoding ...
+[216] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[222] bibtex.pm:1500> INFO - LaTeX decoding ...
 [377] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
 [391] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
 [393] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
-[826] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
-[829] Utils.pm:193> WARN - I didn't find a database entry for 'roothaanhall' (section 0)
-[897] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[897] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[898] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[898] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[949] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
-[978] bbl.pm:720> INFO - Output to Promotion.bbl
-[978] Biber.pm:110> INFO - WARNINGS: 4
+[819] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
+[822] Utils.pm:193> WARN - I didn't find a database entry for 'roothaanhall' (section 0)
+[883] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[883] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[883] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[884] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[934] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
+[962] bbl.pm:720> INFO - Output to Promotion.bbl
+[962] Biber.pm:110> INFO - WARNINGS: 4
