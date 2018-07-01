@@ -21,7 +21,7 @@ wobei $\zeta$ der Exponent der Basisfunktion ist, können die Abgeleiteten Integ
 \section{Die RI-Methode für chemische Abschirmungskonstanten}\label{ri}
 Die \ac{ri}-Näherung stellt in der \ac{scf}-Prozedur ein bewährtes Näherungsverfahren zur Berechnung der Zweielektronenintegrale dar. Diese setzen sich aus dem Coulombterm und dem Austauschterm zusammen und deren Berechnung ist der zeitaufwändigste Schritt während des Verfahrens. Insbesondere der Coulombterm lässt sich durch das Anwenden der \ac{ri}-Näherung deutlich effizienter berechnen. Dies gilt bereits für Basissätze von \textit{double}-$\zeta$ Qualität und wird für größere Basissätze noch effizienter. Prinzipiell kann die Näherung auch für den Austauschterm angewendet werden, die Rechenzeiten verkürzen sich jedoch erst deutlich bei größeren Basissätzen ab \textit{quadruple}-$\zeta$ Qualität. Wird nur der Coulombterm oder nur der Austauschbeitrag angenähert, so wird von \ac{ri}-J oder \ac{ri}-K gesprochen, bzw. \ac{ri}-JK wenn die Näherung für beide Terme angewendet wird. 
 
-Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der abgeleiteten Zweielektronenintegrale zeitbestimmend. Dies gilt insbesondere dann, wenn reine \ac{dft}-Funktionale (d.h. keine Hybrid-Funktionale mit Hartree-Fock-Austausch) verwendet werden, da für sie im Rahmen der \textit{uncoupled}-\ac{dft} keine \ac{cphf}-Gleichungen gelöst werden müssen. Die \ac{ri}-Näherung lässt sich auch auf die abgeleiteten Zweielektronenintegrale übertragen, wobei die Näherung in dieser Arbeit lediglich auf den abgeleiteten Coulombterm übertragen wird. Das getrennte Berechnen der Coulomb- und Austauschterme hat weiterhin den Vorteil, dass für die konventionelle Berechnung des Austauschs eine effizientere Integralabschätzung angewendet werden kann. Dies ist durch den schnelleren Abfall des Austauschs im Vergleich zur Coulombwechselwirkung begründet. Folglich kann damit durch Anwenden der \ac{ri}-J-Näherung auch der Austausch effizienter Berechnet werden. Weiteres dazu wird in Kapitel \ref{paraopt} erläutert. 
+Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der abgeleiteten Zweielektronenintegrale zeitbestimmend. Dies gilt insbesondere dann, wenn reine \ac{dft}-Funktionale (d.h. keine Hybrid-Funktionale mit Hartree-Fock-Austausch) verwendet werden, da für sie im Rahmen der \textit{uncoupled}-\ac{dft} keine \ac{cphf}-Gleichungen gelöst werden müssen. Die \ac{ri}-Näherung lässt sich auch auf die abgeleiteten Zweielektronenintegrale übertragen, wobei die Näherung in dieser Arbeit lediglich auf den abgeleiteten Coulombterm übertragen wird. Das getrennte Berechnen der Coulomb- und Austauschterme hat weiterhin den Vorteil, dass für die konventionelle Berechnung des Austauschs eine effizientere Integralabschätzung angewendet werden kann. Dies ist durch den schnelleren Abfall des Austauschs im Vergleich zur Coulombwechselwirkung begründet. Folglich kann damit durch Anwenden der \ac{ri}-J-Näherung auch der Austausch effizienter berechnet werden. Weiteres dazu wird in Kapitel \ref{paraopt} erläutert. 
 	\subsection{Theorie}
 	An dieser Stelle sollen zunächst die grundlegende Idee der Näherung und die daraus resultierenden Formeln aus \supercite{vahtras1993integral} wiedergegeben werden. Im Anschluss daran folgt die Übertragung auf die nach den Komponenten des Magnetfeldes abgeleiteten Coulombintegrale. 
 	
@@ -84,7 +84,7 @@ Auch bei der Berechnung chemischer Abschirmungskonstanten ist die Berechnung der
 	    \item[\texttt{riprep}:] Routine zur Vorbereitung der notwendigen Größen und Felder für die Berechnung von $J_{\mu\nu}^{B\beta ,\textrm{RI}}$ mit der \ac{ri}-Näherung. 
 	    \item[\texttt{lp2sym}:] Berechnung der $\left(P\vert Q\right)$-Matrix.
 	    \item[\texttt{sichol}:] Cholesky-Zerlegung der $\left(P\vert Q\right)$-Matrix, da für die spätere Verarbeitung nicht explizit die Inverse $\left(P\vert Q\right)^{-1}$-Matrix berechnet wird.
-	    \item[\texttt{twoder}:] Treiberroutine zur Berechnung von $J_{\mu\nu}^{B\beta ,\textrm{RI}}$. Es wird zunächst die intermediäre Größe $\Gamma_P$ aus der Cholesky-Zerlegung von $\left(P\vert Q\right)$ und aus $\Gamma_Q$ (siehe \texttt{lpdrc1}) berechnet und im Anschluss folgt die eigentliche Berechnung von $J_{\mu\nu}^{B\beta ,\textrm{RI}}$.
+	    \item[\texttt{twoder}:] Treiberroutine zur Berechnung von $J_{\mu\nu}^{B_\beta ,\textrm{RI}}$. Es wird zunächst die intermediäre Größe $\Gamma_P$ aus der Cholesky-Zerlegung von $\left(P\vert Q\right)$ und aus $\Gamma_Q$ (siehe \texttt{lpdrc1}) berechnet und im Anschluss folgt die eigentliche Berechnung von $J_{\mu\nu}^{B_\beta ,\textrm{RI}}$.
 	    \item[\texttt{lpdrc1}:] Berechnung der Dreizentrenintegrale. Diese werden direkt mit der Dichtematrix kontrahiert, sodass die Größe $\Gamma_Q=\sum_{\kappa\lambda}D_{\kappa\lambda}\left(Q\vert\chi_\kappa\chi_\lambda\right)$ erhalten wird.
 	    \item[\texttt{cslp3\_omp}:] Übergeordnete Routine zur Unterscheidung zwischen sequentieller und paralleler Ausführung des Moduls.
 	    \item[\texttt{cslp3}:] Berechnung der Abgeleiteten Dreizentrenintegrale $\left(\left.\overline{\chi_\mu\chi_\nu}\right\vert P\right)$. Schleife über alle Schalentripel $i,j,k$.
@@ -138,25 +138,25 @@ Zur Gewährleistung der Eichinvarianz bei der Berechnung chemischer Abschirmungs
 
 	\begin{equation}\label{eq:multipoledb}
 	\begin{aligned}
-	\left.\frac{\partial \Omega^Q_{lm}}{\partial B_\beta}\right\vert_{\vec{B}=0}=&\Omega^{Q,B_\beta}_{lm}=\frac{\iu}{2c}\sum_{\mu,\nu \in Q}D_{\mu\nu}\int\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0} O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\diff \vec{r}\\
-	=&\frac{\iu}{2c}\sum_{\mu,\nu \in Q}\left(\vec{R}_{\mu}\times\vec{R}_{\nu}\right)_\beta D_{\mu\nu}\int\chi_\mu^{\vec{B}=0}O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\diff\vec{r}\\
-	&+\frac{\iu}{2c}\sum_{\mu,\nu \in Q}D_{\mu\nu}\left(\vec{R}_{\mu\nu}\times\int\vec{r}_{\mu}\chi_\mu^{\vec{B}=0}O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\diff\vec{r}\right)_\beta .
+	\left.\frac{\partial \Omega^Q_{lm}}{\partial B_\beta}\right\vert_{\vec{B}=0}=&\Omega^{Q,B_\beta}_{lm}=\frac{\iu}{2c}\sum_{\mu,\nu \in Q}D_{\mu\nu}\int\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0} O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\Diff3 \vec{r}\\
+	=&\frac{\iu}{2c}\sum_{\mu,\nu \in Q}\left(\vec{R}_{\mu}\times\vec{R}_{\nu}\right)_\beta D_{\mu\nu}\int\chi_\mu^{\vec{B}=0}O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\Diff3\vec{r}\\
+	&+\frac{\iu}{2c}\sum_{\mu,\nu \in Q}D_{\mu\nu}\left(\vec{R}_{\mu\nu}\times\int\vec{r}_{\mu}\chi_\mu^{\vec{B}=0}O_{lm}(\vec{r}-\vec{Q})\chi_{\nu}^{\vec{B}=0}\Diff3\vec{r}\right)_\beta .
 	\end{aligned}
 	\end{equation}
 	Dieser Ausdruck wird schließlich in Gleichung (\ref{eq:marijexpansion}) eingesetzt, wodurch der durch Multipolmomente genäherte Beitrag für den Coulombterm erhalten wird. Zur Berücksichtigung der \ac{marij} Beiträge wurde die Routine \texttt{twoder} um den Aufruf der Modifizierten Routine \texttt{fmmlpdrc2} erweitert. Deren Funktion sowie davon gerufener Unterroutinen sind im Folgenden erläutert. Eine schematische Darstellung der wichtigsten Routinen zur Berechnung der \ac{marij} Beiträge für chemische Abschirmungskonstanten ist in Abbildung \ref{abb:programmstrukur_marij} gezeigt.
-	\begin{itemize}[leftmargin=68pt]
-	\item[\texttt{initmulopt}:]
-	\item[\texttt{auxmaxmom}:]
-	\item[\texttt{extdef}:]
-	\item[\texttt{fmmlpdrc1}:]
-	\item[\texttt{fmmlpdrc2}:]
-	\item[\texttt{auxmom}:]
-	\item[\texttt{mktayaux}:]
-	\item[\texttt{csmunumom}:]
-	\item[\texttt{cssphmom}:]
-	\item[\texttt{lsprim}:]
-	\item[\texttt{cshorsph}:]
-	\item[\texttt{cscross}:]
+	\begin{itemize}[leftmargin=70pt]
+	\item[\texttt{initmulopt}:] Initialisierung für die Multipolnäherung. Sofern im \texttt{control}-File Optionen spezifiziert wurden, werden sie an dieser Stelle eingelesen und ersetzen die Standardwerte.
+	\item[\texttt{auxmaxmom}:] Bestimmung der maximalen Drehimpulsquantenzahl in den Auxiliarbasisfunktionen.
+	\item[\texttt{extdef}:] Bestimmung der Multipolmomentzentren für das Schalenpaar zweier Basisfunktionen.
+	\item[\texttt{fmmlpdrc1}:] Berechnung des Fernfeld Beitrages zu $\Gamma_Q$ in der Multipolnäherung.
+	\item[\texttt{fmmlpdrc2}:] Berechnung des Fernfeld Beitrages zur Coulombmatrix in der Multipolnäherung.
+	\item[\texttt{auxmom2}:] Berechnung der Multipolmomente für die Auxiliarbasisfunktionen und anschließende Kontraktion mit den Elementen von $\Gamma_P$.
+	\item[\texttt{mktayaux}:] Berechnung der Koeffizienten der lokalen Taylor-Entwicklung für die Auxiliarschalen.
+	\item[\texttt{csmunumom}:] Für die Berechnung von chemischen Abschirmungskonstanten modifizierte Version von \texttt{munumom2}. Hier erfolgt die Berechnung des Fernfeld Beitrages zur Coulombmatrix in der Multipolnäherung durch Kontraktion der Taylor-Koeffizienten der Auxiliarbasisfunktionen mit den Multipolmomenten der Schalenpaare zweier Basisfunktionen.
+	\item[\texttt{cssphmom}:] Für die Berechnung von chemischen Abschirmungskonstanten modifizierte Version von \texttt{sphmom}. Berechnung der Multipolintegrale.
+	\item[\texttt{lsprim}:] Berechnung der Multipolintegrale für die primitiven Basisfunktionen $\int s O_{lm} s\Diff3\vec{r}$ bis $\int s O_{lm} l_{ij+2} \Diff3\vec{r}$ (vertikale Rekursion), wobei $l_{ij+2}$ die Summe der Drehimpulsquantenzahlen der $i$- und $j$-Schale $+2$ ist.
+	\item[\texttt{cshorsph}:] Für die Berechnung von chemischen Abschirmungskonstanten modifizierte Version von \texttt{horsph}. Berechnung aller benötigten Integrale  $\int l_i O_{lm} l_j\Diff3\vec{r}$ durch horizontale Rekursion.
+	\item[\texttt{cscross}:] Berechnung der Kreuzproduktterme aus den einzelnen Integralen um den vollständigen Beitrag aus der Multipolnäherung für die Coulombmatrix zu erhalten.
 	\end{itemize}
 	
 \begin{figure}[ht!]

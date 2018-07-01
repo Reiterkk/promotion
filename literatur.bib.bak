@@ -897,3 +897,69 @@ howpublished={ \url{http://gnuplot.sourceforge.net/} }
   year={2012},
   publisher={Wiley Online Library}
 }
+
+%d-cosmo-rs
+@article{sinnecker2006calculation,
+  title={Calculation of solvent shifts on electronic g-tensors with the conductor-like screening model (COSMO) and its self-consistent generalization to real solvents (Direct COSMO-RS)},
+  author={Sinnecker, Sebastian and Rajendran, Arivazhagan and Klamt, Andreas and Diedenhofen, Michael and Neese, Frank},
+  journal=jpca,
+  volume={110},
+  number={6},
+  pages={2235--2245},
+  year={2006},
+  publisher={ACS Publications}
+}
+@article{klamt2011cosmo,
+  title={The COSMO and COSMO-RS solvation models},
+  author={Klamt, Andreas},
+  journal=wire,
+  volume={1},
+  number={5},
+  pages={699--709},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+@article{renz2012reliable,
+  title={Reliable Quantum Chemical Prediction of the Localized/Delocalized Character of Organic Mixed-Valence Radical Anions. From Continuum Solvent Models to Direct-COSMO-RS},
+  author={Renz, Manuel and Kess, Martin and Diedenhofen, Michael and Klamt, Andreas and Kaupp, Martin},
+  journal=jctc,
+  volume={8},
+  number={11},
+  pages={4189--4203},
+  year={2012},
+  publisher={ACS Publications}
+}
+%cosmo-rs
+@article{klamt1995conductor,
+  title={Conductor-like screening model for real solvents: a new approach to the quantitative calculation of solvation phenomena},
+  author={Klamt, Andreas},
+  journal=jpc,
+  volume={99},
+  number={7},
+  pages={2224--2235},
+  year={1995},
+  publisher={ACS Publications}
+}
+@article{klamt1998refinement,
+  title={Refinement and parametrization of COSMO-RS},
+  author={Klamt, Andreas and Jonas, Volker and B{\"u}rger, Thorsten and Lohrenz, John CW},
+  journal=jpca,
+  volume={102},
+  number={26},
+  pages={5074--5085},
+  year={1998},
+  publisher={ACS Publications}
+}
+@article{eckert2002fast,
+  title={Fast solvent screening via quantum chemistry: COSMO-RS approach},
+  author={Eckert, Frank and Klamt, Andreas},
+  journal={AIChE Journal},
+  volume={48},
+  number={2},
+  pages={369--385},
+  year={2002},
+  publisher={Wiley Online Library}
+}
+@misc{cosmotherm,
+title ={COSMO\textit{therm}, Version C3.0, Release 17.01; COSMO\textit{logic} GmbH \& Co. KG, \textit{http://www.cosmologic.de}}
+}
