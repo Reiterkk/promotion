@@ -2079,6 +2079,7 @@
     <bcf:citekey order="82">gnuplot</bcf:citekey>
     <bcf:citekey order="83">deglmann2002efficient</bcf:citekey>
     <bcf:citekey order="84">mack2017</bcf:citekey>
+    <bcf:citekey order="85">reiter2017calculation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -2924,6 +2924,47 @@
       \field{title}{Gnuplot 4.2: an interactive plotting program}
       \field{year}{2009}
     \endentry
+    \entry{reiter2017calculation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e6414e3a598c8a19c2402a1f6530086f}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5d57b3a7d829c9f97ccfc5c733e74f25}{%
+           family={Mack},
+           familyi={M\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{dbd4b4664b69770caec9ee264cd43329}
+      \strng{fullhash}{dbd4b4664b69770caec9ee264cd43329}
+      \strng{bibnamehash}{dbd4b4664b69770caec9ee264cd43329}
+      \strng{authorbibnamehash}{dbd4b4664b69770caec9ee264cd43329}
+      \strng{authornamehash}{dbd4b4664b69770caec9ee264cd43329}
+      \strng{authorfullhash}{dbd4b4664b69770caec9ee264cd43329}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Theory Comput.}
+      \field{number}{1}
+      \field{title}{Calculation of magnetic shielding constants with meta-GGA functionals employing the multipole-accelerated resolution of the identity: Implementation and assessment of accuracy and efficiency}
+      \field{volume}{14}
+      \field{year}{2017}
+      \field{pages}{191\bibrangedash 197}
+      \range{pages}{7}
+    \endentry
   \enddatalist
   \missing{roothaanhall}
 \endrefsection
