@@ -259,7 +259,7 @@ Wie bereits in Kapitel \ref{kap:ecps} erwähnt, lassen sich für Atome mit \acp{
 	\centering
 	\includegraphics[width=0.6\textwidth]{vcdintro}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[\ac{ir} und \ac{vcd} Spektren von (\textit{R})- und (\textit{S})-Methyloxiran]{Keilstrichformel von (\textit{R})[blau]- und (\textit{S})[rot]-Methyloxiran (a), gemeinsames \ac{ir} Spektrum (b) und unterschiedliche \ac{vcd} Spektren (c).}
+	\captionsetup{font=small, labelfont=bf}\caption[\ac{ir} und \ac{vcd} Spektren von (\textit{R})- und (\textit{S})-Methyloxiran]{Keilstrichformel von (\textcolor{myblue}{\textit{R}})- und (\textcolor{myred}{\textit{S}})-Methyloxiran (a), simuliertes gemeinsames \ac{ir} Spektrum (b) und die jeweils simulierten \ac{vcd} Spektren (c).}
 \label{abb:vcdintro}
 \end{figure}
 	\subsection{Theorie}
@@ -398,16 +398,16 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 	\subsection{Testrechnungen}
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{irppy3}
+	\includegraphics[width=0.5\textwidth]{irppy3}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[]{}
+	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von Ir(ppy)$_3$]{Abbildung von Ir(ppy)$_3$, ppy=2-Phenylpyridin (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau und Iridium=cyan).}
 \label{abb:irppy3}
 \end{figure}
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{irppy3_vcd}
+	\includegraphics[width=0.75\textwidth]{irppy3_vcd}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[]{}
+	\captionsetup{font=small, labelfont=bf}\caption[Simulierte \ac{vcd} Spektren von Ir(ppy)$_3$]{Simulierte \ac{vcd} Spektren von Ir(ppy)$_3$ für die folgenden Funktional und Basissatz Kombinationen: BP86/def2-TZVP, BP86/def2-SV(P), B3LYP/def2-TZVP und B3LYP/def2-SV(P). Zur Verbreiterung der Linien wurden Lorentzkurven verwendet. Die Halbwertsbreite beträgt \unit[4]{cm$^{-1}$}.}
 \label{abb:irppy3_vcd}
 \end{figure}
 	
@@ -422,16 +422,16 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{cpa_vcd}
+	\includegraphics[width=0.75\textwidth]{cpa_vcd}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[\ac{vcd} Spektren von \ac{cpa}]{\ac{vcd} Spektren von \ac{cpa}.}
+	\captionsetup{font=small, labelfont=bf}\caption[Simulierte \ac{vcd} Spektren von \ac{cpa}]{Simulierte \ac{vcd} Spektren von \ac{cpa} für die folgenden Funktional und Basissatz Kombinationen: BP86/def2-TZVP, BP86/def2-SV(P), B3LYP/def2-TZVP und B3LYP/def2-SV(P) (a). Zur Verbreiterung der Linien wurden Lorentzkurven verwendet. Die Halbwertsbreite beträgt \unit[4]{cm$^{-1}$}. Das experimentelle Spektrum (b) wurde aus Referenz \cite{brotin2006vibrational} entnommen.}
 \label{abb:cpa_vcd}
 \end{figure}
 
 \begin{table}\label{tab:vcdrechenzeit}
 \captionsetup{tablewithin = chapter}
 \captionsetup{font=small, labelfont=bf}
-\captionabove[Rechenzeiten für \ac{vcd} Spektren]{.}
+\captionabove[Rechenzeiten für \ac{vcd} Spektren]{Rechenzeiten in Stunden für Ir(ppy)$_3$ und \ac{cpa} für unterschiedliche Einstellungen der Rechenparameter. $N_{\textrm{CPU}}$ entspricht der Anzahl an verwendeten CPUs für den \texttt{aoforce} Schritt. Die Berechnungen wurden auf einem Intel\textregistered Xeon\textregistered Prozessor E5-2687W v2, 3.4 GHz durchgeführt.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{ccccccccc}
 \hline \hline
@@ -472,9 +472,9 @@ BP86 & SV(P) & 1032 & $D_3$ & 4 & 1.21 & 0.04 & 3.65 & 1.17
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{carboncluster_vcd}
+	\includegraphics[width=0.75\textwidth]{carboncluster_vcd}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[\ac{vcd} Spektren von ikosaedrischen Kohlenstoffclustern]{\ac{vcd} Spektren von ikosaedrischen Kohlenstoffclustern mit \textit{I}- aber nicht \textit{I}$_\textrm{h}$-Symmetrie.}
+	\captionsetup{font=small, labelfont=bf}\caption[Simulierte \ac{vcd} Spektren von ikosaedrischen Kohlenstoffclustern]{Simulierte \ac{vcd} Spektren von C$^{2+}_{140}$, C$^{2+}_{260}$, C$^{2+}_{380}$, C$_{420}$ und C$^{2+}_{620}$ mit BP86/def2-SV(P). Zur Verbreiterung der Linien wurden Lorentzkurven verwendet. Die Halbwertsbreite beträgt \unit[4]{cm$^{-1}$}.}
 \label{abb:carboncluster_vcd}
 \end{figure}
 
@@ -482,7 +482,7 @@ BP86 & SV(P) & 1032 & $D_3$ & 4 & 1.21 & 0.04 & 3.65 & 1.17
 	\centering
 	\includegraphics[width=0.6\textwidth]{vcdskalierung}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Skalierung von \texttt{mpshift} und \texttt{aoforce}]{Skalierungsverhalten von \texttt{mpshift} und \texttt{aoforce} in \ac{vcd} Rechnungen.}
+	\captionsetup{font=small, labelfont=bf}\caption[Skalierung von \texttt{mpshift} und \texttt{aoforce}]{ Logarithmische Auftragung der CPU Rechenzeit für die beiden Module \texttt{aoforce} (Sterne) und \texttt{mpshift} (Quadrate) gegen die Anzahl der Kohlenstoffatome in den ikosaedrischen Kohlenstoffclustern. Die Gesamtrechenzeiten (\texttt{mpshift} + \texttt{aoforce}) betragen 4.7 / 30.2 / 117.5 / 169.7 / 856.8 für die Cluster mit 140 / 260 / 380 / 420 / 620 Kohlenstoffatomen. Eine lineare Anpassung liefert eine Steigung von 2.27 $\pm$ 0.05 für \texttt{mpshift} und 3.49 $\pm$ 0.16 für \texttt{aoforce}.}
 \label{abb:vcdskalierung}
 \end{figure}
 	

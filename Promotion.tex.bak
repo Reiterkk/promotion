@@ -1,4 +1,4 @@
-ll \documentclass[
+\documentclass[
   paper=A4, 		% Stellt auf A4-Papier ein
   pagesize, 		% Diese Option reicht die Papiergröße an alle Ausgabeformate weiter
   DIV=12, 		% Für einen guten Satzspiegel
@@ -236,6 +236,7 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 \usepackage{color}
 \definecolor {myred}{rgb}{0.9,0.15,0.10}
 \definecolor {mygreen}{rgb}{0.10,0.5,0.15}
+\definecolor {myblue}{rgb}{0.10,0.15,0.9}
 % ---------------------------------------------------------------
 
 % Hier startet der Inhalt

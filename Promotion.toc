@@ -87,28 +87,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{77}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{82}{section.5.4}
+\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{85}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{83}{chapter.6}
+\contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{86}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Anwendungen}{84}{chapter.7}
+\contentsline {chapter}{\numberline {7}Anwendungen}{87}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{84}{section.7.1}
+\contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{87}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}[SIMesPGa\textit {t}Bu$_2$]$_2$, [SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl] und [K(SIMesP)$_3$Al\textit {t}Bu]}{84}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}[SIMesPGa\textit {t}Bu$_2$]$_2$, [SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl] und [K(SIMesP)$_3$Al\textit {t}Bu]}{87}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}[Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{84}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.2}[Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{87}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}[Co\spacefactor \@m {}Sn$_6$Sb$_6$]$^{3-}$}{84}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.3}[Co\spacefactor \@m {}Sn$_6$Sb$_6$]$^{3-}$}{87}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{87}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{90}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{88}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{91}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{89}{chapter*.54}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{92}{chapter*.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{90}{chapter*.56}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{93}{chapter*.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{91}{section*.57}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{94}{section*.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{93}{chapter*.59}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{96}{chapter*.59}

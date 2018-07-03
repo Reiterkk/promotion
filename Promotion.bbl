@@ -2924,6 +2924,52 @@
       \field{title}{Gnuplot 4.2: an interactive plotting program}
       \field{year}{2009}
     \endentry
+    \entry{brotin2006vibrational}{article}{}
+      \name{author}{4}{}{%
+        {{hash=41daac2d6c1b30f2959dc020c3dc0c5d}{%
+           family={Brotin},
+           familyi={B\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7c5bbd4e8d81a76837a5ce89490dfa4d}{%
+           family={Cavagnat},
+           familyi={C\bibinitperiod},
+           given={Dominique},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ce7704211ac72d05b94d18f13a2373fb}{%
+           family={Dutasta},
+           familyi={D\bibinitperiod},
+           given={Jean-Pierre},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=c1358a0af8116dea05c7709b7e9c8385}{%
+           family={Buffeteau},
+           familyi={B\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{396f235bf3fad5b63ff721756cfdcba9}
+      \strng{fullhash}{538f120af419aded7f327f880610b839}
+      \strng{bibnamehash}{538f120af419aded7f327f880610b839}
+      \strng{authorbibnamehash}{538f120af419aded7f327f880610b839}
+      \strng{authornamehash}{396f235bf3fad5b63ff721756cfdcba9}
+      \strng{authorfullhash}{538f120af419aded7f327f880610b839}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{16}
+      \field{title}{Vibrational circular dichroism study of optically pure cryptophane-A}
+      \field{volume}{128}
+      \field{year}{2006}
+      \field{pages}{5533\bibrangedash 5540}
+      \range{pages}{8}
+    \endentry
     \entry{reiter2017calculation}{article}{}
       \name{author}{3}{}{%
         {{hash=e6414e3a598c8a19c2402a1f6530086f}{%

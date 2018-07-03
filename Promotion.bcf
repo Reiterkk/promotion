@@ -2077,9 +2077,11 @@
     <bcf:citekey order="80">nicu2008vibrational</bcf:citekey>
     <bcf:citekey order="81">haser1991molecular</bcf:citekey>
     <bcf:citekey order="82">gnuplot</bcf:citekey>
-    <bcf:citekey order="83">deglmann2002efficient</bcf:citekey>
-    <bcf:citekey order="84">mack2017</bcf:citekey>
-    <bcf:citekey order="85">reiter2017calculation</bcf:citekey>
+    <bcf:citekey order="83">brotin2006vibrational</bcf:citekey>
+    <bcf:citekey order="84">brotin2006vibrational</bcf:citekey>
+    <bcf:citekey order="85">deglmann2002efficient</bcf:citekey>
+    <bcf:citekey order="86">mack2017</bcf:citekey>
+    <bcf:citekey order="87">reiter2017calculation</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
