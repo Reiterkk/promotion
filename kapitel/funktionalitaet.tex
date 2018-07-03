@@ -255,6 +255,13 @@ Wie bereits in Kapitel \ref{kap:ecps} erwähnt, lassen sich für Atome mit \acp{
 \end{figure}
 	
 \section{Berechnung von Vibrational Circular Dichroism Spektren}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{vcdintro}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[\ac{ir} und \ac{vcd} Spektren von (\textit{R})- und (\textit{S})-Methyloxiran]{Keilstrichformel von (\textit{R})[blau]- und (\textit{S})[rot]-Methyloxiran (a), gemeinsames \ac{ir} Spektrum (b) und unterschiedliche \ac{vcd} Spektren (c).}
+\label{abb:vcdintro}
+\end{figure}
 	\subsection{Theorie}
 	Die im Experiment gemessenen Intensitäten der \ac{vcd}-Spektroskopie $I_n$ sind proportional zu den in quantenchemischen Rechnungen zugänglichen Rotationsstärken $R_n$. Letztere werden aus dem Skalaprodukt vom elektrischen und vom magnetischen Übergangsdipolmoment, $\vec{\mu}_n^{\,\text{el}}$ und $\vec{\mu}_n^{\,\text{mag}}$,  erhalten. Somit ergibt sich die \ac{vcd}-Intensität
 	\begin{equation}\label{eq:rotationsstaerke}
@@ -265,7 +272,7 @@ Wie bereits in Kapitel \ref{kap:ecps} erwähnt, lassen sich für Atome mit \acp{
 	\begin{equation}\label{eq:eludm}
 	  (\mu_n^{\text{el}})_\beta=\sqrt{\frac{\hbar}{\omega_n}}\sum_{K\alpha}P_{\alpha\beta}^K S_{K\alpha,n}
 	\end{equation}
-	\begin{equation}\label{eq:emagudm}
+	\begin{equation}\label{eq:magudm}
 	  (\mu_n^{\text{mag}})_\beta=-\sqrt{2\hbar^3\omega_n}\sum_{K\alpha}M_{\alpha\beta}^KS_{K\alpha,n}.
 	\end{equation}
 	Hierbei ist $I$ die Zählvariable für die Atomkerne, $\alpha$ und $\beta$ beschreiben kartesische Koordinaten, $\omega_n$ ist die Schwingungsfrequenz der $n$-ten Schwingung und $S_{I\alpha,n}$ ist die Transformationsmatrix von kartesichen zu Normalkoordinaten. Sowohl der sogenannte \ac{apt} (Gleichung (\ref{eq:apt})) als auch der sogenannte \ac{aat} (Gleichung (\ref{eq:aat})) lassen sich in einen elektronischen und einen Kernbeitrag aufteilen
@@ -386,7 +393,24 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 	Nur wenige chirale Moleküle besitzen eine Symmetrie. Sie gehören alle zu den Punktgruppen $C_{\textrm{n}}$, $D_{\textrm{n}}$, $T$, $O$ oder $I$ und besitzen damit nur Drehachsen als Symmetrieelemente. Die bereits bestehende Implementierung der Symmetrieausnutzung\supercite{haser1991molecular} für die Module \texttt{mpshift} und \texttt{aoforce} kann auch für die Berechnung von \ac{vcd} Spektren verwendet werden. Dabei ist jedoch zu beachten, dass die Symmetrieausnutzugn im Modul \texttt{mpshift} keine Punktgruppen mit reduziblen $e$-Darstellungen unterstützt, was die Punktgruppen $C_{\textrm{n>2}}$ und $T$ unter den chiralen Punktgruppen betrifft. In diesen Fällen werden die \ac{mo}-Koeffizienten nach $C_1$ transformiert und \texttt{mpshift} wird ohne Symmetrieausnutzung verwendet. Die $U_{pi}^{B_\beta}$ Koeffizienten werden in die \ac{cao}-Basis transformiert, bevor sie für die Weiterverarbeitung im Modul \texttt{aoforce} auf der Festplatte gespeichert werden. Letzteres unterstützt die volle Symmetrieausnuztung, was wichtig ist, in Anbetracht der Tatsache, dass dies den zeitbestimmenden Schritt darstellt. In \texttt{aoforce} erfolgt die Berechnung der $U_{pi}^{R_{K_\alpha}}$, die $U_{pi}^{B_\beta}$ werden von der Festplatte eingelesen und für die volle Symmetrieausnutzung in die \ac{sao}-Basis transformiert. Abschließend erfolgt die Berechnung der \ac{vcd}-Intensitäten. 
 	\subsection{GALLIER: Visualisierung von VCD Spektren}
 	Zur Visualisierung der berechneten \ac{vcd}-Intensitäten und um einen schnellen, ersten Eindruck vom \ac{vcd}-Spektrum zu verschaffen, wurde das Pythonskript \ac{gallier} erstellt. Die berechneten \ac{vcd}-Intensitäten und die korrespondierenden Frequenzen werden von dem Skript eingelesen und können im Anschluss daran mit Gauß- oder Lorentzförmigen Kurven verbreitert werden, wodurch ein simuliertes Spektrum erhalten wird. Der Benutzer hat dabei die Wahl ob nur die Intensitäten, nur das simulierte Spektrum oder beides visualisiert werden soll. Standardmäßig wird dafür die von \texttt{aoforce} ausgegebene Datei \texttt{vibspectrum} eingelesen, wodurch auch simultan (oder ausschließlich) das Infrarotspektrum des untersuchten Moleküls visualisiert werden kann. Außerdem besteht zusätzlich die Möglichkeit eine beliebige $x,y$-Datei einzulesen um ein beliebiges Spektrum zu simulieren. \ac{gallier} erzeugt dafür ein Eingabeskript für das Visualisierungsprogramm gnuplot\supercite{gnuplot}, sowie eine Datei mit den Rohdaten für jedes beliebige Visualisierungsprogramm. Die Halbwertsbreite sowie der zu zeichnende Bereich des Spektrums können direkt in \ac{gallier} ausgewählt werden.
+	
+	
 	\subsection{Testrechnungen}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{irppy3}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[]{}
+\label{abb:irppy3}
+\end{figure}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{irppy3_vcd}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[]{}
+\label{abb:irppy3_vcd}
+\end{figure}
+	
 	\ac{cpa}
 \begin{figure}[ht!]
 	\centering
@@ -398,10 +422,68 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 
 \begin{figure}[ht!]
 	\centering
+	\includegraphics[width=0.6\textwidth]{cpa_vcd}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[\ac{vcd} Spektren von \ac{cpa}]{\ac{vcd} Spektren von \ac{cpa}.}
+\label{abb:cpa_vcd}
+\end{figure}
+
+\begin{table}\label{tab:vcdrechenzeit}
+\captionsetup{tablewithin = chapter}
+\captionsetup{font=small, labelfont=bf}
+\captionabove[Rechenzeiten für \ac{vcd} Spektren]{.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ccccccccc}
+\hline \hline
+Funktional & Basis & $N_{\textrm{BF}}$ & Symmetrie & $N_{\textrm{CPU}}$ & Wall Zeit & \texttt{mpshift} & \texttt{aoforce} & \texttt{aoforce} \\ 
+ & & & & & & (CPU) & (CPU) & (wall)\\
+\hline
+ & & & & & & & & \\
+\multicolumn{9}{c}{Ir(ppy)$_3$, ppy=2-Phenylpyridin}\\
+B3LYP & TZVP & 1300 & $C_3$ & 1 & 166.09 & 4.91 & 161.05 & 161.18\\
+B3LYP & SV(P) & 577 & $C_3$ & 1 & 10.37 & 0.29 & 10.07 & 10.08\\
+B3LYP & SV(P) & 577 & $C_1$ & 1 & 16.68 & 0.29 & 16.27 & 16.39\\
+BP86  & TZVP & 1300 & $C_3$ & 1 & 17.49 & 0.89 & 16.59 & 16.60\\
+BP86 & SV(P) & 577 & $C_3$ & 1 & 2.17 & 0.08 & 2.09 & 2.09\\
+BP86 & SV(P) & 577 & $C_1$ & 1 & 4.45 & 0.08 & 4.36 & 4.37\\
+ & & & & & & & & \\
+
+\multicolumn{9}{c}{Cryptophane-A}\\
+B3LYP & TZVP & 2370 & $D_3$ & 4 & 92.1 & 2.58 & 352.70 & 89.47\\
+B3LYP & SV(P) & 1032 & $D_3$ & 4 & 5.67 & 0.14 & 21.30 & 5.53\\
+B3LYP & SV(P) & 1032 & $D_3$ & 1 & 19.24 & 0.14 & 18.94 & 19.10\\
+B3LYP & SV(P) & 1032 & $C_1$ & 4 & 22.93 & 0.80 & 86.09 & 22.13\\
+B3LYP & SV(P) & 1032 & $C_1$ & 1 & 105.87 & 0.80 & 104.98 & 105.07\\
+BP86 & TZVP & 2370 & $D_3$ & 4 & 11.16 & 0.45 & 34.53 & 10.71\\
+BP86 & TZVP & 2370 & $D_3$ & 1 & 34.18 & 0.45 & 33.36 & 33.73\\
+BP86 & TZVP & 2370 & $C_1$ & 4 & 48.16 & 2.70 & 174.58 & 45.46\\
+BP86 & TZVP & 2370 & $C_1$ & 1 & 180.2 & 2.70 & 177.22 & 177.50\\
+BP86 & SV(P) & 1032 & $D_3$ & 4 & 1.21 & 0.04 & 3.65 & 1.17
+\end{tabular}}
+\end{table}
+
+\begin{figure}[ht!]
+	\centering
 	\includegraphics[width=0.6\textwidth]{carboncluster}
 	\captionsetup{figurewithin = chapter}
 	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von ikosaedrischen Kohlenstoffclustern]{Abbildung von ikosaedrischen Kohlenstoffclustern mit \textit{I}- aber nicht \textit{I}$_\textrm{h}$-Symmetrie: C$^{2+}_{140}$ (a), C$^{2+}_{260}$ (b), C$^{2+}_{380}$ (c), C$_{420}$ (d) und C$^{2+}_{620}$ (e).}
 \label{abb:carboncluster}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{carboncluster_vcd}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[\ac{vcd} Spektren von ikosaedrischen Kohlenstoffclustern]{\ac{vcd} Spektren von ikosaedrischen Kohlenstoffclustern mit \textit{I}- aber nicht \textit{I}$_\textrm{h}$-Symmetrie.}
+\label{abb:carboncluster_vcd}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{vcdskalierung}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Skalierung von \texttt{mpshift} und \texttt{aoforce}]{Skalierungsverhalten von \texttt{mpshift} und \texttt{aoforce} in \ac{vcd} Rechnungen.}
+\label{abb:vcdskalierung}
 \end{figure}
 	
 \section{meta-GGA Funktionale}
