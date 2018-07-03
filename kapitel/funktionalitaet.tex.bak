@@ -256,16 +256,12 @@ Wie bereits in Kapitel \ref{kap:ecps} erwähnt, lassen sich für Atome mit \acp{
 	
 \section{Berechnung von Vibrational Circular Dichroism Spektren}
 	\subsection{Theorie}
-	Die im Experiment gemessenen Intensitäten der \ac{vcd}-Spektroskopie $I_n$ sind proportional zu den in quantenchemischen Rechnungen zugänglichen Rotationsstärken $R_n$. Letztere werden aus dem Skalaprodukt vom elektrischen/ und vom magnetischen Übergangsdipolmoment, $\vec{\mu}_n^{\,\text{el}}$ und $\vec{\mu}_n^{\,\text{mag}}$,  erhalten. Somit ergibt sich die \ac{vcd}-Intensität
-	\begin{equation}
 	  I_n\approx R_n = Im(\vec{\mu}_n^{\,\text{el}}\cdot\vec{\mu}_n^{\text{\,mag}})
 	\end{equation}
 	für einen Übergang aus dem Schwingungsgrundzustand in den angeregten Schwingungszustand $n$.\supercite{stephens1985theory,stephens1985vibrational} Im Rahmen der harmonishen Näherung sind das elektrische und das magnetische Übergangsdipolmoment gegeben durch\supercite{cheeseman1996ab,nicu2008vibrational}
 	
-	\begin{equation}
 	  (\mu_n^{\text{el}})_\beta=\sqrt{\frac{\hbar}{\omega_n}}\sum_{K\alpha}P_{\alpha\beta}^K S_{K\alpha,n}
 	\end{equation}
-	\begin{equation}
 	  (\mu_n^{\text{mag}})_\beta=-\sqrt{2\hbar^3\omega_n}\sum_{K\alpha}M_{\alpha\beta}^KS_{K\alpha,n}.
 	\end{equation}
 	Hierbei ist $I$ die Zählvariable für die Atomkerne, $\alpha$ und $\beta$ beschreiben kartesische Koordinaten, $\omega_n$ ist die Schwingungsfrequenz der $n$-ten Schwingung und $S_{I\alpha,n}$ ist die Transformationsmatrix von kartesichen zu Normalkoordinaten. Sowohl der sogenannte \ac{apt} (Gleichung (\ref{eq:apt})) als auch der sogenannte \ac{aat} (Gleichung (\ref{eq:aat})) lassen sich in einen elektronischen und einen Kernbeitrag aufteilen
@@ -279,7 +275,6 @@ Wie bereits in Kapitel \ref{kap:ecps} erwähnt, lassen sich für Atome mit \acp{
 	\begin{equation}
 	  N^K_{\alpha\beta}=eZ_K\delta_{\alpha\beta}
 	\end{equation}
-	\begin{equation}
 	  J^K_{\alpha\beta}=\iu\frac{eZ_K}{4\hbar c}\sum_K^{N_K}\varepsilon_{\alpha\beta\gamma}R^0_{K\gamma}
 	\end{equation}
 	ist trivial. $e$ ist die Elementarladung, $Z_K$ ist die Ladung des Kerns $K$ und $\delta_{\alpha\beta}$ ist das Kroneckerdelta. $c$ ist die Lichtgeschwindigkeit und $\varepsilon_{\alpha\beta\gamma}$ ist der Levi-Civita-Permutationstensor. Die Position des Kerns $K$ ist durch $R^0_{K\gamma}$ gegeben, wobei $\gamma$ für eine der drei kartesischen Raumkoordinaten steht und die hochgestellte $0$ symbolisiert die Auswertung in der Gleichgewichtsgeometrie.   
@@ -315,23 +310,19 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 	\end{equation}
 	
 	Analog ergeben sich die Ableitungen nach der $y$-
-	\begin{equation}
 	\left\langle\chi_\mu^{R_{K_\alpha}}\vert\chi_\nu^{B_y}\right\rangle=\frac{\iu}{2c}\left(R_{\nu x}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu z}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle\right)
 	\end{equation}
 	
 	und $z$-Komponente	
-	\begin{equation}
 	\left\langle\chi_\mu^{R_{K_\alpha}}\vert\chi_\nu^{B_z}\right\rangle=\frac{\iu}{2c}\left(R_{\nu y}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu x}\left\langle\chi_\mu^{R_{K_\alpha},\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle\right).
 	\end{equation}
 	Das zweite auftretende Integral (Term drei in Gleichung (\ref{eq:vcdaatelfinal})) ist für die einzelnen Komponenten gegeben durch	
-	\begin{equation}
 	\begin{aligned}
 	  \left\langle\chi_\mu\vert\chi_\nu^{B_x}\right\rangle&=\left.\left\langle\chi_\mu\left|\frac{\partial}{\partial B_x}\right.\chi_\nu\right\rangle\right|_{\vec{B}=0}=\left\langle\chi_\mu^{\vec{B}=0}\left|\frac{-\iu}{2c}\left(R_{\nu y}z-R_{\nu z}y\right)\right|\chi_\nu^{\vec{B}=0}\right\rangle\\
 	  &=\frac{\iu}{2c}\left(R_{\nu z}\left\langle\chi_\mu^{\vec{B}=0}\left|y\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu y}\left\langle\chi_\mu^{\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle\right),
 	\end{aligned}
 	\end{equation}
  
-		\begin{equation}
 	  \left\langle\chi_\mu\vert\chi_\nu^{B_y}\right\rangle=\frac{\iu}{2c}\left(R_{\nu x}\left\langle\chi_\mu^{\vec{B}=0}\left|z\right|\chi_\nu^{\vec{B}=0}\right\rangle-R_{\nu z}\left\langle\chi_\mu^{\vec{B}=0}\left|x\right|\chi_\nu^{\vec{B}=0}\right\rangle\right),
 	\end{equation}
 	
@@ -343,7 +334,6 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 
 	Die Integrale in den Gleichungen (\ref{eq:ddipx})-(\ref{eq:dipz}) lassen sich damit entsprechend durch eine Linearkombination von gewöhnlichen Dipolintegralen $\langle\chi_\mu\vert\vec{r}\vert\chi_\nu\rangle$ und nach den Kernkoodinaten abgeleiteten Dipolintegralen $\langle\chi_\mu^{R_{K_\alpha}}\vert\vec{r}\vert\chi_\nu\rangle$ ausdrücken. Diese werden bereits im Modul \texttt{aoforce} berechnet und müssen daher nur auf geeignete Weise kombiniert werden, um die nach den Komponenten des Magnetfeldes abgeleiteten Integrale zu erhalten. Mit den \ac{mo}-Koeffizienten lassen sich die Integrale in den Termen drei und vier aus der \ac{cao}-Basis in die \ac{mo}-Basis transformieren und zusammenfassen\supercite{nicu2008vibrational}
 	
-	\begin{equation}
 	\begin{aligned}
 	&\sum_{\mu,\nu=1}^{N_{\text{BF}}}\left[\sum_{p=1}^{N_{\text{MO}}}c_{\mu i}c_{\nu p}U_{ip}^{R_{K_\alpha}}\left\langle\chi_\mu\vert\chi_\nu^{B_{\beta}}\right\rangle+\sum_{p,q=1}^{N_{\text{MO}}}c_{\mu p}c_{\nu q}U_{ip}^{R_{K_\alpha}}U_{iq}^{B_\beta}\left\langle\chi_\mu\vert\chi_\nu\right\rangle\right]\\
 	&=\sum_{p=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}S_{ip}^{B_\beta}+\sum_{p,q=1}^{N_{\text{MO}}}U_{ip}^{R_{K_\alpha}}U_{iq}^{B_\beta}\delta_{pq}\\
@@ -353,24 +343,6 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 	\end{equation}
 	Die Abbildung \ref{abb:programmstrukur_vcd} zeigt wieder eine schematische Darstellung der wichtigsten Routinen für die Berechnung von \ac{vcd}-Spektren. Ihre genaue Funktion wird im folgenden erläutert. 
 \begin{itemize}
-	\item[\texttt{wrumunu}:]
-	\item[\texttt{scf2nd}:]
-	\item[\texttt{dipai}:]
-	\item[\texttt{dinumu}:]
-	\item[\texttt{dipdrv}:]
-	\item[\texttt{gocart}:]
-	\item[\texttt{dipsijxi}:]
-	\item[\texttt{rdumunu}:]
-	\item[\texttt{mijxidip}:]
-	\item[\texttt{dipuaixi}:]
-	\item[\texttt{maixidip}:]
-	\item[\texttt{vibro}:]
-	\item[\texttt{prtnpr}:]
-	\item[\texttt{wrtfrq}:]
-	\item[\texttt{vibfrq}:]
-	\item[\texttt{rotvib}:]
-	\item[\texttt{mkvcd}:]
-	\item[\texttt{prtram}:]
 \end{itemize}
 	
 	\begin{figure}[ht!]
@@ -387,6 +359,5 @@ Die Implementierung zur Berechnung von \ac{vcd}-Spektren lässt sich am Einfachs
 	\subsection{GALLIER: Visualisierung von VCD Spektren}
 	Zur Visualisierung der berechneten \ac{vcd}-Intensitäten und um einen schnellen, ersten Eindruck vom \ac{vcd}-Spektrum zu verschaffen, wurde das Pythonskript \ac{gallier} erstellt. Die berechneten \ac{vcd}-Intensitäten und die korrespondierenden Frequenzen werden von dem Skript eingelesen und können im Anschluss daran mit Gauß- oder Lorentzförmigen Kurven verbreitert werden, wodurch ein simuliertes Spektrum erhalten wird. Der Benutzer hat dabei die Wahl ob nur die Intensitäten, nur das simulierte Spektrum oder beides visualisiert werden soll. Standardmäßig wird dafür die von \texttt{aoforce} ausgegebene Datei \texttt{vibspectrum} eingelesen, wodurch auch simultan (oder ausschließlich) das Infrarotspektrum des untersuchten Moleküls visualisiert werden kann. Außerdem besteht zusätzlich die Möglichkeit eine beliebige $x,y$-Datei einzulesen um ein beliebiges Spektrum zu simulieren. \ac{gallier} erzeugt dafür ein Eingabeskript für das Visualisierungsprogramm gnuplot\supercite{gnuplot}, sowie eine Datei mit den Rohdaten für jedes beliebige Visualisierungsprogramm. Die Halbwertsbreite sowie der zu zeichnende Bereich des Spektrums können direkt in \ac{gallier} ausgewählt werden.
 \section{meta-GGA Funktionale}
-In Zusammenarbeit mit Fabian Mack wurde das \texttt{mpshift} Modul um die Möglichkeit erweitert, \ac{mgga}-Funktionale bei der Berechnung von chemischen Abschirmungskonstanten zu verwenden. Die eigentliche Implementierung erfolgte dabei im Wesentlichen durch Fabian Mack. Zunächst wurden dafür die niedrig skalierenden \ac{dft} Routinen in das Modul \texttt{mpshift} übertragen und für die Berechnung von chemischen Abschirmungskonstanten angepasst. Eine kurze Beschreibung dieser niedrig skalierenden Routinen ist in Referenz \cite{deglmann2002efficient} zu finden. Die zusätzlichen Terme die bei der Funktionalableitung nach den Komponenten des Magnetfeldes bei der Verwendung von \ac{mgga}-Funktionalen (sie Gleichung (\ref{eq:ymunudb}) bzw. (\ref{eq:mggadb}) auftreten, mussten neu programmiert werden. Dafür wurde die neue Routine \texttt{csmoper} angelegt. Im Detail ist die Implementierung sowie der Aufbau der Routine in Referenz \cite{mack2017} beschrieben.
 	
 	

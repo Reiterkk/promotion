@@ -1,4 +1,4 @@
-\documentclass[
+ll \documentclass[
   paper=A4, 		% Stellt auf A4-Papier ein
   pagesize, 		% Diese Option reicht die Papiergröße an alle Ausgabeformate weiter
   DIV=12, 		% Für einen guten Satzspiegel
@@ -284,6 +284,9 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 
 \chapter{Erweiterung der Funktionalität}\label{funktionalität}
 \input{kapitel/funktionalitaet}
+
+\chapter{Effizienz und Genauigkeit}\label{genauigkeit}
+\input{kapitel/effizienzundgenauigkeit}
 
 \chapter{Anwendungen}\label{anwendungen}
 \input{kapitel/anwendungen}
