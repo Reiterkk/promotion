@@ -305,6 +305,3 @@ Die äußeren beiden Schleifen laufen dabei über alle Schalen N$_{\texttt{Schal
 \texttt{\$OMP END DO}\\
 \texttt{\$OMP END PARALLEL}\\
 \\
-
-
-\section{Genauigkeit und Effizienz}\label{genauigkeit}

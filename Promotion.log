@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  3 JUL 2018 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  4 JUL 2018 13:17
 entering extended mode
 **./Promotion.tex
 (Promotion.tex
@@ -1538,7 +1538,11 @@ Package biblatex Info: ... file 'german.lbx' found.
 ("C:\Users\Kevin Reiter\AppData\Local\Programs\MiKTeX 2.9\tex\latex\biblatex\lb
 x\german.lbx"
 File: german.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-)) (Promotion.aux (intro/titel.aux) (intro/danksagung.aux))
+)) (Promotion.aux (intro/titel.aux)
+
+LaTeX Warning: Label `tab:cvhtab' multiply defined.
+
+(intro/danksagung.aux))
 \openout1 = `Promotion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
@@ -1850,7 +1854,12 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 
-])
+]
+Overfull \hbox (2.03773pt too wide) detected at line 114
+ \T1/lmr/bx/n/12 101
+ []
+
+)
 \tf@toc=\write9
 \openout9 = `Promotion.toc'.
 
@@ -3226,225 +3235,288 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2.
+(hyperref)                removing `superscript' on input line 2.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2.
 
+Package acronym Info: Label `acro:nhc' newly defined as it shall be overridden
+although it is yet undefined on input line 3.
+<./gfx/1.png, id=2097, 1505.625pt x 659.46375pt>
+File: ./gfx/1.png Graphic file (type png)
+<use ./gfx/1.png>
+Package pdftex.def Info: ./gfx/1.png  used on input line 6.
+(pdftex.def)             Requested size: 256.07745pt x 112.15765pt.
+<./gfx/2.png, id=2098, 1634.105pt x 695.59875pt>
+File: ./gfx/2.png Graphic file (type png)
+<use ./gfx/2.png>
+Package pdftex.def Info: ./gfx/2.png  used on input line 14.
+(pdftex.def)             Requested size: 256.07745pt x 109.00545pt.
+<./gfx/3.png, id=2099, 1317.92375pt x 1292.83pt>
+File: ./gfx/3.png Graphic file (type png)
+<use ./gfx/3.png>
+Package pdftex.def Info: ./gfx/3.png  used on input line 22.
+(pdftex.def)             Requested size: 256.07745pt x 251.20326pt.
+<./gfx/4.png, id=2100, 1346.02875pt x 903.375pt>
+File: ./gfx/4.png Graphic file (type png)
+<use ./gfx/4.png>
+Package pdftex.def Info: ./gfx/4.png  used on input line 30.
+(pdftex.def)             Requested size: 256.07745pt x 171.86359pt.
+<./gfx/5.png, id=2101, 895.345pt x 1241.63875pt>
+File: ./gfx/5.png Graphic file (type png)
+<use ./gfx/5.png>
+Package pdftex.def Info: ./gfx/5.png  used on input line 38.
+(pdftex.def)             Requested size: 213.3957pt x 295.9343pt.
+<./gfx/6.png, id=2102, 1285.80376pt x 839.135pt>
+File: ./gfx/6.png Graphic file (type png)
+<use ./gfx/6.png>
+Package pdftex.def Info: ./gfx/6.png  used on input line 46.
+(pdftex.def)             Requested size: 256.07745pt x 167.1198pt.
+<./gfx/7.png, id=2103, 1394.20876pt x 927.465pt>
+File: ./gfx/7.png Graphic file (type png)
+<use ./gfx/7.png>
+Package pdftex.def Info: ./gfx/7.png  used on input line 54.
+(pdftex.def)             Requested size: 256.07745pt x 170.3471pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
+Underfull \hbox (badness 3407) in paragraph at lines 84--84
+\T1/lmr/m/n/10.95 (+20) SI-Me-sP(Ga\T1/lmr/m/it/10.95 (+20) t\T1/lmr/m/n/10.95 
+(+20) Bu$[]$)$[]$Cl, K(SIMesP)$[]$Al\T1/lmr/m/it/10.95 (+20) t\T1/lmr/m/n/10.95
+ (+20) Bu, SI-Me-sPH\T1/lmr/m/it/10.95 (+20) t\T1/lmr/m/n/10.95 (+20) Bu$[]$GaC
+l und SI-Me-
+ []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 3.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 3.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 3.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3.
-
-<./gfx/hgte_1bohr.png, id=2096, 2965.9608pt x 2890.8pt>
-File: ./gfx/hgte_1bohr.png Graphic file (type png)
-<use ./gfx/hgte_1bohr.png>
-Package pdftex.def Info: ./gfx/hgte_1bohr.png  used on input line 6.
-(pdftex.def)             Requested size: 256.07745pt x 249.57437pt.
-<./gfx/porph_1bohr.png, id=2097, 2928.3804pt x 2890.8pt>
-File: ./gfx/porph_1bohr.png Graphic file (type png)
-<use ./gfx/porph_1bohr.png>
-Package pdftex.def Info: ./gfx/porph_1bohr.png  used on input line 14.
-(pdftex.def)             Requested size: 256.07745pt x 252.75029pt.
-<./gfx/b8s16_1bohr.png, id=2098, 4972.176pt x 4972.176pt>
-File: ./gfx/b8s16_1bohr.png Graphic file (type png)
-<use ./gfx/b8s16_1bohr.png>
-Package pdftex.def Info: ./gfx/b8s16_1bohr.png  used on input line 22.
-(pdftex.def)             Requested size: 256.07745pt x 256.05855pt.
-<./gfx/b8se16_1bohr.png, id=2099, 4451.832pt x 4451.832pt>
-File: ./gfx/b8se16_1bohr.png Graphic file (type png)
-<use ./gfx/b8se16_1bohr.png>
-Package pdftex.def Info: ./gfx/b8se16_1bohr.png  used on input line 30.
-(pdftex.def)             Requested size: 256.07745pt x 256.02591pt.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 35.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 35.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\spacefactor' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@m' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 35.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 100.
 [87
 
- <./gfx/hgte_1bohr.png>]
+ <./gfx/1.png> <./gfx/2.png>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
- [88 <./gfx/porph_1bohr.png> <./gfx/b8s16_1bohr.png>]
+(babel)             in language  on input line 100.
+ [88]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 101.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 101.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 101.
+
+<./gfx/hg8te16.png, id=2120, 1469.49pt x 1253.68375pt>
+File: ./gfx/hg8te16.png Graphic file (type png)
+<use ./gfx/hg8te16.png>
+Package pdftex.def Info: ./gfx/hg8te16.png  used on input line 104.
+(pdftex.def)             Requested size: 256.07745pt x 218.46059pt.
+<./gfx/b8s16.png, id=2121, 1646.15pt x 1289.81876pt>
+File: ./gfx/b8s16.png Graphic file (type png)
+<use ./gfx/b8s16.png>
+Package pdftex.def Info: ./gfx/b8s16.png  used on input line 112.
+(pdftex.def)             Requested size: 256.07745pt x 200.64804pt.
+<./gfx/hgte_1bohr.png, id=2122, 2965.9608pt x 2890.8pt>
+File: ./gfx/hgte_1bohr.png Graphic file (type png)
+<use ./gfx/hgte_1bohr.png>
+Package pdftex.def Info: ./gfx/hgte_1bohr.png  used on input line 120.
+(pdftex.def)             Requested size: 256.07745pt x 249.57437pt.
+<./gfx/porph_1bohr.png, id=2123, 2928.3804pt x 2890.8pt>
+File: ./gfx/porph_1bohr.png Graphic file (type png)
+<use ./gfx/porph_1bohr.png>
+Package pdftex.def Info: ./gfx/porph_1bohr.png  used on input line 128.
+(pdftex.def)             Requested size: 256.07745pt x 252.75029pt.
+<./gfx/b8s16_1bohr.png, id=2124, 4972.176pt x 4972.176pt>
+File: ./gfx/b8s16_1bohr.png Graphic file (type png)
+<use ./gfx/b8s16_1bohr.png>
+Package pdftex.def Info: ./gfx/b8s16_1bohr.png  used on input line 136.
+(pdftex.def)             Requested size: 256.07745pt x 256.05855pt.
+<./gfx/b8se16_1bohr.png, id=2125, 4451.832pt x 4451.832pt>
+File: ./gfx/b8se16_1bohr.png Graphic file (type png)
+<use ./gfx/b8se16_1bohr.png>
+Package pdftex.def Info: ./gfx/b8se16_1bohr.png  used on input line 144.
+(pdftex.def)             Requested size: 256.07745pt x 256.02591pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
- [89 <./gfx/b8se16_1bohr.png>]
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 149.
+[89 <./gfx/3.png> <./gfx/4.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 150.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\spacefactor' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@m' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 150.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 150.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 151.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 151.
+[90 <./gfx/5.png> <./gfx/6.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+ [91 <./gfx/7.png> <./gfx/hg8te16.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+
+[92 <./gfx/b8s16.png> <./gfx/hgte_1bohr.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+ [93 <./gfx/porph_1bohr.png> <./gfx/b8s16_1bohr.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
+ [94 <./gfx/b8se16_1bohr.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 152.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 152.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 295.
@@ -3454,7 +3526,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 295.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 295.
- [90
+ [95
 
 ]
 chapter 8.
@@ -3471,7 +3543,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 300.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 300.
- [91
+ [96
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -3492,7 +3564,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 313.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 313.
- [92
+ [97
 
 
 ]
@@ -3515,7 +3587,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 315.
 
-[93
+[98
 
 ] (etc/acronym.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -3535,7 +3607,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 61.
- [94
+ [99
 
 ])
 Package babel Info: Redefining ngerman shorthand "|
@@ -3547,7 +3619,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 318.
 
-[95]
+[100]
 chapter without number
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 318.
@@ -3561,7 +3633,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 318.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 318.
-[96
+[101
 
 ]
 Overfull \hbox (20.31113pt too wide) in paragraph at lines 318--318
@@ -3577,7 +3649,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 318.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 318.
-[97]
+[102]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 318.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3586,7 +3658,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 318.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 318.
- [98]
+ [103]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 320.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3595,7 +3667,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 320.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 320.
- [99] (kapitel/publikationsliste.tex
+ [104] (kapitel/publikationsliste.tex
 LaTeX Font Info:    Font shape `OMS/lmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `OMS/lmr/bx/n' in size <12> not available
@@ -3608,7 +3680,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 30.
- [100
+ [105
 
 ])
 Package babel Info: Redefining ngerman shorthand "|
@@ -3619,7 +3691,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 324.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 324.
- [101]
+ [106]
 (kapitel/lebenslauf.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3631,7 +3703,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 327.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 327.
- [102
+ [107
 
 ]
 Package babel Info: Redefining ngerman shorthand "|
@@ -3643,7 +3715,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 327.
 
-[103]
+[108]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 330.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3652,7 +3724,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 330.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 330.
- [104]
+ [109]
 \openout2 = `./intro/danksagung.aux'.
 
  (intro/danksagung.tex
@@ -3664,7 +3736,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 27.
- [105
+ [110
 
 
 ])
@@ -3676,7 +3748,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 330.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 330.
- [106]
+ [111]
 No file Promotion.acr.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
 Package babel Info: Redefining ngerman shorthand "|
@@ -3687,7 +3759,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 342.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 342.
-[107
+[112
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
@@ -3695,59 +3767,62 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
 Package rerunfilecheck Info: File `Promotion.out' has not changed.
-(rerunfilecheck)             Checksum: 12D6CD14461008FBC21D7675CD645639;4833.
+(rerunfilecheck)             Checksum: 240B26EB178A4122BB42843C85B88E14;4815.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'Promotion.run.xml'.
 \openout1 = `Promotion.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37181 strings out of 492976
- 685176 string characters out of 3123648
- 1310006 words of memory out of 3000000
- 39603 multiletter control sequences out of 15000+200000
- 638523 words of font info for 217 fonts, out of 3000000 for 9000
+ 37286 strings out of 492976
+ 686498 string characters out of 3123648
+ 1310950 words of memory out of 3000000
+ 39652 multiletter control sequences out of 15000+200000
+ 635779 words of font info for 231 fonts, out of 3000000 for 9000
  1198 hyphenation exceptions out of 8191
  57i,25n,77p,9090b,2965s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-rm.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
-ps/lm/lm-mathsy.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/enc/dvips/lm/lm-ec.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Kevin Reiter/AppData/Local/Prog
+m-mathsy.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/lm/lm-rm.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Kevin Reiter/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Kevin Reiter/AppData/Local/Prog
 rams/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/Kevin Reiter/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbsy10.pfb><C:/Users/Kevin Re
 iter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Use
 rs/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.
 pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
 /lm/lmbx8.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmbxi10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Kevin Reiter/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Kevin Reiter/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Kevin Rei
-ter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/User
-s/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pf
-b><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmmi8.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmmib10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Kevin Reiter/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Kevin Reiter/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Kevin R
-eiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Us
-ers/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12
-.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmro12.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmsy10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Kevin Reiter/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Kevin Reiter/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Kevin Reit
-er/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Users
-/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb
-><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm
-/lmtto10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Promotion.pdf (113 pages, 26168959 bytes).
+pe1/public/lm/lmcsc10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Kevin Reiter/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Kevin Reiter/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Kevin Reit
+er/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/
+Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb>
+<C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmmib10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/lm/lmr10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/lm/lmr12.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Kevin Reiter/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Kevin Reiter/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/Kevin Re
+iter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Use
+rs/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmro12.
+pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmsy10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmsy8.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Kevin Reiter/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Kevin Reiter/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Kevin Reite
+r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Users/K
+evin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtto10.pfb
+><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on Promotion.pdf (118 pages, 28365256 bytes).
 PDF statistics:
- 2491 PDF objects out of 2984 (max. 8388607)
- 560 named destinations out of 1000 (max. 500000)
- 31259 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 2552 PDF objects out of 2984 (max. 8388607)
+ 578 named destinations out of 1000 (max. 500000)
+ 30792 words of extra memory for PDF output out of 35830 (max. 10000000)
 

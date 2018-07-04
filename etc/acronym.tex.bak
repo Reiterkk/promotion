@@ -3,9 +3,9 @@
 \begin{acronym}[SEPSEP] % längste Abkürzung steht in eckigen Klammern
     \setlength{\itemsep}{0.2cm} % geringerer Zeilenabstand
     
-    \acro{aat}[AAT]{\textit{atomic axial tensor}}
+    \acro{aat}[AAT]{\textit{Atomic Axial Tensor}}
     
-    \acro{apt}[APT]{\textit{atomic polar tensor}}
+    \acro{apt}[APT]{\textit{Atomic Polar Tensor}}
     
     \acro{ao}[AO]{Atomorbital}
 	
@@ -15,9 +15,15 @@
 		
  	\acro{cosmo}[COSMO]{\textit{Conductor-like Screening Model}}
  	
+ 	\acro{cosmors}[COSMO-RS]{COSMO \textit{for Real Solvents}}
+
+    \acro{cpa}[CPA]{Cryptophan-A} 	
+ 	
 	\acro{cphf}[CPHF]{\textit{Coupled Perturbed Hartree-Fock}}
 	
 	\acro{csm}[CSM]{\textit{Continuum Solvatiol Model}}
+	
+	\acro{dcosmors}[D-COSMO-RS]{\textit{Direc}t COSMO \textit{for Real Solvents}}
  	
     \acro{dft}[DFT]{Dichtefunktionaltheorie}
     
@@ -38,6 +44,8 @@
 
 	\acro{gga}[GGA]{\textit{Generalized Gradient Approximation}}   
 		\acrodefplural{gga}[GGA]{\textit{Generalized Gradient Approximation}}
+	
+	\acro{ir}[IR]{Infrarot}
 		
 	\acro{lcao}[LCAO]{\textit{Linear Combination of Atomic Orbitals}}
 	\acro{lda}[LDA]{\textit{Local Density Approximation}}
@@ -56,6 +64,8 @@
     \acro{nao}[NAO]{\textit{Natural Atomic Orbital}}
 
     \acro{nbo}[NBO]{\textit{Natural Bond Orbital}}
+    
+    \acro{nhc}[NHC]{N-Heterocyclische Carbene}
     
     \acro{nmr}[NMR]{\textit{Nuclear Magnetic Resonace}}
         

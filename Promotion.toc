@@ -95,20 +95,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{87}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}[SIMesPGa\textit {t}Bu$_2$]$_2$, [SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl] und [K(SIMesP)$_3$Al\textit {t}Bu]}{87}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}$^{31}$P chemische Verschiebungen in Phospor NHCs}{87}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}[Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{87}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.2}$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{89}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}[Co\spacefactor \@m {}Sn$_6$Sb$_6$]$^{3-}$}{87}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.3}[Co\spacefactor \@m {}Sn$_6$Sb$_6$]$^{3-}$}{90}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{90}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{95}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{91}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{96}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{92}{chapter*.54}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{97}{chapter*.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{93}{chapter*.56}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{98}{chapter*.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{94}{section*.57}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{99}{section*.69}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{96}{chapter*.59}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{101}{chapter*.71}
