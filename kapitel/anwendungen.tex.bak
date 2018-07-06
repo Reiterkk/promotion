@@ -57,7 +57,7 @@
 \label{abb:cvh7}
 \end{figure}
 
-\begin{table}\label{tab:cvhtab}
+\begin{table}[ht!]\label{tab:cvhtab1}
 \captionsetup{tablewithin = chapter}
 \captionsetup{font=small, labelfont=bf}
 \captionabove[Vergleich spektroskopischer und struktureller Daten für Phosphor \acp{nhc}]{Vergleich spektroskopischer und struktureller Daten für SIMesPH, IMesPH, $[$SIMesPGa\textit{t}Bu$_2]_2$, SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al\textit{t}Bu, SIMesPH\textit{t}Bu$_2$GaCl und SIMesPH\textit{t}Bu$_2$AlCl. }
@@ -78,7 +78,7 @@ Verbindung & \multicolumn{3}{c}{$^{31}$P / ppm} & \multicolumn{3}{c}{$^{13}$C (C
 \end{tabular}}
 \end{table}
 
-\begin{table}\label{tab:cvhtab}
+\begin{table}[ht!]\label{tab:cvhtab2}
 \captionsetup{tablewithin = chapter}
 \captionsetup{font=small, labelfont=bf}
 \captionabove[$^{31}$P Verschiebungen/Abschirmungen für Phosphor \acp{nhc} mit unterschiedlichen Funktionalen]{$^{31}$P Verschiebungen/Abschirmungen für SIMesPH, IMesPH, $[$SIMesPGa\textit{t}Bu$_2]_2$, SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al\textit{t}Bu, SIMesPH\textit{t}Bu$_2$GaCl und SIMesPH\textit{t}Bu$_2$AlCl mit unterschiedlichen Funktionalen. Die Spalte PBE, opt enthält die berechneten Werte für optimierte Strukturparameter. Alle Werte in den darauf folgenden Spalten wurden auf Grundlage der experimentellen Strukturparametern berechnet. Alle Werte sind in ppm angegeben.}
@@ -99,6 +99,7 @@ SIMesPH\textit{t}Bu$_2$AlCl &-151   &-157 &433 &-163 &454 &-164 &449 &-161 &441 
 \end{table}
 \newpage
 \subsection{$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}
+Die Implementierung des \ac{cosmo} und der \acp{ecp} in das \texttt{mpshift} Modul lieferte die notwendigen Voraussetzungen, um einen tieferen Einblick über magnetische Eigenschaften in anionischen Verbindungen, welche schwere Elemente beinhalten, zu erhalten. Ein Beispiel dafür ist das in der Gruppe von Stephanie Dehnen synthetisierte $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$\supercite{dehnenhg4te8}, welches in Abbildung \ref{abb:hg8te16} gezeigt ist. Die Seitenansicht (Abbildung \ref{abb:hg8te16} rechts) zeigt das Molekül mit TPSSh\supercite{tao2003climbing}/def2-TZVP\supercite{weigend2005balanced} optimierten Strukturparametern. Dabei ist zu erkennen, dass das Anion nicht vollständig planar ist und damit auch leicht von der idealen $D_{4\textrm{h}}$ symmetrischen Struktur abweicht. 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{hg8te16}
@@ -107,6 +108,7 @@ SIMesPH\textit{t}Bu$_2$AlCl &-151   &-157 &433 &-163 &454 &-164 &449 &-161 &441 
 \label{abb:hg8te16}
 \end{figure}
 
+Zusätzlich wurde ebenfalls das bereits bekannte B$_8$S$_{16}$\supercite{krebs1980b8s16} (Abbildung \ref{abb:b8s16}) untersucht. Hier ist die Abweichung des Moleküls mit optimierten Strukturparametern von der planaren Struktur noch deutlich größer, wie die Seitenansicht deutlich zeigt. Die $D_{4\textrm{h}}$ symmetrische Struktur weißt eine schwache imaginäre Mode von etwa -10 Wellenzahlen auf welche genau der Gerüstschwingung entspricht, welche das Durchschwingen des Moleküls beschreibt. Ebenfalls bekannt ist das schwerer Homolog B$_8$Se$_{16}$.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{b8s16}
@@ -115,13 +117,7 @@ SIMesPH\textit{t}Bu$_2$AlCl &-151   &-157 &433 &-163 &454 &-164 &449 &-161 &441 
 \label{abb:b8s16}
 \end{figure}
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{hgte_1bohr}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$}]{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
-\label{abb:hgtelic}
-\end{figure}
+Aufgrund ihrer strukturellen Ähnlichkeit mit dem organischen Porphyrin lag es nahe, den aromatischen Charakter der Verbindungen zu untersuchen. Als Maß für die Aromatizität einer Verbindung kann der durch einen definierten Ring fließende Elektronenstrom angesehen werden. Je diatropischer der Gesamtstrom (d.h. der Strom fließt im Uhrzeigersinn), desto aromatischer ist die Verbindung. Ein stark paratropischer Strom (Strom entgegen des Uhrzeigersinns) deutet dabei auf eine antiaromatische Verbindung hin. Sind die diatropischen und paratropischen Beiträge in etwa von der selben Größe, dann verschwindet der Gesamtstrom - die Verbindung ist nichtaromatisch. Bei der Berechnung der Ringströme mit \ac{gimic} wird dabei so vorgegangen, dass der Strom der durch eine senkrecht zur Bindungsachse stehenden Ebene fließt integriert wird. In beiden oben erwähnten Beispielen kann weiterhin zwischen einem lokalen Ringstrom in den vier Fünfringen und einem globalen Ringstrom um das gesamte Molekül unterschieden werden. Bei den Berechnungen hat sich herausgestellt, dass alle drei Verbindungen, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$ einen schwachen lokalen Ringstrom in den pyrrolartigen fünfgliedrigen Ringen aufweisen. Diese betragen \unit[5.8]{nA/T} in $[$Hg$_8$Te$_{16}]^{8-}$ \unit[3.25]{nA/T} in B$_8$S$_{16}$ und \unit[3.28]{nA/T} in B$_8$Se$_{16}$. Im Vergleich dazu beträgt der Ringstrom in einem Benzolmolekül etwa \unit[12]{nA/T}\supercite{fliegl2012aromatic}. Die globalen Ringströme in den drei Verbindungen sind mit \unit[0.24]{nA/T}, \unit[0.81]{nA/T} und \unit[0.79]{nA/T} verschwindend gering. Im Vergleich dazu liegt der globale Ringstrom des organischen Porphyrins bei etwa \unit[27]{nA/T}. Dieser spaltet sich in den Fünfgliedrigen Ringen in einen äußeren und inneren Pfad auf, welche bei jeweils einen Ringstrom von etwa \unit[13]{nA/T} aufweisen. Der lokale Ringstrom in den fünfgliedrigen Ringen ist schwächer als \unit[1]{nA/T}.\supercite{fliegl2012aromatic} In sogenannten \ac
 
 \begin{figure}[ht!]
 	\centering
@@ -129,6 +125,14 @@ SIMesPH\textit{t}Bu$_2$AlCl &-151   &-157 &433 &-163 &454 &-164 &449 &-161 &441 
 	\captionsetup{figurewithin = chapter}
 	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in Porphyrin]{Ringströme in Porphyrin \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
 \label{abb:porphlic}
+\end{figure}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{hgte_1bohr}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$}]{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
+\label{abb:hgtelic}
 \end{figure}
 
 \begin{figure}[ht!]

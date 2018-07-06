@@ -2660,72 +2660,87 @@
       \field{pages}{146401}
       \range{pages}{1}
     \endentry
-    \entry{stephens1985theory}{article}{}
-      \name{author}{1}{}{%
-        {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
-           family={Stephens},
-           familyi={S\bibinitperiod},
-           given={Philip\bibnamedelima J},
-           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+    \entry{magyarfalvi2011vibrational}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a57c7f96553369497417ab4e4a229663}{%
+           family={Magyarfalvi},
+           familyi={M\bibinitperiod},
+           given={G{á}bor},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a75286ea8a9e4566f138a00c99ed1d9d}{%
+           family={Tarczay},
+           familyi={T\bibinitperiod},
+           given={Gy{ö}rgy},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9559bcbdd29322bde1ccad8b2c240423}{%
+           family={Vass},
+           familyi={V\bibinitperiod},
+           given={Elem{é}r},
+           giveni={E\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {ACS Publications}%
+        {Wiley Online Library}%
       }
-      \strng{namehash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \strng{fullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \strng{bibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \strng{authorbibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \strng{authornamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
-      \strng{authorfullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \strng{namehash}{3441da275cc2a6114f2c3443cc56f2dd}
+      \strng{fullhash}{3441da275cc2a6114f2c3443cc56f2dd}
+      \strng{bibnamehash}{3441da275cc2a6114f2c3443cc56f2dd}
+      \strng{authorbibnamehash}{3441da275cc2a6114f2c3443cc56f2dd}
+      \strng{authornamehash}{3441da275cc2a6114f2c3443cc56f2dd}
+      \strng{authorfullhash}{3441da275cc2a6114f2c3443cc56f2dd}
       \field{sortinit}{7}
       \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Phys. Chem.}
-      \field{number}{5}
-      \field{title}{Theory of vibrational circular dichroism}
-      \field{volume}{89}
-      \field{year}{1985}
-      \field{pages}{748\bibrangedash 752}
-      \range{pages}{5}
-    \endentry
-    \entry{stephens1985vibrational}{article}{}
-      \name{author}{2}{}{%
-        {{hash=b77465ca04e8cb7286b2e74bcfd2a457}{%
-           family={Stephens},
-           familyi={S\bibinitperiod},
-           given={PJ},
-           giveni={P\bibinitperiod}}}%
-        {{hash=e704c2eb50263740772c64a3362a9914}{%
-           family={Lowe},
-           familyi={L\bibinitperiod},
-           given={MA},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
-      }
-      \strng{namehash}{3fbf47f8204db480f89e43ea46361130}
-      \strng{fullhash}{3fbf47f8204db480f89e43ea46361130}
-      \strng{bibnamehash}{3fbf47f8204db480f89e43ea46361130}
-      \strng{authorbibnamehash}{3fbf47f8204db480f89e43ea46361130}
-      \strng{authornamehash}{3fbf47f8204db480f89e43ea46361130}
-      \strng{authorfullhash}{3fbf47f8204db480f89e43ea46361130}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annu. Rev. Phys. Chem.}
-      \field{number}{1}
+      \field{journaltitle}{WIREs Comput. Mol. Sci.}
+      \field{number}{3}
       \field{title}{Vibrational circular dichroism}
-      \field{volume}{36}
-      \field{year}{1985}
-      \field{pages}{213\bibrangedash 241}
-      \range{pages}{29}
+      \field{volume}{1}
+      \field{year}{2011}
+      \field{pages}{403\bibrangedash 425}
+      \range{pages}{23}
+    \endentry
+    \entry{reiter2017vibrational}{article}{}
+      \name{author}{3}{}{%
+        {{hash=e6414e3a598c8a19c2402a1f6530086f}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8bedd5abea802718d807413e7827c4e7}{%
+           family={K{ü}hn},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP Publishing}%
+      }
+      \strng{namehash}{fadc24d622d063cad4dd9f72e5db7f1c}
+      \strng{fullhash}{fadc24d622d063cad4dd9f72e5db7f1c}
+      \strng{bibnamehash}{fadc24d622d063cad4dd9f72e5db7f1c}
+      \strng{authorbibnamehash}{fadc24d622d063cad4dd9f72e5db7f1c}
+      \strng{authornamehash}{fadc24d622d063cad4dd9f72e5db7f1c}
+      \strng{authorfullhash}{fadc24d622d063cad4dd9f72e5db7f1c}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{5}
+      \field{title}{Vibrational circular dichroism spectra for large molecules and molecules with heavy elements}
+      \field{volume}{146}
+      \field{year}{2017}
+      \field{pages}{054102}
+      \range{pages}{1}
     \endentry
     \entry{cheeseman1996ab}{article}{}
       \name{author}{4}{}{%
@@ -2773,6 +2788,73 @@
       \field{pages}{211\bibrangedash 220}
       \range{pages}{10}
     \endentry
+    \entry{stephens1985theory}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fd30c469fa9f8d762dfe7ec222e41c29}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={Philip\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \strng{fullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \strng{bibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \strng{authorbibnamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \strng{authornamehash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \strng{authorfullhash}{fd30c469fa9f8d762dfe7ec222e41c29}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Phys. Chem.}
+      \field{number}{5}
+      \field{title}{Theory of vibrational circular dichroism}
+      \field{volume}{89}
+      \field{year}{1985}
+      \field{pages}{748\bibrangedash 752}
+      \range{pages}{5}
+    \endentry
+    \entry{stephens1985vibrational}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b77465ca04e8cb7286b2e74bcfd2a457}{%
+           family={Stephens},
+           familyi={S\bibinitperiod},
+           given={PJ},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e704c2eb50263740772c64a3362a9914}{%
+           family={Lowe},
+           familyi={L\bibinitperiod},
+           given={MA},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}%
+      }
+      \strng{namehash}{3fbf47f8204db480f89e43ea46361130}
+      \strng{fullhash}{3fbf47f8204db480f89e43ea46361130}
+      \strng{bibnamehash}{3fbf47f8204db480f89e43ea46361130}
+      \strng{authorbibnamehash}{3fbf47f8204db480f89e43ea46361130}
+      \strng{authornamehash}{3fbf47f8204db480f89e43ea46361130}
+      \strng{authorfullhash}{3fbf47f8204db480f89e43ea46361130}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annu. Rev. Phys. Chem.}
+      \field{number}{1}
+      \field{title}{Vibrational circular dichroism}
+      \field{volume}{36}
+      \field{year}{1985}
+      \field{pages}{213\bibrangedash 241}
+      \range{pages}{29}
+    \endentry
     \entry{nicu2008vibrational}{article}{}
       \name{author}{4}{}{%
         {{hash=5358ada5a7d70425babc5936b4199723}{%
@@ -2805,8 +2887,8 @@
       \strng{authorbibnamehash}{18e1498f4e019cdd5fdf4de06fca1d27}
       \strng{authornamehash}{c21ecccf014279b71db53bb803671c4d}
       \strng{authorfullhash}{18e1498f4e019cdd5fdf4de06fca1d27}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2846,8 +2928,8 @@
       \strng{authorbibnamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authornamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authorfullhash}{0eb47e0aefffae140793948bc80fc106}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2924,6 +3006,188 @@
       \field{title}{Gnuplot 4.2: an interactive plotting program}
       \field{year}{2009}
     \endentry
+    \entry{taniguchi2015stereochemical}{article}{}
+      \name{author}{5}{}{%
+        {{hash=89cd8722653fad1ad2b3b5205695f793}{%
+           family={Taniguchi},
+           familyi={T\bibinitperiod},
+           given={Tohru},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d005bd449d2ae25fbaa85957beaf2acd}{%
+           family={Manai},
+           familyi={M\bibinitperiod},
+           given={Daisuke},
+           giveni={D\bibinitperiod}}}%
+        {{hash=54a19bd84754e506c59e1d46b21943f0}{%
+           family={Shibata},
+           familyi={S\bibinitperiod},
+           given={Masataka},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2ecc67f290ec309d275af3ce9fbb7dc1}{%
+           family={Itabashi},
+           familyi={I\bibinitperiod},
+           given={Yutaka},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=572f39f910202bee531fccef44aa392a}{%
+           family={Monde},
+           familyi={M\bibinitperiod},
+           given={Kenji},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{8e1dc8717779593f63e9a9188cd35fa3}
+      \strng{fullhash}{9e095f78a230984f756834bb81adb3de}
+      \strng{bibnamehash}{9e095f78a230984f756834bb81adb3de}
+      \strng{authorbibnamehash}{9e095f78a230984f756834bb81adb3de}
+      \strng{authornamehash}{8e1dc8717779593f63e9a9188cd35fa3}
+      \strng{authorfullhash}{9e095f78a230984f756834bb81adb3de}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{38}
+      \field{title}{Stereochemical analysis of glycerophospholipids by vibrational circular dichroism}
+      \field{volume}{137}
+      \field{year}{2015}
+      \field{pages}{12191\bibrangedash 12194}
+      \range{pages}{4}
+    \endentry
+    \entry{botek2010theoretical}{article}{}
+      \name{author}{8}{}{%
+        {{hash=9a58d4f6662bb066fcb0dbd2823ab4ab}{%
+           family={Botek},
+           familyi={B\bibinitperiod},
+           given={Edith},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6d7c74faa8188e504b556ef732275e6a}{%
+           family={d'Antuono},
+           familyi={d\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0f418aff011ecbb0852ce03076dca4aa}{%
+           family={Jacques},
+           familyi={J\bibinitperiod},
+           given={Agn{è}s},
+           giveni={A\bibinitperiod}}}%
+        {{hash=12bdac753da03271e45f3a0126413f17}{%
+           family={Carion},
+           familyi={C\bibinitperiod},
+           given={Rapha{ë}l},
+           giveni={R\bibinitperiod}}}%
+        {{hash=978f7ab4ff4735edb653861ef90b53fe}{%
+           family={Champagne},
+           familyi={C\bibinitperiod},
+           given={Beno{ı̂}t},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ccb5467d46200b387278a525977ff5c6}{%
+           family={Maton},
+           familyi={M\bibinitperiod},
+           given={Laetitia},
+           giveni={L\bibinitperiod}}}%
+        {{hash=df6ccdeb954164eaf6bb94c3db855fa4}{%
+           family={Taziaux},
+           familyi={T\bibinitperiod},
+           given={Doroth{é}e},
+           giveni={D\bibinitperiod}}}%
+        {{hash=28e97ec7e5f7ef403b1bf5e03d9605fc}{%
+           family={Habib-Jiwan},
+           familyi={H\bibinithyphendelim J\bibinitperiod},
+           given={Jean-Louis},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{c0cc6307a2e6002e033911a0121a9e2f}
+      \strng{fullhash}{b63a4c967abcd33b1de53ff89527910b}
+      \strng{bibnamehash}{b63a4c967abcd33b1de53ff89527910b}
+      \strng{authorbibnamehash}{b63a4c967abcd33b1de53ff89527910b}
+      \strng{authornamehash}{c0cc6307a2e6002e033911a0121a9e2f}
+      \strng{authorfullhash}{b63a4c967abcd33b1de53ff89527910b}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Chem. Chem. Phys.}
+      \field{number}{42}
+      \field{title}{Theoretical and experimental investigation of the structural and spectroscopic properties of coumarin 343 fluoroionophores}
+      \field{volume}{12}
+      \field{year}{2010}
+      \field{pages}{14172\bibrangedash 14187}
+      \range{pages}{16}
+    \endentry
+    \entry{cretin2015stereochemistry}{article}{}
+      \name{author}{8}{}{%
+        {{hash=819757cf2c7557bafc8ab855958652a7}{%
+           family={Cretin},
+           familyi={C\bibinitperiod},
+           given={Blandine\bibnamedelima N},
+           giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=df7b82b0132756ab6b8a52814f5501ac}{%
+           family={Sallembien},
+           familyi={S\bibinitperiod},
+           given={Quentin},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=f996271d8b8fbdd46a8acb86d7fe2142}{%
+           family={Sindt},
+           familyi={S\bibinitperiod},
+           given={Lauriane},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a0b8a7fd7ebcc8f5959c3ed4569469e2}{%
+           family={Daugey},
+           familyi={D\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c1358a0af8116dea05c7709b7e9c8385}{%
+           family={Buffeteau},
+           familyi={B\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=113c32b9fda87e4698504036a33b64f1}{%
+           family={Waffo-Teguo},
+           familyi={W\bibinithyphendelim T\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=69489a88415d4f8be8af45ad616cc481}{%
+           family={Dubourdieu},
+           familyi={D\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a3ffcdf6a0c86a2eb818426a0a56643b}{%
+           family={Marchal},
+           familyi={M\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a0be289f0424349923050a4c41d64d5d}
+      \strng{fullhash}{d51625d4f2c1385cbcdfc60555463e76}
+      \strng{bibnamehash}{d51625d4f2c1385cbcdfc60555463e76}
+      \strng{authorbibnamehash}{d51625d4f2c1385cbcdfc60555463e76}
+      \strng{authornamehash}{a0be289f0424349923050a4c41d64d5d}
+      \strng{authorfullhash}{d51625d4f2c1385cbcdfc60555463e76}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Anal. Chim. Acta}
+      \field{title}{How stereochemistry influences the taste of wine: isolation, characterization and sensory evaluation of lyoniresinol stereoisomers}
+      \field{volume}{888}
+      \field{year}{2015}
+      \field{pages}{191\bibrangedash 198}
+      \range{pages}{8}
+    \endentry
     \entry{brotin2006vibrational}{article}{}
       \name{author}{4}{}{%
         {{hash=41daac2d6c1b30f2959dc020c3dc0c5d}{%
@@ -2956,8 +3220,8 @@
       \strng{authorbibnamehash}{538f120af419aded7f327f880610b839}
       \strng{authornamehash}{396f235bf3fad5b63ff721756cfdcba9}
       \strng{authorfullhash}{538f120af419aded7f327f880610b839}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2969,6 +3233,47 @@
       \field{year}{2006}
       \field{pages}{5533\bibrangedash 5540}
       \range{pages}{8}
+    \endentry
+    \entry{lee1988development}{article}{}
+      \name{author}{3}{}{%
+        {{hash=88325c51e3a115fffa3ee59b6ee82078}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Chengteh},
+           giveni={C\bibinitperiod}}}%
+        {{hash=78e31d3d482cf462f797d4187a52d247}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Weitao},
+           giveni={W\bibinitperiod}}}%
+        {{hash=696b983e5e3d7475aba7fdec55bccc1c}{%
+           family={Parr},
+           familyi={P\bibinitperiod},
+           given={Robert\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{48381191d29f2befbc156060ee3a2950}
+      \strng{fullhash}{48381191d29f2befbc156060ee3a2950}
+      \strng{bibnamehash}{48381191d29f2befbc156060ee3a2950}
+      \strng{authorbibnamehash}{48381191d29f2befbc156060ee3a2950}
+      \strng{authornamehash}{48381191d29f2befbc156060ee3a2950}
+      \strng{authorfullhash}{48381191d29f2befbc156060ee3a2950}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{number}{2}
+      \field{title}{Development of the Colle-Salvetti correlation-energy formula into a functional of the electron density}
+      \field{volume}{37}
+      \field{year}{1988}
+      \field{pages}{785}
+      \range{pages}{1}
     \endentry
     \entry{reiter2017calculation}{article}{}
       \name{author}{3}{}{%
@@ -2997,8 +3302,8 @@
       \strng{authorbibnamehash}{dbd4b4664b69770caec9ee264cd43329}
       \strng{authornamehash}{dbd4b4664b69770caec9ee264cd43329}
       \strng{authorfullhash}{dbd4b4664b69770caec9ee264cd43329}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -3009,6 +3314,125 @@
       \field{volume}{14}
       \field{year}{2017}
       \field{pages}{191\bibrangedash 197}
+      \range{pages}{7}
+    \endentry
+    \entry{dehnenhg4te8}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bcf8eadd41c65d271335b50bde100acb}{%
+           family={Dehnen},
+           familyi={D\bibinitperiod},
+           given={Stefanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=35d6be918e3fb4828f8bbf71ac494993}{%
+           family={Donsbach},
+           familyi={D\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e6414e3a598c8a19c2402a1f6530086f}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ee562050fae27a1c104dba812fdcc232}
+      \strng{fullhash}{ff95bf6764b4b5ad9b8514e7c6cfa856}
+      \strng{bibnamehash}{ff95bf6764b4b5ad9b8514e7c6cfa856}
+      \strng{authorbibnamehash}{ff95bf6764b4b5ad9b8514e7c6cfa856}
+      \strng{authornamehash}{ee562050fae27a1c104dba812fdcc232}
+      \strng{authorfullhash}{ff95bf6764b4b5ad9b8514e7c6cfa856}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Angewandte Chemie International Edition}
+      \field{title}{[Hg4Te8 (Te2) 4] 8-: A Heavy Metal Porphyrinoid Embedded in a Lamellar Structure}
+      \field{year}{2018}
+    \endentry
+    \entry{krebs1980b8s16}{article}{}
+      \name{author}{2}{}{%
+        {{hash=9972f2d1b8a93f10fd86dca964eb00cb}{%
+           family={Krebs},
+           familyi={K\bibinitperiod},
+           given={Bernt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e76bfff2c132d1b98ec607bab11d084d}{%
+           family={H{ü}rter},
+           familyi={H\bibinitperiod},
+           given={Hans-Ulrich},
+           giveni={H\bibinithyphendelim U\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{29cdfb848990ed9ab68c1f60eb8d8072}
+      \strng{fullhash}{29cdfb848990ed9ab68c1f60eb8d8072}
+      \strng{bibnamehash}{29cdfb848990ed9ab68c1f60eb8d8072}
+      \strng{authorbibnamehash}{29cdfb848990ed9ab68c1f60eb8d8072}
+      \strng{authornamehash}{29cdfb848990ed9ab68c1f60eb8d8072}
+      \strng{authorfullhash}{29cdfb848990ed9ab68c1f60eb8d8072}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Angew. Chem. Int. Ed.}
+      \field{number}{6}
+      \field{title}{B8S16—An “Inorganic Porphine”}
+      \field{volume}{19}
+      \field{year}{1980}
+      \field{pages}{481\bibrangedash 482}
+      \range{pages}{2}
+    \endentry
+    \entry{fliegl2012aromatic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=078aadf342a7190dd615f9675e8fd9de}{%
+           family={Fliegl},
+           familyi={F\bibinitperiod},
+           given={Heike},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{fullhash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{bibnamehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{authorbibnamehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{authornamehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{authorfullhash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Org. Chem.}
+      \field{number}{7}
+      \field{title}{Aromatic pathways of porphins, chlorins, and bacteriochlorins}
+      \field{volume}{77}
+      \field{year}{2012}
+      \field{pages}{3408\bibrangedash 3414}
       \range{pages}{7}
     \endentry
   \enddatalist
