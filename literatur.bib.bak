@@ -1074,3 +1074,12 @@ title ={COSMO\textit{therm}, Version C3.0, Release 17.01; COSMO\textit{logic} Gm
   year={2012},
   publisher={ACS Publications}
 }
+
+@article{boys1960sf,
+  title={SF Boys, Rev. Mod. Phys. 32, 296 (1960).},
+  author={Boys, SF},
+  journal=rmp,
+  volume={32},
+  pages={296},
+  year={1960}
+}

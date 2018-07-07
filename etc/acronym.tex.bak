@@ -48,7 +48,10 @@
 	\acro{ir}[IR]{Infrarot}
 		
 	\acro{lcao}[LCAO]{\textit{Linear Combination of Atomic Orbitals}}
+	
 	\acro{lda}[LDA]{\textit{Local Density Approximation}}
+	
+	\acro{lic}[LIC]{\textit{Line Integral Convolution}}
      
     \acro{marij}[MARI-J]{\textit{Multipole Accelerated Resolution of the Identity for $J$}} 	
  	

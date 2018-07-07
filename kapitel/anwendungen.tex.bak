@@ -1,5 +1,6 @@
 \section{Anwendungen in der anorganischen Chemie}
-\subsection{$^{31}$P chemische Verschiebungen in Phospor NHCs}
+\FloatBarrier
+\subsection{\texorpdfstring{$^{31}$P}{31P} chemische Verschiebungen in Phospor NHCs}
 \ac{nhc}
 \begin{figure}[ht!]
 	\centering
@@ -60,7 +61,7 @@
 \begin{table}[ht!]\label{tab:cvhtab1}
 \captionsetup{tablewithin = chapter}
 \captionsetup{font=small, labelfont=bf}
-\captionabove[Vergleich spektroskopischer und struktureller Daten für Phosphor \acp{nhc}]{Vergleich spektroskopischer und struktureller Daten für SIMesPH, IMesPH, $[$SIMesPGa\textit{t}Bu$_2]_2$, SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al\textit{t}Bu, SIMesPH\textit{t}Bu$_2$GaCl und SIMesPH\textit{t}Bu$_2$AlCl. }
+\captionabove[Vergleich spektroskopischer und struktureller Daten für Phosphor \acp{nhc}]{Vergleich spektroskopischer und struktureller Daten für SIMesPH, IMesPH, $[$SIMesPGa\textit{t}Bu$_2]_2$, SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al\textit{t}Bu, SIMesPH\textit{t}Bu$_2$GaCl und SIMesPH\textit{t}Bu$_2$AlCl.}
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{ccccccccc}
 \hline \hline
@@ -97,60 +98,94 @@ SIMesPH\textit{t}Bu$_2$GaCl &-148,8 &-163 &439 &-162 &453 &-162 &447 &-162 &442 
 SIMesPH\textit{t}Bu$_2$AlCl &-151   &-157 &433 &-163 &454 &-164 &449 &-161 &441 &-158 &468 &-137 &488\\
 \end{tabular}}
 \end{table}
+\FloatBarrier
 \newpage
-\subsection{$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}
-Die Implementierung des \ac{cosmo} und der \acp{ecp} in das \texttt{mpshift} Modul lieferte die notwendigen Voraussetzungen, um einen tieferen Einblick über magnetische Eigenschaften in anionischen Verbindungen, welche schwere Elemente beinhalten, zu erhalten. Ein Beispiel dafür ist das in der Gruppe von Stephanie Dehnen synthetisierte $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$\supercite{dehnenhg4te8}, welches in Abbildung \ref{abb:hg8te16} gezeigt ist. Die Seitenansicht (Abbildung \ref{abb:hg8te16} rechts) zeigt das Molekül mit TPSSh\supercite{tao2003climbing}/def2-TZVP\supercite{weigend2005balanced} optimierten Strukturparametern. Dabei ist zu erkennen, dass das Anion nicht vollständig planar ist und damit auch leicht von der idealen $D_{4\textrm{h}}$ symmetrischen Struktur abweicht. 
+
+\subsection{\texorpdfstring{$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$}{[Hg\_8Te\_8(Te\_2)\_4]\^8-}: Ein anorganisches Porphyrin?}
+Die Implementierung des \ac{cosmo} und der \acp{ecp} in das \texttt{mpshift} Modul lieferte die notwendigen Voraussetzungen, um einen tieferen Einblick über magnetische Eigenschaften in anionischen Verbindungen, welche schwere Elemente beinhalten, zu erhalten. Ein Beispiel dafür ist das in der Gruppe von Stephanie Dehnen synthetisierte $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$\supercite{dehnenhg4te8}, welches auf der linken Seite in Abbildung \ref{abb:hg8te16undb8s16} gezeigt ist. Die Seitenansicht  zeigt das Molekül mit TPSSh\supercite{tao2003climbing}/def2-TZVP\supercite{weigend2005balanced} optimierten Strukturparametern. Dabei ist zu erkennen, dass das Anion nicht vollständig planar ist und damit auch leicht von der idealen $D_{4\textrm{h}}$ symmetrischen Struktur abweicht. 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{hg8te16}
+	\includegraphics[width=1.0\textwidth]{hg8te16undb8s16}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$}]{{Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$}(Quecksilber=silber, Tellur=orangebraun). Draufsicht links und Seitenansicht rechts.}
-\label{abb:hg8te16}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$ und B$_8$S$_{16}$}]{{Draufsicht und Seitenansicht von $[$Hg$_8$Te$_{16}]^{8-}$} (links) und B$_8$S$_{16}$ (rechts)(Quecksilber=silber, Tellur=orangebraun, Bohr=braun und Schwefel=gelb).}
+\label{abb:hg8te16undb8s16}
 \end{figure}
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{hg8te16}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$}]{{Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$}(Quecksilber=silber, Tellur=orangebraun). Draufsicht links und Seitenansicht rechts.}
+%\label{abb:hg8te16}
+%\end{figure}
 
-Zusätzlich wurde ebenfalls das bereits bekannte B$_8$S$_{16}$\supercite{krebs1980b8s16} (Abbildung \ref{abb:b8s16}) untersucht. Hier ist die Abweichung des Moleküls mit optimierten Strukturparametern von der planaren Struktur noch deutlich größer, wie die Seitenansicht deutlich zeigt. Die $D_{4\textrm{h}}$ symmetrische Struktur weißt eine schwache imaginäre Mode von etwa -10 Wellenzahlen auf welche genau der Gerüstschwingung entspricht, welche das Durchschwingen des Moleküls beschreibt. Ebenfalls bekannt ist das schwerer Homolog B$_8$Se$_{16}$.
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{b8s16}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von B$_8$S$_{16}$]{Abbildung von B$_8$S$_{16}$(Bohr=braun, Schwefel=gelb). Draufsicht links und Seitenansicht rechts.}
-\label{abb:b8s16}
-\end{figure}
+Zusätzlich wurde ebenfalls das bereits bekannte B$_8$S$_{16}$\supercite{krebs1980b8s16} (Abbildung \ref{abb:hg8te16undb8s16} rechts) untersucht. Hier ist die Abweichung des Moleküls mit optimierten Strukturparametern von der planaren Struktur noch deutlich größer, wie die Seitenansicht deutlich zeigt. Die $D_{4\textrm{h}}$ symmetrische Struktur weißt eine schwache imaginäre Mode von etwa -10 Wellenzahlen auf welche genau der Gerüstschwingung entspricht, welche das Durchschwingen des Moleküls beschreibt. Ebenfalls bekannt ist das schwerer Homolog B$_8$Se$_{16}$.
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{b8s16}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von B$_8$S$_{16}$]{Abbildung von B$_8$S$_{16}$(Bohr=braun, Schwefel=gelb). Draufsicht links und Seitenansicht rechts.}
+%\label{abb:b8s16}
+%\end{figure}
 
-Aufgrund ihrer strukturellen Ähnlichkeit mit dem organischen Porphyrin lag es nahe, den aromatischen Charakter der Verbindungen zu untersuchen. Als Maß für die Aromatizität einer Verbindung kann der durch einen definierten Ring fließende Elektronenstrom angesehen werden. Je diatropischer der Gesamtstrom (d.h. der Strom fließt im Uhrzeigersinn), desto aromatischer ist die Verbindung. Ein stark paratropischer Strom (Strom entgegen des Uhrzeigersinns) deutet dabei auf eine antiaromatische Verbindung hin. Sind die diatropischen und paratropischen Beiträge in etwa von der selben Größe, dann verschwindet der Gesamtstrom - die Verbindung ist nichtaromatisch. Bei der Berechnung der Ringströme mit \ac{gimic} wird dabei so vorgegangen, dass der Strom der durch eine senkrecht zur Bindungsachse stehenden Ebene fließt integriert wird. In beiden oben erwähnten Beispielen kann weiterhin zwischen einem lokalen Ringstrom in den vier Fünfringen und einem globalen Ringstrom um das gesamte Molekül unterschieden werden. Bei den Berechnungen hat sich herausgestellt, dass alle drei Verbindungen, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$ einen schwachen lokalen Ringstrom in den pyrrolartigen fünfgliedrigen Ringen aufweisen. Diese betragen \unit[5.8]{nA/T} in $[$Hg$_8$Te$_{16}]^{8-}$ \unit[3.25]{nA/T} in B$_8$S$_{16}$ und \unit[3.28]{nA/T} in B$_8$Se$_{16}$. Im Vergleich dazu beträgt der Ringstrom in einem Benzolmolekül etwa \unit[12]{nA/T}\supercite{fliegl2012aromatic}. Die globalen Ringströme in den drei Verbindungen sind mit \unit[0.24]{nA/T}, \unit[0.81]{nA/T} und \unit[0.79]{nA/T} verschwindend gering. Im Vergleich dazu liegt der globale Ringstrom des organischen Porphyrins bei etwa \unit[27]{nA/T}. Dieser spaltet sich in den Fünfgliedrigen Ringen in einen äußeren und inneren Pfad auf, welche bei jeweils einen Ringstrom von etwa \unit[13]{nA/T} aufweisen. Der lokale Ringstrom in den fünfgliedrigen Ringen ist schwächer als \unit[1]{nA/T}.\supercite{fliegl2012aromatic} In sogenannten \ac
+Aufgrund ihrer strukturellen Ähnlichkeit mit dem organischen Porphyrin lag es nahe, den aromatischen Charakter der Verbindungen zu untersuchen. Als Maß für die Aromatizität einer Verbindung kann der durch einen definierten Ring fließende Elektronenstrom angesehen werden. Je diatropischer der Gesamtstrom (d.h. der Strom fließt im Uhrzeigersinn), desto aromatischer ist die Verbindung. Ein stark paratropischer Strom (Strom entgegen des Uhrzeigersinns) deutet dabei auf eine antiaromatische Verbindung hin. Sind die diatropischen und paratropischen Beiträge in etwa von der selben Größe, dann verschwindet der Gesamtstrom - die Verbindung ist nichtaromatisch. Bei der Berechnung der Ringströme mit \ac{gimic} wird dabei so vorgegangen, dass der Strom der durch eine senkrecht zur Bindungsachse stehenden Ebene fließt, integriert wird. In den oben erwähnten Beispielen kann weiterhin zwischen einem lokalen Ringstrom in den vier Fünfringen und einem globalen Ringstrom um das gesamte Molekül unterschieden werden. Bei den Berechnungen hat sich herausgestellt, dass alle drei Verbindungen, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$ einen schwachen lokalen Ringstrom in den pyrrolartigen fünfgliedrigen Ringen aufweisen. Diese betragen \unit[5.8]{nA/T} in $[$Hg$_8$Te$_{16}]^{8-}$ \unit[3.25]{nA/T} in B$_8$S$_{16}$ und \unit[3.28]{nA/T} in B$_8$Se$_{16}$. Im Vergleich dazu beträgt der Ringstrom in einem Benzolmolekül etwa \unit[12]{nA/T}\supercite{fliegl2012aromatic}. Die globalen Ringströme in den drei Verbindungen sind mit \unit[0.24]{nA/T}, \unit[0.81]{nA/T} und \unit[0.79]{nA/T} verschwindend gering. Im Vergleich dazu liegt der globale Ringstrom des organischen Porphyrins bei etwa \unit[27]{nA/T}. Dieser spaltet sich in den fünfgliedrigen Ringen in einen äußeren und inneren Pfad auf, welche jeweils einen Ringstrom von etwa \unit[13]{nA/T} aufweisen. Der lokale Ringstrom in den fünfgliedrigen Ringen ist schwächer als \unit[1]{nA/T}.\supercite{fliegl2012aromatic} In sogenannten \ac{lic} Plots lassen sich die Ringströme in einer gewählten Ebene visualisieren. Dies wurde für das organische Porphyrin und die drei Verbindungen $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$ gemacht und die entsprechenden Plots sind in der Abbildung \ref{abb:lic} zu sehen. Beim Porphyrin ist eindeutig der globale Ringstrom zu erkennen, welcher sich in den fünfgliedrigen Ringen in zwei Pfade aufspaltet. im Vergleich dazu weisen die anderen Verbindungen lediglich lokale Ströme in den fünfgliedrigen Ringen auf.
+Diese Befunde lassen sich dadurch erklären, dass im Porphyrin eine völlig andere elektronische Situation vorliegt. Die Aromatizität und die damit verbundenen Ringströme basieren auf einem delokalisierten $\pi$-System. Beispielsweise im $[$Hg$_8$Te$_{16}]^{8-}$ lassen sich alle \acp{mo} durch Anwenden einer Lokalisierungsprozedur\supercite{boys1960sf} zu Zwei-Zentren-zwei-Elektronen Bindungen und freien Elektronenpaaren lokalisieren. Dabei werden s-artige Einfachbindungen zwischen den benachbarten Atomen und zwei freie Elektronenpaare pro Telluratom erhalten. 
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{porph_1bohr}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in Porphyrin]{Ringströme in Porphyrin \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
-\label{abb:porphlic}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{hgte_1bohr}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$}]{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
-\label{abb:hgtelic}
-\end{figure}
+ 
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{b8s16_1bohr}
+	\includegraphics[width=1.0\textwidth]{1bohr}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in B$_8$S$_{16}$]{Ringströme in B$_8$S$_{16}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
-\label{abb:b8s16hlic}
+	\captionsetup{font=small, labelfont=bf}\caption[{Ringströme in Porphyrin, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$}]{Ringströme in Porphyrin (oben links), $[$Hg$_8$Te$_{16}]^{8-}$ (oben rechts), B$_8$S$_{16}$ (unten links) und B$_8$Se$_{16}$ (unten rechts) \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
+\label{abb:lic}
 \end{figure}
+
+\FloatBarrier
+Das fehlende $\pi$-System im $[$Hg$_8$Te$_{16}]^{8-}$ sorgt für eine gewisse Strukturelle Flexibilität des Makrozyklus. Dadurch können unterschiedliche Koordinationspolyeder und Koordinationszahlen realisiert werden. Die Strukturparameter wurden exemplarisch für der Komplexierung der Metallkationen Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$ optimiert und die erhaltenen Strukturen sind in Abbildung \ref{abb:komplexierung} gezeigt. Für Zn$^{2+}$ und Cu$^+$ ist zu erkennen, dass es dabei im Wesentlichen zu einer Verzerrung des Makrozyklus kommt um eine tetraedrische Koordination zu ermöglichen. Im Falle der Ce$^{4+}$ und Ti$^{4+}$ Kationen führt die Komplexierung zu einer deutlich ausgeprägteren Umordnung der Atome. Damit lässt sich sowohl die bevorzugt größere Koordinationszahl des Ce$^{4+}$ als auch die Anpassung an den deutlich geringeren Ionenradius des Ti$^{4+}$ realisieren.
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{b8se16_1bohr}
+	\includegraphics[width=1.0\textwidth]{komplexierung}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in B$_8$Se$_{16}$]{Ringströme in B$_8$Se$_{16}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
-\label{abb:b8se16hlic}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildungen der berechneten Komplexe [M@Hg$_8$Te$_{16}]^{(8–q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ , oder Ti$^{4+}$)}]{{Abbildung der berechneten Komplexe [M@Hg$_8$Te$_{16}]^{(8–q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ oder Ti$^{4+}$)} zur Veranschaulichung der strukturellen Flexibilität von $[$Hg$_8$Te$_{16}]^{8-}$. }
+\label{abb:komplexierung}
 \end{figure}
-\newpage
-\subsection{[Co\@Sn$_6$Sb$_6$]$^{3-}$}
-\newpage
+
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{porph_1bohr}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in Porphyrin]{Ringströme in Porphyrin \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
+%\label{abb:porphlic}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{hgte_1bohr}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$}]{Ringströme in $[$Hg$_8$Te$_8$(Te$_2$)$_4]^{8-}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
+%\label{abb:hgtelic}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{b8s16_1bohr}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in B$_8$S$_{16}$]{Ringströme in B$_8$S$_{16}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
+%\label{abb:b8s16hlic}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{b8se16_1bohr}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Ringströme in B$_8$Se$_{16}$]{Ringströme in B$_8$Se$_{16}$ \unit[1]{bohr} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.u.} (blau) und \unit[0.07]{a.u.}.}
+%\label{abb:b8se16hlic}
+%\end{figure}
+
+Das fehlende $\pi$-System im $[$Hg$_8$Te$_{16}]^{8-}$ sorgt für eine gewisse Strukturelle Flexibilität des Makrozyklus. Dadurch können unterschiedliche Koordinationspolyeder und Koordinationszahlen realisiert werden.
+
+\FloatBarrier
+\subsection{\texorpdfstring{[Co@Sn$_6$Sb$_6$]$^{3-}$}{[Co at Sn\_6Sb\_6\^3-]}}
+\FloatBarrier
 \section{Ringströme in großen ringförmigen Kohlenstoffnanoröhren}

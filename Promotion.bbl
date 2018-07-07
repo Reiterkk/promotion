@@ -3435,6 +3435,33 @@
       \field{pages}{3408\bibrangedash 3414}
       \range{pages}{7}
     \endentry
+    \entry{boys1960sf}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b1ab968acae867ab1df542b1a512b501}{%
+           family={Boys},
+           familyi={B\bibinitperiod},
+           given={SF},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1ab968acae867ab1df542b1a512b501}
+      \strng{fullhash}{b1ab968acae867ab1df542b1a512b501}
+      \strng{bibnamehash}{b1ab968acae867ab1df542b1a512b501}
+      \strng{authorbibnamehash}{b1ab968acae867ab1df542b1a512b501}
+      \strng{authornamehash}{b1ab968acae867ab1df542b1a512b501}
+      \strng{authorfullhash}{b1ab968acae867ab1df542b1a512b501}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{title}{SF Boys, Rev. Mod. Phys. 32, 296 (1960).}
+      \field{volume}{32}
+      \field{year}{1960}
+      \field{pages}{296}
+      \range{pages}{1}
+    \endentry
   \enddatalist
   \missing{roothaanhall}
 \endrefsection
