@@ -23,6 +23,12 @@
 %to automatically ensure floats do not go into the next section.
 \usepackage[section]{placeins}
 
+\usepackage{ltxtable}
+\usepackage{filecontents}
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage{tabularx}
+
 % Unverzichtbare Pakte
 %\usepackage{setspace}
 \usepackage[onehalfspacing]{setspace}
@@ -297,6 +303,8 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 \chapter{Zusammenfassung}\label{zusammenfassung}
 \input{kapitel/zusammenfassung}
 
+\chapter{Anhang}\label{anhang}
+\input{kapitel/anhang}
 
 % Schlussteil - Römische Seitennummerierung
 \backmatter
@@ -322,6 +330,9 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 \chapter*{Veröffentlichungen}
 \markboth{Veröffentlichungen}{} %chapterheader trotz * anzeigen lassen
 \input{kapitel/publikationsliste}
+
+\chapter*{Abbildungsgenehmigungen}
+\input{kapitel/abbildungsgenehmigungen}
 
 \chapter*{Lebenslauf}
 \markboth{Lebenslaug}{} %chapterheader trotz * anzeigen lassen

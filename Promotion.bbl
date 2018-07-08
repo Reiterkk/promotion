@@ -3316,6 +3316,279 @@
       \field{pages}{191\bibrangedash 197}
       \range{pages}{7}
     \endentry
+    \entry{lemp2017nhc}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7aeffad5ce1f5a5309270c20ca8ffa85}{%
+           family={Lemp},
+           familyi={L\bibinitperiod},
+           given={Otfried},
+           giveni={O\bibinitperiod}}}%
+        {{hash=74259a411e00245e9df6a8b3394339ae}{%
+           family={Balmer},
+           familyi={B\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e6414e3a598c8a19c2402a1f6530086f}{%
+           family={Reiter},
+           familyi={R\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9d826df80832973a017b10219312c0bf}{%
+           family={H{ä}nisch},
+           familyi={H\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{cdb08e8c45bd72205e4e3d78d0108d0d}
+      \strng{fullhash}{8a29c97473a9bce586b83062f050781f}
+      \strng{bibnamehash}{8a29c97473a9bce586b83062f050781f}
+      \strng{authorbibnamehash}{8a29c97473a9bce586b83062f050781f}
+      \strng{authornamehash}{cdb08e8c45bd72205e4e3d78d0108d0d}
+      \strng{authorfullhash}{8a29c97473a9bce586b83062f050781f}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Chem. Comm.}
+      \field{number}{54}
+      \field{title}{An NHC--phosphinidenyl as a synthon for new group 13/15 compounds}
+      \field{volume}{53}
+      \field{year}{2017}
+      \field{pages}{7620\bibrangedash 7623}
+      \range{pages}{4}
+    \endentry
+    \entry{perdew1996generalized}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b20502c143ecda7aa2ac9969b4834ecf}{%
+           family={Perdew},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima P},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=33a535778ce96cdd2d59799deeea173d}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={Kieron},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ccb694b80578a814211265eb307fdcde}{%
+           family={Ernzerhof},
+           familyi={E\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{abea4610c58f739c582a833750abe5e3}
+      \strng{fullhash}{abea4610c58f739c582a833750abe5e3}
+      \strng{bibnamehash}{abea4610c58f739c582a833750abe5e3}
+      \strng{authorbibnamehash}{abea4610c58f739c582a833750abe5e3}
+      \strng{authornamehash}{abea4610c58f739c582a833750abe5e3}
+      \strng{authorfullhash}{abea4610c58f739c582a833750abe5e3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Letters}
+      \field{number}{18}
+      \field{title}{Generalized gradient approximation made simple}
+      \field{volume}{77}
+      \field{year}{1996}
+      \field{pages}{3865}
+      \range{pages}{1}
+    \endentry
+    \entry{grimme2010consistent}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3a2585af369dbd4150db746c63177b0c}{%
+           family={Grimme},
+           familyi={G\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9ea89f28c9ac3083757e980d0b4a8fec}{%
+           family={Antony},
+           familyi={A\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c1a85a74b8b1d9992721d20377d7f50f}{%
+           family={Ehrlich},
+           familyi={E\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=46ef1d196909f4706f09f9180d33ab91}{%
+           family={Krieg},
+           familyi={K\bibinitperiod},
+           given={Helge},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{7f2c045e27c631b672c2213391161e48}
+      \strng{fullhash}{e1a418c5d65690d89c4609d3b99952c2}
+      \strng{bibnamehash}{e1a418c5d65690d89c4609d3b99952c2}
+      \strng{authorbibnamehash}{e1a418c5d65690d89c4609d3b99952c2}
+      \strng{authornamehash}{7f2c045e27c631b672c2213391161e48}
+      \strng{authorfullhash}{e1a418c5d65690d89c4609d3b99952c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{15}
+      \field{title}{A consistent and accurate ab initio parametrization of density functional dispersion correction (DFT-D) for the 94 elements H-Pu}
+      \field{volume}{132}
+      \field{year}{2010}
+      \field{pages}{154104}
+      \range{pages}{1}
+    \endentry
+    \entry{latypov2015quantum}{article}{}
+      \name{author}{4}{}{%
+        {{hash=59c87099bd73edbec73d52cee8a61f68}{%
+           family={Latypov},
+           familyi={L\bibinitperiod},
+           given={Shamil\bibnamedelima K},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=00610ebee72ce90adf814e673065db12}{%
+           family={Polyancev},
+           familyi={P\bibinitperiod},
+           given={Fedor\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a75abe7b13d9cce2afcbfce9cb386a61}{%
+           family={Yakhvarov},
+           familyi={Y\bibinitperiod},
+           given={Dmitry\bibnamedelima G},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=8a20b9196187f43d9188c334eaf6f33b}{%
+           family={Sinyashin},
+           familyi={S\bibinitperiod},
+           given={Oleg\bibnamedelima G},
+           giveni={O\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{756e5e5fa18d7a5489adcbd657144f32}
+      \strng{fullhash}{a9c6568c0eb9185c7a2ed6bc1bab8543}
+      \strng{bibnamehash}{a9c6568c0eb9185c7a2ed6bc1bab8543}
+      \strng{authorbibnamehash}{a9c6568c0eb9185c7a2ed6bc1bab8543}
+      \strng{authornamehash}{756e5e5fa18d7a5489adcbd657144f32}
+      \strng{authorfullhash}{a9c6568c0eb9185c7a2ed6bc1bab8543}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Chem. Chem. Phys.}
+      \field{number}{10}
+      \field{title}{Quantum chemical calculations of 31 P NMR chemical shifts: scopes and limitations}
+      \field{volume}{17}
+      \field{year}{2015}
+      \field{pages}{6976\bibrangedash 6987}
+      \range{pages}{12}
+    \endentry
+    \entry{adamo1999toward}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a086ce279acd38e0811d69d3a52d0fb0}{%
+           family={Adamo},
+           familyi={A\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=358a7a1086c2895496d63896c15fecbb}{%
+           family={Barone},
+           familyi={B\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{256f58aaac46da928b7777a9862ced1d}
+      \strng{fullhash}{256f58aaac46da928b7777a9862ced1d}
+      \strng{bibnamehash}{256f58aaac46da928b7777a9862ced1d}
+      \strng{authorbibnamehash}{256f58aaac46da928b7777a9862ced1d}
+      \strng{authornamehash}{256f58aaac46da928b7777a9862ced1d}
+      \strng{authorfullhash}{256f58aaac46da928b7777a9862ced1d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{13}
+      \field{title}{Toward reliable density functional methods without adjustable parameters: The PBE0 model}
+      \field{volume}{110}
+      \field{year}{1999}
+      \field{pages}{6158\bibrangedash 6170}
+      \range{pages}{13}
+    \endentry
+    \entry{wiberg1998nmr}{article}{}
+      \name{author}{5}{}{%
+        {{hash=2acfffe8fb313b2dd87a007c9490c539}{%
+           family={Wiberg},
+           familyi={W\bibinitperiod},
+           given={Kenneth\bibnamedelima B},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=6884a9750173eca3565e7245871f703f}{%
+           family={Hammer},
+           familyi={H\bibinitperiod},
+           given={Jack\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b7f7cd09288a94c2b6ef5ceee1886a87}{%
+           family={Zilm},
+           familyi={Z\bibinitperiod},
+           given={Kurt\bibnamedelima W},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=efb5a676be9c3494e199058dab7608fe}{%
+           family={Cheeseman},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ba7b25ddb5c7987d1c560faa200606dd}{%
+           family={Keith},
+           familyi={K\bibinitperiod},
+           given={Todd\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{2d478de2f25dd727dc14560e3b61eae4}
+      \strng{fullhash}{afe88d307daf5ae63af584fcb2108efe}
+      \strng{bibnamehash}{afe88d307daf5ae63af584fcb2108efe}
+      \strng{authorbibnamehash}{afe88d307daf5ae63af584fcb2108efe}
+      \strng{authornamehash}{2d478de2f25dd727dc14560e3b61eae4}
+      \strng{authorfullhash}{afe88d307daf5ae63af584fcb2108efe}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Phys. Chem. A}
+      \field{number}{45}
+      \field{title}{NMR chemical shifts. 1. The role of relative atomic orbital phase in determining the sign of the paramagnetic terms: ClF, CH3F, CH3NH3+, FNH3+, and HC⋮ CF}
+      \field{volume}{102}
+      \field{year}{1998}
+      \field{pages}{8766\bibrangedash 8773}
+      \range{pages}{8}
+    \endentry
     \entry{dehnenhg4te8}{article}{}
       \name{author}{5}{}{%
         {{hash=bcf8eadd41c65d271335b50bde100acb}{%
@@ -3362,6 +3635,88 @@
       \field{journaltitle}{Angewandte Chemie International Edition}
       \field{title}{[Hg4Te8 (Te2) 4] 8-: A Heavy Metal Porphyrinoid Embedded in a Lamellar Structure}
       \field{year}{2018}
+    \endentry
+    \entry{weigend2006accurate}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{fullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{bibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authorbibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authornamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authorfullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Chem. Chem. Phys.}
+      \field{number}{9}
+      \field{title}{Accurate Coulomb-fitting basis sets for H to Rn}
+      \field{volume}{8}
+      \field{year}{2006}
+      \field{pages}{1057\bibrangedash 1065}
+      \range{pages}{9}
+    \endentry
+    \entry{peterson2003systematically}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a613436db10138d0b384b2f1d594180e}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Kirk\bibnamedelima A},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=666f06cdfc958739fc07a3b6456d7a28}{%
+           family={Figgen},
+           familyi={F\bibinitperiod},
+           given={Detlev},
+           giveni={D\bibinitperiod}}}%
+        {{hash=aa5b205ff6cd36d879de8ec2aef94395}{%
+           family={Goll},
+           familyi={G\bibinitperiod},
+           given={Erich},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3323938213ad97b8053bbb466ce4694e}{%
+           family={Stoll},
+           familyi={S\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+        {{hash=42db805a0f6a17e9c917ee0fa2492bfa}{%
+           family={Dolg},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{428498bd42f8c925829e7320eb08e6c0}
+      \strng{fullhash}{10be35d750f2775a22ca2daeff72d98d}
+      \strng{bibnamehash}{10be35d750f2775a22ca2daeff72d98d}
+      \strng{authorbibnamehash}{10be35d750f2775a22ca2daeff72d98d}
+      \strng{authornamehash}{428498bd42f8c925829e7320eb08e6c0}
+      \strng{authorfullhash}{10be35d750f2775a22ca2daeff72d98d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{21}
+      \field{title}{Systematically convergent basis sets with relativistic pseudopotentials. II. Small-core pseudopotentials and correlation consistent basis sets for the post-d group 16--18 elements}
+      \field{volume}{119}
+      \field{year}{2003}
+      \field{pages}{11113\bibrangedash 11123}
+      \range{pages}{11}
     \endentry
     \entry{krebs1980b8s16}{article}{}
       \name{author}{2}{}{%

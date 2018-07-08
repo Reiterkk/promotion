@@ -2096,13 +2096,28 @@
     <bcf:citekey order="98">deglmann2002efficient</bcf:citekey>
     <bcf:citekey order="99">mack2017</bcf:citekey>
     <bcf:citekey order="100">reiter2017calculation</bcf:citekey>
-    <bcf:citekey order="101">dehnenhg4te8</bcf:citekey>
-    <bcf:citekey order="102">tao2003climbing</bcf:citekey>
+    <bcf:citekey order="101">lemp2017nhc</bcf:citekey>
+    <bcf:citekey order="102">perdew1996generalized</bcf:citekey>
     <bcf:citekey order="103">weigend2005balanced</bcf:citekey>
-    <bcf:citekey order="104">krebs1980b8s16</bcf:citekey>
-    <bcf:citekey order="105">fliegl2012aromatic</bcf:citekey>
-    <bcf:citekey order="106">fliegl2012aromatic</bcf:citekey>
-    <bcf:citekey order="107">boys1960sf</bcf:citekey>
+    <bcf:citekey order="104">grimme2010consistent</bcf:citekey>
+    <bcf:citekey order="105">klamt1993cosmo</bcf:citekey>
+    <bcf:citekey order="106">latypov2015quantum</bcf:citekey>
+    <bcf:citekey order="106">reiter2017calculation</bcf:citekey>
+    <bcf:citekey order="107">adamo1999toward</bcf:citekey>
+    <bcf:citekey order="108">perdew1986density</bcf:citekey>
+    <bcf:citekey order="108">becke1988density</bcf:citekey>
+    <bcf:citekey order="109">lee1988development</bcf:citekey>
+    <bcf:citekey order="110">wiberg1998nmr</bcf:citekey>
+    <bcf:citekey order="111">klamt1993cosmo</bcf:citekey>
+    <bcf:citekey order="112">dehnenhg4te8</bcf:citekey>
+    <bcf:citekey order="113">tao2003climbing</bcf:citekey>
+    <bcf:citekey order="114">weigend2005balanced</bcf:citekey>
+    <bcf:citekey order="115">weigend2006accurate</bcf:citekey>
+    <bcf:citekey order="116">peterson2003systematically</bcf:citekey>
+    <bcf:citekey order="117">krebs1980b8s16</bcf:citekey>
+    <bcf:citekey order="118">fliegl2012aromatic</bcf:citekey>
+    <bcf:citekey order="119">fliegl2012aromatic</bcf:citekey>
+    <bcf:citekey order="120">boys1960sf</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
