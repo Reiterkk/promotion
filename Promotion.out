@@ -12,7 +12,7 @@
 \BOOKMARK [2][-]{subsection.2.5.5}{2.5.5 CPHF-Gleichungen f\374r Abschirmungskonstanten}{section.2.5}% 12
 \BOOKMARK [3][-]{subsubsection.2.5.5.1}{2.5.5.1 Konvergenzbeschleunigung durch das DIIS-Verfahren}{subsection.2.5.5}% 13
 \BOOKMARK [2][-]{subsection.2.5.6}{2.5.6 NMR Abschirmungskonstanten in der DFT}{section.2.5}% 14
-\BOOKMARK [2][-]{subsection.2.5.7}{2.5.7 Die Berechnung von Ringstr\366men}{section.2.5}% 15
+\BOOKMARK [2][-]{subsection.2.5.7}{2.5.7 Die Berechnung von Stromdichten und Ringstr\366men}{section.2.5}% 15
 \BOOKMARK [0][-]{chapter.3}{3 Grundlegende Programmstruktur des Moduls mpshift}{}% 16
 \BOOKMARK [0][-]{chapter.4}{4 Verbesserung der Effizienz}{}% 17
 \BOOKMARK [1][-]{section.4.1}{4.1 Die RI-Methode f\374r chemische Abschirmungskonstanten}{chapter.4}% 18

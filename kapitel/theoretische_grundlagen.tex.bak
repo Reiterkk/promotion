@@ -6,13 +6,13 @@ Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen 
 \bigskip
 Die in der Literatur gebräuchliche Notation für Indizes und Integrale soll im Folgenden kurz erläutert werden. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige \acp{mo} und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $A,B,\dotsc$ werden zur Kennzeichnung der insgesamt $N_K$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin - welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der Kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
 \newpage
-Sollten Einelektronenintegrale nicht explizit angegeben sein, so gilt für sie die folgende Dirac-Notation:
+Sollten die ein-Elektronen-Integrale nicht explizit angegeben sein, so gilt für sie die folgende Dirac-Notation:
 \begin{gather*}
 	\langle\chi_\mu\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\chi_\mu(\vec{r})\Diff3\vec{r}\\
 	\langle\chi_\mu\vert\hat O\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\hat O\chi_\mu(\vec{r})\Diff3\vec{r}.
 \end{gather*}
 
-Im Gegensatz dazu werden Zweielektronenintegrale in der Mulliken-Notation angegeben
+Im Gegensatz dazu werden zwei-Elektronen-Integrale in der Mulliken-Notation angegeben
 \begin{gather*}
 	\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)=\int\int\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
     \left(\chi_\mu\chi_\nu\vert\vert\chi_\kappa\chi_\lambda\right)=\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)-\frac{1}{2}\left(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu\right)\\
@@ -426,7 +426,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
   	\begin{equation}\label{eq:evonmub}
   	  E(\vec{\mu}_K,\vec{B})=\sum_{\mu\nu}D_{\mu\nu}(\vec{\mu}_K,\vec{B})(h_{\mu\nu}(\vec{\mu}_K,\vec{B})+\frac{1}{2}G_{\mu\nu}(\vec{\mu}_K,\vec{B})).
 	\end{equation}  	 
-  	\textcolor{myred}{Zur Bewahrung der Übersichtlichkeit in den Formeln wird im weiteren Verlauf dieser Arbeit die explizite Abhängigkeit wieder weggelassen.}
+  	Zur Bewahrung der Übersichtlichkeit in den Formeln wird im weiteren Verlauf dieser Arbeit die explizite Abhängigkeit wieder weggelassen.
   	
   	Um nun letztlich den Abschirmungstensor zu erhalten, muss die Energie aus Gleichung (\ref{eq:evonmub}), analog zu Gleichung (\ref{eq:abschirmugstensor}), nach den Kernmomenten und dem Magnetfeld differenziert werden. Wie später in Kapitel \ref{kap:cphf} zu sehen sein wird, stellt insbesondere die Berechnung der gestörten Dichtematrix eine Herausforderung dar. Die Abhängigkeiten der Ein- und Zweielektronenoperatoren bereiten zwar einen Mehraufwand, jedoch muss beim weiteren Herleiten der Gleichungen nur die Differenzierung nach dem Magnetfeld oder den Kernmomenten strikt durchgeführt werden.
   	 
@@ -449,7 +449,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      \begin{equation}
       G_{\mu\nu}^{\mu_{K_\alpha}}= \frac{\partial}{\partial\mu_{K_\alpha}} \left(\sum_{\kappa\lambda}D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}\right)_{\vec{\mu}_K=\vec{B}=0}=\sum_{\kappa\lambda}D_{\kappa\lambda}^{\mu_{K_\alpha}}G_{\mu\nu\kappa\lambda}.
      \end{equation}
-     Aufgrund der Symmetrie der Zweielektronenintegrale lassen sich diese so umformen, dass die Berechnung der $G_{\mu\nu}^{\mu_{K_\alpha}}$ komplett vermieden werden kann. Es gilt
+     Aufgrund der Symmetrie der zwei-Elektronen-Integrale lassen sich diese so umformen, dass die Berechnung der $G_{\mu\nu}^{\mu_{K_\alpha}}$ komplett vermieden werden kann. Es gilt
      
      \begin{equation}
      \begin{aligned}
@@ -595,7 +595,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
   	 welche beispielsweise in \supercite{baron1991} bewiesen wird. 
   	 
   	 
-  	 Die abgeleiteten Zweielektronenintegrale $G_{\mu\nu\kappa\lambda}^{B_\beta}$ sind analog
+  	 Die abgeleiteten zwei-Elektronen-Integrale $G_{\mu\nu\kappa\lambda}^{B_\beta}$ sind analog
   	 
   	 \begin{equation}\label{gmunukaladb}
   	 \begin{aligned}
@@ -607,7 +607,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
   	 \end{aligned}
      \end{equation}  	  
 	
-	mit der verkürzten Notation für die abgeleiteten Zweielektronen-Vierzentrenintegrale
+	mit der verkürzten Notation für die abgeleiteten vier-Zentren-zwei-Elektronen-Integrale
 	
 	\begin{equation}
 	\begin{aligned}
@@ -626,7 +626,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 
     Wie zu erwarten war, werden zur Berechnung der Energien erster Ordnung lediglich die ungestörten Koeffizienten benötigt. Zur Berechnung des chemischen Abschirmungstensors werden hingegen die gestörten Koeffizienten benötigt. Unter Berücksichtigung des Zwischenergebnisses aus Gleichung (\ref{eq:enachmukurz}) folgt für den Abschirmungstensor
     
-    \begin{equation}
+    \begin{equation}\label{eq:analytsigma}
     \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right),
     \end{equation}
     wobei die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}}$ bereits aus Gleichung (\ref{eq:hmukelemente}) bekannt sind. Die Matrixelemente $h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}$ ergeben sich durch die gemischte zweite Ableitung von $\hat{H}$
@@ -981,5 +981,33 @@ und
 \end{equation}
 .
 
-\subsection{Die Berechnung von Ringströmen}
-\ac{gimic}\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations}
+\subsection{Die Berechnung von Stromdichten und Ringströmen}
+Informationen über die Aromatizität, die Delokalisation der Elektronen oder den Pfad des Elektronenstroms in einem Molekül lassen sich über die magnetisch induzierte Stromdichte erhalten.\supercite{fliegl2011gauge} Beispielsweise wird in planaren Molekülen, die einem externen Magnetfeld ausgesetzt sind welches senkrecht zur Molekülebene angelegt wurde, ein Ringstrom induziert. Ist das Molekül aromatisch, so resultiert ein diatropischer Nettostrom welcher im Uhrzeigersinn fließt. Das dabei erzeugte Magnetfeld ist dem externen Magnetfeld entgegensetzt. Umgekehrt verhält es sich in antiaromatischen Verbindungen. Der in diesem Fall induzierte paratropische Nettostrom fließt gegen den Uhrzeigersinn und das externe Magnetfeld wird verstärkt. Die Stromstärke kann als Maß für die Aromatizität in der entsprechenden Verbindung angesehen werden. Berechnen lässt sich diese Stromstärke durch numerische Integration des Stromflusses entlang einer chemischen Bindung und um molekulare Ringe herum. Somit lassen sich die Pfade des Stroms in Molekülen beschreiben und Aussagen über die Aromatizität einzelner Ringe in Verbindungen, welche aus mehreren verknüpften Ringen bestehen, treffen. Analog zur Berechnung der chemischen Abschirmungskonstanten muss auch bei der Berechnung der Stromdichte das Problem der Eichursprungsinvarianz adressiert und gelöst werden. Die populärste und vielversprechendste Methode für chemische Abschirmungskonstanten beruht auf der Verwendung von \acp{giao}. Dieses Vorgehen lässt sich auch auf die Berechnung der Stromdichte übertragen und ist in der \ac{gimic}\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations} Methode realisiert. Durch die Verwendung der \acp{giao} wird die Stromdichte unabhängig von der Wahl des Eichursprungs, Eichinvarianz wird hingegen erst im Limit einer vollständigen Basis erreicht.\supercite{juselius2004calculation} Zusätzlich sorgen die \acp{giao} für eine Verbesserung der Basissatzkonvergenz.\supercite{fliegl2011gauge} Zur Berechnung der Stromdichte wird die Gleichung für die Berechnung der chemischen Abschirmungskonstanten, welche auf analytischer Differenzierung basiert, mit der entsprechenden Bio-Savart Gleichung kombiniert.\supercite{lazzeretti2000ring} Der analytische Ausdruck für die Abschirmungskonstanten ist nach Gleichung (\ref{eq:analytsigma}) 
+
+    \begin{equation}\label{eq:sigmaana}
+    \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right) 
+    \end{equation}
+    
+und der entsprechende Bio-Savart Ausdruck ist gegeben durch
+
+	\begin{equation}\label{eq:sigmabio}
+	\sigma_{K_\alpha\beta}=-\varepsilon_{\alpha\delta\gamma}\int\frac{r_\delta-R_{K\delta}}{\vert\vec{r}-\vec{R}_K\vert^3}J^{B_\beta}_\gamma\Diff3\vec{r}
+	\end{equation}
+	
+	mit dem Levi-Civita tensor $\varepsilon_{\alpha\delta\gamma}$ und 
+	\begin{equation}
+	J^{B_\beta}_\gamma(\vec{r})=\frac{\partial J_\gamma(\vec{r})}{\partial B_\beta}.
+	\end{equation}
+	
+	Der magnetisch induzierte Stromdichtetensor $J^{B_\beta}_\gamma(\vec{r})$ kann durch Kombination der beiden Gleichunge (\ref{eq:sigmaana}) und (\ref{eq:sigmabio}) definiert werden. Dies und die Verwendung der \acp{giao} führt nach weiterem Umformen zur eigentliche Gleichung für die Berechnung der einzelnen Komponenten des Stromdichtetensors\supercite{juselius2004calculation}
+	
+	\begin{equation}\label{eq:stromdichte}
+	\begin{aligned}
+	J^{B_\beta}_\alpha(\vec{r})=&\sum_{\mu\nu} D_{\mu\nu}\frac{\partial\chi_\mu}{\partial B_\beta}\hat{\tilde{h}}^{\mu_{K_\alpha}}\chi_\nu
+	+\sum_{\mu\nu} D_{\mu\nu}\chi_\mu\hat{\tilde{h}}^{\mu_{K_\alpha}}\frac{\partial\chi_\nu}{\partial B_\beta}\\
+	&+\sum_{\mu\nu} D_{\mu\nu}^{B_\beta}\chi_\mu\hat{\tilde{h}}^{\mu_{K_\alpha}}\chi_\nu
+	-\varepsilon_{\alpha\beta\delta}\left[\sum_{\mu\nu} D_{\mu\nu}^{B_\delta}\chi_\mu\hat{\tilde{h}}^{\mu_{K_\alpha}B_\beta}\chi_\nu\right].
+	\end{aligned}
+	\end{equation}
+	
+	Hierbei wurden die neuen Operatoren $\hat{\tilde{h}}^{\mu_{K_\alpha}}$ und $\hat{\tilde{h}}^{\mu_{K_\alpha}B_\beta}$ ohne den Term $\vert\vec{r}-\vec{R}_K\vert^3$ im Nenner eingeführt. Da die Gleichung (\ref{eq:stromdichte}) nur Basisfunktionen, deren Ableitung nach den Komponenten des Magnetfeldes und die entsprechenden Dichtematrizen enthält, kann die Stromdichte für jeden Punkt im Raum berechnet werden. Während der Summation heben sich alle Beiträge auf, die explizit vom Eichursprung bzw. von den Kernpositionen $\vec{R}_K$ abhängen, wodurch der Stromdichtetensor unabhängig davon wird. Weil für die Berechnung der Stromdichte die Information über den verwendeten Basissatz, die ungestörte Dichtematrix $\boldsymbol D$ und die gestörte Dichtematrix $\boldsymbol{D}^{B_\beta}$ benötigt wird, ist eine vorhergehende Berechnung der chemischen Abschirmungskonstanten, bei der die benötigten Größen erhalten werden, notwendig. Auf der anderen Seite ist die eigentliche Berechnung der Stromdichte damit aber auch unabhängig von der verwendeten Methode für die Berechnung der Abschirmungskonstanten. Eine Berechnung der Stromdichte auf \ac{cc} Niveau benötigt genau so viel Zeit wie die Berechnung auf \ac{dft} Niveau. Das \ac{gimic} ist ein eigenständiges Programm und kann die von \textsc{Turbomole} zur Verfügung gestellte Dichtematrix und gestörte Dichtematrix für die Berechnung der Stromdichte verwenden. 

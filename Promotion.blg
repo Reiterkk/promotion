@@ -1,21 +1,21 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Promotion.blg'
-[37] biber-MSWIN64:313> INFO - === 
+[36] biber-MSWIN64:313> INFO - === 
 [65] Biber.pm:371> INFO - Reading 'Promotion.bcf'
-[177] Biber.pm:857> INFO - Found 99 citekeys in bib section 0
-[196] Biber.pm:3976> INFO - Processing section 0
-[212] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[218] bibtex.pm:1500> INFO - LaTeX decoding ...
-[425] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
-[439] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
-[441] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
-[942] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
-[1088] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\rVjLlZSWVX\literatur.bib_4340.utf8, line 1132, warning: 4 characters of junk seen at toplevel
-[1090] Utils.pm:193> WARN - I didn't find a database entry for 'roothaanhall' (section 0)
-[1172] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1172] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1173] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[1173] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[1245] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
-[1286] bbl.pm:720> INFO - Output to Promotion.bbl
-[1286] Biber.pm:110> INFO - WARNINGS: 5
+[183] Biber.pm:857> INFO - Found 102 citekeys in bib section 0
+[202] Biber.pm:3976> INFO - Processing section 0
+[220] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[227] bibtex.pm:1500> INFO - LaTeX decoding ...
+[435] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
+[449] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
+[451] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
+[962] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
+[1096] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\zAg6Acrgsn\literatur.bib_6352.utf8, line 1132, warning: 4 characters of junk seen at toplevel
+[1098] Utils.pm:193> WARN - I didn't find a database entry for 'roothaanhall' (section 0)
+[1187] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1187] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1187] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[1187] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[1263] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
+[1305] bbl.pm:720> INFO - Output to Promotion.bbl
+[1305] Biber.pm:110> INFO - WARNINGS: 5
