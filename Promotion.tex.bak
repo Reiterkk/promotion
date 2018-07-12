@@ -122,7 +122,7 @@
 \DeclareFieldFormat{page}{#1}% nur erste Seite anzeigen
 \ExecuteBibliographyOptions{sorting=none}% Sortierung nach Erwähnungsreihenfolge
 \ExecuteBibliographyOptions{%
-isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
+isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 }% Vorname abgekürzt
 %\AtEveryBibitem{%
 %  \clearfield{title} % ohne titel
@@ -150,10 +150,14 @@ isbn=false, url=false, doi=false, eprint=false, giveninits=true,%
 %--
 \renewbibmacro{in:}{} %http://projekte.dante.de/DanteFAQ/BiblatexInBeiArticleUnterdr%fccken
 \AtEveryBibitem{\clearfield{note}} %http://projekte.dante.de/DanteFAQ/BiblatexFeldUnterdr%fccken
-\AtEveryBibitem{\clearfield{url}}
+%\AtEveryBibitem{\clearfield{url}}
 \AtEveryBibitem{\clearfield{number}}
 \AtEveryBibitem{\clearfield{abstract}}
 \AtEveryBibitem{\clearlist{language}}
+
+\DefineBibliographyStrings{ngerman}{%
+  urlseen = {zuletzt aufgerufen am}
+}
 
 %http://de.comp.text.tex.narkive.com/d5x9LIG5/biblatex-anpassung-eines-bibliography-styles
 \DeclareFieldFormat[misc]{title}{#1\isdot} %titel bei misc nicht kursiv

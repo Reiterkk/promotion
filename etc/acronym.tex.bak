@@ -52,8 +52,12 @@
 	\acro{lda}[LDA]{\textit{Local Density Approximation}}
 	
 	\acro{lic}[LIC]{\textit{Line Integral Convolution}}
+	
+	\acro{maa}[MAA]{mittlere absolute Abweichung}
      
-    \acro{marij}[MARI-J]{\textit{Multipole Accelerated Resolution of the Identity for $J$}} 	
+    \acro{marij}[MARI-J]{\textit{Multipole Accelerated Resolution of the Identity for $J$}}
+    
+    \acro{maxa}[Max.A]{maximale absolute Abweichung} 	
  	
 	\acro{mgga}[MGGA]{\textit{Meta}-GGA}   
 		\acrodefplural{mgga}[MGGA]{\textit{Meta}-GGA}	
@@ -75,6 +79,10 @@
     \acro{npa}[NPA]{\textit{Natural Population Analysis}}
       
     \acro{ri}[RI]{\textit{Resolution of the Identity}}
+    
+    \acro{rns}[RNS]{Ribonukleinsäure}
+    
+    \acro{sa}[SA]{Standardabweichung}
     
     \acro{sao}[SAO]{\textit{Symmetry Adapted Orbital}}
     

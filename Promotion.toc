@@ -69,52 +69,52 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.1.3.1}Aceton in Wasser}{64}{subsubsection.5.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{64}{subsubsection.5.1.3.2}
+\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{65}{subsubsection.5.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{64}{section.5.2}
+\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{66}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Theorie}{65}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Theorie}{67}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Implementierung}{69}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Implementierung}{71}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{70}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{73}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{73}{section.5.3}
+\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{76}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Theorie}{75}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Theorie}{78}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{76}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Implementierung}{79}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{80}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{83}{subsubsection.5.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{80}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{83}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{82}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{85}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{90}{section.5.4}
+\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{93}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{91}{chapter.6}
+\contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{94}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Anwendungen}{92}{chapter.7}
+\contentsline {chapter}{\numberline {7}Anwendungen}{101}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{92}{section.7.1}
+\contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{101}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}$^{31}$P chemische Verschiebungen in Phospor NHCs}{92}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}$^{31}$P chemische Verschiebungen in Phospor NHCs}{101}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{99}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.2}$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{108}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$}{102}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$}{111}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{102}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{111}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{103}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{112}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Anhang}{104}{chapter.9}
+\contentsline {chapter}{\numberline {9}Anhang}{113}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{109}{chapter*.65}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{125}{chapter*.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{110}{chapter*.67}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{126}{chapter*.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{111}{section*.68}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{127}{section*.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{113}{chapter*.70}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{129}{chapter*.84}

@@ -47,6 +47,7 @@
 @string{molphys = "Mol. Phys."}
 @string{nanolet = "Nano Letters"}
 @string{orglet  = "Org. Letters"}
+@string{omr = "Org. Magn. Reson."}
 @string{pac = "Pure Appl. Chem."}
 @string{pccp = "Phys. Chem. Chem. Phys."}
 @string{physrep = "Phys. Rep."}
@@ -56,6 +57,7 @@
 @string{prl = "Phys. Rev. Letters"}
 @string{proy = "Proc. R. Soc. (London)"}
 @string{proya = "Proc. R. Soc. A"}
+@string{prsola = "Proc. R. Soc. Lond. A"}
 @string{psc = "Physica Scripta"}
 @string{pssb = "Phys. Stat. Sol. B"}
 @string{rcc = "Rev. Comput. Chem."}
@@ -1214,4 +1216,181 @@ pbe0
   volume={36},
   pages={1--88},
   year={2000}
+}
+
+@article{flaig2014benchmarking,
+  title={Benchmarking hydrogen and carbon NMR chemical shifts at HF, DFT, and MP2 levels},
+  author={Flaig, Denis and Maurer, Marina and Hanni, Matti and Braunger, Katharina and Kick, Leonhard and Thubauville, Matthias and Ochsenfeld, Christian},
+  journal=jctc,
+  volume={10},
+  number={2},
+  pages={572--578},
+  year={2014},
+  publisher={ACS Publications}
+}
+
+@online{ochsenfeld:structures,
+  author = {Ochsenfeld, Christian},
+  title = {Molecular structures for benchmarking NMR shifts},
+  url = {http://www.cup.uni-muenchen.de/pc/ochsenfeld/download/},
+  urldate = {2018-07-11}
+}
+@article{ochsenfeld2004ab,
+  title={Ab Initio NMR Spectra for Molecular Systems with a Thousand and More Atoms: A Linear-Scaling Method},
+  author={Ochsenfeld, Christian and Kussmann, J{\"o}rg and Koziol, Felix},
+  journal={Angew. Chem.},
+  volume={116},
+  number={34},
+  pages={4585--4589},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+
+@article{gauss1993effects,
+  title={Effects of electron correlation in the calculation of nuclear magnetic resonance chemical shifts},
+  author={Gauss, J{\"u}rgen},
+  journal=jcp,
+  volume={99},
+  number={5},
+  pages={3629--3643},
+  year={1993},
+  publisher={AIP}
+}
+@article{jameson1987gas,
+  title={Gas-phase 13C chemical shifts in the zero-pressure limit: refinements to the absolute shielding scale for 13C},
+  author={Jameson, A Keith and Jameson, Cynthia J},
+  journal=cpl,
+  volume={134},
+  number={5},
+  pages={461--466},
+  year={1987},
+  publisher={Elsevier}
+}
+
+@article{keal2004semiempirical,
+  title={A semiempirical generalized gradient approximation exchange-correlation functional},
+  author={Keal, Thomas W and Tozer, David J},
+  journal=jcp,
+  volume={121},
+  number={12},
+  pages={5654--5660},
+  year={2004},
+  publisher={AIP}
+}
+
+@book{dolbier2016guide,
+  title={Guide to fluorine NMR for organic chemists},
+  author={Dolbier, William R},
+  year={2016},
+  publisher={John Wiley \& Sons}
+}
+
+@book{kuhl2008phosphorus,
+  title={Phosphorus-31 NMR spectroscopy: a concise introduction for the synthetic organic and organometallic chemist},
+  author={K{\"u}hl, Olaf},
+  year={2008},
+  publisher={Springer Science \& Business Media}
+}
+
+@article{bohne1999sweet,
+  title={SWEET-WWW-based rapid 3D construction of oligo-and polysaccharides.},
+  author={Bohne, Andreas and Lang, Elke and von der Lieth, Claus-Wilhelm},
+  journal={Bioinformatics (Oxford, England)},
+  volume={15},
+  number={9},
+  pages={767--768},
+  year={1999}
+}
+@article{beer2011nuclei,
+  title={Nuclei-selected NMR shielding calculations: a sublinear-scaling quantum-chemical method},
+  author={Beer, Matthias and Kussmann, J{\"o}rg and Ochsenfeld, Christian},
+  journal=jcp,
+  volume={134},
+  number={7},
+  pages={074102},
+  year={2011},
+  publisher={AIP}
+}
+
+@article{kumar2016nuclei,
+  title={Nuclei-selected atomic-orbital response-theory formulation for the calculation of NMR shielding tensors using density-fitting},
+  author={Kumar, Chandan and Kj{\ae}rgaard, Thomas and Helgaker, Trygve and Fliegl, Heike},
+  journal=jcp,
+  volume={145},
+  number={23},
+  pages={234108},
+  year={2016},
+  publisher={AIP Publishing}
+}
+
+@article{weigend2002fully,
+  title={A fully direct RI-HF algorithm: Implementation, optimised auxiliary basis sets, demonstration of accuracy and efficiency},
+  author={Weigend, Florian},
+  journal=pccp,
+  volume={4},
+  number={18},
+  pages={4285--4291},
+  year={2002},
+  publisher={Royal Society of Chemistry}
+}
+
+@article{neese2009efficient,
+  title={Efficient, approximate and parallel Hartree--Fock and hybrid DFT calculations. A ‘chain-of-spheres’ algorithm for the Hartree--Fock exchange},
+  author={Neese, Frank and Wennmohs, Frank and Hansen, Andreas and Becker, Ute},
+  journal=chemphys,
+  volume={356},
+  number={1-3},
+  pages={98--109},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{roothaan1951new,
+  title={New developments in molecular orbital theory},
+  author={Roothaan, Clemens Carel Johannes},
+  journal=rmp,
+  volume={23},
+  number={2},
+  pages={69},
+  year={1951},
+  publisher={APS}
+}
+
+@article{hall1951molecular,
+  title={The molecular orbital theory of chemical valency VIII. A method of calculating ionization potentials},
+  author={Hall, George G},
+  journal=prsola,
+  volume={205},
+  number={1083},
+  pages={541--552},
+  year={1951},
+  publisher={The Royal Society}
+}
+
+@online{2kydstructure,
+  title = {2KYD: RDC and RCSA refinement of an A-form RNA: Improvements in Major Groove Width},
+  url = {https://www.rcsb.org/structure/2kyd},
+  urldate = {2018-07-12}
+}
+
+@article{tiffon1978effet,
+  title={Effet de Solvant en RMN du Carbone-13. III—Cas d'un Solut{\'e} Polaire: l'Ac{\'e}tone dans Divers Solvants et en Phase Gazeuse},
+  author={Tiffon, Bernard and Dubois, Jacques-Emile},
+  journal=omr,
+  volume={11},
+  number={6},
+  pages={295--302},
+  year={1978},
+  publisher={Wiley Online Library}
+}
+
+@article{cossi2003different,
+  title={Different models for the calculation of solvent effects on 17 O nuclear magnetic shielding},
+  author={Cossi, Maurizio and Crescenzi, Orlando},
+  journal=jcp,
+  volume={118},
+  number={19},
+  pages={8863--8872},
+  year={2003},
+  publisher={AIP}
 }
