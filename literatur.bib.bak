@@ -1394,3 +1394,14 @@ pbe0
   year={2003},
   publisher={AIP}
 }
+
+@article{fulmer2010nmr,
+  title={NMR chemical shifts of trace impurities: common laboratory solvents, organics, and gases in deuterated solvents relevant to the organometallic chemist},
+  author={Fulmer, Gregory R and Miller, Alexander JM and Sherden, Nathaniel H and Gottlieb, Hugo E and Nudelman, Abraham and Stoltz, Brian M and Bercaw, John E and Goldberg, Karen I},
+  journal={Organometallics},
+  volume={29},
+  number={9},
+  pages={2176--2179},
+  year={2010},
+  publisher={ACS Publications}
+}

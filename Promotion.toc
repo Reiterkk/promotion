@@ -47,35 +47,29 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Implementierung}{50}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Seminumerischer Austausch}{54}{section.4.3}
+\contentsline {section}{\numberline {4.3}Parallelisierung und weitere Optimierungen}{54}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Theorie}{54}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{57}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Implementierung}{56}{subsection.4.3.2}
+\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{57}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Parallelisierung und weitere Optimierungen}{56}{section.4.4}
+\contentsline {subsection}{\numberline {5.1.1}Theorie}{58}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{60}{chapter.5}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Direct COSMO-RS}{59}{subsubsection.5.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{60}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.2}Implementierung}{60}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Theorie}{61}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{61}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.1}Direct COSMO-RS}{62}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Aceton in Wasser}{61}{subsubsection.5.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Implementierung}{63}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{63}{subsubsection.5.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{64}{subsection.5.1.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Aceton in Wasser}{64}{subsubsection.5.1.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{65}{subsubsection.5.1.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{66}{section.5.2}
+\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{67}{section.5.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.1}Theorie}{67}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Implementierung}{71}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Implementierung}{72}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{73}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
@@ -109,12 +103,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Zusammenfassung}{112}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Anhang}{113}{chapter.9}
+\contentsline {chapter}{\numberline {9}Ausblick}{114}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{125}{chapter*.79}
+\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{114}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{126}{chapter*.81}
+\contentsline {subsection}{\numberline {9.1.1}Theorie}{114}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{127}{section*.82}
+\contentsline {chapter}{\numberline {10}Anhang}{117}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{129}{chapter*.84}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{132}{chapter*.84}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{134}{chapter*.86}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{135}{section*.87}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{137}{chapter*.89}
