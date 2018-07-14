@@ -747,6 +747,37 @@
       \field{title}{Modern quantum chemistry : introduction to advanced electronic structure theory}
       \field{year}{1982}
     \endentry
+    \entry{pauli1925zusammenhang}{article}{}
+      \name{author}{1}{}{%
+        {{hash=092601d1e9e8519accb07c37a0611492}{%
+           family={Pauli},
+           familyi={P\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{fullhash}{092601d1e9e8519accb07c37a0611492}
+      \strng{bibnamehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authorbibnamehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authornamehash}{092601d1e9e8519accb07c37a0611492}
+      \strng{authorfullhash}{092601d1e9e8519accb07c37a0611492}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Zeits. Phys.}
+      \field{number}{1}
+      \field{title}{{Ü}ber den Zusammenhang des Abschlusses der Elektronengruppen im Atom mit der Komplexstruktur der Spektren}
+      \field{volume}{31}
+      \field{year}{1925}
+      \field{pages}{765\bibrangedash 783}
+      \range{pages}{19}
+    \endentry
     \entry{slater1974self}{book}{}
       \name{author}{1}{}{%
         {{hash=1684c74db71bd0c2d3b04f218c70e093}{%
@@ -1529,8 +1560,8 @@
       \strng{authorbibnamehash}{3decc455f65991dd60d0d68ca32f1222}
       \strng{authornamehash}{3decc455f65991dd60d0d68ca32f1222}
       \strng{authorfullhash}{3decc455f65991dd60d0d68ca32f1222}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1765,8 +1796,8 @@
       \strng{authorbibnamehash}{bf97b7886665f4e63fa65024a4dd2da2}
       \strng{authornamehash}{bf97b7886665f4e63fa65024a4dd2da2}
       \strng{authorfullhash}{bf97b7886665f4e63fa65024a4dd2da2}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2117,8 +2148,8 @@
       \strng{authorbibnamehash}{1001b2ca696f9b9078c3d153dc4c1943}
       \strng{authornamehash}{1001b2ca696f9b9078c3d153dc4c1943}
       \strng{authorfullhash}{1001b2ca696f9b9078c3d153dc4c1943}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2598,8 +2629,8 @@
       \strng{authorbibnamehash}{750624ed0e5991b6ea62afb91ba97244}
       \strng{authornamehash}{750624ed0e5991b6ea62afb91ba97244}
       \strng{authorfullhash}{750624ed0e5991b6ea62afb91ba97244}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2634,8 +2665,8 @@
       \strng{authorbibnamehash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
       \strng{authornamehash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
       \strng{authorfullhash}{eb4f5d1757b3474a6cd7ac5b2cc1e6c9}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2986,8 +3017,8 @@
       \strng{authorbibnamehash}{3441da275cc2a6114f2c3443cc56f2dd}
       \strng{authornamehash}{3441da275cc2a6114f2c3443cc56f2dd}
       \strng{authorfullhash}{3441da275cc2a6114f2c3443cc56f2dd}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}

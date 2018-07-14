@@ -7,80 +7,80 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Grundlegende Programmstruktur}}{41}{figure.caption.21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Grundlegende Programmstruktur}}{40}{figure.caption.21}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces \ac {ri}-J Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{48}{figure.caption.22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \ac {ri}-J Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{47}{figure.caption.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces \ac {marij} Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{53}{figure.caption.23}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Solvatationseffekt f\IeC {\"u}r Aceton in Wasser}}{63}{figure.caption.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r $^{13}$C Verschiebungen}}{65}{figure.caption.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r unterschiedliche L\IeC {\"o}sungsmittel}}{66}{figure.caption.32}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces ECP-Testrechnungen an Co(ppy)$_3$}}{75}{figure.caption.33}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Vergleich experimenteller $^{119}$Sn Verschiebungen mit berechneten Abschirmungskonstanten}}{76}{figure.caption.34}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces \ac {ir} und \ac {vcd} Spektren von (\textit {R})- und (\textit {S})-Methyloxiran}}{77}{figure.caption.36}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Wichtigste Routinen f\IeC {\"u}r die Berechnung von VCD-Intensit\IeC {\"a}ten}}{84}{figure.caption.40}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Abbildung von Ir(ppy)$_3$}}{86}{figure.caption.44}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulierte \ac {vcd} Spektren von Ir(ppy)$_3$}}{88}{figure.caption.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Abbildung von \ac {cpa}}}{89}{figure.caption.46}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Simulierte \ac {vcd} Spektren von \ac {cpa}}}{90}{figure.caption.47}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Abbildung von ikosaedrischen Kohlenstoffclustern}}{91}{figure.caption.49}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Simulierte \ac {vcd} Spektren von ikosaedrischen Kohlenstoffclustern}}{91}{figure.caption.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Skalierung von \texttt {mpshift} und \texttt {aoforce}}}{92}{figure.caption.51}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces \ac {marij} Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{52}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Standardabweichungen f\IeC {\"u}r unterschiedliche Funktionale und Basiss\IeC {\"a}tze}}{96}{figure.caption.55}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Solvatationseffekt f\IeC {\"u}r Aceton in Wasser}}{62}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Abbildung eines \ac {rns} Segmentes}}{98}{figure.caption.57}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r $^{13}$C Verschiebungen}}{64}{figure.caption.31}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r unterschiedliche L\IeC {\"o}sungsmittel}}{65}{figure.caption.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Abbildung von SIMesPH}}{104}{figure.caption.62}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces ECP-Testrechnungen an Co(ppy)$_3$}}{74}{figure.caption.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Abbildung von IMesPH}}{104}{figure.caption.63}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Vergleich experimenteller $^{119}$Sn Verschiebungen mit berechneten Abschirmungskonstanten}}{75}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Abbildung von $[$SIMesPGa\textit {t}Bu$_2]_2$}}{105}{figure.caption.64}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces \ac {ir} und \ac {vcd} Spektren von (\textit {R})- und (\textit {S})-Methyloxiran}}{76}{figure.caption.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Abbildung von SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl}}{105}{figure.caption.65}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Wichtigste Routinen f\IeC {\"u}r die Berechnung von VCD-Intensit\IeC {\"a}ten}}{83}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Abbildung von K(SIMesP)$_3$Al\textit {t}Bu}}{106}{figure.caption.66}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Abbildung von Ir(ppy)$_3$}}{85}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Abbildung von SIMesPH\textit {t}Bu$_2$GaCl}}{106}{figure.caption.67}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Simulierte \ac {vcd} Spektren von Ir(ppy)$_3$}}{87}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Abbildung von SIMesPH\textit {t}Bu$_2$AlCl}}{107}{figure.caption.68}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Abbildung von \ac {cpa}}}{88}{figure.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$ und B$_8$S$_{16}$}}{108}{figure.caption.69}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Simulierte \ac {vcd} Spektren von \ac {cpa}}}{89}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Ringstr\IeC {\"o}me in Porphyrin, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$}}{110}{figure.caption.71}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Abbildung von ikosaedrischen Kohlenstoffclustern}}{90}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Abbildungen der hypothetischen Komplexe [M@Hg$_8$Te$_{16}]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$)}}{111}{figure.caption.72}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Simulierte \ac {vcd} Spektren von ikosaedrischen Kohlenstoffclustern}}{90}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Neue schematische Programmstruktur des Moduls \texttt {mpshift}}}{113}{figure.caption.73}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Skalierung von \texttt {mpshift} und \texttt {aoforce}}}{91}{figure.caption.51}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Standardabweichungen f\IeC {\"u}r unterschiedliche Funktionale und Basiss\IeC {\"a}tze}}{95}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Abbildung eines \ac {rns} Segmentes}}{97}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Molek\IeC {\"u}lorbitale von SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl}}{131}{figure.caption.82}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Abbildung von SIMesPH}}{103}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Abbildung von IMesPH}}{103}{figure.caption.63}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Abbildung von $[$SIMesPGa\textit {t}Bu$_2]_2$}}{104}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Abbildung von SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl}}{104}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Abbildung von K(SIMesP)$_3$Al\textit {t}Bu}}{105}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Abbildung von SIMesPH\textit {t}Bu$_2$GaCl}}{105}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Abbildung von SIMesPH\textit {t}Bu$_2$AlCl}}{106}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$ und B$_8$S$_{16}$}}{107}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Ringstr\IeC {\"o}me in Porphyrin, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$}}{109}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Abbildungen der hypothetischen Komplexe [M@Hg$_8$Te$_{16}]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$)}}{110}{figure.caption.72}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Neue schematische Programmstruktur des Moduls \texttt {mpshift}}}{112}{figure.caption.73}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Molek\IeC {\"u}lorbitale von SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl}}{130}{figure.caption.82}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

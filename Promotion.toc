@@ -15,106 +15,106 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Molek\IeC {\"u}le im Magnetfeld}{14}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Berechnung von NMR Abschirmkonstanten}{15}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.1}Berechnung von NMR Abschirmungskonstanten}{15}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Erste analytische Ableitung der Hartree-Fock-Energie nach den Kernmomenten}{19}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Erste analytische Ableitung der Hartree-Fock-Energie nach den Komponenten der Kernmomente}{18}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.3}Erste analytische Ableitung der Hartree-Fock-Energie nach den Komponenten des Magnetfeldes}{21}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.4}Gemischte zweite analytische Ableitung der Hartree-Fock-Energie nach den Kernmomenten und nach den Komponenten des Magnetfeldes}{24}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.4}Gemischte zweite analytische Ableitung der Hartree-Fock-Energie nach den Kernmomenten und nach den Komponenten des Magnetfeldes}{23}{subsection.2.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.5}CPHF-Gleichungen f\IeC {\"u}r Abschirmungskonstanten}{26}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.5}CPHF-Gleichungen f\IeC {\"u}r Abschirmungskonstanten}{25}{subsection.2.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.5.1}Konvergenzbeschleunigung durch das DIIS-Verfahren}{27}{subsubsection.2.5.5.1}
+\contentsline {subsubsection}{\numberline {2.5.5.1}Konvergenzbeschleunigung durch das DIIS-Verfahren}{26}{subsubsection.2.5.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.6}NMR Abschirmungskonstanten in der DFT}{32}{subsection.2.5.6}
+\contentsline {subsection}{\numberline {2.5.6}NMR Abschirmungskonstanten in der DFT}{31}{subsection.2.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.7}Die Berechnung von Stromdichten und Ringstr\IeC {\"o}men}{36}{subsection.2.5.7}
+\contentsline {subsection}{\numberline {2.5.7}Die Berechnung von Stromdichten und Ringstr\IeC {\"o}men}{35}{subsection.2.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Grundlegende Programmstruktur des Moduls \texttt {mpshift}}{38}{chapter.3}
+\contentsline {chapter}{\numberline {3}Grundlegende Programmstruktur des Moduls \texttt {mpshift}}{37}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Verbesserung der Effizienz}{42}{chapter.4}
+\contentsline {chapter}{\numberline {4}Verbesserung der Effizienz}{41}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Die RI-Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{43}{section.4.1}
+\contentsline {section}{\numberline {4.1}Die RI-Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{42}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Theorie}{44}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Theorie}{43}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Implementierung}{46}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Implementierung}{45}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{49}{section.4.2}
+\contentsline {section}{\numberline {4.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{48}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Theorie}{49}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Theorie}{48}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Implementierung}{50}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Implementierung}{49}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Parallelisierung und weitere Optimierungen}{54}{section.4.3}
+\contentsline {section}{\numberline {4.3}Parallelisierung und weitere Optimierungen}{53}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{57}{chapter.5}
+\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{56}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{57}{section.5.1}
+\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{56}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Theorie}{58}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Theorie}{57}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.1}Direct COSMO-RS}{59}{subsubsection.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1.1}Direct COSMO-RS}{58}{subsubsection.5.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Implementierung}{60}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Implementierung}{59}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{61}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{60}{subsection.5.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Aceton in Wasser}{61}{subsubsection.5.1.3.1}
+\contentsline {subsubsection}{\numberline {5.1.3.1}Aceton in Wasser}{60}{subsubsection.5.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{63}{subsubsection.5.1.3.2}
+\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{62}{subsubsection.5.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{67}{section.5.2}
+\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{66}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Theorie}{67}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Theorie}{66}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Implementierung}{72}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Implementierung}{71}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{73}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{72}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{76}{section.5.3}
+\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{75}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Theorie}{78}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Theorie}{77}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{79}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Implementierung}{78}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{83}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{82}{subsubsection.5.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{83}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{82}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{85}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{84}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{93}{section.5.4}
+\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{92}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{94}{chapter.6}
+\contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{93}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Anwendungen}{101}{chapter.7}
+\contentsline {chapter}{\numberline {7}Anwendungen}{100}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{101}{section.7.1}
+\contentsline {section}{\numberline {7.1}Anwendungen in der anorganischen Chemie}{100}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}$^{31}$P chemische Verschiebungen in Phospor NHCs}{101}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}$^{31}$P chemische Verschiebungen in Phospor NHCs}{100}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{108}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.2}$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{107}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$}{111}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$}{110}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{111}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{110}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{112}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{111}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Ausblick}{114}{chapter.9}
+\contentsline {chapter}{\numberline {9}Ausblick}{113}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{114}{section.9.1}
+\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{113}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Theorie}{114}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.1}Theorie}{113}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Anhang}{117}{chapter.10}
+\contentsline {chapter}{\numberline {10}Anhang}{116}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{132}{chapter*.84}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{131}{chapter*.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{134}{chapter*.86}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{133}{chapter*.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{135}{section*.87}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{134}{section*.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{137}{chapter*.89}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{136}{chapter*.89}

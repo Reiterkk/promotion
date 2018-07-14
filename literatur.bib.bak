@@ -1405,3 +1405,14 @@ pbe0
   year={2010},
   publisher={ACS Publications}
 }
+
+@article{pauli1925zusammenhang,
+  title={{\"U}ber den Zusammenhang des Abschlusses der Elektronengruppen im Atom mit der Komplexstruktur der Spektren},
+  author={Pauli, Wolfgang},
+  journal=zeitphys,
+  volume={31},
+  number={1},
+  pages={765--783},
+  year={1925},
+  publisher={Springer}
+}
