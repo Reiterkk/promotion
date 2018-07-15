@@ -279,12 +279,15 @@ Im aktuellen und vorherigen Kapitel wurden mit dem Hartree-Fock-Verfahren und de
 \section{Moleküle im Magnetfeld}
 
 Nachdem die Wellenfunktion und die Energie bekannt ist, lassen sich molekulare Eigenschaften üblicherweise als Ableitung der Energie erhalten. Eigenschaften von Molekülen, die durch das Anlegen eines externen magnetischen Feldes zustande kommen, lassen sich daher als Ableitung der Energie unter anderem nach dem externen Magnetfeld berechnen. Ist das angelegte Feld schwach, so kann dieses Feld als Störung der Grundzustandswellenfunktion angesehen und durch einen störungstheoretischen Ansatz berechnet werden. Die Wellenfunktion und die elektronische Energie lassen sich dann in Abhängigkeit vom externen Magnetfeld $\vec{B}$ und den Kerndipolmomenten $\vec{\mu}_K$ der jeweiligen Kerne entwickeln:\supercite{ditchfield1974self} 
+\begingroup
+\small
 \begin{equation}
 \begin{aligned}
 \Psi(\vec{\mu}_K,\vec{B})=&\Psi^{(0)}+\sum_{\alpha K}\left(\frac{\partial\Psi(\vec{\mu}_K,\vec{B})}{\partial \mu_{K_\alpha}}\mu_{K_\alpha}\right)_{\vec{\mu}_K=\vec{B}=0}+\sum_\beta\left(\frac{\partial\Psi(\vec{\mu}_K,\vec{B})}{\partial B_\beta}B_\beta\right)_{\vec{\mu}_K=\vec{B}=0}+\cdots\\
 =&\Psi^{(0)}+\sum_{\alpha K}\Psi_{\mu_{K_\alpha}}^{(1,0)}\mu_{K_\alpha}+\sum_\beta\Psi_{B_\beta}^{(0,1)}B_\beta+\cdots
 \end{aligned}
 \end{equation}
+\endgroup
 
 und analog
 \begin{equation}\label{eq:evonbmu0}
@@ -668,8 +671,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      
 \subsection{CPHF-Gleichungen für Abschirmungskonstanten}\label{kap:cphf}
 
-     Zur Berechnung der gestörten Koeffizienten $c_{\mu i}^{B_\beta}$ werden zunächst die modifizierten \ac{scf}-Gleichungen (\ref{eq:modscf}) nach $B_\beta$ abgeleitet.
-     
+     Zur Berechnung der gestörten Koeffizienten $c_{\mu i}^{B_\beta}$ werden zunächst die modifizierten \ac{scf}-Gleichungen (\ref{eq:modscf}) nach $B_\beta$ abgeleitet.    
     \begin{equation}
 	\sum_{\nu}\left(F_{\mu\nu}^{B_\beta}c_{\nu i}+\iu F_{\mu\nu}c_{\nu i}^{B_\beta}\right)=\sum_{\nu}\left(\varepsilon_i S_{\mu\nu}^{B_\beta}c_{\nu i}+\iu\varepsilon_i S_{\mu\nu}c_{\nu i}^{B_\beta}\right)
 	\end{equation}
@@ -680,13 +682,11 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	\end{equation}
 	
 	Es ist nun zweckmäßig, die gestörten Koeffizienten durch eine Linearkombination von ungestörten Koeffizienten auszudrücken. Es wird folgender Ansatz gemacht
-	
 	\begin{equation}\label{eq:cnachbentwicklung}
 	c_{\mu i}^{B_\beta}=\sum_{p}c_{\mu p} U_{pi}^{B_\beta},
 	\end{equation}
 	
-	welcher in Gleichung (\ref{eq:rhdersort}) eingesetzt wird. Zusätzliches Ausnutzen von ursprünglichen Roothaan-Hall-Gleichungen (\ref{roothaanhall}) sowie der Orthonormalitätsbedingung Gleichung (\ref{eq:orthonormal}) führt damit zu
-	
+	welcher in Gleichung (\ref{eq:rhdersort}) eingesetzt wird. Zusätzliches Ausnutzen der ursprünglichen Roothaan-Hall-Gleichungen (\ref{roothaanhall}) sowie der Orthonormalitätsbedingung (Gleichung (\ref{eq:orthonormal})) führt damit zu	
     \begin{equation}\label{eq:cphfupi}
     \begin{aligned}
 	\sum_{\mu\nu}c_{\mu q}^*\left(F_{\mu\nu}^{B_\beta}c_{\nu i}-\varepsilon_i S_{\mu\nu}^{B_\beta}c_{\nu i}\right)=&\sum_p\sum_{\mu\nu}c_{\mu q}^*\iu\left(\varepsilon_i S_{\mu\nu}c_{\nu p}U_{pi}^{B_\beta}-\varepsilon_p S_{\mu\nu}c_{\nu p}U_{pi}^{B_\beta}\right)\\
@@ -694,8 +694,8 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	=&\iu\left(\varepsilon_i-\varepsilon_q\right)U_{qi}^{B_\beta}.
 	\end{aligned}
 	\end{equation}	
-	Das Einsetzen von Gleichung (\ref{eq:cnachbentwicklung}) in die nach $B_\beta$ abgeleitete Orthonormalitätsbedingung Gleichung (\ref{eq:orthonormalnachb}) ergibt 
 	
+	Das Einsetzen von Gleichung (\ref{eq:cnachbentwicklung}) in die nach $B_\beta$ abgeleitete Orthonormalitätsbedingung Gleichung (\ref{eq:orthonormalnachb}) liefert außerdem 	
 	\begin{equation}\label{eq:cphfuji}
 	\begin{aligned}
 	-\sum_{\mu\nu}c_{\mu i}S_{\mu\nu}^{B_\beta}c_{\nu j}=&\iu\sum_p\sum_{\mu\nu}\left(c_{\mu p}U_{pi}^{B_\beta}S_{\mu\nu}c_{\nu j}-c_{\nu i}S_{\mu\nu}c_{\nu p}U_{pj}^{B_\beta}\right)\\
@@ -704,19 +704,17 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	\end{equation}
     
     
-    Die Gleichungen (\ref{eq:cphfupi}) und (\ref{eq:cphfuji}) werden \ac{cphf}-Gleichungen genannt.\supercite{gerratt1968force} Sie bilden ein unterbestimmtes Gleichungssystem, wodurch zusätzliche Forderungen gemacht werden können.\supercite{weigendphdthesis} Durch die Wahl  $U_{ji}^{B_\beta}=-U_{ij}^{B_\beta}$ folgt unmittelbar für die Berechnung des besetzt-besetzt Blocks
-    
+    Die Gleichungen (\ref{eq:cphfupi}) und (\ref{eq:cphfuji}) werden \ac{cphf}-Gleichungen genannt.\supercite{gerratt1968force} Sie bilden ein unterbestimmtes Gleichungssystem, wodurch zusätzliche Forderungen gemacht werden können.\supercite{weigendphdthesis} Durch die Wahl  $U_{ji}^{B_\beta}=-U_{ij}^{B_\beta}$ folgt unmittelbar für die Berechnung des besetzt-besetzt Blocks    
     \begin{equation}\label{eq:uji}
-    U_{ji}^{B_\beta}=-\frac{1}{2}\sum_{\mu\nu}c_{\mu j}S_{\mu\nu}^{B_\beta}c_{\nu i}=-\frac{1}{2}S_{ji}^{B_\beta}
+    U_{ji}^{B_\beta}=-\frac{1}{2}\sum_{\mu\nu}c_{\mu j}S_{\mu\nu}^{B_\beta}c_{\nu i}=-\frac{1}{2}S_{ji}^{B_\beta}.
     \end{equation}
     
-    Da für $\left(\varepsilon_i-\varepsilon_a\right)$ im Allgemeinen keine allzu kleine oder gar verschwindende Werte zu erwarten sind, kann der virtuell-besetzte Block durch
-    
+    Da für $\left(\varepsilon_i-\varepsilon_a\right)$ im Allgemeinen keine allzu kleine oder gar verschwindende Werte zu erwarten sind, kann der virtuell-besetzte Block durch    
     \begin{equation}\label{eq:uai}
     U_{ai}^{B_\beta}=\frac{\sum_{\mu\nu}c_{\mu a}^*\left(F_{\mu\nu}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}}{\varepsilon_i-\varepsilon_a}=\frac{F_{ai}^{B_\beta}-\varepsilon_i S_{ai}^{B_\beta}}{\varepsilon_i-\varepsilon_a}
     \end{equation}
-    berechnet werden. Die gestörte Fockmatrix ist
     
+    berechnet werden. Die dafür benötigte gestörte Fockmatrix ist   
     \begin{equation}\label{eq:fmunudb}
     \begin{aligned}
     F_{\mu\nu}^{B_\beta}=&\left.\frac{\partial F_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{\mu}_K=\vec{B}=0}=h_{\mu\nu}^{B_\beta}+G_{\mu\nu}^{B_\beta}\\
@@ -724,8 +722,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     \end{aligned}
     \end{equation}
     
-    und hängt damit selbst von den gestörten Koeffizienten ab. Bedingt durch die Symmetrie der Coulombintegrale und die Antisymmetrie der gestörten Dichtematrix verschwindet der Beitrag der Coulombintegrale 
-    
+    und hängt damit selbst von den gestörten Koeffizienten ab. Bedingt durch die Symmetrie der Coulombintegrale und die Antisymmetrie der gestörten Dichtematrix verschwindet der Beitrag der nicht abgeleiteten Coulombintegrale    
     \begin{equation}\label{eq:dkaladbg}
     \begin{aligned}
     \sum_{\kappa\lambda}D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}=& \sum_{\kappa\lambda}D_{\kappa\lambda}^{B_\beta}\left[\left(\chi_{\mu}\chi_{\nu}|\chi_{\kappa}\chi_{\lambda}\right)-\frac{1}{2}\left(\chi_{\mu}\chi_{\lambda}|\chi_{\kappa}\chi_{\nu}\right)\right] \\
@@ -736,20 +733,19 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     Damit sind die \ac{cphf}-Gleichungen über den Austauschterm $K$ gekoppelt und müssen in einem iterativen Verfahren näherungsweise gelöst werden.
     
     \subsubsection{Konvergenzbeschleunigung durch das DIIS-Verfahren}
-    Zur Verbesserung des Konvergenzverhaltens der \ac{scf}-Iterationen wurde von Pulay das \ac{diis}-Verfahren vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen der vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene, aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt über die Lagrange-Methode dazu, dass eine lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt.
-    
-    Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Kapitel erwähnt, können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet
-    
+    Zur Verbesserung des Konvergenzverhaltens der \ac{scf}-Iterationen wurde von Pulay das \ac{diis}-Verfahren vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen der vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene, aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt über die Lagrange-Methode dazu, dass ein lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt. Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Kapitel erwähnt, können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet   
     \begin{equation}\label{eq:lfunktional}
     \begin{aligned}
     \mathcal{L}=&\sum_a\sum_i U_{ai}^{B_\beta}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
     &\left.+\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)U_{ai}^{B_\beta}\right].
     \end{aligned}
     \end{equation}
-    Die Ableitung des Funktionals aus Gleichung (\ref{eq:lfunktional}) nach den $U_{ai}^{B_\beta}$ liefert die \ac{cphf}-Gleichungen (\ref{eq:cphfupi}), welche es zu lösen gilt. Gleichzeitig sind die Lösungen der \ac{cphf}-Gleichungen jedoch auch stationäre Punkte des Funktionals $\mathcal{L}$, wodurch dieses minimiert werden soll. Im \ac{diis}-Verfahren sollen nun die bestmöglichen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration $(k)$ durch eine Linearkombination aus allen bisher berechneten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ gebildet werden.
+    
+    Die Ableitung des Funktionals aus Gleichung (\ref{eq:lfunktional}) nach den $U_{ai}^{B_\beta}$ liefert die \ac{cphf}-Gleichungen (\ref{eq:cphfupi}), welche es zu lösen gilt. Gleichzeitig sind die Lösungen der \ac{cphf}-Gleichungen jedoch auch stationäre Punkte des Funktionals $\mathcal{L}$, wodurch dieses minimiert werden soll. Im \ac{diis}-Verfahren sollen nun die bestmöglichen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration $(k)$ durch eine Linearkombination aus allen bisher berechneten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ gebildet werden
     \begin{equation}\label{eq:uentwicklung}
     \left(U_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}.
     \end{equation}
+    
     Ziel des \ac{diis}-Verfahrens ist es daher die $x_l^{B_\beta}$ zu bestimmen. Dafür wird zunächst die Entwicklung aus Gleichung (\ref{eq:uentwicklung}) in das Funktional $\mathcal{L}$ eingesetzt
     \begin{equation}
     \begin{aligned}
@@ -757,15 +753,17 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta} c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^k x_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(m)}\right],
     \end{aligned}
     \end{equation}  
+    
     wobei zu beachten ist, dass der Term $D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$ über die gestörte Dichtematrix auch von den $x_l^{B_\beta}$ abhängt. Als nächstes werden nun die stationären Punkte des Funktionals $\mathcal{L}$ in Bezug auf die Koeffizienten $x_l^{B_\beta}$ bestimmt. Dies geschieht unter der Nebenbedingung, dass sich die Koeffizienten $x_l^{B_\beta}$ zu 1 aufsummieren:
     \begin{equation}
     \sum_{l=1}^k x_l^{B_\beta}=1.
 	\end{equation}     
-   	Die Nebenbedingung lässt sich folgendermaßen begründen. Die approximierten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ aus der $(l)$-ten Iteration lassen sich als Summe der exakten $\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ und einem Fehler $\left(e_{ai}^{B_\beta}\right)^{(l)}$ schreiben
-   	
+	
+   	Diese Nebenbedingung lässt sich folgendermaßen begründen. Die approximierten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ aus der $(l)$-ten Iteration lassen sich als Summe der exakten $\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ und einem Fehler $\left(e_{ai}^{B_\beta}\right)^{(l)}$ schreiben  	
    	\begin{equation}
    	\left(U_{ai}^{B_\beta}\right)^{(l)}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}+\left(e_{ai}^{B_\beta}\right)^{(l)},
    	\end{equation}
+   	
    	wodurch sich die bestmögliche Näherung im \ac{diis}-Verfahren mit
 	\begin{equation}\label{eq:nebenbed}
 	\begin{aligned}
@@ -773,8 +771,8 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	=&\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}\sum_{l=1}^k x_l^{B_\beta}+\sum_{l=1}^k x_l^{B_\beta}\left(e_{ai}^{B_\beta}\right)^{(l)}
 	\end{aligned}
 	\end{equation}
-	ergibt. Der Fehler, was dem zweiten Term auf der rechten Seite in Gleichung (\ref{eq:nebenbed}) entspricht, soll nun minimiert werden, wodurch dieser verschwindet und nur noch der erste Term übrig bleibt. Aus der Forderung $\left(U_{ai}^{B_\beta}\right)^{(k)}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ folgt damit direkt $\sum_{l=1}^kx_l^{B_\beta}=1$.
-	Die Minimierung unter der gegebenen Nebenbedingung lässt sich schließlich mit der Lagrange-Methode durch Einführen eines Lagrange-Multiplikators realisieren. Damit wird das Funktional $\mathcal{L}$ zu
+	
+	ergibt. Der Fehler, welcher dem zweiten Term auf der rechten Seite in Gleichung (\ref{eq:nebenbed}) entspricht, soll nun minimiert werden, wodurch dieser verschwindet und nur noch der erste Term übrig bleibt. Aus der Forderung $\left(U_{ai}^{B_\beta}\right)^{(k)}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ folgt damit direkt $\sum_{l=1}^kx_l^{B_\beta}=1$. Die Minimierung unter der gegebenen Nebenbedingung lässt sich schließlich mit der Lagrange-Methode durch Einführen eines Lagrange-Multiplikators realisieren. Damit wird das Funktional $\mathcal{L}$ zu
 	\begin{equation}
     \begin{aligned}
     \mathcal{L}=&\sum_a\sum_i \sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
@@ -782,6 +780,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     &-\lambda\left(1-\sum_{l=1}^kx_l^{B_\beta}\right).
     \end{aligned}
     \end{equation}
+    
     Dieses Funktional wird schließlich nach den $x_n^{B_\beta}$ abgeleitet, wodurch folgendes lineares Gleichungssystem erhalten wird
     \begin{equation}
     \begin{aligned}
@@ -789,6 +788,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta} c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^kx_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(m)}\right]+\lambda.
     \end{aligned}
     \end{equation}
+    
     Umsortieren und Übertragen des Faktors 2 in $\lambda$ liefert
     \begin{equation}
     \begin{aligned}
@@ -796,6 +796,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     &=\sum_a\sum_i\sum_{\mu\nu\kappa\lambda} \left(U_{ai}^{B_\beta}\right)^{(n)}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}.
     \end{aligned}
     \end{equation}
+    
     Zur besseren Übersicht werden die Matrixelemente $\left(A_{ai}^{B_\beta}\right)^{(m)}$ und $B_{ai}^{B_\beta}$ definiert:
     \begin{equation}\label{eq:aai}
     \left(A_{ai}^{B_\beta}\right)^{(m)}=\sum_{\mu\nu\kappa\lambda}\left[\iu\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(m)}-c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}\right]
@@ -804,15 +805,18 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     \begin{equation}\label{eq:bai}
     B_{ai}^{B_\beta}=\sum_{\mu\nu\kappa\lambda} c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}.
     \end{equation}
+    
     Dadurch erhält das Gleichungssystem die Form
     \begin{equation}
     \sum_a\sum_i\sum_{m=1}^k x_m^\beta\left(U_{ai}^{B_\beta}\right)^{(n)}\left(A_{ai}^{B_\beta}\right)^{(m)}+\lambda=\sum_a\sum_i\left(U_{ai}^{B_\beta}\right)^{(n)}B_{ai}^{B_\beta},
     \end{equation}
+    
 	bzw. in kompakter Matrixnotation
 	\begin{equation}
 	\boldsymbol{a}^{B_\beta}\vec{x}^{\,B_\beta}=\vec{b}^{\,B_\beta}.
 	\end{equation}
-	Im Detail sind die Matrix $\boldsymbol{a}^{B_\beta}$ und die beiden Vektoren $\vec{x}^{\,B_\beta}$ sowie $\vec{b}^{\,B_\beta}$
+	
+	Im Detail sind die Matrix $\boldsymbol{a}^{B_\beta}$ und die beiden Vektoren $\vec{x}^{\,B_\beta}$ sowie $\vec{b}^{\,B_\beta}$ gegeben durch
 	
 	\begin{equation}\label{eq:amat}
 	\boldsymbol{a}^{B_\beta}=
@@ -853,23 +857,26 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
     \begin{equation}\label{eq:bn}
     b_n^{B_\beta}=\sum_a\sum_i\left(U_{ai}^{B_\beta}\right)^{(n)} B_{ai}^{B_\beta}.
     \end{equation}
+    
     In der $(k)$-ten Iteration hat die Matrix $\boldsymbol{a}^{B_\beta}$ also die Dimension $(k+1)\times(k+1)$. Dieses verhältnismäßig kleine Gleichungssystem kann durch Invertieren der Matrix $\boldsymbol{a}^{B_\beta}$ und anschließender Matrixvektormultiplikation gelöst werden
     \begin{equation}\label{eq:xvec}
     \vec{x}^{\,B_\beta}=\left(\boldsymbol{a}^{B_\beta}\right)^{-1}\vec{b}^{\,B_\beta}.
     \end{equation}
-    Mit Hilfe der Koeffizienten lässt sich dann die optimale Kombination für die $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ für die aktuelle Iteration aus allen bisher berechneten Matrizen bestimmen
+    
+    Mit Hilfe der Koeffizienten lässt sich dann die optimale Kombination der $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ für die aktuelle Iteration aus allen bisher berechneten Matrizen bestimmen
      \begin{equation}\label{eq:uaiopt}
      \left(U_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_m^{B_\beta} \left(U_{ai}^{B_\beta}\right)^{(l)}
      \end{equation}
      \begin{equation}\label{eq:aaiopt}
      \left(A_{ai}^{B_\beta}\right)^{(k)}=\sum_{l=1}^k x_m^{B_\beta} \left(A_{ai}^{B_\beta}\right)^{(l)}.
      \end{equation}
-     Dafür müssen die $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ für jede Iteration gespeichert werden. Die $B_{ai}^{B_\beta}$ ändern sich nicht während den Iterationen, sie sind jedoch aus den entsprechenden Termen in Gleichung (\ref{eq:bai}) schnell berechnet, sodass sie in jeder Iteration aufs neue gebildet, anstatt abgespeichert zu werden. Die einzelnen Komponenten des Magnetfeldes werden bei diesem Verfahren unabhängig voneinander betrachtet. Aus den optimalen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration lassen sich dann schließlich die neuen $\left(U_{ai}^{B_\beta}\right)^{(k+1)}$ bestimmen
      
+     Dafür müssen die $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ für jede Iteration gespeichert werden. Die $B_{ai}^{B_\beta}$ ändern sich während den Iterationen nicht, sie sind jedoch aus den entsprechenden Termen in Gleichung (\ref{eq:bai}) schnell berechnet, sodass sie in jeder Iteration aufs Neue gebildet, anstatt abgespeichert zu werden. Die einzelnen Komponenten des Magnetfeldes werden bei diesem Verfahren unabhängig voneinander betrachtet. Aus den optimalen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ und $\left(A_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration lassen sich dann schließlich die neuen $\left(U_{ai}^{B_\beta}\right)^{(k+1)}$ bestimmen    
      \begin{equation}\label{eq:finaluai}
-     \left(U_{ai}^{B_\beta}\right)^{(k+1)}=\frac{\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(k)}-\left(A_{ai}^{B_\beta}\right)^{(k)}+B_{ai}^{B_\beta}}{\left(\varepsilon_i-\varepsilon_a\right)}=\frac{\left(F_{ai}^{B_\beta}\right)^{(k)}-\varepsilon_i S_{ai}^{b_\beta}}{\left(\varepsilon_i-\varepsilon_a\right)},
+     \left(U_{ai}^{B_\beta}\right)^{(k+1)}=\frac{\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(k)}-\left(A_{ai}^{B_\beta}\right)^{(k)}+B_{ai}^{B_\beta}}{\left(\varepsilon_i-\varepsilon_a\right)}=\frac{\left(F_{ai}^{B_\beta}\right)^{(k)}-\varepsilon_i S_{ai}^{B_\beta}}{\left(\varepsilon_i-\varepsilon_a\right)},
      \end{equation}
-     wobei Gleichung (\ref{eq:finaluai}) der Gleichung (\ref{eq:uai}) aus dem vorherigen Kapitel entspricht.
+     
+     wobei die Gleichung (\ref{eq:finaluai}) der Gleichung (\ref{eq:uai}) aus dem vorherigen Kapitel entspricht.
 
 \subsection{NMR Abschirmungskonstanten in der DFT}    
 	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung der chemischen Verschiebung mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Dies hat zur Folge, dass die Austauschkorrelationsenergie vom Magnetfeld abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. der Stromdichte $j(\vec{r})$ abhängen. Entsprechende Modifikationen wurden beispielsweise von Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled} \ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute chemische Abschirmungskonstanten.\supercite{buhl1999dft}
