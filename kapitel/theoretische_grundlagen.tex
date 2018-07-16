@@ -879,11 +879,10 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      wobei die Gleichung (\ref{eq:finaluai}) der Gleichung (\ref{eq:uai}) aus dem vorherigen Kapitel entspricht.
 
 \subsection{NMR Abschirmungskonstanten in der DFT}    
-	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung der chemischen Verschiebung mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Dies hat zur Folge, dass die Austauschkorrelationsenergie vom Magnetfeld abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. der Stromdichte $j(\vec{r})$ abhängen. Entsprechende Modifikationen wurden beispielsweise von Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled} \ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute chemische Abschirmungskonstanten.\supercite{buhl1999dft}
+	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung der chemischen Verschiebung mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Weiterhin hat das Magnetfeld zur Folge, dass die Austauschkorrelationsenergie davon abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. der Stromdichte $J(\vec{r})$ abhängen. Entsprechende Modifikationen haben beispielsweise Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled} \ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute chemische Abschirmungskonstanten.\supercite{buhl1999dft}
 	
 \bigskip
 Zur Berechnung des chemischen Abschirmungstensors nach Gleichung (\ref{eq:sigmadiapara}) wird die gestörte Dichte benötigt, welche sich wiederum aus den $U_{ji}^{B_\beta}$ und den $U_{ia}^{B_\beta}$ aus den Gleichungen (\ref{eq:uji}) und (\ref{eq:uai}) berechnen lassen. Für $U_{ji}^{B_\beta}$ ändert sich nichts im Vergleich zum Hartree-Fock-Verfahren. Für die $U_{ia}^{B_\beta}$ wird jedoch die Ableitung der Fockmatrix 
-
     \begin{equation}\label{eq:fmunudbdft}
     \begin{aligned}
     F_{\mu\nu}^{B_\beta}=&h_{\mu\nu}^{B_\beta}+\sum_{\kappa\lambda}\left[D_{\kappa\lambda}^{B_\beta}\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)+D_{\kappa\lambda}\left(\overline{\chi_\mu\chi_\nu}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)_{\beta}\right.\\
@@ -892,8 +891,7 @@ Zur Berechnung des chemischen Abschirmungstensors nach Gleichung (\ref{eq:sigmad
     \end{aligned}
     \end{equation}
 
-nach den Komponenten des Magnetfeldes benötigt. Die Ableitung des Coulombterms vereinfacht sich hier wieder durch das Bilden der Spur des Produkts einer antisymmetrischen Matrix mit einer Symmetrischen Matrix. Die Elemente des abgeleiteten Einelektronenoperators sind in Gleichung (\ref{eq:hmunub}) gegeben. Neu benötigt wird also die Ableitung der Austauschkorrelationsmatrix nach $B_\beta$. Durch das externe Magnetfeld und zur Wahrung der Eichinvarianz muss für \ac{mgga}-Funktionale, welche die kinetische Energiedichte beinhalten, letztere angepasst werden.\supercite{maximoff2004nuclear}. Die kinetische Energiedichte $\tau$ wird durch die eichinvariante kinetische Energiedichte 
-
+nach den Komponenten des Magnetfeldes benötigt. Die Ableitung des Coulombterms vereinfacht sich hier wieder durch das Bilden der Spur des Produkts einer antisymmetrischen Matrix mit einer symmetrischen Matrix. Die Elemente des abgeleiteten Einelektronen-Operators sind in Gleichung (\ref{eq:hmunub}) gegeben. Neu benötigt wird also die Ableitung der Austauschkorrelationsmatrix nach $B_\beta$. Durch das externe Magnetfeld und zur Wahrung der Eichinvarianz muss für \ac{mgga}-Funktionale, welche die kinetische Energiedichte beinhalten, letztere angepasst werden.\supercite{maximoff2004nuclear}. Die kinetische Energiedichte $\tau$ wird durch die eichinvariante kinetische Energiedichte 
 \begin{equation}
 \begin{aligned}
 \tilde{\tau}=&\sum_i^{N/2}\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i\\
@@ -906,10 +904,11 @@ ersetzt. Analog zu Gleichung (\ref{ymunu}) werden die Matrixelemente als Ableitu
 \begin{aligned}
 Y_{\mu\nu}=&\int\frac{\partial f}{\partial \rho(\vec{r})}\chi_\mu^*\chi_\nu\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\vec{\nabla} \rho(\vec{r})\vert^2}\vec{\nabla} \rho(\vec{r})\vec{\nabla} \left(\chi_\mu^*\chi_\nu\right)\Diff3\vec{r}\\
-&+\int\frac{\partial f}{\partial\tau}\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\Diff3\vec{r},
+&+\int\frac{\partial f}{\partial\tau}\frac{1}{2}\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\Diff3\vec{r},
 \end{aligned}
 \end{equation}
-wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$. Diese Elemente müssen schließlich noch nach den Komponenten des Magnetfeldes abgeleitet werden. Da der Term $\sum_\beta \gamma_\beta B_\beta$ in Gleichung (\ref{eq:evonbmu}) für geschlossenschalige Moleküle verschwindet, ändert sich die Energie nur in zweiter Ordnung mit dem Magnetfeld. Dies hat zur Folge, dass die Ableitung des Funktionals nach dem Magnetfeld ebenfalls verschwindet. Weiterhin verschwinden auch die Ableitungen der Dichte und deren Gradienten nach $B_\beta$,\supercite{lee1995density} wodurch letztlich folgender Ausdruck erhalten wird\supercite{maximoff2004nuclear} 
+
+wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$ ist. Diese Elemente müssen schließlich noch nach den Komponenten des Magnetfeldes abgeleitet werden. Da der Term $\sum_\beta \gamma_\beta B_\beta$ in Gleichung (\ref{eq:evonbmu}) für geschlossenschalige Moleküle verschwindet, ändert sich die Energie nur in zweiter Ordnung mit dem Magnetfeld. Dies hat zur Folge, dass die Ableitung des Funktionals nach dem Magnetfeld ebenfalls verschwindet. Weiterhin verschwinden auch die Ableitungen der Dichte und deren Gradienten nach $B_\beta$,\supercite{lee1995density} wodurch letztlich folgender Ausdruck erhalten wird\supercite{maximoff2004nuclear} 
 
 \begin{equation}\label{eq:ymunudb}
 \begin{aligned}
@@ -919,30 +918,29 @@ Y_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\v
 &+\int\frac{\partial f}{\partial\tau}\frac{\partial}{\partial B_\beta}\frac{1}{2}\left[\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
 =&\int\frac{\partial f}{\partial \rho(\vec{r})}\left[\chi_\mu^*\chi_\nu\right]^{B_\beta}\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\vec{\nabla} \rho(\vec{r})\vert^2}\vec{\nabla} \rho(\vec{r})\vec{\nabla} \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}\Diff3\vec{r}\\
-&+\int\frac{\partial f}{\partial\tau}\left[\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]
+&+\int\frac{\partial f}{\partial\tau}\frac{1}{2}\left[\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]
 ^{B_\beta}\Diff3\vec{r},
 \end{aligned}
 \end{equation}
 
 mit
-
 \begin{equation}
 \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=\frac{\iu}{2c}\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}
 \end{equation}
-
+\vspace{8pt}
 \begin{equation}
 \vec{\nabla} \left[\chi_\mu^*\chi_\nu\right]^{B_\beta}=\frac{\iu}{2c}\left[\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\cdot\vec{\nabla}\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)+\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\left(\vec{B}\times\vec{R}_{\mu\nu}\right)^{B_\beta}\right]
 \end{equation}
-
+\vspace{8pt}
 \begin{equation}\label{eq:mggadb}
 \begin{aligned}
 &\left[\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\right]
 ^{B_\beta}=\frac{\iu}{4c}\left[\left(\vec{R}_{\mu\nu}\times\vec{r}\right)_\beta\vec{\nabla}\chi_{\mu}^{\vec{B}=0}\vec{\nabla}\chi_{\nu}^{\vec{B}=0}\right.\\
-&+\left.\chi_{\nu}^{\vec{B}=0}\left(\left(\vec{r}-\vec{R}_\nu\right)\times\vec{\nabla}\chi_{\mu}^{\vec{B}=0}\right)_\beta-\chi_{\mu}^{\vec{B}=0}\left(\left(\vec{r}-\vec{R}_\mu\right)\times\vec{\nabla}\chi_{\nu}^{\vec{B}=0}\right)_\beta\right]
+&+\left.\chi_{\nu}^{\vec{B}=0}\left(\left(\vec{r}-\vec{R}_\nu\right)\times\vec{\nabla}\chi_{\mu}^{\vec{B}=0}\right)_\beta-\chi_{\mu}^{\vec{B}=0}\left(\left(\vec{r}-\vec{R}_\mu\right)\times\vec{\nabla}\chi_{\nu}^{\vec{B}=0}\right)_\beta\right].
 \end{aligned}
 \end{equation}
-Damit sind alle Terme  für die gestörte Fockmatrix $\boldsymbol{F}^{B_\beta}$ bekannt. Sie hängt nicht mehr von den gestörten Koeffizienten ab, wodurch sich die gestörte Dichtematrix durch Umformen und Einsetzen der Gleichungen (\ref{eq:uji}) und (\ref{eq:uai}) direkt aufschreiben lässt
 
+Damit sind alle Terme  für die gestörte Fockmatrix $\boldsymbol{F}^{B_\beta}$ bekannt. Sie hängt nicht mehr von den gestörten Koeffizienten ab, wodurch sich die gestörte Dichtematrix durch Umformen und Einsetzen der Gleichungen (\ref{eq:uji}) und (\ref{eq:uai}) direkt aufschreiben lässt
 \begin{equation}
 \begin{aligned}
 D_{\mu\nu}^{B_\beta}=&2\iu\sum_i\left(c_{\mu i}c_{\nu i}^{B_\beta}-c_{\mu i}^{B_\beta}c_{\nu i}\right)=2\iu\sum_i\sum_p\left(c_{\mu i}c_{\nu p} U_{pi}^{B_\beta}-c_{\mu p}c_{\nu i}U_{pi}^{B_\beta}\right)\\
@@ -953,8 +951,7 @@ D_{\mu\nu}^{B_\beta}=&2\iu\sum_i\left(c_{\mu i}c_{\nu i}^{B_\beta}-c_{\mu i}^{B_
 \end{aligned}
 \end{equation}
 
-Solange zur Berechnung keine Hybrid-Funktionale eingesetzt werden, welche durch die Kopplung über den Hartree-Fock-Austauschterm wieder zu einem iterativen Verfahren würden, ist  der endgültige Ausdruck für den Abschirmungstensor im Rahmen der \textit{uncoupled} \ac{dft} gegeben durch
-
+Solange zur Berechnung keine Hybridfunktionale eingesetzt werden, welche durch die Kopplung über den Hartree-Fock-Austauschterm wieder zu einem iterativen Verfahren führen würden, ist  der endgültige Ausdruck für den Abschirmungstensor im Rahmen der \textit{uncoupled} \ac{dft} gegeben durch
 \begin{equation}
 \sigma_{K_\alpha\beta}=\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}},
 \end{equation}
@@ -963,6 +960,7 @@ mit
 \begin{equation}
 \sigma_{K_\alpha\beta}^{\textrm{dia}}=\sum_{\mu\nu}D_{\mu\nu}\frac{1}{2c^2}\left.\left\langle\chi_\mu^{\vec{B}=0}\right\vert\frac{\vec{r}_\nu\vec{r}_K\delta_{\alpha\beta}-r_{\nu \beta}r_{K_\alpha}}{r_K^3}\left\vert\chi_\nu^{\vec{B}=0}\right\rangle\right.
 \end{equation}
+
 und
 \begin{equation}
 \begin{aligned}
@@ -975,24 +973,22 @@ und
 .
 
 \subsection{Die Berechnung von Stromdichten und Ringströmen}
-Informationen über die Aromatizität, die Delokalisation der Elektronen oder den Pfad des Elektronenstroms in einem Molekül lassen sich über die magnetisch induzierte Stromdichte erhalten.\supercite{fliegl2011gauge} Beispielsweise wird in planaren Molekülen, die einem externen Magnetfeld ausgesetzt sind welches senkrecht zur Molekülebene angelegt wurde, ein Ringstrom induziert. Ist das Molekül aromatisch, so resultiert ein diatropischer Nettostrom welcher im Uhrzeigersinn fließt. Das dabei erzeugte Magnetfeld ist dem externen Magnetfeld entgegensetzt. Umgekehrt verhält es sich in antiaromatischen Verbindungen. Der in diesem Fall induzierte paratropische Nettostrom fließt gegen den Uhrzeigersinn und das externe Magnetfeld wird verstärkt. Die Stromstärke kann als Maß für die Aromatizität in der entsprechenden Verbindung angesehen werden. Berechnen lässt sich diese Stromstärke durch numerische Integration des Stromflusses entlang einer chemischen Bindung und um molekulare Ringe herum. Somit lassen sich die Pfade des Stroms in Molekülen beschreiben und Aussagen über die Aromatizität einzelner Ringe in Verbindungen, welche aus mehreren verknüpften Ringen bestehen, treffen. Analog zur Berechnung der chemischen Abschirmungskonstanten muss auch bei der Berechnung der Stromdichte das Problem der Eichursprungsinvarianz adressiert und gelöst werden. Die populärste und vielversprechendste Methode für chemische Abschirmungskonstanten beruht auf der Verwendung von \acp{giao}. Dieses Vorgehen lässt sich auch auf die Berechnung der Stromdichte übertragen und ist in der \ac{gimic}\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations} Methode realisiert. Durch die Verwendung der \acp{giao} wird die Stromdichte unabhängig von der Wahl des Eichursprungs, Eichinvarianz wird hingegen erst im Limit einer vollständigen Basis erreicht.\supercite{juselius2004calculation} Zusätzlich sorgen die \acp{giao} für eine Verbesserung der Basissatzkonvergenz.\supercite{fliegl2011gauge} Zur Berechnung der Stromdichte wird die Gleichung für die Berechnung der chemischen Abschirmungskonstanten, welche auf analytischer Differenzierung basiert, mit der entsprechenden Bio-Savart Gleichung kombiniert.\supercite{lazzeretti2000ring} Der analytische Ausdruck für die Abschirmungskonstanten ist nach Gleichung (\ref{eq:analytsigma}) 
-
+Informationen über die Aromatizität, die Delokalisierung der Elektronen oder den Pfad des Elektronenstroms in einem Molekül lassen sich über die magnetisch induzierte Stromdichte erhalten.\supercite{fliegl2011gauge} Beispielsweise wird in planaren Molekülen, die einem externen Magnetfeld ausgesetzt sind, welches senkrecht zur Molekülebene angelegt wurde, ein Ringstrom induziert. Ist das Molekül aromatisch, so resultiert ein diatropischer Nettostrom welcher im Uhrzeigersinn fließt. Das dabei erzeugte Magnetfeld ist dem externen Magnetfeld entgegensetzt. Umgekehrt verhält es sich in antiaromatischen Verbindungen. Der in diesem Fall induzierte paratropische Nettostrom fließt gegen den Uhrzeigersinn und das externe Magnetfeld wird verstärkt. Die Stromstärke kann als Maß für die Aromatizität in der entsprechenden Verbindung angesehen werden. Berechnen lässt sich diese Stromstärke durch numerische Integration des Stromflusses entlang einer chemischen Bindung und um molekulare Ringe herum. Somit lassen sich die Pfade des Stroms in Molekülen beschreiben und Aussagen über die Aromatizität einzelner Ringe in Verbindungen, welche aus mehreren verknüpften Ringen bestehen, treffen. Analog zur Berechnung der chemischen Abschirmungskonstanten muss auch bei der Berechnung der Stromdichte das Problem der Eichursprungsinvarianz adressiert und gelöst werden. Die populärste und vielversprechendste Methode für chemische Abschirmungskonstanten beruht auf der Verwendung von \acp{giao}. Dieses Vorgehen lässt sich auch auf die Berechnung der Stromdichte übertragen und ist in der \ac{gimic}\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations} Methode realisiert. Durch die Verwendung der \acp{giao} wird die Stromdichte unabhängig von der Wahl des Eichursprungs, Eichinvarianz wird hingegen erst im Limit einer vollständigen Basis erreicht.\supercite{juselius2004calculation} Zusätzlich sorgen die \acp{giao} für eine Verbesserung der Basissatzkonvergenz.\supercite{fliegl2011gauge} Zur Berechnung der Stromdichte wird die Gleichung für die Berechnung der chemischen Abschirmungskonstanten, welche auf analytischer Differenzierung basiert, mit der entsprechenden Bio-Savart Gleichung kombiniert.\supercite{lazzeretti2000ring} Der analytische Ausdruck für die Abschirmungskonstanten ist nach Gleichung (\ref{eq:analytsigma}) 
     \begin{equation}\label{eq:sigmaana}
     \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right) 
     \end{equation}
     
 und der entsprechende Bio-Savart Ausdruck ist gegeben durch
-
 	\begin{equation}\label{eq:sigmabio}
-	\sigma_{K_\alpha\beta}=-\varepsilon_{\alpha\delta\gamma}\int\frac{r_delta-R_{K\delta}}{\vert\vec{r}-\vec{R}_K\vert^3}J^{B_\beta}_\gamma\Diff3\vec{r}
+	\sigma_{K_\alpha\beta}=-\varepsilon_{\alpha\delta\gamma}\int\frac{r_\delta-R_{K\delta}}{\vert\vec{r}-\vec{R}_K\vert^3}J^{B_\beta}_\gamma\Diff3\vec{r}
 	\end{equation}
 	
-	mit dem Levi-Civita tensor $\varepsilon_{\alpha\delta\gamma}$ und 
+	mit dem Levi-Civita-Tensor $\varepsilon_{\alpha\delta\gamma}$ 
 	\begin{equation}
 	J^{B_\beta}_\gamma(\vec{r})=\frac{\partial J_\gamma(\vec{r})}{\partial B_\beta}.
 	\end{equation}
 	
-	Der magnetisch induzierte Stromdichtetensor $J^{B_\beta}_\gamma(\vec{r})$ kann durch Kombination der beiden Gleichunge (\ref{eq:sigmaana}) und (\ref{eq:sigmabio}) definiert werden. Dies und die Verwendung der \acp{giao} führt nach weiterem Umformen zur eigentliche Gleichung für die Berechnung der einzelnen Komponenten des Stromdichtetensors\supercite{juselius2004calculation}
+	Der magnetisch induzierte Stromdichtetensor $J^{B_\beta}_\gamma(\vec{r})$ kann durch Kombination der beiden Gleichungen (\ref{eq:sigmaana}) und (\ref{eq:sigmabio}) definiert werden. Dies und die Verwendung der \acp{giao} führt nach weiterem Umformen zur eigentlichen Gleichung für die Berechnung der einzelnen Komponenten des Stromdichtetensors\supercite{juselius2004calculation}
 	
 	\begin{equation}\label{eq:stromdichte}
 	\begin{aligned}

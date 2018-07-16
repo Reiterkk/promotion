@@ -29,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.6}NMR Abschirmungskonstanten in der DFT}{31}{subsection.2.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.7}Die Berechnung von Stromdichten und Ringstr\IeC {\"o}men}{35}{subsection.2.5.7}
+\contentsline {subsection}{\numberline {2.5.7}Die Berechnung von Stromdichten und Ringstr\IeC {\"o}men}{34}{subsection.2.5.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Grundlegende Programmstruktur des Moduls \texttt {mpshift}}{37}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -39,7 +39,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}Theorie}{43}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Implementierung}{45}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Implementierung}{44}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{48}{section.4.2}
 \defcounter {refsection}{0}\relax 
@@ -73,15 +73,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{72}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{75}{section.5.3}
+\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{76}{section.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.1}Theorie}{77}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{78}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Implementierung}{79}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{82}{subsubsection.5.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{82}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{84}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{84}{subsection.5.3.4}
 \defcounter {refsection}{0}\relax 
@@ -111,10 +111,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {10}Anhang}{116}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{131}{chapter*.84}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{131}{chapter*.82}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{133}{chapter*.86}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{133}{chapter*.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{134}{section*.87}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{134}{section*.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{136}{chapter*.89}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{136}{chapter*.88}
