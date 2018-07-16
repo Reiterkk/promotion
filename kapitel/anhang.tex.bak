@@ -704,6 +704,6 @@
 	\centering
 	\includegraphics[width=1.0\textwidth]{modec}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Molekülorbitale von SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl}]{Molekülorbitale mit den größten Beiträgen zur $^{31}$P Abschirmung in SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl. Im einzelnen sind 4 das 1s, 56 das 2s und 59-61 die 2p Orbitale des Phosphors. 193 und 196 die C-P $\pi$-Orbitale. Gleichzeitig ist 196 auch das höchst besetzte \ac{mo} der Verbindung (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa und Chlor=grün). Die Wasserstoffatome wurden zur besseren Veranschaulichung bei der Abbildung weg gelassen.}
+	\captionsetup{font=small, labelfont=bf}\caption[{Molekülorbitale von SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl}]{Molekülorbitale mit den größten Beiträgen zur $^{31}$P Abschirmung in SIMesP(Ga\textit{t}Bu$_2$)$_2$Cl. Im einzelnen sind 4 das 1s, 56 das 2s und 59-61 die 2p Orbitale des Phosphors. 193 und 196 sind die C-P $\pi$-Orbitale. Gleichzeitig ist 196 auch das höchst besetzte \ac{mo} der Verbindung (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa und Chlor=grün). Die Wasserstoffatome wurden zur besseren Veranschaulichung bei der Abbildung weg gelassen.}
 \label{abb:modec}
 \end{figure}

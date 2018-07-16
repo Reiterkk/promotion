@@ -1,40 +1,40 @@
 \chapter*{Danksagung}
 \markboth{Danksagung}{} %chapterheader trotz * anzeigen lassen
 \thispagestyle{empty}
-Zu Beginn möchte ich mich bei meinen Mathematik-, Physik- und Chemielehrern Michael Frey, Matthias Sickmüller und Michael Burkard bedanken, die zur rechten Zeit mein Interesse an den Naturwissenschaften gefördert und gefordert haben. Ich danke ihnen für ihren lehrreichen und vorbildlichen Unterricht, auch wenn das einige meiner ehemaligen Mitschüler sicher anders sehen würden.
-
-\bigskip
-Mein größter Dank gilt PD Dr. Florian Weigend für eine Betreuung wie sie nicht hätte besser sein können. Insbesondere für seine unermüdliche Unterstützung bei noch so kleinen Fragen und Problemen, all die anregenden Gespräche und auch für die Freiheiten, die er mir gelassen hat. Die Momente abseits der Wissenschaft und die Vermittlung der wirklich wichtigen Kompetenzen - am Kickertisch - werden mir immer in bester Erinnerung bleiben. Eine wahrhaft vorbildliche Zusammenarbeit zwischen einem Schwaben und einem Badener.
-
-\bigskip
-Prof. Dr. Burkhard Luy danke ich vielmals für die Übernahme des Koreferats.
-
-\bigskip
-Bei Prof. Dr. Willem Klopper möchte ich mich für die Finanzierung zu Beginn meiner Promotion bedanken. Weiterhin danke ich ihm für die Nutzung der am Lehrstuhl für Theoretische Chemie zur Verfügen stehenden Ressourcen. Nicht zuletzt bin ich dankbar für die Zeit und die Betreuung während meiner Bachelor- Vertiefungs- und Masterarbeit, was mein Interesse an der Theoretischen Chemie vertieft und letztlich zu dieser Arbeit geführt hat.
-
-\bigskip
-Besonderer Dank gilt meinem langjährigen Bürokollegen Christof Holzer mit dem ich nun seit einiger Zeit das \glqq vormals Badisch Biro\grqq{} besetze. Es war und ist eine tolle Zeit zusammen mit ihm, sowohl im Büro als auch auf diversen Konferenzen oder Wanderungen, egal ob in Mariapfarr, Bochum, München oder Helsinki.
-
-\bigskip
-Dr. Markus Armbruster danke ich für die gemeinsame Zeit im damals noch \glqq Badischen Biro\grqq{} und seine Hilfsbereitschaft meine Fragen zu beantworten. 
-
-Dr. Michael Kühn und Fabian Mack danke ich für die Zusammenarbeit am VCD- und meta-GGA-Projekt.  
-
-\bigskip
-Prof. Dr. Dage Sundholm danke ich für seine Gastfreundschaft während meiner beiden Aufenthalte in Helsinki sowie für die Betreuung während meines Forschungsaufenthalts. In diesem Zusammenhang sollen auch Maria Dimitrova und Dr. Lukas Wirz nicht unerwähnt bleiben.
-%\newpage
-%\thispagestyle{empty}
-
-Dr. Michael Harding, Frank Imhoff und Sebastian Kleinhans gilt mein Dank für alle technischen Angelegenheiten sowie für die Lösung von Problemen bei Soft- und Hardwarefragen. 
-
-Weiter danke ich allen zeitweiligen Mitgliedern in der Abteilung für Theoretischen Chemie, die ich während meiner Zeit dort - seit meiner Bachelorarbeit - kennenlernen durfte, für die tolle Zeit und auch für die nicht fachlichen Gespräche. Dazu gehören insbesondere Dr. Angela Bihlmeier, Dr. Katharina Krause, Dr. Jiří Chemla, Johannes Heuser, Dr. Nils  Middendorf, Nils Schieschke, Dr. Patrik Pollak, Dr. Peter Limacher und Yannick Franzke.
-
-Unserer Sekretärin Manuela Kühn danke ich für ihre Hilfe bei allen organisatorischen und bürokratischen Dingen, die sie immer gerne übernommen hat, obwohl ich eigentlich am INT im Norden angestellt bin.
-
-\bigskip
-Außerdem gilt mein Dank dem SFB 1176 \glqq Strukturierung weicher Materie\grqq{} der Deutschen Forschungsgemeinschaft (DFG) für die finanzielle Unterstützung.
-
-\bigskip
-Meinen Eltern und meiner Familie danke ich für das grenzenlose Vertrauen und die Unterstützung meiner Vorhaben seit jeher. 
+%Zu Beginn möchte ich mich bei meinen Mathematik-, Physik- und Chemielehrern Michael Frey, Matthias Sickmüller und Michael Burkard bedanken, die zur rechten Zeit mein Interesse an den Naturwissenschaften gefördert und gefordert haben. Ich danke ihnen für ihren lehrreichen und vorbildlichen Unterricht, auch wenn das einige meiner ehemaligen Mitschüler sicher anders sehen würden.
+%
+%\bigskip
+%Mein größter Dank gilt PD Dr. Florian Weigend für eine Betreuung wie sie nicht hätte besser sein können. Insbesondere für seine unermüdliche Unterstützung bei noch so kleinen Fragen und Problemen, all die anregenden Gespräche und auch für die Freiheiten, die er mir gelassen hat. Die Momente abseits der Wissenschaft und die Vermittlung der wirklich wichtigen Kompetenzen - am Kickertisch - werden mir immer in bester Erinnerung bleiben. Eine wahrhaft vorbildliche Zusammenarbeit zwischen einem Schwaben und einem Badener.
+%
+%\bigskip
+%Prof. Dr. Burkhard Luy danke ich vielmals für die Übernahme des Koreferats.
+%
+%\bigskip
+%Bei Prof. Dr. Willem Klopper möchte ich mich für die Finanzierung zu Beginn meiner Promotion bedanken. Weiterhin danke ich ihm für die Nutzung der am Lehrstuhl für Theoretische Chemie zur Verfügen stehenden Ressourcen. Nicht zuletzt bin ich dankbar für die Zeit und die Betreuung während meiner Bachelor- Vertiefungs- und Masterarbeit, was mein Interesse an der Theoretischen Chemie vertieft und letztlich zu dieser Arbeit geführt hat.
+%
+%\bigskip
+%Besonderer Dank gilt meinem langjährigen Bürokollegen Christof Holzer mit dem ich nun seit einiger Zeit das \glqq vormals Badisch Biro\grqq{} besetze. Es war und ist eine tolle Zeit zusammen mit ihm, sowohl im Büro als auch auf diversen Konferenzen oder Wanderungen, egal ob in Mariapfarr, Bochum, München oder Helsinki.
+%
+%\bigskip
+%Dr. Markus Armbruster danke ich für die gemeinsame Zeit im damals noch \glqq Badischen Biro\grqq{} und seine Hilfsbereitschaft meine Fragen zu beantworten. 
+%
+%Dr. Michael Kühn und Fabian Mack danke ich für die Zusammenarbeit am VCD- und meta-GGA-Projekt.  
+%
+%\bigskip
+%Prof. Dr. Dage Sundholm danke ich für seine Gastfreundschaft während meiner beiden Aufenthalte in Helsinki sowie für die Betreuung während meines Forschungsaufenthalts. In diesem Zusammenhang sollen auch Maria Dimitrova und Dr. Lukas Wirz nicht unerwähnt bleiben.
+%%\newpage
+%%\thispagestyle{empty}
+%
+%Dr. Michael Harding, Frank Imhoff und Sebastian Kleinhans gilt mein Dank für alle technischen Angelegenheiten sowie für die Lösung von Problemen bei Soft- und Hardwarefragen. 
+%
+%Weiter danke ich allen zeitweiligen Mitgliedern in der Abteilung für Theoretischen Chemie, die ich während meiner Zeit dort - seit meiner Bachelorarbeit - kennenlernen durfte, für die tolle Zeit und auch für die nicht fachlichen Gespräche. Dazu gehören insbesondere Dr. Angela Bihlmeier, Dr. Katharina Krause, Dr. Jiří Chemla, Johannes Heuser, Dr. Nils  Middendorf, Nils Schieschke, Dr. Patrik Pollak, Dr. Peter Limacher und Yannick Franzke.
+%
+%Unserer Sekretärin Manuela Kühn danke ich für ihre Hilfe bei allen organisatorischen und bürokratischen Dingen, die sie immer gerne übernommen hat, obwohl ich eigentlich am INT im Norden angestellt bin.
+%
+%\bigskip
+%Außerdem gilt mein Dank dem SFB 1176 \glqq Strukturierung weicher Materie\grqq{} der Deutschen Forschungsgemeinschaft (DFG) für die finanzielle Unterstützung.
+%
+%\bigskip
+%Meinen Eltern und meiner Familie danke ich für das grenzenlose Vertrauen und die Unterstützung meiner Vorhaben seit jeher. 
 
 %Schliesslich danke ich s`Madame fuer ihre Liebe :)
