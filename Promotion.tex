@@ -310,8 +310,12 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 \chapter{Ausblick}\label{ausblick}
 \input{kapitel/ausblick}
 
-\chapter{Anhang}\label{anhang}
+\begin{appendix}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\chapter*{Anhang}\label{anhang}
 \input{kapitel/anhang}
+\end{appendix}
 
 % Schlussteil - Römische Seitennummerierung
 \backmatter
