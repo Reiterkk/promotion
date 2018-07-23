@@ -4772,6 +4772,196 @@
       \field{title}{eingereicht}
       \field{year}{2018}
     \endentry
+    \entry{weigend2014extending}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{fullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{bibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authorbibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authornamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \strng{authorfullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{13}
+      \field{title}{Extending DFT-based genetic algorithms by atom-to-place re-assignment via perturbation theory: a systematic and unbiased approach to structures of mixed-metallic clusters}
+      \field{volume}{141}
+      \field{year}{2014}
+      \field{pages}{134103}
+      \range{pages}{1}
+    \endentry
+    \entry{eichkorn1997auxiliary}{article}{}
+      \name{author}{4}{}{%
+        {{hash=21e498e6d8a51dffc4ac962dca74b581}{%
+           family={Eichkorn},
+           familyi={E\bibinitperiod},
+           given={Karin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7b2aa5a734f212eec5f89800ef4769a2}{%
+           family={Treutler},
+           familyi={T\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=a435b4a0e9f52167e05666c1aee83100}{%
+           family={Ahlrichs},
+           familyi={A\bibinitperiod},
+           given={Reinhart},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{60f77ae4066429a164627b1ad2f81a3c}
+      \strng{fullhash}{4c9ec5e24eb9faab5e1404951dcc2cec}
+      \strng{bibnamehash}{4c9ec5e24eb9faab5e1404951dcc2cec}
+      \strng{authorbibnamehash}{4c9ec5e24eb9faab5e1404951dcc2cec}
+      \strng{authornamehash}{60f77ae4066429a164627b1ad2f81a3c}
+      \strng{authorfullhash}{4c9ec5e24eb9faab5e1404951dcc2cec}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{number}{1-4}
+      \field{title}{Auxiliary basis sets for main row atoms and transition metals and their use to approximate Coulomb potentials}
+      \field{volume}{97}
+      \field{year}{1997}
+      \field{pages}{119\bibrangedash 124}
+      \range{pages}{6}
+    \endentry
+    \entry{weigend2010segmented}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8d26b3b9e91d4a79e51ad0fc51d93e44}{%
+           family={Weigend},
+           familyi={W\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a5e5822e213a0ac36bb15a77586a86a7}{%
+           family={Baldes},
+           familyi={B\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{855afdda14041e711c4e62f1bb1698ce}
+      \strng{fullhash}{855afdda14041e711c4e62f1bb1698ce}
+      \strng{bibnamehash}{855afdda14041e711c4e62f1bb1698ce}
+      \strng{authorbibnamehash}{855afdda14041e711c4e62f1bb1698ce}
+      \strng{authornamehash}{855afdda14041e711c4e62f1bb1698ce}
+      \strng{authorfullhash}{855afdda14041e711c4e62f1bb1698ce}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{17}
+      \field{title}{Segmented contracted basis sets for one-and two-component Dirac--Fock effective core potentials}
+      \field{volume}{133}
+      \field{year}{2010}
+      \field{pages}{174102}
+      \range{pages}{1}
+    \endentry
+    \entry{metz2000small}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dd5913753b7c62c10c23cc4b65fe310f}{%
+           family={Metz},
+           familyi={M\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3323938213ad97b8053bbb466ce4694e}{%
+           family={Stoll},
+           familyi={S\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+        {{hash=42db805a0f6a17e9c917ee0fa2492bfa}{%
+           family={Dolg},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{6f252fdbcdb66da97a8cea1a17972d26}
+      \strng{fullhash}{6f252fdbcdb66da97a8cea1a17972d26}
+      \strng{bibnamehash}{6f252fdbcdb66da97a8cea1a17972d26}
+      \strng{authorbibnamehash}{6f252fdbcdb66da97a8cea1a17972d26}
+      \strng{authornamehash}{6f252fdbcdb66da97a8cea1a17972d26}
+      \strng{authorfullhash}{6f252fdbcdb66da97a8cea1a17972d26}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{7}
+      \field{title}{Small-core multiconfiguration-Dirac--Hartree--Fock-adjusted pseudopotentials for post-d main group elements: Application to PbH and PbO}
+      \field{volume}{113}
+      \field{year}{2000}
+      \field{pages}{2563\bibrangedash 2569}
+      \range{pages}{7}
+    \endentry
+    \entry{ahlrichs2000contracted}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a435b4a0e9f52167e05666c1aee83100}{%
+           family={Ahlrichs},
+           familyi={A\bibinitperiod},
+           given={Reinhart},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5471cb10d9bf9a369298b7d99349f57f}{%
+           family={May},
+           familyi={M\bibinitperiod},
+           given={Klaus},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{c709449ce3488ab257c7dc22457b1727}
+      \strng{fullhash}{c709449ce3488ab257c7dc22457b1727}
+      \strng{bibnamehash}{c709449ce3488ab257c7dc22457b1727}
+      \strng{authorbibnamehash}{c709449ce3488ab257c7dc22457b1727}
+      \strng{authornamehash}{c709449ce3488ab257c7dc22457b1727}
+      \strng{authorfullhash}{c709449ce3488ab257c7dc22457b1727}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Chem. Chem. Phys.}
+      \field{number}{5}
+      \field{title}{Contracted all-electron Gaussian basis sets for atoms Rb to Xe}
+      \field{volume}{2}
+      \field{year}{2000}
+      \field{pages}{943\bibrangedash 945}
+      \range{pages}{3}
+    \endentry
     \entry{dolbier2016guide}{book}{}
       \name{author}{1}{}{%
         {{hash=ee43dd5f8ae9c64ef8d08dcb7d3a81db}{%

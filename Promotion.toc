@@ -99,24 +99,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}{110}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{111}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{114}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{112}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{115}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Ausblick}{114}{chapter.9}
+\contentsline {chapter}{\numberline {9}Ausblick}{117}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{114}{section.9.1}
+\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{117}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Theorie}{114}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.1}Theorie}{117}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{117}{appendix.A}
+\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{120}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Abdruckgenehmigungen}{132}{appendix.B}
+\contentsline {chapter}{\numberline {B}Abdruckgenehmigungen}{135}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Abbildungsverzeichnis}{133}{appendix.C}
+\contentsline {chapter}{\numberline {C}Abbildungsverzeichnis}{136}{appendix.C}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Tabellenverzeichnis}{135}{appendix.D}
+\contentsline {chapter}{\numberline {D}Tabellenverzeichnis}{138}{appendix.D}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{136}{appendix.E}
+\contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{139}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{138}{chapter*.83}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{141}{chapter*.86}
