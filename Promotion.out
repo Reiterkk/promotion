@@ -14,45 +14,47 @@
 \BOOKMARK [2][-]{subsection.2.5.6}{2.5.6 NMR Abschirmungskonstanten in der DFT}{section.2.5}% 14
 \BOOKMARK [2][-]{subsection.2.5.7}{2.5.7 Die Berechnung von Stromdichten und Ringstr\366men}{section.2.5}% 15
 \BOOKMARK [0][-]{chapter.3}{3 Grundlegende Programmstruktur des Moduls mpshift}{}% 16
-\BOOKMARK [0][-]{chapter.4}{4 Verbesserung der Effizienz}{}% 17
-\BOOKMARK [1][-]{section.4.1}{4.1 Die RI-Methode f\374r chemische Abschirmungskonstanten}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.4}{4 Erweiterung der Funktionalit\344t}{}% 17
+\BOOKMARK [1][-]{section.4.1}{4.1 Ber\374cksichtigung von Umgebungseffekten}{chapter.4}% 18
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Theorie}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Implementierung}{section.4.1}% 20
-\BOOKMARK [1][-]{section.4.2}{4.2 Die MARI-J Methode f\374r chemische Abschirmungskonstanten}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Theorie}{section.4.2}% 22
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Implementierung}{section.4.2}% 23
-\BOOKMARK [1][-]{section.4.3}{4.3 Parallelisierung und weitere Optimierungen}{chapter.4}% 24
-\BOOKMARK [0][-]{chapter.5}{5 Erweiterung der Funktionalit\344t}{}% 25
-\BOOKMARK [1][-]{section.5.1}{5.1 Ber\374cksichtigung von Umgebungseffekten}{chapter.5}% 26
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Theorie}{section.5.1}% 27
-\BOOKMARK [3][-]{subsubsection.5.1.1.1}{5.1.1.1 Direct COSMO-RS}{subsection.5.1.1}% 28
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Implementierung}{section.5.1}% 29
-\BOOKMARK [2][-]{subsection.5.1.3}{5.1.3 Testrechnungen}{section.5.1}% 30
-\BOOKMARK [3][-]{subsubsection.5.1.3.1}{5.1.3.1 Aceton in Wasser}{subsection.5.1.3}% 31
-\BOOKMARK [3][-]{subsubsection.5.1.3.2}{5.1.3.2 L\366sungsmitteleffekte auf 13C Verschiebungen}{subsection.5.1.3}% 32
-\BOOKMARK [1][-]{section.5.2}{5.2 Skalar-relativistische Effekte durch effektive Kernpotentiale}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Theorie}{section.5.2}% 34
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Implementierung}{section.5.2}% 35
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Testrechnungen}{section.5.2}% 36
-\BOOKMARK [1][-]{section.5.3}{5.3 Berechnung von Vibrational Circular Dichroism Spektren}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Theorie}{section.5.3}% 38
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Implementierung}{section.5.3}% 39
-\BOOKMARK [3][-]{subsubsection.5.3.2.1}{5.3.2.1 Symmetrieausnutzung}{subsection.5.3.2}% 40
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 GALLIER: Visualisierung von VCD Spektren}{section.5.3}% 41
-\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Testrechnungen}{section.5.3}% 42
-\BOOKMARK [1][-]{section.5.4}{5.4 meta-GGA Funktionale}{chapter.5}% 43
+\BOOKMARK [3][-]{subsubsection.4.1.1.1}{4.1.1.1 Direct COSMO-RS}{subsection.4.1.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Implementierung}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Testrechnungen}{section.4.1}% 22
+\BOOKMARK [3][-]{subsubsection.4.1.3.1}{4.1.3.1 Aceton in Wasser}{subsection.4.1.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.1.3.2}{4.1.3.2 L\366sungsmitteleffekte auf 13C Verschiebungen}{subsection.4.1.3}% 24
+\BOOKMARK [1][-]{section.4.2}{4.2 Skalar-relativistische Effekte durch effektive Kernpotentiale}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Theorie}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Implementierung}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Testrechnungen}{section.4.2}% 28
+\BOOKMARK [1][-]{section.4.3}{4.3 Berechnung von Vibrational Circular Dichroism Spektren}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Theorie}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Implementierung}{section.4.3}% 31
+\BOOKMARK [3][-]{subsubsection.4.3.2.1}{4.3.2.1 Symmetrieausnutzung}{subsection.4.3.2}% 32
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Visualisierung von VCD Spektren}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Testrechnungen}{section.4.3}% 34
+\BOOKMARK [1][-]{section.4.4}{4.4 meta-GGA Funktionale}{chapter.4}% 35
+\BOOKMARK [0][-]{chapter.5}{5 Verbesserung der Effizienz}{}% 36
+\BOOKMARK [1][-]{section.5.1}{5.1 Die RI-Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Theorie}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Implementierung}{section.5.1}% 39
+\BOOKMARK [1][-]{section.5.2}{5.2 Die MARI-J Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 40
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Theorie}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Implementierung}{section.5.2}% 42
+\BOOKMARK [1][-]{section.5.3}{5.3 Parallelisierung und weitere Optimierungen}{chapter.5}% 43
 \BOOKMARK [0][-]{chapter.6}{6 Effizienz und Genauigkeit}{}% 44
 \BOOKMARK [0][-]{chapter.7}{7 Anwendungen}{}% 45
 \BOOKMARK [1][-]{section.7.1}{7.1 Anwendungen in der anorganischen Chemie}{chapter.7}% 46
 \BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 31P chemische Verschiebungen in Phospor NHCs}{section.7.1}% 47
 \BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 [Hg\1378Te\1378\(Te\1372\)\1374]8-: Ein anorganisches Porphyrin?}{section.7.1}% 48
-\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 [Co at Sn\1376Sb\1376]3-}{section.7.1}% 49
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 [Co at Sn\1376Sb\1376]3- und [Co\1372 at Sn\1375Sb\1377]3-}{section.7.1}% 49
 \BOOKMARK [1][-]{section.7.2}{7.2 Ringstr\366me in gro\337en ringf\366rmigen Kohlenstoffnanor\366hren}{chapter.7}% 50
 \BOOKMARK [0][-]{chapter.8}{8 Zusammenfassung}{}% 51
 \BOOKMARK [0][-]{chapter.9}{9 Ausblick}{}% 52
 \BOOKMARK [1][-]{section.9.1}{9.1 Seminumerischer Austausch}{chapter.9}% 53
 \BOOKMARK [2][-]{subsection.9.1.1}{9.1.1 Theorie}{section.9.1}% 54
-\BOOKMARK [0][-]{chapter*.83}{Abbildungsverzeichnis}{}% 55
-\BOOKMARK [0][-]{chapter*.85}{Tabellenverzeichnis}{}% 56
-\BOOKMARK [0][-]{section*.87}{Abk\374rzungsverzeichnis}{}% 57
-\BOOKMARK [0][-]{chapter*.89}{Literaturverzeichnis}{}% 58
+\BOOKMARK [0][-]{appendix.A}{A Abbildungen und Tabellen}{}% 55
+\BOOKMARK [0][-]{appendix.B}{B Abdruckgenehmigungen}{}% 56
+\BOOKMARK [0][-]{appendix.C}{C Abbildungsverzeichnis}{}% 57
+\BOOKMARK [0][-]{appendix.D}{D Tabellenverzeichnis}{}% 58
+\BOOKMARK [0][-]{appendix.E}{E Abk\374rzungsverzeichnis}{}% 59
+\BOOKMARK [0][-]{chapter*.83}{Literaturverzeichnis}{}% 60

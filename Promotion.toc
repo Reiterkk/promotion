@@ -33,59 +33,59 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Grundlegende Programmstruktur des Moduls \texttt {mpshift}}{37}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Verbesserung der Effizienz}{41}{chapter.4}
+\contentsline {chapter}{\numberline {4}Erweiterung der Funktionalit\IeC {\"a}t}{41}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Die RI-Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{42}{section.4.1}
+\contentsline {section}{\numberline {4.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{41}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Theorie}{43}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Theorie}{42}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1.1}Direct COSMO-RS}{43}{subsubsection.4.1.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Implementierung}{44}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{48}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.3}Testrechnungen}{45}{subsection.4.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Theorie}{48}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.1.3.1}Aceton in Wasser}{45}{subsubsection.4.1.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Implementierung}{49}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{47}{subsubsection.4.1.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Parallelisierung und weitere Optimierungen}{53}{section.4.3}
+\contentsline {section}{\numberline {4.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{51}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Erweiterung der Funktionalit\IeC {\"a}t}{56}{chapter.5}
+\contentsline {subsection}{\numberline {4.2.1}Theorie}{51}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Ber\IeC {\"u}cksichtigung von Umgebungseffekten}{56}{section.5.1}
+\contentsline {subsection}{\numberline {4.2.2}Implementierung}{56}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Theorie}{57}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {4.2.3}Testrechnungen}{57}{subsection.4.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.1.1}Direct COSMO-RS}{58}{subsubsection.5.1.1.1}
+\contentsline {section}{\numberline {4.3}Berechnung von Vibrational Circular Dichroism Spektren}{61}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Implementierung}{59}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {4.3.1}Theorie}{62}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Testrechnungen}{60}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {4.3.2}Implementierung}{64}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Aceton in Wasser}{60}{subsubsection.5.1.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Symmetrieausnutzung}{67}{subsubsection.4.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}L\IeC {\"o}sungsmitteleffekte auf $^{13}$C Verschiebungen}{62}{subsubsection.5.1.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Visualisierung von VCD Spektren}{69}{subsection.4.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Skalar-relativistische Effekte durch effektive Kernpotentiale}{66}{section.5.2}
+\contentsline {subsection}{\numberline {4.3.4}Testrechnungen}{69}{subsection.4.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Theorie}{66}{subsection.5.2.1}
+\contentsline {section}{\numberline {4.4}meta-GGA Funktionale}{77}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Implementierung}{71}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {5}Verbesserung der Effizienz}{78}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Testrechnungen}{72}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.1}Die RI-Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{79}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Berechnung von Vibrational Circular Dichroism Spektren}{76}{section.5.3}
+\contentsline {subsection}{\numberline {5.1.1}Theorie}{80}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Theorie}{77}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.1.2}Implementierung}{81}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Implementierung}{79}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.2}Die MARI-J Methode f\IeC {\"u}r chemische Abschirmungskonstanten}{85}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Symmetrieausnutzung}{82}{subsubsection.5.3.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Theorie}{85}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.3}GALLIER: Visualisierung von VCD Spektren}{84}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.2.2}Implementierung}{86}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.4}Testrechnungen}{84}{subsection.5.3.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}meta-GGA Funktionale}{92}{section.5.4}
+\contentsline {section}{\numberline {5.3}Parallelisierung und weitere Optimierungen}{90}{section.5.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Effizienz und Genauigkeit}{93}{chapter.6}
 \defcounter {refsection}{0}\relax 
@@ -97,22 +97,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.2}$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$: Ein anorganisches Porphyrin?}{107}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$}{110}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}{110}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{110}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{111}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{111}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{112}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Ausblick}{113}{chapter.9}
+\contentsline {chapter}{\numberline {9}Ausblick}{114}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{113}{section.9.1}
+\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{114}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Theorie}{113}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.1}Theorie}{114}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{131}{chapter*.83}
+\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{117}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{133}{chapter*.85}
+\contentsline {chapter}{\numberline {B}Abdruckgenehmigungen}{132}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{134}{section*.87}
+\contentsline {chapter}{\numberline {C}Abbildungsverzeichnis}{133}{appendix.C}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{136}{chapter*.89}
+\contentsline {chapter}{\numberline {D}Tabellenverzeichnis}{135}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{136}{appendix.E}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{138}{chapter*.83}

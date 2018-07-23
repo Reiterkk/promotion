@@ -186,7 +186,6 @@ Wird die \ac{ri} bzw. \ac{marij}-Methode in einer Hartree-Fock bzw. Hybrid-\ac{d
 Neben einer effizienten Programmierung und dem Einführen von Näherungen wie beispielsweise bei der \ac{ri} bzw. \ac{marij}-Methode, kann die Wartezeit des Nutzers auch durch eine Parallelisierung des Programmcodes reduziert werden. Dies ist insofern von besonderer Bedeutung, dass heutige Computer immer mehr CPUs zur Verfügung haben. Selbst in gewöhnlichen Desktop PCs oder Notebooks finden sich häufig mindestens 4 CPUs. Aus diesem Grund wurden die zeitaufwändigsten Routinen im \texttt{mpshift} Modul mit OpenMP\supercite{dagum1998openmp} in Zusammenarbeit mit Fabian Mack parallelisiert. Im Einzelnen betrifft dies die Routinen \texttt{becke}, \texttt{csloop}, \texttt{cslp3\_omp}, \texttt{csplop}, \texttt{shloop\_k}, \texttt{p3loop} und \texttt{pploop}. Die Routinen \texttt{csplop}, \texttt{p3loop} und \texttt{pploop} besitzen üblicherweise folgende grundlegende Schleifenstruktur:
 \vfill
 \newpage
-\\
 \texttt{do i=1,N$_{\texttt{Schal}}$}\\ 
 \null\quad\texttt{do j=1,N$_{\texttt{Schal}}$}\\ 
 \null\quad\quad\texttt{do $\mu$=1,N$_{\texttt{Prim BF}}$}\\ 
@@ -197,7 +196,7 @@ Neben einer effizienten Programmierung und dem Einführen von Näherungen wie be
 \null\quad\texttt{end do}\\ 
 \texttt{end do}\\
 \\
-Die äußeren beiden Schleifen laufen dabei über alle Schalen N$_{\texttt{Schal}}$ und die beiden inneren Schleifen laufen über die primitiven Basisfunktionen. Für die Routine \texttt{cslp3\_omp} kommt jeweils eine weitere Schleife für die Auxiliarschale und die primitiven Auxiliarbasisfunktionen hinzu. Bei den Vierzentrenroutinen \texttt{csplop} und \texttt{shloop\_k} sind es jeweils zwei weitere Schleifen für die Schalen und die primitiven Basisfunktionen. Bei der Parallelisierung wurde nun in der Regel so vorgegangen, dass die äußersten Schleifen über die Schalen parallelisiert wurden:\\
+Die äußeren beiden Schleifen laufen dabei über alle Schalen N$_{\texttt{Schal}}$ und die beiden inneren Schleifen laufen über die primitiven Basisfunktionen. Für die Routine \texttt{cslp3\_omp} kommt jeweils eine weitere Schleife für die Auxiliarschale und die primitiven Auxiliarbasisfunktionen hinzu. Bei den Vierzentren-Routinen \texttt{csplop} und \texttt{shloop\_k} sind es jeweils zwei weitere Schleifen für die Schalen und die primitiven Basisfunktionen. Bei der Parallelisierung wurde nun in der Regel so vorgegangen, dass die äußersten Schleifen über die Schalen parallelisiert wurden:\\
 \\
 \texttt{\$OMP PARALLEL}\\
 \texttt{\$OMP DO SCHEDULE (DYNAMIC)}\\
