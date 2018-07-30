@@ -101,22 +101,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{114}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{115}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{116}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Ausblick}{117}{chapter.9}
+\contentsline {chapter}{\numberline {9}Ausblick}{118}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{117}{section.9.1}
+\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{118}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Theorie}{117}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.1}Theorie}{118}{subsection.9.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{120}{appendix.A}
+\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{121}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Abdruckgenehmigungen}{135}{appendix.B}
+\contentsline {chapter}{\numberline {B}Abdruckgenehmigungen}{136}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Abbildungsverzeichnis}{136}{appendix.C}
+\contentsline {chapter}{\numberline {C}Abbildungsverzeichnis}{137}{appendix.C}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Tabellenverzeichnis}{138}{appendix.D}
+\contentsline {chapter}{\numberline {D}Tabellenverzeichnis}{139}{appendix.D}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{139}{appendix.E}
+\contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{140}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{141}{chapter*.87}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{142}{chapter*.88}
