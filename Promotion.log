@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  31 JUL 2018 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  1 AUG 2018 11:49
 entering extended mode
 **./Promotion.tex
 (Promotion.tex
@@ -3725,7 +3725,7 @@ although it is yet undefined on input line 300.
 
 pdfTeX warning: pdflatex (file ./gfx/vector.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.6> allowed
-<./gfx/vector.pdf, id=3091, 806.05511pt x 654.54866pt>
+<./gfx/vector.pdf, id=3092, 806.05511pt x 654.54866pt>
 File: ./gfx/vector.pdf Graphic file (type pdf)
 <use ./gfx/vector.pdf>
 Package pdftex.def Info: ./gfx/vector.pdf  used on input line 303.
@@ -3751,25 +3751,32 @@ Package acronym Info: Label `acro:swnt' newly defined as it shall be overridden
 
 although it is yet undefined on input line 309.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 312.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 312.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 312.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 312.
+(babel)             in language  on input line 310.
 
 [115 <./gfx/vector.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+
+ []
+
+
+Underfull \vbox (badness 6741) has occurred while \output is active []
+
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 316.
  [116]
-Overfull \hbox (32.48218pt too wide) in paragraph at lines 324--325
+Overfull \hbox (32.48218pt too wide) in paragraph at lines 320--321
 \T1/lmr/m/n/12 (-20) un-ter-sucht. Dar-un-ter fin-det sich bei-spiels-wei-se di
 e Ver-wen-dung als Wasserstoffspeicher$[]$.
  []
@@ -4358,11 +4365,11 @@ Package logreq Info: Writing requests to 'Promotion.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39178 strings out of 492976
- 720008 string characters out of 3123648
- 1451781 words of memory out of 3000000
- 41243 multiletter control sequences out of 15000+200000
- 661072 words of font info for 285 fonts, out of 3000000 for 9000
+ 39173 strings out of 492976
+ 719950 string characters out of 3123648
+ 1451759 words of memory out of 3000000
+ 41242 multiletter control sequences out of 15000+200000
+ 660814 words of font info for 283 fonts, out of 3000000 for 9000
  1198 hyphenation exceptions out of 8191
  57i,25n,90p,9090b,3466s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
@@ -4406,7 +4413,7 @@ s/type1/public/lm/lmtt12.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Users/Kevin Reiter/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/lm/lmtto10.pfb><C:/Users/Kevin Reiter/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Promotion.pdf (166 pages, 46076060 bytes).
+Output written on Promotion.pdf (166 pages, 46076510 bytes).
 PDF statistics:
  4203 PDF objects out of 4296 (max. 8388607)
  759 named destinations out of 1000 (max. 500000)

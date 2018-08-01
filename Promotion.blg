@@ -1,21 +1,21 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Promotion.blg'
-[40] biber-MSWIN64:313> INFO - === 
-[71] Biber.pm:371> INFO - Reading 'Promotion.bcf'
-[211] Biber.pm:857> INFO - Found 168 citekeys in bib section 0
-[231] Biber.pm:3976> INFO - Processing section 0
-[250] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[258] bibtex.pm:1500> INFO - LaTeX decoding ...
-[607] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
-[622] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
-[624] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
-[1207] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
-[1909] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\FG3i0tfDjP\literatur.bib_8792.utf8, line 1157, warning: 4 characters of junk seen at toplevel
-[1909] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\FG3i0tfDjP\literatur.bib_8792.utf8, line 1777, warning: undefined macro "jrn"
-[2066] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2066] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2066] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[2066] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[2198] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
-[2296] bbl.pm:720> INFO - Output to Promotion.bbl
-[2296] Biber.pm:110> INFO - WARNINGS: 5
+[38] biber-MSWIN64:313> INFO - === 
+[75] Biber.pm:371> INFO - Reading 'Promotion.bcf'
+[241] Biber.pm:857> INFO - Found 168 citekeys in bib section 0
+[260] Biber.pm:3976> INFO - Processing section 0
+[279] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[289] bibtex.pm:1500> INFO - LaTeX decoding ...
+[782] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
+[803] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
+[807] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
+[1587] Utils.pm:193> WARN - month field 'September' in entry 'gnuplot' is not an integer - this will probably not sort properly.
+[2751] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\GZCJNAvknp\literatur.bib_12760.utf8, line 1157, warning: 4 characters of junk seen at toplevel
+[2751] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\GZCJNAvknp\literatur.bib_12760.utf8, line 1777, warning: undefined macro "jrn"
+[2893] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2894] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2894] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[2894] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[3030] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
+[3107] bbl.pm:720> INFO - Output to Promotion.bbl
+[3108] Biber.pm:110> INFO - WARNINGS: 5
