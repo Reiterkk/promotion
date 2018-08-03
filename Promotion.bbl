@@ -5720,6 +5720,97 @@
       \field{pages}{626\bibrangedash 657}
       \range{pages}{32}
     \endentry
+    \entry{castillo2010hydrogen}{article}{}
+      \name{author}{4}{}{%
+        {{hash=ffeed371df6483e4aa9fccdc17940f64}{%
+           family={Castillo-Alvarado},
+           familyi={C\bibinithyphendelim A\bibinitperiod},
+           given={Fray\bibnamedelimb de\bibnamedelima L},
+           giveni={F\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=4d62f5c7eb040b8786f30cab582eeee7}{%
+           family={Ortíz-López},
+           familyi={O\bibinithyphendelim L\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod}}}%
+        {{hash=38fd75c57144a46a9ef367116d0b1022}{%
+           family={Arellano},
+           familyi={A\bibinitperiod},
+           given={JS},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a42fcb9d5487faa2cbb5a4b0074da60b}{%
+           family={Cruz-Torres},
+           familyi={C\bibinithyphendelim T\bibinitperiod},
+           given={Armando},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Trans Tech Publ}%
+      }
+      \strng{namehash}{c09e69136c485604ab7c25ef4d3532a2}
+      \strng{fullhash}{dfb757b7b5e7ee0f362083cee86c40bf}
+      \strng{bibnamehash}{dfb757b7b5e7ee0f362083cee86c40bf}
+      \strng{authorbibnamehash}{dfb757b7b5e7ee0f362083cee86c40bf}
+      \strng{authornamehash}{c09e69136c485604ab7c25ef4d3532a2}
+      \strng{authorfullhash}{dfb757b7b5e7ee0f362083cee86c40bf}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Adv. Sci. Technol.}
+      \field{title}{Hydrogen Storage on Beryllium-Coated Toroidal Carbon Nanostructure C120 modeled with Density Functional Theory}
+      \field{volume}{72}
+      \field{year}{2010}
+      \field{pages}{188\bibrangedash 195}
+      \range{pages}{8}
+    \endentry
+    \entry{cruz2010hydrogen}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b996c23973ff777b8875bebf097678fd}{%
+           family={Cruz-Torres},
+           familyi={C\bibinithyphendelim T\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b17d9a43ed8551fb3893a10fcb0fc22c}{%
+           family={Castillo-Alvarado},
+           familyi={C\bibinithyphendelim A\bibinitperiod},
+           given={F\bibnamedelima DE\bibnamedelima L},
+           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=37e3b3d37d736330f46a0cffb05fa76f}{%
+           family={Ortíz-López},
+           familyi={O\bibinithyphendelim L\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=38fd75c57144a46a9ef367116d0b1022}{%
+           family={Arellano},
+           familyi={A\bibinitperiod},
+           given={JS},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9165b6ae9e8b0a2c730816bac857948f}
+      \strng{fullhash}{22c77c838e4c1fba39a713786c704e99}
+      \strng{bibnamehash}{22c77c838e4c1fba39a713786c704e99}
+      \strng{authorbibnamehash}{22c77c838e4c1fba39a713786c704e99}
+      \strng{authornamehash}{9165b6ae9e8b0a2c730816bac857948f}
+      \strng{authorfullhash}{22c77c838e4c1fba39a713786c704e99}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. J. Quant. Chem.}
+      \field{number}{13}
+      \field{title}{Hydrogen storage inside a toroidal carbon nanostructure C120: Density functional theory computer simulation}
+      \field{volume}{110}
+      \field{year}{2010}
+      \field{pages}{2495\bibrangedash 2508}
+      \range{pages}{14}
+    \endentry
     \entry{dunlap1992connecting}{article}{}
       \name{author}{1}{}{%
         {{hash=409e9ee6e561e71fba1cf916c4e26f46}{%
@@ -6400,6 +6491,47 @@
       \field{pages}{4235\bibrangedash 4239}
       \range{pages}{5}
     \endentry
+    \entry{ceulemans1998molecular}{article}{}
+      \name{author}{3}{}{%
+        {{hash=01b21f9f3cf5e206ec527a37c3552949}{%
+           family={Ceulemans},
+           familyi={C\bibinitperiod},
+           given={Arnout},
+           giveni={A\bibinitperiod}}}%
+        {{hash=63a41dcda078d62a40abb44331f4c0ce}{%
+           family={Chibotaru},
+           familyi={C\bibinitperiod},
+           given={LF},
+           giveni={L\bibinitperiod}}}%
+        {{hash=096b68af8b9f2da195a7da5549ef9244}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={PW},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
+      \strng{fullhash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
+      \strng{bibnamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
+      \strng{authorbibnamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
+      \strng{authornamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
+      \strng{authorfullhash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Letters}
+      \field{number}{9}
+      \field{title}{Molecular anapole moments}
+      \field{volume}{80}
+      \field{year}{1998}
+      \field{pages}{1861}
+      \range{pages}{1}
+    \endentry
     \entry{haddon1997electronic}{article}{}
       \name{author}{1}{}{%
         {{hash=55e98d2b20ac74dd6cf9b7f59465e412}{%
@@ -6463,8 +6595,8 @@
       \strng{authorbibnamehash}{a8ff9596d0fd59e403f6b20ffb191ba1}
       \strng{authornamehash}{3a2b013d4a052762e9863f431a7bc3f2}
       \strng{authorfullhash}{a8ff9596d0fd59e403f6b20ffb191ba1}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6519,8 +6651,8 @@
       \strng{authorbibnamehash}{5fc989ec30f02c1c3c9313a73f779372}
       \strng{authornamehash}{3801deaf7159dbd252f3b25c60594031}
       \strng{authorfullhash}{5fc989ec30f02c1c3c9313a73f779372}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6560,8 +6692,8 @@
       \strng{authorbibnamehash}{5efbd0825b9f955d4624867d22a68254}
       \strng{authornamehash}{5efbd0825b9f955d4624867d22a68254}
       \strng{authorfullhash}{5efbd0825b9f955d4624867d22a68254}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6596,8 +6728,8 @@
       \strng{authorbibnamehash}{72ca0a74c8d66f795012c5d223d70ccf}
       \strng{authornamehash}{72ca0a74c8d66f795012c5d223d70ccf}
       \strng{authorfullhash}{72ca0a74c8d66f795012c5d223d70ccf}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6610,137 +6742,66 @@
       \field{pages}{2884\bibrangedash 2887}
       \range{pages}{4}
     \endentry
-    \entry{ceulemans1998molecular}{article}{}
-      \name{author}{3}{}{%
-        {{hash=01b21f9f3cf5e206ec527a37c3552949}{%
-           family={Ceulemans},
-           familyi={C\bibinitperiod},
-           given={Arnout},
+    \entry{beuerle2011optical}{article}{}
+      \name{author}{7}{}{%
+        {{hash=dd47f30cce9f87ad8b8cfbaac4f2b1b1}{%
+           family={Beuerle},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9a6b25bd3467138bd144c3dcdab21d14}{%
+           family={Herrmann},
+           familyi={H\bibinitperiod},
+           given={Carmen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=04a1ded1f898e9a5c3131daeafcdf85e}{%
+           family={Whalley},
+           familyi={W\bibinitperiod},
+           given={Adam\bibnamedelima C},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d098ff510e33e4917eb085895a8f418a}{%
+           family={Valente},
+           familyi={V\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod}}}%
+        {{hash=421b2dc655c7a4f7a125b3fd660b4828}{%
+           family={Gamburd},
+           familyi={G\bibinitperiod},
+           given={Alexander},
            giveni={A\bibinitperiod}}}%
-        {{hash=63a41dcda078d62a40abb44331f4c0ce}{%
-           family={Chibotaru},
-           familyi={C\bibinitperiod},
-           given={LF},
-           giveni={L\bibinitperiod}}}%
-        {{hash=096b68af8b9f2da195a7da5549ef9244}{%
-           family={Fowler},
-           familyi={F\bibinitperiod},
-           given={PW},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {APS}%
-      }
-      \strng{namehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \strng{fullhash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \strng{bibnamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \strng{authorbibnamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \strng{authornamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \strng{authorfullhash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
-      \field{number}{9}
-      \field{title}{Molecular anapole moments}
-      \field{volume}{80}
-      \field{year}{1998}
-      \field{pages}{1861}
-      \range{pages}{1}
-    \endentry
-    \entry{castillo2010hydrogen}{article}{}
-      \name{author}{4}{}{%
-        {{hash=ffeed371df6483e4aa9fccdc17940f64}{%
-           family={Castillo-Alvarado},
-           familyi={C\bibinithyphendelim A\bibinitperiod},
-           given={Fray\bibnamedelimb de\bibnamedelima L},
-           giveni={F\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=4d62f5c7eb040b8786f30cab582eeee7}{%
-           family={Ortíz-López},
-           familyi={O\bibinithyphendelim L\bibinitperiod},
-           given={Jaime},
-           giveni={J\bibinitperiod}}}%
-        {{hash=38fd75c57144a46a9ef367116d0b1022}{%
-           family={Arellano},
-           familyi={A\bibinitperiod},
-           given={JS},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a42fcb9d5487faa2cbb5a4b0074da60b}{%
-           family={Cruz-Torres},
-           familyi={C\bibinithyphendelim T\bibinitperiod},
-           given={Armando},
-           giveni={A\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Trans Tech Publ}%
-      }
-      \strng{namehash}{c09e69136c485604ab7c25ef4d3532a2}
-      \strng{fullhash}{dfb757b7b5e7ee0f362083cee86c40bf}
-      \strng{bibnamehash}{dfb757b7b5e7ee0f362083cee86c40bf}
-      \strng{authorbibnamehash}{dfb757b7b5e7ee0f362083cee86c40bf}
-      \strng{authornamehash}{c09e69136c485604ab7c25ef4d3532a2}
-      \strng{authorfullhash}{dfb757b7b5e7ee0f362083cee86c40bf}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Adv. Sci. Technol.}
-      \field{title}{Hydrogen Storage on Beryllium-Coated Toroidal Carbon Nanostructure C120 modeled with Density Functional Theory}
-      \field{volume}{72}
-      \field{year}{2010}
-      \field{pages}{188\bibrangedash 195}
-      \range{pages}{8}
-    \endentry
-    \entry{cruz2010hydrogen}{article}{}
-      \name{author}{4}{}{%
-        {{hash=b996c23973ff777b8875bebf097678fd}{%
-           family={Cruz-Torres},
-           familyi={C\bibinithyphendelim T\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=b17d9a43ed8551fb3893a10fcb0fc22c}{%
-           family={Castillo-Alvarado},
-           familyi={C\bibinithyphendelim A\bibinitperiod},
-           given={F\bibnamedelima DE\bibnamedelima L},
-           giveni={F\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=37e3b3d37d736330f46a0cffb05fa76f}{%
-           family={Ortíz-López},
-           familyi={O\bibinithyphendelim L\bibinitperiod},
-           given={J},
-           giveni={J\bibinitperiod}}}%
-        {{hash=38fd75c57144a46a9ef367116d0b1022}{%
-           family={Arellano},
-           familyi={A\bibinitperiod},
-           given={JS},
-           giveni={J\bibinitperiod}}}%
+        {{hash=81597b833ffe35aadcb246f1aeb8ccf4}{%
+           family={Ratner},
+           familyi={R\bibinitperiod},
+           given={Mark\bibnamedelima A},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8b2817e3eb6bbc64c682b3dc49f82651}{%
+           family={Stoddart},
+           familyi={S\bibinitperiod},
+           given={J\bibnamedelima Fraser},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Wiley Online Library}%
       }
-      \strng{namehash}{9165b6ae9e8b0a2c730816bac857948f}
-      \strng{fullhash}{22c77c838e4c1fba39a713786c704e99}
-      \strng{bibnamehash}{22c77c838e4c1fba39a713786c704e99}
-      \strng{authorbibnamehash}{22c77c838e4c1fba39a713786c704e99}
-      \strng{authornamehash}{9165b6ae9e8b0a2c730816bac857948f}
-      \strng{authorfullhash}{22c77c838e4c1fba39a713786c704e99}
+      \strng{namehash}{f3ef06e282d2d43153f4103739e6fc35}
+      \strng{fullhash}{1133b4694bc6dc845263e1bdc86cb265}
+      \strng{bibnamehash}{1133b4694bc6dc845263e1bdc86cb265}
+      \strng{authorbibnamehash}{1133b4694bc6dc845263e1bdc86cb265}
+      \strng{authornamehash}{f3ef06e282d2d43153f4103739e6fc35}
+      \strng{authorfullhash}{1133b4694bc6dc845263e1bdc86cb265}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Int. J. Quant. Chem.}
-      \field{number}{13}
-      \field{title}{Hydrogen storage inside a toroidal carbon nanostructure C120: Density functional theory computer simulation}
-      \field{volume}{110}
-      \field{year}{2010}
-      \field{pages}{2495\bibrangedash 2508}
-      \range{pages}{14}
+      \field{journaltitle}{Chem. Eur. J.}
+      \field{number}{14}
+      \field{title}{Optical and vibrational properties of toroidal carbon nanotubes}
+      \field{volume}{17}
+      \field{year}{2011}
+      \field{pages}{3868\bibrangedash 3875}
+      \range{pages}{8}
     \endentry
     \entry{dolbier2016guide}{book}{}
       \name{author}{1}{}{%

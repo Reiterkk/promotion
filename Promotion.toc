@@ -99,7 +99,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.3}[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}{110}{subsection.7.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en ringf\IeC {\"o}rmigen Kohlenstoffnanor\IeC {\"o}hren}{114}{section.7.2}
+\contentsline {section}{\numberline {7.2}Ringstr\IeC {\"o}me in gro\IeC {\ss }en toroidalen Kohlenstoff Nanor\IeC {\"o}hren}{114}{section.7.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {8}Zusammenfassung}{119}{chapter.8}
 \defcounter {refsection}{0}\relax 
@@ -119,4 +119,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{143}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{145}{chapter*.92}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{145}{chapter*.93}
