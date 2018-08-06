@@ -1,25 +1,25 @@
 \section{Einheiten und Notation}
 
-Alle Einheiten sind in atomaren Einheiten (a.u.) zu verstehen, sofern es an den entsprechenden Stellen nicht anders angegeben ist. Damit gilt $1=\hbar=e=m_e=\frac{1}{4\pi\varepsilon_0}$.
+In der vorliegenden Arbeit werden atomaren Einheiten (a.u.) verwendet, sofern es an den entsprechenden Stellen nicht anders angegeben ist. Damit gilt $1=\hbar=e=m_e=\frac{1}{4\pi\varepsilon_0}$.
 Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen sind in \textit{parts per million} (\unit{ppm}) angegeben. Die imaginäre Einheit wird immer als $\iu$ geschrieben um beispielsweise die Verwechslung mit Elektronenindizes $i$ zu vermeiden.
  
 \bigskip
-Die in der Literatur gebräuchliche Notation für Indizes und Integrale wird im Folgenden kurz erläutert. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige \acp{mo} und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $K,L,\dotsc$ werden zur Kennzeichnung der insgesamt $N_{\text{K}}$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen, geht aus dem jeweiligen Kontext hervor. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine explizite Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Module \texttt{mpshift} des Programmpaketes \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin - welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern-Abstände wird groß $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit klein $r$ gekennzeichnet.
+Die in der Literatur gebräuchliche Notation für Indizes und Integrale wird im Folgenden kurz erläutert. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige \acp{mo} und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $K,L,\dotsc$ werden zur Kennzeichnung der insgesamt $N_{\text{K}}$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Aus dem jeweiligen Kontext geht hervor, ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine ausgewählte Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Modul \texttt{mpshift} des Programmpaketes \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin - welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern-Abstände wird $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit $r$ gekennzeichnet.
 \newpage
-Sollten die Einelektronen-Integrale nicht explizit angegeben sein, so gilt für sie die folgende Dirac-Notation:
+Einelektronen-Integrale werden zumeist ausgeschrieben, ansonsten gilt für sie die folgende Dirac-Notation:
 \begin{gather*}
 	\langle\chi_\mu\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\chi_\mu(\vec{r})\Diff3\vec{r}\\
 	\langle\chi_\mu\vert\hat O\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\hat O\chi_\mu(\vec{r})\Diff3\vec{r}.
 \end{gather*}
 
-Im Gegensatz dazu werden Zweielektronen-Integrale in der Mulliken-Notation angegeben
+Zweielektronen-Integrale werden in der Mulliken-Notation angegeben
 \begin{gather*}
 	\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)=\int\int\chi_\mu^*(\vec{r}_1)\chi_\nu(\vec{r}_1)\frac{1}{r_{12}}\chi_\kappa^*(\vec{r}_2)\chi_\lambda(\vec{r}_2)\Diff3 \vec{r}_1 \Diff3 \vec{r}_2\\
     \left(\chi_\mu\chi_\nu\vert\vert\chi_\kappa\chi_\lambda\right)=\left(\chi_\mu\chi_\nu\vert\chi_\kappa\chi_\lambda\right)-\frac{1}{2}\left(\chi_\mu\chi_\lambda\vert\chi_\kappa\chi_\nu\right)\\
     \left(\left.\overline{\chi_\mu\chi_\nu}\right\vert\chi_\kappa^{\vec{B}=0 }\chi_\lambda^{\vec{B}=0}\right)_\beta=\left(\left.\frac{\partial}{\partial B_\beta}\left(\chi_\mu\chi_\nu\right)\right|\chi_\kappa\chi_\lambda\right)_{\vec{B} = 0}.
 \end{gather*}
 
-Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wiedergegeben. Somit ist $S^{B_\beta}_{\mu\nu}$ das nach der $\beta$-Komponente des Magnetfeldes abgeleitete Überlappungsintegral der beiden Basisfunktionen $\chi_\mu$ und $\chi_\nu$
+Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wiedergegeben. Beispielsweise ist $S^{B_\beta}_{\mu\nu}$ das nach der $\beta$-Komponente des Magnetfeldes abgeleitete Überlappungsintegral der beiden Basisfunktionen $\chi_\mu$ und $\chi_\nu$
 
 \begin{equation*}
   S^{B_\beta}_{\mu\nu}=\left.\frac{\partial S_{\mu\nu}}{\partial B_\beta}\right|_{\vec{B} = 0}.
@@ -37,7 +37,7 @@ für ein Mehrteilchen-System gelöst werden, um ein Molekül quantenmechanisch z
   \hat{H}\Psi(\vec{r}_1,\sigma_1,\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})=E\Psi(\vec{r}_1,\sigma_1,\dotsc,\vec{r}_N,\sigma_N,\vec{R}_1,\dotsc,\vec{R}_{N_{\text{K}}})
 \end{equation}
 
-erhalten. Der darin enthaltene Hamiltonoperator $\hat{H}$ hat die Form
+erhalten, mit dem Hamiltonoperator
 \begin{equation}
 \begin{aligned}
   \hat{H}&=\hat{T}_{\text{K}}+\hat{T}_{\text{e}}+\hat{V}_{\text{Ke}}+\hat{V}_{\text{ee}}+\hat{V}_{\text{KK}}\\
