@@ -101,15 +101,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.2.3}$^{31}$P chemische Verschiebungen in Phospor NHCs}{122}{subsection.7.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Zusammenfassung}{129}{chapter.8}
+\contentsline {chapter}{\numberline {8}Zusammenfassung}{128}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Ausblick}{131}{chapter.9}
+\contentsline {chapter}{\numberline {9}Ausblick}{130}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9.1}Seminumerischer Austausch}{131}{section.9.1}
+\contentsline {section}{\numberline {9.1}Semi-numerischer Austausch}{130}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1.1}Theorie}{131}{subsection.9.1.1}
+\contentsline {section}{\numberline {9.2}\ac {ri}-Methode f\IeC {\"u}r den Hartree-Fock-Austausch}{133}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{134}{appendix.A}
+\contentsline {chapter}{\numberline {A}Abbildungen und Tabellen}{135}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {B}Abdruckgenehmigungen}{149}{appendix.B}
 \defcounter {refsection}{0}\relax 
@@ -119,4 +119,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {E}Abk\IeC {\"u}rzungsverzeichnis}{153}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{155}{chapter*.100}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{155}{chapter*.97}
