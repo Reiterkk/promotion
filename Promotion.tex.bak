@@ -12,14 +12,14 @@
   openany, 
 ]{scrbook}
 % ---------------------------------------------------------------
-
+\newcommand*\kevin[1]{{\color{red}{{\emph{#1}}}}}
 
 %Worttrennung
 \hyphenation{nicht-re-la-ti-vis-ti-schen}
 % Anpassen der Schriften des KOMA-Skripts 
 \setkomafont{disposition}{\rmfamily\bfseries\boldmath}   % Ändert alle Gliederungsüberschriften (\part bis \subparagraph und \minisec) sowie Überschrift der Zusammenfassung 
 \setkomafont{descriptionlabel}{\rmfamily\bfseries\boldmath}   % Ändert das Label (also den optionalen Eintrag einer \item-Anweisung) einer description-Umgebung
-
+ 
 %to automatically ensure floats do not go into the next section.
 \usepackage[section]{placeins}
 
@@ -132,6 +132,65 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
   \renewcommand*{\finalnamedelim}{\addcomma\addspace}%
 }%kein und zwischen den letzten Autoren
 \DeclareBibliographyDriver{article}{\printnames{author} \setunit*{\addcomma\addspace} \printfield{journaltitle} \printfield{volume} \setunit*{\addcomma\addspace} \printfield{pages} (\printfield{year}) \finentry} %
+
+\DeclareBibliographyDriver{book}{%
+\printnames{author} 
+\setunit*{\addcomma\addspace} 
+\printfield{title} 
+\setunit*{\addcomma\addspace} 
+\printlist{location} 
+\setunit*{\addcolon\addspace} 
+\printlist{publisher}  
+(\printfield{year}) 
+\finentry} %
+
+\DeclareBibliographyDriver{inbook}{%
+\printnames{author} 
+\setunit*{\addcomma\addspace} 
+\printfield{title} 
+\setunit*{\addcomma\addspace}
+\printfield{booktitle} 
+\setunit*{\addspace}
+{hrsg. von \printnames{editor}} 
+\setunit*{\addcomma\addspace} 
+\printlist{location} 
+\setunit*{\addcolon\addspace} 
+\printlist{publisher}  
+(\printfield{year}) 
+\finentry} %
+
+\DeclareFieldFormat[thesis]{title}{\textit{#1}} % keine anführungszeichen um Titel aber kursiv
+\DeclareBibliographyDriver{thesis}{%
+\printnames{author} 
+\setunit*{\addcomma\addspace} 
+\printfield{title} 
+\setunit*{\addcomma\addspace}
+\printfield{type} 
+\setunit*{\addcomma\addspace} 
+\printlist{institution}  
+(\printfield{year}) 
+\finentry} %
+
+\DeclareFieldFormat[online]{title}{\textit{#1}} % keine anführungszeichen um Titel aber kursiv
+\DeclareBibliographyDriver{online}{%
+\printfield{title} 
+\setunit*{\addcomma\addspace}
+\printfield{url}   
+\printurldate 
+\finentry} %
+
+%\DeclareBibliographyDriver{book}{%
+%\printnames{author}%
+%\newunit\newblock
+%\printfield{title}%
+%\newunit\newblock
+%\printlist{publisher}%
+%\newunit
+%\printlist{location}%
+%\newunit
+%\printfield{year}%
+%\finentry}
+
 \addbibresource{literatur.bib}
 % Hochgestellte Referenzen:
 \DeclareCiteCommand{\supercite}[\mkbibsuperscript]
@@ -291,10 +350,10 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 \chapter{Theoretische Grundlagen}\label{theorie}
 \input{kapitel/theoretische_grundlagen}
 
-\chapter{Grundlegende Programmstruktur des Moduls \texttt{mpshift}}\label{programmstruktur}
+\chapter{Programmstruktur des \texttt{mpshift}}\label{programmstruktur}
 \input{kapitel/programmstruktur}
 
-\chapter{Erweiterung der Funktionalität}\label{funktionalität}
+\chapter{Erweiterungen der Funktionalität}\label{funktionalität}
 \input{kapitel/funktionalitaet}
 
 

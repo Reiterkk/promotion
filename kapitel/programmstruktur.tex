@@ -1,4 +1,6 @@
-Bevor in den Kapiteln \ref{effizienz} und \ref{funktionalität} auf die Modifikationen im Modul \texttt{mpshift} eingegangen wird, welche im Lauf der vorliegenden Arbeit vorgenommen werden, soll an dieser Stelle zunächst die grundlegende Programmstruktur, wie sie zu Beginn der Arbeit vorlag, dargestellt und erläutert werden. Abbildung \ref{abb:programmstrukur_alt} zeigt eine schematische Darstellung, wobei nur die wesentlichen Routinen abgebildet sind. Die Funktion der einzelnen Routinen wird im Folgenden erklärt und mit den Gleichungen aus Kapitel \ref{theorie} in Verbindung gebracht. 
+In den beiden folgenden den Kapiteln \ref{funktionalität} und \ref{effizienz} werden die Modifikationen im Modul \texttt{mpshift}, welche im Rahmen der vorliegenden Arbeit vorgenommen werden, ausführlich beschrieben. Zuvor soll an dieser Stelle die grundlegende Programmstruktur, wie sie zu Beginn der Arbeit vorlag, dargestellt und erläutert werden. Abbildung \ref{abb:programmstrukur_alt} zeigt eine schematische Darstellung des Moduls, wobei nur die wesentlichen Routinen abgebildet sind. Die Funktion der einzelnen Routinen wird im Folgenden erklärt und mit den Gleichungen aus Kapitel \ref{theorie} in Verbindung gebracht.
+
+%Bevor in den Kapiteln \ref{effizienz} und \ref{funktionalität} auf die Modifikationen im Modul \texttt{mpshift} eingegangen wird, welche im Lauf der vorliegenden Arbeit vorgenommen werden, soll an dieser Stelle zunächst die grundlegende Programmstruktur, wie sie zu Beginn der Arbeit vorlag, dargestellt und erläutert werden. Abbildung \ref{abb:programmstrukur_alt} zeigt eine schematische Darstellung, wobei nur die wesentlichen Routinen abgebildet sind. Die Funktion der einzelnen Routinen wird im Folgenden erklärt und mit den Gleichungen aus Kapitel \ref{theorie} in Verbindung gebracht. 
 
 \begin{itemize}[leftmargin=60pt]
 \item[{\parbox[t]{0.145\linewidth}{\texttt{csonei} \\ \& \texttt{csplop}:}}]\parbox[t]{1\linewidth}{Übergeordnete Routinen zur Berechnung der abgeleiteten Einelektronen-Matrizen. Die Routine \texttt{csplop} wird mehrmals von \texttt{csonei} aufgerufen. Je nach Aufruf werden die nach den Komponenten des Magnetfeldes abgeleitete Überlappungsmatrix, die abgeleitete kinetische Energie, die abgeleitete Kern-Elektron-Wechselwirkung und die Matrixelemente des abgeleiteten Hamiltonoperators berechnet. Die eigentliche Berechnung der jeweiligen Terme erfolgt in den Routinen \texttt{ssints}, \texttt{tsints}, \texttt{vsints} und \texttt{lints}, welche von \texttt{csplop} aufgerufen werden.}
@@ -30,7 +32,7 @@ Bevor in den Kapiteln \ref{effizienz} und \ref{funktionalität} auf die Modifika
 \newpage
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=0.85\textwidth]{programmstruktur_alt}
+\includegraphics[width=0.75\textwidth]{programmstruktur_alt}
 \captionsetup{figurewithin = chapter}
 \captionsetup{font=small, labelfont=bf}\caption[Grundlegende Programmstruktur]{Schematische Darstellung der grundlegenden Programmstruktur des Moduls \texttt{mpshift} vor den Modifikationen, die im Laufe der vorliegenden Arbeit durchgeführt werden. In der Abbildung sind nur die wichtigsten Routinen enthalten.}
 \label{abb:programmstrukur_alt}
