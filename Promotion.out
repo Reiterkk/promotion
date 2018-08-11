@@ -31,14 +31,14 @@
 \BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Theorie}{section.4.3}% 31
 \BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Implementierung}{section.4.3}% 32
 \BOOKMARK [3][-]{subsubsection.4.3.2.1}{4.3.2.1 Symmetrieausnutzung}{subsection.4.3.2}% 33
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Visualisierung von VCD Spektren}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Visualisierung von acsvcd-Spektren}{section.4.3}% 34
 \BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Testrechnungen}{section.4.3}% 35
 \BOOKMARK [1][-]{section.4.4}{4.4 meta-GGA Funktionale}{chapter.4}% 36
 \BOOKMARK [0][-]{chapter.5}{5 Verbesserung der Effizienz}{}% 37
 \BOOKMARK [1][-]{section.5.1}{5.1 Die RI-Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 38
 \BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Theorie}{section.5.1}% 39
 \BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Implementierung}{section.5.1}% 40
-\BOOKMARK [1][-]{section.5.2}{5.2 Die MARI-J Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{5.2 Die MARI-J-Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 41
 \BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Theorie}{section.5.2}% 42
 \BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Implementierung}{section.5.2}% 43
 \BOOKMARK [1][-]{section.5.3}{5.3 Parallelisierung und weitere Optimierungen}{chapter.5}% 44

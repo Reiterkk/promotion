@@ -2018,3 +2018,67 @@ year={ 2018 },
   year={2003},
   publisher={AIP}
 }
+%6-31G* basis
+@article{hariharan1973influence,
+  title={The influence of polarization functions on molecular orbital hydrogenation energies},
+  author={Hariharan, Praveen C and Pople, John A},
+  journal={Theoretica chimica acta},
+  volume={28},
+  number={3},
+  pages={213--222},
+  year={1973},
+  publisher={Springer}
+}
+
+@article{liu2010ideas,
+  title={Ideas of relativistic quantum chemistry},
+  author={Liu, Wenjian},
+  journal=molphys,
+  volume={108},
+  number={13},
+  pages={1679--1706},
+  year={2010},
+  publisher={Taylor \& Francis}
+}
+
+@article{saue2011relativistic,
+  title={Relativistic Hamiltonians for chemistry: a primer},
+  author={Saue, Trond},
+  journal={ChemPhysChem},
+  volume={12},
+  number={17},
+  pages={3077--3094},
+  year={2011},
+  publisher={Wiley Online Library}
+}
+
+@article{peng2012exact,
+  title={Exact decoupling of the relativistic Fock operator},
+  author={Peng, Daoling and Reiher, Markus},
+  journal=tca,
+  volume={131},
+  number={1},
+  pages={1081},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{elvidge1961181,
+  title={181. Studies of aromaticity by nuclear magnetic resonance spectroscopy. Part I. 2-Pyridones and related systems},
+  author={Elvidge, JA and Jackman, LM},
+  journal=jcs,
+  pages={859--866},
+  year={1961},
+  publisher={Royal Society of Chemistry}
+}
+
+@article{pople1966induced,
+  title={Induced paramagnetic ring currents},
+  author={Pople, JA and Untch, KG},
+  journal=jacs,
+  volume={88},
+  number={21},
+  pages={4811--4815},
+  year={1966},
+  publisher={ACS Publications}
+}

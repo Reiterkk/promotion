@@ -478,47 +478,6 @@
       \field{pages}{9136\bibrangedash 9148}
       \range{pages}{13}
     \endentry
-    \entry{juselius2004calculation}{article}{}
-      \name{author}{3}{}{%
-        {{hash=00df71385b3cefcc8e9350c7148d9e95}{%
-           family={Jus{é}lius},
-           familyi={J\bibinitperiod},
-           given={Jonas},
-           giveni={J\bibinitperiod}}}%
-        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
-           family={Sundholm},
-           familyi={S\bibinitperiod},
-           given={Dage},
-           giveni={D\bibinitperiod}}}%
-        {{hash=11525f775bb2eaf99cdd2fdffe54b939}{%
-           family={Gauss},
-           familyi={G\bibinitperiod},
-           given={J{ü}rgen},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {AIP}%
-      }
-      \strng{namehash}{e55c87b3c291856af46ba2cdaa70f3bf}
-      \strng{fullhash}{e55c87b3c291856af46ba2cdaa70f3bf}
-      \strng{bibnamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
-      \strng{authorbibnamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
-      \strng{authornamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
-      \strng{authorfullhash}{e55c87b3c291856af46ba2cdaa70f3bf}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Chem. Phys.}
-      \field{number}{9}
-      \field{title}{Calculation of current densities using gauge-including atomic orbitals}
-      \field{volume}{121}
-      \field{year}{2004}
-      \field{pages}{3952\bibrangedash 3963}
-      \range{pages}{12}
-    \endentry
     \entry{taubert2011calculation}{article}{}
       \name{author}{3}{}{%
         {{hash=cfd01e8a00546d253a65384d9df85218}{%
@@ -559,6 +518,153 @@
       \field{year}{2011}
       \field{pages}{054123}
       \range{pages}{1}
+    \endentry
+    \entry{elvidge1961181}{article}{}
+      \name{author}{2}{}{%
+        {{hash=33eb3aa76535d688d9cf68599f8468e6}{%
+           family={Elvidge},
+           familyi={E\bibinitperiod},
+           given={JA},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6a86f142e5de3dc5aba3edd7de8e2b32}{%
+           family={Jackman},
+           familyi={J\bibinitperiod},
+           given={LM},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Royal Society of Chemistry}%
+      }
+      \strng{namehash}{bdfe3ab28817dbcf8406bbe10d98a78b}
+      \strng{fullhash}{bdfe3ab28817dbcf8406bbe10d98a78b}
+      \strng{bibnamehash}{bdfe3ab28817dbcf8406bbe10d98a78b}
+      \strng{authorbibnamehash}{bdfe3ab28817dbcf8406bbe10d98a78b}
+      \strng{authornamehash}{bdfe3ab28817dbcf8406bbe10d98a78b}
+      \strng{authorfullhash}{bdfe3ab28817dbcf8406bbe10d98a78b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Soc.}
+      \field{title}{181. Studies of aromaticity by nuclear magnetic resonance spectroscopy. Part I. 2-Pyridones and related systems}
+      \field{year}{1961}
+      \field{pages}{859\bibrangedash 866}
+      \range{pages}{8}
+    \endentry
+    \entry{pople1966induced}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a49269095f3ff1435e603bc8ef63983b}{%
+           family={Pople},
+           familyi={P\bibinitperiod},
+           given={JA},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7cdab0129f4d823bb7aae9c15adc66e9}{%
+           family={Untch},
+           familyi={U\bibinitperiod},
+           given={KG},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{16d9c21ac7bd5efe8d2e9afa4764d9c9}
+      \strng{fullhash}{16d9c21ac7bd5efe8d2e9afa4764d9c9}
+      \strng{bibnamehash}{16d9c21ac7bd5efe8d2e9afa4764d9c9}
+      \strng{authorbibnamehash}{16d9c21ac7bd5efe8d2e9afa4764d9c9}
+      \strng{authornamehash}{16d9c21ac7bd5efe8d2e9afa4764d9c9}
+      \strng{authorfullhash}{16d9c21ac7bd5efe8d2e9afa4764d9c9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{21}
+      \field{title}{Induced paramagnetic ring currents}
+      \field{volume}{88}
+      \field{year}{1966}
+      \field{pages}{4811\bibrangedash 4815}
+      \range{pages}{5}
+    \endentry
+    \entry{fliegl2012aromatic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=078aadf342a7190dd615f9675e8fd9de}{%
+           family={Fliegl},
+           familyi={F\bibinitperiod},
+           given={Heike},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{fullhash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{bibnamehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{authorbibnamehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{authornamehash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \strng{authorfullhash}{e14e55fb7fac4db84a7768fcd2de185f}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Org. Chem.}
+      \field{number}{7}
+      \field{title}{Aromatic pathways of porphins, chlorins, and bacteriochlorins}
+      \field{volume}{77}
+      \field{year}{2012}
+      \field{pages}{3408\bibrangedash 3414}
+      \range{pages}{7}
+    \endentry
+    \entry{juselius2004calculation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=00df71385b3cefcc8e9350c7148d9e95}{%
+           family={Jus{é}lius},
+           familyi={J\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
+           family={Sundholm},
+           familyi={S\bibinitperiod},
+           given={Dage},
+           giveni={D\bibinitperiod}}}%
+        {{hash=11525f775bb2eaf99cdd2fdffe54b939}{%
+           family={Gauss},
+           familyi={G\bibinitperiod},
+           given={J{ü}rgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{fullhash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{bibnamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{authorbibnamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{authornamehash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \strng{authorfullhash}{e55c87b3c291856af46ba2cdaa70f3bf}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{9}
+      \field{title}{Calculation of current densities using gauge-including atomic orbitals}
+      \field{volume}{121}
+      \field{year}{2004}
+      \field{pages}{3952\bibrangedash 3963}
+      \range{pages}{12}
     \endentry
     \entry{fliegl2011gauge}{article}{}
       \name{author}{4}{}{%
@@ -646,42 +752,6 @@
       \field{year}{2016}
       \field{pages}{639\bibrangedash 678}
       \range{pages}{40}
-    \endentry
-    \entry{fliegl2012aromatic}{article}{}
-      \name{author}{2}{}{%
-        {{hash=078aadf342a7190dd615f9675e8fd9de}{%
-           family={Fliegl},
-           familyi={F\bibinitperiod},
-           given={Heike},
-           giveni={H\bibinitperiod}}}%
-        {{hash=ce038b4d10363f5da1cf560c3a642bfe}{%
-           family={Sundholm},
-           familyi={S\bibinitperiod},
-           given={Dage},
-           giveni={D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ACS Publications}%
-      }
-      \strng{namehash}{e14e55fb7fac4db84a7768fcd2de185f}
-      \strng{fullhash}{e14e55fb7fac4db84a7768fcd2de185f}
-      \strng{bibnamehash}{e14e55fb7fac4db84a7768fcd2de185f}
-      \strng{authorbibnamehash}{e14e55fb7fac4db84a7768fcd2de185f}
-      \strng{authornamehash}{e14e55fb7fac4db84a7768fcd2de185f}
-      \strng{authorfullhash}{e14e55fb7fac4db84a7768fcd2de185f}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Org. Chem.}
-      \field{number}{7}
-      \field{title}{Aromatic pathways of porphins, chlorins, and bacteriochlorins}
-      \field{volume}{77}
-      \field{year}{2012}
-      \field{pages}{3408\bibrangedash 3414}
-      \range{pages}{7}
     \endentry
     \entry{born1927quantentheorie}{article}{}
       \name{author}{2}{}{%
@@ -889,8 +959,8 @@
       \strng{authorbibnamehash}{c57e31533f03e77f7d77ba2c5d14cfb2}
       \strng{authornamehash}{c57e31533f03e77f7d77ba2c5d14cfb2}
       \strng{authorfullhash}{c57e31533f03e77f7d77ba2c5d14cfb2}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -920,8 +990,8 @@
       \strng{authorbibnamehash}{83310f91dab970ad4b49d43f0aa16205}
       \strng{authornamehash}{83310f91dab970ad4b49d43f0aa16205}
       \strng{authorfullhash}{83310f91dab970ad4b49d43f0aa16205}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -956,8 +1026,8 @@
       \strng{authorbibnamehash}{f6df99bc973e24ee8453776b0975d296}
       \strng{authornamehash}{f6df99bc973e24ee8453776b0975d296}
       \strng{authorfullhash}{f6df99bc973e24ee8453776b0975d296}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1126,8 +1196,8 @@
       \strng{authorbibnamehash}{e9777f370521b65f47f2208e8e4192e9}
       \strng{authornamehash}{6ab7fb9e27d5cd6e8146099c90eaa3fe}
       \strng{authorfullhash}{e9777f370521b65f47f2208e8e4192e9}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1405,8 +1475,8 @@
       \strng{authorbibnamehash}{f8cacc19e3ec7462fac08f7ab296132a}
       \strng{authornamehash}{f8cacc19e3ec7462fac08f7ab296132a}
       \strng{authorfullhash}{f8cacc19e3ec7462fac08f7ab296132a}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1556,8 +1626,8 @@
       \strng{authorbibnamehash}{87513cd879c051f2158a83ad20408c48}
       \strng{authornamehash}{87513cd879c051f2158a83ad20408c48}
       \strng{authorfullhash}{87513cd879c051f2158a83ad20408c48}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1848,8 +1918,8 @@
       \range{pages}{12}
     \endentry
     \entry{cosmotherm}{misc}{}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labeldatesource}{nodate}
       \field{labeltitlesource}{title}
       \field{title}{COSMO\textit{therm}, Version C3.0, Release 17.01; COSMO\textit{logic} GmbH \& Co. KG, \textit{http://www.cosmologic.de}}
@@ -1876,8 +1946,8 @@
       \strng{authorbibnamehash}{cf3382db2d0c423aae0410c206d432f8}
       \strng{authornamehash}{cf3382db2d0c423aae0410c206d432f8}
       \strng{authorfullhash}{cf3382db2d0c423aae0410c206d432f8}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2213,6 +2283,104 @@
       \field{pages}{2176\bibrangedash 2179}
       \range{pages}{4}
     \endentry
+    \entry{liu2010ideas}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4ea769635764d4e970a92276da7889ee}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Wenjian},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{4ea769635764d4e970a92276da7889ee}
+      \strng{fullhash}{4ea769635764d4e970a92276da7889ee}
+      \strng{bibnamehash}{4ea769635764d4e970a92276da7889ee}
+      \strng{authorbibnamehash}{4ea769635764d4e970a92276da7889ee}
+      \strng{authornamehash}{4ea769635764d4e970a92276da7889ee}
+      \strng{authorfullhash}{4ea769635764d4e970a92276da7889ee}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mol. Phys.}
+      \field{number}{13}
+      \field{title}{Ideas of relativistic quantum chemistry}
+      \field{volume}{108}
+      \field{year}{2010}
+      \field{pages}{1679\bibrangedash 1706}
+      \range{pages}{28}
+    \endentry
+    \entry{saue2011relativistic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e42fcc29ffdfe101fe233812ecf0ed9}{%
+           family={Saue},
+           familyi={S\bibinitperiod},
+           given={Trond},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{9e42fcc29ffdfe101fe233812ecf0ed9}
+      \strng{fullhash}{9e42fcc29ffdfe101fe233812ecf0ed9}
+      \strng{bibnamehash}{9e42fcc29ffdfe101fe233812ecf0ed9}
+      \strng{authorbibnamehash}{9e42fcc29ffdfe101fe233812ecf0ed9}
+      \strng{authornamehash}{9e42fcc29ffdfe101fe233812ecf0ed9}
+      \strng{authorfullhash}{9e42fcc29ffdfe101fe233812ecf0ed9}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ChemPhysChem}
+      \field{number}{17}
+      \field{title}{Relativistic Hamiltonians for chemistry: a primer}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{3077\bibrangedash 3094}
+      \range{pages}{18}
+    \endentry
+    \entry{peng2012exact}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e1df2a15e3a2bad06fbe75f1c01d6fda}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Daoling},
+           giveni={D\bibinitperiod}}}%
+        {{hash=101a884703c155ac5ca9bc3f658bcc99}{%
+           family={Reiher},
+           familyi={R\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{981bb04d9bd731848b0d8ca1b79216e8}
+      \strng{fullhash}{981bb04d9bd731848b0d8ca1b79216e8}
+      \strng{bibnamehash}{981bb04d9bd731848b0d8ca1b79216e8}
+      \strng{authorbibnamehash}{981bb04d9bd731848b0d8ca1b79216e8}
+      \strng{authornamehash}{981bb04d9bd731848b0d8ca1b79216e8}
+      \strng{authorfullhash}{981bb04d9bd731848b0d8ca1b79216e8}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{number}{1}
+      \field{title}{Exact decoupling of the relativistic Fock operator}
+      \field{volume}{131}
+      \field{year}{2012}
+      \field{pages}{1081}
+      \range{pages}{1}
+    \endentry
     \entry{cundari1996effective}{article}{}
       \name{author}{4}{}{%
         {{hash=df1d5b221fc3ec4c08e586628829f2bb}{%
@@ -2357,8 +2525,8 @@
       \strng{authorbibnamehash}{57750a9164bd42252a139bf5286d6be2}
       \strng{authornamehash}{57750a9164bd42252a139bf5286d6be2}
       \strng{authorfullhash}{57750a9164bd42252a139bf5286d6be2}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2393,8 +2561,8 @@
       \strng{authorbibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
       \strng{authornamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
       \strng{authorfullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2697,8 +2865,8 @@
       \strng{authorbibnamehash}{ddf85aa3dfdbf997c4d26db87c341846}
       \strng{authornamehash}{ddf85aa3dfdbf997c4d26db87c341846}
       \strng{authorfullhash}{ddf85aa3dfdbf997c4d26db87c341846}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2728,8 +2896,8 @@
       \strng{authorbibnamehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
       \strng{authornamehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
       \strng{authorfullhash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2775,8 +2943,8 @@
       \strng{authorbibnamehash}{f6ff2fc7add0be9ce1f6b06d75d34943}
       \strng{authornamehash}{89e3974291f206f89f1cc5b11d7b7629}
       \strng{authorfullhash}{f6ff2fc7add0be9ce1f6b06d75d34943}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -3103,8 +3271,8 @@
       \strng{authorbibnamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authornamehash}{0eb47e0aefffae140793948bc80fc106}
       \strng{authorfullhash}{0eb47e0aefffae140793948bc80fc106}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -3134,8 +3302,8 @@
       \strng{authorbibnamehash}{d3df1e5bb7518861717ade6dba2c7689}
       \strng{authornamehash}{d3df1e5bb7518861717ade6dba2c7689}
       \strng{authorfullhash}{d3df1e5bb7518861717ade6dba2c7689}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -4202,6 +4370,42 @@
       \field{year}{2016}
       \field{pages}{234108}
       \range{pages}{1}
+    \endentry
+    \entry{hariharan1973influence}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e5b236f9c43a29e16c2d444f358d551b}{%
+           family={Hariharan},
+           familyi={H\bibinitperiod},
+           given={Praveen\bibnamedelima C},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=684056e7aebad32dc1b915099f9c6c96}{%
+           family={Pople},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2a688982f8cc4d297d6bfbcb6f6e6b6e}
+      \strng{fullhash}{2a688982f8cc4d297d6bfbcb6f6e6b6e}
+      \strng{bibnamehash}{2a688982f8cc4d297d6bfbcb6f6e6b6e}
+      \strng{authorbibnamehash}{2a688982f8cc4d297d6bfbcb6f6e6b6e}
+      \strng{authornamehash}{2a688982f8cc4d297d6bfbcb6f6e6b6e}
+      \strng{authorfullhash}{2a688982f8cc4d297d6bfbcb6f6e6b6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Theoretica chimica acta}
+      \field{number}{3}
+      \field{title}{The influence of polarization functions on molecular orbital hydrogenation energies}
+      \field{volume}{28}
+      \field{year}{1973}
+      \field{pages}{213\bibrangedash 222}
+      \range{pages}{10}
     \endentry
     \entry{weigend2002fully}{article}{}
       \name{author}{1}{}{%
@@ -6427,8 +6631,8 @@
       \strng{authorbibnamehash}{0cce76cf2194c6ab18cd98f5c47653e7}
       \strng{authornamehash}{0d103485075d01964e51894bf059242f}
       \strng{authorfullhash}{0cce76cf2194c6ab18cd98f5c47653e7}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6463,8 +6667,8 @@
       \strng{authorbibnamehash}{256f58aaac46da928b7777a9862ced1d}
       \strng{authornamehash}{256f58aaac46da928b7777a9862ced1d}
       \strng{authorfullhash}{256f58aaac46da928b7777a9862ced1d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
