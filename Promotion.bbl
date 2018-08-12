@@ -5369,6 +5369,226 @@
       \field{pages}{2495\bibrangedash 2508}
       \range{pages}{14}
     \endentry
+    \entry{zheng2010elastic}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1e044fffb9d63eab5f85fcf1a8379145}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7ac46f2082fa2a8ad69cf3cd2fb06d35}{%
+           family={Ke},
+           familyi={K\bibinitperiod},
+           given={Changhong},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{d097039b0512672c78568f914d6f0092}
+      \strng{fullhash}{d097039b0512672c78568f914d6f0092}
+      \strng{bibnamehash}{d097039b0512672c78568f914d6f0092}
+      \strng{authorbibnamehash}{d097039b0512672c78568f914d6f0092}
+      \strng{authornamehash}{d097039b0512672c78568f914d6f0092}
+      \strng{authorfullhash}{d097039b0512672c78568f914d6f0092}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Small}
+      \field{number}{15}
+      \field{title}{Elastic Deformation of Carbon-Nanotube Nanorings}
+      \field{volume}{6}
+      \field{year}{2010}
+      \field{pages}{1647\bibrangedash 1655}
+      \range{pages}{9}
+    \endentry
+    \entry{chen2011controlling}{article}{}
+      \name{author}{9}{}{%
+        {{hash=b0824ffe7c64f03fa241b75c157e121d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liyong},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6b170f4c37010a14987a849eab01fe7b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=05ed36bcb6a44b5b9e4d52219469373d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d4db6deba7dbb2988192d588318aa2ee}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Xiaoshuang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c7ead5d30968eb4e84b017f6f498ba7f}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b1dd7cd33d3a91278023f676e72b4de6}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Liangfang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4cdfa3914e557dc32c60d015d79dcfd5}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Zhiyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4563929dd9bf330936657a202afad07a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2b98e98e149cd3a848ccbc12909e86d1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hongyu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{cda3aca50c9baa84577ddf7ec6336009}
+      \strng{fullhash}{28c8a6e71bd6d2beff8e452a0af2846d}
+      \strng{bibnamehash}{28c8a6e71bd6d2beff8e452a0af2846d}
+      \strng{authorbibnamehash}{28c8a6e71bd6d2beff8e452a0af2846d}
+      \strng{authornamehash}{cda3aca50c9baa84577ddf7ec6336009}
+      \strng{authorfullhash}{28c8a6e71bd6d2beff8e452a0af2846d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{25}
+      \field{title}{Controlling reversible elastic deformation of carbon nanotube rings}
+      \field{volume}{133}
+      \field{year}{2011}
+      \field{pages}{9654\bibrangedash 9657}
+      \range{pages}{4}
+    \endentry
+    \entry{hilder2007oscillating}{article}{}
+      \name{author}{2}{}{%
+        {{hash=569a845ef48e66a004d994e1b6a5aa06}{%
+           family={Hilder},
+           familyi={H\bibinitperiod},
+           given={Tamsyn\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=23b0863c606c09334773b8d45d05fb4b}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{7eb957ad212b7d71263415bef3f2b23a}
+      \strng{fullhash}{7eb957ad212b7d71263415bef3f2b23a}
+      \strng{bibnamehash}{7eb957ad212b7d71263415bef3f2b23a}
+      \strng{authorbibnamehash}{7eb957ad212b7d71263415bef3f2b23a}
+      \strng{authornamehash}{7eb957ad212b7d71263415bef3f2b23a}
+      \strng{authorfullhash}{7eb957ad212b7d71263415bef3f2b23a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. B}
+      \field{number}{12}
+      \field{title}{Oscillating carbon nanotori along carbon nanotubes}
+      \field{volume}{75}
+      \field{year}{2007}
+      \field{pages}{125415}
+      \range{pages}{1}
+    \endentry
+    \entry{ansari2017oscillation}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a9628af871b55c867302e1a7eadc4e56}{%
+           family={Ansari},
+           familyi={A\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1bf664d512d17ef4e4e5635c752d3df1}{%
+           family={Sadeghi},
+           familyi={S\bibinitperiod},
+           given={F},
+           giveni={F\bibinitperiod}}}%
+        {{hash=56afc7b0cca46823e8ca0fbcb758d3c0}{%
+           family={Ajori},
+           familyi={A\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{033e02c7e228e4b7830702252387706d}
+      \strng{fullhash}{033e02c7e228e4b7830702252387706d}
+      \strng{bibnamehash}{033e02c7e228e4b7830702252387706d}
+      \strng{authorbibnamehash}{033e02c7e228e4b7830702252387706d}
+      \strng{authornamehash}{033e02c7e228e4b7830702252387706d}
+      \strng{authorfullhash}{033e02c7e228e4b7830702252387706d}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Eur. J. Mech. A-Solid.}
+      \field{title}{Oscillation characteristics of carbon nanotori molecules along carbon nanotubes under various system parameters}
+      \field{volume}{62}
+      \field{year}{2017}
+      \field{pages}{67\bibrangedash 79}
+      \range{pages}{13}
+    \endentry
+    \entry{cumings2000low}{article}{}
+      \name{author}{2}{}{%
+        {{hash=68cb94efd558773f95d6b3dfe2907b4f}{%
+           family={Cumings},
+           familyi={C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d63d0fba9b72815bb485d1827277b5bb}{%
+           family={Zettl},
+           familyi={Z\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{c5c848e438aebdcc360fb0ba5ab79350}
+      \strng{fullhash}{c5c848e438aebdcc360fb0ba5ab79350}
+      \strng{bibnamehash}{c5c848e438aebdcc360fb0ba5ab79350}
+      \strng{authorbibnamehash}{c5c848e438aebdcc360fb0ba5ab79350}
+      \strng{authornamehash}{c5c848e438aebdcc360fb0ba5ab79350}
+      \strng{authorfullhash}{c5c848e438aebdcc360fb0ba5ab79350}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{5479}
+      \field{title}{Low-friction nanoscale linear bearing realized from multiwall carbon nanotubes}
+      \field{volume}{289}
+      \field{year}{2000}
+      \field{pages}{602\bibrangedash 604}
+      \range{pages}{3}
+    \endentry
     \entry{dunlap1992connecting}{article}{}
       \name{author}{1}{}{%
         {{hash=409e9ee6e561e71fba1cf916c4e26f46}{%
@@ -5639,6 +5859,7 @@
       \strng{authorfullhash}{347696b500cb84da43bcac799f4ff7dc}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -5773,6 +5994,134 @@
       \field{pages}{14886}
       \range{pages}{1}
     \endentry
+    \entry{mintmire1992fullerene}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4e140f9069d232671a9b7840156f0353}{%
+           family={Mintmire},
+           familyi={M\bibinitperiod},
+           given={JW},
+           giveni={J\bibinitperiod}}}%
+        {{hash=799aa6bdfe9a33fb2b300f48c75dd2fe}{%
+           family={Dunlap},
+           familyi={D\bibinitperiod},
+           given={BI},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6427665298191e18da261b11e9e5501c}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={CT},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{2cf0ed39eee6945f0d15e879c59138e6}
+      \strng{fullhash}{2cf0ed39eee6945f0d15e879c59138e6}
+      \strng{bibnamehash}{2cf0ed39eee6945f0d15e879c59138e6}
+      \strng{authorbibnamehash}{2cf0ed39eee6945f0d15e879c59138e6}
+      \strng{authornamehash}{2cf0ed39eee6945f0d15e879c59138e6}
+      \strng{authorfullhash}{2cf0ed39eee6945f0d15e879c59138e6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Letters}
+      \field{number}{5}
+      \field{title}{Are fullerene tubules metallic?}
+      \field{volume}{68}
+      \field{year}{1992}
+      \field{pages}{631}
+      \range{pages}{1}
+    \endentry
+    \entry{hamada1992new}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0d2e9cb9f30fb60fede89d8abb9d5e49}{%
+           family={Hamada},
+           familyi={H\bibinitperiod},
+           given={Noriaki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=8a44deefdbc7136c52277e7e6cd6c461}{%
+           family={Sawada},
+           familyi={S\bibinitperiod},
+           given={Shin-ichi},
+           giveni={S\bibinithyphendelim i\bibinitperiod}}}%
+        {{hash=100a1b9a3c1317900cce5c725dd550e2}{%
+           family={Oshiyama},
+           familyi={O\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {APS}%
+      }
+      \strng{namehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \strng{fullhash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \strng{bibnamehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \strng{authorbibnamehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \strng{authornamehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \strng{authorfullhash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Phys. Rev. Letters}
+      \field{number}{10}
+      \field{title}{New one-dimensional conductors: graphitic microtubules}
+      \field{volume}{68}
+      \field{year}{1992}
+      \field{pages}{1579}
+      \range{pages}{1}
+    \endentry
+    \entry{saito1992electronic}{article}{}
+      \name{author}{4}{}{%
+        {{hash=e0217f99f2c165e673707c1f596c6236}{%
+           family={Saito},
+           familyi={S\bibinitperiod},
+           given={R},
+           giveni={R\bibinitperiod}}}%
+        {{hash=15197fc262d3352bf5518fc84dc47dff}{%
+           family={Fujita},
+           familyi={F\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8c424d11a33351ea19b6d59010190ed3}{%
+           family={Dresselhaus},
+           familyi={D\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=036870901799f6711a35605262487e38}{%
+           family={Dresselhaus},
+           familyi={D\bibinitperiod},
+           given={u\bibnamedelima MS},
+           giveni={u\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{031f008d5138fff0cc8ecc781a4db6f5}
+      \strng{fullhash}{a76ad5f8d3419fb812e576088df5f97a}
+      \strng{bibnamehash}{a76ad5f8d3419fb812e576088df5f97a}
+      \strng{authorbibnamehash}{a76ad5f8d3419fb812e576088df5f97a}
+      \strng{authornamehash}{031f008d5138fff0cc8ecc781a4db6f5}
+      \strng{authorfullhash}{a76ad5f8d3419fb812e576088df5f97a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Appl. Phys. Letters}
+      \field{number}{18}
+      \field{title}{Electronic structure of chiral graphene tubules}
+      \field{volume}{60}
+      \field{year}{1992}
+      \field{pages}{2204\bibrangedash 2206}
+      \range{pages}{3}
+    \endentry
     \entry{saito1998physical}{book}{}
       \name{author}{3}{}{%
         {{hash=4b4f0cdc0f01d9514a54f0bd5efbaa31}{%
@@ -5808,6 +6157,57 @@
       \field{labeltitlesource}{title}
       \field{title}{Physical properties of carbon nanotubes}
       \field{year}{1998}
+    \endentry
+    \entry{wilder1998electronic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f6bc2c5953f41de6d5b099f577a3e2f2}{%
+           family={Wilder},
+           familyi={W\bibinitperiod},
+           given={Jeroen\bibnamedelima WG},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=dfaf5a18c9d8e3d6a5850428487d26b6}{%
+           family={Venema},
+           familyi={V\bibinitperiod},
+           given={Liesbeth\bibnamedelima C},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b3f1c62ca33e55dd0bc6f12fa48ed56c}{%
+           family={Rinzler},
+           familyi={R\bibinitperiod},
+           given={Andrew\bibnamedelima G},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ca6b7a2f9fee120e9917c975bebbf7fa}{%
+           family={Smalley},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=c3162480bb8daf4fbc95093e0d3f96da}{%
+           family={Dekker},
+           familyi={D\bibinitperiod},
+           given={Cees},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{2260648aef9d27c1a0614540216df01c}
+      \strng{fullhash}{ea6cf00aa979ef8a479bd79ce83be74e}
+      \strng{bibnamehash}{ea6cf00aa979ef8a479bd79ce83be74e}
+      \strng{authorbibnamehash}{ea6cf00aa979ef8a479bd79ce83be74e}
+      \strng{authornamehash}{2260648aef9d27c1a0614540216df01c}
+      \strng{authorfullhash}{ea6cf00aa979ef8a479bd79ce83be74e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{6662}
+      \field{title}{Electronic structure of atomically resolved carbon nanotubes}
+      \field{volume}{391}
+      \field{year}{1998}
+      \field{pages}{59}
+      \range{pages}{1}
     \endentry
     \entry{ceulemans2000electronic}{article}{}
       \name{author}{4}{}{%
@@ -6585,8 +6985,8 @@
       \strng{authorbibnamehash}{bb541f6325a3364e4293531457d8e0a0}
       \strng{authornamehash}{bb541f6325a3364e4293531457d8e0a0}
       \strng{authorfullhash}{bb541f6325a3364e4293531457d8e0a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}

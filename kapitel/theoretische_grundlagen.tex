@@ -44,12 +44,12 @@ erhalten, mit dem Hamiltonoperator
   &=-\sum_{K=1}^{N_\text{K}}\frac{1}{2}\frac{1}{M_K}\vec{\nabla}^2_K-\sum_{i=1}^N\frac{1}{2}\vec{\nabla}^2_i-\sum_{i=1}^N\sum_{K=1}^{N_\text{K}}\frac{Z_K}{r_{iK}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}+\sum_{K=1}^{N_\text{K}}\sum_{K>L}^{N_\text{K}}\frac{Z_KZ_L}{R_{KL}}.
 \end{aligned}
 \end{equation}
-Mit den Termen $\hat{T}_{\text{K}}$ und $\hat{T}_{\text{e}}$ wird die kinetische Energie der Elektronen $i$ sowie der Kerne $K$ mit der jeweiligen Masse $M_K$ beschrieben. Die Beiträge zur potentiellen Energie sind in den letzten drei Termen enthalten. $\hat{V}_{\text{Ke}}$ beschreibt die anziehende Wechselwirkung zwischen Elektronen und Kernen, $\hat{V}_{\text{ee}}$ die abstoßende Elektron-Elektron- und $\hat{V}_{\text{KK}}$ die abstoßende Kern-Kern-Wechselwirkung.
+Mit den Termen $\hat{T}_{\text{e}}$ und $\hat{T}_{\text{K}}$ wird die kinetische Energie der Elektronen $i$ sowie der Kerne $K$ mit der jeweiligen Masse $M_K$ beschrieben. Die Beiträge zur potentiellen Energie sind in den letzten drei Termen enthalten. $\hat{V}_{\text{Ke}}$ beschreibt die anziehende Wechselwirkung zwischen Elektronen und Kernen, $\hat{V}_{\text{ee}}$ die abstoßende Elektron-Elektron- und $\hat{V}_{\text{KK}}$ die abstoßende Kern-Kern-Wechselwirkung.
 Zur weiteren Vereinfachung wird die Born-Oppenheimer-Näherung\supercite{born1927quantentheorie} herangezogen. Die Anwendbarkeit dieser Näherung ist in dem großen Masseunterschied zwischen Elektronen und Kernen begründet. Aufgrund der deutlich größeren Kernmassen lässt sich die Bewegung der Elektronen von der Kernbewegung separieren. Anders formuliert sind die Elektronen schnell genug, um sich unmittelbar auf eine Änderung der Kernpositionen einzustellen. Für eine gegebene Position der Kerne kann die Wellenfunktion daher als Produkt einer Kernwellenfunktion $\Psi^{\text{K}}$ und einer elektronischen Wellenfunktion $\Psi^{\text{el}}$ geschrieben werden
 \begin{equation}
 \Psi(\vec{r},\sigma,\vec{R})=\Psi^{\text{el}}(\vec{r},\sigma;\vec{R})\Psi^{\text{K}}(\vec{R}),
 \end{equation}
-wobei die Kernkoordinaten nur noch parametrisch in die elektronische Wellenfunktion mit eingehen. Als Konsequenz dieses Produktansatzes lässt sich der Hamiltonoperator nun als Summe eines elektronischen Hamiltonoperators $\hat{H}^{\text{el}}$ und eines Kern Hamiltonoperators $\hat{H}^{\text{K}}$ schreiben. Mit dem elektronischen Hamiltonoperator
+wobei die Kernkoordinaten nur noch parametrisch in die elektronische Wellenfunktion mit eingehen. Als Konsequenz dieses Produktansatzes lässt sich der Hamiltonoperator als Summe eines elektronischen Hamiltonoperators $\hat{H}^{\text{el}}$ und eines Kern Hamiltonoperators $\hat{H}^{\text{K}}$ schreiben. Mit dem elektronischen Hamiltonoperator
 \begin{equation}\label{eq:elhamilton}
   \hat{H}^{\text{el}}=\hat{T}_{\text{e}}+\hat{V}_{\text{Ke}}+\hat{V}_{\text{ee}}=-\frac{1}{2}\sum_{i=1}^N\vec{\nabla}^2_i-\sum_{i=1}^N\sum_{K=1}^{N_\text{K}}\frac{Z_K}{r_{iK}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}
 \end{equation}
@@ -101,7 +101,7 @@ und
 \langle\phi_i|\hat{K}|\phi_i\rangle=\sum_j\left(\phi_i\phi_j|\phi_j\phi_i\right).
 \end{equation}
 
-Wird Gleichung (\ref{differentialgleichung}) von links mit $\langle\phi_i\vert$ multipliziert, so ergibt sich der Ausdruck für die Orbitalenergien
+Wird Gleichung (\ref{differentialgleichung}) von links mit $\langle\phi_i\vert$ multipliziert, ergibt sich der Ausdruck für die Orbitalenergien
 \begin{equation}
 \varepsilon_i = \langle\phi_i|\hat{h}|\phi_i\rangle + \sum_j\left(\phi_i\phi_i||\phi_j\phi_j\right).
 \label{orbitalenergie}
@@ -195,7 +195,7 @@ Für nicht wechselwirkende Elektronen wäre der Ausdruck für die kinetische Ene
 E[\rho] = T_{\textrm S}[\rho] + V_{Ne}[\rho]+J[\rho]+E_{\textrm{xc}}[\rho].
 \end{equation}
 
-Durch das Bilden der Differenz von der exakten Energie und der Kohn-Sham-Energie lässt sich das Austauschkorrelationsfunktional definieren
+Durch Bilden der Differenz von der exakten Energie und der Kohn-Sham-Energie lässt sich das Austauschkorrelationsfunktional definieren
 \begin{equation}
 E_{\textrm{xc}}[\rho] = T[\rho]-T_{\textrm S}[\rho]+V_{ee}[\rho]-J[\rho].
 \end{equation}
@@ -203,7 +203,7 @@ E_{\textrm{xc}}[\rho] = T[\rho]-T_{\textrm S}[\rho]+V_{ee}[\rho]-J[\rho].
 Die Minimierung der Energie durch Anwendung des Variationsprinzips führt zu den Kohn-Sham-Gleichungen
 
 \begin{equation}
-\hat{h}^{\textrm{KS}}\left|\varphi_i^{\textrm{KS}}\right\rangle=\varepsilon_i\left|\varphi_i^{\textrm{KS}}\right\rangle.
+\hat{h}^{\textrm{KS}}\left|\varphi_i^{\textrm{KS}}\right\rangle=\varepsilon_i\left|\varphi_i^{\textrm{KS}}\right\rangle,
 \end{equation}
 
 mit den Kohn-Sham-Orbitalen $\varphi_i^{\textrm{KS}}$ und dem Kohn-Sham-Operator $\hat{h}^{\textrm{KS}}$
@@ -273,7 +273,7 @@ Die einfachsten Funktionale gehören zur \ac{lda}. Diese Funktionale hängen led
 
 
 \bigskip
-Im aktuellen und vorherigen Kapitel wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und zum Erhalt der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse - beispielsweise durch die Vernachlässigung der Elektronenkorrelation - findet das Hartree-Fock-Verfahren jedoch kaum Verwendung für aktuelle Fragestellungen in der Quantenchemie. Sogenannte post-Hartree-Fock-Verfahren wie beispielsweise die \acl{mp2} oder \acl{cc} liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert hingegen oft ausreichend genaue Ergebnisse in einer akzeptablen Zeit. Zusätzlich lassen sich mit ihr deutlich größere Systeme berechnen. Ein Großteil aller Anwendungsrechnungen in der Quantenchemie wird daher mit der \ac{dft} durchgeführt. 
+Im aktuellen und vorherigen Kapitel wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und zum Erhalt der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse - beispielsweise durch die Vernachlässigung der Elektronenkorrelation - findet das Hartree-Fock-Verfahren in der Quantenchemie jedoch kaum Verwendung zur Beantwortung aktueller Fragestellungen . Sogenannte post-Hartree-Fock-Verfahren, wie beispielsweise die \acl{mp2} oder \acl{cc}, liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert hingegen oft ausreichend genaue Ergebnisse in einer akzeptablen Zeit. Zusätzlich lassen sich mit ihr deutlich größere Systeme berechnen. Ein Großteil aller Anwendungsrechnungen in der Quantenchemie wird daher mit der \ac{dft} durchgeführt. 
 \vfill
 \newpage
 
@@ -298,7 +298,7 @@ E(\vec{\mu}_K,\vec{B})=&E^{(0)}+\sum_{\alpha K} E^{(1,0)}_{\mu_{K_\alpha}} \mu_{
 \end{aligned}
 \end{equation}
 
-Ein alternativer Ausdruck für die Energie ist
+Ein alternativer Ausdruck für die Energie ist gegeben durch
 \begin{equation}\label{eq:evonbmu}
  E(\vec{\mu}_K,\vec{B})=E_0-\sum_\beta \gamma_\beta B_\beta-\sum_{\alpha K}\mu_{K_\alpha}B_\alpha-\frac{1}{2}\sum_{\alpha\beta}B_\alpha\chi_{\alpha\beta} B_\beta+\sum_{\alpha\beta K}\mu_{K_\alpha}\sigma_{K_\alpha \beta}B_\beta+\cdots, 
 \end{equation}
@@ -327,7 +327,7 @@ Die \ac{nmr}-Spektroskopie basiert auf der Resonanz derjenigen Kerne $K$ welche 
 \begin{equation}\label{eq:kernniveau}
   E_{m_K}=g_Km_K\mu_{\textrm{nuc}}\vec{B},
 \end{equation}	
-wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ annehmen. $\mu_{\textrm{nuc}}$ ist das Kernmagneton welches den Wert $\mu_{\textrm{nuc}}=\frac{e\hbar}{2m_p}$ besitzt, mit der Protonenmasse $m_p$ und $g_K$ ist der g-Faktor des entsprechenden Kerns. Wie aus Gleichung (\ref{eq:kernniveau}) zu erkennen ist, wird für die Anregung nur sehr wenig Energie benötigt, im Vergleich zu beispielsweise Schwingungs- oder gar elektronischen Anregungen. Nicht das externe Magnetfeld, sondern das am jeweiligen Kern lokale Magnetfeld $\vec{B}_K$, bestimmt dabei die Resonanzfrequenz. Dieses setzt sich aus dem externen Magnetfeld und aus dem durch elektrische Ströme induzierten sekundären Magnetfeld aus Gleichung (\ref{eq:sekbfeld}) zusammen
+wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ annehmen. $\mu_{\textrm{nuc}}$ ist das Kernmagneton welches den Wert $\mu_{\textrm{nuc}}=\frac{e\hbar}{2m_p}$ besitzt, mit der Protonenmasse $m_p$, und $g_K$ ist der g-Faktor des entsprechenden Kerns. Im Vergleich zu beispielsweise Schwingungs- oder gar elektronischen Anregungen wird für die Kernanregung nur sehr wenig Energie benötigt, wie aus Gleichung (\ref{eq:kernniveau}) zu erkennen ist. Nicht das externe Magnetfeld, sondern das am jeweiligen Kern lokale Magnetfeld $\vec{B}_K$, bestimmt dabei die Resonanzfrequenz. Dieses setzt sich aus dem externen Magnetfeld und aus dem durch elektrische Ströme induzierten sekundären Magnetfeld aus Gleichung (\ref{eq:sekbfeld}) zusammen
 \begin{equation}
 \vec{B}_K=\vec{B}-\boldsymbol{\sigma}_K\vec{B}.
 \end{equation}
@@ -404,7 +404,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	Der Impulsoperator $\vec{p}=\iu\vec{\nabla}$ geht in die Terme erster Ordnung direkt ein, wodurch diese rein imaginär werden. Alle weiteren Terme sind rein reel. Dies führt zunächst dazu, dass die Gleichungen komplex werden. Jedoch kann die komplexe Arithmetik durch geschickte Implementierung, wie beim vorliegenden Modul \texttt{mpshift} geschehen, vermieden werden. 
 	
 	Beim Betrachten des Vektorpotentials in Gleichung (\ref{eq:atot}) fällt weiterhin auf, dass die Elektronenpositionen über den Term $\frac{1}{2}\vec{B}\times
-	\vec{r}$ explizit und nicht nur als Differenzen mit anderen Ortsvektoren eingehen. Dies hat zur Folge, dass die Berechnungen nur noch für eine vollständige Basis von der Wahl des Koordinatensystemursprungs unabhängig sind. Unvollständige Basissätze konvergieren zwar langsam mit zunehmender Größe zum invarianten Ergebnis, müssten jedoch bereits so groß sein, dass sie für größere Systeme nicht mehr rentabel sind. Die Basisfunktionen wurden daraufhin von London\supercite{london1937theorie} dahingehend verändert, dass sie selbst vom Magnetfeld abhängig sind. Zur Gewährleistung Eichursprung invarianter Ergebnisse bei der Berechnung der magnetischen Response werden daher im Modul \texttt{mpshift} diese sogenannten Londonorbitale oder \acp{giao}\supercite{ditchfield1974self,london1937theorie} verwendet
+	\vec{r}$ explizit und nicht nur als Differenzen mit anderen Ortsvektoren eingehen. Dies hat zur Folge, dass die Berechnungen nur noch für eine vollständige Basis unabhängig von der Wahl des Koordinatensystemursprungs sind. Unvollständige Basissätze konvergieren zwar langsam mit zunehmender Größe zum invarianten Ergebnis, müssten jedoch bereits so groß sein, dass sie für größere Systeme nicht mehr rentabel sind. Die Basisfunktionen wurden daraufhin von London\supercite{london1937theorie} dahingehend verändert, dass sie selbst vom Magnetfeld abhängig sind. Zur Gewährleistung Eichursprungs invarianter Ergebnisse bei der Berechnung der magnetischen Response werden daher im Modul \texttt{mpshift} diese sogenannten Londonorbitale oder \acp{giao}\supercite{ditchfield1974self,london1937theorie} verwendet
 	\begin{equation}\label{eq:giao}
 	  \chi_\mu=\chi_\mu^{\vec{B}=0}\exp(-\Lambda_\mu)
 	\end{equation}
