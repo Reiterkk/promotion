@@ -95,7 +95,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Ringstr\IeC {\"o}me in gro\IeC {\ss }en toroidalen Kohlenstoff-Nanor\IeC {\"o}hren}{101}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Konstruktion unterschiedlicher \ac {tcnt} Strukturtypen}{105}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.1}Konstruktion unterschiedlicher \acs {tcnt} Strukturtypen}{105}{subsection.7.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.1.2}Stabilit\IeC {\"a}t}{108}{subsection.7.1.2}
 \defcounter {refsection}{0}\relax 
