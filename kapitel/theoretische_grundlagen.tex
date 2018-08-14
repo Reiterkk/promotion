@@ -5,7 +5,7 @@ Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen 
  
 \bigskip
 Die in der Literatur gebräuchliche Notation für Indizes und Integrale wird im Folgenden kurz erläutert. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige \acp{mo} und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $K,L,\dotsc$ werden zur Kennzeichnung der insgesamt $N_{\text{K}}$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetze \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Aus dem jeweiligen Kontext geht hervor, ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summenindex laufen $\alpha$ und $\beta$ über die drei kartesischen Koordinaten und stehen für eine ausgewählte Raumrichtung wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Modul \texttt{mpshift} des Programmpakets \textsc{TURBOMOLE} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin - welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird - ausgeschlossen wird. Für Kern-Kern-Abstände wird $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit $r$ gekennzeichnet.
-\newpage
+
 Einelektronen-Integrale werden zumeist ausgeschrieben, ansonsten gilt für sie die folgende Dirac-Notation:
 \begin{gather*}
 	\langle\chi_\mu\vert\chi_\nu\rangle=\int\chi_\nu^*(\vec{r})\chi_\mu(\vec{r})\Diff3\vec{r}\\
@@ -131,8 +131,7 @@ Weiterhin enthalten ist die Matrix mit den Entwicklungskoeffizienten der Orbital
 \begin{equation}
 S_{\mu\nu}=\langle\chi_{\mu}|\chi_{\nu}\rangle.
 \end{equation}
-\vfill
-\newpage
+
 
 Die in der Fockmatrix enthaltenen Dichtematrixelemente $D_{\kappa\lambda}$ werden aus den Orbitalkoeffizienten $c_{\kappa i}$ erhalten
 \begin{equation}
@@ -255,8 +254,6 @@ Y_{\mu\nu}=&\frac{\partial E_{\textrm{xc}}[\rho(\vec{r})]}{\partial D_{\mu\nu}}\
 \end{equation}
 
 Diese Integrale sind analytisch nicht mehr zu lösen, wodurch auf eine numerische Integration auf einem Gitter zurückgegriffen werden muss. 
-\vfill
-\newpage
 
 Die im Kohn-Sham-Formalismus resultierende Gesamtenergie ist analog zur Hartree-Fock-Energie aus Gleichung (\ref{hfenergie}) gegeben durch
 \begin{equation}
@@ -274,8 +271,7 @@ Die einfachsten Funktionale gehören zur \ac{lda}. Diese Funktionale hängen led
 
 \bigskip
 Im aktuellen und vorherigen Kapitel wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und zum Erhalt der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse - beispielsweise durch die Vernachlässigung der Elektronenkorrelation - findet das Hartree-Fock-Verfahren in der Quantenchemie jedoch kaum Verwendung zur Beantwortung aktueller Fragestellungen . Sogenannte post-Hartree-Fock-Verfahren, wie beispielsweise die \acl{mp2} oder \acl{cc}, liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert hingegen oft ausreichend genaue Ergebnisse in einer akzeptablen Zeit. Zusätzlich lassen sich mit ihr deutlich größere Systeme berechnen. Ein Großteil aller Anwendungsrechnungen in der Quantenchemie wird daher mit der \ac{dft} durchgeführt. 
-\vfill
-\newpage
+
 
 \section{Moleküle im Magnetfeld}\label{kap:magnetfeld}
 
@@ -338,8 +334,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
 	  \sigma_K=\frac{1}{3}\Tr \boldsymbol{\sigma}_K
 	\end{equation}	 
 	 erhalten. Im Gegensatz zu den einzelnen Elementen von $\boldsymbol{\sigma}_K$ ist die Spur rotationsinvariant.
-\vfill
-\newpage	 
+	 
 	 Eine weitere messbare und invariante Größe ist die Anisotropie $\Delta\sigma_K$ 
 	 \begin{equation}
 	 \Delta\sigma_K=\sqrt{\frac{3}{2}\left(\frac{1}{4}\sum_{\alpha\beta}(\sigma_{K_\alpha\beta}+\sigma_{K_\beta\alpha})-3\sigma_K^2\right)}.
@@ -535,8 +530,6 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      \iu\sum_{\mu\nu}\left(c_{\mu i}c_{\nu i}^{B_\beta}S_{\mu\nu}-c_{\mu i}^{b_\beta}c_{\nu i}S_{\mu\nu}-\iu c_{\mu i}c_{\nu i}S_{\mu\nu}^{B_\beta}\right)=0.
      \end{equation}
      
-%     \vfill
-%     \newpage
      
      Durch die Multiplikation von links mit $2\sum_i\varepsilon_i$ und Umsortieren lässt sich dies weiter Umformen zu    
      \begin{equation}\label{eq:enweightd}
@@ -667,8 +660,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-S_K, -S_K+1, \dotsc ,S_K-1,S_K$ a
      \end{equation}
      
      in Gleichung (\ref{eq:sigmadiapara}) benötigt werden.
-     \vfill
-     \newpage
+
      
 \subsection{CPHF-Gleichungen für Abschirmungskonstanten}\label{kap:cphf}
 

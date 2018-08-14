@@ -6449,6 +6449,37 @@
       \field{pages}{4235\bibrangedash 4239}
       \range{pages}{5}
     \endentry
+    \entry{berger2012prediction}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ee5d85f2e35200c0425dbb9ac6cf705f}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Raphael\bibnamedelima JF},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Verlag der Zeitschrift f{ü}r Naturforschung}%
+      }
+      \strng{namehash}{ee5d85f2e35200c0425dbb9ac6cf705f}
+      \strng{fullhash}{ee5d85f2e35200c0425dbb9ac6cf705f}
+      \strng{bibnamehash}{ee5d85f2e35200c0425dbb9ac6cf705f}
+      \strng{authorbibnamehash}{ee5d85f2e35200c0425dbb9ac6cf705f}
+      \strng{authornamehash}{ee5d85f2e35200c0425dbb9ac6cf705f}
+      \strng{authorfullhash}{ee5d85f2e35200c0425dbb9ac6cf705f}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Z. Naturforsch. B}
+      \field{number}{11}
+      \field{title}{Prediction of a cyclic helical oligoacetylene showing anapolar ring currents in the magnetic field}
+      \field{volume}{67}
+      \field{year}{2012}
+      \field{pages}{1127\bibrangedash 1131}
+      \range{pages}{5}
+    \endentry
     \entry{ceulemans1998molecular}{article}{}
       \name{author}{3}{}{%
         {{hash=01b21f9f3cf5e206ec527a37c3552949}{%
@@ -6489,6 +6520,138 @@
       \field{year}{1998}
       \field{pages}{1861}
       \range{pages}{1}
+    \endentry
+    \entry{pelloni2011magnetic}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d7742f35a5c8709098703862e237bdec}{%
+           family={Pelloni},
+           familyi={P\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=87513cd879c051f2158a83ad20408c48}{%
+           family={Lazzeretti},
+           familyi={L\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bf11c4c94d8eb2affd22eeb14d24c25b}{%
+           family={Monaco},
+           familyi={M\bibinitperiod},
+           given={Guglielmo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b8b9b0f057d4e08a18f0dcd05c1fe523}{%
+           family={Zanasi},
+           familyi={Z\bibinitperiod},
+           given={Riccardo},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{377cb873843123252acd70cb9353d863}
+      \strng{fullhash}{a9b7075c7556cb59e063d5c5de35b696}
+      \strng{bibnamehash}{a9b7075c7556cb59e063d5c5de35b696}
+      \strng{authorbibnamehash}{a9b7075c7556cb59e063d5c5de35b696}
+      \strng{authornamehash}{377cb873843123252acd70cb9353d863}
+      \strng{authorfullhash}{a9b7075c7556cb59e063d5c5de35b696}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rend. Fis. Acc. Lincei}
+      \field{number}{2}
+      \field{title}{Magnetic-field induced electronic anapoles in small molecules}
+      \field{volume}{22}
+      \field{year}{2011}
+      \field{pages}{105\bibrangedash 112}
+      \range{pages}{8}
+    \endentry
+    \entry{zel1958electromagnetic}{article}{}
+      \name{author}{1}{}{%
+        {{hash=047655b5fec6ee12c9539a99a251d15b}{%
+           family={Zel’Dovich},
+           familyi={Z\bibinitperiod},
+           given={Ia\bibnamedelima B},
+           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{047655b5fec6ee12c9539a99a251d15b}
+      \strng{fullhash}{047655b5fec6ee12c9539a99a251d15b}
+      \strng{bibnamehash}{047655b5fec6ee12c9539a99a251d15b}
+      \strng{authorbibnamehash}{047655b5fec6ee12c9539a99a251d15b}
+      \strng{authornamehash}{047655b5fec6ee12c9539a99a251d15b}
+      \strng{authorfullhash}{047655b5fec6ee12c9539a99a251d15b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sov. Phys. JETP}
+      \field{number}{6}
+      \field{title}{Electromagnetic interaction with parity violation}
+      \field{volume}{6}
+      \field{year}{1958}
+      \field{pages}{1184\bibrangedash 1186}
+      \range{pages}{3}
+    \endentry
+    \entry{ascher1966some}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1d531fb8cedc7db9fc850750dfafcde2}{%
+           family={Ascher},
+           familyi={A\bibinitperiod},
+           given={Edgar},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d531fb8cedc7db9fc850750dfafcde2}
+      \strng{fullhash}{1d531fb8cedc7db9fc850750dfafcde2}
+      \strng{bibnamehash}{1d531fb8cedc7db9fc850750dfafcde2}
+      \strng{authorbibnamehash}{1d531fb8cedc7db9fc850750dfafcde2}
+      \strng{authornamehash}{1d531fb8cedc7db9fc850750dfafcde2}
+      \strng{authorfullhash}{1d531fb8cedc7db9fc850750dfafcde2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Helv. Phys. Acta}
+      \field{title}{Some properties of spontaneous currents}
+      \field{volume}{39}
+      \field{year}{1966}
+      \field{pages}{40\bibrangedash 48}
+      \range{pages}{9}
+    \endentry
+    \entry{schmid2001ferrotoroidics}{article}{}
+      \name{author}{1}{}{%
+        {{hash=13deb34ef6f580131846cd77de92fd60}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{13deb34ef6f580131846cd77de92fd60}
+      \strng{fullhash}{13deb34ef6f580131846cd77de92fd60}
+      \strng{bibnamehash}{13deb34ef6f580131846cd77de92fd60}
+      \strng{authorbibnamehash}{13deb34ef6f580131846cd77de92fd60}
+      \strng{authornamehash}{13deb34ef6f580131846cd77de92fd60}
+      \strng{authorfullhash}{13deb34ef6f580131846cd77de92fd60}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ferroelectrics}
+      \field{number}{1}
+      \field{title}{On ferrotoroidics and electrotoroidic, magnetotoroidic and piezotoroidic effects}
+      \field{volume}{252}
+      \field{year}{2001}
+      \field{pages}{41\bibrangedash 50}
+      \range{pages}{10}
     \endentry
     \entry{haddon1997electronic}{article}{}
       \name{author}{1}{}{%
@@ -6862,8 +7025,8 @@
       \strng{authorbibnamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
       \strng{authornamehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
       \strng{authorfullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6908,8 +7071,8 @@
       \strng{authorbibnamehash}{e1a418c5d65690d89c4609d3b99952c2}
       \strng{authornamehash}{7f2c045e27c631b672c2213391161e48}
       \strng{authorfullhash}{e1a418c5d65690d89c4609d3b99952c2}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6949,8 +7112,8 @@
       \strng{authorbibnamehash}{a4b6041b0a755ed3bf5baedebafa62a0}
       \strng{authornamehash}{a4b6041b0a755ed3bf5baedebafa62a0}
       \strng{authorfullhash}{a4b6041b0a755ed3bf5baedebafa62a0}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
