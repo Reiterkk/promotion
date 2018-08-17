@@ -390,7 +390,15 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 \begingroup
 	\renewcommand{\addvspace}[1]{}
 %	\phantomsection
-	\listoftables
+%	\listoftables
+{
+\makeatletter
+% 1~is the depth (for chapter, section, subsection), 1.5em is the indent, 2.3em is the distance between number and caption
+% enlarge the distance because the A from appendix is wider than a normal letter
+\renewcommand*\l@table{\@dottedtocline{1}{1.5em}{2.7em}}
+\makeatother
+\listoftables
+}
 \endgroup
 \newpage
 \input{./etc/acronym}
