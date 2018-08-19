@@ -1,112 +1,57 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Grundlegende Programmstruktur}}{42}{figure.caption.22}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Grundlegende Programmstruktur}}{43}{figure.caption.15}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Solvatationseffekte f\IeC {\"u}r Aceton in Wasser}}{49}{figure.caption.28}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r $^{13}$C Verschiebungen}}{51}{figure.caption.29}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r unterschiedliche L\IeC {\"o}sungsmittel}}{52}{figure.caption.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces ECP-Testrechnungen an Co(ppy)$_3$}}{61}{figure.caption.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Vergleich experimenteller $^{119}$Sn Verschiebungen mit berechneten Abschirmungskonstanten}}{62}{figure.caption.32}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \ac {ir}- und \ac {vcd}-Spektren von (\textit {R})- und (\textit {S})-Methyloxiran}}{63}{figure.caption.34}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Wichtigste Routinen f\IeC {\"u}r die Berechnung von VCD-Intensit\IeC {\"a}ten}}{70}{figure.caption.39}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Abbildung von Ir(ppy)$_3$}}{72}{figure.caption.42}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Simulierte \ac {vcd}-Spektren von Ir(ppy)$_3$}}{74}{figure.caption.43}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Abbildung von \ac {cpa}}}{75}{figure.caption.44}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Simulierte \ac {vcd}-Spektren von \ac {cpa}}}{76}{figure.caption.45}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Abbildung von ikosaedrischen Kohlenstoffclustern}}{77}{figure.caption.47}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Simulierte \ac {vcd}-Spektren von ikosaedrischen Kohlenstoffclustern}}{78}{figure.caption.48}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Skalierung von \texttt {mpshift} und \texttt {aoforce}}}{78}{figure.caption.49}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Solvatationseffekte f\IeC {\"u}r Aceton in Wasser}}{50}{figure.caption.21}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r $^{13}$C-chemische Verschiebungen}}{52}{figure.caption.22}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Fehler des \ac {cosmo} und \ac {dcosmors} f\IeC {\"u}r unterschiedliche L\IeC {\"o}sungsmittel}}{53}{figure.caption.23}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces ECP-Testrechnungen an Co(ppy)$_3$}}{62}{figure.caption.24}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Vergleich von experimentellen $^{119}$Sn-chemischen Verschiebungen mit berechneten Abschirmungskonstanten}}{63}{figure.caption.25}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces \ac {ir}- und \ac {vcd}-Spektren von (\textit {R})- und (\textit {S})-Methyloxiran}}{64}{figure.caption.27}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Wichtigste Routinen f\IeC {\"u}r die Berechnung von VCD-Intensit\IeC {\"a}ten}}{72}{figure.caption.30}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Abbildung von Ir(ppy)$_3$}}{74}{figure.caption.33}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Simulierte \ac {vcd}-Spektren von Ir(ppy)$_3$}}{76}{figure.caption.34}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Abbildung von \ac {cpa}}}{77}{figure.caption.35}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Simulierte \ac {vcd}-Spektren von \ac {cpa}}}{78}{figure.caption.36}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Abbildung von ikosaedrischen Kohlenstoffclustern}}{79}{figure.caption.38}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Simulierte \ac {vcd}-Spektren von ikosaedrischen Kohlenstoffclustern}}{80}{figure.caption.39}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Skalierung von \texttt {mpshift} und \texttt {aoforce}}}{80}{figure.caption.40}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces \ac {ri}-J-Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{85}{figure.caption.50}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \ac {marij}-Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{90}{figure.caption.51}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \ac {ri}-J-Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{87}{figure.caption.41}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \ac {marij}-Routinen f\IeC {\"u}r chemische Abschirmungskonstanten}}{92}{figure.caption.42}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Standardabweichungen f\IeC {\"u}r unterschiedliche Funktionale und Basiss\IeC {\"a}tze}}{96}{figure.caption.55}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Abbildung eines \ac {rns} Segmentes}}{98}{figure.caption.57}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Standardabweichungen f\IeC {\"u}r unterschiedliche Funktionale und Basiss\IeC {\"a}tze}}{98}{figure.caption.46}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Abbildung eines \ac {rns}-Segmentes}}{101}{figure.caption.47}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Konstruktionsschema von (toroidalen \textit {polyhex}) Kohlenstoff-Nanor\IeC {\"o}hren}}{102}{figure.caption.60}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Konstruktionsschema von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren mit f\IeC {\"u}nf- und siebengliedrigen Ringen}}{106}{figure.caption.64}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Verkn\IeC {\"u}pfung von $(n,n)$ \textit {armchair} und $(2n,0)$ \textit {zigzag} \acp {cnt}}}{107}{figure.caption.65}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Unterschiedliche Strukturtypen von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren}}{108}{figure.caption.66}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Bindungsenergien toroidaler Kohlenstoff-Nanor\IeC {\"o}hren}}{109}{figure.caption.67}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Zusammenhang zwischen Gesamtringstrom und Systemgr\IeC {\"o}\IeC {\ss }e}}{110}{figure.caption.68}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Zusammenhang zwischen Gesamtringstrom und HOMO-LUMO-GAP}}{111}{figure.caption.69}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Funktionaleinfl\IeC {\"u}sse auf Ringstr\IeC {\"o}me}}{113}{figure.caption.71}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces HOMO und LUMO von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren 1}}{115}{figure.caption.72}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces HOMO und LUMO von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren 2}}{116}{figure.caption.73}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Abbildung von $[$Hg$_8$Te$_{16}]^{8-}$ und B$_8$S$_{16}$}}{118}{figure.caption.74}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Ringstr\IeC {\"o}me in Porphyrin, $[$Hg$_8$Te$_{16}]^{8-}$, B$_8$S$_{16}$ und B$_8$Se$_{16}$}}{120}{figure.caption.76}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Abbildungen der hypothetischen Komplexe [M@Hg$_8$Te$_{16}]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$)}}{121}{figure.caption.77}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Strukturen von {[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}}}{122}{figure.caption.78}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.15}{\ignorespaces $^{119}$Sn \ac {nmr}-Spektren von [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}}{123}{figure.caption.79}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Nummerierung der Zinnatome in {[Co@Sn$_6$Sb$_6$]$^{3-}$} und {[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$} }}{124}{figure.caption.80}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.17}{\ignorespaces Abbildung von SIMesPH, IMesPH und $[$SIMesPGa\textit {t}Bu$_2]_2$}}{130}{figure.caption.86}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.18}{\ignorespaces Abbildung von SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl und K(SIMesP)$_3$Al\textit {t}Bu}}{131}{figure.caption.87}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.19}{\ignorespaces Abbildung von SIMesPH\textit {t}Bu$_2$GaCl und SIMesPH\textit {t}Bu$_2$AlCl}}{132}{figure.caption.88}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Konstruktionsschema von (toroidalen \textit {polyhex}) Kohlenstoff-Nanor\IeC {\"o}hren}}{105}{figure.caption.50}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Konstruktionsschema von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren mit f\IeC {\"u}nf- und siebengliedrigen Ringen}}{109}{figure.caption.54}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Verkn\IeC {\"u}pfung von $(n,n)$-\textit {armchair}- und $(2n,0)$-\textit {zigzag}-\acp {cnt}}}{110}{figure.caption.55}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Unterschiedliche Strukturtypen von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren}}{111}{figure.caption.56}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Bindungsenergien toroidaler Kohlenstoff-Nanor\IeC {\"o}hren}}{112}{figure.caption.57}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Zusammenhang zwischen Gesamtringstrom und Systemgr\IeC {\"o}\IeC {\ss }e}}{113}{figure.caption.58}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Zusammenhang zwischen Gesamtringstrom und HOMO-LUMO-GAP}}{114}{figure.caption.59}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Funktionaleinfl\IeC {\"u}sse auf Ringstr\IeC {\"o}me}}{116}{figure.caption.61}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces HOMO und LUMO von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren 1}}{118}{figure.caption.62}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces HOMO und LUMO von toroidalen Kohlenstoff-Nanor\IeC {\"o}hren 2}}{119}{figure.caption.63}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Abbildung von $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ und B$_8$S$_8$(S$_2$)$_4$}}{121}{figure.caption.64}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Ringstr\IeC {\"o}me in Porphyrin, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$}}{123}{figure.caption.65}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Abbildungen der hypothetischen Komplexe [M@Hg$_8$Te$_8$(Te$_2$)$_4]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$)}}{124}{figure.caption.66}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Strukturen von {[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}}}{125}{figure.caption.67}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces $^{119}$Sn-\ac {nmr}-Spektren von [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}}{126}{figure.caption.68}
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Nummerierung der Atome in {[Co@Sn$_6$Sb$_6$]$^{3-}$} und {[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$} }}{127}{figure.caption.69}
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Abbildung von SIMesPH, IMesPH und $[$SIMesPGa$^\textit {t}$Bu$_2]_2$}}{133}{figure.caption.75}
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Abbildung von SIMesP(Ga$^\textit {t}$Bu$_2$)$_2$Cl und K(SIMesP)$_3$Al$^\textit {t}$Bu}}{134}{figure.caption.76}
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Abbildung von SIMesPH$^\textit {t}$Bu$_2$GaCl und SIMesPH$^\textit {t}$Bu$_2$AlCl}}{135}{figure.caption.77}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Neue schematische Programmstruktur des Moduls \texttt {mpshift}}}{137}{figure.caption.89}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Neue schematische Programmstruktur des Moduls \texttt {mpshift}}}{140}{figure.caption.78}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Molek\IeC {\"u}lorbitale von SIMesP(Ga\textit {t}Bu$_2$)$_2$Cl}}{143}{figure.caption.90}
-\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Molek\IeC {\"u}lorbitale von SIMesP(Ga$^\textit {t}$Bu$_2$)$_2$Cl}}{146}{figure.caption.79}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

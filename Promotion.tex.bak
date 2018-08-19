@@ -29,6 +29,7 @@
 \usepackage{longtable}
 \usepackage{tabularx}
 
+
 % Unverzichtbare Pakte
 %\usepackage{setspace}
 \usepackage[onehalfspacing]{setspace}
@@ -65,7 +66,8 @@
 }
 \usepackage[ngerman]{translator}
 \usepackage{graphicx} 		% Einfügen von Grafiken (.png)
-\usepackage[printonlyused,withpage]{acronym}
+%\usepackage[printonlyused,withpage]{acronym}
+\usepackage[printonlyused]{acronym}
 %\usepackage[acronym,toc,numberedsection,nonumberlist]{glossaries}
 \usepackage[acronym,toc,numberedsection]{glossaries}
 \usepackage[hyphens]{url} 	% URL's schöner formatieren
@@ -311,6 +313,7 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 \definecolor {myblue}{rgb}{0.10,0.15,0.9}
 % ---------------------------------------------------------------
 
+\usepackage{siunitx}
 
 % Hier startet der Inhalt
 \begin{document}
