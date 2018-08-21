@@ -32,7 +32,7 @@ Die $X_{\mu g}$ sind die Werte der Basisfunktionen, multipliziert mit einem Gewi
 	\end{aligned}
 	\end{equation}
 
-Der erste Term auf der rechten Seite von Gleichung (\ref{eq:senexkmunudb}), $K_{\mu\nu}^{B_\beta}[D^{B_\beta}]$,  beinhaltet die gestörte Dichtematrix und die ungestörten Austauschintegrale. Dieser wird für Hartree-Fock- und Hybrid-\ac{dft}-Rechnungen während der \ac{cphf}-Iterationen benötigt. Die Implementierung dieses Terms ist trivial und wurde bereits in Zusammenarbeit mit Robert Treß im Rahmen seiner Masterarbeit umgesetzt. Es müssen lediglich die drei Komponenten der gestörten Dichtematrix an die entsprechenden Routinen übergeben und auf die Antisymmetrie der Matrizen geachtet werden. Die abgeleiteten Vierzentren-Zweielektronen-Integrale im zweiten Term auf der rechten Seite von Gleichung (\ref{eq:senexkmunudb}) sind
+Der erste Term auf der rechten Seite von Gleichung (\ref{eq:senexkmunudb}), $K_{\mu\nu}^{B_\beta}[D^{B_\beta}]$,  beinhaltet die gestörte Dichtematrix und die ungestörten Austauschintegrale. Dieser wird für Hartree-Fock- und Hybrid-\ac{dft}-Rechnungen während der \ac{cphf}-Iterationen benötigt. Die Implementierung dieses Terms ist trivial und wurde bereits in Zusammenarbeit mit Robert Treß im Rahmen seiner Masterarbeit umgesetzt.\supercite{tress2018master} Es müssen lediglich die drei Komponenten der gestörten Dichtematrix an die entsprechenden Routinen übergeben und auf die Antisymmetrie der Matrizen geachtet werden. Die abgeleiteten Vierzentren-Zweielektronen-Integrale im zweiten Term auf der rechten Seite von Gleichung (\ref{eq:senexkmunudb}) sind
 	\begin{equation}
 	\begin{aligned}
 	\left(\overline{\chi_\mu\chi_\lambda}\vert\chi_\kappa^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)_\beta=&\frac{\iu}{2c} \left(\left(\vec{R}_{\mu\lambda}\times\vec{r}_1\right)_\beta\chi_\mu^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\vert\chi_\kappa^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\right)\\
@@ -59,7 +59,7 @@ Exemplarisch ergibt sich für die Ableitung nach der $x$-Komponente
 	
 	mit
 	\begin{equation}
-	(R_{\mu\nu\kappa\lambda})_x=(R_\mu)_y(R_\lambda)_z-(R_\mu)_z(R_\lambda)_y+(R_\kappa)_y(R_\nu)_z-(R_\kappa)_z(R_\nu)_y.
+	(R_{\mu\nu\kappa\lambda})_x=(R_\mu)_y(R_\lambda)_z-(R_\mu)_z(R_\lambda)_y+(R_\kappa)_y(R_\nu)_z-(R_\kappa)_z(R_\nu)_y\, .
 	\end{equation}	
 	
 	Die Übertragung des semi-numerischen Ansatzes aus Gleichung (\ref{eq:senex}) liefert schließlich

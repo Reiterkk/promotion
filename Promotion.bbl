@@ -114,7 +114,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{6}
       \field{title}{Calculation of NMR chemical shifts at second-order many-body perturbation theory using gauge-including atomic orbitals}
       \field{volume}{191}
@@ -278,7 +278,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{5-6}
       \field{title}{A direct implementation of the GIAO-MBPT (2) method for calculating NMR chemical shifts. Application to the naphthalenium and anthracenium ions}
       \field{volume}{260}
@@ -329,7 +329,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{3}
       \field{title}{Electronic structure calculations on workstation computers: The program system turbomole}
       \field{volume}{162}
@@ -343,7 +343,7 @@
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labeltitlesource}{title}
-      \field{title}{Lokale Version von {TURBOMOLE V7.0 2015}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989-2007, {TURBOMOLE GmbH}, since 2007; available from \\ {\textit{http://www.turbomole.com}}}
+      \field{title}{Lokale Version von {TURBOMOLE V7.0 2015}, a development of {University of Karlsruhe} and {Forschungszentrum Karlsruhe GmbH}, 1989--2007, {TURBOMOLE GmbH}, since 2007; available from {\texttt{http\,:\,/\,/\,www.turbomole.com}}}
       \field{year}{2015}
     \endentry
     \entry{furche2014turbomole}{article}{}
@@ -470,7 +470,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{5-6}
       \field{title}{Integral approximations for LCAO-SCF calculations}
       \field{volume}{213}
@@ -588,6 +588,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{issue}{0}
       \field{journaltitle}{J. Chem. Soc.}
       \field{title}{181. Studies of aromaticity by nuclear magnetic resonance spectroscopy. Part I. 2-Pyridones and related systems}
       \field{year}{1961}
@@ -1157,7 +1158,7 @@
            giveni={H\bibinithyphendelim P\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {Universität Karlsruhe}%
+        {Universität Karlsruhe (TH)}%
       }
       \strng{namehash}{c711708fceb29f5af5fce6ee7e9ba0ac}
       \strng{fullhash}{c711708fceb29f5af5fce6ee7e9ba0ac}
@@ -1327,7 +1328,7 @@
            giveni={F\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {Universität Karlsruhe}%
+        {Universität Karlsruhe (TH)}%
       }
       \strng{namehash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
       \strng{fullhash}{8d26b3b9e91d4a79e51ad0fc51d93e44}
@@ -1368,7 +1369,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chemical Physics Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{2}
       \field{title}{Convergence acceleration of iterative sequences. The case of SCF iteration}
       \field{volume}{73}
@@ -1399,7 +1400,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Chemistry}
+      \field{journaltitle}{J. Comp. Phys.}
       \field{number}{4}
       \field{title}{Improved SCF convergence acceleration}
       \field{volume}{3}
@@ -1599,7 +1600,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{3}
       \field{title}{LCAO X$\alpha$ calculations of nuclear magnetic shielding in molecules}
       \field{volume}{115}
@@ -1640,7 +1641,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{1-2}
       \field{title}{Calculations of NMR shielding constants by uncoupled density functional theory}
       \field{volume}{204}
@@ -1676,7 +1677,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{4-6}
       \field{title}{Nuclear magnetic resonance shielding tensors calculated with kinetic energy density-dependent exchange-correlation functionals}
       \field{volume}{390}
@@ -1992,9 +1993,11 @@
     \entry{cosmotherm}{misc}{}
       \field{sortinit}{6}
       \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labeldatesource}{nodate}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labeltitlesource}{title}
-      \field{title}{COSMO\textit{therm}, Version C3.0, Release 17.01; COSMO\textit{logic} GmbH \& Co. KG, \textit{http://www.cosmologic.de}}
+      \field{title}{COSMO\textit{therm}, Version C3.0, Release 17.01; COSMO\textit{logic} GmbH \& Co. KG, \texttt{http\,:\,/\,/\,www\,.\,cosmologic\,.\,de}}
+      \field{year}{2018}
     \endentry
     \entry{eckert2002fast}{article}{}
       \name{author}{2}{}{%
@@ -2594,7 +2597,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{journaltitle}{Theo. Chem. Acc.}
       \field{number}{1}
       \field{title}{Exact decoupling of the relativistic Fock operator}
       \field{volume}{131}
@@ -2788,7 +2791,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{1-2}
       \field{title}{Effective core potential DFT calculations of nuclear shielding as a tool for the prediction and assignment of the tungsten chemical shift in mono-and polynuclear complexes}
       \field{volume}{317}
@@ -2860,7 +2863,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Computational Physics}
+      \field{journaltitle}{J. Comp. Phys.}
       \field{number}{2}
       \field{title}{Calculation of integrals over ab initio pseudopotentials}
       \field{volume}{44}
@@ -2948,7 +2951,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{The Journal of Chemical Physics}
+      \field{journaltitle}{J. Chem. Phys.}
       \field{number}{6}
       \field{title}{Ab initio effective potentials for use in molecular calculations}
       \field{volume}{56}
@@ -3047,7 +3050,7 @@
            giveni={O\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {Universität Karlsruhe}%
+        {Universität Karlsruhe (TH)}%
       }
       \strng{namehash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
       \strng{fullhash}{1f5c73e19e1ee4c1b9cfe9b3d1a8bfea}
@@ -3282,7 +3285,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{3-4}
       \field{title}{Ab initio calculation of atomic axial tensors and vibrational rotational strengths using density functional theory}
       \field{volume}{252}
@@ -3395,7 +3398,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{journaltitle}{Theo. Chem. Acc.}
       \field{number}{1-3}
       \field{title}{A vibrational circular dichroism implementation within a Slater-type-orbital based density functional framework and its application to hexa-and hepta-helicenes}
       \field{volume}{119}
@@ -3436,7 +3439,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{5-6}
       \field{title}{An efficient implementation of second analytical derivatives for density functional methods}
       \field{volume}{362}
@@ -3481,7 +3484,7 @@
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labeltitlesource}{title}
-      \field{title}{T. Williams, C. Kelley and {many others}, Gnuplot 4.2: an interactive plotting program {\textit{http://gnuplot.sourceforge.net/}}}
+      \field{title}{T. Williams, C. Kelley and {many others}, Gnuplot 4.2: an interactive plotting program {\texttt{http\,:\,/\,/\,gnuplot\,.\,sourceforge\,.\,net/}}}
       \field{year}{2009}
     \endentry
     \entry{taniguchi2015stereochemical}{article}{}
@@ -3867,7 +3870,7 @@
       \field{number}{1}
       \field{title}{Calculation of magnetic shielding constants with meta-GGA functionals employing the multipole-accelerated resolution of the identity: Implementation and assessment of accuracy and efficiency}
       \field{volume}{14}
-      \field{year}{2017}
+      \field{year}{2018}
       \field{pages}{191\bibrangedash 197}
       \range{pages}{7}
     \endentry
@@ -3986,7 +3989,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{4}
       \field{title}{Auxiliary basis sets to approximate Coulomb potentials}
       \field{volume}{240}
@@ -4403,7 +4406,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{5}
       \field{title}{Gas-phase 13C chemical shifts in the zero-pressure limit: refinements to the absolute shielding scale for 13C}
       \field{volume}{134}
@@ -4620,7 +4623,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoretica chimica acta}
+      \field{journaltitle}{Theoret. Chim. Acta}
       \field{number}{3}
       \field{title}{The influence of polarization functions on molecular orbital hydrogenation energies}
       \field{volume}{28}
@@ -4702,7 +4705,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Chem. Phys.}
+      \field{journaltitle}{J. Comp. Phys.}
       \field{number}{7}
       \field{title}{Seminumerical calculation of the Hartree--Fock exchange matrix: Application to two-component procedures and efficient evaluation of local hybrid density functionals}
       \field{volume}{33}
@@ -4742,9 +4745,12 @@
       \range{pages}{1}
     \endentry
     \entry{ichihashi1992pentagons}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{2}{}{%
+      \name{author}{3}{}{%
+        {{hash=f169bacbd0e814ce4501732e0630b89e}{%
+           family={lijima},
+           familyi={l\bibinitperiod},
+           given={Sumio},
+           giveni={S\bibinitperiod}}}%
         {{hash=7fddd06af2fecffe7e13a4efc4193a02}{%
            family={Ichihashi},
            familyi={I\bibinitperiod},
@@ -4759,12 +4765,12 @@
       \list{publisher}{1}{%
         {Nature Publishing Group}%
       }
-      \strng{namehash}{39a3ed2c7b69995ff60431bf6eef1982}
-      \strng{fullhash}{39a3ed2c7b69995ff60431bf6eef1982}
-      \strng{bibnamehash}{39a3ed2c7b69995ff60431bf6eef1982}
-      \strng{authorbibnamehash}{39a3ed2c7b69995ff60431bf6eef1982}
-      \strng{authornamehash}{39a3ed2c7b69995ff60431bf6eef1982}
-      \strng{authorfullhash}{39a3ed2c7b69995ff60431bf6eef1982}
+      \strng{namehash}{e2527a06c0bf4e18d1f63af185f83a56}
+      \strng{fullhash}{e2527a06c0bf4e18d1f63af185f83a56}
+      \strng{bibnamehash}{e2527a06c0bf4e18d1f63af185f83a56}
+      \strng{authorbibnamehash}{e2527a06c0bf4e18d1f63af185f83a56}
+      \strng{authornamehash}{e2527a06c0bf4e18d1f63af185f83a56}
+      \strng{authorfullhash}{e2527a06c0bf4e18d1f63af185f83a56}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
@@ -5070,7 +5076,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Phys. Letters}
+      \field{journaltitle}{Chem. Phys. Lett.}
       \field{number}{1-2}
       \field{title}{Ring formations from catalytically synthesized carbon nanotubes}
       \field{volume}{300}
@@ -6232,11 +6238,11 @@
            familyi={H\bibinitperiod},
            given={Noriaki},
            giveni={N\bibinitperiod}}}%
-        {{hash=8a44deefdbc7136c52277e7e6cd6c461}{%
+        {{hash=c1d6341053c20d40173e6d24c6813ad5}{%
            family={Sawada},
            familyi={S\bibinitperiod},
-           given={Shin-ichi},
-           giveni={S\bibinithyphendelim i\bibinitperiod}}}%
+           given={Shin},
+           giveni={S\bibinitperiod}}}%
         {{hash=100a1b9a3c1317900cce5c725dd550e2}{%
            family={Oshiyama},
            familyi={O\bibinitperiod},
@@ -6246,12 +6252,12 @@
       \list{publisher}{1}{%
         {APS}%
       }
-      \strng{namehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
-      \strng{fullhash}{ec1c6fc621bf68f03242a4b7990bfc2a}
-      \strng{bibnamehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
-      \strng{authorbibnamehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
-      \strng{authornamehash}{ec1c6fc621bf68f03242a4b7990bfc2a}
-      \strng{authorfullhash}{ec1c6fc621bf68f03242a4b7990bfc2a}
+      \strng{namehash}{eb7f0deff5f37cac6cdadf9666b2970a}
+      \strng{fullhash}{eb7f0deff5f37cac6cdadf9666b2970a}
+      \strng{bibnamehash}{eb7f0deff5f37cac6cdadf9666b2970a}
+      \strng{authorbibnamehash}{eb7f0deff5f37cac6cdadf9666b2970a}
+      \strng{authornamehash}{eb7f0deff5f37cac6cdadf9666b2970a}
+      \strng{authorfullhash}{eb7f0deff5f37cac6cdadf9666b2970a}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
@@ -6283,21 +6289,21 @@
            familyi={D\bibinitperiod},
            given={G},
            giveni={G\bibinitperiod}}}%
-        {{hash=036870901799f6711a35605262487e38}{%
+        {{hash=ddc48707136c4417b6df171633b18652}{%
            family={Dresselhaus},
            familyi={D\bibinitperiod},
-           given={u\bibnamedelima MS},
-           giveni={u\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+           given={Mildred\bibnamedelima S},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {AIP}%
       }
       \strng{namehash}{031f008d5138fff0cc8ecc781a4db6f5}
-      \strng{fullhash}{a76ad5f8d3419fb812e576088df5f97a}
-      \strng{bibnamehash}{a76ad5f8d3419fb812e576088df5f97a}
-      \strng{authorbibnamehash}{a76ad5f8d3419fb812e576088df5f97a}
+      \strng{fullhash}{36246ccd340968df0bf8a16bd1ec4cb4}
+      \strng{bibnamehash}{36246ccd340968df0bf8a16bd1ec4cb4}
+      \strng{authorbibnamehash}{36246ccd340968df0bf8a16bd1ec4cb4}
       \strng{authornamehash}{031f008d5138fff0cc8ecc781a4db6f5}
-      \strng{authorfullhash}{a76ad5f8d3419fb812e576088df5f97a}
+      \strng{authorfullhash}{36246ccd340968df0bf8a16bd1ec4cb4}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
@@ -6759,18 +6765,18 @@
     \endentry
     \entry{zel1958electromagnetic}{article}{}
       \name{author}{1}{}{%
-        {{hash=047655b5fec6ee12c9539a99a251d15b}{%
-           family={Zel’Dovich},
+        {{hash=1e2af2969d0b8880466942064887efdd}{%
+           family={Zel’dovich},
            familyi={Z\bibinitperiod},
-           given={Ia\bibnamedelima B},
-           giveni={I\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+           given={Y\bibnamedelima B},
+           giveni={Y\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
-      \strng{namehash}{047655b5fec6ee12c9539a99a251d15b}
-      \strng{fullhash}{047655b5fec6ee12c9539a99a251d15b}
-      \strng{bibnamehash}{047655b5fec6ee12c9539a99a251d15b}
-      \strng{authorbibnamehash}{047655b5fec6ee12c9539a99a251d15b}
-      \strng{authornamehash}{047655b5fec6ee12c9539a99a251d15b}
-      \strng{authorfullhash}{047655b5fec6ee12c9539a99a251d15b}
+      \strng{namehash}{1e2af2969d0b8880466942064887efdd}
+      \strng{fullhash}{1e2af2969d0b8880466942064887efdd}
+      \strng{bibnamehash}{1e2af2969d0b8880466942064887efdd}
+      \strng{authorbibnamehash}{1e2af2969d0b8880466942064887efdd}
+      \strng{authornamehash}{1e2af2969d0b8880466942064887efdd}
+      \strng{authorfullhash}{1e2af2969d0b8880466942064887efdd}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
@@ -7344,7 +7350,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{journaltitle}{Theo. Chem. Acc.}
       \field{number}{1-3}
       \field{title}{The M06 suite of density functionals for main group thermochemistry, thermochemical kinetics, noncovalent interactions, excited states, and transition elements: two new functionals and systematic testing of four M06-class functionals and 12 other functionals}
       \field{volume}{120}
@@ -7650,7 +7656,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Theoret. Chim. Acta}
+      \field{journaltitle}{Theo. Chem. Acc.}
       \field{number}{1-4}
       \field{title}{Auxiliary basis sets for main row atoms and transition metals and their use to approximate Coulomb potentials}
       \field{volume}{97}
@@ -7920,6 +7926,33 @@
       \field{year}{1998}
       \field{pages}{8766\bibrangedash 8773}
       \range{pages}{8}
+    \endentry
+    \entry{tress2018master}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=752abda075407bda4da7cb8522ac1c3c}{%
+           family={Treß},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Karlsruher Institut für Technologie}%
+      }
+      \strng{namehash}{752abda075407bda4da7cb8522ac1c3c}
+      \strng{fullhash}{752abda075407bda4da7cb8522ac1c3c}
+      \strng{bibnamehash}{752abda075407bda4da7cb8522ac1c3c}
+      \strng{authorbibnamehash}{752abda075407bda4da7cb8522ac1c3c}
+      \strng{authornamehash}{752abda075407bda4da7cb8522ac1c3c}
+      \strng{authorfullhash}{752abda075407bda4da7cb8522ac1c3c}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerische Herausforderungen in der Quantenchemie schwerer Elemente: Analyse von Defiziten und technische Verbesserungen}
+      \field{type}{Masterarbeit}
+      \field{year}{2018}
     \endentry
     \entry{dolbier2016guide}{book}{}
       \name{author}{1}{}{%

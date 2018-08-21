@@ -71,11 +71,14 @@
     \acro{maxa}[Max.A]{Maximale Absolute Abweichung} 	
  	
 	\acro{mgga}[MGGA]{\textit{Meta}-GGA}   
-		\acrodefplural{mgga}[MGGA]{\textit{Meta}-GGA}	
+		\acrodefplural{mgga}[MGGA]{\textit{Meta}-GGA}
+	\acro{mgga-}[MGGA-]{\textit{Meta}-GGA-}		
+			
 	\acro{mo}[MO]{Molekülorbital}   
 		\acrodefplural{mo}[MOs]{Molekülorbitale}
 		
 	\acro{md}[MD]{Molekulardynamik}
+	\acro{md-}[MD-]{Molekulardynamik-}
 	
 	\acro{mp2}[MP2]{M\o ller-Plesset-Störungstheorie zweiter Ordnung}
 		

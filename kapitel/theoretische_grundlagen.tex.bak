@@ -109,7 +109,7 @@ Wird Gleichung (\ref{differentialgleichung}) von links mit $\langle\phi_i\vert$ 
 \label{orbitalenergie}
 \end{equation}
 
-In der Praxis werden die Einelektronen-Wellenfunktionen $\phi_i$ in einer finiten Basis entwickelt. Bei dem sogenannten \aclu*{lcao-}\mbox{(\acs{lcao}-)}\acused{lcao}Ansatz werden die $\phi_i$ durch die Linearkombination der Basisfunktionen $\chi_\mu$ gebildet,
+In der Praxis werden die Einelektronen-Wellenfunktionen $\phi_i$ in einer finiten Basis entwickelt. Beim sogenannten \aclu*{lcao-}\mbox{(\acs{lcao}-)}\acused{lcao}Ansatz werden die $\phi_i$ durch die Linearkombination der Basisfunktionen $\chi_\mu$ gebildet,
 \begin{equation}
 \phi_i=\sum_{\mu=1}^Nc_{\mu i}\chi_{\mu}\,.
 \end{equation}
@@ -181,7 +181,7 @@ Das zweite Hohenberg-Kohn-Theorem beweist, dass das Variationsprinzip
 für eine beliebige Dichte $\tilde{\rho}$ Gültigkeit besitzt, solange diese Dichte die Eigenschaft
 
 \begin{equation}
-\int\tilde{\rho}(\vec{r})\Diff3=N
+\int\tilde{\rho}(\vec{r})\Diff3\vec{r}=N
 \end{equation}
 
 erfüllt. Unter Kenntnis von $T[\rho]$ und $E_{\textrm{xc}}[\rho_0]$ könnte die Dichte folglich so variiert werden, bis sich die berechnete Energie weit genug an die exakte Energie angenähert hat. Da die entsprechenden Funktionale für wechselwirkende Elektronen jedoch nicht bekannt sind, muss $F^{\textrm{HK}}[\rho]$ angenähert werden. Insbesondere die exakte Beschreibung der kinetischen Energie nur durch die Elektronendichte hat sich in der Vergangenheit als schwierig herausgestellt. Kohn und Sham\supercite{kohn1965self} haben daraufhin ein Verfahren entwickelt, bei dem die Orbitale aus dem Hartree-Fock-Verfahren wieder eingeführt werden. Die kinetische Energie wird dabei aufgeteilt in einen exakt berechenbaren Beitrag und in einen Korrekturterm, welcher in das Austauschkorrelationsfunktional mit aufgenommen wird. Für nicht wechselwirkende Elektronen ist die exakte Wellenfunktion durch eine Slaterdeterminante gegeben, welche aus den Einelektronen-Molekülorbitalen $\varphi_i$ aufgebaut ist. Die für dieses System exakt zu berechnende kinetische Energie ist damit
@@ -210,12 +210,12 @@ E_{\textrm{xc}}[\rho] = T[\rho]-T_{\textrm S}[\rho]+V_{\textrm{ee}}[\rho]-J[\rho
 Die Minimierung der Energie durch Anwendung des Variationsprinzips führt zu den Kohn-Sham-Gleichungen
 
 \begin{equation}
-\hat{h}^{\textrm{KS}}\left|\varphi_i^{\textrm{KS}}\right\rangle=\varepsilon_i\left|\varphi_i^{\textrm{KS}}\right\rangle\, ,
+\hat{h}^{\textrm{KS}}\left|\varphi_i^{\textrm{KS}}\right\rangle=\varepsilon_i\left|\varphi_i^{\textrm{KS}}\right\rangle
 \end{equation}
 
 mit den Kohn-Sham-Orbitalen $\varphi_i^{\textrm{KS}}$ und dem Kohn-Sham-Operator 
 \begin{equation}
-\hat{h}^{\textrm{KS}} = -\frac{1}{2}\vec{\nabla}^2+V_{\textrm{eff}}(\vec{r}).
+\hat{h}^{\textrm{KS}} = -\frac{1}{2}\vec{\nabla}^2+V_{\textrm{eff}}(\vec{r})\, .
 \end{equation}
 
 Das effektive Potential 
@@ -274,7 +274,7 @@ Mit der genauen Kenntnis von $E_{\textrm{xc}}[\rho(\vec{r})]$ wäre dieser Ausdr
 E_{\textrm{xc}}[\rho(\vec{r})] = E_{\textrm{x}}[\rho(\vec{r})] + E_{\textrm{c}}[\rho(\vec{r})]\, .
 \end{equation}
 
-Die einfachsten Funktionale gehören zur \ac{lda}. Diese Funktionale hängen lediglich von der Elektronendichte ab. Eine Verbesserung der \ac{lda}-Funktionale stellen die zur \ac{gga} gehörenden Funktionale dar. Sie beinhalten neben der Elektronendichte zusätzlich auch den Gradienten $\vec{\nabla}\rho(\vec{r})$ der Elektronendichte. Werden neben der ersten Ableitung noch weitere Ableitungen der Elektronendichte mit einbezogen, so wird von \ac{mgga}-Funktionalen gesprochen. Die darin enthaltene zweite Ableitung der Elektronendichte wird auch als kinetische Energiedichte bezeichnet. Weiterhin haben sich sogenannte Hybridfunktionale als vorteilhaft herausgestellt, bei welchen ein gewisser Anteil des exakten Hartree-Fock-Austauschs beigemischt wird.
+Die einfachsten Funktionale gehören zur \ac{lda}. Diese Funktionale hängen lediglich von der Elektronendichte ab. Eine Verbesserung der \ac{lda}-Funktionale stellen die zur \ac{gga} gehörenden Funktionale dar. Sie beinhalten neben der Elektronendichte zusätzlich auch den Gradienten $\vec{\nabla}\rho(\vec{r})$ der Elektronendichte. Werden neben der ersten Ableitung noch weitere Ableitungen der Elektronendichte mit einbezogen, so wird von \aclu*{mgga-}\mbox{(\acs{mgga}-)}\acused{mgga}Funktionalen gesprochen. Die darin enthaltene zweite Ableitung der Elektronendichte wird auch als kinetische Energiedichte bezeichnet. Weiterhin haben sich sogenannte Hybridfunktionale als vorteilhaft herausgestellt, bei welchen ein gewisser Anteil des exakten Hartree-Fock-Austauschs beigemischt wird.
 
 
 \bigskip
@@ -317,7 +317,7 @@ wobei $\gamma_\beta$ das permanente magnetische Moment des Moleküls ist, welche
 das gesamte magnetische Moment in $\alpha$-Richtung ergeben. Damit beschreibt der vierte Term die diamagnetische Polarisierbarkeit des Moleküls. Aufgrund dieser Ströme wird an den Orten der Kerne ein sekundäres Magnetfeld erzeugt. In $\alpha$-Richtung ist dieses Magnetfeld
 
 \begin{equation}\label{eq:sekbfeld}
-\sum_{\beta}\sigma_{K_\alpha\beta} B_\beta\, ,
+\sum_{\beta}\sigma_{K_\alpha\beta} B_\beta\, 
 \end{equation}
 mit den Komponenten des Abschirmungstensors $\sigma_{K_\alpha\beta}$.
 
@@ -391,8 +391,12 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-I_K, -I_K+1, \dotsc ,I_K-1,I_K$ a
 	\begin{aligned}
 	\frac{1}{2}\vec{\pi}_i^2=&\frac{1}{2}\vec{p}_i^{\;2}+\frac{1}{c}\sum_K\frac{(\vec{r}_{iK}\times\vec{p}_{i})\cdot\vec{\mu}_K}{r_{iK}^3}+\frac{1}{2c}(\vec{r_i}\times \vec{p}_i)\cdot \vec{B}+ \frac{1}{2c^2}\sum_K\left[\left(\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}\right)\cdot\left(\vec{B}\times\vec{r}_i\right)\right]\\
 	&+\frac{1}{2c^2}\sum_{KL}\left[\left(\frac{\vec{\mu}_K\times\vec{r}_{iK}}{r_{iK}^3}\right)\cdot\left(\frac{\vec{\mu}_L\times\vec{r}_{iL}}{r_{iL}^3}\right)\right]+\frac{1}{8c^2}(\vec{B}\times\vec{r}_i)\cdot(\vec{B}\times\vec{r}_i) \\
-	=&\frac{1}{2}\vec{p}_i^{\;2}+\sum_{\alpha K}\underbrace{\frac{1}{c}\frac{(\vec{r}_{iK}\times\vec{p}_{i})_\alpha}{r_{iK}^3}}_{=\hat{T}^{\mu_{K_\alpha}}}\mu_{K_\alpha}+\sum_\beta\underbrace{\frac{1}{2c}(\vec{r_i}\times \vec{p}_i)_\beta}_{=\hat{T}^{B_\beta}} B_\beta+\sum_{\alpha\beta K} \underbrace{\frac{1}{2c^2}\frac{\vec{r}_{iK}\vec{r}_{i}\delta_{\alpha\beta}-r_{iK\alpha}r_{i\beta}}{r_{iK}^3}}_{=\hat{T}^{\mu_{K_\alpha}B_\beta}}\mu_{K_\alpha}B_\beta\\
-	&+\sum_{\alpha\beta KL}\underbrace{\frac{1}{2c^2}\frac{\vec{r}_i^{\; 2}\delta_{\alpha\beta}-r_{iK_\alpha}r_{iL_\beta}}{r_{iK}^3r_{iL}^3}}_{=\hat{T}^{\mu_{K_\alpha}\mu_{L_\beta}}}\mu_{K_\alpha}\mu_{J_\beta}+\sum_{\alpha\beta}\underbrace{\frac{1}{8c^2}\left(\vec{r}_i^{\; 2}\delta_{\alpha\beta}-r_{i\alpha}r_{i_\beta}\right)}_{=\hat{T}^{B_\alpha B_\beta}}B_\alpha B_\beta\, .
+	=&\frac{1}{2}\vec{p}_i^{\;2}
+	+\sum_{\alpha K}\underbrace{\frac{1}{c}\frac{(\vec{r}_{iK}\times\vec{p}_{i})_\alpha}{r_{iK}^3}}_{=\hat{T}^{\mu_{K_\alpha}}}\mu_{K_\alpha}
+	+\sum_\beta\underbrace{\frac{1}{2c}(\vec{r_i}\times \vec{p}_i)_\beta}_{=\hat{T}^{B_\beta}} B_\beta\\
+	&+\sum_{\alpha\beta K} \underbrace{\frac{1}{2c^2}\frac{\vec{r}_{iK}\vec{r}_{i}\delta_{\alpha\beta}-r_{iK\alpha}r_{i\beta}}{r_{iK}^3}}_{=\hat{T}^{\mu_{K_\alpha}B_\beta}}\mu_{K_\alpha}B_\beta
+	+\sum_{\alpha\beta KL}\underbrace{\frac{1}{2c^2}\frac{\vec{r}_i^{\; 2}\delta_{\alpha\beta}-r_{iK_\alpha}r_{iL_\beta}}{r_{iK}^3r_{iL}^3}}_{=\hat{T}^{\mu_{K_\alpha}\mu_{L_\beta}}}\mu_{K_\alpha}\mu_{J_\beta}\\
+	&+\sum_{\alpha\beta}\underbrace{\frac{1}{8c^2}\left(\vec{r}_i^{\; 2}\delta_{\alpha\beta}-r_{i\alpha}r_{i_\beta}\right)}_{=\hat{T}^{B_\alpha B_\beta}}B_\alpha B_\beta\, .
 	\end{aligned}
 	\end{equation}
 \endgroup
@@ -761,7 +765,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-I_K, -I_K+1, \dotsc ,I_K-1,I_K$ a
     
     wobei zu beachten ist, dass der Term $D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}$ über die gestörte Dichtematrix auch von den $x_l^{B_\beta}$ abhängt. Als nächstes werden die stationären Punkte des Funktionals $\mathcal{L}$ in Bezug auf die Koeffizienten $x_l^{B_\beta}$ bestimmt. Dies geschieht unter der Nebenbedingung, dass sich die Koeffizienten $x_l^{B_\beta}$ zu 1 aufsummieren:
     \begin{equation}
-    \sum_{l=1}^k x_l^{B_\beta}=1.
+    \sum_{l=1}^k x_l^{B_\beta}=1\, .
 	\end{equation}     
 	
    	Diese Nebenbedingung lässt sich folgendermaßen begründen: Die approximierten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ aus der $(l)$-ten Iteration lassen sich als Summe der exakten $\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ und einem Fehler $\left(e_{ai}^{B_\beta}\right)^{(l)}$ schreiben  	
@@ -789,7 +793,7 @@ wobei die einzelnen $m_K$s die Werte von $m_K=-I_K, -I_K+1, \dotsc ,I_K-1,I_K$ a
     Dieses Funktional wird schließlich nach den $x_n^{B_\beta}$ abgeleitet, wodurch das lineare Gleichungssystem
     \begin{equation}
     \begin{aligned}
-    0\overset{!}{=}\frac{\partial \mathcal{L}}{\partial x_n^{B_\beta}}=&2\sum_a\sum_i \left(U_{ai}^{B_\beta}\right)^{(n)}\left[\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
+    0\overset{!}{=}&\frac{\partial \mathcal{L}}{\partial x_n^{B_\beta}}=2\sum_a\sum_i \left(U_{ai}^{B_\beta}\right)^{(n)}\left[\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
     &\left.+\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta} c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}-\iu\left(\varepsilon_i-\varepsilon_a\right)\sum_{m=1}^kx_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(m)}\right]+\lambda\, .
     \end{aligned}
     \end{equation}
@@ -896,7 +900,7 @@ Zur Berechnung des chemischen Abschirmungstensors nach Gleichung (\ref{eq:sigmad
     \end{aligned}
     \end{equation}
 
-nach den Komponenten des Magnetfeldes benötigt. Die Ableitung des Coulombterms vereinfacht sich hier wieder durch Bilden der Spur des Produkts einer antisymmetrischen Matrix mit einer symmetrischen Matrix. Die Elemente des abgeleiteten Einelektronen-Operators sind in Gleichung (\ref{eq:hmunub}) gegeben. Neu benötigt wird also die Ableitung der Austauschkorrelationsmatrix nach $B_\beta$. Durch das externe Magnetfeld und zur Wahrung der Eichinvarianz muss für \ac{mgga}-Funktionale, welche die kinetische Energiedichte beinhalten, Letztere angepasst werden.\supercite{maximoff2004nuclear} Die kinetische Energiedichte $\tau$ wird durch die eichinvariante kinetische Energiedichte 
+nach den Komponenten des Magnetfeldes benötigt. Die Ableitung des Coulombterms vereinfacht sich hier wieder durch Bilden der Spur des Produkts einer antisymmetrischen Matrix mit einer symmetrischen Matrix. Die Elemente des abgeleiteten Einelektronen-Operators sind in Gleichung (\ref{eq:hmunub}) gegeben. Neu benötigt wird also die Ableitung der Austauschkorrelationsmatrix nach $B_\beta$. Durch das externe Magnetfeld und zur Wahrung der Eichinvarianz muss für \ac{mgga}-Funktionale, welche die kinetische Energiedichte beinhalten, letztere angepasst werden.\supercite{maximoff2004nuclear} Die kinetische Energiedichte $\tau$ wird durch die eichinvariante kinetische Energiedichte 
 \begin{equation}
 \begin{aligned}
 \tilde{\tau}=&\sum_i^{N/2}\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\varphi_i\\
@@ -904,12 +908,12 @@ nach den Komponenten des Magnetfeldes benötigt. Die Ableitung des Coulombterms 
 \end{aligned}
 \end{equation}
 
-ersetzt. Analog zu Gleichung (\ref{ymunu}) werden die Matrixelemente $Y_{\mu\nu}$ als Ableitung des Funktionals nach der Dichtematrix erhalten,
+ersetzt. Analog zu Gleichung (\ref{ymunu}) werden die Matrixelemente $\tilde{Y}_{\mu\nu}$ als Ableitung des Funktionals nach der Dichtematrix erhalten,
 \begin{equation}
 \begin{aligned}
 \tilde{Y}_{\mu\nu}=&\int\frac{\partial f}{\partial \rho(\vec{r})}\chi_\mu^*\chi_\nu\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\vec{\nabla} \rho(\vec{r})\vert^2}\vec{\nabla} \rho(\vec{r})\vec{\nabla} \left(\chi_\mu^*\chi_\nu\right)\Diff3\vec{r}\\
-&+\int\frac{1}{2}\frac{\partial f}{\partial\tau}\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\Diff3\vec{r},
+&+\int\frac{1}{2}\frac{\partial f}{\partial\tau}\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\Diff3\vec{r}\, ,
 \end{aligned}
 \end{equation}
 
@@ -917,7 +921,7 @@ wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$ ist
 
 \begin{equation}\label{eq:ymunudb}
 \begin{aligned}
-Y_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}\\
+\tilde{Y}_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}\\
 =&\int\frac{\partial f}{\partial \rho(\vec{r})}\frac{\partial}{\partial B_\beta}\left[\chi_\mu^*\chi_\nu\right]_{\vec{B}=0}\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\vec{\nabla} \rho(\vec{r})\vert^2}\vec{\nabla} \rho(\vec{r})\frac{\partial}{\partial B_\beta}\left[\vec{\nabla} \left(\chi_\mu^*\chi_\nu\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
 &+\int\frac{1}{2}\frac{\partial f}{\partial\tau}\frac{\partial}{\partial B_\beta}\left[\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\right]_{\vec{B}=0}\Diff3\vec{r}\\
@@ -956,7 +960,7 @@ D_{\mu\nu}^{B_\beta}=&2\iu\sum_i\left(c_{\mu i}c_{\nu i}^{B_\beta}-c_{\mu i}^{B_
 \end{aligned}
 \end{equation}
 
-Solange bei der Berechnung keine Hybridfunktionale eingesetzt werden, welche durch die Kopplung über den Hartree-Fock-Austauschterm wieder zu einem iterativen Verfahren führen würden, ist  der endgültige Ausdruck für den Abschirmungstensor im Rahmen der \textit{uncoupled} \ac{dft} gegeben durch
+Solange bei der Berechnung keine Hybridfunktionale eingesetzt werden, welche durch die Kopplung über den Hartree-Fock-Austauschterm wieder zu einem iterativen Verfahren führen würden, ist  der endgültige Ausdruck für den Abschirmungstensor im Rahmen der \textit{uncoupled}-\ac{dft} gegeben durch
 \begin{equation}
 \sigma_{K_\alpha\beta}=\sigma_{K_\alpha\beta}^{\textrm{dia}}+\sigma_{K_\alpha\beta}^{\textrm{para}}
 \end{equation}
@@ -1001,7 +1005,7 @@ Externe Magnetfelder induzieren einen elektrischen Strom in Molekülen, sofern d
     
 und der entsprechende Bio-Savart Ausdruck ist gegeben durch
 	\begin{equation}\label{eq:sigmabio}
-	\sigma_{K_\alpha\beta}=-\varepsilon_{\alpha\delta\gamma}\int\frac{r_\delta-R_{K\delta}}{\vert\vec{r}-\vec{R}_K\vert^3}J^{B_\beta}_\gamma\Diff3\vec{r},
+	\sigma_{K_\alpha\beta}=-\varepsilon_{\alpha\delta\gamma}\int\frac{r_\delta-R_{K\delta}}{\vert\vec{r}-\vec{R}_K\vert^3}J^{B_\beta}_\gamma\Diff3\vec{r}
 	\end{equation}
 	
 	mit dem Levi-Civita-Tensor $\varepsilon_{\alpha\delta\gamma}$ und 
