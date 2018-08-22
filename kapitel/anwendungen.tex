@@ -1,5 +1,5 @@
 Die in dieser Arbeit vorgestellten Methoden wurden auf chemische Fragestellungen angewendet, um die experimentellen Befunde zu unterstützen oder besser deuten zu können.
-Der erste Abschnitt widmet sich der Untersuchung von Ringströmen in großen toroidalen Kohlenstoff-Nanoröhren mit bis zu 1000 Atomen, wofür die von einem äußeren Magnetfeld hervorgerufene Störung der Elektronendichte (\textit{magnetic response}) benötigt wird. Durch die in dieser Arbeit implementierten Methoden zur Verbesserung der Effizienz wurde die Berechnung der entsprechenden Dichtematrix in einem akzeptablen Zeitrahmen auch für Systeme dieser Größe ermöglicht. Im zweiten Abschnitt dieses Kapitels wird die Anwendung der quantenchemischen Methoden auf eine Reihe anorganischer Verbindungen beschrieben.  
+Der erste Abschnitt dieses Kapitels widmet sich der Untersuchung von Ringströmen in großen toroidalen Kohlenstoff-Nanoröhren mit bis zu 1000 Atomen, wofür die von einem äußeren Magnetfeld hervorgerufene Störung der Elektronendichte (\textit{magnetic response}) benötigt wird. Durch die in dieser Arbeit implementierten Methoden zur Verbesserung der Effizienz wurde die Berechnung der entsprechenden Dichtematrix in einem akzeptablen Zeitrahmen auch für Systeme dieser Größe ermöglicht. Im zweiten Abschnitt dieses Kapitels wird die Anwendung der quantenchemischen Methoden auf eine Reihe anorganischer Verbindungen beschrieben.  
 
 \section{Ringströme in großen toroidalen Kohlenstoff-Nanoröhren}
 1991 beschrieb Iijima\supercite{iijima1991helical} die Herstellung eines neuen Strukturtyps des Kohlenstoffs bestehend aus aufgerollten Graphenschichten, die Kohlenstoff-Nanoröhren (englisch \acp{cnt}). Im geometrischen Sinne können ideale \acp{cnt} durch Aufrollen perfekter Graphenschichten konstruiert werden und bestehen demzufolge aus verknüpften, sechsgliedrigen Kohlenstoffringen. \acp{cnt} lassen sich in chirale und achirale Strukturen unterteilen, wobei letztere entweder dem \textit{armchair}- oder \textit{zigzag}-Typ angehören. Der Chiralitätsvektor $\vec{\text{C}}_\text{h}$ wird dabei durch die beiden Parameter $(n,m)$ beschrieben und zeigt die Richtung an, in welcher die Graphenschicht aufgerollt wird. Seine Länge definiert demnach den Umfang und $\frac{\vert\vec{\text{C}}_\text{h}\vert}{2\pi}$ den Radius der resultierenden Nanoröhre. \acp{cnt} mit einer finiten Länge lassen sich durch einen weiteren Vektor $\vec{\text{T}}$, definiert durch die beiden zusätzlichen Parameter $(p,q)$, eindeutig beschreiben. Dieser zeigt in Richtung der Röhrenachse und gibt deren Länge an. Das grundlegende Konstruktionsschema ist in Abbildung \ref{abb:chiralvector} gezeigt. Aufgerollt ergibt die darin eingezeichnete graue Fläche die chirale Kohlenstoff-Nanoröhre mit den Parametern $(n=3,m=1),(p=3,q=\textrm{-}4)$.
@@ -7,9 +7,12 @@ Der erste Abschnitt widmet sich der Untersuchung von Ringströmen in großen tor
 	\centering
 	\includegraphics[width=1.0\textwidth]{vector}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Allgemeines Konstruktionsschema von (toroidalen \textit{polyhex}-)Kohlenstoff-Nanoröhren]{Allgemeines Konstruktionsschema für Kohlenstoff-Nanoröhren (oben). $a_1$ und $a_2$ sind die Basisvektoren der Elementarzelle von Graphen. Der Chiralitätsvektor $\vec{\text{C}}_\text{h}$ liegt in dem türkis eingefärbten Bereich und die gestrichelten roten Linien geben die achiralen Grenzfälle (\textit{armchair} und \textit{zigzag}) an. Der Vektor $\vec{\text{T}}$ beschreibt die Länge von finiten Röhren und $n,m,p,q$ sind ganze Zahlen. Die grau eingefärbte Fläche definiert damit eine $(n=3,m=1),(p=3,q=\textrm{-}4)$-\ac{cnt}. Struktur von \acp{cnt} (Mitte) und zu Ringen gebogene \textit{polyhex}-\acp{tcnt} (unten) mit unterschiedlichen Chiralitätsvektoren.}
+	\captionsetup{font=small, labelfont=bf}\caption[Allgemeines Konstruktionsschema von (toroidalen \textit{polyhex}-)Kohlenstoff-Nanoröhren]{Allgemeines Konstruktionsschema für Kohlenstoff-Nanoröhren \textsf{(a)}. $a_1$ und $a_2$ sind die Basisvektoren der Elementarzelle von Graphen. Der Chiralitätsvektor $\vec{\text{C}}_\text{h}$ liegt in dem türkis eingefärbten Bereich und die gestrichelten roten Linien geben die achiralen Grenzfälle (\textit{armchair} und \textit{zigzag}) an. Der Vektor $\vec{\text{T}}$ beschreibt die Länge von finiten Röhren und $n,m,p,q$ sind ganze Zahlen. Die grau eingefärbte Fläche definiert damit eine $(n=3,m=1),(p=3,q=\textrm{-}4)$-\ac{cnt}. Struktur von \acp{cnt} \textsf{(b)} und zu Ringen gebogene \textit{polyhex}-\acp{tcnt} \textsf{(c)} mit unterschiedlichen Chiralitätsvektoren.}
 \label{abb:chiralvector}
 \end{figure}
+\vfill
+\FloatBarrier
+\newpage
 
 Bereits kurz nach Entdeckung der geraden Kohlenstoff-Nanoröhren rückten auch gebogene Strukturen immer mehr in den Fokus der Forschung. Experimentell beobachtete \acp{cnt} beinhalten beispielsweise auch fünf- und siebengliedrige Kohlenstoffringe.\supercite{ichihashi1992pentagons} Diese Defekte führen zu positiven bzw. negativen Krümmungen, wodurch verbogene und verdrillte Strukturen entstehen. Ein besonderer Strukturtyp darunter sind die ringförmigen oder toroidalen Kohlenstoff-Nanoröhren (englisch \acfp{tcnt}), erstmals Ende der 90er-Jahre von Liu\supercite{liu1997c} beobachtet. Seitdem wurden mehrere Methoden zur Herstellung solcher \acp{tcnt} vorgestellt, beispielsweise laserinduziertes Wachstum,\supercite{liu1997c} Ultraschallbehandlungen,\supercite{martel1999rings,martel1999ring} organische Reaktionen,\supercite{sano2001ring,geng2008synthesis} thermische Zersetzung von Kohlenwasserstoffgasen\supercite{ahlskog1999ring} und \ac{cvd}\supercite{song2006large,zhou2006ring}. Diese \acp{tcnt} haben üblicherweise einen Torusdurchmesser von einigen hundert Nanometer, einen Röhrendurchmesser von etwa \unit[5--20]{nm} und können aus einwandigen \acp{cnt} (englisch \acp{swnt}),\supercite{martel1999rings,martel1999ring,sano2001ring,geng2008synthesis,komatsu2006ultrasonic,guo2007spontaneously} zweiwandigen,\supercite{colomer2003rings} dreiwandigen\supercite{yu2006rings} oder mehrwandigen\supercite{ahlskog1999ring} \acp{cnt} bestehen. Weitere Strukturtypen sind auch in einem kürzlich erschienen Übersichtsartikel\supercite{liu2014curved} zusammengefasst.
 
@@ -32,6 +35,7 @@ Im Folgenden werden die Ringströme für eine Reihe unterschiedlicher \acp{tcnt}
 	\captionsetup{font=small, labelfont=bf}\caption[Konstruktionsschema von toroidalen Kohlenstoff-Nanoröhren mit fünf- und siebengliedrigen Ringen]{Konstruktionsschema von toroidalen Kohlenstoff-Nanoröhren mit fünf- und siebengliedrigen Ringen. Reproduziert mit Erlaubnis von Referenz \cite{beuerle2011optical}. Copyright 2011 John Wiley and Sons.}
 \label{abb:tcntkonstruktion}
 \end{figure}
+\FloatBarrier
 Eine eindeutige Definition dieser \acp{tcnt} erfolgt durch die Angabe eines Chiralitätsvektors $(n,m)$ und 4 weiterer Parameter $(n_{75},n_{77},n_{55},s)$ (Abbildung \ref{abb:tcntkonstruktion}, rechte Seite). Im Einzelnen geben die Parameter $n_{75}$, $n_{77}$ und $n_{55}$ den Abstand zwischen den Heptagonen und Pentagonen, Heptagonen und Heptagonen sowie Pentagonen und Pentagonen an. $n_{75}$ beschreibt damit die Breite der zugrunde liegenden \ac{cnt}, $n_{77}$ die Höhe der inneren Wand des polygonalen Prismas und $n_{55}$ die Höhe der äußeren Wand. Der Parameter $s$ gibt die Länge der einzelnen Segmente an. Im Gegensatz zu den \acp{cnt} zeigt der Chiralitätsvektor in diesem Schema in die Richtung der Röhrenachse und nicht senkrecht dazu. Die fünf- und siebengliedrigen Ringe liegen bei diesem Konstruktionsschema unter- und oberhalb des Äquators der entsprechenden \ac{tcnt}. Im weiteren Verlauf werden diese Strukturen als \glqq Chuang-Strukturtyp\grqq{} bezeichnet. Die untersuchten Strukturen besitzen die Parameter $(2,1,1,s=1,\dots,9),(1,0)$ (\textit{armchair}) und $(1,2,2,s=1,\dots,5),(1,1)$ (\textit{zigzag}) und ihnen liegen $(4,4)$ \textit{armchair}- und $(7,0)$ \textit{zigzag}-\acp{cnt} zugrunde.\\
 
 Die von Dunlap vorgeschlagene Verknüpfung von $(n,n)$-\textit{armchair}- und $(2n,0)$-\textit{zigzag}-\acp{cnt} führt zu einer alternativen \ac{tcnt}-Struktur. Das grundsätzliche Vorgehen ist in Abbildung \ref{abb:dunlap-konstruktion} gezeigt. Hier wird die $(n,n)$-\ac{cnt} in einem Winkel von etwa 30$^\circ$ geschnitten und mit einer entsprechenden $(2n,0)$-\ac{cnt} verknüpft, wodurch ebenfalls fünf- und siebengliedrige Kohlenstoffringe eingeführt werden. Im Unterschied zum \glqq Chuang-Strukturtyp\grqq{} liegen diese jedoch auf dem Äquator. Durch die Kombination von jeweils sechs \textit{armchair}- und \textit{zigzag}-\ac{cnt}-Einheiten, wie sie auf der rechten Seite in Abbildung \ref{abb:dunlap-konstruktion} dargestellt sind, resultiert eine \textit{D}$_{6\text{h}}$-symmetrische \ac{tcnt}. Das gemeinsame Vorhandensein von \textit{armchair}- und \textit{zigzag}-\acp{cnt} in diesem \glqq Dunlap-Strukturtyp\grqq{} lässt andere elektronische und magnetische Eigenschaften vermuten. Es werden zwei unterschiedliche Serien betrachtet: $2,\dots,7(4,4),1(8,0)$ mit zunehmender Länge der \textit{armchair}-\ac{cnt} und der kürzest möglichen Länge der \textit{zigzag}-\ac{cnt} (\glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{}) und die Strukturen $2(4,4),2(8,0)$; $3(4,4),2(8,0)$; $2(4,4),3(8,0)$; $3(4,4),3(8,0)$ bei denen die Länge der \textit{zigzag}-\ac{cnt} ebenfalls zunimmt (\glqq Dunlap-\textit{armchair}-\textit{zigzag} 2\grqq{}).
@@ -45,45 +49,7 @@ Die von Dunlap vorgeschlagene Verknüpfung von $(n,n)$-\textit{armchair}- und $(
 \FloatBarrier
 
 Für die \textit{polyhex}-\acp{tcnt} wurden $(4,4)$-\textit{armchair}- und $(7,0)$-\textit{zigzag}-Strukturen mit entsprechender Atomanzahl generiert. Eine Übersicht aller untersuchten Strukturen ist in der Tabelle \ref{tab:tcnt} gegeben und Abbildung \ref{abb:tcnttypen} zeigt für jeden darin vorkommenden Strukturtyp exemplarisch eine \ac{tcnt} mit optimierten Strukturparametern. Die Optimierung der Strukturparameter aller Verbindungen erfolgte unter Symmetrieausnutzung mit dem TPSS-Funktional\supercite{tao2003climbing}, der Basis def2-SVP\supercite{weigend2005balanced} sowie der entsprechenden Auxiliarbasis\supercite{weigend2006accurate}. Zusätzlich wurde Grimmes Dispersionskorrektur D3\supercite{grimme2010consistent,grimme2011effect} verwendet. Das \ac{marij}-Verfahren wurde sowohl bei der Optimierung\supercite{sierka2003fast} als auch bei der Berechnung der magnetischen Response\supercite{reiter2017calculation} ausgenutzt. Letztere wurde, sofern nicht explizit erwähnt, ebenfalls mit dem TPSS-Funktional und der Basis def2-SVP berechnet. Die eigentliche Berechnung der Ringströme erfolgte mit \ac{gimic}\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations}.
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=1.0\textwidth]{tcnttypen}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Strukturtypen von toroidalen Kohlenstoff-Nanoröhren]{Unterschiedliche Strukturtypen von toroidalen Kohlenstoff-Nanoröhren (\acp{tcnt}) mit def2-SVP/TPSS-optimierten Strukturparametern.}
-\label{abb:tcnttypen}
-\end{figure}
 
-\subsection{Stabilität}
-In Abbildung \ref{abb:tcntbindungsenergie} ist für jede der berechneten Strukturen die Bindungsenergie pro Kohlenstoffatom aufgetragen. Es zeigt sich, dass bei den hier betrachteten Ringgrößen die \textit{polyhex}-\acp{tcnt} energetisch gegenüber den anderen Strukturtypen deutlich benachteiligt sind. Zudem kommt es bei der Optimierung der Strukturparameter für diese \acp{tcnt} zu einer Verformung des Nanoröhrenquerschnitts. Aufgrund des vergleichsweise kleinen Torusdurchmessers werden auf der Innenseite zu kurze und auf der Außenseite zu lange Kohlenstoffabstände erhalten. Durch die Verformung zu einem elliptischen Röhrenquerschnitt wird die Spannung im Ring reduziert. Aus Abbildung \ref{abb:tcntbindungsenergie} ist aber ebenfalls ersichtlich, dass die Benachteiligung der \textit{polyhex}-\acp{tcnt} mit zunehmender Größe schnell abnimmt und für große Ringe vermutlich verschwindet. Somit können die betrachteten Systeme als Modellverbindungen für die großen, thermodynamisch stabilen Analoga angesehen und ihre elektronischen und magnetischen Eigenschaften auf diese extrapoliert werden.
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{tcntbindungsenergie}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Bindungsenergien toroidaler Kohlenstoff-Nanoröhren]{Bindungsenergien pro Kohlenstoffatom in unterschiedlichen Strukturtypen toroidaler Kohlenstoff-Nanoröhren.}
-\label{abb:tcntbindungsenergie}
-\end{figure}
-
-\subsection{Ringströme}
-
-Die berechneten Ringströme für alle untersuchten Systeme sind zusammen mit den HOMO-LUMO-Gaps in Tabelle \ref{tab:tcnt} aufgelistet. Zusätzlich ist der Zusammenhang des Gesamtringstroms mit der Systemgröße in Abbildung \ref{abb:tcntcurvssize} und mit dem HOMO-LUMO-Gap in Abbildung \ref{abb:tcntcurvsgap} aufgetragen. Wie der Tabelle zu entnehmen ist, besitzen alle \textit{polyhex}-\textit{armchair}-\acp{tcnt} einen großen diatropischen Gesamtringstrom und können damit als aromatisch klassifiziert werden. Dieser Gesamtringstrom setzt sich aus den gegenläufigen diatropischen und paratropischen Beiträgen zusammen und steigt weitgehend linear mit der Systemgröße von \unit[84.4]{nA/T} für C$_{480}$ auf \unit[235.7]{nA/T} für C$_{960}$ an (siehe auch Abbildung \ref{abb:tcntcurvssize}). Im Gegensatz dazu sind die diatropischen und paratropischen Beiträge in den \textit{polyhex}-\textit{zigzag}-\acp{tcnt} in etwa von derselben Größe und der Gesamtringstrom verschwindet nahezu vollkommen. Dieser Befund passt gut zur Einteilung in metallische (mit Gesamtringstrom) und isolierende (ohne Gesamtringstrom) \acp{tcnt} nach Referenz \cite{zhang2005electronic}. Für die anderen Strukturtypen (Chuang und Dunlap) sind keine solch einfachen Regeln zur Einteilung bekannt. Interessanterweise besitzen die betrachteten \glqq Chuang-\textit{armchair}-\acp{tcnt}\grqq{}, welche aus metallischen \acp{cnt} aufgebaut sind, mit Ausnahme von C$_{576}$ ebenfalls keinen Gesamtringstrom. Im C$_{576}$ ist dieser mit \unit[57.7]{nA/T} auch nur etwa halb so groß wie in der entsprechenden \textit{polyhex}-\ac{tcnt} mit derselben Atomanzahl (\unit[112.8]{nA/T}). Ein ähnliches Bild ergibt sich für die entsprechenden \glqq Chuang \textit{zigzag}-\acp{tcnt}\grqq{}. Hier wird ebenfalls nur eine Verbindung mit großem Ringstrom erhalten. Diese besitzt im Vergleich zu den anderen Strukturen jedoch einen paratropischen Gesamtringstrom und ist damit als antiaromatisch einzuordnen. Die Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{} zeigt ein ähnliches Verhalten wie die \textit{polyhex}-\textit{armchair}-Verbindungen derselben Größe. Alle Verbindungen dieses Typs besitzen ebenfalls einen großen Gesamtringstrom. Im Allgemeinen fällt dieser jedoch etwas kleiner aus als in den \textit{polyhex}-Strukturen. Weiterhin steigt dieser nicht linear mit der Systemgröße an, denn die Zunahme des Gesamtringstroms wird mit steigender Atomanzahl geringer. Unerwarteterweise fällt die Verbindung C$_{672}$ mit einem paratropischen Gesamtringstrom von \unit[$-$94.6]{nA/T} aus der Reihe, alle anderen Verbindungen dieses Strukturtyps besitzen diatropische Gesamtringströme. An dieser Stelle kann jedoch festgehalten werden, dass das kurze nichtmetallische \textit{zigzag}-\ac{cnt}-Segment den Gesamtringstrom in diesen Verbindungen nicht aufhebt. In der zweiten Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 2\grqq{} nimmt die Länge dieses Segments zu, was zu etwas niedrigeren Gesamtringströmen im Vergleich zur ersten Serie führt. Für C$_{960}$ verschwindet dieser vollkommen. \\
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{tcntcurvssize}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Zusammenhang zwischen Gesamtringstrom und Systemgröße]{Zusammenhang zwischen Gesamtringstrom und Systemgröße.}
-\label{abb:tcntcurvssize}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{tcntcurvsgap}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Zusammenhang zwischen Gesamtringstrom und HOMO-LUMO-GAP]{Zusammenhang zwischen Gesamtringstrom und HOMO-LUMO-GAP. Alle in der vorliegenden Arbeit untersuchten Verbindungen, welche einen Gesamtringstrom aufweisen, besitzen eine HOMO-LUMO-Gap von $\leq$ \unit[0.2]{eV}.}
-\label{abb:tcntcurvsgap}
-\end{figure}
-\FloatBarrier
 \begin{table}[htbp!]
   \centering
 \captionsetup{tablewithin = chapter}
@@ -136,24 +102,73 @@ Die berechneten Ringströme für alle untersuchten Systeme sind zusammen mit den
     \end{tabular}}%
   \label{tab:tcnt}%
 \end{table}%
+\vfill
 \FloatBarrier
 \newpage
-Die bisherigen Rechnungen wurden ausschließlich mit dem TPSS-Funktional durchgeführt. Im Folgenden wird die Abhängigkeit der Ergebnisse vom verwendeten Funktional exemplarisch für die Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{} untersucht, wobei die mit dem TPSS-Funktional optimierten Strukturparameter verwendet wurden. Eine graphische Darstellung der Ergebnisse ist in Abbildung \ref{abb:tcntfunktional} gezeigt. Der Gesamtringstrom aller Verbindungen wurde dafür erneut mit dem M06-2x-Funktional\supercite{zhao2008m06} berechnet, welches 54 \% Hartree-Fock-Austausch beinhaltet. Für die beiden \acp{tcnt} C$_{576}$ und C$_{672}$ dieser Serie erfolgte zusätzlich die Berechnung mit den Funktionalen KT3\supercite{keal2004semiempirical}, PBE\supercite{perdew1996generalized}, TPSSh\supercite{staroverov2003comparative}, B3-LYP\supercite{becke1993density,lee1988development,stephens1994ab}, PBE0\supercite{adamo1999toward} und M06\supercite{zhao2008m06}. Der Vergleich zwischen TPSS und M06-2x zeigt, dass es mit dem Hybridfunktional zu einem allgemeinen Anstieg des Gesamtringstroms kommt. Der Trend innerhalb der Serie bleibt dabei jedoch erhalten. Aus den Berechnungen der anderen Funktionale kann ein nahezu linearer Anstieg des Gesamtringstroms mit zunehmenden Hartree-Fock-Austausch beobachtet werden.
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{tcntfunktional}
+	\includegraphics[width=1.0\textwidth]{tcnttypen}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Strukturtypen von toroidalen Kohlenstoff-Nanoröhren]{Unterschiedliche Strukturtypen von toroidalen Kohlenstoff-Nanoröhren (\acp{tcnt}) mit def2-SVP/TPSS-optimierten Strukturparametern.}
+\label{abb:tcnttypen}
+\end{figure}
+
+\subsection{Stabilität}
+In Abbildung \ref{abb:tcntbindungsenergie} ist für jede der berechneten Strukturen die Bindungsenergie pro Kohlenstoffatom aufgetragen. Es zeigt sich, dass bei den hier betrachteten Ringgrößen die \textit{polyhex}-\acp{tcnt} energetisch gegenüber den anderen Strukturtypen deutlich benachteiligt sind. Zudem kommt es bei der Optimierung der Strukturparameter für diese \acp{tcnt} zu einer Verformung des Nanoröhrenquerschnitts. Aufgrund des vergleichsweise kleinen Torusdurchmessers werden auf der Innenseite zu kurze und auf der Außenseite zu lange Kohlenstoffabstände erhalten. Durch die Verformung zu einem elliptischen Röhrenquerschnitt wird die Spannung im Ring reduziert. Aus Abbildung \ref{abb:tcntbindungsenergie} ist aber ebenfalls ersichtlich, dass die Benachteiligung der \textit{polyhex}-\acp{tcnt} mit zunehmender Größe schnell abnimmt und für große Ringe vermutlich verschwindet. Somit können die betrachteten Systeme als Modellverbindungen für die großen, thermodynamisch stabilen Analoga angesehen und ihre elektronischen und magnetischen Eigenschaften auf diese extrapoliert werden.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.68\textwidth]{tcntbindungsenergie}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Bindungsenergie toroidaler Kohlenstoff-Nanoröhren]{Bindungsenergie pro Kohlenstoffatom in unterschiedlichen Strukturtypen toroidaler Kohlenstoff-Nanoröhren.}
+\label{abb:tcntbindungsenergie}
+\end{figure}
+
+\subsection{Ringströme}
+
+Die berechneten Ringströme für alle untersuchten Systeme sind zusammen mit den HOMO-LUMO-Gaps in Tabelle \ref{tab:tcnt} aufgelistet. Zusätzlich ist der Zusammenhang des Gesamtringstroms mit der Systemgröße $N_\textrm{C}$ in Abbildung \ref{abb:tcntcurvssize} und mit dem HOMO-LUMO-Gap in Abbildung \ref{abb:tcntcurvsgap} aufgetragen. Wie der Tabelle zu entnehmen ist, besitzen alle \textit{polyhex}-\textit{armchair}-\acp{tcnt} einen großen diatropischen Gesamtringstrom und können damit als aromatisch klassifiziert werden. Dieser Gesamtringstrom setzt sich aus den gegenläufigen diatropischen und paratropischen Beiträgen zusammen und steigt weitgehend linear mit der Systemgröße von \unit[84.4]{nA/T} für C$_{480}$ auf \unit[235.7]{nA/T} für C$_{960}$ an (siehe auch Abbildung \ref{abb:tcntcurvssize}). Im Gegensatz dazu sind die diatropischen und paratropischen Beiträge in den \textit{polyhex}-\textit{zigzag}-\acp{tcnt} in etwa von derselben Größe und der Gesamtringstrom verschwindet nahezu vollkommen. Dieser Befund passt gut zur Einteilung in metallische (mit Gesamtringstrom) und isolierende (ohne Gesamtringstrom) \acp{tcnt} nach Referenz \cite{zhang2005electronic}. Für die anderen Strukturtypen (Chuang und Dunlap) sind keine solch einfachen Regeln zur Einteilung bekannt. Interessanterweise besitzen die betrachteten \glqq Chuang-\textit{armchair}-\acp{tcnt}\grqq{}, welche aus metallischen \acp{cnt} aufgebaut sind, mit Ausnahme von C$_{576}$ ebenfalls keinen Gesamtringstrom. Im C$_{576}$ ist dieser mit \unit[57.7]{nA/T} auch nur etwa halb so groß wie in der entsprechenden \textit{polyhex}-\ac{tcnt} mit derselben Atomanzahl (\unit[112.8]{nA/T}). Ein ähnliches Bild ergibt sich für die entsprechenden \glqq Chuang \textit{zigzag}-\acp{tcnt}\grqq{}. Hier wird ebenfalls nur eine Verbindung mit großem Ringstrom erhalten. Diese besitzt im Vergleich zu den anderen Strukturen jedoch einen paratropischen Gesamtringstrom und ist damit als antiaromatisch einzuordnen. Die Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{} zeigt ein ähnliches Verhalten wie die \textit{polyhex}-\textit{armchair}-Verbindungen derselben Größe. Alle Verbindungen dieses Typs besitzen ebenfalls einen großen Gesamtringstrom. Im Allgemeinen fällt dieser jedoch etwas kleiner aus als in den \textit{polyhex}-Strukturen. Weiterhin steigt dieser nicht linear mit der Systemgröße an, denn die Zunahme des Gesamtringstroms wird mit steigender Atomanzahl geringer. Unerwarteterweise fällt die Verbindung C$_{672}$ mit einem paratropischen Gesamtringstrom von \unit[$-$94.6]{nA/T} aus der Reihe, alle anderen Verbindungen dieses Strukturtyps besitzen diatropische Gesamtringströme. An dieser Stelle kann jedoch festgehalten werden, dass das kurze nichtmetallische \textit{zigzag}-\ac{cnt}-Segment den Gesamtringstrom in diesen Verbindungen nicht aufhebt. In der zweiten Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 2\grqq{} nimmt die Länge dieses Segments zu, was zu etwas niedrigeren Gesamtringströmen im Vergleich zur ersten Serie führt. Für C$_{960}$ verschwindet dieser vollkommen. \\
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.68\textwidth]{tcntcurvssize}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Zusammenhang zwischen Gesamtringstrom und Systemgröße]{Zusammenhang zwischen Gesamtringstrom und Systemgröße.}
+\label{abb:tcntcurvssize}
+\end{figure}
+\vfill
+\FloatBarrier
+\newpage
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.68\textwidth]{tcntcurvsgap}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[Zusammenhang zwischen Gesamtringstrom und HOMO-LUMO-Gap]{Zusammenhang zwischen Gesamtringstrom und HOMO-LUMO-Gap. Alle in der vorliegenden Arbeit untersuchten Verbindungen, welche einen Gesamtringstrom aufweisen, besitzen eine HOMO-LUMO-Gap von $\leq$ \unit[0.2]{eV}.}
+\label{abb:tcntcurvsgap}
+\end{figure}
+\FloatBarrier
+
+Die bisherigen Rechnungen wurden ausschließlich mit dem TPSS-Funktional durchgeführt. Im Folgenden wird die Abhängigkeit der Ergebnisse vom verwendeten Funktional exemplarisch für die Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{} untersucht, wobei die mit dem TPSS-Funktional optimierten Strukturparameter verwendet wurden. Eine graphische Darstellung der Ergebnisse ist in Abbildung \ref{abb:tcntfunktional} gezeigt. 
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.68\textwidth]{tcntfunktional}
 	\captionsetup{figurewithin = chapter}
 	\captionsetup{font=small, labelfont=bf}\caption[Funktionaleinflüsse auf Ringströme]{Einflüsse unterschiedlicher Dichtefunktionale (mit variierendem Hartree-Fock-
 Austausch) auf den Gesamtringstrom in der Serie \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{}.}
 \label{abb:tcntfunktional}
 \end{figure}
+\FloatBarrier
 
+Der Gesamtringstrom aller Verbindungen wurde dafür erneut mit dem M06-2x-Funktional\supercite{zhao2008m06} berechnet, welches 54 \% Hartree-Fock-Austausch beinhaltet. Für die beiden \acp{tcnt} C$_{576}$ und C$_{672}$ dieser Serie erfolgte zusätzlich die Berechnung mit den Funktionalen KT3\supercite{keal2004semiempirical}, PBE\supercite{perdew1996generalized}, TPSSh\supercite{staroverov2003comparative}, B3-LYP\supercite{becke1993density,lee1988development,stephens1994ab}, PBE0\supercite{adamo1999toward} und M06\supercite{zhao2008m06}. Der Vergleich zwischen TPSS und M06-2x zeigt, dass es mit dem Hybridfunktional zu einem allgemeinen Anstieg des Gesamtringstroms kommt. Der Trend innerhalb der Serie bleibt dabei jedoch erhalten. Aus den Berechnungen der anderen Funktionale kann ein nahezu linearer Anstieg des Gesamtringstroms mit zunehmenden Hartree-Fock-Austausch beobachtet werden.
+
+\bigskip
 In den beiden Abbildungen \ref{abb:homolumoarmchair} und \ref{abb:homolumozigzag} sind die HOMOs und LUMOs für ausgewählte Verbindungen der einzelnen Strukturtypen gezeigt. Diese sind in allen Fällen weitgehend über den gesamten Torus delokalisiert, was jedoch bereits alleine aus Symmetriegründen so sein muss. Bei den fünf- und siebengliedrige Kohlenstoffringe beinhaltenden \acp{tcnt} ist häufig eine leichte Lokalisierung an den pentagonalen und heptagonalen Einheiten zu erkennen. Die Delokalisierung der Orbitale ist jedoch kein ausreichendes Kriterium für das Auftreten eines großen Gesamtringstroms. Wichtiger ist die geometrische und damit einhergehende elektronische Struktur der \acp{tcnt}. Die Auftragung des Gesamtringstroms gegen das berechnete HOMO-LUMO-Gap in Abbildung \ref{abb:tcntcurvsgap} zeigt, dass letzteres für alle Verbindungen mit großem Gesamtringstrom kleiner als \unit[0.2]{eV} ist. Dies ist demnach eine notwendige, aber nicht hinreichende Bedingung für das Auftreten eines Ringstromes, da ebenfalls Strukturen mit kleinem Gap aber ohne Gesamtringstrom auftreten. Insbesondere in den \textit{polyhex}-\textit{armchair}- und \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{} Strukturtypen treten große Ringströme auf. Beiden ist gemeinsam, dass sie (im Wesentlichen) aus metallischen \acp{cnt} aufgebaut sind. Dies trifft auch auf den \glqq Chuang-\textit{armchair}\grqq{} Strukturtyp zu, jedoch verschwindet der Gesamtringstrom hier in den meisten Fällen oder ist deutlich kleiner. Daraus kann die Schlussfolgerung gezogen werden, dass die Lage und Orientierung der Pentagone und Heptagone innerhalb der \acp{tcnt} ebenfalls einen Einfluss auf den Gesamtringstrom hat. Liegen diese innerhalb des Äquators, treten größere Gesamtringströme auf als wenn sie unter- und oberhalb des Äquators liegen. Weiterhin kann festgehalten werden, dass es insbesondere in den \textit{polyhex}-\textit{armchair}-\acp{tcnt} zu einem weitgehend linearen Anstieg des Gesamtringstroms mit zunehmender Systemgröße kommt. Dies legt die Vermutung nahe, dass diese Ringströme ebenfalls in deutlich größeren und damit thermodynamisch stabilen \textit{polyhex}-\acp{tcnt} auftreten.
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{homolumoarmchair}
+	\includegraphics[width=0.92\textwidth]{homolumoarmchair}
 	\captionsetup{figurewithin = chapter}
 	\captionsetup{font=small, labelfont=bf}\caption[HOMO und LUMO von toroidalen Kohlenstoff-Nanoröhren 1]{HOMOs (links) und LUMOs (rechts) von toroidalen Kohlenstoff-Nanoröhren (\acp{tcnt}). C$_{576}$: \textit{polyhex}-\textit{armchair}-\ac{tcnt} (4,4),($-$36,36) (oben), C$_{576}$: Chuang-\textit{armchair}-\ac{tcnt} (2,1,1,5),(1,0) (Mitte) und C$_{576}$: Dunlap-\textit{armchair-zigzag}-\ac{tcnt} 3(4,4),1(8,0) (unten). Die Konturen von HOMO und LUMO wurden bei \unit[0.018]{a.u.} (grün) und \unit[$-$0.018]{a.u.} (rot) gezeichnet.}
 \label{abb:homolumoarmchair}
@@ -161,7 +176,7 @@ In den beiden Abbildungen \ref{abb:homolumoarmchair} und \ref{abb:homolumozigzag
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=0.9\textwidth]{homolumozigzag}
+	\includegraphics[width=0.92\textwidth]{homolumozigzag}
 	\captionsetup{figurewithin = chapter}
 	\captionsetup{font=small, labelfont=bf}\caption[HOMO und LUMO von toroidalen Kohlenstoff-Nanoröhren 2]{HOMOs (links) und LUMOs (rechts) von toroidalen Kohlenstoff-Nanoröhren (\acp{tcnt}). C$_{588}$: \textit{polyhex}-\textit{zigzag}-\ac{tcnt} (7,0),($-$21,42) (oben), C$_{588}$: Chuang-\textit{zigzag}-\ac{tcnt} (1,2,2,3),(1,1) (Mitte) und C$_{864}$: Dunlap-\textit{armchair-zigzag}-\ac{tcnt} 2(4,4),3(8,0) (unten). Die Konturen von HOMO und LUMO wurden bei \unit[0.018]{a.u.} (grün) und \unit[$-$0.018]{a.u.} (rot) gezeichnet.}
 \label{abb:homolumozigzag}
@@ -169,7 +184,7 @@ In den beiden Abbildungen \ref{abb:homolumoarmchair} und \ref{abb:homolumozigzag
 
 \FloatBarrier
 \subsection{Zusammenfassung}
-Zusammenfassend zeigen die Untersuchungen unterschiedlicher \ac{tcnt}-Strukturtypen, dass große Ringströme in diesen Systemen auftreten können. Das Auftreten hängt jedoch stark von den strukturellen Parametern und der damit einhergehenden elektronischen Struktur der jeweiligen Verbindung ab. Tendenziell wird insbesondere in \textit{polyhex}-\acp{tcnt} ein großer Ringstrom erhalten, was für eine starke Delokalisierung der Elektronen darin spricht. Dies steht in guter Übereinstimmung mit dem metallischen Charakter dieser Strukturen. Eine Untersuchung des Einflusses der Ringgröße auf den Strom konnte dabei zeigen, dass letztgenannter mit zunehmender Systemgröße der \ac{tcnt} steigt. Auch \acp{tcnt} mit fünf- und siebengliedrigen Ringen können große Ringströme aufweisen. Diese fallen in der Regel jedoch etwas kleiner als bei den entsprechenden \textit{polyhex}-Strukturen aus, und sind stark abhängig von der Lage und Orientierung der pentagonalen und heptagonalen Einheiten. Notwendig für das Auftreten von Ringströmen ist zudem ein möglichst kleines HOMO-LUMO-GAP, welches alleine jedoch noch keine hinreichende Bedingung darstellt.
+Zusammenfassend zeigen die Untersuchungen unterschiedlicher \ac{tcnt}-Strukturtypen, dass große Ringströme in diesen Systemen auftreten können. Das Auftreten hängt jedoch stark von den strukturellen Parametern und der damit einhergehenden elektronischen Struktur der jeweiligen Verbindung ab. Tendenziell wird insbesondere in \textit{polyhex}-\acp{tcnt} ein großer Ringstrom erhalten, was für eine starke Delokalisierung der Elektronen darin spricht. Dies steht in guter Übereinstimmung mit dem metallischen Charakter dieser Strukturen. Eine Untersuchung des Einflusses der Ringgröße auf den Strom konnte dabei zeigen, dass letztgenannter mit zunehmender Systemgröße der \ac{tcnt} steigt. Auch \acp{tcnt} mit fünf- und siebengliedrigen Ringen können große Ringströme aufweisen. Diese fallen in der Regel jedoch etwas kleiner als bei den entsprechenden \textit{polyhex}-Strukturen aus, und sind stark abhängig von der Lage und Orientierung der pentagonalen und heptagonalen Einheiten. Notwendig für das Auftreten von Ringströmen ist zudem ein möglichst kleines HOMO-LUMO-Gap, welches alleine jedoch noch keine hinreichende Bedingung darstellt.
 
 \section{Anwendungen in der anorganischen Chemie}
 \FloatBarrier
@@ -208,7 +223,7 @@ Diese Befunde lassen sich dadurch erklären, dass im Porphyrin eine völlig ande
 	\centering
 	\includegraphics[width=1.0\textwidth]{1bohr}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Porphyrin, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$: \aclu{lic-}Plots der Ringströme}]{\aclu{lic-}Plots der Ringströme in Porphyrin (oben links), $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ (oben rechts), B$_8$S$_8$(S$_2$)$_4$ (unten links) und B$_8$Se$_8$(Se$_2$)$_4$ (unten rechts) \unit[1]{$a_0$} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.\,u.} (blau) und \unit[0.07]{a.\,u.}}
+	\captionsetup{font=small, labelfont=bf}\caption[{Porphyrin, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$: \aclu{lic-}Plots der Ringströme}]{\aclu{lic-}Plots der Ringströme in Porphyrin \textsf{(a)}, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ \textsf{(b)}, B$_8$S$_8$(S$_2$)$_4$ \textsf{(c)} und B$_8$Se$_8$(Se$_2$)$_4$ \textsf{(d)} \unit[1]{$a_0$} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.\,u.} (blau) und \unit[0.07]{a.\,u.}}
 \label{abb:lic}
 \end{figure}
 
@@ -219,7 +234,7 @@ Das fehlende $\pi$-System im $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ sorgt für eine
 	\centering
 	\includegraphics[width=1.0\textwidth]{komplexierung}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildungen der hypothetischen Komplexe [M@Hg$_8$Te$_8$(Te$_2$)$_4]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$)}]{{Abbildung der hypothetischen Komplexe [M@Hg$_8$Te$_8$(Te$_2$)$_4]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$ (oben links), Cu$^+$ (oben rechts), Ce$^{4+}$ (unten links) und Ti$^{4+}$ (unten rechts))} zur Veranschaulichung der strukturellen Flexibilität von $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ (Quecksilber=silber, Tellur=orangebraun, Zink=lilablau, Kupfer=kupfer, Cer=hellgelb, Titan=türkis). }
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildungen der hypothetischen Komplexe [M@Hg$_8$Te$_8$(Te$_2$)$_4]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$, Cu$^+$ , Ce$^{4+}$ und Ti$^{4+}$)}]{{Abbildung der hypothetischen Komplexe [M@Hg$_8$Te$_8$(Te$_2$)$_4]^{(8-q)-}$ (M$^{q+}$ = Zn$^{2+}$ \textsf{(a)}, Cu$^+$ \textsf{(b)}, Ce$^{4+}$ \textsf{(c)} und Ti$^{4+}$ \textsf{(d)})} zur Veranschaulichung der strukturellen Flexibilität von $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ (Quecksilber=silber, Tellur=orangebraun, Zink=lilablau, Kupfer=kupfer, Cer=hellgelb, Titan=türkis). }
 \label{abb:komplexierung}
 \end{figure}
 
@@ -271,7 +286,7 @@ Aufgrund der vergleichsweise langen Zeitskala bei \ac{nmr}-Experimenten kann die
 	\centering
 	\includegraphics[width=1.0\textwidth]{snnmrspectra}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{$^{119}$Sn-\ac{nmr}-Spektren von [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}]{Experimentelle $^{119}$Sn-\ac{nmr}-Spektren in DMF-d$_7$ von [K(crypt-222)]$_3$\{[Co@Sn$_6$Sb$_6$]$^{3-}$\}$_{0.83}$\{[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$\}$_{0.17}\cdot$2dmf$\cdot$2tol (oben) und [K(crypt-222)]$_3$[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$ (unten).}
+	\captionsetup{font=small, labelfont=bf}\caption[{$^{119}$Sn-\ac{nmr}-Spektren von [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}]{Experimentelle $^{119}$Sn-\ac{nmr}-Spektren in DMF-d$_7$ von [K(crypt-222)]$_3$\{[Co@Sn$_6$Sb$_6$]$^{3-}$\}$_{0.83}$\{[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$\}$_{0.17}\cdot$2dmf$\cdot$2tol \textsf{(a)} und [K(crypt-222)]$_3$[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$ \textsf{(b)}.}
 \label{abb:expsnnmr}
 \end{figure}
 \FloatBarrier
@@ -417,7 +432,7 @@ Zur weiteren Untersuchung dieser Erkenntnisse wurde eine Zerlegung des diamagnet
 	\centering
 	\includegraphics[width=0.65\textwidth]{cvhabc}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH, IMesPH und $[$SIMesPGa$^\textit{t}$Bu$_2]_2$}]{ SIMesPH, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (a). IMesPH, IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den (b). $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ (c) (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange und Gallium=rosa). Die Wasserstoffatome wurden bei (c) zur besseren Veranschaulichung weggelassen.}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH, IMesPH und $[$SIMesPGa$^\textit{t}$Bu$_2]_2$}]{ SIMesPH, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den \textsf{(a)}. IMesPH, IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den \textsf{(b)}. $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ \textsf{(c)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange und Gallium=rosa). Die Wasserstoffatome wurden bei \textsf{(c)} zur besseren Veranschaulichung weggelassen.}
 \label{abb:cvhabc}
 \end{figure}
 
@@ -425,7 +440,7 @@ Zur weiteren Untersuchung dieser Erkenntnisse wurde eine Zerlegung des diamagnet
 	\centering
 	\includegraphics[width=0.65\textwidth]{cvhde}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl und K(SIMesP)$_3$Al$^\textit{t}$Bu}]{SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl (d). K(SIMesP)$_3$Al$^\textit{t}$Bu (e) (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Chlor=grün, Kalium=lila und Aluminium=hellrosa). Die Wasserstoffatome wurden bei (e) zur besseren Veranschaulichung weggelassen.}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl und K(SIMesP)$_3$Al$^\textit{t}$Bu}]{SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl \textsf{(d)}. K(SIMesP)$_3$Al$^\textit{t}$Bu \textsf{(e)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Chlor=grün, Kalium=lila und Aluminium=hellrosa). Die Wasserstoffatome wurden bei \textsf{(e)} zur besseren Veranschaulichung weggelassen.}
 \label{abb:cvhde}
 \end{figure}
 
@@ -433,7 +448,7 @@ Zur weiteren Untersuchung dieser Erkenntnisse wurde eine Zerlegung des diamagnet
 	\centering
 	\includegraphics[width=0.6\textwidth]{cvhfg}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl}]{SIMesPH$^\textit{t}$Bu$_2$GaCl (f). SIMesPH$^\textit{t}$Bu$_2$AlCl (g) (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Aluminium=hellrosa und Chlor=grün).}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl}]{SIMesPH$^\textit{t}$Bu$_2$GaCl \textsf{(f)}. SIMesPH$^\textit{t}$Bu$_2$AlCl \textsf{(g)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Aluminium=hellrosa und Chlor=grün).}
 \label{abb:cvhfg}
 \end{figure}
 
