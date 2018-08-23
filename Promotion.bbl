@@ -1275,13 +1275,54 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Int. J. Quant. Chem.}
+      \field{journaltitle}{Int. J. Quantum Chem.}
       \field{number}{S13}
       \field{title}{Derivative studies in hartree-fock and m{ø}ller-plesset theories}
       \field{volume}{16}
       \field{year}{1979}
       \field{pages}{225\bibrangedash 241}
       \range{pages}{17}
+    \endentry
+    \entry{stevens1963perturbed}{article}{}
+      \name{author}{3}{}{%
+        {{hash=6ff7c38338a2172c36c2cc0e23c1c1b8}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={RM},
+           giveni={R\bibinitperiod}}}%
+        {{hash=fd55808fbd7ffe04147c96340d06170f}{%
+           family={Pitzer},
+           familyi={P\bibinitperiod},
+           given={RM},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f33eafd3c28decaf855dc7f79f838dd2}{%
+           family={Lipscomb},
+           familyi={L\bibinitperiod},
+           given={WN},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{c4882411c4bc214a26b52050e18db6f8}
+      \strng{fullhash}{c4882411c4bc214a26b52050e18db6f8}
+      \strng{bibnamehash}{c4882411c4bc214a26b52050e18db6f8}
+      \strng{authorbibnamehash}{c4882411c4bc214a26b52050e18db6f8}
+      \strng{authornamehash}{c4882411c4bc214a26b52050e18db6f8}
+      \strng{authorfullhash}{c4882411c4bc214a26b52050e18db6f8}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{2}
+      \field{title}{Perturbed Hartree—Fock Calculations. I. Magnetic Susceptibility and Shielding in the LiH Molecule}
+      \field{volume}{38}
+      \field{year}{1963}
+      \field{pages}{550\bibrangedash 560}
+      \range{pages}{11}
     \endentry
     \entry{gerratt1968force}{article}{}
       \name{author}{2}{}{%
@@ -1346,6 +1387,42 @@
       \field{type}{phdthesis}
       \field{year}{1999}
     \endentry
+    \entry{handy1984evaluation}{article}{}
+      \name{author}{2}{}{%
+        {{hash=dc9936e092d72ad8543e84e07b2c7f96}{%
+           family={Handy},
+           familyi={H\bibinitperiod},
+           given={Nicholas\bibnamedelima C},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8478a1268a9c1ad107f2506442314177}{%
+           family={Schaefer\bibnamedelima III},
+           familyi={S\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Henry\bibnamedelima F},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {AIP}%
+      }
+      \strng{namehash}{60037541274f24fac78a43e56579c170}
+      \strng{fullhash}{60037541274f24fac78a43e56579c170}
+      \strng{bibnamehash}{60037541274f24fac78a43e56579c170}
+      \strng{authorbibnamehash}{60037541274f24fac78a43e56579c170}
+      \strng{authornamehash}{60037541274f24fac78a43e56579c170}
+      \strng{authorfullhash}{60037541274f24fac78a43e56579c170}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Chem. Phys.}
+      \field{number}{11}
+      \field{title}{On the evaluation of analytic energy derivatives for correlated wave functions}
+      \field{volume}{81}
+      \field{year}{1984}
+      \field{pages}{5031\bibrangedash 5033}
+      \range{pages}{3}
+    \endentry
     \entry{pulay1980convergence}{article}{}
       \name{author}{1}{}{%
         {{hash=6c90b500e9d3578f5dc2a70d4b892ce9}{%
@@ -1363,8 +1440,8 @@
       \strng{authorbibnamehash}{6c90b500e9d3578f5dc2a70d4b892ce9}
       \strng{authornamehash}{6c90b500e9d3578f5dc2a70d4b892ce9}
       \strng{authorfullhash}{6c90b500e9d3578f5dc2a70d4b892ce9}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1394,13 +1471,13 @@
       \strng{authorbibnamehash}{5437cedb7f2773efe4c50e29d6c4777e}
       \strng{authornamehash}{5437cedb7f2773efe4c50e29d6c4777e}
       \strng{authorfullhash}{5437cedb7f2773efe4c50e29d6c4777e}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{J. Comp. Phys.}
+      \field{journaltitle}{J. Comp. Chem.}
       \field{number}{4}
       \field{title}{Improved SCF convergence acceleration}
       \field{volume}{3}
@@ -1554,7 +1631,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{20}
       \field{title}{Density-functional theory in strong magnetic fields}
       \field{volume}{59}
@@ -1817,8 +1894,8 @@
       \strng{authorbibnamehash}{902985f690dff0009d4292382a15b263}
       \strng{authornamehash}{4de633039ac5ba9197dba9fc7dd4f9b2}
       \strng{authorfullhash}{902985f690dff0009d4292382a15b263}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1848,8 +1925,8 @@
       \strng{authorbibnamehash}{fcbacaeef9569683a78f68195966c0c1}
       \strng{authornamehash}{fcbacaeef9569683a78f68195966c0c1}
       \strng{authorfullhash}{fcbacaeef9569683a78f68195966c0c1}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -1899,8 +1976,8 @@
       \strng{authorbibnamehash}{bdb0b53b83db540d315d517439a8f048}
       \strng{authornamehash}{333284ccc1695e032aa047e5333b8d90}
       \strng{authorfullhash}{bdb0b53b83db540d315d517439a8f048}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2027,7 +2104,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{AIChE Journal}
+      \field{journaltitle}{AIChE J.}
       \field{number}{2}
       \field{title}{Fast solvent screening via quantum chemistry: COSMO-RS approach}
       \field{volume}{48}
@@ -2268,8 +2345,8 @@
       \strng{authorbibnamehash}{299be52113a465e1068976f66496a553}
       \strng{authornamehash}{299be52113a465e1068976f66496a553}
       \strng{authorfullhash}{299be52113a465e1068976f66496a553}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2387,7 +2464,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{18}
       \field{title}{Generalized gradient approximation made simple}
       \field{volume}{77}
@@ -2506,6 +2583,15 @@
       \field{year}{2003}
       \field{pages}{12129\bibrangedash 12137}
       \range{pages}{9}
+    \endentry
+    \entry{yannickpers}{misc}{}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labeltitlesource}{title}
+      \field{title}{Y. Franzke, persönliche Kommunikation}
+      \field{year}{2018}
     \endentry
     \entry{liu2010ideas}{article}{}
       \name{author}{1}{}{%
@@ -2785,8 +2871,8 @@
       \strng{authorbibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
       \strng{authornamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
       \strng{authorfullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -2821,8 +2907,8 @@
       \strng{authorbibnamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
       \strng{authornamehash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
       \strng{authorfullhash}{4fe54e08bb4702bd3d1a4a7c7a67fccd}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -3105,8 +3191,8 @@
       \strng{authorbibnamehash}{f6ff2fc7add0be9ce1f6b06d75d34943}
       \strng{authornamehash}{89e3974291f206f89f1cc5b11d7b7629}
       \strng{authorfullhash}{f6ff2fc7add0be9ce1f6b06d75d34943}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -3151,13 +3237,13 @@
       \strng{authorbibnamehash}{4947e4d502018dc2645dbb83cfb42bfc}
       \strng{authornamehash}{c460a45ea84ed69518b08e3346e855d6}
       \strng{authorfullhash}{4947e4d502018dc2645dbb83cfb42bfc}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{14}
       \field{title}{Climbing the density functional ladder: Nonempirical meta--generalized gradient approximation designed for molecules and solids}
       \field{volume}{91}
@@ -5557,7 +5643,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Int. J. Quant. Chem.}
+      \field{journaltitle}{Int. J. Quantum Chem.}
       \field{number}{13}
       \field{title}{Hydrogen storage inside a toroidal carbon nanostructure C120: Density functional theory computer simulation}
       \field{volume}{110}
@@ -6223,7 +6309,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{5}
       \field{title}{Are fullerene tubules metallic?}
       \field{volume}{68}
@@ -6264,7 +6350,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{10}
       \field{title}{New one-dimensional conductors: graphitic microtubules}
       \field{volume}{68}
@@ -6662,8 +6748,8 @@
       \strng{authorbibnamehash}{ee5d85f2e35200c0425dbb9ac6cf705f}
       \strng{authornamehash}{ee5d85f2e35200c0425dbb9ac6cf705f}
       \strng{authorfullhash}{ee5d85f2e35200c0425dbb9ac6cf705f}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6703,13 +6789,13 @@
       \strng{authorbibnamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
       \strng{authornamehash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
       \strng{authorfullhash}{cd9cb3ca1836e37aa8695b559d1e1a6c}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{9}
       \field{title}{Molecular anapole moments}
       \field{volume}{80}
@@ -6749,8 +6835,8 @@
       \strng{authorbibnamehash}{a9b7075c7556cb59e063d5c5de35b696}
       \strng{authornamehash}{377cb873843123252acd70cb9353d863}
       \strng{authorfullhash}{a9b7075c7556cb59e063d5c5de35b696}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6777,8 +6863,8 @@
       \strng{authorbibnamehash}{1e2af2969d0b8880466942064887efdd}
       \strng{authornamehash}{1e2af2969d0b8880466942064887efdd}
       \strng{authorfullhash}{1e2af2969d0b8880466942064887efdd}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -6918,7 +7004,7 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Phys. Rev. Letters}
+      \field{journaltitle}{Phys. Rev. Lett.}
       \field{number}{21}
       \field{title}{Colossal paramagnetic moments in metallic carbon nanotori}
       \field{volume}{88}
@@ -7822,13 +7908,44 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Chem. Comm.}
+      \field{journaltitle}{Chem. Commun.}
       \field{number}{54}
       \field{title}{An NHC--phosphinidenyl as a synthon for new group 13/15 compounds}
       \field{volume}{53}
       \field{year}{2017}
       \field{pages}{7620\bibrangedash 7623}
       \range{pages}{4}
+    \endentry
+    \entry{maryott1951table}{thesis}{}
+      \name{author}{2}{}{%
+        {{hash=6057c2999cccc012e7a85e206fd54b3c}{%
+           family={Maryott},
+           familyi={M\bibinitperiod},
+           given={Authur\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8685bdac70a7ea5c2d47dc023ed7f7f0}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Edgar\bibnamedelima R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National Bureau of Standards Gaithersburg MD}%
+      }
+      \strng{namehash}{9a23d4cfe8b0dc2443c22f4a7586378f}
+      \strng{fullhash}{9a23d4cfe8b0dc2443c22f4a7586378f}
+      \strng{bibnamehash}{9a23d4cfe8b0dc2443c22f4a7586378f}
+      \strng{authorbibnamehash}{9a23d4cfe8b0dc2443c22f4a7586378f}
+      \strng{authornamehash}{9a23d4cfe8b0dc2443c22f4a7586378f}
+      \strng{authorfullhash}{9a23d4cfe8b0dc2443c22f4a7586378f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Table of dielectric constants of pure liquids}
+      \field{year}{1951}
     \endentry
     \entry{latypov2015quantum}{article}{}
       \name{author}{4}{}{%

@@ -185,8 +185,8 @@ Neben einer effizienten Programmierung und dem Einführen von Näherungen, wie b
 \\
 Die äußeren beiden Schleifen laufen dabei über alle Schalen \texttt{N}$_{\texttt{Schal}}$ und die beiden inneren Schleifen laufen über die primitiven Basisfunktionen \texttt{N}$_{\texttt{Prim BF}}$. Für die Routine \texttt{cslp3\_omp} kommt jeweils eine weitere Schleife für die Auxiliarschale und die primitiven Auxiliarbasisfunktionen hinzu. Bei den Vierzentren-Routinen \texttt{csplop} und \texttt{shloop\_k} sind es jeweils zwei weitere Schleifen für die Schalen und die primitiven Basisfunktionen. Bei der Parallelisierung wurde nun in der Regel so vorgegangen, dass die äußerste Schleife über die Schale parallelisiert wurde:\\
 \\
-\texttt{\$OMP PARALLEL}\\
-\texttt{\$OMP DO SCHEDULE (DYNAMIC)}\\
+\texttt{!\$OMP PARALLEL}\\
+\texttt{!\$OMP DO SCHEDULE (DYNAMIC)}\\
 \texttt{do i=1,N$_{\texttt{Schal}}$}\\ 
 \null\quad\texttt{do j=1,N$_{\texttt{Schal}}$}\\ 
 \null\quad\quad\texttt{do $\mu$=1,N$_{\texttt{Prim BF}}$}\\ 
@@ -196,6 +196,6 @@ Die äußeren beiden Schleifen laufen dabei über alle Schalen \texttt{N}$_{\tex
 \null\quad\quad\texttt{end do}\\ 
 \null\quad\texttt{end do}\\ 
 \texttt{end do}\\
-\texttt{\$OMP END DO}\\
-\texttt{\$OMP END PARALLEL}\\
+\texttt{!\$OMP END DO}\\
+\texttt{!\$OMP END PARALLEL}\\
 \\

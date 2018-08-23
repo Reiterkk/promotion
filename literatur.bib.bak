@@ -11,7 +11,7 @@
 @string{apl = "Appl. Phys. Letters"}
 @string{cac = "Comp. \& Chem."}
 @string{cej = "Chem. Eur. J."}
-@string{chemcom = "Chem. Comm."}
+@string{chemcom = "Chem. Commun."}
 @string{chemphys = "Chem. Phys."}
 @string{chemrev = "Chem. Rev."}
 @string{colsurf = "Colloids and Surfaces"}
@@ -20,7 +20,7 @@
 @string{ejp = "Eur. J. Phys"}
 @string{euro = "Chem. Eur. J."}
 @string{ijmpb = "Int. J. Mod. Phys. B"}
-@string{ijqc = "Int. J. Quant. Chem."}
+@string{ijqc = "Int. J. Quantum Chem."}
 @string{jacs = "J. Am. Chem. Soc."}
 @string{jap = "J. Appl. Phys."}
 @string{jcc = "J. Comp. Chem."}
@@ -58,7 +58,7 @@
 @string{physrev = "Phys. Rev."}
 @string{pra = "Phys. Rev. A"}
 @string{prb = "Phys. Rev. B"}
-@string{prl = "Phys. Rev. Letters"}
+@string{prl = "Phys. Rev. Lett."}
 @string{proy = "Proc. R. Soc. (London)"}
 @string{proya = "Proc. R. Soc. A"}
 @string{prsola = "Proc. R. Soc. Lond. A"}
@@ -128,7 +128,7 @@
 %@string{physrevb = "Physical Review B" }
 %@string{roy = "Philosophical Transactions Royal(?)" }
 
-@string{ijqc = "Int. J. Quant. Chem."}
+@string{ijqc = "Int. J. Quantum Chem."}
 @string{cup = "Cambridge University Press"}
 @string{oxford = "Oxford University Press"}
 @string{hcp = "Harper Collins Publishers"}
@@ -140,7 +140,7 @@
 @string{jacs = "J. Am. Chem. Soc."}
 @string{jcs = "J. Chem. Soc."}
 @string{ijmpb = "Int. J. Mod. Phys. B"}
-@string{chemcom = "Chem. Comm."}
+@string{chemcom = "Chem. Commun."}
 @string{angewi = "Angew. Chem. Int. Ed."}
 @string{jqc = "J. Quant. Chem."}
 @string{ejp = "Eur. J. Phys"}
@@ -736,7 +736,7 @@ pages="215--277",
 @article{pulay1982improved,
   title={Improved SCF convergence acceleration},
   author={Pulay, Peter},
-  journal=jcompphys,
+  journal=jcc,
   volume={3},
   number={4},
   pages={556--560},
@@ -960,7 +960,7 @@ year={ 2009 },
 @article{eckert2002fast,
   title={Fast solvent screening via quantum chemistry: COSMO-RS approach},
   author={Eckert, Frank and Klamt, Andreas},
-  journal={AIChE Journal},
+  journal={AIChE J.},
   volume={48},
   number={2},
   pages={369--385},
@@ -2285,4 +2285,49 @@ school   = {Karlsruher Institut für Technologie},
 author   = {Treß, Robert},
 year     = {2018}, %other attributes omitted
 }
-tress2018master
+
+@article{delle2007levy,
+  title={Levy--Lieb constrained-search formulation as a minimization of the correlation functional},
+  author={Delle Site, Luigi},
+  journal={J. Phys. A},
+  volume={40},
+  number={11},
+  pages={2787},
+  year={2007},
+  publisher={IOP Publishing}
+}
+
+@article{handy1984evaluation,
+  title={On the evaluation of analytic energy derivatives for correlated wave functions},
+  author={Handy, Nicholas C and Schaefer III, Henry F},
+  journal=jcp,
+  volume={81},
+  number={11},
+  pages={5031--5033},
+  year={1984},
+  publisher={AIP}
+}
+
+@article{stevens1963perturbed,
+  title={Perturbed Hartree—Fock Calculations. I. Magnetic Susceptibility and Shielding in the LiH Molecule},
+  author={Stevens, RM and Pitzer, RM and Lipscomb, WN},
+  journal=jcp,
+  volume={38},
+  number={2},
+  pages={550--560},
+  year={1963},
+  publisher={AIP}
+}
+
+@misc{yannickpers,
+  year={2018},
+  title={Y. Franzke, persönliche Kommunikation}
+}
+
+@thesis{maryott1951table,
+%type={Masterarbeit},
+title    = {Table of dielectric constants of pure liquids},
+school   = {National Bureau of Standards Gaithersburg MD},
+author   = {Maryott, Authur A and Smith, Edgar R},
+year     = {1951}, %other attributes omitted
+}

@@ -33,7 +33,7 @@
  	
     \acro{dft}[DFT]{Dichtefunktionaltheorie}
     
-    \acro{diis}[DIIS]{\textit{Direct Inversion of the Iterative Subspace}}
+    \acro{diis}[DIIS]{\textit{Direct Inversion in the Iterative Subspace}}
     
     \acro{dipp}[dipp]{2,6-Diisopropylphenyl}
     
@@ -45,7 +45,7 @@
 
 	\acro{gallier}[GALLIER]{\textit{Gaussian And Lorentzian LIne Enlarging Routine}}
 	
-	\acro{giao}[GIAO]{\textit{Gauge Including Atomic Orbital}}   
+	\acro{giao}[GIAO]{\textit{Gauge-Including Atomic Orbital}}   
 	
 	\acro{gimic}[GIMIC]{\textit{Gauge-Including Magnetically Induced Currents}}
 	\acro{gimic-}[GIMIC-]{\textit{Gauge-Including-Magnetically-Induced-Currents-}} 
