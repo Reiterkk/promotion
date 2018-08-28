@@ -1,10 +1,12 @@
 \section{Einheiten und Notation}
 
-In der vorliegenden Arbeit werden atomaren Einheiten (a.u.) verwendet, sofern es an den entsprechenden Stellen nicht anders angegeben ist. Damit gilt $1=\hbar=e=m_e=\frac{1}{4\pi\varepsilon_0}$.
-Absolute chemische Abschirmungskonstanten und relative chemische Verschiebungen sind in \textit{parts per million} (\unit{ppm}) angegeben. Die imaginäre Einheit wird immer als $\iu$ geschrieben, um beispielsweise die Verwechslung mit Elektronenindizes $i$ zu vermeiden.
+In der vorliegenden Arbeit werden atomare Einheiten (a.u.) verwendet, sofern es an den entsprechenden Stellen nicht anders angegeben ist. Damit gilt $1=\hbar=e=m_e=\frac{1}{4\pi\varepsilon_0}$.
+Absolute Abschirmungskonstanten und relative chemische Verschiebungen sind in \textit{parts per million} (\unit{ppm}) angegeben. Die imaginäre Einheit wird immer als $\iu$ geschrieben, um beispielsweise die Verwechslung mit Elektronenindizes $i$ zu vermeiden.
  
 \bigskip
-Die in der Literatur gebräuchliche Notation für Indizes und Integrale wird im Folgenden kurz erläutert. Dabei bezeichnet $\Psi$ die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige \acp{mo} und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $K,L,\dotsc$ werden zur Kennzeichnung der insgesamt $N_{\text{K}}$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetzte \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Aus dem jeweiligen Kontext geht hervor, ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summationsindex laufen $\alpha,\beta,\gamma,\dotsc$ über die drei kartesischen Koordinaten und stehen für eine ausgewählte Raumrichtung, wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Modul \texttt{mpshift} des Programmpakets \textsc{Turbomole} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin -- welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird -- ausgeschlossen wird. Für Kern-Kern-Abstände wird $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit $r$ gekennzeichnet.
+Die in der Literatur gebräuchliche Notation für Indizes und Integrale wird im Folgenden kurz erläutert. $\Psi$ bezeichnet die Mehrteilchen-Wellenfunktion, $\phi$ sind spinabhängige \acp{mo} und $\varphi$ sind spinunabhängige \acp{mo}. Die Buchstaben $i,j,\dotsc$ bezeichnen die Elektronen, wobei $N$ die Gesamtzahl aller Elektronen darstellt. Großbuchstaben $K,L,\dotsc$ werden zur Kennzeichnung der insgesamt $N_{\text{K}}$ Atomkerne verwendet. Zur Unterscheidung zwischen besetzten und virtuellen \acp{mo} werden virtuelle \acp{mo} mit $a,b,c,d$, besetzte \acp{mo} mit $i,j,k,l$ und beliebige \acp{mo} mit $p,q,r,s$ angegeben. Aus dem jeweiligen Kontext geht hervor, ob $i,j,\dotsc$ die Elektronen bezeichnen oder für besetzte \acp{mo} stehen. $\chi$ sind die zu \acp{mo} linear kombinierbaren Basisfunktionen und werden mit den griechischen Buchstaben $\mu,\nu,\kappa,\lambda$ indiziert. $P,Q,R,S$ kennzeichnen Auxiliarbasisfunktionen. Als Summationsindizes laufen $\alpha,\beta,\gamma,\dotsc$ über die drei kartesischen Koordinaten und stehen für eine ausgewählte Raumrichtung, wenn sie als Index einer bestimmten Größe verwendet werden. Das im Rahmen dieser Arbeit weiterentwickelte Modul \texttt{mpshift} des Programmpakets \textsc{Turbomole} ermöglicht ausschließlich die Berechnung von geschlossenschaligen Molekülen, wodurch eine Verwechslung mit dem Elektronenspin -- welcher üblicherweise ebenfalls durch $\alpha$ bzw. $\beta$ angegeben wird -- ausgeschlossen wird. Für Kern-Kern-Abstände wird $R$ benutzt (ohne Vektorpfeil, wodurch der jeweilige Betrag gemeint ist), beispielsweise $R_{\mu\nu}$ für den Abstand der kernzentrierten Basisfunktionen $\chi_\mu$ und $\chi_\nu$. Elektron-Elektron- und Elektron-Kern-Abstände werden entsprechend mit $r$ gekennzeichnet.
+\vfill
+\newpage
 
 Einelektronen-Integrale werden zumeist ausgeschrieben, ansonsten gilt für sie die folgende Dirac-Notation:
 \begin{gather*}
@@ -25,6 +27,7 @@ Die Ableitung einer bestimmten Größe wird durch einen hochgestellten Index wie
   S^{B_\beta}_{\mu\nu}=\left.\frac{\partial S_{\mu\nu}}{\partial B_\beta}\right|_{\vec{B} = 0}\, .
 \end{equation*} 
 Matrizen, wie beispielsweise die Fockmatrix $\boldsymbol{F}$, werden fett gedruckt.
+
 \section{Die Schrödingergleichung für Moleküle -- Wellenfunktion und Energie}
 
 Unter Vernachlässigung relativistischer Effekte muss die zeitabhängige Schrödingergleichung
@@ -41,7 +44,7 @@ erhalten, mit dem Hamiltonoperator
 \begin{equation}
 \begin{aligned}
   \hat{H}&=\hat{T}_{\text{K}}+\hat{T}_{\text{e}}+\hat{V}_{\text{Ke}}+\hat{V}_{\text{ee}}+\hat{V}_{\text{KK}}\\
-  &=-\sum_{K=1}^{N_\text{K}}\frac{1}{2}\frac{1}{M_K}\vec{\nabla}^2_K-\sum_{i=1}^N\frac{1}{2}\vec{\nabla}^2_i-\sum_{i=1}^N\sum_{K=1}^{N_\text{K}}\frac{Z_K}{r_{iK}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}+\sum_{K=1}^{N_\text{K}}\sum_{K>L}^{N_\text{K}}\frac{Z_KZ_L}{R_{KL}}\, .
+  &=-\sum_{K=1}^{N_\text{K}}\frac{1}{2}\frac{1}{M_K}\vec{\nabla}^2_K-\sum_{i=1}^N\frac{1}{2}\vec{\nabla}^2_i-\sum_{i=1}^N\sum_{K=1}^{N_\text{K}}\frac{Z_K}{r_{iK}}+\sum_{i=1}^N\sum_{j>i}^N\frac{1}{r_{ij}}+\sum_{K=1}^{N_\text{K}}\sum_{L>K}^{N_\text{K}}\frac{Z_KZ_L}{R_{KL}}\, .
 \end{aligned}
 \end{equation}
 Mit den Termen $\hat{T}_{\text{e}}$ und $\hat{T}_{\text{K}}$ wird die kinetische Energie der Elektronen $i$ sowie der Kerne $K$, mit der jeweiligen Masse $M_K$, beschrieben. Die Beiträge zur potentiellen Energie sind in den letzten drei Termen enthalten. $\hat{V}_{\text{Ke}}$ beschreibt die anziehende Wechselwirkung zwischen Elektronen und Kernen, $\hat{V}_{\text{ee}}$ die abstoßende Elektron-Elektron- und $\hat{V}_{\text{KK}}$ die abstoßende Kern-Kern-Wechselwirkung.
@@ -61,7 +64,7 @@ kann schließlich die elektronische Schrödingergleichung
 
 näherungsweise gelöst und die elektronische Grundzustandsenergie $E^{\text{el}}_0$ im Feld der Kerne erhalten werden. Die Eigenfunktion $\Psi^{\text{el}}_0$ zum Energieeigenwert $E^{\text{el}}_0$ beschreibt dabei den elektronischen Grundzustand des Systems. Um letztlich die Gesamtenergie zu erhalten, muss der für gegebene Kernkoordinaten konstante Energiebeitrag aus dem abstoßenden Kern-Kern-Wechselwirkungspotential zur elektronischen Energie addiert werden. Im weiteren Verlauf der Arbeit wird auf den hochgestellten Zusatz \glqq el\grqq{} verzichtet. 
 
-In der Praxis gilt das Interesse meistens jedoch nicht der elektronischen Energie eines Systems, sondern vielmehr dessen molekularen Eigenschaften. Diese lassen sich üblicherweise als Ableitung der Energie nach einer äußeren Störung -- beispielsweise hervorgerufen durch ein externes magnetisches oder elektrisches Feld -- definieren. Dies gilt auch für die Berechnung von chemischen Abschirmungskonstanten, wie später in Abschnitt \ref{kap:magnetfeld} zu sehen sein wird. Sie ergeben sich durch die gemischte zweite Ableitung der Energie nach den Komponenten der Kerndipolmomente $\vec{\mu}$ und des Magnetfeldes $\vec{B}$: $\frac{\partial^2 E}{\partial\mu_\alpha\partial B_\beta}$. Aus diesem Grund wird in den beiden folgenden Abschnitten \ref{kap:hartreefock} und \ref{kap:dft} kurz auf zwei quantenchemische Methoden zur Berechnung der elektronischen Energie eingegangen. Das Hartree-Fock-Verfahren basiert dabei auf der Wellenfunktion und die Berechnung der Energie in der Dichtefunktionaltheorie erfolgt in Abhängigkeit der Elektronendichte. Im daran anschließenden Abschnitt \ref{kap:magnetfeld} wird eine ausführliche Herleitung der analytischen Ableitung zur Berechnung von chemischen Abschirmungskonstanten beschrieben. 
+In der Praxis gilt das Interesse meistens jedoch nicht der elektronischen Energie eines Systems, sondern vielmehr dessen molekularen Eigenschaften. Diese lassen sich üblicherweise als Ableitung der Energie nach einer äußeren Störung -- beispielsweise hervorgerufen durch ein externes magnetisches oder elektrisches Feld -- definieren. Dies gilt auch für die Berechnung von Abschirmungskonstanten, wie später in Abschnitt \ref{kap:magnetfeld} zu sehen sein wird. Sie ergeben sich durch die gemischte zweite Ableitung der Energie nach den Komponenten der Kerndipolmomente $\vec{\mu}$ und des Magnetfeldes $\vec{B}$: $\frac{\partial^2 E}{\partial\mu_\alpha\partial B_\beta}$. Aus diesem Grund wird in den beiden folgenden Abschnitten \ref{kap:hartreefock} und \ref{kap:dft} kurz auf zwei quantenchemische Methoden zur Berechnung der elektronischen Energie eingegangen. Das Hartree-Fock-Verfahren basiert dabei auf der Wellenfunktion und die Berechnung der Energie in der Dichtefunktionaltheorie erfolgt in Abhängigkeit der Elektronendichte. Im daran anschließenden Abschnitt \ref{kap:magnetfeld} wird eine ausführliche Herleitung der analytischen Ableitung zur Berechnung von Abschirmungskonstanten beschrieben. 
 %Sofern es an den entsprechenden Stellen nicht angegeben ist, ist damit immer die elektronische Wellenfunktion, der elektronische Hamiltonoperator oder die elektronische Energie gemeint.
 
 
@@ -79,7 +82,8 @@ Um die Ununterscheidbarkeit der Elektronen zu gewährleisten und um das Pau\-li\
 \phi_1(\vec{r}_N,\sigma_N) & \phi_2(\vec{r}_N,\sigma_N) & \phi_3(\vec{r}_N,\sigma_N) &\cdots & \phi_N(\vec{r}_N,\sigma_N)
 \end{vmatrix}\, .
 \end{equation}
-
+\vfill
+\newpage
 Durch die Minimierung des Energieerwartungswertes nach dem Ritz'schen Va\-ria\-ti\-ons\-prin\-zip\supercite{macdonald1933successive}
 
 \begin{equation}
@@ -151,7 +155,12 @@ E_{\textrm{HF}}&=\frac{1}{2}\sum_{\mu\nu}D_{\mu\nu}(2h_{\mu\nu}+J_{\mu\nu}-\frac
 
 \section{Die Dichtefunktionaltheorie}\label{kap:dft}
 
-Der grundsätzliche Gedanke der \acf{dft} ist es, im Vergleich zur auf einer Wellenfunktion basierenden Hartree-Fock-Theorie, alle Informationen aus der Elektronendichte zu erhalten. Werden zur Beschreibung der Wellenfunktion $3N$ Ortskoordinaten und $N$ Spinkoordinaten benötigt, so hängt die Elektronendichte lediglich von den drei Raumkoordinaten ab. Hohenberg und Kohn\supercite{hohenberg1964inhomogeneous} haben mit ihrem ersten Theorem grundsätzlich bewiesen, dass durch die Elektronendichte $\rho$ alle Informationen über ein Molekül, wie beispielsweise die Grundzustandsenergie, erhalten werden können.\footnote{Der Beweis in der ursprünglichen Formulierung des Hohenberg-Kohn-Theorems ist jedoch nicht vollständig, siehe: Levi-Lieb \textit{constraint-search formulation}} Der Zusammenhang zwischen der Energie und der Elektronendichte, welche durch sogenannte Austauschkorrelationsfunktionale miteinander verknüpft werden, ist jedoch nicht genau bekannt. Das Entwickeln und weitere Verbessern dieser Funktionale ist daher nach wie vor ein aktuelles Forschungsgebiet.  
+Der grundsätzliche Gedanke der \acf{dft} ist es, im Vergleich zur auf einer Wellenfunktion basierenden Hartree-Fock-Theorie, alle Informationen aus der Elektronendichte zu erhalten. Werden zur Beschreibung der Wellenfunktion $3N$ Ortskoordinaten und $N$ Spinkoordinaten benötigt, so hängt die Elektronendichte $\rho$ lediglich von den drei Raumkoordinaten ab. Schon 1930 konnte Dirac\supercite{dirac1930note} die Austauschenergie für das freie Elektronengas exakt berechnen zu 
+\begin{equation}
+E_{\textrm{x}}[\rho]=-\frac{3}{4}\left(\frac{3}{\pi}\right)^{1/3}\int\rho^{4/3}(\vec{r})\Diff3\vec{r}\, .
+\end{equation}
+
+Für Moleküle ist ein exakter Ausdruck für den Zusammenhang zwischen der Energie und der Elektronendichte, welche durch sogenannte Austauschkorrelationsfunktionale miteinander verknüpft werden, bisher unbekannt. Allerdings haben Hohenberg und Kohn\supercite{hohenberg1964inhomogeneous} mit ihrem ersten Theorem grundsätzlich bewiesen, dass durch die Elektronendichte alle Informationen über ein Molekül, wie beispielsweise die Grundzustandsenergie, erhalten werden können.\footnote{Der Beweis in der ursprünglichen Formulierung des Hohenberg-Kohn-Theorems ist jedoch nicht vollständig, siehe: Levi-Lieb \textit{constraint-search formulation}.} Das Entwickeln und Verbessern dieser Funktionale, welche als führenden Term immer den von Dirac gefundenen Ausdruck enthalten, ist daher nach wie vor ein aktuelles Forschungsgebiet.  
 
 Die Grundzustandsenergie $E_0$ kann nach Hohenberg und Kohn durch ein Funktional der Grundzustandselektronendichte $\rho_0$,
 
@@ -229,7 +238,7 @@ setzt sich aus dem externen Potential, dem Elektron-Elektron-Coulombpotential un
 V_{\textrm{xc}}(\vec{r}) = \frac{\partial E_{\textrm{xc}}[\rho(\vec{r})]}{\partial \rho(\vec{r})}\, .
 \end{equation}
 
-Im Vergleich zum Hartree-Fock-Verfahren hat die Wiedereinführung der Orbitale zur Folge, dass lediglich der Austauschoperator $\hat{K}$ durch ein von der Elektronendichte abhängiges Austauschkorrelationsfunktional $E_{\textrm{xc}}[\rho(\vec{r})]$ ersetzt werden muss. Alle weiteren Beiträge können analog zum Hartree-Fock-Verfahren berechnet werden. In einem bereits bestehenden Hartree-Fock-Programm müssen daher nur die Austauschmatrixelemente $K_{\mu\nu}$ in der Fockmatrix durch die Aus\-tausch\-kor\-re\-la\-tions\-ma\-trix\-ele\-men\-te  
+Im Vergleich zum Hartree-Fock-Verfahren hat die Wiedereinführung der Orbitale zur Folge, dass lediglich der Austauschoperator $\hat{K}$ durch ein von der Elektronendichte abhängiges Austauschkorrelationsfunktional $E_{\textrm{xc}}[\rho(\vec{r})]$ ersetzt werden muss. Alle weiteren Beiträge können in der gleichen Weise wie im Hartree-Fock-Verfahren berechnet werden. In einem bereits bestehenden Hartree-Fock-Programm müssen daher nur die Austauschmatrixelemente $K_{\mu\nu}$ in der Fockmatrix durch die Aus\-tausch\-kor\-re\-la\-tions\-ma\-trix\-ele\-men\-te  
 \begin{equation}
 Y_{\mu\nu}=\left\langle\chi_\mu\vert V_{\textrm{xc}}(\vec{r})\vert\chi_\nu\right\rangle
 \end{equation}
@@ -278,11 +287,12 @@ Die einfachsten Funktionale gehören zur \ac{lda}. Diese Funktionale hängen led
 
 
 \bigskip
-Im aktuellen und vorherigen Abschnitt wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und zum Erhalt der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse -- beispielsweise durch die Vernachlässigung der Elektronenkorrelation -- findet das Hartree-Fock-Verfahren in der Quantenchemie jedoch kaum Verwendung bei der Beantwortung aktueller Fragestellungen. Sogenannte post-Hartree-Fock-Verfahren, wie beispielsweise die \acl{mp2} oder \acl{cc}, liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert hingegen oft ausreichend genaue Ergebnisse in einer akzeptablen Zeit. Zusätzlich lassen sich mit ihr deutlich größere Systeme berechnen. Ein Großteil aller Anwendungsrechnungen in der Quantenchemie wird daher mit der \ac{dft} durchgeführt. 
+Im aktuellen und vorherigen Abschnitt wurden mit dem Hartree-Fock-Verfahren und der Dichtefunktionaltheorie zwei Verfahren vorgestellt, welche routinemäßig zur Berechnung der elektronischen Energie und der Wellenfunktion eingesetzt werden können. Aufgrund zu ungenauer Ergebnisse -- beispielsweise durch die Vernachlässigung der Elektronenkorrelation -- findet das Hartree-Fock-Verfahren in der Quantenchemie jedoch kaum Verwendung bei der Beantwortung aktueller Fragestellungen. Sogenannte post-Hartree-Fock-Verfahren, wie beispielsweise die \acl{mp2} oder \acl{cc}, liefern deutlich bessere Resultate, sind aber erheblich zeitaufwändiger und benötigen deutlich mehr Ressourcen. Die vergleichsweise weniger aufwändige \ac{dft} liefert hingegen oft ausreichend genaue Ergebnisse in einer akzeptablen Zeit. Zusätzlich lassen sich mit ihr deutlich größere Systeme berechnen. Daher werden quantenchemische Untersuchungen heute zum größten Teil mit Methoden der \ac{dft} durchgeführt. 
 
-Mit Kenntnis der Energie und der Wellenfunktion lassen sich nun molekulare Eigenschaften berechnen, welche als Ableitung der Energie formuliert werden können. Im folgenden Abschnitt werden die für diese Arbeit notwendigen Gleichungen zur Berechnung von chemischen Abschirmungskonstanten hergeleitet.    
+Mit Kenntnis der Energie und der Wellenfunktion lassen sich nun molekulare Eigenschaften berechnen, welche als Ableitung der Energie formuliert werden können. Im folgenden Abschnitt werden die für diese Arbeit notwendigen Gleichungen zur Berechnung von Abschirmungskonstanten hergeleitet.    
 
-
+\vfill
+\newpage
 \section{Moleküle im Magnetfeld}\label{kap:magnetfeld}
 
 Eigenschaften von Molekülen, die durch das Anlegen eines externen magnetischen Feldes zustande kommen, lassen sich als Ableitung der Energie nach dem externen Magnetfeld berechnen. Ist das angelegte Feld schwach, so kann dieses Feld als Störung der Grundzustandswellenfunktion angesehen werden und magnetische Eigenschaften lassen sich durch einen störungstheoretischen Ansatz berechnen. Die Wellenfunktion und die elektronische Energie lassen sich dann in Abhängigkeit vom externen Magnetfeld $\vec{B}$ und den Kerndipolmomenten $\vec{\mu}_K$ der jeweiligen Kerne entwickeln:\supercite{ditchfield1974self} 
@@ -315,10 +325,10 @@ wobei $\gamma_\beta$ das permanente magnetische Moment des Moleküls ist, welche
 \end{equation} 
 
 das gesamte magnetische Moment in $\alpha$-Richtung ergeben. Damit beschreibt der vierte Term die diamagnetische Polarisierbarkeit des Moleküls. Aufgrund dieser Ströme wird an den Orten der Kerne ein sekundäres Magnetfeld erzeugt. In $\alpha$-Richtung ist dieses Magnetfeld
-
 \begin{equation}\label{eq:sekbfeld}
 \sum_{\beta}\sigma_{K_\alpha\beta} B_\beta\, 
 \end{equation}
+
 mit den Komponenten des Abschirmungstensors $\sigma_{K_\alpha\beta}$.
 
 %Beispielsweise das magnetische Dipolmoment $\vec{\mu}^{\text{mag}}$ lässt sich damit als Ableitung der Energie nach dem externen magnetischen Feld schreiben
@@ -339,7 +349,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
 \end{equation}
 
 
-	 Die in 1D-\ac{nmr}-Experimenten in Lösung erhaltene isotrope chemische Verschiebung eines Kerns $K$ lässt sich aus der Differenz zweier chemischer Abschirmungskonstanten $\sigma_K$ berechnen. Diese Abschirmungskonstanten werden durch Mittelwertbildung der Diagonalelemente des chemischen Abschirmungstensors 
+	 Die in 1D-\ac{nmr}-Experimenten in Lösung erhaltene isotrope chemische Verschiebung eines Kerns $K$ lässt sich aus der Differenz zweier Abschirmungskonstanten $\sigma_K$ berechnen. Diese Abschirmungskonstanten werden durch Mittelwertbildung der Diagonalelemente des Abschirmungstensors 
 	\begin{equation}
 	  \sigma_K=\frac{1}{3}\Tr \boldsymbol{\sigma}_K
 	\end{equation}	 
@@ -364,7 +374,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
 	 
 
 	\bigskip
-	Die nachfolgenden Schritte der \ac{scf}-Störungstheorie, in welcher die notwendigen Gleichungen für die Störung durch ein Magnetfeld hergeleitet werden, folgen im Wesentlichen der Publikation von Dichtfield\supercite{ditchfield1974self} bzw. der Diplomarbeit von Baron\supercite{baron1991}. Das äußere Magnetfeld wechselwirkt mit den magnetischen Momenten, welche durch die Bewegung der geladenen Elektronen erzeugt werden und wirkt sich daher auf die kinetische Energie aus. Dies hat zur Folge, dass der Impulsoperator $\vec{p}=\iu\vec{\nabla}$ in Gleichung (\ref{eq:elhamilton}) durch den verallgemeinerten Impulsoperator
+	Die nachfolgenden Schritte der \ac{scf}-Störungstheorie, in welcher die notwendigen Gleichungen für die Störung durch ein Magnetfeld hergeleitet werden, folgen im Wesentlichen der Publikation von Dichtfield\supercite{ditchfield1974self} bzw. der Diplomarbeit von Baron\supercite{baron1991}. Das äußere Magnetfeld tritt in Wechselwirkung mit den magnetischen Momenten, welche durch die Bewegung der geladenen Elektronen erzeugt werden und wirkt sich daher auf die kinetische Energie aus. Dies hat zur Folge, dass der Impulsoperator $\vec{p}=-\iu\vec{\nabla}$ in Gleichung (\ref{eq:elhamilton}) durch den verallgemeinerten Impulsoperator
 	\begin{equation}
 	\vec{\pi}=\vec{p}+\frac{1}{c}\vec{A}_{\textrm{tot}}(\vec{r})
 	\end{equation}
@@ -412,8 +422,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
 	
 	Der Impulsoperator $\vec{p}=-\iu\vec{\nabla}$ geht in die Terme erster Ordnung direkt ein, wodurch diese rein imaginär werden. Alle weiteren Terme sind rein reell. Dies führt zunächst dazu, dass die Gleichungen komplex werden. Jedoch kann die komplexe Arithmetik durch geschickte Implementierung, wie beim vorliegenden Modul \texttt{mpshift} geschehen, vermieden werden. 
 	
-	Beim Betrachten des Vektorpotentials in Gleichung (\ref{eq:atot}) fällt weiterhin auf, dass die Elektronenpositionen über den Term $\frac{1}{2}\vec{B}\times
-	\vec{r}$ explizit und nicht nur als Differenzen mit anderen Ortsvektoren eingehen. Dies hat zur Folge, dass die Berechnungen nur noch für eine vollständige Basis unabhängig von der Wahl des Koordinatensystemursprungs sind. Unvollständige Basissätze konvergieren zwar langsam mit zunehmender Größe zum invarianten Ergebnis, müssten jedoch bereits so groß sein, dass sie für größere Systeme nicht mehr rentabel sind. Die Basisfunktionen wurden daraufhin von London\supercite{london1937theorie} dahingehend verändert, dass sie selbst vom Magnetfeld abhängig werden. Zur Gewährleistung eichursprungsinvarianter Ergebnisse bei der Berechnung der magnetischen Response werden daher im Modul \texttt{mpshift} diese sogenannten Londonorbitale oder \acp{giao}\supercite{ditchfield1974self,london1937theorie} verwendet,
+	Beim Vektorpotential in Gleichung (\ref{eq:atot}) gehen die Elektronenpositionen über den Term $\frac{1}{2}\vec{B}\times\vec{r}$ explizit ein, d.\,h. nicht nur als Differenzen mit anderen Ortsvektoren. Dies hat zur Folge, dass die Berechnungen nur noch für eine vollständige Basis unabhängig von der Wahl des Koordinatensystemursprungs sind. Unvollständige Basissätze konvergieren zwar langsam mit zunehmender Größe zum invarianten Ergebnis, müssten jedoch bereits so groß sein, dass sie für größere Systeme nicht mehr rentabel sind. Die Basisfunktionen wurden daraufhin von London\supercite{london1937theorie} dahingehend verändert, dass sie selbst vom Magnetfeld abhängig werden. Zur Gewährleistung eichursprungsinvarianter Ergebnisse bei der Berechnung der magnetischen Response werden daher im Modul \texttt{mpshift} diese sogenannten Londonorbitale oder \acp{giao}\supercite{ditchfield1974self,london1937theorie} verwendet,
 	\begin{equation}\label{eq:giao}
 	  \chi_\mu=\chi_\mu^{\vec{B}=0}\exp(-\Lambda_\mu)\, ,
 	\end{equation}
@@ -429,11 +438,9 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
   	  E(\vec{\mu}_K,\vec{B})=\sum_{\mu\nu}D_{\mu\nu}(\vec{\mu}_K,\vec{B})\left[h_{\mu\nu}(\vec{\mu}_K,\vec{B})+\frac{1}{2}G_{\mu\nu}(\vec{\mu}_K,\vec{B})\right]\, .
 	\end{equation} 
 	 	 
-  	Zur Bewahrung der Übersichtlichkeit in den Formeln, wird im weiteren Verlauf dieser Arbeit die Abhängigkeit nicht explizit angegeben.
+  	Zur Bewahrung der Übersichtlichkeit in den Formeln wird im weiteren Verlauf dieser Arbeit die Abhängigkeit nicht explizit angegeben.
   	
-  	Um den eigentlichen Abschirmungstensor zu erhalten, muss die Energie aus Gleichung (\ref{eq:evonmub}), gemäß Gleichung (\ref{eq:abschirmugstensor}), nach den Kernmomenten und dem Magnetfeld differenziert werden. Wie später in Abschnitt \ref{kap:cphf} zu sehen sein wird, stellt insbesondere die Berechnung der gestörten Dichtematrix eine Herausforderung dar. Die Abhängigkeiten der Ein- und Zweielektronen-Operatoren bereiten zwar einen Mehraufwand, jedoch muss nur die Differenzierung nach dem Magnetfeld oder nach den Kernmomenten bei der weiteren Herleitung der Gleichungen strikt durchgeführt werden.
-  	 
-  	Die gemischte zweite Ableitung der Energie lässt sich effizienter berechnen, wenn zuerst die Differenzierung nach den Komponenten der Kernmomente erfolgt.\supercite{baron1991} Daher wird zunächst die Ableitung  	
+  	Um den Abschirmungstensor zu erhalten, muss die Energie aus Gleichung (\ref{eq:evonmub}), gemäß Gleichung (\ref{eq:abschirmugstensor}), nach den Kernmomenten und dem Magnetfeld differenziert werden. Wie später in Abschnitt \ref{kap:cphf} zu sehen sein wird, stellt insbesondere die Berechnung der gestörten Dichtematrix eine Herausforderung dar. Die gemischte zweite Ableitung der Energie lässt sich effizienter berechnen, wenn zuerst die Differenzierung nach den Komponenten der Kernmomente erfolgt.\supercite{baron1991} Daher wird zunächst die Ableitung  	
   	\begin{equation}\label{eq:enachmu}
 %  	\begin{aligned}
   	  E^{\mu_{K_\alpha}}=\left.\frac{\partial E}{\partial\mu_{K_\alpha}}\right|_{\vec{\mu}_K=\vec{B}=0}=\sum_{\mu\nu}D_{\mu\nu}^{\mu_{K_\alpha}}\left(h_{\mu\nu}+\frac{1}{2}G_{\mu\nu}\right)+\sum_{\mu\nu}D_{\mu\nu}\left(h_{\mu\nu}^{\mu_{K_\alpha}}+\frac{1}{2}G_{\mu\nu}^{\mu_{K_\alpha}}\right)
@@ -514,7 +521,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
 \subsection{Erste analytische Ableitung der Hartree-Fock-Energie nach den Komponenten des Magnetfeldes}
 	Zur Berechnung der \ac{nmr}-Abschirmungskonstanten muss das Zwischenergebnis aus Gleichung \ref{eq:enachmukurz} noch nach den Komponenten des Magnetfeldes abgeleitet werden. Dieser Schritt wird im nächsten Abschnitt durchgeführt. Dabei werden, wie weiter unten zu sehen ist, die gestörten Fockmatrixelemente $F_{\mu\nu}^{B_\beta}$ benötigt. Aus diesem Grund wird zunächst in diesem Abschnitt auf die Ableitung der Energie nach den Komponenten des Magnetfeldes eingegangen, wodurch die für $F_{\mu\nu}^{B_\beta}$ benötigten Terme erhalten werden.
 	
-	Ganz analog zur ersten Ableitung der Energie nach den Komponenten der Kernmomente kann auch die erste Ableitung der Energie nach den Komponenten des Magnetfeldes berechnet werden,
+	Analog zur ersten Ableitung der Energie nach den Komponenten der Kernmomente kann auch die erste Ableitung der Energie nach den Komponenten des Magnetfeldes berechnet werden,
 	
 	\begin{equation}\label{eq:enachb}
 %  	\begin{aligned}
@@ -618,7 +625,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
     
 \subsection{Gemischte zweite analytische Ableitung der Hartree-Fock-Energie nach den Komponenten der Kernmomente und des Magnetfeldes}    
 
-    Wie zu erwarten war, werden zur Berechnung der Energien erster Ordnung lediglich die ungestörten Koeffizienten benötigt. Zur Berechnung des chemischen Abschirmungstensors werden hingegen die gestörten Koeffizienten benötigt. Unter Berücksichtigung des Zwischenergebnisses aus Gleichung (\ref{eq:enachmukurz}) folgt für den Abschirmungstensor   
+    Wie zu erwarten war, werden zur Berechnung der Energien erster Ordnung lediglich die ungestörten Koeffizienten benötigt. Zur Berechnung des Abschirmungstensors werden hingegen die gestörten Koeffizienten benötigt. Unter Berücksichtigung des Zwischenergebnisses aus Gleichung (\ref{eq:enachmukurz}) folgt für den Abschirmungstensor   
     \begin{equation}\label{eq:analytsigma}
     \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right),
     \end{equation}
@@ -713,7 +720,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
 	\end{equation}
     
     
-    Die Gleichungen (\ref{eq:cphfupi}) und (\ref{eq:cphfuji}) werden \ac{cphf}-Gleichungen genannt.\supercite{stevens1963perturbed,gerratt1968force} Sie bilden ein unterbestimmtes Gleichungssystem, wodurch zusätzliche Forderungen nötig werden.\supercite{weigendphdthesis} Durch die Wahl  $U_{ji}^{B_\beta}=-U_{ij}^{B_\beta}$\supercite{handy1984evaluation} folgt unmittelbar für die Berechnung des besetzt-besetzt Blocks   
+    Die Gleichungen (\ref{eq:cphfupi}) und (\ref{eq:cphfuji}) werden \aclu*{cphf-}\mbox{(\acs{cphf}-)}\acused{cphf} Gleichungen genannt.\supercite{stevens1963perturbed,gerratt1968force} Sie bilden ein unterbestimmtes Gleichungssystem, wodurch zusätzliche Forderungen nötig werden.\supercite{weigendphdthesis} Durch die Wahl  $U_{ji}^{B_\beta}=-U_{ij}^{B_\beta}$\supercite{handy1984evaluation} folgt unmittelbar für die Berechnung des besetzt-besetzt Blocks   
     \begin{equation}\label{eq:uji}
     \iu U_{ji}^{B_\beta}=-\frac{1}{2}\sum_{\mu\nu}c_{\mu j}S_{\mu\nu}^{B_\beta}c_{\nu i}=-\frac{1}{2}S_{ji}^{B_\beta}\, .
     \end{equation}
@@ -742,7 +749,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
     Damit sind die \ac{cphf}-Gleichungen über den Austauschterm $K$ gekoppelt und müssen in einem iterativen Verfahren näherungsweise gelöst werden.
     
     \subsubsection{Konvergenzbeschleunigung durch das DIIS-Verfahren}
-    Zur Verbesserung des Konvergenzverhaltens beim \ac{scf}-Verfahren wurde von Pulay das \ac{diis}-Verfahren vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen der vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene, aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt über die Lagrange-Methode dazu, dass ein lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt. Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Abschnitt erwähnt, können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet:   
+    Zur Verbesserung des Konvergenzverhaltens beim \ac{scf}-Verfahren wurde von Pulay das \aclu*{diis-}\mbox{(\acs{diis}-)}\acused{diis}Verfahren vorgeschlagen.\supercite{pulay1980convergence,pulay1982improved} Bei diesem Verfahren wird die Abweichung der Fockmatrix $\boldsymbol{F}^{(k)}$ bzw. der Dichtematrix $\boldsymbol{D}^{(k)}$, welche in der $(k)$-ten Iteration bestimmt wurde, von der exakten Fockmatrix (bzw. Dichtematrix) minimiert. Dabei wird aus den Fockmatrizen der vorhergehenden Iterationen eine Linearkombination gebildet, welche möglichst nahe an der exakten Lösung liegt. Die daraus erhaltene, aktualisierte Fockmatrix kann nun für die nächste Iteration verwendet werden, wodurch das Verfahren schneller konvergiert. Die Nebenbedingung, dass die Summe der Koeffizienten für die Linearkombination 1 ergeben muss, führt über die Lagrange-Methode dazu, dass ein lineares Gleichungssystem gelöst werden muss. Das Lösen des Gleichungssystems im iterativen Unterraum erfolgt durch direkte Inversion, wodurch sich der Name des Verfahrens ergibt. Auch die Konvergenz in den \ac{cphf}-Iterationen lässt sich durch das \ac{diis}-Verfahren beschleunigen. Wie bereits im vorherigen Abschnitt erwähnt, können die $U_{ji}^{B_\beta}$ direkt nach Gleichung (\ref{eq:uji}) und unabhängig von den $U_{ai}^{B_\beta}$ bestimmt werden. Für letztere wird zunächst das folgende, in den $U_{ai}^{B_\beta}$ quadratische Funktional betrachtet:   
     \begin{equation}\label{eq:lfunktional}
     \begin{aligned}
     \mathcal{L}=&\sum_a\sum_i U_{ai}^{B_\beta}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
@@ -750,7 +757,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
     \end{aligned}
     \end{equation}
     
-    Die Ableitung des Funktionals aus Gleichung (\ref{eq:lfunktional}) nach den $U_{ai}^{B_\beta}$ liefert die \ac{cphf}-Gleichungen (\ref{eq:cphfupi}), welche es zu lösen gilt. Gleichzeitig sind die Lösungen der \ac{cphf}-Gleichungen jedoch auch stationäre Punkte des Funktionals $\mathcal{L}$, wodurch dieses minimiert werden soll. Im \ac{diis}-Verfahren sollen nun die bestmöglichen $\left(U_{ai}^{B_\beta}\right)^{(k)}$ der aktuellen Iteration $(k)$ durch eine Linearkombination aus allen bisher berechneten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ gebildet werden,
+    Die Ableitung des Funktionals aus Gleichung (\ref{eq:lfunktional}) nach den $U_{ai}^{B_\beta}$ liefert die \ac{cphf}-Gleichungen (\ref{eq:cphfupi}), welche es zu lösen gilt. Gleichzeitig sind die Lösungen der \ac{cphf}-Gleichungen jedoch auch stationäre Punkte des Funktionals $\mathcal{L}$, wodurch dieses minimiert werden soll. Im \ac{diis}-Verfahren sollen nun die bestmöglichen $\left(U_{ai}^{B_\beta}\right)^{(k,\textrm{opt})}$ der aktuellen Iteration $(k)$ durch eine Linearkombination aus allen bisher berechneten $\left(U_{ai}^{B_\beta}\right)^{(l)}$ gebildet werden,
     \begin{equation}\label{eq:uentwicklung}
     \left(U_{ai}^{B_\beta}\right)^{(k,\textrm{opt})}=\sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}\, .
     \end{equation}
@@ -781,7 +788,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
 	\end{aligned}
 	\end{equation}
 	
-	ergibt. Der Fehler, welcher dem zweiten Term auf der rechten Seite in Gleichung (\ref{eq:nebenbed}) entspricht, soll nun minimiert werden, wodurch dieser verschwindet und nur noch der erste Term übrig bleibt. Aus der Forderung $\left(U_{ai}^{B_\beta}\right)^{(k)}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ folgt damit direkt $\sum_{l=1}^kx_l^{B_\beta}=1$. Die Minimierung unter der gegebenen Nebenbedingung lässt sich schließlich mit der Lagrange-Methode durch Einführen eines Lagrange-Multiplikators realisieren. Damit wird das Funktional $\mathcal{L}$ zu
+	ergibt. Der Fehler, welcher dem zweiten Term auf der rechten Seite in Gleichung (\ref{eq:nebenbed}) entspricht, soll nun minimiert werden, wodurch dieser verschwindet und nur noch der erste Term übrig bleibt. Aus der Forderung $\left(U_{ai}^{B_\beta}\right)^{(k,\textrm{opt})}=\left(U_{ai}^{B_\beta}\right)_\textrm{exakt}$ folgt damit direkt $\sum_{l=1}^kx_l^{B_\beta}=1$. Die Minimierung unter der gegebenen Nebenbedingung lässt sich schließlich mit der Lagrange-Methode durch Einführen eines Lagrange-Multiplikators realisieren. Damit wird das Funktional $\mathcal{L}$ zu
 	\begin{equation}
     \begin{aligned}
     \mathcal{L}=&\sum_a\sum_i \sum_{l=1}^k x_l^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(l)}\left[2\sum_{\mu\nu\kappa\lambda}c_{\mu a}^*\left(h_{\mu\nu}^{B_\beta}+D_{\kappa\lambda}G_{\mu\nu\kappa\lambda}^{B_\beta}-\varepsilon_i S_{\mu\nu}^{B_\beta}\right)c_{\nu i}\right.\\
@@ -798,7 +805,7 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
     \end{aligned}
     \end{equation}
     
-    erhalten wird. Umsortieren und Übertragen des Faktors 2 in $\lambda$ liefert
+    erhalten wird. Dividieren durch 2 und Umsortieren liefert
     \begin{equation}
     \begin{aligned}
     &\sum_a\sum_i\sum_{m=1}^k\sum_{\mu\nu\kappa\lambda}x_m^{B_\beta}\left(U_{ai}^{B_\beta}\right)^{(n)}\left[\iu\left(\varepsilon_i-\varepsilon_a\right)\left(U_{ai}^{B_\beta}\right)^{(m)}-c_{\mu a}^*\left(D_{\kappa\lambda}^{B_\beta}G_{\mu\nu\kappa\lambda}\right)^{(m)}c_{\nu i}\right]+\lambda\\
@@ -888,10 +895,10 @@ wobei die einzelnen Quantenzahlen $m_K$ die Werte von $m_K=-I_K, -I_K+1, \dotsc 
      wobei die Gleichung (\ref{eq:finaluai}) der Gleichung (\ref{eq:uai}) aus dem vorherigen Abschnitt entspricht.
 
 \subsection{NMR-Abschirmungskonstanten in der DFT}    
-	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung chemischer Verschiebungen mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher streng genommen keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Weiterhin hat das Magnetfeld zur Folge, dass die Austauschkorrelationsenergie davon abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. von der Stromdichte $J(\vec{r})$ abhängen. Entsprechende Modifikationen haben beispielsweise Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled}-\ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute chemische Abschirmungskonstanten.\supercite{buhl1999dft}
+	Die Anwesenheit eines Magnetfeldes führt zu mehreren Problemen bei der Berechnung chemischer Verschiebungen mit der \ac{dft}. Die Hohenberg-Kohn-Theoreme wurden in Abwesenheit eines Magnetfeldes formuliert und besitzen daher streng genommen keine Gültigkeit mehr.\supercite{rajagopal1973inhomogeneous,vignale1988current} Weiterhin hat das Magnetfeld zur Folge, dass die Austauschkorrelationsenergie davon abhängig wird.\supercite{buhl1999dft} Daher müssten Austauschkorrelationsfunktionale verwendet werden, welche selbst vom Magnetfeld, bzw. von der Stromdichte $J(\vec{r})$ abhängen. Entsprechende Modifikationen haben beispielsweise Vignale und Rasolt vorgeschlagen.\supercite{vignale1988current,vignale1987density} Lee, Handy und Colwell \supercite{lee1995density} haben jedoch gezeigt, dass der Beitrag der Stromdichte zur chemischen Verschiebung sehr gering ist und die Berechnungen dadurch nicht verbessert werden. Wird die Abhängigkeit des Funktionals von der Stromdichte vernachlässigt, so hängt die abgeleitete Fockmatrix nicht mehr von den gestörten Koeffizienten ab, wie weiter unten zu sehen sein wird. Die Gleichungen sind damit entkoppelt und dieser Ansatz wird daher als \textit{uncoupled}-\ac{dft} bezeichnet.\supercite{bieger1985lcao,malkin1993calculations} Dadurch ist kein iteratives Verfahren mehr notwendig und die Gleichungen für den Abschirmungstensor können direkt angegeben werden.  Dieser Ansatz liefert in vielen Fällen bereits überraschend gute Abschirmungskonstanten.\supercite{buhl1999dft}
 	
 \bigskip
-Zur Berechnung des chemischen Abschirmungstensors nach Gleichung (\ref{eq:sigmadiapara}) wird die gestörte Dichtematrix benötigt, welche sich wiederum aus den $U_{ji}^{B_\beta}$ und den $U_{ai}^{B_\beta}$ aus den Gleichungen (\ref{eq:uji}) und (\ref{eq:uai}) berechnen lässt. Für $U_{ji}^{B_\beta}$ ändert sich nichts im Vergleich zum Hartree-Fock-Verfahren. Für die $U_{ai}^{B_\beta}$ wird jedoch die Ableitung der Fockmatrix 
+Zur Berechnung des Abschirmungstensors nach Gleichung (\ref{eq:sigmadiapara}) wird die gestörte Dichtematrix benötigt, welche sich wiederum aus den $U_{ji}^{B_\beta}$ und den $U_{ai}^{B_\beta}$ aus den Gleichungen (\ref{eq:uji}) und (\ref{eq:uai}) berechnen lässt. Für $U_{ji}^{B_\beta}$ ändert sich nichts im Vergleich zum Hartree-Fock-Verfahren. Für die $U_{ai}^{B_\beta}$ wird jedoch die Ableitung der Fockmatrix 
     \begin{equation}\label{eq:fmunudbdft}
     \begin{aligned}
     F_{\mu\nu}^{B_\beta}=&h_{\mu\nu}^{B_\beta}+\sum_{\kappa\lambda}\left[D_{\kappa\lambda}^{B_\beta}\left(\chi_\mu^{\vec{B}=0}\chi_\nu^{\vec{B}=0}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)+D_{\kappa\lambda}\left(\overline{\chi_\mu\chi_\nu}\vert\chi_\kappa^{\vec{B}=0}\chi_\lambda^{\vec{B}=0}\right)_{\beta}\right.\\
@@ -921,7 +928,7 @@ wobei ausgenutzt wurde, dass $\frac{\partial \tau}{\partial \tilde{\tau}}=1$ ist
 
 \begin{equation}\label{eq:ymunudb}
 \begin{aligned}
-\tilde{Y}_{\mu\nu}^{B_\beta}=&\left.\frac{\partial Y_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}\\
+\tilde{Y}_{\mu\nu}^{B_\beta}=&\left.\frac{\partial \tilde{Y}_{\mu\nu}}{\partial B_\beta}\right\vert_{\vec{B}=0}\\
 =&\int\frac{\partial f}{\partial \rho(\vec{r})}\frac{\partial}{\partial B_\beta}\left[\chi_\mu^*\chi_\nu\right]_{\vec{B}=0}\Diff3\vec{r}
 +\int 2\frac{\partial f}{\partial \vert\vec{\nabla} \rho(\vec{r})\vert^2}\vec{\nabla} \rho(\vec{r})\frac{\partial}{\partial B_\beta}\left[\vec{\nabla} \left(\chi_\mu^*\chi_\nu\right)\right]_{\vec{B}=0}\Diff3\vec{r}\\
 &+\int\frac{1}{2}\frac{\partial f}{\partial\tau}\frac{\partial}{\partial B_\beta}\left[\left(\iu\vec{\nabla} +\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\mu^*\cdot\left(-\iu\vec{\nabla}+\frac{1}{2c}\vec{B}\times\vec{r}\right)\chi_\nu\right]_{\vec{B}=0}\Diff3\vec{r}\\
@@ -980,9 +987,9 @@ und
 \end{aligned}
 \end{equation}
 
-\subsection{Implementierung von nach den Komponenten des Magnetfeldes abgeleiteten Integralen}
+\subsection{Implementierung der nach den Komponenten des Magnetfeldes abgeleiteten Integrale}
 Im Folgenden wird am Beispiel der Kern-Elektron-Wechselwirkung kurz auf die allgemeine Vorgehensweise bei der Implementierung von nach den Komponenten des Magnetfeldes abgeleiteten
-Integralen eingegangen. Dieses Vorgehen gilt sowohl für die in den vorherigen Abschnitten hergeleiteten Integralbeiträge, aber auch für die in der vorliegenden Arbeit neu zu implementierenden Integrale zur Erweiterung der Funktionalität und zur Verbesserung der Effizienz. Eine ausführliche Beschreibung der Implementierung dieser neuen Beiträge folgt in den Kapiteln \ref{funktionalität} und \ref{effizienz}. Durch die Verwendung von \acp{giao} und deren expliziten Abhängigkeit vom Magnetfeld wird bei der Differenzierung von Basisfunktionen der Faktor $\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{r}\right)$ erhalten. Mit der Beziehung $\vec{r}=\vec{r}_\mu+\vec{R}_\mu$ gilt für die nach den Komponenten des Magnetfeldes abgeleiteten Kern-Elektron-Wechselwirkungsintegrale
+Integralen eingegangen. Dieses Vorgehen gilt sowohl für die in den vorherigen Abschnitten hergeleiteten Integralbeiträge als auch für die in der vorliegenden Arbeit neu zu implementierenden Integrale zur Erweiterung der Funktionalität und zur Verbesserung der Effizienz. Eine ausführliche Beschreibung der Implementierung dieser neuen Beiträge folgt in den Kapiteln \ref{funktionalität} und \ref{effizienz}. Durch die Verwendung von \acp{giao} und deren expliziten Abhängigkeit vom Magnetfeld wird bei der Differenzierung von Basisfunktionen der Faktor $\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{r}\right)$ erhalten. Mit der Beziehung $\vec{r}=\vec{r}_\mu+\vec{R}_\mu$ gilt für die nach den Komponenten des Magnetfeldes abgeleiteten Kern-Elektron-Wechselwirkungsintegrale
 \begin{equation}\label{eq:vmunudb}
 \begin{aligned}
 &\frac{\partial}{\partial B_\beta}\left(\left\langle\chi_{\mu}\left\vert\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}\right\rangle\right)_{\vec{B}=0}=\frac{\iu}{2c}\left\langle\chi_{\mu}\left\vert\left(\vec{R}_{\mu\nu}\times\vec{r}\right)\hat{V}_{\textrm{Ke}}\right\vert\chi_{\nu}\right\rangle\\
@@ -997,12 +1004,14 @@ Bei der Verwendung von gewöhnlichen, atomzentrierten Basisfunktionen der Form
 
 wobei $\zeta$ der Exponent der Basisfunktion ist, können die abgeleiteten Integrale aus den nicht abgeleiteten Integralen durch Multiplikation mit dem Faktor $\frac{\iu}{2c}\left(\vec{R}_\mu\times\vec{R}_\nu\right)$ (zweiter Term auf der rechten Seite in Gleichung (\ref{eq:vmunudb})) und aus den nicht abgeleiteten Integralen, bei denen entsprechend die $l$-Quantenzahl ($l$, $m$, $n$) um 1 erhöht wurde (erster Term auf der rechten Seite in Gleichung (\ref{eq:vmunudb})), berechnet werden. Dafür können die Routinen für die Berechnung der Energie modifiziert werden. In ähnlicher Form (mit anderem Vorfaktor) werden die Integrale mit erhöhter $l$-Quantenzahl jedoch auch zur Berechnung des kartesischen Gradienten benötigt, sodass für ihre Berechnung oftmals auch vorhandene Gradientenroutinen modifiziert werden können.
 
-
+\newpage
 \subsection{Die Berechnung von Stromdichten und Ringströmen}
-Externe Magnetfelder induzieren einen elektrischen Strom in Molekülen, sofern dort bewegliche Ladungsträger vorhanden sind. Aus diesem Grund lassen sich über die magnetisch induzierte Stromdichte Informationen über die Aromatizität, die Delokalisierung der Elektronen oder den Pfad des Stroms in einem Molekül erhalten.\supercite{fliegl2011gauge} Wird beispielsweise ein planares Moleküle einem externen Magnetfeld ausgesetzt, welches senkrecht zur Molekülebene angelegt wurde, kommt es zur Induktion eines Ringstroms. Ist das Molekül aromatisch, so resultiert ein diatropischer Gesamtringstrom, welcher im Uhrzeigersinn (der Lenz'schen Regel folgend) fließt. Das dabei erzeugte Magnetfeld ist dem externen Magnetfeld entgegensetzt. Umgekehrt verhält es sich in antiaromatischen Verbindungen. Der in diesem Fall induzierte paratropische Gesamtringstrom fließt gegen den Uhrzeigersinn und das externe Magnetfeld wird verstärkt. Die Stromstärke kann als Maß für die Aromatizität in der entsprechenden Verbindung angesehen werden. Berechnen lässt sich diese Stromstärke durch numerische Integration des Stromflusses entlang einer chemischen Bindung und um molekulare Ringe herum. Somit lassen sich die Pfade des Stroms in Molekülen beschreiben und Aussagen über die Aromatizität einzelner Ringe in Verbindungen, welche aus mehreren verknüpften Ringen bestehen, treffen. Analog zur Berechnung der chemischen Abschirmungskonstanten muss auch bei der Berechnung der Stromdichte das Problem der Eichursprungsinvarianz adressiert und gelöst werden. Die populärste und vielversprechendste Methode für chemische Abschirmungskonstanten beruht auf der Verwendung von \acp{giao}. Dieses Vorgehen lässt sich auch auf die Berechnung der Stromdichte übertragen und ist in der \aclu*{gimic-}\mbox{(\acs{gimic}-)}\acused{gimic}Methode\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations} realisiert. Durch die Verwendung der \acp{giao} wird die Stromdichte unabhängig von der Wahl des Eichursprungs, Eichinvarianz wird hingegen erst im Limit einer vollständigen Basis erreicht.\supercite{juselius2004calculation} Zusätzlich sorgen die \acp{giao} für eine Verbesserung der Basissatzkonvergenz.\supercite{fliegl2011gauge} Zur Berechnung der Stromdichte wird die Gleichung für die Berechnung der chemischen Abschirmungskonstanten, welche auf analytischer Differenzierung basiert, mit der entsprechenden Biot-Savart-Gleichung kombiniert.\supercite{lazzeretti2000ring} Der analytische Ausdruck für die Abschirmungskonstanten ist nach Gleichung (\ref{eq:analytsigma}) 
+Externe Magnetfelder induzieren einen elektrischen Strom in Molekülen, sofern dort bewegliche Ladungsträger vorhanden sind. Aus diesem Grund lassen sich über die magnetisch induzierte Stromdichte Informationen über die Aromatizität, die Delokalisierung der Elektronen oder den Pfad des Stroms in einem Molekül erhalten.\supercite{fliegl2011gauge} Wird beispielsweise ein planares Moleküle einem externen Magnetfeld ausgesetzt, welches senkrecht zur Molekülebene angelegt wurde, kommt es zur Induktion eines Ringstroms. Ist das Molekül aromatisch, so resultiert ein diatropischer Gesamtringstrom, welcher im Uhrzeigersinn (der Lenz'schen Regel folgend) fließt. Das dabei erzeugte Magnetfeld ist dem externen Magnetfeld entgegensetzt. Umgekehrt verhält es sich in antiaromatischen Verbindungen. Der in diesem Fall induzierte paratropische Gesamtringstrom fließt gegen den Uhrzeigersinn und das externe Magnetfeld wird verstärkt. Die Stromstärke kann als Maß für die Aromatizität in der entsprechenden Verbindung angesehen werden. Berechnen lässt sich diese Stromstärke durch numerische Integration des Stromflusses entlang einer chemischen Bindung und um molekulare Ringe herum. Somit lassen sich die Pfade des Stroms in Molekülen beschreiben und Aussagen über die Aromatizität einzelner Ringe in Verbindungen, welche aus mehreren verknüpften Ringen bestehen, treffen. Analog zur Berechnung der Abschirmungskonstanten muss auch bei der Berechnung der Stromdichte das Problem der Eichursprungsinvarianz adressiert und gelöst werden. Die populärste und vielversprechendste Methode für Abschirmungskonstanten beruht auf der Verwendung von \acp{giao}. Dieses Vorgehen lässt sich auch auf die Berechnung der Stromdichte übertragen und ist in der \aclu*{gimic-}\mbox{(\acs{gimic}-)}\acused{gimic}Methode\supercite{juselius2004calculation,taubert2011calculation,fliegl2011gauge,sundholm2016calculations} realisiert. Durch die Verwendung der \acp{giao} wird die Stromdichte unabhängig von der Wahl des Eichursprungs, Eichinvarianz wird hingegen erst im Limit einer vollständigen Basis erreicht.\supercite{juselius2004calculation} Zusätzlich sorgen die \acp{giao} für eine Verbesserung der Basissatzkonvergenz.\supercite{fliegl2011gauge} Zur Berechnung der Stromdichte wird die Gleichung für die Berechnung der Abschirmungskonstanten, welche auf analytischer Differenzierung basiert, mit der entsprechenden Biot-Savart-Gleichung kombiniert.\supercite{lazzeretti2000ring} Der analytische Ausdruck für die Abschirmungskonstanten ist nach Gleichung (\ref{eq:analytsigma}) 
     \begin{equation}\label{eq:sigmaana}
     \sigma_{K_\alpha\beta}=\left.\frac{\partial^2 E}{\partial \mu_{K_\alpha}\partial B_\beta}\right|_{\vec{\mu}_K=\vec{B}=0,\forall K}=\sum_{\mu\nu}\left(D_{\mu\nu}^{B_\beta}h_{\mu\nu}^{\mu_{K_\alpha}}+D_{\mu\nu}h_{\mu\nu}^{\mu_{K_\alpha}B_\beta}\right) 
     \end{equation}
+\vfill 
+\newpage
     
 und der entsprechende Bio-Savart Ausdruck ist gegeben durch
 	\begin{equation}\label{eq:sigmabio}
@@ -1027,6 +1036,8 @@ und der entsprechende Bio-Savart Ausdruck ist gegeben durch
 	
 	Hierbei wurden die neuen Operatoren $\hat{\tilde{h}}^{\mu_{K_\alpha}}$ und $\hat{\tilde{h}}^{\mu_{K_\alpha}B_\beta}$ ohne den Term $\vert\vec{r}-\vec{R}_K\vert^3$ im Nenner eingeführt. Mit Gleichung (\ref{eq:stromdichte}) kann die Stromdichte für jeden Punkt im Raum berechnet werden. Bei der Summation heben sich alle Beiträge auf, die explizit vom Eichursprung bzw. von den Kernpositionen $\vec{R}_K$ abhängen, wodurch der Stromdichtetensor unabhängig davon wird. 
 Die quantenchemische Berechnung von Ringströmen erfolgt in zwei Schritten. Zunächst wird quantenchemisch die gestörte Dichtematrix $\boldsymbol{D}^{B_\beta}$ berechnet und zusammen mit der ungestörten Dichtematrix $\boldsymbol D$ in eine Datei geschrieben. In der vorliegenden Arbeit erfolgt dieser Schritt mit \textsc{Turbomole}. Im zweiten Schritt werden diese Dichtematrizen vom eigenständigen Programm \ac{gimic} eingelesen und der magnetisch induzierte Stromdichtetensor $J^{B_\beta}_\gamma(\vec{r})$ punktweise auf einem Gitter berechnet. Diese Stromdichte wird abschließend über eine vom Benutzer spezifizierte Fläche zur Stromstärke integriert. Wird die Fläche senkrecht zu ausgewählten Bindungen gewählt, lassen sich Aussagen über die Stärke des Stroms entlang dieser Bindungen treffen. Auf diese Weise kann der Pfad des Stroms in Molekülen nachverfolgt und in lokale oder globale Ringströme um das gesamte Molekül herum unterteilt werden. Der resultierende Gesamtringstrom ergibt sich dabei aus der Summe der gegenläufigen diatropischen und paratropischen Einzelbeiträge. Seine Stärke ist ein Maß für die Delokalisierung der Elektronen oder den aromatischen Charakter des untersuchten Moleküls.
+\newpage
+\quad
 %Weil für die Berechnung der Stromdichte die Information über den verwendeten Basissatz, die ungestörte Dichtematrix $\boldsymbol D$ und die gestörte Dichtematrix $\boldsymbol{D}^{B_\beta}$ benötigt wird, ist eine vorhergehende Berechnung der chemischen Abschirmungskonstanten, bei der die benötigten Größen erhalten werden, notwendig. Auf der anderen Seite ist die eigentliche Berechnung der Stromdichte damit aber auch unabhängig von der verwendeten Methode für die Berechnung der Abschirmungskonstanten. Eine Berechnung der Stromdichte auf \ac{cc} Niveau benötigt genau so viel Zeit wie die Berechnung auf \ac{dft} Niveau. Das \ac{gimic} ist ein eigenständiges Programm und kann die von \textsc{Turbomole} zur Verfügung gestellte Dichtematrix und gestörte Dichtematrix für die Berechnung der Stromdichte verwenden.
 
  

@@ -29,7 +29,6 @@
 \usepackage{longtable}
 \usepackage{tabularx}
 
-
 % Unverzichtbare Pakte
 %\usepackage{setspace}
 \usepackage[onehalfspacing]{setspace}
@@ -353,7 +352,7 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 \chapter{Theoretische Grundlagen}\label{theorie}
 \input{kapitel/theoretische_grundlagen}
 
-\chapter{Programmstruktur des \texttt{mpshift}}\label{programmstruktur}
+\chapter{Programmstruktur des Moduls \texttt{mpshift}}\label{programmstruktur}
 \input{kapitel/programmstruktur}
 
 \chapter{Erweiterungen der Funktionalität}\label{funktionalität}
@@ -371,19 +370,30 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 
 \chapter{Zusammenfassung}\label{zusammenfassung}
 \input{kapitel/zusammenfassung}
-
+%\FloatBarrier
+%\newpage
 \chapter{Ausblick}\label{ausblick}
 \input{kapitel/ausblick}
-
+%\vfill
+%\newpage
+%\quad
+%%AAAAAAAAAAA
+%\vfill
+%\cleardoublepage
+%\thispagestyle{empty}
+%\newpage
 % ---------------------------------------------------------------
 % Anhang
 \appendix
 \setcounter{figure}{0}
 \renewcommand{\thefigure}{A\arabic{figure}}
-\chapter{Abbildungen und Tabellen}\label{anhang}
+\chapter{Effiziente Berechnung des Hartree-Fock-Austauschs}\label{hfaustausch}
+\input{kapitel/hfaustausch}
+\chapter{Tabellen und Abbildungen}\label{anhang}
 \input{kapitel/anhang}
 \chapter{Abdruckgenehmigungen}
 \input{kapitel/abbildungsgenehmigungen}
+
 \begingroup
 	\renewcommand{\addvspace}[1]{}
 %	\phantomsection
@@ -403,7 +413,10 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 \listoftables
 }
 \endgroup
+\vfill
 \newpage
+\thispagestyle{empty}
+\cleardoublepage
 \input{./etc/acronym}
 %Abkürzungen ausgeben
 \deftranslation[to=German]{Acronyms}{Abkürzungsverzeichnis}
@@ -414,12 +427,16 @@ isbn=false, url=true, doi=false, eprint=false, giveninits=true,%
 %\pagenumbering{Roman}
 %\setcounter{page}{9}
 \printbibliography[title=Literaturverzeichnis]
+\vfill
+\newpage
+\thispagestyle{empty}
+\cleardoublepage
 \chapter*{Veröffentlichungen}
 \markboth{Veröffentlichungen}{} %chapterheader trotz * anzeigen lassen
 \input{kapitel/publikationsliste}
 
 \chapter*{Lebenslauf}
-\markboth{Lebenslaug}{} %chapterheader trotz * anzeigen lassen
+\markboth{Lebenslauf}{} %chapterheader trotz * anzeigen lassen
 \input{kapitel/lebenslauf}
 \newpage
 \thispagestyle{empty}

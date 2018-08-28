@@ -161,7 +161,7 @@ Austausch) auf den Gesamtringstrom in der Serie \glqq Dunlap-\textit{armchair}-\
 \end{figure}
 \FloatBarrier
 
-Der Gesamtringstrom aller Verbindungen wurde dafür erneut mit dem M06-2x-Funktional\supercite{zhao2008m06} berechnet, welches 54 \% Hartree-Fock-Austausch beinhaltet. Für die beiden \acp{tcnt} C$_{576}$ und C$_{672}$ dieser Serie erfolgte zusätzlich die Berechnung mit den Funktionalen KT3,\supercite{keal2004semiempirical} PBE,\supercite{perdew1996generalized} TPSSh,\supercite{staroverov2003comparative} B3-LYP,\supercite{becke1993density,lee1988development,stephens1994ab} PBE0,\supercite{adamo1999toward} und M06.\supercite{zhao2008m06} Der Vergleich zwischen TPSS und M06-2x zeigt, dass es mit dem Hybridfunktional zu einem allgemeinen Anstieg des Gesamtringstroms kommt. Der Trend innerhalb der Serie bleibt dabei jedoch erhalten. Aus den Berechnungen der anderen Funktionale kann ein nahezu linearer Anstieg des Gesamtringstroms mit zunehmenden Hartree-Fock-Austausch beobachtet werden.
+Der Gesamtringstrom aller Verbindungen wurde dafür erneut mit dem M06-2x-Funktional\supercite{zhao2008m06} berechnet, welches 54 \% Hartree-Fock-Austausch beinhaltet. Für die beiden \acp{tcnt} C$_{576}$ und C$_{672}$ dieser Serie erfolgte zusätzlich die Berechnung mit den Funktionalen KT3,\supercite{keal2004semiempirical} PBE,\supercite{perdew1996generalized} TPSSh,\supercite{staroverov2003comparative} B3LYP,\supercite{becke1993density,lee1988development,stephens1994ab} PBE0,\supercite{adamo1999toward} und M06.\supercite{zhao2008m06} Der Vergleich zwischen TPSS und M06-2x zeigt, dass es mit dem Hybridfunktional zu einem allgemeinen Anstieg des Gesamtringstroms kommt. Der Trend innerhalb der Serie bleibt dabei jedoch erhalten. Aus den Berechnungen der anderen Funktionale kann ein nahezu linearer Anstieg des Gesamtringstroms mit zunehmenden Hartree-Fock-Austausch beobachtet werden.
 
 \bigskip
 In den beiden Abbildungen \ref{abb:homolumoarmchair} und \ref{abb:homolumozigzag} sind die HOMOs und LUMOs für ausgewählte Verbindungen der einzelnen Strukturtypen gezeigt. Diese sind in allen Fällen weitgehend über den gesamten Torus delokalisiert, was jedoch bereits alleine aus Symmetriegründen so sein muss. Bei den fünf- und siebengliedrige Kohlenstoffringe beinhaltenden \acp{tcnt} ist häufig eine leichte Lokalisierung an den pentagonalen und heptagonalen Einheiten zu erkennen. Die Delokalisierung der Orbitale ist jedoch kein ausreichendes Kriterium für das Auftreten eines großen Gesamtringstroms. Wichtiger ist die geometrische und damit einhergehende elektronische Struktur der \acp{tcnt}. Die Auftragung des Gesamtringstroms gegen das berechnete HOMO-LUMO-Gap in Abbildung \ref{abb:tcntcurvsgap} zeigt, dass letzteres für alle Verbindungen mit großem Gesamtringstrom kleiner als \unit[0.2]{eV} ist. Dies ist demnach eine notwendige, aber nicht hinreichende Bedingung für das Auftreten eines Ringstromes, da ebenfalls Strukturen mit kleinem Gap aber ohne Gesamtringstrom auftreten. Insbesondere in den \textit{polyhex}-\textit{armchair}- und \glqq Dunlap-\textit{armchair}-\textit{zigzag} 1\grqq{} Strukturtypen treten große Ringströme auf. Beiden ist gemeinsam, dass sie (im Wesentlichen) aus metallischen \acp{cnt} aufgebaut sind. Dies trifft auch auf den \glqq Chuang-\textit{armchair}\grqq{} Strukturtyp zu, jedoch verschwindet der Gesamtringstrom hier in den meisten Fällen oder ist deutlich kleiner. Daraus kann die Schlussfolgerung gezogen werden, dass die Lage und Orientierung der Pentagone und Heptagone innerhalb der \acp{tcnt} ebenfalls einen Einfluss auf den Gesamtringstrom hat. Liegen diese innerhalb des Äquators, treten größere Gesamtringströme auf als wenn sie unter- und oberhalb des Äquators liegen. Weiterhin kann festgehalten werden, dass es insbesondere in den \textit{polyhex}-\textit{armchair}-\acp{tcnt} zu einem weitgehend linearen Anstieg des Gesamtringstroms mit zunehmender Systemgröße kommt. Dies legt die Vermutung nahe, dass diese Ringströme ebenfalls in deutlich größeren und damit thermodynamisch stabilen \textit{polyhex}-\acp{tcnt} auftreten.
@@ -189,7 +189,7 @@ Zusammenfassend zeigen die Untersuchungen unterschiedlicher \ac{tcnt}-Strukturty
 \section{Anwendungen in der anorganischen Chemie}
 \FloatBarrier
 \subsection{\texorpdfstring{$[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$}{[Hg\_8Te\_8(Te\_2)\_4]8-}: Ein anorganisches Porphyrin?}\label{anorgporh}
-Die Implementierung von \ac{cosmo}\supercite{klamt1993cosmo} und der \acp{ecp} in das \texttt{mpshift}-Modul liefert die notwendigen Voraussetzungen, um einen tieferen Einblick in magnetische Eigenschaften anionischer Verbindungen, welche schwere Elemente beinhalten, zu erhalten. Ein Beispiel dafür ist das in der Arbeitsgruppe von Stephanie Dehnen synthetisierte $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$,\supercite{dehnenhg4te8} welches auf der linken Seite in Abbildung \ref{abb:hg8te16undb8s16} gezeigt ist. Die Seitenansicht zeigt das Molekül mit TPSSh\supercite{tao2003climbing}/def2-TZVP\supercite{weigend2005balanced} optimierten Strukturparametern. Zusätzlich wurden die entsprechenden Auxiliarbasisfunktionen\supercite{weigend2006accurate} und \acp{ecp}\supercite{peterson2003systematically} verwendet. Die Kompensation der Ladung erfolgte durch \ac{cosmo}. In der Abbildung ist zu erkennen, dass das Anion nicht vollständig planar ist und damit auch leicht von der idealen $D_{4\textrm{h}}$ symmetrischen Struktur abweicht. 
+Die Implementierung von \ac{cosmo}\supercite{klamt1993cosmo} und der \acp{ecp} in das \texttt{mpshift}-Modul liefert die notwendigen Voraussetzungen, um einen tieferen Einblick in magnetische Eigenschaften anionischer Verbindungen, welche schwere Elemente beinhalten, zu erhalten. Ein Beispiel dafür ist das in der Arbeitsgruppe Dehnen (Universität Marburg) synthetisierte $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$,\supercite{dehnenhg4te8} welches auf der linken Seite in Abbildung \ref{abb:hg8te16undb8s16} gezeigt ist. Die Seitenansicht zeigt das Molekül mit TPSSh\supercite{tao2003climbing}/def2-TZVP\supercite{weigend2005balanced} optimierten Strukturparametern. Zusätzlich wurden die entsprechenden Auxiliarbasisfunktionen\supercite{weigend2006accurate} und \acp{ecp}\supercite{peterson2003systematically} verwendet. Die Kompensation der Ladung erfolgte durch \ac{cosmo}. In der Abbildung ist zu erkennen, dass das Anion nicht vollständig planar ist und damit auch leicht von der idealen $D_{4\textrm{h}}$ symmetrischen Struktur abweicht. 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{hg8te16undb8s16}
@@ -205,7 +205,7 @@ Die Implementierung von \ac{cosmo}\supercite{klamt1993cosmo} und der \acp{ecp} i
 %\label{abb:hg8te16}
 %\end{figure}
 
-Zusätzlich wurde ebenfalls das bereits bekannte B$_8$S$_8$(S$_2$)$_4$\supercite{krebs1980b8s16} (Abbildung \ref{abb:hg8te16undb8s16} rechts) untersucht. Hier ist die Abweichung des Moleküls mit optimierten Strukturparametern von der planaren Struktur erheblich größer, wie die Seitenansicht deutlich zeigt. Die $D_{4\textrm{h}}$ symmetrische Struktur weist eine schwache imaginäre Mode von etwa \unit[$-$10]{cm$^{-1}$} auf, welche genau der Gerüstschwingung entspricht, die das Durchschwingen des Moleküls beschreibt. Ebenfalls bekannt ist das schwerere Homolog B$_8$Se$_8$(Se$_2$)$_4$.
+Zusätzlich wurde ebenfalls das bereits bekannte B$_8$S$_8$(S$_2$)$_4$\supercite{krebs1980b8s16} (Abbildung \ref{abb:hg8te16undb8s16} rechts) untersucht. Hier ist die Abweichung des Moleküls mit optimierten Strukturparametern von der planaren Struktur erheblich größer, wie die Seitenansicht deutlich zeigt. Die $D_{4\textrm{h}}$ symmetrische Struktur weist eine schwache imaginäre Mode von etwa \unit[$-$10]{cm$^{-1}$} auf, welche genau der Gerüstschwingung entspricht, die das Durchschwingen des Moleküls beschreibt. Ebenfalls bekannt ist das schwerere Homologe B$_8$Se$_8$(Se$_2$)$_4$.
 %\begin{figure}[ht!]
 %	\centering
 %	\includegraphics[width=0.6\textwidth]{b8s16}
@@ -214,21 +214,21 @@ Zusätzlich wurde ebenfalls das bereits bekannte B$_8$S$_8$(S$_2$)$_4$\supercite
 %\label{abb:b8s16}
 %\end{figure}
 
-Aufgrund ihrer strukturellen Ähnlichkeit mit dem organischen Porphyrin liegt es nahe, den aromatischen Charakter der Verbindungen zu untersuchen. Als Maß für die Aromatizität der Verbindung kann auch hier die Stärke des Gesamtringstroms herangezogen werden. Je diatropischer der Gesamtringstrom ist, desto aromatischer ist die Verbindung. In den oben erwähnten Beispielen kann weiterhin zwischen einem lokalen Ringstrom in den vier Fünfringen und einem globalen Ringstrom um das gesamte Molekül unterschieden werden. Hierfür erfolgt die numerische Integration des Stromes durch eine Ebene, welch senkrecht zu ausgewählten Bindungen platziert wird. Auf diese weise lässt sich der Pfad des Ringstromes verfolgen. Bei den Berechnungen stellte sich heraus, dass alle drei Verbindungen, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_{16}$, einen schwachen lokalen Ringstrom in den pyrrolartigen fünfgliedrigen Ringen aufweisen. Diese betragen \unit[5.8]{nA/T} in $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, \unit[3.25]{nA/T} in B$_8$S$_8$(S$_2$)$_4$ und \unit[3.28]{nA/T} in B$_8$Se$_8$(Se$_2$)$_4$. Im Vergleich dazu beträgt der Ringstrom in einem Benzolmolekül etwa \unit[12]{nA/T}.\supercite{fliegl2012aromatic} Die globalen Ringströme in den drei Verbindungen sind mit \unit[0.24]{nA/T}, \unit[0.81]{nA/T} und \unit[0.79]{nA/T} verschwindend gering. Im Vergleich dazu liegt der globale Ringstrom des organischen Porphyrins bei etwa \unit[27]{nA/T}. Dieser spaltet sich in den fünfgliedrigen Ringen in einen äußeren und inneren Pfad auf, welche jeweils einen Ringstrom von etwa \unit[13]{nA/T} aufweisen. Der lokale Ringstrom in den fünfgliedrigen Ringen ist schwächer als \unit[1]{nA/T}.\supercite{fliegl2012aromatic} In sogenannten \aclu*{lic-}\mbox{(\acs{lic}-)}\acused{lic}Plots lassen sich die Ringströme in einer gewählten Ebene visualisieren. Eine solche Darstellung des Ringstroms ist für das organische Porphyrin und die drei Verbindungen $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$ in der Abbildung \ref{abb:lic} zu sehen. Beim Porphyrin ist eindeutig der globale Ringstrom zu erkennen, welcher sich in den fünfgliedrigen Ringen in zwei Pfade aufspaltet. Im Vergleich dazu weisen die anderen Verbindungen lediglich schwache lokale Ströme in den fünfgliedrigen Ringen auf.
-Diese Befunde lassen sich dadurch erklären, dass im Porphyrin eine völlig andere elektronische Situation vorliegt. Die Aromatizität und die damit verbundenen Ringströme basieren auf einem delokalisierten $\pi$-System. Beispielsweise lassen sich im $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ alle \acp{mo} durch Anwenden einer Lokalisierungsprozedur\supercite{boys1960sf} zu Zweizentren-Zweielektronen-Bindungen und freien Elektronenpaaren lokalisieren. Dabei werden $\sigma$-artige Einfachbindungen zwischen den benachbarten Atomen und zwei freie Elektronenpaare pro Telluratom erhalten. 
+Aufgrund ihrer strukturellen Ähnlichkeit mit dem Porphyrin liegt es nahe, den aromatischen Charakter der Verbindungen zu untersuchen. Als Maß für die Aromatizität der Verbindung kann die Stärke des Gesamtringstroms herangezogen werden. Je diatropischer der Gesamtringstrom ist, desto aromatischer ist die Verbindung. In den oben erwähnten Beispielen kann weiterhin zwischen einem lokalen Ringstrom in den vier Fünfringen und einem globalen Ringstrom um das gesamte Molekül unterschieden werden. Hierfür erfolgt die numerische Integration des Stromes durch eine Ebene, welch senkrecht zu ausgewählten Bindungen platziert wird. Auf diese weise lässt sich der Pfad des Ringstromes verfolgen. Bei den Berechnungen stellte sich heraus, dass alle drei Verbindungen, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$, einen schwachen lokalen Ringstrom in den pyrrolartigen fünfgliedrigen Ringen aufweisen. Diese betragen \unit[5.8]{nA/T} in $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, \unit[3.25]{nA/T} in B$_8$S$_8$(S$_2$)$_4$ und \unit[3.28]{nA/T} in B$_8$Se$_8$(Se$_2$)$_4$. Zum Vergleich: Der Ringstrom in einem Benzolmolekül etwa \unit[12]{nA/T}.\supercite{fliegl2012aromatic} Die globalen Ringströme in den drei Verbindungen sind mit \unit[0.24]{nA/T}, \unit[0.81]{nA/T} und \unit[0.79]{nA/T} verschwindend gering. Im Unterschied dazu liegt der globale Ringstrom des organischen Porphyrins bei etwa \unit[27]{nA/T}. Dieser spaltet sich in den fünfgliedrigen Ringen in einen äußeren und inneren Pfad auf, welche jeweils einen Ringstrom von etwa \unit[13]{nA/T} aufweisen. Der lokale Ringstrom in den fünfgliedrigen Ringen ist schwächer als \unit[1]{nA/T}.\supercite{fliegl2012aromatic} In sogenannten \aclu*{lic-}\mbox{(\acs{lic}-)}\acused{lic}Plots lassen sich die Ringströme in einer gewählten Ebene visualisieren. Eine solche Darstellung des Ringstroms ist für das organische Porphyrin und die drei Verbindungen $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$ in Abbildung \ref{abb:lic} zu sehen. Beim Porphyrin ist eindeutig der globale Ringstrom zu erkennen, welcher sich in den fünfgliedrigen Ringen in zwei Pfade aufspaltet. Im Unterschied dazu weisen die anderen Verbindungen lediglich schwache lokale Ströme in den fünfgliedrigen Ringen auf.
+Diese Befunde lassen sich dadurch erklären, dass im Porphyrin eine völlig andere elektronische Situation vorliegt. Die Aromatizität und die damit verbundenen Ringströme im Porphyrin basieren auf einem delokalisierten $\pi$-System. Im Gegensatz dazu lassen sich im $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ alle \acp{mo} durch Anwenden einer Lokalisierungsprozedur\supercite{boys1960sf} zu Zweizentren-Zweielektronen-Bindungen und freien Elektronenpaaren lokalisieren. Dabei werden $\sigma$-artige Einfachbindungen zwischen den benachbarten Atomen und zwei freie Elektronenpaare pro Telluratom erhalten. 
 
  
 
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=1.0\textwidth]{1bohr}
+	\includegraphics[width=0.95\textwidth]{1bohr}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Porphyrin, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$: \aclu{lic-}Plots der Ringströme}]{\aclu{lic-}Plots der Ringströme in Porphyrin \textsf{(a)}, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ \textsf{(b)}, B$_8$S$_8$(S$_2$)$_4$ \textsf{(c)} und B$_8$Se$_8$(Se$_2$)$_4$ \textsf{(d)} \unit[1]{$a_0$} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.\,u.} (blau) und \unit[0.07]{a.\,u.}}
+	\captionsetup{font=small, labelfont=bf}\caption[{Porphyrin, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$, B$_8$S$_8$(S$_2$)$_4$ und B$_8$Se$_8$(Se$_2$)$_4$: \aclu*{lic-}Plots der Ringströme}]{\aclu*{lic-}Plots der Ringströme in Porphyrin \textsf{(a)}, $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ \textsf{(b)}, B$_8$S$_8$(S$_2$)$_4$ \textsf{(c)} und B$_8$Se$_8$(Se$_2$)$_4$ \textsf{(d)} \unit[1]{$a_0$} oberhalb der Molekülebene, dargestellt zwischen \unit[0]{a.\,u.} (blau) und \unit[0.07]{a.\,u.}}
 \label{abb:lic}
 \end{figure}
 
 \FloatBarrier
-Das fehlende $\pi$-System im $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ sorgt für eine gewisse strukturelle Flexibilität des Makrozyklus. Dadurch können unterschiedliche Koordinationspolyeder und Koordinationszahlen realisiert werden. Die Strukturparameter wurden exemplarisch für die Komplexierung der Metallkationen Zn$^{2+}$, Cu$^+$, Ce$^{4+}$ und Ti$^{4+}$ optimiert und die erhaltenen Strukturen sind in Abbildung \ref{abb:komplexierung} gezeigt. Für Zn$^{2+}$ und Cu$^+$ ist zu erkennen, dass es dabei im Wesentlichen zu einer Verzerrung des Makrozyklus kommt um eine tetraedrische Koordination zu ermöglichen. Im Falle der Ce$^{4+}$- und Ti$^{4+}$-Kationen führt die Komplexierung zu einer deutlich ausgeprägteren Umordnung der Atome. Damit lassen sich sowohl die bevorzugt größere Koordinationszahl des Ce$^{4+}$ als auch die Anpassung an den deutlich geringeren Ionenradius des Ti$^{4+}$ realisieren.
+Das fehlende $\pi$-System im $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ sorgt für eine hohe strukturelle Flexibilität des Makrozyklus. Dadurch können unterschiedliche Koordinationspolyeder und Koordinationszahlen realisiert werden. Die Strukturparameter wurden exemplarisch für die Komplexierung der Metallkationen Zn$^{2+}$, Cu$^+$, Ce$^{4+}$ und Ti$^{4+}$ optimiert und die erhaltenen Strukturen sind in Abbildung \ref{abb:komplexierung} gezeigt. Für Zn$^{2+}$ und Cu$^+$ ist zu erkennen, dass es dabei im Wesentlichen zu einer Verzerrung des Makrozyklus kommt um eine tetraedrische Koordination zu ermöglichen. Im Falle der Ce$^{4+}$- und Ti$^{4+}$-Kationen führt die Komplexierung zu einer deutlich ausgeprägteren Umordnung der Atome. Damit lassen sich sowohl die bevorzugt größere Koordinationszahl des Ce$^{4+}$ als auch die Anpassung an den deutlich geringeren Ionenradius des Ti$^{4+}$ realisieren.
 
 \begin{figure}[ht!]
 	\centering
@@ -270,14 +270,164 @@ Das fehlende $\pi$-System im $[$Hg$_8$Te$_8$(Te$_2$)$_4$]$^{8-}$ sorgt für eine
 %\label{abb:b8se16hlic}
 %\end{figure}
 \FloatBarrier
+
+\subsection{\texorpdfstring{$^{31}$P}{31P}-chemische Verschiebungen in Phospor-NHCs}
+Um ein besseres Verständnis der chemischen Verschiebung in einer Reihe von Phosphor-N-Heterocyclischen-Carben-(\acs{nhc}-)Verbindungen \supercite{lemp2017nhc} zu erhalten, wurden die Abschirmungskonstanten für die in den Abbildung \ref{abb:cvhabc} bis \ref{abb:cvhfg} gezeigten Verbindungen auf \ac{dft}-Niveau berechnet. 
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.65\textwidth]{cvhabc}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH, IMesPH und $[$SIMesPGa$^\textit{t}$Bu$_2]_2$}]{ SIMesPH, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den \textsf{(a)}. IMesPH, IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den \textsf{(b)}. $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ \textsf{(c)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange und Gallium=rosa). Die Wasserstoffatome wurden bei \textsf{(c)} zur besseren Veranschaulichung weggelassen.}
+\label{abb:cvhabc}
+\end{figure}
+\vfill 
+\newpage
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.65\textwidth]{cvhde}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl und K(SIMesP)$_3$Al$^\textit{t}$Bu}]{SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl \textsf{(d)}. K(SIMesP)$_3$Al$^\textit{t}$Bu \textsf{(e)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Chlor=grün, Kalium=lila und Aluminium=hellrosa). Die Wasserstoffatome wurden bei \textsf{(e)} zur besseren Veranschaulichung weggelassen.}
+\label{abb:cvhde}
+\end{figure}
+\vfill 
+\newpage
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{cvhfg}
+	\captionsetup{figurewithin = chapter}
+	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl}]{SIMesPH$^\textit{t}$Bu$_2$GaCl \textsf{(f)}. SIMesPH$^\textit{t}$Bu$_2$AlCl \textsf{(g)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Aluminium=hellrosa und Chlor=grün).}
+\label{abb:cvhfg}
+\end{figure}
+\FloatBarrier
+
+Die in Tabelle \ref{tab:cvhtab1} gelisteten Werte wurden unter Verwendung des PBE-Funktionals\supercite{perdew1996generalized} und der Basis def2-TZVP\supercite{weigend2005balanced} erhalten. Zuvor wurden die Strukturparameter der entsprechenden Verbindungen auf demselben Niveau optimiert, wobei zusätzlich Grimmes Dispersionskorrektur D3\supercite{grimme2010consistent,grimme2011effect} verwendet wurde. Weiterhin wurde \ac{cosmo}\supercite{klamt1993cosmo} mit einer relativen Permittivität von 2.28\supercite{maryott1951table} verwendet, um das experimentelle Lösungsmittel Benzol zu simulieren. Zusätzlich zu den berechneten absoluten Abschirmungskonstanten sind in Tabelle \ref{tab:cvhtab1} sowohl die experimentellen $^{31}$P- und $^{13}$C-(Carben-Kohlenstoffatom-)chemische Verschiebungen als auch simulierte chemische Verschiebungen aus den berechneten Werten angegeben: $\delta=\sigma_0-\sigma$. $\sigma_0$ wurde durch Minimieren der Abweichung zwischen den experimentellen Verschiebungen und den berechneten Abschirmungskonstanten bestimmt. Für die $^{13}$C-chemischen Verschiebungen wird damit eine Übereinstimmung zwischen Experiment und Rechnung bis auf etwa \unit[2]{ppm} erhalten und die Reihenfolge korrekt wiedergegeben. Die $^{31}$P-chemischen Verschiebungen sind aufgrund ihres größeren Bereichs der chemischen Verschiebung deutlich problematischer. Fehler von \unit[30]{ppm} sind keine Seltenheit, wie bereits gezeigt wurde.\supercite{latypov2015quantum,reiter2017calculation} Abgesehen von der Verbindung $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ ( SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den) liegen die anderen Verbindungen damit also in einem akzeptablen Bereich. Die Trends in der $^{31}$P-chemischen Verschiebung werden korrekt wiedergegeben und auch die vergleichsweise niedrige Abschirmung in K(SIMesP)$_3$Al$^\textit{t}$Bu wird durch die Berechnung bestätigt. Diese Befunde sind vom verwendeten Funktional unabhängig, wie Tabelle \ref{tab:cvhtab2} zeigt. Neben den berechneten Werten mit dem PBE-Funktional sind dort auch die Ergebnisse mit den Funktionalen PBE0,\supercite{adamo1999toward} BP86\supercite{perdew1986density,becke1988density} und B3LYP\supercite{becke1993density,lee1988development,stephens1994ab} sowie einer Hartree-Fock-Rechnung aufgelistet. Grundlage für diese Berechnungen waren jedoch die experimentellen Strukturen.
+
+\begin{table}[ht!]
+\captionsetup{tablewithin = chapter}
+\captionsetup{font=small, labelfont=bf}
+\captionabove[Vergleich spektroskopischer und struktureller Daten für Phosphor-\\NHCs]{Vergleich spektroskopischer und struktureller Daten für SIMesPH, IMesPH, $[$SIMesPGa$^\textit{t}$Bu$_2]_2$, SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al$^\textit{t}$Bu, SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\hline \hline
+Verbindung & \multicolumn{3}{c}{$^{31}$P / ppm} & \multicolumn{3}{c}{$^{13}$C (Carbenkohlenstoff) / ppm} & \multicolumn{2}{c}{P--C Abstand/ pm}\\
+ & gemessen & \multicolumn{2}{c}{berechnet} & gemessen & \multicolumn{2}{c}{berechnet} &Röntgenstruktur & berechnet\\
+ & & sim. $\delta ^{31}$P & $\sigma ^{31}$P & & sim. $\delta ^{13}$C & $\sigma ^{13}$C & & \\
+ \hline
+ SIMesPH & $-$127.2 & $-$157 & 433 & 191.0 & 192 & $-$3 & 174.6(2) & 175.3\\
+ IMesPH & $-$147.3 & $-$178 & 454 & 180.0 & 178 & 11 & 174.7(2) & 176.1\\
+ $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ & $-$113.2 & $-$57 & 333 & & 182 & 7 & 174.4(2) & 175.6\\
+ SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl & $-$122.6 & $-$104 & 380 & 183.3 & 181 & 8 & 175.4(1) & 175.3\\
+ K(SIMesP)$_3$Al$^\textit{t}$Bu & $-$61.2 & $-$54 & 330 & & 185 & 4 & 175.3(2) & 175.8\\
+ SIMesPH$^\textit{t}$Bu$_2$GaCl & $-$148.8 & $-$163 & 439 & 188.5 & 191 & $-$2 & 179.8(2) & 179.4\\
+ SIMesPH$^\textit{t}$Bu$_2$AlCl & $-$151.0 & $-$157 & 433 & 187.9 & 190 & $-$1 & 180.1(2) & 179.5
+\end{tabular}}
+\label{tab:cvhtab1}
+\end{table}
+
+\begin{table}[ht!]
+\captionsetup{tablewithin = chapter}
+\captionsetup{font=small, labelfont=bf}
+\captionabove[$^{31}$P-chemische Verschiebungen/Abschirmungen für Phosphor-NHCs mit unterschiedlichen Funktionalen]{$^{31}$P-chemische Verschiebungen/Abschirmungen für SIMesPH, IMesPH, $[$SIMesPGa$^\textit{t}$Bu$_2]_2$, SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al$^\textit{t}$Bu, SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl mit unterschiedlichen Funktionalen. Die Spalte \glqq PBE, opt\grqq{} enthält die berechneten Werte für optimierte Strukturparameter. Alle Werte in den darauf folgenden Spalten wurden auf Grundlage der experimentellen Strukturparametern berechnet und sind in ppm angegeben.}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrrrrrrrr}
+\hline \hline
+Verbindung &gemessen &\multicolumn{2}{c}{PBE, opt} &\multicolumn{2}{c}{PBE} &\multicolumn{2}{c}{BP86} &\multicolumn{2}{c}{B3LYP} &\multicolumn{2}{c}{PBE0} &\multicolumn{2}{c}{HF}\\
+& & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P\\
+\hline
+SIMesPH &$-$127.2 &$-$157 &433 &$-$164 &455 &$-$165 &450 &$-$163 &443 &$-$155 &465 &$-$140 &491\\
+IMesPH &$-$147.3 &$-$178 &454 &$-$137 &428 &$-$138 &423 &$-$136 &416 &$-$133 &443 &$-$121 &472\\
+$[$SIMesPGa$^\textit{t}$Bu$_2]_2$ &$-$113.2 &$-$57  &333 &$-$59  &350 &$-$58  &343 &$-$61  &341 &$-$68  &378 &$-$94  &445\\
+SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl &$-$122.6 &$-$104 &380 &$-$109 &400 &$-$107 &392 &$-$111 &391 &$-$117 &427 &$-$137 &488\\
+K(SIMesP)$_3$Al$^\textit{t}$Bu &$-$61.2  &$-$54  &330 &$-$77  &368 &$-$77  &362 &$-$79  &359 &$-$83  &393 &$-$99  &450\\
+SIMesPH$^\textit{t}$Bu$_2$GaCl &$-$148.8 &$-$163 &439 &$-$162 &453 &$-$162 &447 &$-$162 &442 &$-$160 &470 &$-$144 &495\\
+SIMesPH$^\textit{t}$Bu$_2$AlCl &$-$151.0   &$-$157 &433 &$-$163 &454 &$-$164 &449 &$-$161 &441 &$-$158 &468 &$-$137 &488\\
+\end{tabular}}
+\label{tab:cvhtab2}
+\end{table}
+
+\FloatBarrier
+\newpage
+Es zeigte sich, dass die Unterschiede in den Abschirmungskonstanten der einzelnen Verbindungen im Wesentlichen aufgrund des paramagnetischen Beitrages zustande kommen. In diesem Beitrag ist die Response der Elektronendichte auf das äußere Magnetfeld enthalten, im diamagnetischen Beitrag hingegen die Elektronendichte selbst. Erwartungsgemäß ist der diamagnetische Beitrag in allen untersuchten Verbindungen sehr ähnlich und liegt zwischen \unit[960]{ppm} und \unit[967]{ppm}. Dieser Befund führt zu der Schlussfolgerung, dass alle weiteren Untersuchungen, welche auf der Elektronendichte basieren (wie beispielsweise Populationsanalysen), nicht dafür geeignet sind, die Unterschiede in den einzelnen Abschirmungskonstanten zu erklären. Eine erhöhte Elektronendichte und eine damit einhergehende stärker negative Partialladung am Phosphoratom führt also nicht zwangsläufig zu einer stärkeren Abschirmung. Der paramagnetische Beitrag hingegen ist anfällig auf Änderungen in der Geometrie und der elektronischen Struktur der jeweiligen Verbindung. Dies wird beispielsweise beim Vergleich von SIMesPH und IMesPH deutlich, welche eine chemische Verschiebung von etwa \unit[20]{ppm} zueinander aufweisen. Die beiden Strukturen unterscheiden sich lediglich durch die Anzahl der Wasserstoffatome an den Kohlenstoffatomen im fünfgliedrigen Ring. Die große Änderung der elektronischen Struktur wird auch bei der Rotation der C--P-Bindung offensichtlich. Die $^{31}$P-Abschirmungskonstante in den jeweiligen Übergangszuständen liegt um ca. \unit[60]{ppm} höher als die des zugehörigen Grundzustandes. Um den rein elektronischen Einfluss auf die Abschirmungskonstanten der Grundzustände von SIMesPH und IMesPH (IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den) weiter zu untersuchen, wurde in der Verbindung SIMesPH jeweils ein Wasserstoffatom an den Kohlenstoffatomen entfernt und die Positionen aller anderen Atome beibehalten. Die erhaltene Abschirmungskonstante liegt bei etwa \unit[444]{ppm} und damit genau in der Mitte der beiden Verbindungen. All diese Unterschiede basieren allein auf dem paramagnetischen Beitrag. Der diamagnetische Beitrag liegt in allen Fällen bei \unit[962]{ppm}.
+Diese hohe Sensibilität mag der ausschlaggebende Grund für den Unterschied zwischen der experimentellen und berechneten chemischen Verschiebung in $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ sein. Diese Verbindung unterscheidet sich von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl nur durch das Ersetzen eines SIMesP-Restes durch ein Chloratom. Wird erneut die Geometrie von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ genommen und dieser Austausch durchgeführt, so wird bei der Nachoptimierung der Position des Chloratoms unter Beibehaltung der restlichen Strukturparameter eine $^{31}$P-Abschirmungskonstante von \unit[336]{ppm} erhalten. Dieser Wert ist fast identisch mit dem aus der Verbindung $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ und unterscheidet sich daher deutlich vom Wert der Verbindung mit optimierten Strukturparametern (SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, \unit[380]{ppm}). Die Änderung der Strukturparameter hat daher eindeutig einen großen Einfluss auf den paramagnetischen Beitrag. Die Ähnlichkeit in der gemessenen Abschirmung von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ und SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl ist daher überraschender als die vergleichsweise kleine gemessene und berechnete Verschiebung in der Verbindung K(SIMesP)$_3$Al$^\textit{t}$Bu.
+
+Zur weiteren Untersuchung dieser Erkenntnisse wurde eine Zerlegung des diamagnetischen und paramagnetischen Teils der Abschirmungskonstante in einzelne Orbitalbeiträge exemplarisch für SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl unternommen, wie es beispielsweise von Wiberg \textit{et al.}\supercite{wiberg1998nmr} vorgeschlagen wurde. Im Detail sind die Werte in Tabelle \ref{tab:cvhzerlegung} im Anhang \ref{anhang} zu finden. Zusätzlich sind dort in Abbildung \ref{abb:modec} die \acp{mo} gezeigt, welche den größten Beitrag liefern. Erwartungsgemäß dominieren die inneren Orbitale des Phosphoratoms den diamagnetischen Beitrag. Hauptsächlich sind dies das 1$s$ mit ca. \unit[500]{ppm} aber auch die 2$s$- und 2$p$-Orbitale, welche jeweils einen Beitrag von ca. \unit[100]{ppm} liefern. Der größte Beitrag für den paramagnetischen Anteil kommt mit ca. \unit[$-$180]{ppm} von der C--P$\pi$-Bindung. Allerdings gibt es viele Orbitale, welche ebenfalls einen Beitrag von mehr als \unit[10]{ppm} liefern. Die vergleichsweise kleinen Unterschiede in der Abschirmung der untersuchten Verbindungen lassen sich damit daher nicht weiter auflösen.
+
+
+
+
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{1}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH]{Abbildung von SIMesPH, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau und Phosphor=orange).}
+%\label{abb:cvh1}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{2}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von IMesPH]{Abbildung von IMesPH, IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau und Phosphor=orange).}
+%\label{abb:cvh2}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{3}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$}]{Abbildung von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Stickstoff=blau, Phosphor=orange und Gallium=rosa). Die Wasserstoffatome wurden zur besseren Veranschaulichung bei der Abbildung weg gelassen.}
+%\label{abb:cvh3}
+%\end{figure}
+
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{4}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl]{Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa und Chlor=grün).}
+%\label{abb:cvh4}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.5\textwidth]{5}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von K(SIMesP)$_3$Al$^\textit{t}$Bu]{Abbildung von K(SIMesP)$_3$Al$^\textit{t}$Bu, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Stickstoff=blau, Phosphor=orange, Kalium=lila und Aluminium=hellrosa). Die Wasserstoffatome wurden zur besseren Veranschaulichung bei der Abbildung weg gelassen.}
+%\label{abb:cvh5}
+%\end{figure}
+
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{6}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl]{Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa und Chlor=grün).}
+%\label{abb:cvh6}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{7}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl]{Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Aluminium=hellrosa und Chlor=grün).}
+%\label{abb:cvh7}
+%\end{figure}
+
+%\begin{figure}[ht!]
+%	\centering
+%	\includegraphics[width=1.0\textwidth]{cvhmols}
+%	\captionsetup{figurewithin = chapter}
+%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl]{Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Aluminium=hellrosa und Chlor=grün).}
+%\label{abb:cvh8}
+%\end{figure}
+\FloatBarrier
 \subsection{\texorpdfstring{$^{119}$Sn-\acs{nmr}-Spektren von [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}{119Sn-NMR Spektren von [Co at Sn\_6Sb\_6]3- und [Co\_2 at Sn\_5Sb\_7]3-}}
-Wie bereits in der Einleitung dieser Arbeit erwähnt wird, kann die Zuordnung einzelner Signale in experimentell gemessenen \ac{nmr}-Spektren in manchen Fällen eine große Herausforderung darstellen. Zwei Beispiele dafür sind die $^{119}$Sn-\ac{nmr}-Spektren der in der Arbeitsgruppe von Stefanie Dehnen synthetisierten Clusteranionen [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$.\supercite{wilson2018structure} Die grundlegende Struktur dieser endohedralen Komplexe besteht aus zwei verbundenen quadratischen Antiprismen und ist in Abbildung \ref{abb:coatsnsb} dargestellt. Interessanterweise befindet sich das Cobaltatom im Falle des [Co@Sn$_6$Sb$_6$]$^{3-}$ nicht im Zentrum des gesamten Clusteranions, sondern im Zentrum eines der quadratischen Antiprismen. Mithilfe eines genetischen Algorithmus\supercite{weigend2014extending} konnten diese ungewöhnlichen Strukturen auf \ac{dft}-Niveau bestätigt werden. Die Zuordnung der Atomsorten erfolgt darin über einen störungstheoretischen Ansatz. Für den genetischen Algorithmus wurde das BP86-Funktional\supercite{perdew1986density,becke1988density} und der Basissatz def-SV(P)\supercite{eichkorn1997auxiliary} verwendet. Die Anzahl der Generationen wurde auf 30 und die Anzahl der Strukturen je Generationen auf 25 festgelegt. In jeder Generation wurden die 13 energetisch ungünstigsten Strukturen durch neu generierte ersetzt. Alle 25 Strukturen der letzten Generation weisen das Grundgerüst von zwei verknüpften quadratischen Antiprismen auf, welches für die energetisch höher liegenden Isomere jedoch stärker verzerrt ist. Die Strukturparameter der Clusteranionen aus der letzten Generation wurden  mit dem TPSS-Funktional\supercite{tao2003climbing} und der Basis dhf-TZVP\supercite{weigend2010segmented} sowie den zugehörigen \acp{ecp}\supercite{metz2000small} für Zinn und Antimon nachoptimiert. Die negative Ladung wurde mithilfe des \ac{cosmo}\supercite{klamt1993cosmo} unter Verwendung der Standardeinstellungen kompensiert. Insgesamt unterscheiden sich die Strukturen im Wesentlichen durch die Verteilung der Atomsorten und liegen in einem Energiebereich von \unit[37]{kJ/mol} ([Co@Sn$_6$Sb$_6$]$^{3-}$) und \unit[22]{kJ/mol} ([Co$_2$@Sn$_5$Sb$_7$]$^{3-}$). Für die erste Verbindung wurden zwei nahezu isoenergetische Isomere gefunden (linke Seite und Mitte von Abbildung \ref{abb:coatsnsb}). Die energetisch günstigste Struktur des zweiten Clusteranions ist auf der rechten Seite der Abbildung gezeigt.
+Wie bereits in der Einleitung dieser Arbeit erwähnt wird, kann die Zuordnung einzelner Signale in experimentell gemessenen \ac{nmr}-Spektren in manchen Fällen eine große Herausforderung darstellen. Zwei Beispiele dafür sind die $^{119}$Sn-\ac{nmr}-Spektren der in der Arbeitsgruppe Dehnen (Universität Marburg) synthetisierten Clusteranionen [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$.\supercite{wilson2018structure} Die grundlegende Struktur dieser endohedralen Komplexe besteht aus zwei verbundenen quadratischen Antiprismen und ist in Abbildung \ref{abb:coatsnsb} dargestellt. Interessanterweise befindet sich das Kobaltatom im Falle des [Co@Sn$_6$Sb$_6$]$^{3-}$ nicht im Zentrum des gesamten Clusteranions, sondern im Zentrum eines der quadratischen Antiprismen. Mithilfe eines genetischen Algorithmus\supercite{weigend2014extending} konnten diese ungewöhnlichen Strukturen auf \ac{dft}-Niveau bestätigt werden. Die Zuordnung der Atomsorten erfolgt darin über einen störungstheoretischen Ansatz. Für den genetischen Algorithmus wurde das BP86-Funktional\supercite{perdew1986density,becke1988density} und der Basissatz def-SV(P)\supercite{eichkorn1997auxiliary} verwendet. Die Anzahl der Generationen wurde auf 30 und die Anzahl der Strukturen je Generationen auf 25 festgelegt. In jeder Generation wurden die 13 energetisch ungünstigsten Strukturen durch neu generierte ersetzt. Alle 25 Strukturen der letzten Generation weisen das Grundgerüst von zwei verknüpften quadratischen Antiprismen auf, welches für die energetisch höher liegenden Isomere jedoch stärker verzerrt ist. Die Strukturparameter der Clusteranionen aus der letzten Generation wurden  mit dem TPSS-Funktional\supercite{tao2003climbing} und der Basis dhf-TZVP\supercite{weigend2010segmented} sowie den zugehörigen \acp{ecp}\supercite{metz2000small} für Zinn und Antimon nachoptimiert. Die negative Ladung wurde mithilfe des \ac{cosmo}\supercite{klamt1993cosmo} unter Verwendung der Standardeinstellungen kompensiert. Insgesamt unterscheiden sich die Isomere der letzten Generation im Wesentlichen durch die Verteilung der Atomsorten und liegen in einem Energiebereich von \unit[37]{kJ/mol} ([Co@Sn$_6$Sb$_6$]$^{3-}$) und \unit[22]{kJ/mol} ([Co$_2$@Sn$_5$Sb$_7$]$^{3-}$). Für die erste Verbindung wurden zwei nahezu isoenergetische Isomere gefunden (linke Seite und Mitte von Abbildung \ref{abb:coatsnsb}). Die energetisch günstigste Struktur des zweiten Clusteranions ist auf der rechten Seite der Abbildung gezeigt.
 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{coatsnsb}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Strukturen von {[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}]{Strukturen der energetisch am tiefsten liegenden Isomere von [Co@Sn$_6$Sb$_6$]$^{3-}$ (links und Mitte) und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$ (rechts). Zusätzlich sind die gemittelten $^{119}$Sn-chemischen Verschiebungen sowie die zugehörigen Standardabweichungen für die viergliedrigen Ringe A--E in ppm angegeben. Dabei wurden alle Isomere in einem Energiebereich von \unit[10]{kJ/mol} relativ zum energetisch günstigsten Isomer einbezogen (siehe auch Tabelle \ref{tab:snnmrtab1} bis Tabelle \ref{tab:snnmrtab3}, Zinn=hellgrau, Antimon=magenta, Cobalt=grün).}
+	\captionsetup{font=small, labelfont=bf}\caption[Strukturen von {[Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$}]{Strukturen der energetisch am tiefsten liegenden Isomere von [Co@Sn$_6$Sb$_6$]$^{3-}$ (links und Mitte) und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$ (rechts). Zusätzlich sind die gemittelten $^{119}$Sn-chemischen Verschiebungen sowie die zugehörigen Standardabweichungen für die viergliedrigen Ringe A--E in ppm angegeben. Dabei wurden alle Isomere in einem Energiebereich von \unit[10]{kJ/mol} relativ zum energetisch günstigsten Isomer einbezogen (siehe auch Tabelle \ref{tab:snnmrtab1} bis Tabelle \ref{tab:snnmrtab3}, Zinn=hellgrau, Antimon=magenta, Kobalt=grün).}
 \label{abb:coatsnsb}
 \end{figure}
 \FloatBarrier
@@ -291,13 +441,13 @@ Aufgrund der vergleichsweise langen Zeitskala bei \ac{nmr}-Experimenten kann die
 \end{figure}
 \FloatBarrier
 
-Für die Zuordnung der Peaks auf die atomaren Positionen wurden die $^{119}$Sn-chemischen Verschiebungen für die Isomere beider Clusteranionen mit einer relativen Energie von bis zu \unit[10]{kJ/mol} berechnet (siehe Tabelle \ref{tab:snnmrtab1} und \ref{tab:snnmrtab2}). Die Berechnungen wurden mit denselben Einstellungen wie bei der Optimierung der Strukturparameter durchgeführt, mit der Ausnahme, dass für Zinn die TZVPPall-Basis\supercite{ahlrichs2000contracted} verwendet wurde. Zur Vereinfachung wurden die chemischen Verschiebungen in den jeweiligen viergliedrigen Ringen A--E (siehe Abbildung \ref{abb:coatsnsb}) gemittelt. Die Nummerierung der Kohlenstoffatome ist in Abbildung \ref{abb:numbering} dargestellt. Da die einzelnen chemischen Verschiebungen sowohl innerhalb eines Ringes in einem Isomer als auch zwischen den einzelnen Isomeren variieren können, können mehrere Signale aus dem Spektrum einem Ring zugehörig sein. Wie deutlich zu erkennen ist, wird durch die \ac{dft}-Rechnung eine erhebliche Aufspaltung zwischen den äußeren Ringen A (\unit[$-$1082 $\pm$ 95]{ppm}) und C (\unit[$-$142 $\pm$ 109]{ppm}) erhalten. Der am höchsten gelegene Peak bei \unit[$-$119]{ppm} korreliert daher am besten mit Ring C, die beiden Peaks bei \unit[$-$970]{ppm} und \unit[$-$1018]{ppm} mit Ring A. Der verbleibende Peak bei \unit[$-$731]{ppm} kann folglich dem zentralen Ring B zugeordnet werden. Aus der Berechnung der chemischen Verschiebungen für [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$ ergibt sich eine stärkere Abschirmung der Zinnatome in den äußeren Ringen D (\unit[$-$847 $\pm$ 91]{ppm}) als für die Zinnatome im zentralen Ring E (\unit[$-$428 $\pm$ 127]{ppm}). Dadurch erfolgt die Zuordnung der Peaks bei \unit[$-$634]{ppm} und \unit[$-$676]{ppm} zu Ring E und die der Peaks zwischen \unit[$-$849]{ppm} und \unit[$-$890]{ppm} zu den äußeren Ringen D. 
+Für die Zuordnung der Peaks auf die atomaren Positionen wurden die $^{119}$Sn-chemischen Verschiebungen für die Isomere beider Clusteranionen mit einer relativen Energie von bis zu \unit[10]{kJ/mol} berechnet (siehe Tabelle \ref{tab:snnmrtab1} und \ref{tab:snnmrtab2}). Die Berechnungen wurden mit denselben Einstellungen wie bei der Optimierung der Strukturparameter durchgeführt, mit der Ausnahme, dass für Zinn die TZVPPall-Basis\supercite{ahlrichs2000contracted} verwendet wurde. Im Allgemeinen wird die Berechnung von chemischen Verschiebungen mit steigender Kernladungszahl schwieriger. Aus diesem Grund werden für die Zinnatome noch größere Fehler erhalten als es bereits bei den Phosphoratomen im vorherigen Abschnitt der Fall war. Um -- bei allen Unsicherheiten von Messung und Rechnung -- zumindest grobe Trends erkennbar zu machen, wurden die chemischen Verschiebungen in den jeweiligen viergliedrigen Ringen A--E (siehe Abbildung \ref{abb:coatsnsb}) gemittelt. Die Nummerierung der Kohlenstoffatome ist in Abbildung \ref{abb:numbering} dargestellt. Da die einzelnen chemischen Verschiebungen sowohl innerhalb eines Ringes in einem Isomer als auch zwischen den einzelnen Isomeren variieren können, können mehrere Signale aus dem Spektrum einem Ring zugehörig sein. Wie deutlich zu erkennen ist, wird durch die \ac{dft}\--Rechnung eine erhebliche Aufspaltung zwischen den äußeren Ringen A (\unit[$-$1082 $\pm$ 95]{ppm}) und C (\unit[$-$142 $\pm$ 109]{ppm}) erhalten. Der am höchsten gelegene Peak bei \unit[$-$119]{ppm} korreliert daher am besten mit Ring C, die beiden Peaks bei \unit[$-$970]{ppm} und \unit[$-$1018]{ppm} mit Ring A. Der verbleibende Peak bei \unit[$-$731]{ppm} kann folglich dem zentralen Ring B zugeordnet werden. Aus der Berechnung der chemischen Verschiebungen für [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$ ergibt sich eine stärkere Abschirmung der Zinnatome in den äußeren Ringen D (\unit[$-$847 $\pm$ 91]{ppm}) als für die Zinnatome im zentralen Ring E (\unit[$-$428 $\pm$ 127]{ppm}). Dadurch erfolgt die Zuordnung der Peaks bei \unit[$-$634]{ppm} und \unit[$-$676]{ppm} zu Ring E und die der Peaks zwischen \unit[$-$849]{ppm} und \unit[$-$890]{ppm} zu den äußeren Ringen D. 
 \vspace{20pt}
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=0.4\textwidth]{numbering}
 	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[Nummerierung der Atome in {[Co@Sn$_6$Sb$_6$]$^{3-}$} und {[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$} ]{Nummerierung der Atome in den Clusteranionen [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$. Für ersteres muss das Cobaltatom aus der oberen Hälfte entfernt werden.}
+	\captionsetup{font=small, labelfont=bf}\caption[Nummerierung der Atome in {[Co@Sn$_6$Sb$_6$]$^{3-}$} und {[Co$_2$@Sn$_5$Sb$_7$]$^{3-}$} ]{Nummerierung der Atome in den Clusteranionen [Co@Sn$_6$Sb$_6$]$^{3-}$ und [Co$_2$@Sn$_5$Sb$_7$]$^{3-}$. Für ersteres muss das Kobaltatom aus der oberen Hälfte entfernt werden.}
 \label{abb:numbering}
 \end{figure}
 \vfill
@@ -375,144 +525,3 @@ Für die Zuordnung der Peaks auf die atomaren Positionen wurden die $^{119}$Sn-c
 \end{tabular}}
 \label{tab:snnmrtab3}
 \end{table}
-\subsection{\texorpdfstring{$^{31}$P}{31P}-chemische Verschiebungen in Phospor-NHCs}
-Um ein besseres Verständnis der chemischen Verschiebung in einer Reihe von Phosphor-N-Heterocyclischen-Carben-(\acs{nhc}-)Verbindungen \supercite{lemp2017nhc} zu erhalten, wurden die chemischen Abschirmungskonstanten für die in den Abbildung \ref{abb:cvhabc} bis \ref{abb:cvhfg} gezeigten Verbindungen auf \ac{dft}-Niveau berechnet. Die in Tabelle \ref{tab:cvhtab1} gelisteten Werte wurden unter Verwendung des PBE-Funktionals\supercite{perdew1996generalized} und der Basis def2-TZVP\supercite{weigend2005balanced} erhalten. Zuvor wurden die Strukturparameter der entsprechenden Verbindungen auf demselben Niveau optimiert, wobei zusätzlich Grimmes Dispersionskorrektur D3\supercite{grimme2010consistent,grimme2011effect} verwendet wurde. Weiterhin wurde \ac{cosmo}\supercite{klamt1993cosmo} mit einer relativen Permittivität von 2.28\supercite{maryott1951table} verwendet, um das experimentelle Lösungsmittel Benzol zu simulieren. Zusätzlich zu den berechneten absoluten Abschirmungskonstanten sind in Tabelle \ref{tab:cvhtab1} sowohl die experimentellen $^{31}$P- und $^{13}$C-(Carben-Kohlenstoffatom-)chemische Verschiebungen als auch simulierte chemische Verschiebungen aus den berechneten Werten angegeben: $\delta=\sigma_0-\sigma$. $\sigma_0$ wurde durch Minimieren der Abweichung zwischen den experimentellen Verschiebungen und den berechneten Abschirmungskonstanten bestimmt. Für die $^{13}$C-chemischen Verschiebungen wird damit eine Übereinstimmung zwischen Experiment und Rechnung bis auf etwa \unit[2]{ppm} erhalten und die Reihenfolge korrekt wiedergegeben. Die $^{31}$P-chemischen Verschiebungen sind aufgrund ihres größeren Bereichs der chemischen Verschiebung deutlich problematischer. Fehler von \unit[30]{ppm} sind keine Seltenheit, wie bereits gezeigt wurde.\supercite{latypov2015quantum,reiter2017calculation} Abgesehen von der Verbindung $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ ( SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den) liegen die anderen Verbindungen damit also in einem akzeptablen Bereich. Die Trends in der $^{31}$P-chemischen Verschiebung werden korrekt wiedergegeben und auch die vergleichsweise niedrige Abschirmung in K(SIMesP)$_3$Al$^\textit{t}$Bu wird durch die Berechnung bestätigt. Diese Befunde sind vom verwendeten Funktional unabhängig, wie Tabelle \ref{tab:cvhtab2} zeigt. Neben den berechneten Werten mit dem PBE-Funktional sind dort auch die Ergebnisse mit den Funktionalen PBE0\supercite{adamo1999toward}, BP86\supercite{perdew1986density,becke1988density} und B3LYP\supercite{becke1993density,lee1988development,stephens1994ab} sowie einer Hartree-Fock-Rechnung aufgelistet. Grundlage für diese Berechnungen waren jedoch die experimentellen Strukturen.
-
-\begin{table}[ht!]
-\captionsetup{tablewithin = chapter}
-\captionsetup{font=small, labelfont=bf}
-\captionabove[Vergleich spektroskopischer und struktureller Daten für Phosphor-\\NHCs]{Vergleich spektroskopischer und struktureller Daten für SIMesPH, IMesPH, $[$SIMesPGa$^\textit{t}$Bu$_2]_2$, SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al$^\textit{t}$Bu, SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{lrrrrrrrr}
-\hline \hline
-Verbindung & \multicolumn{3}{c}{$^{31}$P / ppm} & \multicolumn{3}{c}{$^{13}$C (Carbenkohlenstoff) / ppm} & \multicolumn{2}{c}{P--C Abstand/ pm}\\
- & gemessen & \multicolumn{2}{c}{berechnet} & gemessen & \multicolumn{2}{c}{berechnet} &Röntgenstruktur & berechnet\\
- & & sim. $\delta ^{31}$P & $\sigma ^{31}$P & & sim. $\delta ^{13}$C & $\sigma ^{13}$C & & \\
- \hline
- SIMesPH & $-$127.2 & $-$157 & 433 & 191.0 & 192 & $-$3 & 174.6(2) & 175.3\\
- IMesPH & $-$147.3 & $-$178 & 454 & 180.0 & 178 & 11 & 174.7(2) & 176.1\\
- $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ & $-$113.2 & $-$57 & 333 & & 182 & 7 & 174.4(2) & 175.6\\
- SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl & $-$122.6 & $-$104 & 380 & 183.3 & 181 & 8 & 175.4(1) & 175.3\\
- K(SIMesP)$_3$Al$^\textit{t}$Bu & $-$61.2 & $-$54 & 330 & & 185 & 4 & 175.3(2) & 175.8\\
- SIMesPH$^\textit{t}$Bu$_2$GaCl & $-$148.8 & $-$163 & 439 & 188.5 & 191 & $-$2 & 179.8(2) & 179.4\\
- SIMesPH$^\textit{t}$Bu$_2$AlCl & $-$151.0 & $-$157 & 433 & 187.9 & 190 & $-$1 & 180.1(2) & 179.5
-\end{tabular}}
-\label{tab:cvhtab1}
-\end{table}
-
-\begin{table}[ht!]
-\captionsetup{tablewithin = chapter}
-\captionsetup{font=small, labelfont=bf}
-\captionabove[$^{31}$P-chemische Verschiebungen/Abschirmungen für Phosphor-NHCs mit unterschiedlichen Funktionalen]{$^{31}$P-chemische Verschiebungen/Abschirmungen für SIMesPH, IMesPH, $[$SIMesPGa$^\textit{t}$Bu$_2]_2$, SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, K(SIMesP)$_3$Al$^\textit{t}$Bu, SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl mit unterschiedlichen Funktionalen. Die Spalte \glqq PBE, opt\grqq{} enthält die berechneten Werte für optimierte Strukturparameter. Alle Werte in den darauf folgenden Spalten wurden auf Grundlage der experimentellen Strukturparametern berechnet und sind in ppm angegeben.}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{lrrrrrrrrrrrrr}
-\hline \hline
-Verbindung &gemessen &\multicolumn{2}{c}{PBE, opt} &\multicolumn{2}{c}{PBE} &\multicolumn{2}{c}{BP86} &\multicolumn{2}{c}{B3-LYP} &\multicolumn{2}{c}{PBE0} &\multicolumn{2}{c}{HF}\\
-& & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P & $\delta ^{31}$P & $\sigma ^{31}$P\\
-\hline
-SIMesPH &$-$127.2 &$-$157 &433 &$-$164 &455 &$-$165 &450 &$-$163 &443 &$-$155 &465 &$-$140 &491\\
-IMesPH &$-$147.3 &$-$178 &454 &$-$137 &428 &$-$138 &423 &$-$136 &416 &$-$133 &443 &$-$121 &472\\
-$[$SIMesPGa$^\textit{t}$Bu$_2]_2$ &$-$113.2 &$-$57  &333 &$-$59  &350 &$-$58  &343 &$-$61  &341 &$-$68  &378 &$-$94  &445\\
-SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl &$-$122.6 &$-$104 &380 &$-$109 &400 &$-$107 &392 &$-$111 &391 &$-$117 &427 &$-$137 &488\\
-K(SIMesP)$_3$Al$^\textit{t}$Bu &$-$61.2  &$-$54  &330 &$-$77  &368 &$-$77  &362 &$-$79  &359 &$-$83  &393 &$-$99  &450\\
-SIMesPH$^\textit{t}$Bu$_2$GaCl &$-$148.8 &$-$163 &439 &$-$162 &453 &$-$162 &447 &$-$162 &442 &$-$160 &470 &$-$144 &495\\
-SIMesPH$^\textit{t}$Bu$_2$AlCl &$-$151.0   &$-$157 &433 &$-$163 &454 &$-$164 &449 &$-$161 &441 &$-$158 &468 &$-$137 &488\\
-\end{tabular}}
-\label{tab:cvhtab2}
-\end{table}
-
-\FloatBarrier
-
-Es zeigte sich, dass die Unterschiede in den chemischen Abschirmungskonstanten der einzelnen Verbindungen im Wesentlichen aufgrund des paramagnetischen Beitrages zustande kommen. In diesem Beitrag ist die Response der Elektronendichte auf das äußere Magnetfeld enthalten, im diamagnetischen Beitrag hingegen die Elektronendichte selbst. Erwartungsgemäß ist der diamagnetische Beitrag in allen untersuchten Verbindungen sehr ähnlich und liegt zwischen \unit[960]{ppm} und \unit[967]{ppm}. Dieser Befund führt zu der Schlussfolgerung, dass alle weiteren Untersuchungen, welche auf der Elektronendichte basieren (wie beispielsweise Populationsanalysen), nicht dafür geeignet sind, die Unterschiede in den einzelnen Abschirmungskonstanten zu erklären. Eine erhöhte Elektronendichte und eine damit einhergehende stärker negative Partialladung am Phosphoratom führt also nicht zwangsläufig zu einer stärkeren Abschirmung. Der paramagnetische Beitrag hingegen ist anfällig auf Änderungen in der Geometrie und der elektronischen Struktur der jeweiligen Verbindung. Dies wird beispielsweise beim Vergleich von SIMesPH und IMesPH deutlich, welche eine chemische Verschiebung von etwa \unit[20]{ppm} zueinander aufweisen. Die beiden Strukturen unterscheiden sich lediglich durch die Anzahl der Wasserstoffatome an den Kohlenstoffatomen im fünfgliedrigen Ring. Die große Änderung der elektronischen Struktur wird auch bei der Rotation der C--P-Bindung offensichtlich. Die $^{31}$P-Abschirmungskonstante in den jeweiligen Übergangszuständen liegt um ca. \unit[60]{ppm} höher als die des zugehörigen Grundzustandes. Um den rein elektronischen Einfluss auf die Abschirmungskonstanten der Grundzustände von SIMesPH und IMesPH (IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den) weiter zu untersuchen, wurde in der Verbindung SIMesPH jeweils ein Wasserstoffatom an den Kohlenstoffatomen entfernt und die Positionen aller anderen Atome beibehalten. Die erhaltene Abschirmungskonstante liegt bei etwa \unit[444]{ppm} und damit genau in der Mitte der beiden Verbindungen. All diese Unterschiede basieren allein auf dem paramagnetischen Beitrag. Der diamagnetische Beitrag liegt in allen Fällen bei \unit[962]{ppm}.
-Diese hohe Sensibilität mag der ausschlaggebende Grund für den Unterschied zwischen der experimentellen und berechneten chemischen Verschiebung in $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ sein. Diese Verbindung unterscheidet sich von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl nur durch das Ersetzen eines SIMesP-Restes durch ein Chloratom. Wird erneut die Geometrie von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ genommen und dieser Austausch durchgeführt, so wird bei der Nachoptimierung der Position des Chloratoms unter Beibehaltung der restlichen Strukturparameter eine $^{31}$P-Abschirmungskonstante von \unit[336]{ppm} erhalten. Dieser Wert ist fast identisch mit dem aus der Verbindung $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ und unterscheidet sich daher deutlich vom Wert der Verbindung mit optimierten Strukturparametern (SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, \unit[380]{ppm}). Die Änderung der Strukturparameter hat daher eindeutig einen großen Einfluss auf den paramagnetischen Beitrag. Die Ähnlichkeit in der gemessenen Abschirmung von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ und SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl ist daher überraschender als die vergleichsweise kleine gemessene und berechnete Verschiebung in der Verbindung K(SIMesP)$_3$Al$^\textit{t}$Bu.
-
-Zur weiteren Untersuchung dieser Erkenntnisse wurde eine Zerlegung des diamagnetischen und paramagnetischen Teils der chemischen Abschirmungskonstante in einzelne Orbitalbeiträge exemplarisch für SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl unternommen, wie es beispielsweise von Wiberg \textit{et al.}\supercite{wiberg1998nmr} vorgeschlagen wurde. Im Detail sind die Werte in Tabelle \ref{tab:cvhzerlegung} im Anhang zu finden. Zusätzlich sind dort in Abbildung \ref{abb:modec} die \acp{mo} gezeigt, welche den größten Beitrag liefern. Erwartungsgemäß dominieren die inneren Orbitale des Phosphoratoms den diamagnetischen Beitrag. Hauptsächlich sind dies das 1$s$ mit ca. \unit[500]{ppm} aber auch die 2$s$- und 2$p$-Orbitale, welche jeweils einen Beitrag von ca. \unit[100]{ppm} liefern. Der größte Beitrag für den paramagnetischen Anteil kommt mit ca. \unit[$-$180]{ppm} von der C--P$\pi$-Bindung. Allerdings gibt es viele Orbitale, welche ebenfalls einen Beitrag von mehr als \unit[10]{ppm} liefern. Die vergleichsweise kleinen Unterschiede in der chemischen Abschirmung der untersuchten Verbindungen lassen sich damit daher nicht weiter auflösen.
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.65\textwidth]{cvhabc}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH, IMesPH und $[$SIMesPGa$^\textit{t}$Bu$_2]_2$}]{ SIMesPH, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den \textsf{(a)}. IMesPH, IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den \textsf{(b)}. $[$SIMesPGa$^\textit{t}$Bu$_2]_2$ \textsf{(c)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange und Gallium=rosa). Die Wasserstoffatome wurden bei \textsf{(c)} zur besseren Veranschaulichung weggelassen.}
-\label{abb:cvhabc}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.65\textwidth]{cvhde}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl und K(SIMesP)$_3$Al$^\textit{t}$Bu}]{SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl \textsf{(d)}. K(SIMesP)$_3$Al$^\textit{t}$Bu \textsf{(e)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Chlor=grün, Kalium=lila und Aluminium=hellrosa). Die Wasserstoffatome wurden bei \textsf{(e)} zur besseren Veranschaulichung weggelassen.}
-\label{abb:cvhde}
-\end{figure}
-
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{cvhfg}
-	\captionsetup{figurewithin = chapter}
-	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl und SIMesPH$^\textit{t}$Bu$_2$AlCl}]{SIMesPH$^\textit{t}$Bu$_2$GaCl \textsf{(f)}. SIMesPH$^\textit{t}$Bu$_2$AlCl \textsf{(g)} (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa, Aluminium=hellrosa und Chlor=grün).}
-\label{abb:cvhfg}
-\end{figure}
-
-
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{1}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH]{Abbildung von SIMesPH, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau und Phosphor=orange).}
-%\label{abb:cvh1}
-%\end{figure}
-%
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{2}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von IMesPH]{Abbildung von IMesPH, IMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zol-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau und Phosphor=orange).}
-%\label{abb:cvh2}
-%\end{figure}
-%
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{3}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[{Abbildung von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$}]{Abbildung von $[$SIMesPGa$^\textit{t}$Bu$_2]_2$, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Stickstoff=blau, Phosphor=orange und Gallium=rosa). Die Wasserstoffatome wurden zur besseren Veranschaulichung bei der Abbildung weg gelassen.}
-%\label{abb:cvh3}
-%\end{figure}
-
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{4}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl]{Abbildung von SIMesP(Ga$^\textit{t}$Bu$_2$)$_2$Cl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa und Chlor=grün).}
-%\label{abb:cvh4}
-%\end{figure}
-%
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.5\textwidth]{5}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von K(SIMesP)$_3$Al$^\textit{t}$Bu]{Abbildung von K(SIMesP)$_3$Al$^\textit{t}$Bu, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Stickstoff=blau, Phosphor=orange, Kalium=lila und Aluminium=hellrosa). Die Wasserstoffatome wurden zur besseren Veranschaulichung bei der Abbildung weg gelassen.}
-%\label{abb:cvh5}
-%\end{figure}
-
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{6}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl]{Abbildung von SIMesPH$^\textit{t}$Bu$_2$GaCl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Gallium=rosa und Chlor=grün).}
-%\label{abb:cvh6}
-%\end{figure}
-%
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{7}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl]{Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Aluminium=hellrosa und Chlor=grün).}
-%\label{abb:cvh7}
-%\end{figure}
-
-%\begin{figure}[ht!]
-%	\centering
-%	\includegraphics[width=1.0\textwidth]{cvhmols}
-%	\captionsetup{figurewithin = chapter}
-%	\captionsetup{font=small, labelfont=bf}\caption[Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl]{Abbildung von SIMesPH$^\textit{t}$Bu$_2$AlCl, SIMes=1,3-bis(2,4,6-tri\-me\-thyl\-phe\-nyl)imi\-da\-zo\-lin-2-yli\-den (Kohlenstoff=grau, Wasserstoff=weiß, Stickstoff=blau, Phosphor=orange, Aluminium=hellrosa und Chlor=grün).}
-%\label{abb:cvh8}
-%\end{figure}

@@ -1,6 +1,6 @@
 \renewcommand{\arraystretch}{1.7}
 \begin{singlespace}
-\begin{tabular}{lp{7.6cm}}
+\begin{tabular}{lp{8.4cm}}
 Name: & Kevin Reiter \\ 
 
 Geburtsdatum: & 29. November 1989 \\ 
@@ -29,7 +29,7 @@ September 2015 & Abschluss als Master of Science \\
 2015 & Beginn der Promotion am Institut für Physikalische Chemie, Abteilung für Theoretische Chemie am Karlsruher Institut für Technologie unter Anleitung von PD Dr. Florian Weigend \\ 
 
 November 2017 -- Dezember 2017 & 6-wöchiger Forschungsaufenthalt an der Universität Helsinki bei Prof. Dr. Dage Sundholm \\ 
-\end{tabular}  
+\end{tabular}
 \end{singlespace}
 \enlargethispage{13.5pt}
 \vfill

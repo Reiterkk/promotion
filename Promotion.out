@@ -12,9 +12,9 @@
 \BOOKMARK [2][-]{subsection.2.5.5}{2.5.5 CPHF-Gleichungen f\374r Abschirmungskonstanten}{section.2.5}% 12
 \BOOKMARK [3][-]{subsubsection.2.5.5.1}{2.5.5.1 Konvergenzbeschleunigung durch das DIIS-Verfahren}{subsection.2.5.5}% 13
 \BOOKMARK [2][-]{subsection.2.5.6}{2.5.6 NMR-Abschirmungskonstanten in der DFT}{section.2.5}% 14
-\BOOKMARK [2][-]{subsection.2.5.7}{2.5.7 Implementierung von nach den Komponenten des Magnetfeldes abgeleiteten Integralen}{section.2.5}% 15
+\BOOKMARK [2][-]{subsection.2.5.7}{2.5.7 Implementierung der nach den Komponenten des Magnetfeldes abgeleiteten Integrale}{section.2.5}% 15
 \BOOKMARK [2][-]{subsection.2.5.8}{2.5.8 Die Berechnung von Stromdichten und Ringstr\366men}{section.2.5}% 16
-\BOOKMARK [0][-]{chapter.3}{3 Programmstruktur des mpshift}{}% 17
+\BOOKMARK [0][-]{chapter.3}{3 Programmstruktur des Moduls mpshift}{}% 17
 \BOOKMARK [0][-]{chapter.4}{4 Erweiterungen der Funktionalit\344t}{}% 18
 \BOOKMARK [1][-]{section.4.1}{4.1 Ber\374cksichtigung von Umgebungseffekten}{chapter.4}% 19
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Theorie}{section.4.1}% 20
@@ -35,10 +35,10 @@
 \BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Testrechnungen}{section.4.3}% 35
 \BOOKMARK [1][-]{section.4.4}{4.4 meta-GGA-Funktionale}{chapter.4}% 36
 \BOOKMARK [0][-]{chapter.5}{5 Verbesserung der Effizienz}{}% 37
-\BOOKMARK [1][-]{section.5.1}{5.1 Die RI-Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.1}{5.1 Die RI-Methode f\374r Abschirmungskonstanten}{chapter.5}% 38
 \BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Theorie}{section.5.1}% 39
 \BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Implementierung}{section.5.1}% 40
-\BOOKMARK [1][-]{section.5.2}{5.2 Die MARI-J-Methode f\374r chemische Abschirmungskonstanten}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{5.2 Die MARI-J-Methode f\374r Abschirmungskonstanten}{chapter.5}% 41
 \BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Theorie}{section.5.2}% 42
 \BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Implementierung}{section.5.2}% 43
 \BOOKMARK [1][-]{section.5.3}{5.3 Parallelisierung und Programmoptimierungen}{chapter.5}% 44
@@ -51,15 +51,14 @@
 \BOOKMARK [2][-]{subsection.7.1.4}{7.1.4 Zusammenfassung}{section.7.1}% 51
 \BOOKMARK [1][-]{section.7.2}{7.2 Anwendungen in der anorganischen Chemie}{chapter.7}% 52
 \BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 [Hg\1378Te\1378\(Te\1372\)\1374]8-: Ein anorganisches Porphyrin?}{section.7.2}% 53
-\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 119Sn-NMR Spektren von [Co at Sn\1376Sb\1376]3- und [Co\1372 at Sn\1375Sb\1377]3-}{section.7.2}% 54
-\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 31P-chemische Verschiebungen in Phospor-NHCs}{section.7.2}% 55
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 31P-chemische Verschiebungen in Phospor-NHCs}{section.7.2}% 54
+\BOOKMARK [2][-]{subsection.7.2.3}{7.2.3 119Sn-NMR Spektren von [Co at Sn\1376Sb\1376]3- und [Co\1372 at Sn\1375Sb\1377]3-}{section.7.2}% 55
 \BOOKMARK [0][-]{chapter.8}{8 Zusammenfassung}{}% 56
 \BOOKMARK [0][-]{chapter.9}{9 Ausblick}{}% 57
-\BOOKMARK [1][-]{section.9.1}{9.1 Semi-numerischer Austausch}{chapter.9}% 58
-\BOOKMARK [1][-]{section.9.2}{9.2 RI-Methode f\374r den Hartree-Fock-Austausch}{chapter.9}% 59
-\BOOKMARK [0][-]{appendix.A}{A Abbildungen und Tabellen}{}% 60
-\BOOKMARK [0][-]{appendix.B}{B Abdruckgenehmigungen}{}% 61
-\BOOKMARK [0][-]{appendix.C}{C Abbildungsverzeichnis}{}% 62
-\BOOKMARK [0][-]{appendix.D}{D Tabellenverzeichnis}{}% 63
-\BOOKMARK [0][-]{appendix.E}{E Abk\374rzungsverzeichnis}{}% 64
-\BOOKMARK [0][-]{chapter*.86}{Literaturverzeichnis}{}% 65
+\BOOKMARK [0][-]{appendix.A}{A Effiziente Berechnung des Hartree-Fock-Austauschs}{}% 58
+\BOOKMARK [0][-]{appendix.B}{B Tabellen und Abbildungen}{}% 59
+\BOOKMARK [0][-]{appendix.C}{C Abdruckgenehmigungen}{}% 60
+\BOOKMARK [0][-]{appendix.D}{D Abbildungsverzeichnis}{}% 61
+\BOOKMARK [0][-]{appendix.E}{E Tabellenverzeichnis}{}% 62
+\BOOKMARK [0][-]{appendix.F}{F Abk\374rzungsverzeichnis}{}% 63
+\BOOKMARK [0][-]{chapter*.87}{Literaturverzeichnis}{}% 64

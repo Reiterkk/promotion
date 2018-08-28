@@ -24,6 +24,7 @@
     \acro{cpa}[CPA]{Cryptophan-A} 	
  	
 	\acro{cphf}[CPHF]{\textit{Coupled Perturbed Hartree-Fock}}
+	\acro{cphf-}[CPHF-]{\textit{Coupled-Perturbed-Hartree-Fock-}}
 	
 	\acro{csm}[CSM]{\textit{Continuum Solvation Model}}
 	
@@ -34,6 +35,7 @@
     \acro{dft}[DFT]{Dichtefunktionaltheorie}
     
     \acro{diis}[DIIS]{\textit{Direct Inversion in the Iterative Subspace}}
+    \acro{diis-}[DIIS-]{\textit{Direct-Inversion-in-the-Iterative-Subspace-}}
     
     \acro{dipp}[dipp]{2,6-Diisopropylphenyl}
     
