@@ -2341,3 +2341,14 @@ year     = {1951}, %other attributes omitted
   pages={376--385},
   year={1930}
 }
+
+@article{wilder1998electronic,
+  title={Electronic structure of atomically resolved carbon nanotubes},
+  author={Wilder, Jeroen WG and Venema, Liesbeth C and Rinzler, Andrew G and Smalley, Richard E and Dekker, Cees},
+  journal={Nature},
+  volume={391},
+  number={6662},
+  pages={59},
+  year={1998},
+  publisher={Nature Publishing Group}
+}

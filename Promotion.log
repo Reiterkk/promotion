@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  28 AUG 2018 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700 64-bit) (preloaded format=pdflatex 2018.5.20)  29 AUG 2018 11:32
 entering extended mode
 **./Promotion.tex
 (Promotion.tex
@@ -3817,16 +3817,16 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 62.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 62.
- [104])
+ [104]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 367.
+(babel)             in language  on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 367.
- [105]
+(babel)             in language  on input line 67.
+ [105])
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 368.
 Package babel Info: Redefining ngerman shorthand "~
@@ -3852,7 +3852,7 @@ although it is yet undefined on input line 5.
 
 pdfTeX warning: pdflatex (file ./gfx/vector.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.6> allowed
-<./gfx/vector.pdf, id=3620, 806.05511pt x 655.35158pt>
+<./gfx/vector.pdf, id=3621, 806.05511pt x 655.35158pt>
 File: ./gfx/vector.pdf Graphic file (type pdf)
 <use ./gfx/vector.pdf>
 Package pdftex.def Info: ./gfx/vector.pdf  used on input line 8.
@@ -3922,7 +3922,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/konstruktion.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.6> allowed
-<./gfx/konstruktion.pdf, id=3827, 817.0525pt x 366.36874pt>
+<./gfx/konstruktion.pdf, id=3828, 817.0525pt x 366.36874pt>
 File: ./gfx/konstruktion.pdf Graphic file (type pdf)
 <use ./gfx/konstruktion.pdf>
 Package pdftex.def Info: ./gfx/konstruktion.pdf  used on input line 33.
@@ -3940,7 +3940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-<./gfx/dunlap-konstruktion.png, id=3860, 6913.83pt x 3451.89626pt>
+<./gfx/dunlap-konstruktion.png, id=3861, 6913.83pt x 3451.89626pt>
 File: ./gfx/dunlap-konstruktion.png Graphic file (type png)
 <use ./gfx/dunlap-konstruktion.png>
 Package pdftex.def Info: ./gfx/dunlap-konstruktion.png  used on input line 44.
@@ -3978,7 +3978,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/tcnttypen.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.6> allowed
-<./gfx/tcnttypen.pdf, id=4033, 750.80513pt x 569.12625pt>
+<./gfx/tcnttypen.pdf, id=4034, 750.80513pt x 569.12625pt>
 File: ./gfx/tcnttypen.pdf Graphic file (type pdf)
 <use ./gfx/tcnttypen.pdf>
 Package pdftex.def Info: ./gfx/tcnttypen.pdf  used on input line 111.
@@ -3997,7 +3997,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/tcntbindungsenergie.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.6> allowed
-<./gfx/tcntbindungsenergie.pdf, id=4041, 745.14194pt x 520.6398pt>
+<./gfx/tcntbindungsenergie.pdf, id=4042, 745.14194pt x 520.6398pt>
 File: ./gfx/tcntbindungsenergie.pdf Graphic file (type pdf)
 <use ./gfx/tcntbindungsenergie.pdf>
 Package pdftex.def Info: ./gfx/tcntbindungsenergie.pdf  used on input line 122.
@@ -4033,7 +4033,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/tcntcurvssize.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.6> allowed
-<./gfx/tcntcurvssize.pdf, id=4136, 716.67738pt x 587.19376pt>
+<./gfx/tcntcurvssize.pdf, id=4137, 716.67738pt x 587.19376pt>
 File: ./gfx/tcntcurvssize.pdf Graphic file (type pdf)
 <use ./gfx/tcntcurvssize.pdf>
 Package pdftex.def Info: ./gfx/tcntcurvssize.pdf  used on input line 134.
@@ -4050,7 +4050,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/tcntcurvsgap.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.6> allowed
-<./gfx/tcntcurvsgap.pdf, id=4169, 716.67738pt x 506.89384pt>
+<./gfx/tcntcurvsgap.pdf, id=4170, 716.67738pt x 506.89384pt>
 File: ./gfx/tcntcurvsgap.pdf Graphic file (type pdf)
 <use ./gfx/tcntcurvsgap.pdf>
 Package pdftex.def Info: ./gfx/tcntcurvsgap.pdf  used on input line 145.
@@ -4059,7 +4059,7 @@ Package pdftex.def Info: ./gfx/tcntcurvsgap.pdf  used on input line 145.
 
 pdfTeX warning: pdflatex (file ./gfx/tcntfunktional.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.6> allowed
-<./gfx/tcntfunktional.pdf, id=4171, 649.15062pt x 502.5694pt>
+<./gfx/tcntfunktional.pdf, id=4172, 649.15062pt x 502.5694pt>
 File: ./gfx/tcntfunktional.pdf Graphic file (type pdf)
 <use ./gfx/tcntfunktional.pdf>
 Package pdftex.def Info: ./gfx/tcntfunktional.pdf  used on input line 156.
@@ -4076,7 +4076,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/homolumoarmchair.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.6> allowed
-<./gfx/homolumoarmchair.pdf, id=4250, 579.75403pt x 839.41534pt>
+<./gfx/homolumoarmchair.pdf, id=4251, 579.75403pt x 839.41534pt>
 File: ./gfx/homolumoarmchair.pdf Graphic file (type pdf)
 <use ./gfx/homolumoarmchair.pdf>
 Package pdftex.def Info: ./gfx/homolumoarmchair.pdf  used on input line 171.
@@ -4088,7 +4088,7 @@ LaTeX Warning: Float too large for page by 0.62454pt on input line 175.
 
 pdfTeX warning: pdflatex (file ./gfx/homolumozigzag.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.6> allowed
-<./gfx/homolumozigzag.pdf, id=4259, 591.37508pt x 841.6065pt>
+<./gfx/homolumozigzag.pdf, id=4260, 591.37508pt x 841.6065pt>
 File: ./gfx/homolumozigzag.pdf Graphic file (type pdf)
 <use ./gfx/homolumozigzag.pdf>
 Package pdftex.def Info: ./gfx/homolumozigzag.pdf  used on input line 179.
@@ -4134,7 +4134,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 191.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 191.
-<./gfx/hg8te16undb8s16.png, id=4321, 3138.72626pt x 1253.68375pt>
+<./gfx/hg8te16undb8s16.png, id=4322, 3138.72626pt x 1253.68375pt>
 File: ./gfx/hg8te16undb8s16.png Graphic file (type png)
 <use ./gfx/hg8te16undb8s16.png>
 Package pdftex.def Info: ./gfx/hg8te16undb8s16.png  used on input line 195.
@@ -4165,7 +4165,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/1bohr.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.6> allowed
-<./gfx/1bohr.pdf, id=4346, 5868.96742pt x 5794.98987pt>
+<./gfx/1bohr.pdf, id=4347, 5868.96742pt x 5794.98987pt>
 File: ./gfx/1bohr.pdf Graphic file (type pdf)
 <use ./gfx/1bohr.pdf>
 Package pdftex.def Info: ./gfx/1bohr.pdf  used on input line 224.
@@ -4189,7 +4189,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/komplexierung.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.6> allowed
-<./gfx/komplexierung.pdf, id=4369, 3094.53625pt x 2284.47742pt>
+<./gfx/komplexierung.pdf, id=4370, 3094.53625pt x 2284.47742pt>
 File: ./gfx/komplexierung.pdf Graphic file (type pdf)
 <use ./gfx/komplexierung.pdf>
 Package pdftex.def Info: ./gfx/komplexierung.pdf  used on input line 235.
@@ -4213,7 +4213,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/cvhabc.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.6> allowed
-<./gfx/cvhabc.pdf, id=4397, 510.45537pt x 818.28581pt>
+<./gfx/cvhabc.pdf, id=4398, 510.45537pt x 818.28581pt>
 File: ./gfx/cvhabc.pdf Graphic file (type pdf)
 <use ./gfx/cvhabc.pdf>
 Package pdftex.def Info: ./gfx/cvhabc.pdf  used on input line 279.
@@ -4243,7 +4243,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/cvhde.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.6> allowed
-<./gfx/cvhde.pdf, id=4425, 503.58377pt x 798.72653pt>
+<./gfx/cvhde.pdf, id=4426, 503.58377pt x 798.72653pt>
 File: ./gfx/cvhde.pdf Graphic file (type pdf)
 <use ./gfx/cvhde.pdf>
 Package pdftex.def Info: ./gfx/cvhde.pdf  used on input line 288.
@@ -4260,7 +4260,7 @@ Package babel Info: Redefining ngerman shorthand "~
 
 pdfTeX warning: pdflatex (file ./gfx/cvhfg.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.6> allowed
-<./gfx/cvhfg.pdf, id=4448, 503.85953pt x 686.14093pt>
+<./gfx/cvhfg.pdf, id=4449, 503.85953pt x 686.14093pt>
 File: ./gfx/cvhfg.pdf Graphic file (type pdf)
 <use ./gfx/cvhfg.pdf>
 Package pdftex.def Info: ./gfx/cvhfg.pdf  used on input line 297.
@@ -4318,7 +4318,7 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 425.
 
 [131]
-<./gfx/coatsnsb.png, id=4531, 4531.93124pt x 1626.075pt>
+<./gfx/coatsnsb.png, id=4532, 4531.93124pt x 1626.075pt>
 File: ./gfx/coatsnsb.png Graphic file (type png)
 <use ./gfx/coatsnsb.png>
 Package pdftex.def Info: ./gfx/coatsnsb.png  used on input line 428.
@@ -4327,7 +4327,7 @@ Package pdftex.def Info: ./gfx/coatsnsb.png  used on input line 428.
 
 pdfTeX warning: pdflatex (file ./gfx/snnmrspectra.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.6> allowed
-<./gfx/snnmrspectra.pdf, id=4539, 450.80511pt x 296.388pt>
+<./gfx/snnmrspectra.pdf, id=4540, 450.80511pt x 296.388pt>
 File: ./gfx/snnmrspectra.pdf Graphic file (type pdf)
 <use ./gfx/snnmrspectra.pdf>
 Package pdftex.def Info: ./gfx/snnmrspectra.pdf  used on input line 437.
@@ -4355,7 +4355,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 442.
 [132 <./gfx/coatsnsb.png>]
-<./gfx/numbering.png, id=4557, 1107.8991pt x 1422.2736pt>
+<./gfx/numbering.png, id=4558, 1107.8991pt x 1422.2736pt>
 File: ./gfx/numbering.png Graphic file (type png)
 <use ./gfx/numbering.png>
 Package pdftex.def Info: ./gfx/numbering.png  used on input line 448.
@@ -4460,8 +4460,6 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 375.
 (kapitel/ausblick.tex
-Package acronym Info: Label `acro:rik' newly defined as it shall be overridden
-although it is yet undefined on input line 3.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining ngerman shorthand "~
@@ -5049,17 +5047,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `Promotion.out' has not changed.
-(rerunfilecheck)             Checksum: 59B240523B165A2A53D96F4E4A419728;5638.
+(rerunfilecheck)             Checksum: 677B8D0BD452AD60BA163C54E1C5D76E;5638.
 Package logreq Info: Writing requests to 'Promotion.run.xml'.
 \openout1 = `Promotion.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42072 strings out of 492976
- 798780 string characters out of 3123648
- 1535079 words of memory out of 3000000
+ 42073 strings out of 492976
+ 798791 string characters out of 3123648
+ 1535118 words of memory out of 3000000
  43954 multiletter control sequences out of 15000+200000
- 743036 words of font info for 344 fonts, out of 3000000 for 9000
+ 743123 words of font info for 345 fonts, out of 3000000 for 9000
  1198 hyphenation exceptions out of 8191
  57i,25n,90p,9139b,3468s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
@@ -5108,9 +5106,9 @@ sers/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt8
 .pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmtto10.pfb><C:/Users/Kevin Reiter/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Promotion.pdf (193 pages, 56451370 bytes).
+Output written on Promotion.pdf (193 pages, 56452073 bytes).
 PDF statistics:
  5414 PDF objects out of 6186 (max. 8388607)
- 828 named destinations out of 1000 (max. 500000)
+ 827 named destinations out of 1000 (max. 500000)
  67273 words of extra memory for PDF output out of 74296 (max. 10000000)
 
