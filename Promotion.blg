@@ -1,20 +1,20 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Promotion.blg'
 [37] biber-MSWIN64:313> INFO - === 
-[68] Biber.pm:371> INFO - Reading 'Promotion.bcf'
-[194] Biber.pm:857> INFO - Found 204 citekeys in bib section 0
-[213] Biber.pm:3976> INFO - Processing section 0
-[230] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[240] bibtex.pm:1500> INFO - LaTeX decoding ...
-[647] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
-[662] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
-[665] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
-[2141] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\6fqq8hOVfL\literatur.bib_15680.utf8, line 1170, warning: 4 characters of junk seen at toplevel
-[2141] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\6fqq8hOVfL\literatur.bib_15680.utf8, line 1790, warning: undefined macro "jrn"
-[2310] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2310] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2311] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
-[2311] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[2477] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
-[2562] bbl.pm:720> INFO - Output to Promotion.bbl
-[2563] Biber.pm:110> INFO - WARNINGS: 4
+[69] Biber.pm:371> INFO - Reading 'Promotion.bcf'
+[193] Biber.pm:857> INFO - Found 204 citekeys in bib section 0
+[212] Biber.pm:3976> INFO - Processing section 0
+[229] Biber.pm:4136> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[239] bibtex.pm:1500> INFO - LaTeX decoding ...
+[643] bibtex.pm:1316> INFO - Found BibTeX data source 'literatur.bib'
+[657] Utils.pm:193> WARN - Duplicate entry key: 'van2012use' in file 'literatur.bib', skipping ...
+[660] Utils.pm:193> WARN - Duplicate entry key: 'deglmann2002efficient' in file 'literatur.bib', skipping ...
+[2197] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\EsJIj8DQQY\literatur.bib_9392.utf8, line 1170, warning: 4 characters of junk seen at toplevel
+[2197] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\KEVINR~1\AppData\Local\Temp\EsJIj8DQQY\literatur.bib_9392.utf8, line 1790, warning: undefined macro "jrn"
+[2366] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2366] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2366] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[2366] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[2535] bbl.pm:617> INFO - Writing 'Promotion.bbl' with encoding 'UTF-8'
+[2627] bbl.pm:720> INFO - Output to Promotion.bbl
+[2628] Biber.pm:110> INFO - WARNINGS: 4
